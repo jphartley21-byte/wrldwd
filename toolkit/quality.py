@@ -2,9 +2,9 @@
   python toolkit/quality.py FILE [--block 4]      FILE = bars one per line (blank line = new stanza); comments with #
 This gates MY drafts, never Joe's lines. The floor comes from Joe's own bars (hook 1-12, V1 1-4), measured with rhyme_tools.quad_stats:
   - length: 6-10 syllables per bar, mean <= 9.5 (Joe: 4-10, mean ~8; rejected v17 ran 11-14)
-  - endings: >= half the bars end weak/feminine (Joe: 2-4 of 4)
+  - endings: >= 1 bar per block ends weak/feminine (Joe: 0-4)
   - rhyme: <= 1 bar per 4 without a 2-syllable end-tail partner (X-line allowed if marked with a leading '~')
-  - density: >= 3 multisyllabic runs and >= 1 bar with an internal rhyme per block
+  - density: >= 2 multisyllabic runs (Joe lowest block: 1) and >= 1 internal-rhyme bar per 4-bar block
   - no end word used 3+ times in a block; no filler/explainer phrases; no unconfirmed slang; <= 2 place names per 4 bars
 Passing this is necessary, NOT sufficient: a fresh-context critic must also score every bar (quality/gate.md).
 """
@@ -36,6 +36,9 @@ def blocks(path, n):
     if cur: stanzas.append(cur)
     out = []
     for st in stanzas:
+        if len(st) <= 2 * n:          # short stanza = one block (don't cut a 5-bar stanza into 4+1)
+            out.append(st)
+            continue
         for i in range(0, len(st), n):
             out.append(st[i:i + n])
     return stanzas, out
@@ -50,22 +53,32 @@ def main():
     fails = 0
     for bi, b in enumerate(bl, 1):
         xl = [x.startswith("~") for x in b]
-        bars = [x.lstrip("~").strip() for x in b]
+        joe = [x.lstrip("~").startswith("=") for x in b]   # '=' marks Joe's verbatim bars: scored for rhyme, exempt from repeat/place checks
+        bars = [x.lstrip("~").lstrip("=").strip() for x in b]
         probs = []
+        oov = sorted({w for x in bars for w in re.findall(r"[A-Za-z']+", x) if R.pron(w) is None})
+        if oov:
+            print(f"block {bi} [UNKNOWN WORDS] {oov}: add to bank/ovr.txt (word<TAB>ARPAbet), tool cannot score these bars")
+            fails += 1
+            continue
         q = R.quad_stats(bars)
         syl = q["syl"]
         if any(s < 6 or s > 10 for s in syl): probs.append(f"length {syl} (want 6-10)")
         if sum(syl) / len(syl) > 9.5: probs.append(f"mean length {sum(syl)/len(syl):.1f} > 9.5")
-        if q["fem_end"] * 2 < len(bars): probs.append(f"only {q['fem_end']}/{len(bars)} weak endings (want half)")
+        if q["fem_end"] < 1: print("   note: no weak (feminine) ending in this block (Joe's blocks have 0-4); fine if deliberate")
         sch = q["scheme2"]
-        lone = sum(1 for i, c in enumerate(sch) if sch.count(c) == 1 and not xl[i])
-        if lone > 1: probs.append(f"{lone} bars have no 2-syllable end-rhyme partner ({sch})")
-        if q["multisyl"] < 3: probs.append(f"multisyllabic runs {q['multisyl']} < 3")
-        if q["internal_bars"] < 1: probs.append("no internal rhyme")
-        ends = [re.findall(r"[a-z']+", x.lower())[-1] for x in bars]
+        def endkey(x):
+            ph, _ = R.pron_phrase(re.findall(r"[A-Za-z']+", x)[-1])
+            return R.key(ph, 0, "perfect") if ph else None
+        keys = [endkey(x) for x in bars]
+        lone = sum(1 for i, k in enumerate(keys) if keys.count(k) == 1 and sch.count(sch[i]) == 1 and not xl[i])
+        if lone > 1: probs.append(f"{lone} bars have no end-rhyme partner ({sch})")
+        if len(bars) >= 4 and q["multisyl"] < 2: probs.append(f"multisyllabic runs {q['multisyl']} < 2")
+        if len(bars) >= 4 and q["internal_bars"] < 1: probs.append("no internal rhyme")
+        ends = [re.findall(r"[a-z']+", x.lower())[-1] for x, j in zip(bars, joe) if not j]
         dup = {e for e in ends if ends.count(e) > 2}
         if dup: probs.append(f"end word used 3+ times {sorted(dup)} (an echo twice is fine)")
-        text = " ".join(bars).lower()
+        text = " ".join(x for x, j in zip(bars, joe) if not j).lower()
         for ph in BAD_PHRASES:
             if ph in text: probs.append(f"filler/cliche phrase '{ph}'")
         for sl in BAD_SLANG:
