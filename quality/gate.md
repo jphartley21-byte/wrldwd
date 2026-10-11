@@ -2,6 +2,9 @@
 RULE (Joe, 11 Oct 2026): Joe is never shown a draft that is less than "as good as it can be without human input" (full wording: CLAUDE.md principle 0). Clear every gate below, then keep iterating until a fresh critic finds nothing more fixable without Joe. Max 6 critic rounds per stanza, then cut the stanza and report the one blocker. "Workable skeleton" is not a thing Joe is shown.
 Why this exists: the v17 run (writing/rejected/full_draft_v17_REJECTED.md) skipped real drafting variants, polish and critique, then handed Joe a draft the review itself called unfinished. In round 1 the strict original-matching gate was removed (Joe asked for less strict matching) and no quality gate replaced it. Less strict about the ORIGINAL does not mean no standard.
 
+## Gate -1: GLOSSARY (added 11 Oct 2026, after "certi" was misread as a cut-off word)
+Before ANY critic, tool or reader sees lines (ours or the original's): run `python toolkit/glossary.py FILE`, resolve every NEEDS GLOSS (Joe first; then research/slang_sources.md), add to bank/slang.csv, and paste the same glossary into the critic prompt for ALL stanzas. Unglossed slang biases critics against whichever side has the unfamiliar words.
+
 ## Gate 1: measured (toolkit/quality.py), floor taken from Joe's own bars
 Bars 6-10 syllables (Joe's run 4-10, mean ~8); at least 1 per block ends weak/feminine; at most 1 bar per 4 with no 2-syllable end-rhyme partner; 2+ multisyllabic runs and an internal rhyme per 4-bar block; no filler/cliche phrases; no unconfirmed slang; at most 2 place names per 4 bars. Joe's own bars must still clear it (calibration check).
 
