@@ -10,5 +10,10 @@ Workflow: `python toolkit/glossary.py FILE` lists words needing a gloss; resolve
 | Genius annotations | song-specific explanations (e.g. the original's lines) | Per-page, user-contributed; used by the repo in benchmark/ (paraphrased) | Best for the original's own references; Joe pastes when needed. |
 | Cockney rhyming slang / regional lists | small curated lists | various | Add selected entries to bank/slang.csv by hand. |
 
-## Network note
+## Status 11 Oct 2026 (network opened by Joe)
+- Urban Dictionary: per-word endpoint works from the sandbox (`toolkit/slang_lookup.py`). Quality is mixed: right for certi/wagwan/guap/zilch, wrong or junk for Federali and "deck"; Wiktionary's top sense for "plod" was the wrong one. Always treat as HINTS; Joe's corrections and the lyric context decide.
+- Wiktionary: the live API rate-limits this shared network address (HTTP 429); kaikki.org works and serves per-word and full-dump data. `toolkit/import_wiktionary_slang.py` stream-filters the 3.3 GB dump into `bank/slang_wiktionary.csv` (attribution: `bank/SLANG_WIKTIONARY_ATTRIBUTION.md`).
+- Tools: `python toolkit/slang_lookup.py WORD...`, `python toolkit/glossary.py FILE --lookup`.
+
+## Network note (earlier, now resolved)
 From the Claude cloud sandbox these hosts returned HTTP 403 (blocked by the environment's network policy) on 11 Oct 2026: api.urbandictionary.com, en.wiktionary.org, kaikki.org. To use them, Joe adds them under Allowed domains in the environment's Network access settings (cloud environment menu -> Edit), or runs lookups on his own machine. Until then: Joe's corrections + bank/slang.csv are the library.

@@ -1,0 +1,3 @@
+# Attribution for bank/slang_wiktionary.csv
+Entries are filtered from English Wiktionary (https://en.wiktionary.org), text licensed CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/), obtained as structured data from https://kaikki.org (Wiktextract by Tatu Ylonen; Ylonen, T. 2022, "Wiktextract: Wiktionary as Machine-Readable Structured Data", LREC). Each row's `source` column links to its Wiktionary page. Modifications: filtered to UK/British slang and informal senses, shortened. Redistributed under the same licence (CC BY-SA 4.0).
+Urban Dictionary results are NOT stored in bulk; bank/slang_cache.json caches single-word lookups as unverified hints for private use.

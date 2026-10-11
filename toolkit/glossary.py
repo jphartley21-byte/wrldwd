@@ -1,5 +1,5 @@
 """glossary: find words/phrases a reader (or a critic, or a tool) may not know, and show what the repo already knows about them.
-  python toolkit/glossary.py FILE [--zipf 3.2]         (bars one per line)
+  python toolkit/glossary.py FILE [--zipf 3.2] [--lookup]   (bars one per line; --lookup fetches HINTS from Wiktionary + Urban Dictionary for NEEDS GLOSS words)
 Flags a word when it is rare (wordfreq Zipf < threshold), missing from the pronunciation dictionary, or capitalised mid-line (names).
 For each flagged word it prints any gloss found in bank/slang.csv, mundane.csv, names_culture.csv, places_events.csv, seeds.csv, register_stiff.csv,
 or says NEEDS GLOSS. Resolve every NEEDS GLOSS (ask Joe, or look it up: Urban Dictionary / Wiktionary / Green's, see research/slang_sources.md)
@@ -43,7 +43,9 @@ def main():
         s = s.lstrip("~=").strip()
         toks = re.findall(r"[A-Za-z][A-Za-z']*", s)
         for i, w in enumerate(toks):
-            lw = w.lower().strip("'")
+            lw = re.sub(r"(?:'s|'m|'ll|'ve|'d|'re|n't)$", "", w.lower().strip("'"))
+            if w.lower() in ("i'm", "i'd", "i've", "i'll"):
+                continue
             if len(lw) < 3:
                 continue
             reason = None
@@ -54,12 +56,19 @@ def main():
             if reason and lw not in seen:
                 seen[lw] = (reason, n, s)
     need = 0
+    look = "--lookup" in a
+    if look:
+        import slang_lookup as SL
     for lw, (reason, n, s) in sorted(seen.items()):
         k = KNOWN.get(lw)
         if k:
             print(f"{lw:14} [{reason}] bar {n}: known in {k[0]}: {k[1]}")
         else:
             print(f"{lw:14} [{reason}] bar {n}: NEEDS GLOSS   | {s[:70]}"); need += 1
+            if look and not reason.startswith("name"):
+                r = SL.lookup(lw)
+                for x in r["wiktionary"][:2]: print(f"       hint [wiktionary{' ' + ','.join(x['tags']) if x['tags'] else ''}] {x['gloss']}")
+                for x in r["urban"][:2]: print(f"       hint [urban dictionary {x['votes']:+d}] {x['definition'][:150]}")
     print(f"\n{len(seen)} flagged words, {need} NEED GLOSS. Resolve these before any critic or reader sees the lines.")
 
 
