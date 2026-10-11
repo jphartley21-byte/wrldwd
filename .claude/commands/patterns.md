@@ -1,5 +1,5 @@
 ---
-description: Stage 3. Cluster mined ideas offline and surface patterns, gaps and overused sounds; Joe picks a direction
+description: Stage 3. Find patterns in the ingredients Joe starred (sounds, places, devices) and gaps vs the beat sheet; Joe picks a direction
 argument-hint: <section>
 ---
-Run `python toolkit/ideas_cluster.py ideas/<section>.md --out ideas/patterns_<section>.md` (no model tokens). Read the report and add a short AI layer: the 3 strongest patterns (recurring motifs, sound families with the most ticked ideas, unexpected place x register pairings), gaps versus `work/<section>/1_beats.md`, and 3 candidate directions, each with a one-line pitch and the bars it serves. Write `work/<section>/3_patterns.md`. STOP and ask Joe which direction(s) to pursue.
+Read `work/<section>/2_stars.md` (Joe's starred bank entries) and `work/<section>/1_beats.md`. Use `python toolkit/bank.py find` to pull neighbours (same sound family, same place). Report: strongest sound families among stars, places and devices that recur, unexpected pairings (e.g. an animal pun + a place that share a sound), bars with no ingredients yet, and 3 candidate directions (one-line pitch + bars served). Write `work/<section>/3_patterns.md`. STOP and ask Joe which direction(s).

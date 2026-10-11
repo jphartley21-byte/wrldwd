@@ -14,7 +14,7 @@
 ## Stage tracker (update after each stop)
 | Section | beats | mine | patterns | draft | polish | review | locked |
 |---|---|---|---|---|---|---|---|
-| Hook | draft sheet, awaiting Joe | 107 raw ideas (rough), awaiting ticks | auto report done (ideas/patterns_hook.md) | - | - | - | - |
+| Hook | draft sheet, awaiting Joe | banks built (bank/index.html), awaiting stars | - | - | - | - | - |
 
 ## Open decisions for Joe
 - Strict vegetarian detail? "Horfield/BS7" as a name? Invented cartoonish flourishes on true places?

@@ -4,8 +4,8 @@ A human-in-the-loop, AI-assisted workflow for writing a deadpan British world-to
 
 ## The funnel (one command per stage; each writes a file and stops for Joe)
 1. `/beats <section>`: one line per bar of what it says. Joe edits/approves.
-2. `/mine <section>`: 100-200 raw ideas into `ideas/`. Joe ticks favourites.
-3. `/patterns <section>`: clusters, motifs, gaps (offline). Joe picks a direction.
+2. `/bank`: exhaustive banks (rhymes, wordplay, slang, places, events, names). Browse `bank/index.html`, star ingredients.
+3. `/patterns <section>`: what your stars have in common (sounds, places, devices), gaps. Pick a direction.
 4. `/draft <section>`: 3 variants per bar in Joe's voice. Joe picks per bar.
 5. `/polish <section>`: voice-preserving craft pass with one-line reasons. Joe accepts/rejects.
 6. `/review <section>` and `/voice-check <draft>`: advisory reports only.
