@@ -59,3 +59,7 @@ song	S AO1 NG
 bangin	B AE1 NG IH0 N
 heather	HH EH1 DH ER0
 hes	HH IY1 Z
+isnt	IH1 Z AH0 N T
+theyre	DH EH1 R
+mopped	M AA1 P T
+moped	M OW1 P EH2 D

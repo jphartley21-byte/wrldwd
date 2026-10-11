@@ -31,3 +31,9 @@ So the quality floor is the ORIGINAL's worst bar, in CRAFT terms (rhyme architec
 - Flat, specific, deadpan bars with one turn ("Forty frozen birds. Cold turkey.", "Sign's in the river.") outscored every rhyme-driven bar I wrote.
 - My rhyme-chasing stanzas (-ape, -ide, -happy, -oon) scored 2-3 on every critic; do not write stanzas to fit a sound.
 - Joe's own bars are sound-play and chantable; page critics underrate that. The best bars are specific AND sonic (pavos/turkeys, Win-win).
+
+## Findings, 11 Oct 2026, original-anchored rounds (see work/song/chain_a.txt, pool_scored.txt)
+- Critic noise is about +/-1.5 on the same stanza across rounds (6,5,5,4), so a single score cannot certify; the original's own stanzas ranged 3-8.
+- The measured checks are diagnostics only: the ORIGINAL fails them in 14 of 19 4-bar blocks (e.g. no internal rhyme in many blocks).
+- One 8-bar chain on a soft multisyllabic sound with idioms cashed on the rhyme (-ender: monkey/lender, legal tender, first-time offender) reached about 4-6 vs the original's best chain at 6-8. Its best lines were the ones resting on TRUE specific details (hostel holds your passport; goon bag pillow). The weak lines were invented filler.
+- 6 critic rounds reached: guard says drop the stanza and report the blocker. Blocker = true, specific, funny details/incidents only Joe has (the strongest lines all came from real facts).

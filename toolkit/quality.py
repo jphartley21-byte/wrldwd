@@ -1,10 +1,11 @@
 """quality: Claude's OWN pre-show gate. Nothing goes to Joe unless this says CLEARS THE BAR and the critic agrees.
   python toolkit/quality.py FILE [--block 4]      FILE = bars one per line (blank line = new stanza); comments with #
-This gates MY drafts, never Joe's lines. The floor comes from Joe's own bars (hook 1-12, V1 1-4), measured with rhyme_tools.quad_stats:
-  - length: 6-10 syllables per bar, mean <= 9.5 (Joe: 4-10, mean ~8; rejected v17 ran 11-14)
+This gates MY drafts, never Joe's lines. The floor comes from the ORIGINAL song (reference/original_lyrics.txt measured with rhyme_tools.quad_stats; re-derived 11 Oct 2026; Joe's own hook bars are below the original and no longer the anchor):
+  - length: 4-15 syllables per bar, block mean <= 12 (ORIGINAL: 2-15, mean 8.9; Joe's hook bars run shorter)
   - endings: >= 1 bar per block ends weak/feminine (Joe: 0-4)
   - rhyme: <= 1 bar per 4 without a 2-syllable end-tail partner (X-line allowed if marked with a leading '~')
   - density: >= 2 multisyllabic runs (Joe lowest block: 1) and >= 1 internal-rhyme bar per 4-bar block
+  - chains: in a stanza of 8+ bars at least 75% of bars share one end-sound family (original verse chains: 8 of 8, ~13 of 16)
   - no end word used 3+ times in a block; no filler/explainer phrases; no unconfirmed slang; <= 2 place names per 4 bars
 Passing this is necessary, NOT sufficient: a fresh-context critic must also score every bar (quality/gate.md).
 """
@@ -63,8 +64,8 @@ def main():
             continue
         q = R.quad_stats(bars)
         syl = q["syl"]
-        if any(s < 6 or s > 10 for s in syl): probs.append(f"length {syl} (want 6-10)")
-        if sum(syl) / len(syl) > 9.5: probs.append(f"mean length {sum(syl)/len(syl):.1f} > 9.5")
+        if any(s < 4 or s > 15 for s in syl): probs.append(f"length {syl} (original runs 4-15)")
+        if sum(syl) / len(syl) > 12: probs.append(f"mean length {sum(syl)/len(syl):.1f} > 12 (original blocks: mean 9, max 12.5)")
         if q["fem_end"] < 1: print("   note: no weak (feminine) ending in this block (Joe's blocks have 0-4); fine if deliberate")
         sch = q["scheme2"]
         def endkey(x):
