@@ -8,11 +8,11 @@ import glob, subprocess, sys, os
 HERE = os.path.dirname(os.path.abspath(__file__))
 SECS = [("Hook 1-4", 0, 4), ("Hook 5-8", 4, 8), ("Hook 9-16", 8, 16), ("V1 1-8", 16, 24), ("V1 9-16", 24, 32), ("V1 17-24", 32, 40), ("V1 25-32", 40, 48), ("V1 33-44", 48, 60), ("V2 1-8", 60, 68), ("V2 9-16", 68, 76)]
 run = lambda args, text: subprocess.run([sys.executable] + args, input=text, capture_output=True, text=True, encoding="utf8").stdout
-src = sys.argv[1] if len(sys.argv) > 1 else os.environ.get("ORIGINAL_LINES", "")
+src = sys.argv[1] if len(sys.argv) > 1 else os.environ.get("ORIGINAL_LINES", os.path.join(HERE, "..", "reference", "original_lyrics.txt"))
 if not src or not os.path.exists(src):
     print("CALIBRATION SKIPPED: original lines file not available (set ORIGINAL_LINES). Tools still run; they only report.")
     sys.exit(0)
-orig = [l.strip() for l in open(src, encoding="utf8") if l.strip()][:76]
+orig = [l.strip() for l in open(src, encoding="utf8") if l.strip() and not l.startswith("#")][:76]
 ok = True
 for n, a, b in SECS:
     out = run([os.path.join(HERE, "match.py"), "--slot", n, "-"], chr(10).join(orig[a:b])).splitlines()

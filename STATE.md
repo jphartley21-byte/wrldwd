@@ -7,7 +7,7 @@
 - Round 2: replacing idea lists with exhaustive banks (bank/, toolkit/bank.py, bank/index.html).
 
 ## Latest run (11 Oct 2026)
-- v17 was rejected by Joe (writing/rejected/). Quality guard added (CLAUDE.md principle 0, quality/gate.md). Three critic rounds + a bar-pool test run; NO draft cleared. Joe's verdict on the calibration sample: none of the 12 bars (his hook bars included) come close to even the worst line of the ORIGINAL. So the floor is the original's craft, and the critic needs the original's lines to calibrate; they are not in the repo. Blocker: Joe pastes the original lyrics into the chat (session only). Nothing is shown until the critic is calibrated and bars clear it.
+- v17 was rejected by Joe (writing/rejected/). Quality guard added (CLAUDE.md principle 0, quality/gate.md). Three critic rounds + a bar-pool test run; NO draft cleared. Joe's verdict on the calibration sample: none of the 12 bars (his hook bars included) come close to even the worst line of the ORIGINAL. So the floor is the original's craft, and the critic needs the original's lines to calibrate; they are not in the repo. Original lyrics now saved in reference/original_lyrics.txt (Joe's request). Next: calibrate critic on them, set the measured floor from the original, write chains to that standard. Nothing is shown until it clears.
 - (older) - Full pipeline run end to end: work/song/ (beats, stars, patterns, draft notes, review) -> writing/full_draft_v17.md (proposal; v16 untouched). Stars were Claude's provisional picks.
 
 ## Next
