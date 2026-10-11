@@ -16,7 +16,8 @@ for l in open(os.path.join(ROOT, "bank", "ovr.txt"), encoding="utf8"):
         w, p = l.rstrip("\n").split("\t"); R.OVR[w] = p
 
 KNOWN = {}
-for p in glob.glob(os.path.join(ROOT, "bank", "*.csv")):
+# Joe-verified and hand-built banks first; the bulk Wiktionary import last so it never overrides them
+for p in sorted(glob.glob(os.path.join(ROOT, "bank", "*.csv")), key=lambda x: (os.path.basename(x) == "slang_wiktionary.csv", os.path.basename(x))):
     b = os.path.basename(p)
     if b in ("rhymes.csv", "wordplay_soundalikes.csv"):
         continue
