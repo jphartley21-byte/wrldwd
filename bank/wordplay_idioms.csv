@@ -1,0 +1,249 @@
+id,type,text,items,sound,places,tags,source,joe_says_it,status
+,idiom_cashable,Bored stiff,"literal: stiff = rigid; pun: board/bored, stiff drink; Bordeaux, any airport",bored/board,Bordeaux; airport,boredom,agent,,to check
+,idiom_cashable,Down under,"literal: under the equator; pun: under = underwear, thunder down under",under/thunder,Sydney; Perth; Auckland,aus; nz,agent,,to check
+,idiom_cashable,Jump the gun,"literal: leap over a firearm; pun: bungee jump, skydive jump, gun/Guam",gun/Guam,Queenstown; Taupo,nz; adrenaline,agent,,to check
+,idiom_cashable,Cold turkey,"literal: chilled bird; pun: Pavos, Christmas in Bergen, quitting the shroom shakes",turkey/Turkiye,Bergen; Istanbul; Pavos,spain; norway; xmas,agent,,to check
+,idiom_cashable,Talking turkey,"literal: chatting to a bird; pun: Pavos = money talk, Istanbul",turkey,Istanbul; Madrid,money,agent,,to check
+,idiom_cashable,Go bananas,"literal: fruit; pun: banana pancake trail, Bangkok/Banana",banana/Bangkok,Pai; Vang Vieng; Bali,sea,agent,,to check
+,idiom_cashable,Banana pancake trail,"literal: backpacker route in SE Asia; pun: pancake flat, pancake Day",trail,Pai; Hanoi; Luang Prabang,sea; backpacker,agent,,to check
+,idiom_cashable,Hit the road,"literal: strike tarmac; pun: Honda Win ride, road trip Oslo",road/rode,Hai Van; Oslo; Dublin,bikes,agent,,to check
+,idiom_cashable,Rode to ruin,"literal: ride to disaster; pun: rode/road, Honda Win crash",rode/road,Hai Van; Hanoi,vietnam; bikes,agent,,to check
+,idiom_cashable,Wing it,"literal: use a wing; pun: canyon swing, plane wing",wing,Queenstown; Hobbiton,nz,agent,,to check
+,idiom_cashable,Fly by the seat of your pants,"literal: aeroplane seat; pun: seat/Seat (car), skydive pants",seat,Taupo; Queenstown,nz; sky,agent,,to check
+,idiom_cashable,Jet lag,"literal: a lag of jets; pun: lag/lager, jet/Jette",lag/lager,Bangkok; Sydney,flights,agent,,to check
+,idiom_cashable,Out of pocket,"literal: left the pocket; pun: pocket money, pocket/Pokhara",pocket,Kathmandu; Marrakesh,money,agent,,to check
+,idiom_cashable,Break the bank,"literal: smash a bank; pun: bank/Bangkok, Bank holiday",bank,Bangkok; Zurich,money,agent,,to check
+,idiom_cashable,Cost an arm and a leg,"literal: limbs as currency; pun: arm/Armenia, leg/Legoland",leg,Zurich; Interlaken,money,agent,,to check
+,idiom_cashable,Cheap as chips,"literal: chips at a chippy; pun: chips/Chiang, Cornwall chippy",chips,Padstow; Dawlish; Cornwall,food; uk,agent,,to check
+,idiom_cashable,Bacon butty,"literal: bread roll; pun: Bacon (painter), butt/Butte",butty,Reading; Bristol,food; uk,agent,,to check
+,idiom_cashable,Full English,"literal: all of England; pun: English/Anglish, Dawlish",English,Dawlish; Padstow,food; uk,agent,,to check
+,idiom_cashable,Spend a penny,literal: coin in loo; pun: penny/Penang,penny/Penang,Penang; Kuala Lumpur,money; toilet,agent,,to check
+,idiom_cashable,Bob a job,literal: a shilling for work; pun: grape picking work,job,Barossa; Hunter Valley,aus; work,agent,,to check
+,idiom_cashable,Grape expectations,literal: Dickens pun on grapes; pun: grape picking,grape/great,Barossa; Margaret River; Yarra Valley,aus; wine,agent,,to check
+,idiom_cashable,Sour grapes,"literal: bitter fruit; pun: goon sour, grape picking sore back",grapes,Barossa; Hunter Valley,aus; wine,agent,,to check
+,idiom_cashable,Drunk as a lord,"literal: nobleman drunk; pun: lord/Lord Howe, goon",lord,Sydney; Perth,drink,agent,,to check
+,idiom_cashable,Hair of the dog,"literal: dog fur; pun: dog/Dogs of Rovinj, Honda hangover",dog,Bangkok; Koh Phangan,drink; hangover,agent,,to check
+,idiom_cashable,Hammered,"literal: struck with a hammer; pun: hammer/Hamer, Hammersmith",hammer,Koh Phangan; Magaluf,drink; uk,agent,,to check
+,idiom_cashable,Wasted,"literal: thrown away; pun: waist/waste, Waste of Space",waist/waste,Koh Phangan; Vang Vieng,drink; party,agent,,to check
+,idiom_cashable,Off my face,literal: not on face; pun: face/Faro,face,Faro; Ibiza,party,agent,,to check
+,idiom_cashable,Mad as a hatter,"literal: nutty milliner; pun: Mad Monkey, hatter/Hattusa",hatter,Sydney; Byron Bay,hostel,agent,,to check
+,idiom_cashable,Mad Monkey hostel,"literal: crazy primate house; pun: monkey = GBP 500, funky monkey",monkey/monkey slang,Sydney,hostel; money,joe_notes,,to check
+,idiom_cashable,Cheeky monkey,literal: rude primate; pun: monkey = GBP 500,monkey,Sydney; Kuala Lumpur,money; animal,agent,,to check
+,idiom_cashable,Monkey business,"literal: ape trades; pun: monkey = 500 quid, shady dealings",monkey,Sydney; Bali,money; animal,agent,,to check
+,idiom_cashable,Make a monkey out of,literal: turn into ape; pun: monkey/500 pound note,monkey,Ubud; Sydney,animal; money,agent,,to check
+,idiom_cashable,Brass monkey weather,"literal: cold; pun: brass monkeys, 500 brass",monkey,Edinburgh; Reykjavik,cold; money,agent,,to check
+,idiom_cashable,Gone to the dogs,"literal: dogs took it; pun: Dogs, Dogs of Dubrovnik",dogs,Dubrovnik,uk,agent,,to check
+,idiom_cashable,Raining cats and dogs,"literal: animals falling; pun: cats and dogs, Cairns rain",cats/Cairns,Cairns; Edinburgh,weather,agent,,to check
+,idiom_cashable,Rain check,"literal: check the rain; pun: cheque/check, Czech/check (Prague)",check/Czech,Prague; Manchester,weather; homophone,agent,,to check
+,idiom_cashable,Check mate,"literal: chess end; pun: Czech mate, Prague",check/Czech,Prague; Bratislava,homophone,agent,,to check
+,idiom_cashable,Spill the beans,"literal: tip over beans; pun: beans/Bean (Mr), Beans on toast, Bean/Bern",beans,Bern,food,agent,,to check
+,idiom_cashable,Full of beans,"literal: bean-stuffed; pun: Heinz, Bern",beans,Bern; Zurich,food,agent,,to check
+,idiom_cashable,Cool beans,literal: chilled legumes; pun: beans/Bean,beans,Zurich,slang,agent,,to check
+,idiom_cashable,Not my cup of tea,"literal: wrong mug; pun: tea/Thai, cuppa/Cuppa Cabana",tea/T,Bangkok,slang; uk,agent,,to check
+,idiom_cashable,Sandwich short of a picnic,"literal: missing food; pun: sand which, Sandwich Kent",sand/sand which,Sandwich; Padstow,uk,agent,,to check
+,idiom_cashable,Bun in the oven,"literal: pregnant; pun: bun/bin (Briz bin), Liz bun (Lisbon)",bun,Lisbon; Brisbane,homophone; joe,agent,,to check
+,idiom_cashable,Bun fight,literal: pastry brawl; pun: Liz bun Lisbon,bun,Lisbon,food,agent,,to check
+,idiom_cashable,Taking the biscuit,"literal: swiping a biscuit; pun: biscuit/Biskra, Lotus biscoff",biscuit,Bergen; Oslo,food,agent,,to check
+,idiom_cashable,Tip of the iceberg,"literal: top of ice; pun: Iceland, Reykjavik, Fiordland",iceberg,Reykjavik; Milford Sound,cold,agent,,to check
+,idiom_cashable,Break the ice,"literal: crack ice; pun: Iceland, ice/Ibiza",ice,Reykjavik; Ibiza,cold,agent,,to check
+,idiom_cashable,Sold down the river,"literal: sold along a river; pun: tubing down the river in Laos, Mekong",river,Vang Vieng,laos; river,agent,,to check
+,idiom_cashable,Up the creek,"literal: in a stream; pun: creek/Crikey, tubing",creek,Vang Vieng; Cairns,aus,agent,,to check
+,idiom_cashable,Sink or swim,"literal: drown or float; pun: scuba, swim/Swim Fiji",swim,Koh Tao; Rarotonga,scuba,agent,,to check
+,idiom_cashable,Fish out of water,literal: stranded fish; pun: scuba,fish,Koh Tao; Cairns,scuba; animal,agent,,to check
+,idiom_cashable,Plenty more fish in the sea,"literal: other fish; pun: Seas/Seattle? loose, Ha Long Bay",sea/see,Ha Long Bay; Koh Tao,scuba,agent,,to check
+,idiom_cashable,Drop in the ocean,literal: a drip in sea; pun: drop = bungee drop,drop,Queenstown,nz,agent,,to check
+,idiom_cashable,Over the moon,literal: above lunar rock; pun: Full Moon Party,moon,Koh Phangan,thailand; party,joe_notes,,to check
+,idiom_cashable,Once in a blue moon,literal: rare moon; pun: Full Moon Party blue paint,moon,Koh Phangan,thailand,agent,,to check
+,idiom_cashable,Shoot the moon,"literal: fire at moon; pun: bucket, shots at Full Moon Party",moon,Koh Phangan,thailand; party,agent,,to check
+,idiom_cashable,Land Down Under,literal: Aus; pun: Under/Thunder,under,Perth; Sydney,aus,agent,,to check
+,idiom_cashable,Throw a sickie,"literal: lob an ill person; pun: sick days, shroom shake sick",sickie,Koh Phangan,aus; thailand,agent,,to check
+,idiom_cashable,Fair dinkum,literal: honest dinkum; pun: dink/dinky,dinkum,Alice Springs,aus; slang,agent,,to check
+,idiom_cashable,Chuck a wobbly,literal: toss a wobble; pun: wobble/Wobbly Wallaby,wobbly,Sydney,aus; slang,agent,,to check
+,idiom_cashable,Sweet as,literal: sweet; pun: sweet as bro NZ,as,Auckland,nz; slang,agent,,to check
+,idiom_cashable,Heaps good,literal: piles; pun: heaps/Hobart,heaps,Hobart,aus; nz,agent,,to check
+,idiom_cashable,Hit the sack,"literal: strike a bag; pun: sack/Sa Pa, hostel bunk",sack,Sapa,sleep,agent,,to check
+,idiom_cashable,Take a rain check,literal: raincheck; pun: Czech,Czech,Prague,homophone,agent,,to check
+,idiom_cashable,Hang loose,literal: dangle slack; pun: loose/Lucerne? hang/Hong Kong,hang,Hong Kong; Hanoi,slang,agent,,to check
+,idiom_cashable,Hang ten,"literal: ten toes on board; pun: ten/tin? Bondi, board/bored",board,Bondi; Byron Bay,surf,agent,,to check
+,idiom_cashable,Catch a wave,literal: grab water; pun: wave/Waiheke,wave,Bondi; Noosa,surf,agent,,to check
+,idiom_cashable,Wipe out,literal: erase; pun: wipe-out on a Honda,wipe,Gold Coast; Hanoi,surf; bikes,agent,,to check
+,idiom_cashable,Top banana,literal: boss fruit; pun: banana/Bangkok,banana,Bangkok,sea,agent,,to check
+,idiom_cashable,Going Dutch,"literal: split bill; pun: Dutch/Amsterdam, Rotter damn",Dutch,Rotterdam; Amsterdam,money; netherlands,agent,,to check
+,idiom_cashable,Double Dutch,literal: gibberish; pun: Dutch/touch,Dutch,Amsterdam,netherlands,agent,,to check
+,idiom_cashable,Pardon my French,literal: excuse the language; pun: French/Bordeaux greeting,French,Bordeaux; Paris,france,agent,,to check
+,idiom_cashable,French leave,literal: absent without asking; pun: Calais exit,leave,Calais; Nantes,france,agent,,to check
+,idiom_cashable,Swiss roll,"literal: cake; pun: roll/role, Swiss money",Swiss roll,Zurich; Bern,food,agent,,to check
+,idiom_cashable,Cloud nine,literal: ninth cloud; pun: nine/Nine Zell,nine,Zell am See,sky,agent,,to check
+,idiom_cashable,Rock bottom,"literal: base of rock; pun: Uluru, rock bottom of canyon",rock,Uluru; Pai,rock; aus,agent,,to check
+,idiom_cashable,Between a rock and a hard place,literal: squeezed stone; pun: Pai Canyon edges,rock,Pai,thailand,agent,,to check
+,idiom_cashable,Tongue in cheek,literal: tongue inside face; pun: cheek/Cheek-y,cheek,Dublin,uk,agent,,to check
+,idiom_cashable,Sweating like a pig,literal: pig sweat; pun: pig/peg,sweat,Bangkok; Kuala Lumpur,heat,agent,,to check
+,idiom_cashable,Cool as a cucumber,literal: chilled veg; pun: cool/Kool,cool,Reykjavik,cold,agent,,to check
+,idiom_cashable,Cold shoulder,"literal: chill arm; pun: shoulder/Shoulder of lamb, Norway",cold,Bergen,norway,agent,,to check
+,idiom_cashable,In a pickle,literal: in brine; pun: pickle/Piccolo,pickle,Bratislava,food,agent,,to check
+,idiom_cashable,Out of the blue,literal: from sky; pun: blue/Blu Rarotonga,blue,Rarotonga; Fiji,sea,agent,,to check
+,idiom_cashable,Walk on air,literal: step on gas; pun: air/Eire,air/Eire,Dublin; Donegal,ireland,agent,,to check
+,idiom_cashable,Walking on sunshine,literal: step on sun; pun: Sunshine Coast,sunshine,Noosa; Gold Coast,aus,agent,,to check
+,homophone_pun,bored / board,text: bored~board; pun: bored though~Bordeaux~boarded; plane boarding,bored/board,Bordeaux; Porto,airport; joe,joe_notes,,to check
+,homophone_pun,Rotter damn / Rotterdam,damn = swear-lite; pun: Rotter damn~Rotterdam,rotter-dam,Rotterdam,netherlands,joe_notes,,to check
+,homophone_pun,Amsterdam / Isle of Man,Amster-dam rhymes Isle of Man (slant),am-ster-dam/an,Amsterdam; Douglas,netherlands; iom,joe_notes,,to check
+,homophone_pun,Lisbon / Liz bun,Liz bun; Lisbon rhymes Brisbane,liz-bun,Lisbon,portugal,joe_notes,,to check
+,homophone_pun,Brisbane / Briz bin,Brisbane Briz bin,briz-bin,Brisbane,aus,joe_notes,,to check
+,homophone_pun,Bordeaux / bored though,bored though~Bordeaux~boarded,bor-doh,Bordeaux,france,joe_notes,,to check
+,homophone_pun,plane / plain,plain plane,plane,airport,flights,agent,,to check
+,homophone_pun,Dam / damn,Amsterdam dam~damn,dam,Amsterdam; Rotterdam,netherlands,agent,,to check
+,homophone_pun,Dahl / doll,split like Dahl~doll,dahl,Bergen; Oslo,norway,joe_notes,,to check
+,homophone_pun,Skye / sky,Isle of Skye~sky,skye,Isle of Skye,scotland,agent,,to check
+,homophone_pun,Bern / burn,sunburn Bern,bern,Bern,switzerland,agent,,to check
+,homophone_pun,Nice / nice,"Nice, France: nice~Nice",niece,Nice,france,agent,,to check
+,homophone_pun,Wales / whales,Wales~whales~wails,wales,Snowdon; Pen y Fan,wales,agent,,to check
+,homophone_pun,Greece / grease,Greece~grease~Grease,grees,Athens; Crete,greece,agent,,to check
+,homophone_pun,Turkey / turkey,"country~bird, Pavos, Istanbul",turkey,Istanbul,turkey; money,agent,,to check
+,homophone_pun,Chile / chilly,Chile~chilly~chili,chilly,-,cold,agent,,to check
+,homophone_pun,Hungary / hungry,Hungary~hungry,hungry,Budapest,hungary,agent,,to check
+,homophone_pun,Czech / check,"Czech~check, Czech mate",check,Prague,czechia,agent,,to check
+,homophone_pun,Hue / hew / who,Hue~who~hue,hue,Hue,vietnam,agent,,to check
+,homophone_pun,Pai / pie,Pai~pie~Pi,pie,Pai,thailand,agent,,to check
+,homophone_pun,Bali / barley,Bali~barley~ballet,bah-lee,Bali,indonesia,agent,,to check
+,homophone_pun,Java / jar-va,"Java~Jarva, coffee",jarva,Java,indonesia,agent,,to check
+,homophone_pun,Fiji / fiddly,Fiji~fidgy,fee-jee,Fiji,fiji,agent,,to check
+,homophone_pun,Perth / pert,Perth~Perth/purse,perth,Perth,aus,agent,,to check
+,homophone_pun,Cairns / cans,Cairns~canes~cans,cairns,Cairns,aus,agent,,to check
+,homophone_pun,Nelson / Nelson,Nelson NZ~Admiral~Nelson Mandela,nelson,Nelson,nz,agent,,to check
+,homophone_pun,Ella / Ella,Ella (SL)~Ella Fitzgerald~hell-a,ella,Ella,srilanka,agent,,to check
+,homophone_pun,Kandy / candy,Kandy~candy,kandy,Kandy,srilanka,agent,,to check
+,homophone_pun,Galle / gal / Gaul,Galle~gal~Gaul,gal,Galle,srilanka,agent,,to check
+,homophone_pun,Hoi An / Hoi on,Hoi An~Hoi on~Joy in,hoy-an,Hoi An,vietnam,agent,,to check
+,homophone_pun,Hanoi / Hanoi towers,Hanoi~Ha noy~annoy,han-oy,Hanoi,vietnam,agent,,to check
+,homophone_pun,Phuket / f-ing,Phuket~pooh-ket (clean),poo-ket,Phuket,thailand,agent,,to check
+,homophone_pun,Koh Tao / cowtow,Koh Tao~cow-tow,koh-tow,Koh Tao,thailand,agent,,to check
+,homophone_pun,Krabi / crabby,Krabi~crabby,krabby,Krabi,thailand,agent,,to check
+,homophone_pun,Lao / Laos / lows,Laos~louse~lows,lowse,Laos,laos,agent,,to check
+,homophone_pun,Manila / vanilla,Manila~vanilla~Manila folder,manila,Manila,philippines,agent,,to check
+,homophone_pun,Tobago / to bargo,Tobago~tobacco-go,to-bay-go,Tobago,caribbean,agent,,to check
+,homophone_pun,Dubrovnik / dub rovnik,Dub-rov-nik~dub rove,dub-rov-nik,Dubrovnik,croatia,agent,,to check
+,homophone_pun,Split / split,Split the city~split like Dahl~bill split,split,Split,croatia; money,joe_notes,,to check
+,homophone_pun,Reading / Redding,Reading~reading a book~Redding,redding,Reading,home,agent,,to check
+,homophone_pun,Bristol / bristle,Bristol~bristle~Bris-toll,bristle,Bristol,home,agent,,to check
+,homophone_pun,Rome / roam,Rome~roam,roam,Rome,italy,agent,,to check
+,homophone_pun,Venice / Venus,Venice~Venus~Venus-ish,venis,Venice,italy,agent,,to check
+,homophone_pun,Naples / napples,Naples~nape-els~Naples/Nap,nay-pulls,Naples,italy,agent,,to check
+,homophone_pun,Pisa / pizza / peeza,Pisa~pizza~Pisa/peezer,peeza,Pisa,italy,agent,,to check
+,homophone_pun,Berlin / burr lin,Berlin~Burr-lin~Berlin wall,burlin,Berlin,germany,agent,,to check
+,homophone_pun,Munich / munch,Munich~munch (of food)~Mew-nik,mew-nik,Munich,germany,agent,,to check
+,homophone_pun,Sweden / sweating,Sweden~sweating~sweaten,sweeden,Stockholm,sweden,agent,,to check
+,homophone_pun,Finland / find land,Finland~find land,finland,Helsinki,finland,agent,,to check
+,homophone_pun,Iceland / ice land,Iceland the supermarket~ice land,iceland,Reykjavik,iceland,agent,,to check
+,homophone_pun,Cork / cork,"Cork~wine cork, goon bag cork",cork,Cork; Dublin,ireland; wine,agent,,to check
+,homophone_pun,Tonga / tonger,Tonga~tongue-a,tonga,Fiji,pacific,agent,,to check
+,homophone_pun,Hobart / hobbit-art,Hobart~hob art~Hobbit,hobart,Hobart; Hobbiton,aus; nz,agent,,to check
+,homophone_pun,Darwin / Darwin,Darwin the city~Charles Darwin,darwin,Darwin,aus,agent,,to check
+,homophone_pun,Adelaide / add a lade,Adelaide~add a ladle,add-a-laid,Adelaide,aus,agent,,to check
+,homophone_pun,Auckland / Orchard / Oakland,Auckland~Oakland~Orc land,orkland,Auckland,nz,agent,,to check
+,homophone_pun,Noosa / newsa,Noosa~new-sa~Nuss-a,noosa,Noosa,aus,agent,,to check
+,name_pun,Kendrick Lamar / afar,"Kendrick Lamar rhymes afar; far, bar",lah-mar/far,Hobart; Perth; Auckland,rapper; far,joe_notes,,to check
+,name_pun,JID / J-I-D,"initialism JID; pun: gid, kid",jid,-,rapper,joe_notes,,to check
+,name_pun,TT / tea tea,TT: Isle of Man TT races; tee-tee; tea-tea,tee tee,Douglas; Isle of Man,iom; bikes,joe_notes,,to check
+,name_pun,Pete and Bas / pizza,pizza Pete? loose,pete,-,rapper,agent,,unverified
+,name_pun,Dahl / dahl,Roald Dahl author~Dal dish~split like Dahl,dahl,Bergen; Oslo,author,joe_notes,,to check
+,name_pun,Stormzy / storm-z,stormy weather~Stormzy~Snowdon storm,stormy,Snowdon; Pen y Fan,grime,agent,,to check
+,name_pun,Dave / Dave,Dave rapper; Dave~save~wave,dave,Bondi,grime,agent,,to check
+,name_pun,Skepta / skip-ta,Skepta~skipped a~Skip-ta,skip-ta,-,grime,agent,,to check
+,name_pun,Wiley / wily,Wiley~wily~Wiley the Wanderer,wiley,-,grime,agent,,to check
+,name_pun,Little Simz / simps,Simz~sims~Sims,simz,-,rap,agent,,to check
+,name_pun,Slowthai / slow Thai,"Slowthai~slow Thai, Thai~Thailand",slow-tie,Bangkok; Pai,thailand; rap,agent,,to check
+,name_pun,"Tyler, the Creator / tile",Tyler~tiler,tyler,-,rap,agent,,to check
+,name_pun,Drake / drake,Drake~drake (male duck)~Drake passage,drake,-,rap; animal,agent,,to check
+,name_pun,Snoop Dogg / snoop dog,"Snoop~Scoop dog, dog",snoop,-,rap; animal,agent,,to check
+,name_pun,Eminem / M&M,Eminem~M and M~Em and Em,em-in-em,-,rap,agent,,to check
+,name_pun,Adele / a-dell,Adele~a dell~adelaide,a-dell,Adelaide,pop,agent,,to check
+,name_pun,Ed Sheeran / sheep ran,"Sheeran~sheep ran, sheep NZ",sheeran,Queenstown; Hobbiton,pop; nz; animal,agent,,to check
+,name_pun,Dua Lipa / Du a lip a,Dua~dua lipa~Dubai,doo-a,-,pop,agent,,to check
+,name_pun,Sam Smith / Sam Smith,Sam~Sam Smith~Sam's mith,sam,-,pop,agent,,to check
+,name_pun,Elton John / Elton,Elton~Elton John~Eltham,elton,-,pop,agent,,to check
+,name_pun,Kylie / Kylie,Kylie (Aus pop)~kylie (boomerang word),kylie,Melbourne,aus; pop,agent,,to check
+,name_pun,Crocodile Dundee / croc,Dundee~Dundee city; crocodile~croc,dundee,Kakadu; Darwin,aus; film; animal,agent,,to check
+,name_pun,Steve Irwin / earwin,Irwin~earwin~Irwin,irwin,Cairns; Darwin,aus; tv; animal,agent,,to check
+,name_pun,Bear Grylls / grills,Grylls~grills~grill,grills,Fiordland,tv,agent,,to check
+,name_pun,Michael Palin / Pa lin,Palin~pailin~Pai-lin (Pai),pay-lin,Pai,travel; tv,agent,,to check
+,name_pun,Judge Rinder / Rinder,"Rinder~grinder, rind",rinder,-,tv,agent,,to check
+,name_pun,Gordon Ramsay / ramsey,Ramsay~ram say~ram,ramsey,Edinburgh,tv; food,agent,,to check
+,name_pun,Jamie Oliver / olive,Oliver~olive~oliver,oliver,Naples,food,agent,,to check
+,name_pun,Gregg's / egg,Greggs~eggs~Greg,greggs,Reading; Bristol,brand; uk,agent,,to check
+,name_pun,Tesco / Tesco,Tesco~Tess go,tess-co,Reading,brand; uk,agent,,to check
+,name_pun,Pret / pray,Pret~pray~pret-ty,pret,-,brand,agent,,to check
+,name_pun,Thatchers / Thatcher,Thatchers cider~Thatchers~thatch,thatchers,Cornwall; Padstow,brand; cider,agent,,to check
+,name_pun,Rolex / roll-ex,Rolex~roll legs~Rolex Rolex,rolex,Zurich,brand; money,agent,,to check
+,name_pun,Bombay Sapphire / Bombay,Bombay~Mumbai~Bombay mix,bombay,-,brand; gin,agent,,to check
+,name_pun,Honda Win / Honda wins,Honda~Honda win~Honda swim,honda,Hanoi; Hai Van,vietnam; brand,joe_notes,,to check
+,name_pun,Mad Max / Mad Monkey,Max~Mad Monkey~Mad Max,mad,Sydney,film; hostel,joe_notes,,to check
+,name_pun,Van Gogh / van go,Van Gogh~van go~Vango tent,van-go,Arles,art,joe_notes,,to check
+,name_pun,Kong / King Kong,King Kong~Kong~Hong Kong~Kong Kong,kong,Hong Kong,film; animal,agent,,to check
+,name_pun,Lord of the Rings / Hobbiton,Hobbit~Hobbiton~Hobbitt,hobbit,Hobbiton,nz; film,agent,,to check
+,name_pun,Lonely Planet / lonely plane,Lonely Planet~lonely plane~planet,lonely,Cairns,brand; travel,agent,,to check
+,name_pun,Ryanair / Ryan there,Ryanair~Ryan air~Ryan hair,ryan-air,Dublin,brand; airline,agent,,to check
+,name_pun,easyJet / easy jet,easyJet~easy yet,easy-jet,Naples,brand; airline,agent,,to check
+,name_pun,Gandalf / gander,Gandalf~gander~Gandalf Gandalf,gand-alf,Hobbiton,film; nz,agent,,to check
+,name_pun,Gollum / gollum,Gollum~Gollum~Gullum,gollum,Hobbiton,film; nz,agent,,to check
+,name_pun,Beyonce / be yawn,Beyonce~Beyoncé~be-yawn-say,bee-yon-say,-,pop,agent,,to check
+,animal_pun,monkey,500 quid; Mad Monkey; funky monkey; monkey/monkey bar,monkey,Sydney; Ubud; Kuala Lumpur,money; slang,joe_notes,,to check
+,animal_pun,crocodile,"croc: croc of gold, crocs the shoes; Crocodile Dundee",croc/crock,Kakadu; Darwin; Cairns,aus,agent,,to check
+,animal_pun,alligator,"see you later alligator; see you later, Agra",later/alli,Agra,slang,agent,,to check
+,animal_pun,kangaroo,"roo: Ruud, roo/rue; kangaroo court",roo/rue,Perth; Alice Springs,aus,agent,,to check
+,animal_pun,wallaby,Wallabies rugby; wally; wall a bee,wally/wallaby,Sydney; Hobart,aus; rugby,agent,,to check
+,animal_pun,koala,koala tea; koala/call a; koala/cola,koala/cola,Port Macquarie,aus,agent,,to check
+,animal_pun,possum,play possum; opossum/awesome-possum,possum/awesome,Hobart,aus,agent,,to check
+,animal_pun,kiwi,kiwi fruit; Kiwi accent; a kiwi bar,kiwi/key-we,Queenstown; Auckland,nz,agent,,to check
+,animal_pun,gecko,gecko/ecko; gecko/get go,gecko/get go,Bangkok; Koh Tao,sea,agent,,to check
+,animal_pun,buffalo,buffalo/buff-a-low; Buffalo Bill; water buffalo (Laos),buffalo,Vang Vieng; Luang Prabang,laos,agent,,to check
+,animal_pun,elephant,elephant in the room; Elephant & Castle; ele-fan,elephant,Chiang Mai; Siem Reap,sea,agent,,to check
+,animal_pun,tiger,Tiger beer; tiger/Tigris; tiger economy,tiger,Singapore; Hanoi,beer; sea,agent,,to check
+,animal_pun,snake,snake eyes; snake/sneak; snake charmer,snake/sneak,Kathmandu; Marrakesh,morocco,agent,,to check
+,animal_pun,turkey,Pavos; Turkey country; turkey (flop); talking turkey,turkey,Bergen; Madrid; Istanbul,money; xmas,joe_notes,,to check
+,animal_pun,pavo / pavos,Spanish turkey; Pavos = money slang; pavo/pay-vo,pavo/pay-vo,Madrid; Majorca,spain,joe_notes,,to check
+,animal_pun,dog,hair of the dog; dog/dawg; top dog,dog/dawg,Dubrovnik; Rovinj,drink,agent,,to check
+,animal_pun,cat,"fat cat, cat/Katmandu (Kat-mandu)",cat/Kat,Kathmandu,slang,agent,,to check
+,animal_pun,lamb,Dolly lamb; Kendrick Lamar/Lamb; lamb/Lamar,lamb/lah-mar,-,rapper,agent,,to check
+,animal_pun,sheep,Ed Sheeran; sheep/ship; counting sheep (NZ has many),sheep/ship,Queenstown; Fiordland,nz,agent,,to check
+,animal_pun,cow,Koh/cow; holy cow; cow/Koh,cow/Koh,Koh Tao; Koh Phangan,thailand,agent,,to check
+,animal_pun,pig,Pai/pig; pig out; piggy bank,pig,Pai,thailand,agent,,to check
+,animal_pun,horse,horse/hoarse; Rotorua horse; horsepower (Honda),horse/hoarse,Hanoi; Rotorua,vietnam; bikes,agent,,to check
+,animal_pun,bull,bull/bully; Red Bull; bullish; bull/Bali,bull,Pamplona,spain,agent,,to check
+,animal_pun,bear,bear/bare; Bear Grylls; bear with me,bear/bare,Oslo; Bergen,norway,agent,,to check
+,animal_pun,wolf,wolf/Woolf; wolf of wall; Wolf/Sapa,wolf/woolf,Sapa,vietnam,agent,,to check
+,animal_pun,deer,dear/deer; Rotorua deer; Bambi,deer/dear,Fiordland,nz,agent,,to check
+,animal_pun,fox,Fox/fox; fox in socks; Foxton,fox,-,uk,agent,,to check
+,animal_pun,gull,Galle/gull; seagull Padstow; gull-ible,Galle/gull,Padstow; Galle,uk,agent,,to check
+,animal_pun,puffin,puffin; Puffin = Iceland? Puffin = puff in,puffin/puff in,Reykjavik,iceland,agent,,to check
+,animal_pun,penguin,Penguin books; Penguin biscuit; Phillip Island penguins,penguin,Melbourne; Christchurch,aus; nz,agent,,to check
+,animal_pun,shark,Shark attack; Shark/shock; loan shark,shark,Koh Tao; Fiji,scuba,agent,,to check
+,animal_pun,whale,whales/Wales; wail,whale/Wales,Kaikoura; Snowdon,wales; nz,agent,,to check
+,animal_pun,turtle,turtle/Tortola; turtle neck; Koh Tao turtles,turtle,Koh Tao,scuba,agent,,to check
+,animal_pun,manta ray,ray of sunshine; Ray/Rae,ray,Koh Tao,scuba,agent,,to check
+,animal_pun,octopus,Octopus card; octo/hop,octopus,Hong Kong,scuba,agent,,to check
+,animal_pun,clownfish,Nemo; clown/Clone,clown,Cairns,scuba,agent,,to check
+,animal_pun,dolphin,dolphin/dull-fin; Dolphin Dublin,dolphin,Kaikoura,nz,agent,,to check
+,animal_pun,frog,frog in the throat; French = frogs; frog/Frogner,frog,Bordeaux; Paris,france,agent,,to check
+,animal_pun,rat,rat race; Rat/Rat Pack; rats NZ,rat,Hanoi,slang,agent,,to check
+,animal_pun,bat,cricket bat; bat/Bath; fruit bat,bat/Bath,Bath,uk,agent,,to check
+,animal_pun,cockatoo,cockatoo/cock-a-two; cocky,cockatoo,Sydney,aus,agent,,to check
+,animal_pun,emu,emu/Emu; Emu lager; emu war,emu/Emu,Perth,aus,agent,,to check
+,animal_pun,dingo,dingo/bingo; dingo ate my baby (avoid),dingo/bingo,Alice Springs,aus,agent,,to check
+,animal_pun,lizard,lizard/Lizard Point Cornwall,lizard,Cornwall,uk,agent,,to check
+,animal_pun,spider,spider/spied-er; Sydney funnel-web,spider,Sydney,aus,agent,,to check
+,animal_pun,mosquito,mozzie; Mozzie/Mozzie wine; bite,mozzie,Hanoi; Bali,sea,agent,,to check
+,number_ladder,Money slang ladder 1 to 1000,"nicker 1; fiver 5; tenner 10; pony 25; score 20; ton 100; monkey 500; grand 1000; escalate: nicker, pony, monkey, bag of sand",-,Sydney,money; ladder,agent,,to check
+,number_ladder,Pony to monkey to grand,"pony 25 > monkey 500 > grand 1000; example: pony for a pint, monkey for the pad, grand for the ground",pony/monkey/grand,Sydney; Queenstown,money,joe_notes,,to check
+,number_ladder,Score to ton to monkey,"score 20, ton 100, monkey 500; example: score for the goon, ton for the Honda",-,Hanoi; Barossa,money,agent,,to check
+,number_ladder,Nicker and a quid,nicker = 1; quid = 1; example: nicker for the tuk-tuk,nicker/quid,Colombo,money,agent,,to check
+,number_ladder,Bag of sand ladder,bag of sand = 1000; a grand; monkey = half a bag,-,Zurich,money,agent,,to check
+,number_ladder,Fiver to tenner to Lady Godiva,"fiver 5, tenner 10, Lady Godiva = fiver (cockney); escalate: fiver, tenner, Godiva",godiva,Reading,money,agent,,to check
+,number_ladder,Ayrton Senna,tenner (cockney); Ayrton Senna~Tenna,senna,Naples,money; cockney,agent,,unverified
+,number_ladder,Pavos ladder,"Pavos = money (Spain slang); Pavos, pounds, pesos, euros; escalate with turkeys",pavos/pesos,Madrid; Majorca,money,joe_notes,,to check
+,number_ladder,Bag of sand / Grand / Gland,Grand~Gran~Grand Canyon; bag of sand = 1000,grand,Pai; Uluru,money,agent,,to check
+,number_ladder,Half a monkey,"250 = half monkey; quarter 125; escalate: nicker, half monkey, monkey",-,Bali,money,agent,,to check
+,number_ladder,Two monkeys,1000 = a grand; two monkeys = grand,-,Sydney,money,agent,,to check
+,number_ladder,Pony in the pocket,25; Pony Club; Pai pony,pony,Pai,money; animal,agent,,to check
+,number_ladder,Dollar to pound to peso to dong,currency ladder; Vietnam dong; baht; kip; riel; rupiah; escalate down to dong,dong/dung,Hanoi; Bangkok; Vientiane,money; sea,agent,,to check
+,number_ladder,Cockney slang ladder,"Lady Godiva fiver; Ayrton tenner; Cockle (a tenner, cock and hen); Pavarotti (tenner)",-,Reading; Naples,money; cockney,agent,,unverified
+,number_ladder,Skint to loaded ladder,"broke, boracic, skint, sorted, flush, loaded, minted (not Joe's words: pick only if he says them)",-,-,money; caution,agent,,unverified
