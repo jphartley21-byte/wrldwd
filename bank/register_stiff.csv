@@ -1,0 +1,152 @@
+id,type,text,items,sound,places,tags,source,joe_says_it,status
+,stoic_idiom,needs must,shrugging acceptance of the unavoidable,must,,weary;stoic,idiom,,to check
+,stoic_idiom,mustn't grumble,"glum contentment, lowered bar",grumble,,weary;stoic,idiom,,to check
+,stoic_idiom,keep calm and carry on,wartime poster calm,on,,stoic;officious,idiom,,to check
+,stoic_idiom,stiff upper lip,emotion kept firmly shut,lip,,stoic,idiom,,to check
+,stoic_idiom,it never rains but it pours,trouble arrives in packs,pours,,weary,idiom,,to check
+,stoic_idiom,make do and mend,rationing thrift,mend,,stoic;thrifty,idiom,,to check
+,stoic_idiom,could be worse,default British consolation,worse,,weary,idiom,,to check
+,stoic_idiom,can't complain,the highest praise available,complain,,weary;polite,idiom,,to check
+,stoic_idiom,it is what it is,flat resignation,is,,weary,idiom,,to check
+,stoic_idiom,worse things happen at sea,dismissing any disaster,sea,,stoic;weary,idiom,,to check
+,stoic_idiom,"least said, soonest mended","avoid the subject, always",mended,,stoic;discreet,idiom,,to check
+,stoic_idiom,least said the better,closing a topic with a door,better,,stoic;discreet,idiom,,to check
+,stoic_idiom,chin up,brisk cheer-up order,up,,stoic,idiom,,to check
+,stoic_idiom,soldier on,carrying on regardless,on,,stoic;weary,idiom,,to check
+,stoic_idiom,grin and bear it,endure with a rictus,it,,stoic;weary,idiom,,to check
+,stoic_idiom,such is life,a sigh in three words,life,,weary,idiom,,to check
+,stoic_idiom,one does what one can,"modest, put-upon duty",can,,stoic;polite,idiom,,to check
+,stoic_idiom,there's no use crying over spilt milk,"fussy proverb, wrong scale",milk,,weary;pious,idiom,,to check
+,stoic_idiom,pull yourself together,"stern, nanny-ish",together,,officious;stoic,idiom,,to check
+,stoic_idiom,every cloud has a silver lining,"relentless optimist, deadpan",lining,,weary,idiom,,to check
+,stoic_idiom,tomorrow is another day,calm deferral of doom,day,,weary;stoic,idiom,,to check
+,stoic_idiom,a stitch in time saves nine,prim prevention advice,nine,,officious,idiom,,to check
+,stoic_idiom,"waste not, want not",pantry sermon,not,,stoic;pious,idiom,,to check
+,stoic_idiom,no use fretting,dismissal of worry,fretting,,stoic,idiom,,to check
+,stoic_idiom,it'll all come out in the wash,vague faith things resolve,wash,,weary,idiom,,to check
+,stoic_idiom,these things are sent to try us,mock-saintly patience,us,,weary;pious,idiom,,to check
+,stoic_idiom,it'll be right as rain,bland reassurance,rain,,polite;stoic,idiom,,to check
+,stoic_idiom,onwards and upwards,managerial bounce,upwards,,officious;stoic,idiom,,to check
+,stoic_idiom,press on regardless,bloody-minded advance,regardless,,stoic,idiom,,to check
+,stoic_idiom,that's the way the cookie crumbles,shrugging fatalism,crumbles,,weary,idiom,,to check
+,stoic_idiom,we'll muddle through,amateur optimism,through,,stoic;weary,idiom,,to check
+,stoic_idiom,there's always tomorrow,the all-purpose postponement,tomorrow,,weary,idiom,,to check
+,stoic_idiom,business as usual,denial in a bowler hat,usual,,stoic;officious,idiom,,to check
+,stoic_idiom,"quite frankly, it could have been much worse",understatement after catastrophe,worse,,weary;stoic,idiom,,to check
+,stoic_idiom,least of my worries,dry downplaying,worries,,weary,idiom,,to check
+,formal_admin,with regret,"opener for bad news, bureaucratic",regret,,officious,admin-register,,to check
+,formal_admin,with sincere apologies for any inconvenience,customer-service ritual,inconvenience,,officious;polite,admin-register,,to check
+,formal_admin,kindly note,polite order dressed as memo,note,,officious,admin-register,,to check
+,formal_admin,as per my last email,passive-aggressive office,email,,officious;weary,admin-register,,to check
+,formal_admin,subject to availability,cheap hedge on anything,availability,,officious,admin-register,,to check
+,formal_admin,terms and conditions apply,fine-print shrug,apply,,officious,admin-register,,to check
+,formal_admin,please find attached,"email formality, applied to nonsense",attached,,officious,admin-register,,to check
+,formal_admin,for your information,clipped memo tone,information,,officious,admin-register,,to check
+,formal_admin,at your earliest convenience,slow-motion urgency,convenience,,officious;polite,admin-register,,to check
+,formal_admin,pending further review,indefinite stall,review,,officious,admin-register,,to check
+,formal_admin,this matter is now closed,"final, bureaucratic",closed,,officious,admin-register,,to check
+,formal_admin,we regret to inform you,rejection-letter opener,you,,officious,admin-register,,to check
+,formal_admin,please be advised,"warning, bloodless",advised,,officious,admin-register,,to check
+,formal_admin,in due course,promise with no date,course,,officious,admin-register,,to check
+,formal_admin,yours faithfully,stiff sign-off,faithfully,,officious;polite,admin-register,,to check
+,formal_admin,yours sincerely,stiff sign-off,sincerely,,officious;polite,admin-register,,to check
+,formal_admin,with immediate effect,sudden decree,effect,,officious,admin-register,,to check
+,formal_admin,no further action will be taken,case-file calm,taken,,officious,admin-register,,to check
+,formal_admin,for the avoidance of doubt,legalese clarifier,doubt,,officious,admin-register,,to check
+,formal_admin,without prejudice,legal hedge,prejudice,,officious,admin-register,,to check
+,formal_admin,the committee has noted your concern,"concern filed, nothing done",concern,,officious;weary,admin-register,,to check
+,formal_admin,noted and logged,tick-box acknowledgement,logged,,officious,admin-register,,to check
+,formal_admin,we value your custom,hollow retail line,custom,,officious;polite,admin-register,,to check
+,formal_admin,your call is important to us,hold-music lie,us,,officious;weary,admin-register,,to check
+,formal_admin,please take a seat,waiting-room command,seat,,officious;polite,admin-register,,to check
+,formal_admin,do not hesitate to contact us,closing boilerplate,us,,officious;polite,admin-register,,to check
+,formal_admin,a copy is available on request,forms-office reflex,request,,officious,admin-register,,to check
+,formal_admin,this is not a drill,"alarm, flat delivery",drill,,officious,admin-register,,to check
+,formal_admin,all rights reserved,copyright stamp on anything,reserved,,officious,admin-register,,to check
+,formal_admin,errors and omissions excepted,accountant's escape hatch,excepted,,officious,admin-register,,to check
+,formal_admin,the above is correct at time of going to press,print disclaimer,press,,officious,admin-register,,to check
+,formal_admin,by order of the management,faceless authority,management,,officious,admin-register,,to check
+,formal_admin,we cannot accept liability,insurer's wall,liability,,officious;weary,admin-register,,to check
+,formal_admin,the management reserves the right to refuse admission,door-sign menace,admission,,officious,admin-register,,to check
+,formal_admin,this will be dealt with in the usual manner,routine menace,manner,,officious;stoic,admin-register,,to check
+,authority_voice,anything to declare,customs officer opener,declare,border,officious,persona (invented),,to check
+,authority_voice,"step this way, sir",customs or security,sir,airport,officious,persona (invented),,to check
+,authority_voice,please remove your shoes and belt,airport security,belt,airport,officious,persona (invented),,to check
+,authority_voice,have you packed this bag yourself,airport check-in,yourself,airport,officious,persona (invented),,to check
+,authority_voice,is this your first visit to the country,passport control,country,border,officious,persona (invented),,to check
+,authority_voice,purpose of your stay,immigration deadpan,stay,border,officious,persona (invented),,to check
+,authority_voice,can I see some identification,bouncer or police,identification,,officious,persona (invented),,to check
+,authority_voice,you do not have to say anything,"police caution, trimmed",anything,,officious,persona (invented),,to check
+,authority_voice,I'm going to have to ask you to move along,police dispersal,along,,officious;weary,persona (invented),,to check
+,authority_voice,nothing to see here,police or steward,here,,officious,persona (invented),,to check
+,authority_voice,could you step out of the vehicle,traffic officer,vehicle,,officious,persona (invented),,to check
+,authority_voice,it may sting a little,doctor or nurse,little,,polite;officious,persona (invented),,to check
+,authority_voice,just a small scratch,doctor's reassurance,scratch,,polite,persona (invented),,to check
+,authority_voice,we'll see how it goes,"doctor, noncommittal",goes,,weary,persona (invented),,to check
+,authority_voice,take two and call me in the morning,doctor's brush-off,morning,,weary,persona (invented),,to check
+,authority_voice,the doctor will see you now,waiting-room summons,now,,officious,persona (invented),,to check
+,authority_voice,see me after class,teacher's threat,class,,officious,persona (invented),,to check
+,authority_voice,"I'm not angry, I'm just disappointed",teacher or parent,disappointed,,weary;pious,persona (invented),,to check
+,authority_voice,you'll be hearing from my solicitor,landlord or neighbour,solicitor,,officious,persona (invented),,to check
+,authority_voice,the deposit will be withheld,landlord,withheld,,officious;weary,persona (invented),,to check
+,authority_voice,"no pets, no parties, no exceptions",landlord rules,exceptions,,officious,persona (invented),,to check
+,authority_voice,the lease is quite clear on this,"landlord, smug",this,,officious,persona (invented),,to check
+,authority_voice,I'll need to speak to my manager,bank or shop staff,manager,,officious;weary,persona (invented),,to check
+,authority_voice,your account has been flagged,bank staff,flagged,,officious,persona (invented),,to check
+,authority_voice,your card has been declined,bank or till,declined,,officious,persona (invented),,to check
+,authority_voice,that will take five to seven working days,bank or post,days,,officious;weary,persona (invented),,to check
+,authority_voice,please stand clear of the doors,train announcer,doors,station,officious,persona (invented),,to check
+,authority_voice,this ferry is now boarding foot passengers,ferry staff,passengers,ferry,officious,persona (invented),,to check
+,authority_voice,please keep your seatbelt fastened,cabin crew,fastened,airport,officious;polite,persona (invented),,to check
+,authority_voice,the captain has switched off the seatbelt sign,flight deck calm,sign,airport,officious,persona (invented),,to check
+,authority_voice,all passengers must disembark,ferry or station order,disembark,ferry,officious,persona (invented),,to check
+,polite_british,sorry to bother you,apology before any demand,you,,polite,persona (invented),,to check
+,polite_british,if it's no trouble,"humble request, big ask",trouble,,polite,persona (invented),,to check
+,polite_british,I wouldn't say no,coy yes,no,,polite,persona (invented),,to check
+,polite_british,not to worry,soothing wave-off,worry,,polite,persona (invented),,to check
+,polite_british,don't mind me,passive-aggressive self-effacing,me,,polite;weary,persona (invented),,to check
+,polite_british,pardon me,interrupter's courtesy,me,,polite,persona (invented),,to check
+,polite_british,"excuse me, is this seat taken",tentative claim,taken,,polite,persona (invented),,to check
+,polite_british,after you,over-the-top yielding,you,,polite,persona (invented),,to check
+,polite_british,much obliged,old-fashioned thanks,obliged,,polite;pious,persona (invented),,to check
+,polite_british,how very kind,"gracious, a touch arch",kind,,polite,persona (invented),,to check
+,polite_british,that's very good of you,stiff gratitude,you,,polite,persona (invented),,to check
+,polite_british,if you wouldn't mind awfully,hesitant order,awfully,,polite,persona (invented),,to check
+,polite_british,I hate to be a nuisance,self-deprecation,nuisance,,polite,persona (invented),,to check
+,polite_british,it's quite all right,tight-lipped forgiveness,right,,polite;stoic,persona (invented),,to check
+,polite_british,no harm done,brushing off a wreck,done,,polite;stoic,persona (invented),,to check
+,polite_british,how do you do,formal greeting,do,,polite,persona (invented),,to check
+,polite_british,thanks ever so much,chirpy thanks,much,,polite,persona (invented),,to check
+,polite_british,lovely to see you,pleasantry delivered deadpan,you,,polite,persona (invented),,to check
+,polite_british,much appreciated,small-scale thanks,appreciated,,polite,persona (invented),,to check
+,polite_british,I do beg your pardon,comic grandeur,pardon,,polite;pious,persona (invented),,to check
+,pub_banter,go on then,reluctant yes,then,,weary;polite,persona (invented),,to check
+,pub_banter,you're all right,mild reassurance,right,,polite,persona (invented),,to check
+,pub_banter,fair play,grudging respect,play,,polite,persona (invented),,to check
+,pub_banter,it's your round,pub obligation,round,,officious,persona (invented),,to check
+,pub_banter,a swift half,modest drink claim,half,,polite,persona (invented),,to check
+,pub_banter,"same again, please",pub ritual,please,,polite,persona (invented),,to check
+,pub_banter,"not for me, I'm driving",sober excuse,driving,,polite,persona (invented),,to check
+,pub_banter,one for the road,parting drink,road,,weary,persona (invented),,to check
+,pub_banter,last orders,bar bell as doom,orders,,officious,persona (invented),,to check
+,pub_banter,"time, gentlemen, please",landlord's close,please,,officious,persona (invented),,to check
+,pub_banter,get them in,buying order,in,,weary,persona (invented),,to check
+,pub_banter,I'll have a pint of the usual,regular's line,usual,,polite,persona (invented),,to check
+,pub_banter,"cheers, big ears",cheeky toast,ears,,polite,persona (invented),,to check
+,pub_banter,steady on,brakes on the lad,on,,weary,persona (invented),,to check
+,pub_banter,not a bad drop,dry praise for beer,drop,,polite,persona (invented),,to check
+,weary_pious,Lord knows,faux-biblical sigh,knows,,weary;pious,idiom,,to check
+,weary_pious,bless him,patronising mercy,him,,pious;polite,idiom,,to check
+,weary_pious,God willing,hopeful hedge,willing,,pious,idiom,,to check
+,weary_pious,heaven help us,dramatic plea,us,,weary;pious,idiom,,to check
+,weary_pious,God save the King,royal exclamation,king,,pious;stoic,idiom,,to check
+,weary_pious,goodness gracious,mild shock,gracious,,pious;polite,idiom,,to check
+,weary_pious,good heavens,genteel alarm,heavens,,pious;polite,idiom,,to check
+,weary_pious,for my sins,self-mocking penance,sins,,pious;weary,idiom,,to check
+,weary_pious,there but for the grace of God,smug humility,god,,pious,idiom,,to check
+,weary_pious,the Lord giveth and the Lord taketh away,scriptural shrug,away,,pious;weary,idiom,,to check
+,weary_pious,bless his cotton socks,indulgent kindness,socks,,pious;polite,idiom,,to check
+,weary_pious,so be it,final acceptance,it,,pious;stoic,idiom,,to check
+,weary_pious,thank the Lord for small mercies,gratitude for scraps,mercies,,pious;weary,idiom,,to check
+,weary_pious,God forgive me,half-sincere guilt,me,,pious;weary,idiom,,to check
+,weary_pious,praise be,dry thanksgiving,be,,pious,idiom,,to check

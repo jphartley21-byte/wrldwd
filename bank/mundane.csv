@@ -1,0 +1,237 @@
+id,type,text,items,sound,places,tags,source,joe_says_it,status
+,vice_habit,a fag behind the bins,fag|bins,bins,,smoking|outside,common knowledge,,to check
+,vice_habit,rolling a cig on the doorstep,rollie|doorstep,doorstep,,smoking,common knowledge,,to check
+,vice_habit,a nicotine vape from the corner shop,vape|corner shop,shop,,vaping,common knowledge,,to check
+,vice_habit,a flutter on the three-thirty,flutter|three-thirty,three-thirty,,betting|horses,common knowledge,,to check
+,vice_habit,an accumulator that never came in,accumulator,in,,betting|football,common knowledge,,to check
+,vice_habit,a scratchcard in the petrol station,scratchcard,station,,gambling|petrol,common knowledge,,to check
+,vice_habit,the Lotto on a Saturday,Lotto|Saturday,saturday,,gambling,common knowledge,,to check
+,vice_habit,a Greggs on the way to work,Greggs,work,,pastry|breakfast,common knowledge,,to check
+,vice_habit,a sausage roll at half ten,sausage roll,ten,,pastry,common knowledge,,to check
+,vice_habit,a Friday night chicken shop,chicken shop,shop,,takeaway|Friday,common knowledge,,to check
+,vice_habit,a Chinese takeaway for one,Chinese|takeaway,one,,takeaway,common knowledge,,to check
+,vice_habit,a kebab at two a.m.,kebab|two a.m.,a.m,,takeaway|late,common knowledge,,to check
+,vice_habit,a cup of tea at every crisis,tea|crisis,crisis,,tea|break,common knowledge,,to check
+,vice_habit,a tea break that runs to forty minutes,tea break|forty minutes,minutes,,tea|work,common knowledge,,to check
+,vice_habit,a biscuit dunked too long,biscuit|dunk,long,,tea|snack,common knowledge,,to check
+,vice_habit,second helpings at a Sunday roast,second helpings|roast,roast,,food|Sunday,common knowledge,,to check
+,vice_habit,seconds on the Yorkshire puddings,Yorkshire puddings,puddings,,food|roast,common knowledge,,to check
+,vice_habit,a bacon roll with brown sauce,bacon roll|brown sauce,sauce,,breakfast|sauce,common knowledge,,to check
+,vice_habit,a full English before the flight,full English,flight,,breakfast|airport,common knowledge,,to check
+,vice_habit,a bag of chips on the front,chips|seafront,front,,seaside|food,common knowledge,,to check
+,vice_habit,a pickled egg at the bar,pickled egg,bar,,pub|snack,common knowledge,,to check
+,vice_habit,pork scratchings with the pint,pork scratchings,pint,,pub|snack,common knowledge,,to check
+,vice_habit,a packet of dry roasted peanuts,dry roasted peanuts,peanuts,,pub|snack,common knowledge,,to check
+,vice_habit,a quick half after work,half|work,work,,pub,common knowledge,,to check
+,vice_habit,one more round before last orders,round|last orders,orders,,pub|drinking,common knowledge,,to check
+,vice_habit,a Sunday lie-in with the papers,lie-in|papers,papers,,Sunday|lazy,common knowledge,,to check
+,vice_habit,a nap on the settee at four,nap|settee,four,,lazy,common knowledge,,to check
+,vice_habit,checking the footy scores on the loo,footy scores|loo,loo,,football|phone,common knowledge,,to check
+,vice_habit,a Monster at the garage,Monster|garage,garage,,energy drink,common knowledge,,to check
+,vice_habit,a meal deal eaten at the desk,meal deal|desk,desk,,lunch|work,common knowledge,,to check
+,vice_habit,a crumpet with too much butter,crumpet|butter,butter,,breakfast,common knowledge,,to check
+,vice_habit,moaning about the weather,weather|moan,weather,,British|small talk,common knowledge,,to check
+,vice_habit,saying sorry to a lamppost,sorry|lamppost,lamppost,,British|manners,common knowledge,,to check
+,vice_habit,a brew for the lads on site,brew|lads,site,,tea|builders,common knowledge,,to check
+,vice_habit,a paper from the newsagent,paper|newsagent,newsagent,,habit,common knowledge,,to check
+,vice_habit,a cheeky Nando's after the match,Nando's|match,match,,chicken|football,common knowledge,,to check
+,chore_admin,taking the bins out on a Tuesday,bins|Tuesday,tuesday,,bins|chore,common knowledge,,to check
+,chore_admin,missing the bin day again,bin day,again,,bins,common knowledge,,to check
+,chore_admin,a council tax reminder,council tax|reminder,reminder,,bills|council,common knowledge,,to check
+,chore_admin,a parking ticket under the wiper,parking ticket|wiper,wiper,,fine|car,common knowledge,,to check
+,chore_admin,a TV licence letter in red,TV licence|letter,red,,bills,common knowledge,,to check
+,chore_admin,an MOT that fails on the tyres,MOT|tyres,tyres,,car|test,common knowledge,,to check
+,chore_admin,a passport photo from the booth,passport photo|booth,booth,,passport|photo,common knowledge,,to check
+,chore_admin,a passport renewal form,passport renewal|form,form,,passport|admin,common knowledge,,to check
+,chore_admin,a jury service summons,jury service|summons,summons,,civic duty,common knowledge,,to check
+,chore_admin,a queue at the Post Office,queue|Post Office,office,,queue|post,common knowledge,,to check
+,chore_admin,a parcel card through the door,parcel card|door,door,,post,common knowledge,,to check
+,chore_admin,the self-checkout saying unexpected item,self-checkout|unexpected item,item,,shopping,common knowledge,,to check
+,chore_admin,a bus that never turns up,bus|timetable,up,,transport,common knowledge,,to check
+,chore_admin,a delayed train with no explanation,delayed train,explanation,,transport|rail,common knowledge,,to check
+,chore_admin,rail replacement bus on a Sunday,rail replacement bus,sunday,,transport|Sunday,common knowledge,,to check
+,chore_admin,the dentist on the NHS waiting list,dentist|waiting list,list,,NHS|health,common knowledge,,to check
+,chore_admin,a GP appointment at eight sharp,GP appointment|eight,sharp,,NHS|health,common knowledge,,to check
+,chore_admin,a prescription charge,prescription,charge,,NHS|health,common knowledge,,to check
+,chore_admin,a tax return in January,tax return|January,january,,tax|admin,common knowledge,,to check
+,chore_admin,the P60 in a drawer,P60|drawer,drawer,,tax|admin,common knowledge,,to check
+,chore_admin,a boiler service,boiler|service,service,,home|bills,common knowledge,,to check
+,chore_admin,a leaking tap on the landlord's list,tap|landlord,list,,home|rent,common knowledge,,to check
+,chore_admin,a deposit dispute with the letting agent,deposit|letting agent,agent,,rent,common knowledge,,to check
+,chore_admin,a direct debit that bounced,direct debit,bounced,,bank|bills,common knowledge,,to check
+,chore_admin,a trip to the tip on a Saturday,tip|Saturday,saturday,,chore|car,common knowledge,,to check
+,chore_admin,a loft clear-out,loft|clear-out,clear-out,,home,common knowledge,,to check
+,chore_admin,a washing line out in the drizzle,washing line|drizzle,drizzle,,chore|weather,common knowledge,,to check
+,chore_admin,a flat-pack wardrobe with a missing screw,flat-pack|wardrobe,screw,,IKEA|home,common knowledge,,to check
+,chore_admin,a meter reading for the energy firm,meter reading|energy,firm,,bills,common knowledge,,to check
+,chore_admin,hold music from the broadband provider,hold music|broadband,provider,,phone|bills,common knowledge,,to check
+,chore_admin,a click-and-collect in the rain,click-and-collect,rain,,shopping,common knowledge,,to check
+,chore_admin,a recycling box on the kerb,recycling box|kerb,kerb,,bins,common knowledge,,to check
+,chore_admin,a school run in the Corsa,school run|Corsa,corsa,,car|family,common knowledge,,to check
+,chore_admin,a speed awareness course,speed awareness course,course,,car|fine,common knowledge,,to check
+,chore_admin,a returns queue at the sorting office,returns|sorting office,office,,post|queue,common knowledge,,to check
+,chore_admin,a polling card in the post,polling card,post,,civic duty,common knowledge,,to check
+,chore_admin,a car park machine that eats coins,car park machine|coins,coins,,parking,common knowledge,,to check
+,object_brand,a pint in Spoons,Spoons|pint,spoons,,pub|chain,common knowledge,,to check
+,object_brand,a Tesco meal deal,Tesco|meal deal,deal,,supermarket|lunch,common knowledge,,to check
+,object_brand,a Clubcard in the wallet,Clubcard|wallet,wallet,,supermarket,common knowledge,,to check
+,object_brand,an Argos catalogue and a tiny pencil,Argos|pencil,pencil,,retail|catalogue,common knowledge,,to check
+,object_brand,a stop at Boots for the Advantage Card,Boots|Advantage Card,card,,pharmacy,common knowledge,,to check
+,object_brand,a Primark bag that splits,Primark|bag,splits,,clothes|cheap,common knowledge,,to check
+,object_brand,a Lidl middle aisle,Lidl|middle aisle,aisle,,supermarket,common knowledge,,to check
+,object_brand,a Greggs steak bake,Greggs|steak bake,bake,,pastry,common knowledge,,to check
+,object_brand,a bag of Walkers,Walkers|crisps,walkers,,snack,common knowledge,,to check
+,object_brand,a PG Tips bag in a mug,PG Tips|mug,mug,,tea,common knowledge,,to check
+,object_brand,a packet of Hobnobs,Hobnobs,hobnobs,,biscuit,common knowledge,,to check
+,object_brand,a Stanley knife in the van,Stanley knife|van,van,,tools,common knowledge,,to check
+,object_brand,an Oyster card,Oyster card,card,,London|transport,common knowledge,,to check
+,object_brand,a Network Railcard,Railcard,railcard,,rail|discount,common knowledge,,to check
+,object_brand,a 16-25 railcard past its date,railcard|date,date,,rail|discount,common knowledge,,to check
+,object_brand,a Wetherspoons carpet,Wetherspoons|carpet,carpet,,pub|chain,common knowledge,,to check
+,object_brand,a Pret sandwich,Pret|sandwich,sandwich,,lunch|chain,common knowledge,,to check
+,object_brand,a Costa flat white,Costa|flat white,white,,coffee|chain,common knowledge,,to check
+,object_brand,a Wilko mop,Wilko|mop,mop,,retail,common knowledge,,to check
+,object_brand,a B&M bargain,B&M|bargain,bargain,,retail|cheap,common knowledge,,to check
+,object_brand,a Poundland pound,Poundland,pound,,retail|cheap,common knowledge,,to check
+,object_brand,a Sports Direct mug,Sports Direct|mug,mug,,retail,common knowledge,,to check
+,object_brand,a Next catalogue,Next|catalogue,catalogue,,clothes,common knowledge,,to check
+,object_brand,a Marks and Sparks dine in,Marks and Sparks|dine in,in,,food|chain,common knowledge,,to check
+,object_brand,a Waitrose bag for life,Waitrose|bag for life,life,,supermarket,common knowledge,,to check
+,object_brand,a Co-op on the corner,Co-op|corner,corner,,shop,common knowledge,,to check
+,object_brand,a Sainsbury's Nectar card,Sainsbury's|Nectar,card,,supermarket,common knowledge,,to check
+,object_brand,a Morrisons petrol station,Morrisons|petrol,station,,supermarket,common knowledge,,to check
+,object_brand,a Ginsters pasty,Ginsters|pasty,pasty,,snack|garage,common knowledge,,to check
+,object_brand,a Cadbury Dairy Milk,Cadbury|Dairy Milk,milk,,chocolate,common knowledge,,to check
+,object_brand,a Mars bar at the till,Mars bar|till,till,,chocolate,common knowledge,,to check
+,object_brand,a Yorkshire Tea brew,Yorkshire Tea|brew,brew,,tea,common knowledge,,to check
+,object_brand,a jar of Marmite,Marmite|jar,marmite,,spread,common knowledge,,to check
+,object_brand,a bottle of HP sauce,HP sauce,sauce,,sauce,common knowledge,,to check
+,object_brand,a tin of Heinz beans,Heinz|beans,beans,,food,common knowledge,,to check
+,object_brand,a Jaffa Cake debate,Jaffa Cake|debate,debate,,biscuit,common knowledge,,to check
+,object_brand,a Wagon Wheel,Wagon Wheel,wheel,,biscuit,common knowledge,,to check
+,object_brand,a Fray Bentos pie,Fray Bentos|pie,pie,,food,common knowledge,,to check
+,object_brand,a Cup-a-Soup,Cup-a-Soup,cup-a-soup,,food,common knowledge,,to check
+,object_brand,a Brita jug,Brita jug,jug,,kitchen,common knowledge,,to check
+,object_brand,a Dyson in the cupboard,Dyson|cupboard,cupboard,,home,common knowledge,,to check
+,object_brand,a Sky box in the lounge,Sky box|lounge,lounge,,TV,common knowledge,,to check
+,object_brand,a Nokia brick,Nokia|brick,brick,,phone|retro,common knowledge,,to check
+,object_brand,a Freddo,Freddo,freddo,,chocolate,common knowledge,,to check
+,object_brand,a Lynx Africa,Lynx Africa,africa,,grooming|spray,common knowledge,,to check
+,object_brand,a Barbour jacket,Barbour|jacket,jacket,,clothes,common knowledge,,to check
+,object_brand,a Superdry hoodie,Superdry|hoodie,hoodie,,clothes,common knowledge,,to check
+,object_brand,a Ford Fiesta,Ford Fiesta,fiesta,,car,common knowledge,,to check
+,object_brand,a Vauxhall Corsa,Vauxhall Corsa,corsa,,car,common knowledge,,to check
+,object_brand,a Ryanair boarding pass,Ryanair|boarding pass,pass,,travel,common knowledge,,to check
+,object_brand,a Travelodge pillow,Travelodge|pillow,pillow,,hotel|chain,common knowledge,,to check
+,object_brand,a Ladbrokes pen,Ladbrokes|pen,pen,,betting,common knowledge,,to check
+,price_gbp,a pint in Wetherspoons for two pound ninety,pint|two pound ninety,ninety,,pub|GBP 2.90,estimate,,unverified
+,price_gbp,a Tesco meal deal for three fifty,meal deal|three fifty,fifty,,lunch|GBP 3.50,estimate,,unverified
+,price_gbp,a twenty deck for sixteen quid,twenty deck|sixteen quid,quid,,smoking|GBP 16.00,estimate,,unverified
+,price_gbp,a tenner in the back pocket,tenner,pocket,,cash|GBP 10.00,estimate,,to check
+,price_gbp,a fiver on a scratchcard,fiver|scratchcard,scratchcard,,gambling|GBP 5.00,estimate,,to check
+,price_gbp,an Oyster day cap of eight fifty,Oyster|day cap|eight fifty,fifty,,London|GBP 8.50,estimate,,unverified
+,price_gbp,excess baggage at sixty quid,excess baggage|sixty quid,quid,,airport|GBP 60.00,estimate,,unverified
+,price_gbp,an airport pint for eight pound,airport pint|eight pound,pound,,airport|GBP 8.00,estimate,,unverified
+,price_gbp,a Eurotunnel crossing for a hundred and fifty,Eurotunnel|hundred and fifty,fifty,,car|GBP 150.00,estimate,,unverified
+,price_gbp,a ferry cabin for ninety,ferry cabin|ninety,ninety,,ferry|GBP 90.00,estimate,,unverified
+,price_gbp,a hostel bed for twenty-five,hostel bed|twenty-five,twenty-five,,hostel|GBP 25.00,estimate,,unverified
+,price_gbp,a goon bag for ten quid,goon bag|ten quid,quid,,wine|GBP 10.00,estimate,,unverified
+,price_gbp,a beer in Bergen for twelve pound,beer|Bergen|twelve pound,pound,,Norway|GBP 12.00,estimate,,unverified
+,price_gbp,a Greggs sausage roll for one pound ten,sausage roll|one pound ten,ten,,pastry|GBP 1.10,estimate,,unverified
+,price_gbp,a coffee for three pound fifty,coffee|three fifty,fifty,,coffee|GBP 3.50,estimate,,unverified
+,price_gbp,a flat white for three ninety,flat white|three ninety,ninety,,coffee|GBP 3.90,estimate,,unverified
+,price_gbp,a bag of chips for three pound,chips|three pound,pound,,food|GBP 3.00,estimate,,unverified
+,price_gbp,a kebab for seven pound fifty,kebab|seven fifty,fifty,,takeaway|GBP 7.50,estimate,,unverified
+,price_gbp,a bag of Haribo for a quid,Haribo|quid,quid,,sweets|GBP 1.00,estimate,,unverified
+,price_gbp,a pint of milk for a pound,milk|pound,pound,,shop|GBP 1.00,estimate,,unverified
+,price_gbp,a loaf for a pound twenty,loaf|pound twenty,twenty,,shop|GBP 1.20,estimate,,unverified
+,price_gbp,a bus fare capped at two pound,bus fare|two pound,pound,,bus|GBP 2.00,estimate,,unverified
+,price_gbp,a parking ticket for sixty pound,parking ticket|sixty pound,pound,,fine|GBP 60.00,estimate,,unverified
+,price_gbp,a TV licence at one-sixty-nine,TV licence|one-sixty-nine,one-sixty-nine,,bills|GBP 169.50,estimate,,unverified
+,price_gbp,an MOT for fifty quid,MOT|fifty quid,quid,,car|GBP 50.00,estimate,,unverified
+,price_gbp,a passport photo for six pound,passport photo|six pound,pound,,passport|GBP 6.00,estimate,,unverified
+,price_gbp,a passport fee of ninety-four,passport|ninety-four,ninety-four,,passport|GBP 94.00,estimate,,unverified
+,price_gbp,a haircut for fifteen quid,haircut|fifteen quid,quid,,grooming|GBP 15.00,estimate,,unverified
+,price_gbp,a skin fade for twenty-two,skin fade|twenty-two,twenty-two,,grooming|GBP 22.00,estimate,,unverified
+,price_gbp,a Nando's for fourteen pound,Nando's|fourteen pound,pound,,chicken|GBP 14.00,estimate,,unverified
+,price_gbp,a bottle of Prosecco for nine pound,Prosecco|nine pound,pound,,drink|GBP 9.00,estimate,,unverified
+,price_gbp,a bottle of Smirnoff for twenty quid,Smirnoff|twenty quid,quid,,spirits|GBP 20.00,estimate,,unverified
+,price_gbp,a taxi from the airport for forty,taxi|airport|forty,forty,,taxi|GBP 40.00,estimate,,unverified
+,price_gbp,a Stansted Express at two-oh-five,Stansted Express|two-oh-five,two-oh-five,,rail|GBP 2.05,estimate,,unverified
+,price_gbp,a train from Bristol for sixty,train|Bristol|sixty,sixty,,rail|GBP 60.00,estimate,,unverified
+,price_gbp,a weekend away for three hundred,weekend away|three hundred,hundred,,travel|GBP 300.00,estimate,,unverified
+,price_gbp,a SIM card for ten,SIM|ten,ten,,phone|GBP 10.00,estimate,,unverified
+,price_gbp,a cash machine fee of two pound,ATM fee|two pound,pound,,cash|GBP 2.00,estimate,,unverified
+,price_gbp,a rucksack for thirty,rucksack|thirty,thirty,,travel|GBP 30.00,estimate,,unverified
+,price_gbp,a bag of Quavers for fifty pence,Quavers|fifty pence,pence,,snack|GBP 0.50,estimate,,unverified
+,price_gbp,a sun cream for twelve,sun cream|twelve,twelve,,travel|GBP 12.00,estimate,,unverified
+,price_gbp,a Freddo for thirty pence,Freddo|thirty pence,pence,,chocolate|GBP 0.30,estimate,,unverified
+,price_gbp,a round of four pints for twenty-six,round|four pints|twenty-six,twenty-six,,pub|GBP 26.00,estimate,,unverified
+,price_gbp,a taxi home for twenty quid,taxi|twenty quid,quid,,night|GBP 20.00,estimate,,unverified
+,price_gbp,a festival ticket for three hundred,festival ticket|three hundred,hundred,,music|GBP 300.00,estimate,,unverified
+,price_gbp,a speeding fine at a hundred,speeding fine|hundred,hundred,,car|GBP 100.00,estimate,,unverified
+,price_gbp,a Premier Inn at ninety a night,Premier Inn|ninety,night,,hotel|GBP 90.00,estimate,,unverified
+,price_gbp,a chippy tea for ten pound,chippy tea|ten pound,pound,,food|GBP 10.00,estimate,,unverified
+,price_gbp,a Ryanair seat pick for fifteen,Ryanair|seat pick|fifteen,fifteen,,flight|GBP 15.00,estimate,,unverified
+,price_gbp,a bag of ice for three pound,ice|three pound,pound,,shop|GBP 3.00,estimate,,unverified
+,look_grooming,a number two all over,number two,over,,haircut,common knowledge,,to check
+,look_grooming,a skin fade at the barber's,skin fade|barber,barber's,,haircut,common knowledge,,to check
+,look_grooming,a bald spot on the crown,bald spot|crown,crown,,hair|balding,common knowledge,,to check
+,look_grooming,a receding hairline in a hat,hairline|hat,hat,,hair|balding,common knowledge,,to check
+,look_grooming,a beard trim before the flight,beard trim,flight,,beard,common knowledge,,to check
+,look_grooming,a patchy beard on the left side,patchy beard,side,,beard,common knowledge,,to check
+,look_grooming,a splash of aftershave,aftershave,aftershave,,scent,common knowledge,,to check
+,look_grooming,a squirt of Lynx at the door,Lynx|door,door,,scent,common knowledge,,to check
+,look_grooming,tan lines from the sandals,tan lines|sandals,sandals,,sun,common knowledge,,to check
+,look_grooming,a sunburnt neck in the queue,sunburnt neck,queue,,sun,common knowledge,,to check
+,look_grooming,a farmer's tan at the barbecue,farmer's tan|barbecue,barbecue,,sun,common knowledge,,to check
+,look_grooming,a white-belly tan in the pool,white belly,pool,,sun,common knowledge,,to check
+,look_grooming,a sports shirt tucked into jeans,sports shirt|jeans,jeans,,clothes,common knowledge,,to check
+,look_grooming,a gel spike from 2004,gel spike,2004,,hair|retro,common knowledge,,to check
+,look_grooming,a clipper guard left on,clipper guard,on,,haircut,common knowledge,,to check
+,look_grooming,a monobrow plucked in a mirror,monobrow,mirror,,grooming,common knowledge,,to check
+,look_grooming,a razor burn on the chin,razor burn,chin,,shaving,common knowledge,,to check
+,look_grooming,a moisturiser from the Boots offer,moisturiser|Boots,offer,,skincare,common knowledge,,to check
+,look_grooming,a pair of white trainers kept clean,white trainers,clean,,clothes,common knowledge,,to check
+,look_grooming,a baseball cap over the thinning bit,cap|thinning,bit,,hair|balding,common knowledge,,to check
+,trip_mundane,priority boarding with no priority,priority boarding,priority,,airport|queue,common knowledge,,to check
+,trip_mundane,hand luggage that won't fit the sizer,hand luggage|sizer,sizer,,airport|bag,common knowledge,,to check
+,trip_mundane,a lanyard round the neck,lanyard,neck,,conference|badge,common knowledge,,to check
+,trip_mundane,sun cream on the ears,sun cream|ears,ears,,sun,common knowledge,,to check
+,trip_mundane,a travel adaptor with the wrong prongs,travel adaptor|prongs,prongs,,plug,common knowledge,,to check
+,trip_mundane,a European plug in a British socket,European plug,socket,,plug,common knowledge,,to check
+,trip_mundane,a hostel locker with no padlock,hostel locker|padlock,padlock,,hostel,common knowledge,,to check
+,trip_mundane,a laundry day in a foreign launderette,laundry|launderette,launderette,,chore,common knowledge,,to check
+,trip_mundane,a local SIM card in the kiosk,SIM card|kiosk,kiosk,,phone,common knowledge,,to check
+,trip_mundane,"a passport stamp, slightly smudged",passport stamp,smudged,,passport,common knowledge,,to check
+,trip_mundane,an ATM fee at the airport,ATM fee|airport,airport,,cash,common knowledge,,to check
+,trip_mundane,a bad exchange rate at the bureau,exchange rate|bureau,bureau,,money,common knowledge,,to check
+,trip_mundane,a tourist trap menu with photos,tourist trap|menu|photos,photos,,food,common knowledge,,to check
+,trip_mundane,a liquids bag in a tray,liquids|tray,tray,,security,common knowledge,,to check
+,trip_mundane,a belt off at security,belt|security,security,,security,common knowledge,,to check
+,trip_mundane,a gate change at the last minute,gate change,minute,,airport,common knowledge,,to check
+,trip_mundane,a neck pillow in the departure lounge,neck pillow|departure lounge,lounge,,airport,common knowledge,,to check
+,trip_mundane,a window seat next to the toilets,window seat|toilets,toilets,,flight,common knowledge,,to check
+,trip_mundane,a duty-free bag swinging,duty-free|bag,swinging,,airport,common knowledge,,to check
+,trip_mundane,a tiny soap from the hotel,soap|hotel,hotel,,hotel,common knowledge,,to check
+,trip_mundane,a breakfast buffet raid,breakfast buffet,raid,,hotel|food,common knowledge,,to check
+,trip_mundane,a towel on a sunbed at six a.m.,towel|sunbed,a.m,,holiday,common knowledge,,to check
+,trip_mundane,a currency card that declines,currency card|declined,declines,,money,common knowledge,,to check
+,trip_mundane,a phrasebook with one page used,phrasebook,used,,language,common knowledge,,to check
+,trip_mundane,a roaming charge nobody warned about,roaming charge,about,,phone|bill,common knowledge,,to check
+,trip_mundane,a free Wi-Fi password on a napkin,Wi-Fi|password,napkin,,internet,common knowledge,,to check
+,trip_mundane,a power bank at ten per cent,power bank,cent,,phone,common knowledge,,to check
+,trip_mundane,a boarding pass on a cracked screen,boarding pass|screen,screen,,phone|airport,common knowledge,,to check
+,trip_mundane,a coach transfer in a hot minibus,coach transfer|minibus,minibus,,transport,common knowledge,,to check
+,trip_mundane,a taxi driver's cousin's shop,taxi driver|shop,shop,,scam|taxi,common knowledge,,to check
+,trip_mundane,a metro map held upside down,metro map,down,,transport,common knowledge,,to check
+,trip_mundane,a day pass for the tram,day pass|tram,tram,,transport,common knowledge,,to check
+,trip_mundane,a museum queue in the sun,museum queue,sun,,tourist,common knowledge,,to check
+,trip_mundane,a fridge magnet from the gift shop,fridge magnet|gift shop,shop,,souvenir,common knowledge,,to check
+,trip_mundane,a postcard never posted,postcard,posted,,souvenir,common knowledge,,to check
+,trip_mundane,a bumbag at the front,bumbag,front,,bag|style,common knowledge,,to check
+,trip_mundane,a map on the phone with no signal,map|signal,signal,,phone,common knowledge,,to check
+,trip_mundane,a rental car with a scratch,rental car|scratch,scratch,,car,common knowledge,,to check
+,trip_mundane,a jet-lagged breakfast at three,jet lag|breakfast,three,,time,common knowledge,,to check
+,trip_mundane,a trolley dash at baggage reclaim,trolley|baggage reclaim,reclaim,,airport,common knowledge,,to check
+,trip_mundane,a customs form filled in biro,customs form|biro,biro,,border,common knowledge,,to check

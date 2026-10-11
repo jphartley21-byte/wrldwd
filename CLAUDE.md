@@ -31,6 +31,7 @@ Joe (33, from Reading, lives in Bristol) wants a deadpan British world-tour rap 
 - benchmark/: what the original does (reference). brief/: song_bible (partly superseded), suno prompts and rules. toolkit/: offline rhyme/flow tools (see toolkit/README.md). archive/: old stuff.
 
 ## Commands (`.claude/commands/`)
+Writing method (11 Oct 2026): research/craft_method.md. `/sound <seed>` builds a sound set, `/chain <plan>` writes a chain from it under the guard.
 `/beats`, `/bank`, `/patterns`, `/draft`, `/polish`, `/review`, `/voice-check`, `/lock`, `/research`, `/media-notes`, `/write` (chains beats->draft with stops).
 
 ## Toolkit in one line (all advisory)
