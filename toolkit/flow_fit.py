@@ -171,4 +171,4 @@ if __name__ == "__main__":
         ok, msg = fit(start + k, line)
         fails += ok is False
         print(f"{start + k:>2}. {'PASS' if ok else ('SKIP' if ok is None else 'FAIL')} | {line}\n    {msg}")
-    print("VERDICT:", "FLOW-MATCHED" if not fails else f"NOT YET ({fails} bars off the original's rhythm)")
+    print("VERDICT:", "FLOW MATCHES THE ORIGINAL (advisory)" if not fails else f"{fails} bars have a different rhythm from the original (advisory, not an error)")

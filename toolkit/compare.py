@@ -1,7 +1,7 @@
-"""ratchet: accept a new draft only if NOTHING got worse.
-  python toolkit/ratchet.py OLD_DRAFT NEW_DRAFT
-Fails (exit 1) if: a section that passed check_all now fails; a section's problem count rose; a keeper phrase or place
-(toolkit/keepers.json) disappeared; a locked line changed. Use it after every pass: if it fails, revert that change.
+"""compare: what changed between two drafts, against the original's shape. ADVISORY ONLY, never blocks (exit 0).
+  python toolkit/compare.py OLD_DRAFT NEW_DRAFT
+Reports: sections that now match / differ more from the original; keeper phrases and places that disappeared (so you can
+choose whether that was deliberate); Joe-locked lines that changed. Joe's ear decides which direction is better.
 """
 import io, json, os, sys, contextlib
 sys.stdout.reconfigure(encoding="utf-8")
@@ -39,9 +39,9 @@ if __name__ == "__main__":
     for slot in so:
         (ok_o, n_o), (ok_n, n_n) = so[slot], sn[slot]
         if ok_o and not ok_n:
-            bad.append(f"{slot}: passed before, fails now")
+            bad.append(f"{slot}: matched the original before, differs now")
         elif n_n > n_o:
-            bad.append(f"{slot}: problems rose {n_o} -> {n_n}")
+            bad.append(f"{slot}: differences from the original rose {n_o} -> {n_n}")
     lost = [k for k in keepers_report(open(new, encoding="utf8").read(), K) if k not in keepers_report(open(old, encoding="utf8").read(), K)]
     if lost:
         bad.append("keepers lost: " + ", ".join(lost))
@@ -49,9 +49,11 @@ if __name__ == "__main__":
         if l not in ln:
             bad.append(f"locked line changed: {l}")
     gained = [s for s in so if not so[s][0] and sn[s][0]]
-    print("gained:", gained or "nothing")
-    print("RATCHET:", "OK (nothing got worse)" if not bad else "REVERT: " + " | ".join(bad))
+    print("now match the original:", gained or "nothing new")
+    print("NOTES:", "nothing flagged" if not bad else " | ".join(bad))
+    if bad:
+        print("(Notes are for information. Keep the change if Joe prefers it.)")
     missing_now = keepers_report(open(new, encoding="utf8").read(), K)
     if missing_now:
-        print("keepers already missing (win back if possible):", ", ".join(missing_now))
-    sys.exit(0 if not bad else 1)
+        print("keepers not in the new draft (fine if deliberate):", ", ".join(missing_now))
+    sys.exit(0)

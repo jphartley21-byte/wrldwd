@@ -342,7 +342,7 @@ def main():
         ok = b >= a * slack if key != "allit_bars" else b >= a - 1
         fails += not ok
         print(f"{key}: ours {b} vs original {a} -> {'PASS' if ok else 'FAIL'}")
-    print("VERDICT:", "FORM-MATCHED (now judge sense and voice)" if not fails else f"NOT YET ({fails} fails)")
+    print("VERDICT:", "FORM MATCHES THE ORIGINAL (advisory; judge sense and voice)" if not fails else f"{fails} bars differ from the original (advisory, not an error)")
 
 
 if __name__ == "__main__":

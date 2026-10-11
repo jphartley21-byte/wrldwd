@@ -1,24 +1,12 @@
 ---
-description: Review lyric bars against the original with every check we have (main thread, no agents)
-argument-hint: <draft file or slot, e.g. writing/full_draft_v14.md or "V1 17-24">
+description: Stage 6. Advisory report on a draft or section: what it says, voice, craft, nearest original job, flow. Never fails or rewrites
+argument-hint: <draft file or slot, e.g. writing/full_draft_v16.md or "V1 17-24">
 ---
-Review $ARGUMENTS. Main thread only. Original lyrics live OUTSIDE the project at C:\Users\Joe\Documents\Worldwide_private\original_lines.txt (92 sung lines, chorus repeated); never copy them into the project or quote them in replies (CLAUDE.md rule 4). Run the steps IN ORDER; a bar that fails a gate is rewritten, not scored.
-
-1. CALIBRATE: `python toolkit/calibrate.py C:\Users\Joe\Documents\Worldwide_private\original_lines.txt` must say PASSED (original passes its own profiles and rhythm templates; Joe's locked bars pass; every Joe-rejected stanza in toolkit/tests/ is caught). If it fails, fix the tools first; never trust a PASS from an uncalibrated tool.
-2. AUTOMATED CHECKS, one command: `python toolkit/check_all.py --slot "<slot>" -` (or `--song FILE`). Slots: Hook 1-4, Hook 5-8, Hook 9-16, V1 1-8, V1 9-16, V1 17-24, V1 25-32, V1 33-44, V2 1-8, V2 9-16. It runs:
-   - match.py: the original's rhyme scheme annotated BY EAR (MANUAL_SCHEME; every pair the original rhymes must score >= 0.78, slant counted, British vowels), the rhyme-strength map (end-to-end and opening-to-end links incl. "Come on then ... Dublin"), bookends, internal rhyme density, syllables, endings, multis, alliteration;
-   - flow_fit.py: the rhythm MEASURED from the original audio: exact line length, end rhyme starting on the original's 16th-step, END SHAPE (the rhyme must start a word where the original's does, with the same weak syllables before/after: 'in LA-gos' w|Sw is not 'Ma-JOR-ca' wSw), strong/weak pattern, no weak syllable on a beat; advisory triplets in benchmark/flow_template.json;
-   - helpers freq: rare words (gate G2 prompt).
-   Text stress flags are auto-waived only where the measured flow passes. Every "x" line must be fixed.
-3. MEANING GATES (human; tools cannot judge these):
-   G1 plain sense (a sentence a mate would say in the pub; the stanza is one connected thought);
-   G2 recognisable (Joe's mates, 30s, southern English, get it instantly; no dated idioms like "gone for a Burton");
-   G3 not a technique carrier (a bar that exists only for a rhyme, pun or alliteration fails);
-   G4 if Joe gave a skeleton, also offer one fresh angle and say if his constraint is the weak point;
-   G5 never claim parity; always name the weakest bar;
-   G6 human voice: full spoken sentences, one scene per stanza, max one place per 2 bars in verses, accurate details (benchmark/authenticity_guide.md).
-4. JOB CHECK: for each bar, name the original line's job (roll-call greeting + place, register flip, cashed idiom, x3 list, short place line, closer, etc.) and confirm ours still does it; flag orphaned words (e.g. "kroner" after Norway was cut).
-5. SIDE BY SIDE: table, original vs ours per bar: rhyme tail (vowels + syllables), internal run, wordplay, imagery, character, other devices (benchmark/technique_audit.md). Truth flags: (invented) / (persona) / brands.
-5b. RATCHET: if this is a revision, `python toolkit/ratchet.py <previous draft> <this draft>` must say OK (no section went pass->fail, no keeper or true place lost, locked lines unchanged).
-6. STUCK RULE: +1 in STATE.md "Attempts"; if a trigger T1-T4 (CLAUDE.md) fires, pivot instead of editing again.
-7. REPORT (short): verdict per section, the weakest bar and one fix direction, open questions for Joe. Append 3 lines to writing/iteration_log.md. If Joe rejects a stanza, save it as toolkit/tests/rejected_<name>.txt (first line '# SLOT STARTBAR') so calibration catches it next time.
+Review $ARGUMENTS. Main thread. Advisory only: report, suggest, never reject, never rewrite Joe's lines.
+1. WHAT IT SAYS: one plain line per bar; flag bars that say little.
+2. VOICE: run the /voice-check logic (voice/profile.md, voice/calibration.md). 
+3. CRAFT HINTS: `python toolkit/check_all.py --slot "<slot>" -` or `--song FILE` (differences from the original are information, not errors; set ORIGINAL_LINES only if available); `python toolkit/rhyme_tools.py syllmap`. Say what is working (internal rhyme, multis, sound-alikes) as well as gaps.
+4. JOB CHECK (hint): the original line's job (greeting+place, register flip, cashed idiom, list, closer) vs ours; note orphaned words.
+5. FIVE-QUESTION CARD (voice/checklist.md) per stanza in one line each, and the weakest bar with one fix direction. Never claim parity with the original.
+6. If this is a revision: `python toolkit/compare.py <old> <new>` for gains/losses (information only).
+Report concisely: keep / tweak / cut per bar as a suggestion; open questions for Joe. Append 3 lines to writing/iteration_log.md. If Joe rejects a stanza, note it in voice/calibration.md (NOT ME) with his reason.

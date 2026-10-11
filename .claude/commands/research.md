@@ -1,0 +1,5 @@
+---
+description: Web-research a place, event, slang set, rhyme family or craft topic into research/, flagged for Joe to confirm
+argument-hint: <place | topic, e.g. "Laos tubing" or "multisyllabic rhyme craft">
+---
+Research $ARGUMENTS. Start from material/joe_notes.md and material/travel_history.md (what Joe actually did). Use WebSearch (standard first, extended for niche facts). Write findings into the right file: research/places.md, events.md, slang.md, rhyme-bank.md or craft.md, one section per place/topic: sensory details, correct local words and pronunciation, prices, events/festivals, characters/incidents Joe should confirm, rhymable words and sound-alikes, puns (animals welcome), plus source links. Mark each fact (verified) / (to confirm with Joe) / (persona). Technique only for craft: no lyric copying. For rhyme banks, generate with `python toolkit/rhyme_tools.py rhymes|mosaic|families` rather than typing lists. Report in 5 lines what was added and what Joe needs to confirm or prune.

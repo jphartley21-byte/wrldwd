@@ -1,11 +1,6 @@
 {
- "_note": "Things a fix may never silently delete. Joe edits this list; removing an item needs his OK. Phrases are matched case-insensitively.",
- "locked_lines": [
-  "Oh, bonjourno",
-  "Front row at the on-stage porno",
-  "Good show but the dame look bored, though",
-  "So boarded a plane out to Bordeaux"
- ],
+ "_note": "Joe-locked lines and things to flag if they disappear. ADVISORY (compare.py never blocks). Joe edits this list. Updated 11 Oct 2026: bars 1-4 un-locked because Joe rewrote them in v16.",
+ "locked_lines": [],
  "phrases": [
   "Nordic bride",
   "gap year",

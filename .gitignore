@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+material/media/**/*.mov
+material/media/**/*.mp4
+material/media/**/raw/
