@@ -102,7 +102,7 @@ def fit(bar_no, line):
     ri = t.get("rhyme_idx")
     if ri is not None and not t.get("advisory"):
         if n != len(orig):
-            why.append(f"line length {n} syllables vs original {len(orig)} (must be exact)")
+            why.append(f"line length {n} syllables vs original {len(orig)} (the original is exact; yours can differ)")
         our_ri = max(0, n - tail_len(line))
         es = t.get("end_shape")
         if es:
