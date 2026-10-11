@@ -68,3 +68,9 @@ hoodie	HH UH1 D IY0
 dont	D OW1 N T
 certi	S ER1 T IY0
 ouzo	UW1 Z OW0
+brunost	B R UW1 N AA2 S T
+aquavit	AA1 K W AH0 V IY2 T
+skål	S K AO1 L
+skaal	S K AO1 L
+barmaid	B AA1 R M EY2 D
+barmaids	B AA1 R M EY2 D Z
