@@ -1,3 +1,5 @@
+> NOTE (11 Oct 2026): common UK slang, NOT confirmed as Joe's. Joe has said he never says 'swear down' or 'skint'. Use voice/quiz.md for what he says; bank rows carry a `Joe says it?` field.
+
 # Slang bank: southern English, Reading / Bristol (for Joe's Worldwide track)
 
 Compiled 11 Oct 2026 from general knowledge of southern English slang, NOT from Joe's own speech. Rhyme partners come from `toolkit/rhyme_tools.py rhymes` (perfect, common words) or its `--mode near` where marked "slant". Nothing here is a lyric from a real song.

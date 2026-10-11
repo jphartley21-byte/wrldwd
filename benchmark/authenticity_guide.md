@@ -5,7 +5,7 @@ Joe: "decent first draft ... but they need a better understanding of flow and se
 1. TELEGRAPHESE. Dropped subjects, verbs and articles to fit the rhyme: "Laruns gendarme said fine", "Branch in Bratislava, joint endeavour", "Black tie on the four-by-four safari", "Red dot on the host at the after-party". Nobody talks like a headline. The original's lines are full sentences with I/we/he, a verb and small linking words (V1 L37-42 read like pub chat).
 2. PLACE CHECKLIST. Six places in eight bars reads like an itinerary. The original names about one place per four bars in the verses and lets the scene happen there.
 3. SCENE HOPPING. A stanza is ONE scene with cause and effect (caught -> bribe -> cop changes tune -> pub). v1 jumped Pyrenees -> Boomtown -> Gloucester Road with the same copper. Each line must follow from the last; pronouns must be clear.
-4. WRONG VOICE. Joe is from Reading, lives in Bristol: southern English. Not "nowt" (northern), not "esky" (Aussie). Consistent tics: mate, proper, sound, swear down, sorted, can't lie.
+4. WRONG VOICE. Joe is from Reading, lives in Bristol: southern English. Not "nowt" (northern), not "esky" (Aussie). Tics: NOT ESTABLISHED. An earlier agent guess listed 'mate, proper, sound, swear down, sorted, can't lie'; Joe says he never says 'swear down' (11 Oct 2026). Use voice/quiz.md and voice/profile.md instead.
 5. PHRASES NOBODY SAYS. "I'm sadly departing", "joint endeavour", "Odds-on I sign for it". Test: would Joe say it to a mate word for word? If you would only write it, cut it.
 6. FALSE DETAIL. You ride off the ferry at Douglas, not Laxey. Details must be right or a mate will notice.
 

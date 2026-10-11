@@ -1,31 +1,27 @@
-# Joe's voice profile (v0, 11 Oct 2026). INFERRED from evidence: Joe to confirm or correct every line.
+# Joe's voice profile (v1, 11 Oct 2026). EVIDENCE ONLY.
+v0 was wrong: it was built from agent-written lines and invented slang ("swear down", "skint", "sorted", "proper" were never Joe's). This version uses ONLY text tagged JOE in voice/provenance.md (his v15->v16 edits, his bars 1-4, his chat messages, material/joe_notes.md). Anything not shown by that text is left BLANK, not guessed. Add evidence or correct me.
 
-Evidence: Joe's edits v15 -> v16 (writing/full_draft_v16.md), his rejections in writing/iteration_log.md, CLAUDE.md rules, his pasted notes.
+## What the evidence shows (each point cites JOE lines)
+1. **Greeting stacking with sound-alike swaps:** "Oh, bonjourno", "Oh la ... Porto", "Oh lah to all Majorca" (JOE: bars 1, 2, 5). Greetings are mashed/mispronounced for fun, not translated.
+2. **Plain, short, flat reporting with dropped words:** "Went home for week got bored though" (no "a"), "Mopeds fun but a big bikes better", "Boss man bout to bring that order", "Pavos gonna pour this quarter" ("gonna", "bout"). Contracted, spoken, a bit ungrammatical.
+3. **Rhyme from sound, not sense:** bored though / Bordeaux / boarded; pulse / split like Dahl; Rotter damn / Rotterdam (notes); Amsterdam / Isle of Man (notes); Kendrick Lamar / afar (notes).
+4. **Name and brand puns:** "split like Dahl" (author), "King Kong bangin' on my chest", "Mad Man Van Go End game avenger" (Mad Max/Van Gogh/Avengers-style mash). Real names are welcome (Joe: "real artist names are fine").
+5. **Travel as the subject, real places and activities:** Porto, Bordeaux, Majorca, Bergen/fjords, Sri Lanka (written in Sinhala script), skiing, Sweden; notes add Laos tubing/weed pizza, Thai full moon/shroom shakes, Aus goon/grape-picking, Sydney hostel, NZ bungee.
+6. **Foreign words and scripts used as-is:** "skål", "මච" (Sinhala for "machan"), "bonjourno", "Pavos" (Spanish for turkeys; slang for money). He likes the local word as the joke.
+7. **Money, rounded and funny:** notes: "monkey = £500" (Mad Monkey hostel).
+8. **Deliberate misspelling/odd words are fine:** "Orthedepic", "swedish", "ski'd" (not tidied).
+9. **He rewrites lines he likes the sound of over lines that fit a template:** he removed tidy lines like "Stacking Swiss money, lending to debtors".
 
-## What his edits tell us
-- He drops lines built to fit a tool or a template ("Stacking Swiss money, lending to debtors", "Don't pay? Then you're back to the sender", "Then down Oslo way / Fifty kroner stayed for days") and writes back chatty, first-person, slightly scrappy lines ("Went home for week got bored though", "Import all sorts I'll sort ya", "Mopeds fun but a big bikes better").
-- He keeps sound-alike and slang play (Pavos/pour, pulse/Dahl, bored though/Bordeaux, Rotter damn). Puns come from how words SOUND in his accent, not from clever setups.
-- He replaces generic menace/boast with real travel and personal colour (Sri Lanka in Sinhala script, fjords, smorgasbord, bros in Porto, Orthopaedic / Swedish).
-- He is fine with rough grammar and stress as long as the line sounds like a bloke talking ("Went home for week").
-- He changed even the lines he previously locked (Front row ... porno), so nothing is sacred except what he says is.
+## Not enough evidence yet (do NOT assume)
+- Which British slang he actually says (mate? lovely? mint? sound?). Use voice/quiz.md. Until answered, write in plain neutral English plus only the words in JOE lines above.
+- How he swears, how formal/informal, how long his sentences run in speech, how he jokes with mates: needs voice samples (voice/samples/).
+- Whether the UNVERIFIED lines (most of V1/V2) are his taste: mark them in voice/provenance.md.
 
-## Voice rules (working, confirm)
-1. Southern English, Reading/Bristol: mate, swear down, sorted, proper, lads, bros, pricey, quid, skint, mad, lovely.
-2. Full spoken clauses with I/we/he; contractions; dropped articles are OK when a bloke would drop them ("Went home for week").
-3. Deadpan: big thing reported flatly; the funny word is the rhyme word, said flat; no wink, no explaining.
-4. Concrete money and objects (tenner, two quid, twenty's plenty, a grand, Thatchers, skin fade, cocoa), places named like a mate would, not a guidebook.
-5. Wordplay is sound-based and cheap-and-cheerful (homophones, name puns, cashed idioms), not elaborate metaphors.
-6. Self-deprecating and mates-in-the-room (Gaz, Dave, the missus, Mum, the lads).
-7. Keep it cheeky: no heavy swearing; deadpan drug and violence imagery is allowed.
+## How to add evidence (any of these helps)
+- Fill the tick-list quiz: voice/quiz.md (1 minute).
+- Paste 10-20 things you wrote or said naturally into voice/samples/ (messages, voice-note transcripts, old rhymes, captions).
+- Tell me which UNVERIFIED lines are really yours.
+- Keep choosing A/B variants in /draft: picks go to voice/calibration.md and update this file.
 
-## Never (from his feedback)
-- Gags with a setup and punchline; puns that announce themselves; explained jokes.
-- Itinerary lists and "holiday recount" detail that isn't cool or funny.
-- Words a mate wouldn't say (obscure idioms like "gone for a Burton", "good grouse").
-- Telegraphese, six places in eight bars, scene-hopping inside a stanza.
-- Real artist or film names; hobby/nerd material; vegetarian detail not yet approved (open decision).
-
-## Open questions for Joe (tick when answered)
-- [ ] Is the "Went home for week" style (dropped articles) a keeper or a draft shortcut?
-- [ ] Brand names OK (Thatchers, Rolex, Bombay Sapphire already in)? Real artists (Kendrick, JID) OK as name-drops?
-- [ ] Which Joe-only words/phrases do you say all the time that we're missing? (add to voice/calibration.md)
+## Never (Joe's stated limits, kept)
+Gags with setup+punchline; explained jokes; holiday-itinerary lists; no heavy swearing; no instructional drug detail.

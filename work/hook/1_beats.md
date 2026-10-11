@@ -9,7 +9,7 @@ The original's hook job (writing/song_map.md): roll-call of greetings + places, 
 | 4 | So flew to Bordeaux | Bordeaux 2023 (true) | AAAA end sound (-ow) | KEEP |
 | 5 | Greeting to all Majorca | Mallorca 2014 (true) | greeting + place | KEEP |
 | 6 | Import all sorts, I'll sort ya | persona (trade) | wordplay on sort | KEEP |
-| 7 | Pavos pour this quarter | Majorca/Pavos? (to confirm what "Pavos" is) | sound-alike | KEEP |
+| 7 | Pavos (turkeys; Spanish slang for money) pour this quarter | Spain/Majorca (to confirm) | double meaning money/turkey | KEEP |
 | 8 | Boss man brings the order | persona | register ramp to business | KEEP |
 | 9 | Bergen with the fam, say skål | Bergen, in-laws (true) | local word | KEEP |
 | 10 | Raise the pulse then split like Dahl | Norway, Roald Dahl pun | name pun | KEEP |
@@ -21,7 +21,6 @@ The original's hook job (writing/song_map.md): roll-call of greetings + places, 
 | 16 | smorgasbord | Sweden | one-word closer, handoff | KEEP |
 
 ## Questions for Joe
-1. What is "Pavos"? (bar 7; I want the right story/pronunciation)
 2. Bar 15: "Orthedepic" is that meant to be orthopaedic (a person's job), and who is the Swede? Is the Sweden trip true?
 3. Anything the hook is missing from your notes: Rotter damn, Brisbane/Lisbon, monkey, goon? (Suggestion: the hook stays Europe; the SE Asia/Aus/NZ notes go to V2.)
 4. Do you want the hook trimmed (e.g. fewer places) or kept as is?

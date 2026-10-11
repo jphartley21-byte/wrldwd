@@ -164,3 +164,6 @@ Joe rewrote hook L3, L5-12 (Oh lah / sort ya / Pavos / Big Boss man / Bergen wit
 
 ## 9 Oct 2026, end-shape check
 Joe: Ch L5 'Majorca' (rhyme mid-word, ~Sw) does not hit like the original's 'in LA-gos' (rhyme starts a word, |Sw). Cause: end words chosen by vowel only; no check on where the rhyme sits in the word. Fix: flow_fit END SHAPE (| or ~ + strong/weak from the rhyme), end_shape stored per bar from the original; ya/this treated as weak tail words; rejected_v14_majorca.txt test; /write says choose end words by shape as well as vowel; /review lists it. v15 flags: 5, 11, 40, 45, 62, 66, 67, 73 (2, 4 locked Joe lines; 55 advisory, original word unknown). Agents A1, A4, A5, A7, A8 sent fixes.
+
+## 11 Oct 2026: correction
+Round-1 voice/profile.md was built on agent-written lines and invented slang ("swear down", "skint"). Joe never says them. Rebuilt evidence-only from lines tagged JOE (voice/provenance.md); added voice/quiz.md. Idea tick-lists dropped for exhaustive banks (Joe: hook.md not worth reading).
