@@ -1,0 +1,4291 @@
+{
+"tempo": 140.0,
+"phase": 1,
+"bars": [
+{
+"bar": 1,
+"syl": 5,
+"steps": [
+3,
+9,
+12,
+15,
+16
+],
+"on_beat": [
+12,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"copied_from": 77,
+"weak": [
+false,
+false,
+true,
+false,
+true
+],
+"triplets": [],
+"rhyme_idx": 3,
+"head_idx": 0,
+"advisory": true,
+"end_shape": "|Sw"
+},
+{
+"bar": 2,
+"syl": 9,
+"steps": [
+5,
+7,
+10,
+11,
+12,
+14,
+15,
+16,
+17
+],
+"on_beat": [
+12,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"copied_from": 78,
+"weak": [
+false,
+false,
+true,
+true,
+false,
+true,
+true,
+false,
+true
+],
+"triplets": [
+0
+],
+"steps48": [
+31,
+34,
+38,
+43,
+47,
+52,
+57
+],
+"rhyme_idx": 7,
+"head_idx": 0,
+"end_shape": "~Sw"
+},
+{
+"bar": 3,
+"syl": 9,
+"steps": [
+6,
+8,
+10,
+12,
+13,
+14,
+15,
+16,
+18
+],
+"on_beat": [
+8,
+12,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"copied_from": 79,
+"weak": [
+false,
+false,
+false,
+false,
+true,
+true,
+true,
+false,
+false
+],
+"triplets": [
+2,
+3,
+4,
+5,
+6
+],
+"steps48": [
+19,
+25,
+27,
+30,
+35,
+39,
+42,
+46,
+50,
+56,
+60
+],
+"rhyme_idx": 8,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 4,
+"syl": 9,
+"steps": [
+5,
+6,
+8,
+10,
+11,
+14,
+15,
+16,
+17
+],
+"on_beat": [
+8,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"copied_from": 80,
+"weak": [
+false,
+false,
+false,
+false,
+false,
+true,
+true,
+false,
+false
+],
+"triplets": [],
+"rhyme_idx": 8,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 5,
+"syl": 8,
+"steps": [
+5,
+7,
+10,
+11,
+12,
+15,
+16,
+17
+],
+"on_beat": [
+12,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"copied_from": 81,
+"weak": [
+false,
+false,
+true,
+true,
+false,
+true,
+false,
+true
+],
+"triplets": [
+0
+],
+"steps48": [
+30,
+34,
+38,
+44,
+51,
+56
+],
+"rhyme_idx": 6,
+"head_idx": 0,
+"end_shape": "|Sw"
+},
+{
+"bar": 6,
+"syl": 10,
+"steps": [
+4,
+6,
+7,
+8,
+10,
+11,
+12,
+14,
+16,
+17
+],
+"on_beat": [
+4,
+8,
+12,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"copied_from": 82,
+"weak": [
+false,
+false,
+true,
+false,
+false,
+true,
+false,
+false,
+false,
+true
+],
+"triplets": [],
+"rhyme_idx": 8,
+"head_idx": 0,
+"end_shape": "|Sw"
+},
+{
+"bar": 7,
+"syl": 8,
+"steps": [
+1,
+2,
+3,
+4,
+-2,
+-1,
+0,
+1
+],
+"on_beat": [
+4,
+0
+],
+"bars_spanned": 1,
+"pickup": true,
+"copied_from": 83,
+"weak": [
+false,
+true,
+false,
+true,
+true,
+false,
+false,
+true
+],
+"triplets": [],
+"rhyme_idx": 6,
+"head_idx": 2,
+"end_shape": "|Sw"
+},
+{
+"bar": 8,
+"syl": 8,
+"steps": [
+5,
+7,
+9,
+10,
+12,
+14,
+16,
+17
+],
+"on_beat": [
+12,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"copied_from": 84,
+"weak": [
+false,
+false,
+true,
+false,
+false,
+true,
+false,
+true
+],
+"triplets": [
+1
+],
+"steps48": [
+17,
+22,
+27,
+31,
+37,
+43,
+51,
+55
+],
+"rhyme_idx": 6,
+"head_idx": 0,
+"end_shape": "|Sw"
+},
+{
+"bar": 9,
+"syl": 7,
+"steps": [
+11,
+15,
+20,
+31,
+35,
+39,
+43
+],
+"on_beat": [
+20
+],
+"bars_spanned": 3,
+"pickup": false,
+"weak": [
+true,
+false,
+true,
+true,
+false,
+true,
+false
+],
+"steps48": [
+35,
+55,
+65,
+98,
+110,
+133,
+147
+],
+"triplets": [],
+"rhyme_idx": 6,
+"head_idx": 1,
+"end_shape": "|S"
+},
+{
+"bar": 10,
+"missing": true,
+"weak": [
+false,
+true,
+false,
+false,
+true,
+false,
+true,
+false
+],
+"triplets": [],
+"rhyme_idx": 7,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 11,
+"syl": 8,
+"steps": [
+3,
+4,
+6,
+7,
+9,
+9,
+10,
+11
+],
+"on_beat": [
+4
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+false,
+false,
+false,
+false,
+true,
+true,
+false,
+true
+],
+"steps48": [
+19,
+21,
+25,
+28,
+31,
+34,
+38,
+42,
+46,
+52
+],
+"triplets": [
+4
+],
+"rhyme_idx": 6,
+"head_idx": 0,
+"end_shape": "~Sw"
+},
+{
+"bar": 12,
+"syl": 9,
+"steps": [
+1,
+2,
+2,
+4,
+6,
+7,
+8,
+9,
+10
+],
+"on_beat": [
+4,
+8
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+false,
+false,
+false,
+true,
+false,
+false,
+false,
+true,
+false
+],
+"steps48": [
+19,
+25,
+30,
+34,
+39,
+41,
+43,
+51,
+56
+],
+"triplets": [
+1
+],
+"rhyme_idx": 8,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 13,
+"syl": 12,
+"steps": [
+-1,
+1,
+4,
+6,
+7,
+8,
+9,
+11,
+14,
+16,
+18,
+20
+],
+"on_beat": [
+4,
+8,
+16,
+20
+],
+"bars_spanned": 2,
+"pickup": true,
+"weak": [
+false,
+true,
+false,
+true,
+true,
+false,
+true,
+false,
+true,
+false,
+true,
+false
+],
+"steps48": [
+2,
+8,
+14,
+20,
+22,
+26,
+30,
+37,
+42,
+50,
+54,
+63
+],
+"triplets": [
+4
+],
+"rhyme_idx": 11,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 14,
+"syl": 5,
+"steps": [
+4,
+8,
+9,
+11,
+12
+],
+"on_beat": [
+4,
+8,
+12
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+false,
+false,
+false,
+true,
+false
+],
+"steps48": [
+23,
+27,
+32
+],
+"triplets": [
+0
+],
+"rhyme_idx": 4,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 15,
+"syl": 8,
+"steps": [
+5,
+8,
+9,
+10,
+11,
+11,
+12,
+13
+],
+"on_beat": [
+8,
+12
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+false,
+true,
+false,
+false,
+false,
+true,
+false,
+false
+],
+"triplets": [],
+"rhyme_idx": 7,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 16,
+"syl": 7,
+"steps": [
+0,
+2,
+3,
+4,
+5,
+6,
+7
+],
+"on_beat": [
+0,
+4
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+true,
+true,
+false,
+true,
+false,
+true,
+false
+],
+"triplets": [],
+"rhyme_idx": 6,
+"head_idx": 2,
+"advisory": true,
+"end_shape": "|S"
+},
+{
+"bar": 17,
+"syl": 10,
+"steps": [
+0,
+2,
+4,
+5,
+7,
+7,
+8,
+11,
+12,
+13
+],
+"on_beat": [
+0,
+4,
+8,
+12
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+false,
+false,
+false,
+true,
+true,
+false,
+false,
+false,
+false,
+true
+],
+"steps48": [
+1,
+8,
+14,
+17,
+20,
+23,
+28,
+33,
+40,
+45
+],
+"triplets": [],
+"rhyme_idx": 8,
+"head_idx": 0,
+"end_shape": "|Sw"
+},
+{
+"bar": 18,
+"syl": 10,
+"steps": [
+0,
+1,
+3,
+5,
+7,
+9,
+10,
+11,
+13,
+14
+],
+"on_beat": [
+0
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+false,
+true,
+false,
+false,
+true,
+false,
+true,
+false,
+false,
+true
+],
+"steps48": [
+3,
+6,
+10,
+16,
+21,
+27,
+30,
+34,
+41,
+46
+],
+"triplets": [
+0
+],
+"rhyme_idx": 8,
+"head_idx": 0,
+"end_shape": "|Sw"
+},
+{
+"bar": 19,
+"syl": 8,
+"steps": [
+2,
+3,
+6,
+8,
+10,
+12,
+13,
+14
+],
+"on_beat": [
+8,
+12
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+false,
+false,
+false,
+false,
+false,
+false,
+false,
+true
+],
+"steps48": [
+7,
+10,
+32,
+35,
+43,
+47
+],
+"triplets": [],
+"rhyme_idx": 6,
+"head_idx": 0,
+"end_shape": "|Sw"
+},
+{
+"bar": 20,
+"syl": 9,
+"steps": [
+2,
+3,
+5,
+8,
+10,
+11,
+12,
+14,
+15
+],
+"on_beat": [
+8,
+12
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+false,
+false,
+false,
+false,
+false,
+true,
+false,
+false,
+true
+],
+"steps48": [
+8,
+12,
+17,
+23,
+30,
+36,
+43,
+50
+],
+"triplets": [],
+"rhyme_idx": 7,
+"head_idx": 0,
+"end_shape": "|Sw"
+},
+{
+"bar": 21,
+"syl": 6,
+"steps": [
+7,
+10,
+12,
+13,
+14,
+15
+],
+"on_beat": [
+12
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+false,
+false,
+true,
+true,
+false,
+true
+],
+"steps48": [
+25,
+27,
+31,
+36,
+40,
+44,
+48
+],
+"triplets": [
+3,
+4
+],
+"rhyme_idx": 4,
+"head_idx": 0,
+"end_shape": "|Sw"
+},
+{
+"bar": 22,
+"syl": 8,
+"steps": [
+4,
+6,
+8,
+9,
+10,
+12,
+13,
+14
+],
+"on_beat": [
+4,
+8,
+12
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+false,
+false,
+true,
+false,
+false,
+false,
+false,
+true
+],
+"steps48": [
+13,
+19,
+24,
+28,
+31,
+36,
+44,
+48
+],
+"triplets": [
+2
+],
+"rhyme_idx": 6,
+"head_idx": 0,
+"end_shape": "|Sw"
+},
+{
+"bar": 23,
+"syl": 7,
+"steps": [
+3,
+7,
+9,
+9,
+11,
+12,
+13
+],
+"on_beat": [
+12
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+false,
+false,
+true,
+false,
+false,
+true,
+false
+],
+"steps48": [
+21,
+26,
+28,
+30,
+34,
+42,
+48
+],
+"triplets": [],
+"rhyme_idx": 6,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 24,
+"syl": 13,
+"steps": [
+1,
+1,
+2,
+3,
+4,
+7,
+8,
+9,
+10,
+11,
+12,
+13,
+14
+],
+"on_beat": [
+4,
+8,
+12
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+true,
+false,
+false,
+true,
+false,
+false,
+true,
+false,
+false,
+true,
+false,
+false,
+true
+],
+"steps48": [
+3,
+6,
+10,
+13,
+31,
+34,
+37,
+41,
+43
+],
+"triplets": [
+0
+],
+"rhyme_idx": 11,
+"head_idx": 1,
+"end_shape": "|Sw"
+},
+{
+"bar": 25,
+"syl": 7,
+"steps": [
+0,
+2,
+3,
+4,
+5,
+6,
+10
+],
+"on_beat": [
+0,
+4
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+false,
+false,
+true,
+false,
+true,
+false,
+false
+],
+"steps48": [
+0,
+5,
+7,
+10,
+13,
+16,
+22,
+26,
+31
+],
+"triplets": [
+6
+],
+"rhyme_idx": 6,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 26,
+"syl": 6,
+"steps": [
+-2,
+2,
+4,
+5,
+6,
+7
+],
+"on_beat": [
+4
+],
+"bars_spanned": 1,
+"pickup": true,
+"weak": [
+false,
+false,
+true,
+true,
+false,
+false
+],
+"steps48": [
+1,
+7,
+13
+],
+"triplets": [],
+"rhyme_idx": 5,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 27,
+"syl": 5,
+"steps": [
+12,
+18,
+20,
+21,
+22
+],
+"on_beat": [
+12,
+20
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+false,
+false,
+true,
+true,
+false
+],
+"steps48": [
+1,
+8,
+13,
+17,
+19
+],
+"triplets": [],
+"rhyme_idx": 4,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 28,
+"syl": 12,
+"steps": [
+8,
+9,
+10,
+12,
+14,
+16,
+17,
+19,
+20,
+21,
+22,
+24
+],
+"on_beat": [
+8,
+12,
+16,
+20,
+24
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+false,
+false,
+false,
+false,
+false,
+true,
+false,
+false,
+true,
+true,
+false,
+false
+],
+"steps48": [
+24,
+28,
+31,
+34,
+37,
+43,
+50,
+53,
+56,
+58,
+61,
+64,
+68,
+75,
+76
+],
+"triplets": [
+0,
+10
+],
+"rhyme_idx": 11,
+"head_idx": 0,
+"advisory": true,
+"end_shape": "|S"
+},
+{
+"bar": 29,
+"syl": 12,
+"steps": [
+10,
+15,
+17,
+18,
+20,
+22,
+24,
+26,
+26,
+27,
+28,
+29
+],
+"on_beat": [
+20,
+24,
+28
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+false,
+false,
+false,
+true,
+false,
+false,
+false,
+false,
+false,
+false,
+false,
+false
+],
+"steps48": [
+34,
+44,
+50,
+62,
+68,
+71,
+74,
+77,
+80
+],
+"triplets": [],
+"rhyme_idx": 10,
+"head_idx": 0,
+"end_shape": "|SS"
+},
+{
+"bar": 30,
+"syl": 10,
+"steps": [
+2,
+3,
+4,
+4,
+7,
+8,
+9,
+10,
+13,
+15
+],
+"on_beat": [
+4,
+4,
+8
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+false,
+false,
+true,
+false,
+false,
+true,
+true,
+false,
+true,
+false
+],
+"steps48": [
+15,
+20,
+25,
+29,
+35,
+40,
+47,
+50
+],
+"triplets": [
+1
+],
+"rhyme_idx": 9,
+"head_idx": 0,
+"advisory": true,
+"end_shape": "|S"
+},
+{
+"bar": 31,
+"syl": 12,
+"steps": [
+1,
+2,
+6,
+8,
+9,
+10,
+10,
+11,
+11,
+12,
+13,
+15
+],
+"on_beat": [
+8,
+12
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+false,
+false,
+true,
+false,
+true,
+false,
+false,
+false,
+false,
+true,
+false,
+false
+],
+"steps48": [
+3,
+7,
+31,
+34,
+38,
+41,
+42,
+46,
+49
+],
+"triplets": [
+3
+],
+"rhyme_idx": 11,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 32,
+"syl": 11,
+"steps": [
+1,
+2,
+4,
+7,
+9,
+10,
+11,
+11,
+12,
+13,
+14
+],
+"on_beat": [
+4,
+12
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+true,
+false,
+true,
+false,
+true,
+false,
+false,
+false,
+true,
+true,
+false
+],
+"steps48": [
+4,
+8,
+12,
+36,
+40,
+43
+],
+"triplets": [
+0
+],
+"rhyme_idx": 10,
+"head_idx": 1,
+"advisory": true,
+"end_shape": "|S"
+},
+{
+"bar": 33,
+"syl": 9,
+"steps": [
+3,
+5,
+6,
+7,
+10,
+12,
+14,
+16,
+17
+],
+"on_beat": [
+12,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+false,
+true,
+false,
+false,
+false,
+false,
+true,
+false,
+true
+],
+"steps48": [
+12,
+14,
+15,
+19,
+25,
+43,
+49,
+56
+],
+"triplets": [],
+"rhyme_idx": 7,
+"head_idx": 0,
+"end_shape": "|Sw"
+},
+{
+"bar": 34,
+"syl": 7,
+"steps": [
+4,
+5,
+6,
+10,
+12,
+13,
+14
+],
+"on_beat": [
+4,
+12
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+false,
+false,
+false,
+false,
+false,
+true,
+true
+],
+"steps48": [
+14,
+16,
+20,
+31,
+36,
+42,
+43
+],
+"triplets": [],
+"rhyme_idx": 4,
+"head_idx": 0,
+"end_shape": "|Sww"
+},
+{
+"bar": 35,
+"syl": 11,
+"steps": [
+3,
+4,
+5,
+6,
+6,
+7,
+8,
+10,
+11,
+12,
+14
+],
+"on_beat": [
+4,
+8,
+12
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+false,
+true,
+true,
+false,
+true,
+true,
+false,
+false,
+false,
+true,
+true
+],
+"steps48": [
+19,
+22,
+25,
+31,
+36,
+40,
+43
+],
+"triplets": [
+0,
+4
+],
+"rhyme_idx": 8,
+"head_idx": 0,
+"advisory": true,
+"end_shape": "|Sww"
+},
+{
+"bar": 36,
+"syl": 11,
+"steps": [
+3,
+4,
+5,
+6,
+7,
+8,
+9,
+10,
+11,
+13,
+15
+],
+"on_beat": [
+4,
+8
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+false,
+true,
+false,
+true,
+true,
+false,
+true,
+false,
+false,
+true,
+true
+],
+"steps48": [
+18,
+21,
+26,
+27,
+31,
+36,
+39,
+40,
+44
+],
+"triplets": [],
+"rhyme_idx": 8,
+"head_idx": 0,
+"end_shape": "|Sww"
+},
+{
+"bar": 37,
+"syl": 11,
+"steps": [
+3,
+4,
+5,
+6,
+6,
+7,
+9,
+11,
+12,
+13,
+14
+],
+"on_beat": [
+4,
+12
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+false,
+true,
+false,
+false,
+true,
+false,
+false,
+false,
+false,
+true,
+true
+],
+"steps48": [
+20,
+28,
+33,
+36,
+39,
+43
+],
+"triplets": [
+3
+],
+"rhyme_idx": 10,
+"head_idx": 0,
+"end_shape": "|w"
+},
+{
+"bar": 38,
+"syl": 10,
+"steps": [
+1,
+1,
+3,
+5,
+6,
+8,
+10,
+11,
+12,
+13
+],
+"on_beat": [
+8,
+12
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+false,
+false,
+false,
+true,
+false,
+false,
+false,
+false,
+true,
+true
+],
+"steps48": [
+2,
+5,
+10,
+13,
+15,
+19,
+25,
+31
+],
+"triplets": [
+0
+],
+"rhyme_idx": 7,
+"head_idx": 0,
+"end_shape": "|Sww"
+},
+{
+"bar": 39,
+"syl": 10,
+"steps": [
+1,
+2,
+3,
+5,
+7,
+8,
+11,
+12,
+13,
+15
+],
+"on_beat": [
+8,
+12
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+false,
+false,
+false,
+true,
+false,
+false,
+true,
+false,
+true,
+true
+],
+"steps48": [
+4,
+7,
+10,
+13,
+17,
+20,
+26,
+29,
+32,
+37,
+41,
+43,
+46
+],
+"triplets": [
+3
+],
+"rhyme_idx": 9,
+"head_idx": 0,
+"end_shape": "|w"
+},
+{
+"bar": 40,
+"syl": 10,
+"steps": [
+1,
+3,
+4,
+5,
+6,
+8,
+10,
+13,
+14,
+15
+],
+"on_beat": [
+4,
+8
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+false,
+true,
+false,
+true,
+false,
+false,
+false,
+false,
+true,
+false
+],
+"steps48": [
+4,
+7,
+10,
+13,
+20,
+26,
+32,
+35,
+38,
+41,
+46
+],
+"triplets": [
+1
+],
+"rhyme_idx": 7,
+"head_idx": 0,
+"end_shape": "|SwS"
+},
+{
+"bar": 41,
+"syl": 13,
+"steps": [
+7,
+8,
+9,
+12,
+14,
+15,
+20,
+26,
+27,
+28,
+29,
+30,
+31
+],
+"on_beat": [
+8,
+12,
+20,
+28
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+false,
+false,
+false,
+false,
+true,
+false,
+true,
+true,
+false,
+false,
+true,
+false,
+true
+],
+"steps48": [
+20,
+24,
+30,
+32,
+35,
+42,
+49,
+56,
+77,
+80,
+86,
+90
+],
+"triplets": [],
+"rhyme_idx": 11,
+"head_idx": 0,
+"end_shape": "|Sw"
+},
+{
+"bar": 42,
+"syl": 15,
+"steps": [
+6,
+9,
+10,
+13,
+14,
+16,
+20,
+22,
+24,
+26,
+27,
+28,
+29,
+31,
+32
+],
+"on_beat": [
+16,
+20,
+24,
+28,
+32
+],
+"bars_spanned": 3,
+"pickup": false,
+"weak": [
+false,
+true,
+false,
+false,
+true,
+false,
+true,
+false,
+false,
+false,
+false,
+false,
+true,
+false,
+true
+],
+"steps48": [
+20,
+28,
+31,
+50,
+57,
+72,
+78,
+81,
+85,
+90,
+97,
+107
+],
+"triplets": [
+6
+],
+"rhyme_idx": 13,
+"head_idx": 0,
+"advisory": true,
+"end_shape": "|Sw"
+},
+{
+"bar": 43,
+"syl": 14,
+"steps": [
+6,
+9,
+11,
+12,
+14,
+16,
+22,
+23,
+24,
+26,
+28,
+30,
+32,
+33
+],
+"on_beat": [
+12,
+16,
+24,
+28,
+32
+],
+"bars_spanned": 3,
+"pickup": false,
+"weak": [
+false,
+true,
+false,
+false,
+true,
+false,
+false,
+true,
+false,
+false,
+false,
+true,
+false,
+true
+],
+"steps48": [
+20,
+27,
+43,
+50,
+66,
+70,
+73,
+79,
+85,
+88,
+91,
+98,
+104
+],
+"triplets": [
+4
+],
+"rhyme_idx": 12,
+"head_idx": 0,
+"end_shape": "|Sw"
+},
+{
+"bar": 44,
+"syl": 8,
+"steps": [
+6,
+7,
+10,
+11,
+13,
+14,
+16,
+17
+],
+"on_beat": [
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+false,
+false,
+false,
+false,
+true,
+false,
+false,
+true
+],
+"steps48": [
+19,
+24,
+30,
+34,
+39,
+42,
+50,
+56
+],
+"triplets": [
+2,
+3
+],
+"rhyme_idx": 6,
+"head_idx": 0,
+"end_shape": "|Sw"
+},
+{
+"bar": 45,
+"syl": 9,
+"steps": [
+6,
+8,
+9,
+10,
+10,
+11,
+12,
+13,
+14
+],
+"on_beat": [
+8,
+12
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+false,
+true,
+false,
+true,
+false,
+false,
+false,
+false,
+false
+],
+"triplets": [],
+"rhyme_idx": 7,
+"head_idx": 0,
+"end_shape": "|SS"
+},
+{
+"bar": 46,
+"syl": 9,
+"steps": [
+6,
+8,
+9,
+10,
+10,
+11,
+12,
+13,
+14
+],
+"on_beat": [
+8,
+12
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+true,
+true,
+false,
+true,
+false,
+false,
+false,
+false,
+true
+],
+"triplets": [],
+"rhyme_idx": 7,
+"head_idx": 2,
+"end_shape": "|Sw"
+},
+{
+"bar": 47,
+"syl": 10,
+"steps": [
+4,
+6,
+7,
+9,
+10,
+11,
+13,
+14,
+16,
+18
+],
+"on_beat": [
+4,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+false,
+true,
+true,
+false,
+true,
+false,
+false,
+false,
+true,
+false
+],
+"steps48": [
+13,
+16,
+18,
+22,
+25,
+29,
+33,
+39,
+43,
+49,
+56
+],
+"triplets": [
+2,
+3,
+4
+],
+"rhyme_idx": 9,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 48,
+"syl": 15,
+"steps": [
+8,
+9,
+11,
+13,
+14,
+16,
+18,
+20,
+22,
+24,
+26,
+28,
+30,
+32,
+33
+],
+"on_beat": [
+8,
+16,
+20,
+24,
+28,
+32
+],
+"bars_spanned": 3,
+"pickup": false,
+"weak": [
+false,
+true,
+false,
+false,
+true,
+true,
+false,
+false,
+true,
+false,
+true,
+false,
+false,
+false,
+true
+],
+"steps48": [
+24,
+28,
+32,
+38,
+43,
+50,
+56,
+62,
+68,
+72,
+79,
+86,
+91,
+99,
+105
+],
+"triplets": [
+0
+],
+"rhyme_idx": 13,
+"head_idx": 0,
+"end_shape": "|Sw"
+},
+{
+"bar": 49,
+"syl": 6,
+"steps": [
+10,
+11,
+12,
+14,
+16,
+18
+],
+"on_beat": [
+12,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+true,
+true,
+false,
+false,
+false,
+false
+],
+"steps48": [
+30,
+33,
+43,
+50,
+55
+],
+"triplets": [],
+"rhyme_idx": 5,
+"head_idx": 2,
+"end_shape": "|S"
+},
+{
+"bar": 50,
+"syl": 9,
+"steps": [
+4,
+5,
+7,
+8,
+10,
+12,
+14,
+16,
+17
+],
+"on_beat": [
+4,
+8,
+12,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+false,
+true,
+true,
+false,
+false,
+false,
+true,
+false,
+true
+],
+"steps48": [
+13,
+16,
+21,
+25,
+31,
+33,
+37,
+44,
+50,
+56
+],
+"triplets": [],
+"rhyme_idx": 7,
+"head_idx": 0,
+"end_shape": "|Sw"
+},
+{
+"bar": 51,
+"syl": 7,
+"steps": [
+10,
+11,
+12,
+16,
+18,
+19,
+20
+],
+"on_beat": [
+12,
+16,
+20
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+false,
+false,
+false,
+true,
+true,
+false,
+true
+],
+"steps48": [
+31,
+32,
+37,
+45,
+50,
+55
+],
+"triplets": [],
+"rhyme_idx": 5,
+"head_idx": 0,
+"end_shape": "|Sw"
+},
+{
+"bar": 52,
+"syl": 10,
+"steps": [
+4,
+6,
+7,
+8,
+9,
+11,
+12,
+14,
+16,
+17
+],
+"on_beat": [
+4,
+8,
+12,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+false,
+true,
+true,
+true,
+false,
+false,
+false,
+false,
+false,
+true
+],
+"steps48": [
+29,
+30,
+33,
+37,
+42,
+45,
+48,
+56
+],
+"triplets": [
+2,
+3
+],
+"rhyme_idx": 8,
+"head_idx": 0,
+"end_shape": "|Sw"
+},
+{
+"bar": 53,
+"syl": 5,
+"steps": [
+5,
+10,
+12,
+15,
+16
+],
+"on_beat": [
+12,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+true,
+false,
+false,
+false,
+false
+],
+"steps48": [
+31,
+38,
+41,
+44,
+51,
+54
+],
+"triplets": [
+1
+],
+"rhyme_idx": 4,
+"head_idx": 1,
+"end_shape": "|S"
+},
+{
+"bar": 54,
+"syl": 9,
+"steps": [
+3,
+4,
+6,
+7,
+8,
+12,
+14,
+15,
+16
+],
+"on_beat": [
+4,
+8,
+12,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+false,
+true,
+true,
+true,
+false,
+false,
+false,
+false,
+false
+],
+"steps48": [
+19,
+23,
+26,
+51
+],
+"triplets": [
+0
+],
+"rhyme_idx": 8,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 55,
+"syl": 10,
+"steps": [
+3,
+5,
+6,
+8,
+10,
+11,
+13,
+14,
+15,
+16
+],
+"on_beat": [
+8,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+false,
+true,
+false,
+false,
+true,
+false,
+false,
+false,
+false,
+true
+],
+"steps48": [
+11,
+16,
+19,
+31,
+38,
+43,
+45
+],
+"triplets": [],
+"rhyme_idx": 9,
+"head_idx": 0,
+"end_shape": "~w"
+},
+{
+"bar": 56,
+"syl": 10,
+"steps": [
+3,
+4,
+5,
+6,
+8,
+10,
+11,
+12,
+13,
+15
+],
+"on_beat": [
+4,
+8,
+12
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+true,
+false,
+false,
+false,
+false,
+true,
+true,
+false,
+true,
+false
+],
+"steps48": [
+9,
+13,
+20,
+22,
+25,
+31,
+34,
+38,
+50
+],
+"triplets": [
+5
+],
+"rhyme_idx": 9,
+"head_idx": 1,
+"end_shape": "|S"
+},
+{
+"bar": 57,
+"syl": 7,
+"steps": [
+6,
+8,
+9,
+12,
+14,
+15,
+16
+],
+"on_beat": [
+8,
+12,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+false,
+false,
+true,
+false,
+false,
+false,
+false
+],
+"steps48": [
+18,
+25,
+30,
+50
+],
+"triplets": [],
+"rhyme_idx": 6,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 58,
+"syl": 11,
+"steps": [
+2,
+4,
+5,
+6,
+7,
+8,
+10,
+11,
+13,
+14,
+16
+],
+"on_beat": [
+4,
+8,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+false,
+false,
+true,
+false,
+true,
+false,
+true,
+false,
+true,
+false,
+false
+],
+"steps48": [
+12,
+16,
+19,
+23,
+27,
+31,
+36,
+37,
+40,
+43,
+50,
+53
+],
+"triplets": [
+2,
+3,
+4
+],
+"rhyme_idx": 10,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 59,
+"syl": 9,
+"steps": [
+4,
+6,
+8,
+10,
+11,
+13,
+14,
+16,
+17
+],
+"on_beat": [
+4,
+8,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+false,
+false,
+false,
+false,
+false,
+false,
+false,
+false,
+true
+],
+"steps48": [
+12,
+19,
+25,
+31,
+34,
+38,
+40,
+44,
+51,
+53
+],
+"triplets": [],
+"rhyme_idx": 7,
+"head_idx": 0,
+"end_shape": "|Sw"
+},
+{
+"bar": 60,
+"missing": true,
+"weak": [
+false,
+true,
+true,
+false,
+false,
+false,
+false,
+false,
+false
+],
+"triplets": [],
+"rhyme_idx": 8,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 61,
+"syl": 11,
+"steps": [
+3,
+3,
+4,
+5,
+6,
+8,
+10,
+11,
+12,
+14,
+16
+],
+"on_beat": [
+4,
+8,
+12,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+false,
+false,
+true,
+false,
+true,
+false,
+false,
+false,
+false,
+false,
+false
+],
+"steps48": [
+9,
+11,
+13,
+15,
+20,
+25,
+30,
+33,
+36,
+42,
+49,
+50
+],
+"triplets": [],
+"rhyme_idx": 10,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 62,
+"syl": 11,
+"steps": [
+2,
+4,
+5,
+6,
+7,
+8,
+11,
+11,
+12,
+14,
+16
+],
+"on_beat": [
+4,
+8,
+12,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+false,
+false,
+true,
+true,
+false,
+false,
+true,
+true,
+false,
+true,
+false
+],
+"steps48": [
+6,
+20,
+26,
+29,
+32,
+34,
+39,
+45,
+52,
+54
+],
+"triplets": [],
+"rhyme_idx": 10,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 63,
+"syl": 10,
+"steps": [
+4,
+5,
+5,
+6,
+7,
+10,
+11,
+13,
+14,
+16
+],
+"on_beat": [
+4,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+false,
+true,
+true,
+false,
+false,
+true,
+true,
+false,
+false,
+false
+],
+"steps48": [
+12,
+14,
+15,
+19,
+26,
+31,
+34,
+50
+],
+"triplets": [],
+"rhyme_idx": 9,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 64,
+"syl": 10,
+"steps": [
+2,
+3,
+4,
+5,
+7,
+8,
+10,
+12,
+14,
+16
+],
+"on_beat": [
+4,
+8,
+12,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+false,
+false,
+true,
+false,
+true,
+false,
+false,
+false,
+false,
+false
+],
+"steps48": [
+5,
+9,
+12,
+15,
+20,
+22,
+25,
+28,
+31,
+37,
+43,
+50
+],
+"triplets": [
+2
+],
+"rhyme_idx": 9,
+"head_idx": 1,
+"end_shape": "|S"
+},
+{
+"bar": 65,
+"syl": 11,
+"steps": [
+2,
+2,
+4,
+5,
+6,
+8,
+9,
+11,
+12,
+14,
+16
+],
+"on_beat": [
+4,
+8,
+12,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+false,
+false,
+true,
+true,
+false,
+false,
+false,
+false,
+false,
+true,
+false
+],
+"steps48": [
+5,
+8,
+12,
+16,
+19,
+25,
+30,
+33,
+38,
+40,
+43,
+50
+],
+"triplets": [
+1
+],
+"rhyme_idx": 10,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 66,
+"syl": 12,
+"steps": [
+2,
+3,
+5,
+5,
+7,
+8,
+9,
+10,
+11,
+12,
+14,
+16
+],
+"on_beat": [
+8,
+12,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+false,
+false,
+true,
+true,
+false,
+false,
+false,
+false,
+false,
+false,
+true,
+false
+],
+"steps48": [
+7,
+11,
+12,
+14,
+17,
+20,
+30,
+33,
+39,
+44,
+52
+],
+"triplets": [],
+"rhyme_idx": 11,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 67,
+"syl": 11,
+"steps": [
+3,
+3,
+4,
+5,
+6,
+8,
+10,
+11,
+12,
+13,
+14
+],
+"on_beat": [
+4,
+8,
+12
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+false,
+false,
+false,
+true,
+false,
+false,
+false,
+false,
+false,
+true,
+false
+],
+"steps48": [
+8,
+10,
+12,
+18,
+25,
+30,
+32,
+34
+],
+"triplets": [],
+"rhyme_idx": 10,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 68,
+"syl": 9,
+"steps": [
+1,
+0,
+1,
+2,
+3,
+4,
+5,
+6,
+7
+],
+"on_beat": [
+0,
+4
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+false,
+true,
+false,
+false,
+false,
+false,
+true,
+true,
+false
+],
+"triplets": [],
+"rhyme_idx": 8,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 69,
+"syl": 6,
+"steps": [
+3,
+6,
+8,
+10,
+12,
+13
+],
+"on_beat": [
+8,
+12
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+false,
+false,
+false,
+false,
+false,
+false
+],
+"steps48": [
+10,
+31,
+36,
+43,
+45
+],
+"triplets": [],
+"rhyme_idx": 5,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 70,
+"syl": 12,
+"steps": [
+1,
+3,
+4,
+5,
+6,
+7,
+8,
+9,
+11,
+11,
+12,
+13
+],
+"on_beat": [
+4,
+8,
+12
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+false,
+true,
+false,
+true,
+false,
+false,
+false,
+true,
+true,
+false,
+false,
+true
+],
+"steps48": [
+6,
+7,
+9,
+13,
+16,
+19,
+22,
+25,
+29,
+32,
+35
+],
+"triplets": [
+2
+],
+"rhyme_idx": 10,
+"head_idx": 0,
+"end_shape": "|Sw"
+},
+{
+"bar": 71,
+"syl": 10,
+"steps": [
+2,
+5,
+6,
+7,
+8,
+9,
+10,
+11,
+12,
+15
+],
+"on_beat": [
+8,
+12
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+false,
+false,
+false,
+false,
+false,
+true,
+true,
+true,
+false,
+false
+],
+"steps48": [
+14,
+22,
+25,
+28,
+31,
+34,
+38,
+44,
+46
+],
+"triplets": [
+4
+],
+"rhyme_idx": 9,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 72,
+"syl": 10,
+"steps": [
+0,
+2,
+3,
+5,
+7,
+8,
+10,
+11,
+12,
+14
+],
+"on_beat": [
+0,
+8,
+12
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+false,
+false,
+false,
+true,
+false,
+false,
+true,
+false,
+false,
+false
+],
+"steps48": [
+1,
+6,
+10,
+15,
+30,
+34,
+37,
+44
+],
+"triplets": [
+4
+],
+"rhyme_idx": 9,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 73,
+"syl": 8,
+"steps": [
+1,
+4,
+6,
+7,
+10,
+11,
+12,
+13
+],
+"on_beat": [
+4,
+12
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+false,
+false,
+false,
+false,
+true,
+true,
+false,
+false
+],
+"steps48": [
+7,
+14,
+19,
+25,
+27,
+30,
+33,
+36,
+43
+],
+"triplets": [
+5
+],
+"rhyme_idx": 6,
+"head_idx": 0,
+"end_shape": "|SS"
+},
+{
+"bar": 74,
+"syl": 10,
+"steps": [
+2,
+3,
+4,
+5,
+6,
+8,
+10,
+11,
+12,
+13
+],
+"on_beat": [
+4,
+8,
+12
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+false,
+false,
+false,
+true,
+true,
+false,
+false,
+true,
+false,
+false
+],
+"steps48": [
+17,
+24,
+27,
+31,
+34
+],
+"triplets": [],
+"rhyme_idx": 9,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 75,
+"syl": 9,
+"steps": [
+0,
+1,
+3,
+4,
+6,
+7,
+8,
+10,
+12
+],
+"on_beat": [
+0,
+4,
+8,
+12
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+false,
+true,
+true,
+false,
+false,
+false,
+false,
+false,
+false
+],
+"steps48": [
+2,
+10,
+13,
+18,
+21,
+25,
+31,
+38
+],
+"triplets": [
+3
+],
+"rhyme_idx": 8,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 76,
+"syl": 12,
+"steps": [
+-2,
+0,
+3,
+6,
+8,
+9,
+10,
+11,
+12,
+13,
+11,
+12
+],
+"on_beat": [
+0,
+8,
+12,
+12
+],
+"bars_spanned": 1,
+"pickup": true,
+"weak": [
+false,
+false,
+false,
+false,
+false,
+false,
+false,
+false,
+false,
+false,
+false,
+true
+],
+"steps48": [
+43,
+50,
+67,
+86,
+92
+],
+"triplets": [],
+"rhyme_idx": 11,
+"head_idx": 0,
+"advisory": true,
+"end_shape": "~w"
+},
+{
+"bar": 77,
+"syl": 5,
+"steps": [
+3,
+9,
+12,
+15,
+16
+],
+"on_beat": [
+12,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+false,
+false,
+true,
+false,
+true
+],
+"steps48": [
+10,
+46,
+57
+],
+"triplets": [],
+"rhyme_idx": 3,
+"head_idx": 0,
+"end_shape": "|Sw"
+},
+{
+"bar": 78,
+"syl": 9,
+"steps": [
+5,
+7,
+10,
+11,
+12,
+14,
+15,
+16,
+17
+],
+"on_beat": [
+12,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+false,
+false,
+true,
+true,
+false,
+true,
+true,
+false,
+true
+],
+"steps48": [
+31,
+34,
+38,
+43,
+47,
+52,
+57
+],
+"triplets": [
+0
+],
+"rhyme_idx": 7,
+"head_idx": 0,
+"end_shape": "~Sw"
+},
+{
+"bar": 79,
+"syl": 9,
+"steps": [
+6,
+8,
+10,
+12,
+13,
+14,
+15,
+16,
+18
+],
+"on_beat": [
+8,
+12,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+false,
+false,
+false,
+false,
+true,
+true,
+true,
+false,
+false
+],
+"steps48": [
+19,
+25,
+27,
+30,
+35,
+39,
+42,
+46,
+50,
+56,
+60
+],
+"triplets": [
+2,
+3,
+4,
+5,
+6
+],
+"rhyme_idx": 8,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 80,
+"syl": 9,
+"steps": [
+5,
+6,
+8,
+10,
+11,
+14,
+15,
+16,
+17
+],
+"on_beat": [
+8,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+false,
+false,
+false,
+false,
+false,
+true,
+true,
+false,
+false
+],
+"steps48": [
+16,
+20,
+25,
+28,
+31,
+35,
+42,
+46
+],
+"triplets": [],
+"rhyme_idx": 8,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 81,
+"syl": 8,
+"steps": [
+5,
+7,
+10,
+11,
+12,
+15,
+16,
+17
+],
+"on_beat": [
+12,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+false,
+false,
+true,
+true,
+false,
+true,
+false,
+true
+],
+"steps48": [
+30,
+34,
+38,
+44,
+51,
+56
+],
+"triplets": [
+0
+],
+"rhyme_idx": 6,
+"head_idx": 0,
+"end_shape": "|Sw"
+},
+{
+"bar": 82,
+"syl": 10,
+"steps": [
+4,
+6,
+7,
+8,
+10,
+11,
+12,
+14,
+16,
+17
+],
+"on_beat": [
+4,
+8,
+12,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+false,
+false,
+true,
+false,
+false,
+true,
+false,
+false,
+false,
+true
+],
+"steps48": [
+16,
+18,
+21,
+26,
+31,
+38,
+43,
+51,
+55
+],
+"triplets": [],
+"rhyme_idx": 8,
+"head_idx": 0,
+"end_shape": "|Sw"
+},
+{
+"bar": 83,
+"syl": 8,
+"steps": [
+1,
+2,
+3,
+4,
+-2,
+-1,
+0,
+1
+],
+"on_beat": [
+4,
+0
+],
+"bars_spanned": 1,
+"pickup": true,
+"weak": [
+false,
+true,
+false,
+true,
+true,
+false,
+false,
+true
+],
+"steps48": [
+42,
+52,
+55
+],
+"triplets": [],
+"rhyme_idx": 6,
+"head_idx": 2,
+"end_shape": "|Sw"
+},
+{
+"bar": 84,
+"syl": 8,
+"steps": [
+5,
+7,
+9,
+10,
+12,
+14,
+16,
+17
+],
+"on_beat": [
+12,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+false,
+false,
+true,
+false,
+false,
+true,
+false,
+true
+],
+"steps48": [
+17,
+22,
+27,
+31,
+37,
+43,
+51,
+55
+],
+"triplets": [
+1
+],
+"rhyme_idx": 6,
+"head_idx": 0,
+"end_shape": "|Sw"
+},
+{
+"bar": 85,
+"syl": 7,
+"steps": [
+6,
+8,
+10,
+11,
+12,
+15,
+16
+],
+"on_beat": [
+8,
+12,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+true,
+false,
+true,
+true,
+false,
+true,
+false
+],
+"steps48": [
+18,
+25,
+30,
+33,
+37,
+44,
+52,
+91
+],
+"triplets": [],
+"rhyme_idx": 6,
+"head_idx": 1,
+"end_shape": "|S"
+},
+{
+"bar": 86,
+"missing": true,
+"weak": [
+false,
+true,
+false,
+false,
+true,
+false,
+true,
+false
+],
+"triplets": [],
+"rhyme_idx": 7,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 87,
+"syl": 8,
+"steps": [
+6,
+8,
+10,
+11,
+13,
+13,
+14,
+15
+],
+"on_beat": [
+8
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+false,
+false,
+false,
+false,
+true,
+true,
+false,
+true
+],
+"steps48": [
+19,
+21,
+25,
+28,
+31,
+34,
+38,
+42,
+46,
+52
+],
+"triplets": [
+4
+],
+"rhyme_idx": 6,
+"head_idx": 0,
+"end_shape": "~Sw"
+},
+{
+"bar": 88,
+"syl": 9,
+"steps": [
+3,
+4,
+6,
+7,
+9,
+11,
+12,
+14,
+16
+],
+"on_beat": [
+4,
+12,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+false,
+false,
+false,
+true,
+false,
+false,
+false,
+true,
+false
+],
+"steps48": [
+19,
+25,
+30,
+34,
+39,
+41,
+43,
+51,
+56
+],
+"triplets": [
+1
+],
+"rhyme_idx": 8,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 89,
+"syl": 12,
+"steps": [
+4,
+6,
+8,
+10,
+11,
+12,
+14,
+16,
+18,
+20,
+22,
+24
+],
+"on_beat": [
+4,
+8,
+12,
+16,
+20,
+24
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+false,
+true,
+false,
+true,
+true,
+false,
+true,
+false,
+true,
+false,
+true,
+false
+],
+"steps48": [
+14,
+20,
+26,
+31,
+34,
+38,
+43,
+50,
+54,
+62,
+66,
+74
+],
+"triplets": [],
+"rhyme_idx": 11,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 90,
+"syl": 5,
+"steps": [
+6,
+12,
+13,
+15,
+16
+],
+"on_beat": [
+12,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+false,
+false,
+false,
+true,
+false
+],
+"steps48": [
+36,
+39,
+44
+],
+"triplets": [],
+"rhyme_idx": 4,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 91,
+"syl": 8,
+"steps": [
+6,
+9,
+10,
+11,
+12,
+14,
+15,
+16
+],
+"on_beat": [
+12,
+16
+],
+"bars_spanned": 2,
+"pickup": false,
+"weak": [
+false,
+true,
+false,
+false,
+false,
+true,
+false,
+false
+],
+"steps48": [
+38,
+43,
+46
+],
+"triplets": [],
+"rhyme_idx": 7,
+"head_idx": 0,
+"end_shape": "|S"
+},
+{
+"bar": 92,
+"syl": 7,
+"steps": [
+4,
+5,
+6,
+7,
+8,
+9,
+10
+],
+"on_beat": [
+4,
+8
+],
+"bars_spanned": 1,
+"pickup": false,
+"weak": [
+true,
+true,
+false,
+true,
+false,
+true,
+false
+],
+"triplets": [],
+"rhyme_idx": 6,
+"head_idx": 2,
+"end_shape": "|S"
+}
+]
+}

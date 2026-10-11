@@ -1,0 +1,16 @@
+# travel admin
+rail pass stamp visa border customs declare luggage baggage ticket platform ferry tunnel bridge departures arrivals transit connection reservation seat fare single return queue gate carry-on rucksack passport insurance excess delay refund timetable carriage compartment sleeper hostel dorm bunk locker towel breakfast reception key planes train trains airport flight
+# bike and road
+bike helmet panniers saddlebag chain tyre throttle clutch gear brake lean hairpin corner bend summit ride road lane verge fuel tank stand paddock pillion engine mirror visor lid leathers boots gloves signpost
+# nature and scenery
+mountain valley snow fog cloud rain sleet ice peak peaks ridge scree cairn fell tarn lake loch fjord glacier waterfall waterfalls river stream cliff cove beach shingle surf tide island volcano ruins crater forest pine moor heather gorse sheep cows lamb goat horse husky sunset sunrise sky sea
+# places
+Vietnam Laos Bangkok Tao Bali Perth Sydney Melbourne Cairns Brisbane Noosa Zurich Bern Florence Ljubljana Bratislava Vienna Munich Amsterdam Rotterdam Dublin Donegal Bordeaux Porto Bilbao Burgos Marrakesh Naples Pompeii Barcelona Bergen Oslo Snowdon Nevis Scafell Cornwall Padstow Bristol Reading Horfield Portsmouth Calais Dover London Glasgow Groats Kishorn Ullapool Whitsundays Norway Spain France Italy Austria Germany Ireland Scotland Wales England Britain Morocco Portugal Slovenia Slovakia Switzerland Australia Netherlands
+# crime and logistics
+parcel package delivery collect shipment handover drop run tail cover alibi heat cuffs bail fine bribe fifty note nick grass copper cops plod police warrant wanted lookout stash firm crew boss don enforcer deal supply product weight scales cash wire tab flight risk booked
+# British everyday
+tea kettle toast biscuit bins rent landlord mum nan dad pub pint round chips roast Sunday holiday telly sofa slippers pyjamas takeaway supermarket taxi bus coach station garden shed allotment weather drizzle umbrella raincoat anorak flask sandwich shortly quickly
+# festival and strange
+festival wristband tent field mud stage headliner crowd bonfire lantern guillotine gnome orange cinema aisle finale truffle lines table
+# verbs and states
+nip pop skip hop wait stay leave arrive depart return book miss missed caught lost found stuck held carry carried pack packed ship shipped
