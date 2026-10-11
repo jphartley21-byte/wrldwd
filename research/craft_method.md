@@ -20,3 +20,9 @@ Source: Joe's question about five lines of the original (V1 L24-L31 region: the 
 
 ## Persona and content
 Narrator: unbothered, low-level trader who "imports all sorts" (Joe's hook). Content can be invented: it only has to sound specific. Joe's real trips supply places, activities and seeds, not required incidents. Flag anything invented, as always; no copying of the original's frames or phrases.
+
+## Corrections from Joe, 11 Oct 2026 (I had these wrong or missing)
+- "certi" is real UK slang (short for "certified": authentic, cool, highly respectable), NOT a word cut off mid-way. The device is: a swagger slang word whose clipped form fits the rhyme and also means something. Add slang words like this to the sound set (soundset.py section C draws from bank/slang.csv).
+- "ouzo" is a dry anise-flavoured aperitif from Greece and Cyprus; "back" = drink. My tools did not know either word (OOV): critics and tools also lack UK slang and cultural knowledge, so every critic prompt must carry a glossary for BOTH original and new lines.
+- Duck-duck goose line: the Genius annotation (Joe's paste) explains it: the children's playground game (a picker taps heads saying "duck" then "goose" and runs) given a dark twist, the debtor being hit on the head, probably with a bat, for not paying. Device: PLAYGROUND GAMES AS VIOLENCE EUPHEMISM (also ping-pong, football, WWE in the same song). Add this as a category in the idiom/surgery work: children's games, sports and domestic pastimes mapped onto menace, reported flatly.
+- My measures called that block "no internal rhyme" and the critics never credited it: the quality is the cashed game + the dark turn on the rhyme word, which no surface metric sees.

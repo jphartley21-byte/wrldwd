@@ -66,3 +66,5 @@ moped	M OW1 P EH2 D
 youll	Y UW1 L
 hoodie	HH UH1 D IY0
 dont	D OW1 N T
+certi	S ER1 T IY0
+ouzo	UW1 Z OW0
