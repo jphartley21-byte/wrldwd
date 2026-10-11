@@ -37,3 +37,10 @@ So the quality floor is the ORIGINAL's worst bar, in CRAFT terms (rhyme architec
 - The measured checks are diagnostics only: the ORIGINAL fails them in 14 of 19 4-bar blocks (e.g. no internal rhyme in many blocks).
 - One 8-bar chain on a soft multisyllabic sound with idioms cashed on the rhyme (-ender: monkey/lender, legal tender, first-time offender) reached about 4-6 vs the original's best chain at 6-8. Its best lines were the ones resting on TRUE specific details (hostel holds your passport; goon bag pillow). The weak lines were invented filler.
 - 6 critic rounds reached: guard says drop the stanza and report the blocker. Blocker = true, specific, funny details/incidents only Joe has (the strongest lines all came from real facts).
+
+## Method run, 11 Oct 2026 (craft_method.md, soundset.py, bartest.py): chain "bungee" (-unky/-oney/-umpy, 8 bars)
+Rounds 1-6 with two blind critics (A = wit+rap, B = sound+flow), originals' chains mixed in:
+A: 6, 5, 7, 6, 6, 6   B: -, -, -, 5(r4), 7(r5), 5(r6)   (round 1 was A only). Ranked #1 or tied #1 of 6 in rounds 3-6; the original's best chain scored 4-6 (A) and 6 (B) in the same pools.
+CAVEAT (gate 0 failed): both critics also score the original's chains only 3-6, so they under-rate the original relative to Joe. Beating the original's critic scores is NOT evidence of parity in Joe's terms.
+Lines still flagged 3 in the last round: safety-briefing line, the "upside down" line, the landing line. B flags delivery problems on long bars (3, 5). Text-stress check: clashes 13 vs 8, mid-bar pauses 9 vs 4 against one original chunk (crude screen).
+Stop reason: cap of 6 rounds reached; remaining judgement is Joe's ear (CLAUDE.md principle 0c). Shown to Joe as ONE chain with these caveats, not as a draft.

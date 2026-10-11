@@ -1,0 +1,172 @@
+id,type,text,items,sound,places,tags,source,joe_says_it,status
+,idiom_surgery,Pay through the nose,"pay through the Nore / pay through the nosh / pay through the toll | a nostril-based payment terminal | Paid through the toll, three quid, bridge says thanks",nose,,money;body;sound-swap,agent,,to check
+,idiom_surgery,Cost the earth,"cost the Perth / cost the girth / cost the berth | the planet itemised on a receipt | Berth on the ferry cost the berth, I paid in coins",earth,,travel;money;sound-swap,agent,,to check
+,idiom_surgery,Rob Peter to pay Paul,"rob Peter to pay Poll / rob Pete to pay Saul / rob Peter to pay for the pool | two blokes swapping a wallet | Robbed Pete to pay for the pool, he's still on the lilo",Paul,,money;sound-swap,agent,,to check
+,idiom_surgery,Pennies from heaven,"pennies from Devon / pennies from seven / pennies from Kevin | coins falling out of the sky | Pennies from Devon, a pasty and a bus pass",heaven,,money;weather;sound-swap,agent,,to check
+,idiom_surgery,"Penny wise, pound foolish","pound-fool dish / pound of Polish / pound-shop fish | saving coppers, wasting quids | Penny wise, pound of Polish, it was a bargain sausage",foolish,,money;food;sound-swap,agent,,to check
+,idiom_surgery,Save for a rainy day,"rainy bay / rainy Bray / rainy A-road | a savings pot labelled drizzle | Saved for a rainy day, then I hit Bray, it poured",day,,money;weather;sound-swap,agent,,to check
+,idiom_surgery,Flash the cash,"flash the hash / flash the sash / flash the Nash | waving notes about | Flashed the Cash, got the Nash, he works the ferry",cash,,money;sound-swap,agent,,to check
+,idiom_surgery,Cash cow,"cash cow-ed / cash-point Cowes / cash cow pat | a till-ringing heifer | Cash cow in Cowes, the ferry's got a cashpoint",cow,,money;animals;sound-swap,agent,,to check
+,idiom_surgery,Cash in hand,"cash in Sand / cash in Strand / cash in Rand | notes held in a palm | Cash in Rand, coins in sand, hostel owner counts it",hand,,money;hostel;both,agent,,to check
+,idiom_surgery,Ten a penny,"ten a Jenny / ten a many / ten a Kenny | tenpence worth of anything | Hostels ten a penny, ten a Kenny, all got a Kenny",penny,,money;hostel;sound-swap,agent,,to check
+,idiom_surgery,Money for old rope,"money for old soap / money for old Pope / money for old dope | coin for a length of hemp | Money for old soap, hostel shower, one pump",rope,,money;hostel;both,agent,,to check
+,idiom_surgery,Money doesn't grow on trees,"grows on knees / grows on fleas / grows on peas | banknotes as fruit | Money doesn't grow on peas, but they've got a lot of it in Peru",trees,,money;food;sound-swap,agent,,to check
+,idiom_surgery,Made of money,"made of honey / made of Bunny / made of sunny | a body of notes | Not made of honey, but the hostel bed is sticky",money,,money;hostel;sound-swap,agent,,to check
+,idiom_surgery,Paid in full,"paid in bull / paid in wool / paid in pull | fully settled | Paid in wool at the border, the sheep were a deposit",full,,money;animals;sound-swap,agent,,to check
+,idiom_surgery,Pass the buck,"pass the duck / pass the truck / pass the Puck | handing over a dollar or a deer | Passed the duck, passed the truck, passed out on the bus",buck,,money;animals;both,agent,,to check
+,idiom_surgery,Bang for your buck,"bang for your duck / bang for your yak / bang for your Puck | explosion per dollar | Bang for your yak, bang for your pack, bang on the track",buck,,money;animals;sound-swap,agent,,to check
+,idiom_surgery,Run out of steam,"run out of cream / run out of ream / run out of team | a kettle going quiet | Ran out of steam at the ferry, ran out of cream at the cafe",steam,,travel;food;sound-swap,agent,,to check
+,idiom_surgery,Run out of road,"run out of toad / run out of load / run out of code | tarmac stopping | Ran out of road, ran out of toad, ran into a ditch",road,,travel;bikes;sound-swap,agent,,to check
+,idiom_surgery,End of the line,"end of the pine / end of the wine / end of the Rhine | the last station | End of the line, end of the wine, end of the Rhine",line,,travel;drink;sound-swap,agent,,to check
+,idiom_surgery,Off the beaten track,"off the beaten snack / off the beaten pack / off the beaten Jack | a path not walked | Off the beaten snack, a crisp packet on a mountain",track,,travel;food;sound-swap,agent,,to check
+,idiom_surgery,Beat a path,"beat a bath / beat a Garth / beat a laugh | thumping a trail flat | Beat a bath, beat a Garth, beat the hostel queue",path,,travel;hostel;sound-swap,agent,,to check
+,idiom_surgery,Go the extra mile,"extra smile / extra tile / extra pile | a 1.6 km bonus | Went the extra mile, the mile was in kilometres, nobody told me",mile,,travel;sound-swap,agent,,to check
+,idiom_surgery,Miles from anywhere,"miles from Clare / miles from chair / miles from Ware | distance measured in nowhere | Miles from anywhere, miles from Ware, miles from a chair",anywhere,,travel;sound-swap,agent,,to check
+,idiom_surgery,Middle of nowhere,"middle of Nowhere, Wear / middle of the Sheer / middle of Rare | a place called Nowhere | Middle of nowhere, the bus doesn't care",nowhere,,travel;sound-swap,agent,,to check
+,idiom_surgery,Back of beyond,"back of Bond / back of the pond / back of the fond | behind a village called Beyond | Back of beyond, back of the pond, back of a Honda",beyond,,travel;bikes;sound-swap,agent,,to check
+,idiom_surgery,Hit the ground running,"hit the ground gunning / hit the ground sunning / hit the ground Dunning | landing and jogging | Hit the ground sunning, ground was a lilo",running,,travel;sound-swap,agent,,to check
+,idiom_surgery,Touch down,"touch town / touch brown / touch crown | a plane meeting tarmac | Touched town, touched brown, touched a crown in the duty free",down,,travel;money;sound-swap,agent,,to check
+,idiom_surgery,Up in the air,"up in the chair / up in the Clare / up in the pair | undecided, aloft | Up in the air, up in the chair, up the stairs with no spare",air,,travel;sound-swap,agent,,to check
+,idiom_surgery,Jump ship,"jump chip / jump trip / jump whip | leaping off a boat | Jumped ship in Dover, landed on a chip",ship,,travel;food;sound-swap,agent,,to check
+,idiom_surgery,Plain sailing,"plain Wailing / plane sailing / plain Ealing | an airplane on a boat | Plane sailing from Ealing, all aboard the Ealing",sailing,,travel;sound-swap,agent,,to check
+,idiom_surgery,Sail close to the wind,"close to the mind / close to the rind / close to the pinned | hugging a gust | Sailed close to the rind, ferry served me cheese",wind,,travel;food;sound-swap,agent,,to check
+,idiom_surgery,Three sheets to the wind,"three sheets to the Rhind / to the pinned / to the grinned | loose linen on a mast, drunk | Three sheets to the wind, hostel laundry's on the line",wind,,drink;hostel;weather;both,agent,,to check
+,idiom_surgery,Batten down the hatches,"batten down the matches / catches / patches | fastening ship doors | Battened down the patches, patched the hatches, dropped the snatches",hatches,,travel;weather;sound-swap,agent,,to check
+,idiom_surgery,All hands on deck,"all hands on Beck / on check / on neck | every palm on the floor of a ship | All hands on deck, all hands on Beck, all hands on a Greggs",deck,,travel;body;sound-swap,agent,,to check
+,idiom_surgery,Rock the boat,"rock the goat / rock the coat / rock the moat | swaying a vessel | Rock the goat, rock the coat, rock the ferry in Ibiza",boat,,travel;animals;sound-swap,agent,,to check
+,idiom_surgery,Miss the boat,"miss the goat / miss the float / miss the note | ferry departs without you | Missed the boat, missed the goat, missed a fifty-pound note",boat,,travel;money;animals;sound-swap,agent,,to check
+,idiom_surgery,In the same boat,"same goat / same coat / same moat | sharing a hull | Same boat, same goat, same coat, same bloke on the ferry",boat,,travel;animals;sound-swap,agent,,to check
+,idiom_surgery,Water under the bridge,"water under the fridge / under the midge / under the ridge | river passing a span | Water under the fridge, the hostel one, full of other people's cheese",bridge,,travel;hostel;food;sound-swap,agent,,to check
+,idiom_surgery,Burn your bridges,"burn your fridges / burn your ridges / burn your midges | torching a crossing | Burned my bridges, burned my ridges, burned my back in Bali",bridges,,travel;body;sound-swap,agent,,to check
+,idiom_surgery,Cross that bridge when you come to it,"cross that bridge when you come to Brit / to Fit / to Bit | walk over when you arrive | Cross it when you come to it, tolls are on the left",it,,travel;money;sound-swap,agent,,to check
+,idiom_surgery,Passport to anywhere,"passport to Clare / to Ware / to chair | a document with unlimited scope | Passport to Ware, found it under a chair",anywhere,,travel;sound-swap,agent,,to check
+,idiom_surgery,Pack it in,"pack it in tin / pack it in bin / pack it in Lynn | stuffing a rucksack | Packed it in a tin, packed it in a bin, packed in Kings Lynn",in,,travel;hostel;sound-swap,agent,,to check
+,idiom_surgery,Pack a punch,"pack a lunch / pack a hunch / pack a crunch | a fist in a bag | Packed a lunch, packed a punch, ate the lunch on a bunch of bunks",punch,,travel;food;drink;both,agent,,to check
+,idiom_surgery,Travel light,"travel tight / travel white / travel night | bags with no weight | Travelled light, travelled tight, travelled in the night, baggage was white",light,,travel;sound-swap,agent,,to check
+,idiom_surgery,Itchy feet,"itchy meet / itchy sheet / itchy seat | foot rash that demands a ticket | Itchy sheet, itchy seat, itchy hostel bunk",feet,,travel;body;hostel;sound-swap,agent,,to check
+,idiom_surgery,Get cold feet,"get cold meat / cold sheet / cold seat | chilly toes at the altar | Cold feet, cold meat, cold sheet, cold seat, cold shower",feet,,body;weather;food;sound-swap,agent,,to check
+,idiom_surgery,Find your feet,"find your meet / find your seat / find your street | locating your own toes | Found my feet, found my seat, found my street was a ditch",feet,,body;travel;sound-swap,agent,,to check
+,idiom_surgery,Put your foot down,"foot on the clown / on the town / on the crown | pedal to the floor | Put my foot down, landed in town, scooter had no crown",down,,bikes;travel;sound-swap,agent,,to check
+,idiom_surgery,Pedal to the metal,"pedal to the kettle / the nettle / the petal | right foot pressed to steel | Pedal to the kettle, scooter's got a nettle, rain on the petal",metal,,bikes;weather;sound-swap,agent,,to check
+,idiom_surgery,On your bike,"on your Mike / on your Nike / on your spike | get lost, with a bicycle | On your Mike, on your Nike, on your motorbike",bike,,bikes;sound-swap,agent,,to check
+,idiom_surgery,Get on your high horse,"high course / high Morse / high Norse | a tall animal to mount | Got on my high horse, got on a high course, got on a bike",horse,,animals;bikes;sound-swap,agent,,to check
+,idiom_surgery,Ride shotgun,"ride Bun / ride gun / ride Fun | front seat in a truck | Ride shotgun, ride a bun, ride a Honda for fun",shotgun,,bikes;travel;sound-swap,agent,,to check
+,idiom_surgery,Ride roughshod,"ride rough-shod / rough, odd / rough, flawed | trampling on horseshoes | Rode roughshod through Reading, rode the loop road",roughshod,,bikes;sound-swap,agent,,to check
+,idiom_surgery,Fall off the wagon,"fall off the dragon / the flagon / the Wagon Wheel | dropping from a cart, back on the drink | Fell off the wagon, fell for the flagon, tipped into the dragon",wagon,,drink;sound-swap,agent,,to check
+,idiom_surgery,Down in one,"down in a bun / in a ton / in the sun | chugging a pint | Downed it in the sun, downed a ton in a bun",one,,drink;sound-swap,agent,,to check
+,idiom_surgery,On the wagon,"on the flagon / the dragon / the Jaguar | sober, sat on a cart | On the dragon, on the flagon, off the wagon by noon",wagon,,drink;sound-swap,agent,,to check
+,idiom_surgery,Pub crawl,"pub brawl / pub small / pub stall | pubs visited on all fours | Pub crawl, pub stall, pub small, pub's got a crawl-ing child",crawl,,drink;sound-swap,agent,,to check
+,idiom_surgery,Last orders,"last borders / last warders / last recorders | final pints before bell | Last orders, last borders, last warders, last recorders",orders,,drink;travel;sound-swap,agent,,to check
+,idiom_surgery,Call time,"call lime / call dime / call prime | landlord rings the bell | Called time, called a lime, called a dime, called a cab",time,,drink;sound-swap,agent,,to check
+,idiom_surgery,My round,"my pound / my mound / my ground | turn to buy | My round, my pound, my mound, my ground",round,,drink;money;sound-swap,agent,,to check
+,idiom_surgery,Bottoms up,"bottoms cup / bottoms pup / bottoms sup | glass upside down, or backsides | Bottoms up, bottoms pup, bottoms in the sun",up,,drink;body;sound-swap,agent,,to check
+,idiom_surgery,Pint-sized,"pint-priced / pint-spiced / pint-prized | small but pint-shaped | Pint-priced in Prague, pint-sized in Prague",sized,,drink;money;travel;sound-swap,agent,,to check
+,idiom_surgery,Neat as a pin,"neat as a gin / as a skin / as a bin | tidy as a bowling pin | Neat as a gin, neat as a bin, neat as a skin of vodka",pin,,drink;games;sound-swap,agent,,to check
+,idiom_surgery,On the rocks,"on the socks / on the clocks / on the Fox | over ice, or marriage ending | On the rocks, on the socks, on the Fox, I'm on the Skye ones",rocks,,drink;travel;sound-swap,agent,,to check
+,idiom_surgery,Under the weather,"under the feather / the leather / the heather | ill; below the clouds | Under the heather, under the feather, under it all, Scottish",weather,,weather;body;sound-swap,agent,,to check
+,idiom_surgery,Come rain or shine,"rain or wine / or brine / or pine | in all conditions | Come rain or wine, come rain or brine, come rain or Rhine",shine,,weather;drink;sound-swap,agent,,to check
+,idiom_surgery,Storm in a teacup,"storm in a ramen cup / in a cuppa / in a tea shop | tiny tempest | Storm in a teacup, storm in a Pret, storm in a hostel kitchen",teacup,,weather;food;hostel;sound-swap,agent,,to check
+,idiom_surgery,Steal my thunder,"steal my wonder / my under / my blunder | pinch the lightning | Stole my thunder, stole my wonder, stole my blunder and my bunk",thunder,,weather;hostel;sound-swap,agent,,to check
+,idiom_surgery,Face like thunder,"face like under / like plunder / like wonder | a scowl in storm shape | Face like plunder, face like thunder, face like a bin",thunder,,weather;body;sound-swap,agent,,to check
+,idiom_surgery,Right as rain,"right as Spain / as plane / as train | perfectly fine, wet | Right as Spain, right as plane, right as a train",rain,,weather;travel;sound-swap,agent,,to check
+,idiom_surgery,Snowed under,"snowed thunder / snowed blunder / snowed plunder | buried by flakes at work | Snowed under in Sweden, snowed under in Aviemore",under,,weather;travel;sound-swap,agent,,to check
+,idiom_surgery,Skating on thin ice,"thin price / thin dice / thin slice | risky, slidy | Thin slice, thin dice, thin ice at the border",ice,,weather;travel;games;sound-swap,agent,,to check
+,idiom_surgery,Blow hot and cold,"blow hot and sold / hot and rolled / hot and gold | changing your mind with air | Blow hot and rolled, hot and gold, hot and told",cold,,weather;money;sound-swap,agent,,to check
+,idiom_surgery,Fair-weather friend,"fair-weather end / blend / bend | mate only when it's sunny | Fair-weather bend, fair-weather end, fair-weather friend",friend,,weather;sound-swap,agent,,to check
+,idiom_surgery,Cloud cuckoo land,"cloud cuckoo sand / band / hand | fantasy; a bird-filled sky | Cloud cuckoo sand, cloud cuckoo Cairns, Aus",land,,weather;animals;sound-swap,agent,,to check
+,idiom_surgery,Silver lining,"silver dining / mining / signing | metal on the cloud edge | Silver mining, silver dining, silver lining on a duty-free bag",lining,,weather;money;sound-swap,agent,,to check
+,idiom_surgery,Head in the clouds,"head in the crowds / in the shrouds / in the Prowds | dreaming, airborne head | Head in the clouds, head in the crowds, head over the sink",clouds,,weather;body;sound-swap,agent,,to check
+,idiom_surgery,Lightning never strikes twice,"strikes mice / strikes dice / strikes rice | no repeats | Lightning strikes rice, lightning strikes dice, lightning in Hanoi",twice,,weather;games;food;sound-swap,agent,,to check
+,idiom_surgery,Saved by the bell,"saved by the Dell / the sell / the shell | rescued by a boxing ring clang | Saved by the shell, saved by the Dell, saved by a Thai hotel",bell,,games;sound-swap,agent,,to check
+,idiom_surgery,Raining buckets,"raining ducats / raining nuggets / raining Brackets | pails of water falling | Raining nuggets, raining ducats, raining on the Greggs",buckets,,weather;food;money;sound-swap,agent,,to check
+,idiom_surgery,Dead as a dodo,"dead as a Lido / as Fido / as a judo | extinct bird | Dead as a Fido, dead as a Lido, dead as judo in Sidmouth",dodo,,animals;sound-swap,agent,,to check
+,idiom_surgery,Eager beaver,"eager Cleaver / eager receiver / eager believer | keen dam-builder | Eager believer, eager receiver, eager for a Hoover",beaver,,animals;sound-swap,agent,,to check
+,idiom_surgery,Busy as a bee,"busy as a tea / as a fee / as a flea | hive-bound insect | Busy as a bee, busy as a flea, busy with the hostel fee",bee,,animals;hostel;money;sound-swap,agent,,to check
+,idiom_surgery,Quiet as a mouse,"quiet as a house / as a grouse / as a blouse | rodent silence | Quiet as a grouse, quiet as a house, hostel dorm at three",mouse,,animals;hostel;sound-swap,agent,,to check
+,idiom_surgery,Dog tired,"dog hired / dog wired / dog mired | exhausted pooch | Dog hired, dog wired, dog tired from the ferry",tired,,animals;travel;sound-swap,agent,,to check
+,idiom_surgery,Dog's dinner,"dog's winner / dog's thinner / dog's sinner | a mess; pet bowl | Dog's dinner, dog's winner, dog's thinner, hostel kitchen",dinner,,animals;food;hostel;sound-swap,agent,,to check
+,idiom_surgery,Barking up the wrong tree,"barking up the wrong sea / key / fee | pooch at the wrong trunk | Barking up the wrong key, wrong fee, wrong sea",tree,,animals;sound-swap,agent,,to check
+,idiom_surgery,Let sleeping dogs lie,"let sleeping dogs fly / buy / pie | don't poke a hound | Let sleeping dogs buy, let sleeping dogs fly, let them have pie",lie,,animals;travel;sound-swap,agent,,to check
+,idiom_surgery,Every dog has its day,"every dog has its bay / its Bray / its Mae | everyone gets a turn | Every dog has its bay, every dog has its say, every dog's on holiday",day,,animals;sound-swap,agent,,to check
+,idiom_surgery,Sick as a parrot,"sick as a carrot / as a Garrett / as a ferret | gutted, with feathers | Sick as a parrot, sick as a carrot, sick on the ferry",parrot,,animals;food;travel;sound-swap,agent,,to check
+,idiom_surgery,Cat got your tongue,"cat got your dung / your lung / your bung | quiet, with feline thief | Cat got your lung, cat got your bung, cat got a Bangkok bun",tongue,,animals;body;sound-swap,agent,,to check
+,idiom_surgery,Curiosity killed the cat,"killed the mat / the hat / the bat | nosiness is lethal | Killed the bat, killed the hat, killed the Kat",cat,,animals;sound-swap,agent,,to check
+,idiom_surgery,Let the cat out of the bag,"cat out of the tag / the lag / the flag | reveal a secret | Let the cat out of the tag, out of the lag, out of the jet lag",bag,,animals;travel;sound-swap,agent,,to check
+,idiom_surgery,Fat cat,"fat hat / fat flat / fat mat | rich boss | Fat cat, fat flat, fat mat, fat hat",cat,,animals;money;sound-swap,agent,,to check
+,idiom_surgery,Elephant in the room,"elephant in the boom / zoom / broom | the obvious, huge subject | Elephant in the boom, zoom, broom, Thai river",room,,animals;travel;sound-swap,agent,,to check
+,idiom_surgery,Wild goose chase,"wild goose race / base / case | pointless pursuit | Wild goose base, wild goose case, wild goose race",chase,,animals;sound-swap,agent,,to check
+,idiom_surgery,Don't count your chickens,"count your kittens / your Mickens / your sicken | don't pre-count hatchlings | Counted my kittens, counted my pence",chickens,,animals;money;sound-swap,agent,,to check
+,idiom_surgery,Sitting duck,"sitting truck / sitting luck / sitting tuck | easy target | Sitting truck, sitting luck, sitting tuck, sitting in a tuk-tuk",duck,,animals;travel;sound-swap,agent,,to check
+,idiom_surgery,Like water off a duck's back,"off a duck's sack / pack / track | runs right off | Off a duck's pack, off a duck's track",back,,animals;weather;travel;sound-swap,agent,,to check
+,idiom_surgery,Bull in a china shop,"bull in a China stop / hop / mop | clumsy beast, fragile plates | Bull in a China stop, bull in a China hop",shop,,animals;travel;sound-swap,agent,,to check
+,idiom_surgery,Take the bull by the horns,"bull by the thorns / the corns / the morns | face it head on | Took the bull by the thorns, by the corns, by the dawns",horns,,animals;body;sound-swap,agent,,to check
+,idiom_surgery,Red rag to a bull,"red rag to a gull / a pull / a wool | provocation | Red rag to a gull, red rag to a pull",bull,,animals;sound-swap,agent,,to check
+,idiom_surgery,Cock and bull story,"cock and bull glory / gory / quarry | tall tale | Cock and bull glory, cock and bull quarry",story,,animals;sound-swap,agent,,to check
+,idiom_surgery,Till the cows come home,"till the cows come Rome / Nome / foam | forever | Till the cows come Rome, till the cows come foam",home,,animals;travel;sound-swap,agent,,to check
+,idiom_surgery,Bee's knees,"bee's cheese / bee's fees / bee's keys | top class | Bee's cheese, bee's fees, bee's keys, bee's hostel keys",knees,,animals;body;hostel;sound-swap,agent,,to check
+,idiom_surgery,Straight from the horse's mouth,"horse's south / drought / shout | from the source | Horse's south, horse's drought, horse's shout",mouth,,animals;body;sound-swap,agent,,to check
+,idiom_surgery,Hold your horses,"hold your courses / forces / Norses | wait | Held my courses, held my horses at the border",horses,,animals;travel;sound-swap,agent,,to check
+,idiom_surgery,One-trick pony,"one-trick Tony / bony / phoney | limited skills; a £25 note | One-trick pony, one-trick phoney, one pony in the jar",pony,,animals;money;both,agent,,to check
+,idiom_surgery,Flog a dead horse,"flog a dead course / sauce / force | waste effort | Flogged a dead horse, flogged a dead course, flogged a Rolex in Bangkok",horse,,animals;money;sound-swap,agent,,to check
+,idiom_surgery,Don't look a gift horse in the mouth,"gift horse in the south / the drought / the fourth | accept presents | Gift horse in the south, gift horse in the drought",mouth,,animals;body;sound-swap,agent,,to check
+,idiom_surgery,Pig in a poke,"pig in a coke / a joke / a smoke | buy unseen | Pig in a coke, pig in a joke, pig in a smoke, Bangkok",poke,,animals;drink;sound-swap,agent,,to check
+,idiom_surgery,Pigs might fly,"pigs might pie / sky / try | never | Pigs might pie, pigs might try, pigs might fly Ryanair",fly,,animals;travel;sound-swap,agent,,to check
+,idiom_surgery,Piggy bank,"piggy tank / piggy plank / piggy rank | money pot | Piggy bank, piggy tank, piggy plank, piggy rank",bank,,animals;money;sound-swap,agent,,to check
+,idiom_surgery,Lion's share,"lion's chair / lion's pair / lion's care | biggest portion | Lion's share, lion's chair, lion's pair, safari",share,,animals;travel;sound-swap,agent,,to check
+,idiom_surgery,Crocodile tears,"crocodile years / beers / gears | fake crying | Crocodile beers, crocodile gears, crocodile years",tears,,animals;drink;sound-swap,agent,,to check
+,idiom_surgery,See you later alligator,"see you later, elevator / terminator / navigator | goodbye in rhyme | See you later, navigator, see you later, elevator",alligator,,animals;travel;sound-swap,agent,,to check
+,idiom_surgery,In a while crocodile,"in a while, Nile / aisle / style | goodbye in rhyme | In a while, Nile, in a while, aisle, in a while, style",crocodile,,animals;travel;sound-swap,agent,,to check
+,idiom_surgery,Snake in the grass,"snake in the glass / the pass / the mass | traitor | Snake in the glass, snake in the pass, snake in the grass",grass,,animals;drink;sound-swap,agent,,to check
+,idiom_surgery,Snakes and ladders,"snakes and gladders / madders / adders | board game | Snakes and ladders, snakes and adders",ladders,,games;animals;sound-swap,agent,,to check
+,idiom_surgery,Roll the dice,"roll the price / the slice / the vice | take a chance | Rolled the dice, rolled the price, rolled the slice",dice,,games;money;sound-swap,agent,,to check
+,idiom_surgery,Pass go,"pass Joe / pass doh / pass low | Monopoly start | Pass go, pass Joe, pass low, pass the Old Kent Road",go,,games;money;sound-swap,agent,,to check
+,idiom_surgery,Go straight to jail,"go straight to mail / to ale / to pale | Monopoly punishment | Straight to ale, straight to mail, straight to the airport lounge",jail,,games;law;drink;sound-swap,agent,,to check
+,idiom_surgery,Get out of jail free,"get out of jail, Dee / tea / sea | Monopoly card | Out of jail, tea, out of jail, sea",free,,games;law;sound-swap,agent,,to check
+,idiom_surgery,Checkmate,"check Kate / check weight / check eight | chess finish | Checkmate, check weight, check eight, check the baggage",mate,,games;travel;sound-swap,agent,,to check
+,idiom_surgery,Pass the parcel,"pass the arsenal / the carol / the barrel | party game | Pass the barrel, pass the carol, pass the parcel in Bristol",parcel,,games;drink;sound-swap,agent,,to check
+,idiom_surgery,Musical chairs,"musical stairs / pairs / flares | playground game | Musical pairs, musical stairs, musical flares",chairs,,games;sound-swap,agent,,to check
+,idiom_surgery,Hide and seek,"hide and Greek / and week / and peak | playground game | Hide and Greek, hide and week, hide and peek",seek,,games;travel;sound-swap,agent,,to check
+,idiom_surgery,Hopscotch,"hop-Scotch / hop notch / hop watch | playground square game, and whisky | Hop-Scotch, hop-scotch, hopped to Scotland",scotch,,games;drink;travel;both,agent,,to check
+,idiom_surgery,Tug of war,"tug of floor / of door / of Thor | rope contest | Tug of door, tug of floor, tug of Thor, Asgard",war,,games;sound-swap,agent,,to check
+,idiom_surgery,"What's the time, Mr Wolf","Mr Golf / Mr Gulf / Mr Woof | playground chase | Time, Mr Golf, time, Mr Gulf",Wolf,,games;animals;travel;sound-swap,agent,,to check
+,idiom_surgery,Piggy in the middle,"piggy in the riddle / fiddle / griddle | playground ball game | Piggy in the riddle, piggy in the fiddle, piggy on the griddle",middle,,games;animals;food;sound-swap,agent,,to check
+,idiom_surgery,Knock down ginger,"knock down finger / singer / Ginger | doorbell prank | Knock down finger, knock down singer, knock down ginger ale",ginger,,games;drink;sound-swap,agent,,to check
+,idiom_surgery,Bluff your way,"bluff your Bay / your day / your stay | fake confidence | Bluffed my stay, bluffed my day, bluffed my way",bluff,,games;travel;sound-swap,agent,,to check
+,idiom_surgery,Play your cards right,"play your cards tight / light / night | be clever | Played my cards tight, light, night",right,,games;sound-swap,agent,,to check
+,idiom_surgery,Double or quits,"double or kits / bits / fits | risk it all | Double or bits, double or fits, double or quits",quits,,games;money;sound-swap,agent,,to check
+,idiom_surgery,Pot luck,"pot duck / pot truck / pot buck | takes whatever comes | Pot luck, pot duck, pot truck, pot buck",luck,,games;food;sound-swap,agent,,to check
+,idiom_surgery,Throw in the towel,"throw in the bowl / the owl / the vowel | give up | Threw in the towel, threw in the owl, threw in the vowel",towel,,games;hostel;animals;sound-swap,agent,,to check
+,idiom_surgery,Break a leg,"break a keg / beg / egg | good luck on stage | Break a keg, break an egg, break a beg",leg,,music;drink;body;sound-swap,agent,,to check
+,idiom_surgery,Face the music,"face the Muse / the usic / the Susan | accept consequences | Faced the music, faced the Muse, faced the Ibiza queue",music,,music;travel;sound-swap,agent,,to check
+,idiom_surgery,Blow your own trumpet,"blow your own crumpet / strumpet / trump it | brag | Blew my own crumpet, blew my own trumpet",trumpet,,music;food;sound-swap,agent,,to check
+,idiom_surgery,Sing for your supper,"sing for your upper / your tupper / your puppa | perform for food | Sang for my tupper, sang for my supper, sang in a hostel",supper,,music;food;hostel;sound-swap,agent,,to check
+,idiom_surgery,Selling like hot cakes,"selling like hot snakes / hot lakes / hot bakes | moving fast | Selling like hot snakes, hot lakes",cakes,,trade;food;sound-swap,agent,,to check
+,idiom_surgery,Buy one get one free,"buy one get one sea / tea / flea | shop offer | Buy one get one tea, buy one get one flea",free,,trade;money;hostel;sound-swap,agent,,to check
+,idiom_surgery,Cut and run,"cut and bun / and sun / and gun | bolt | Cut and bun, cut and sun, cut and gun",run,,law;food;sound-swap,agent,,to check
+,idiom_surgery,On the run,"on the bun / the sun / the gun | fleeing | On the bun, on the sun, on the gun, on the lam",run,,law;food;sound-swap,agent,,to check
+,idiom_surgery,In the dock,"in the sock / the Cork / the clock | on trial, or at harbour | In the dock, in the sock, in the Cork",dock,,law;travel;both,agent,,to check
+,idiom_surgery,Take it on the chin,"take it on the gin / the tin / the skin | endure | Took it on the gin, took it on the tin",chin,,body;drink;sound-swap,agent,,to check
+,idiom_surgery,Cut the mustard,"cut the custard / the bustard / the cluster | meet standard | Cut the custard, cut the bustard",mustard,,food;animals;sound-swap,agent,,to check
+,idiom_surgery,Bite the bullet,"bite the mullet / the pullet / the wallet | endure | Bit the wallet, bit the pullet, bit the mullet",bullet,,food;money;animals;sound-swap,agent,,to check
+,idiom_surgery,Bite off more than you can chew,"bite off more than you can brew / Kew / queue | overreach | Bit off more than I could Kew, brew, queue",chew,,food;drink;travel;sound-swap,agent,,to check
+,idiom_surgery,Piece of cake,"piece of lake / of Jake / of snake | easy | Piece of lake, piece of snake, piece of Jake",cake,,food;animals;sound-swap,agent,,to check
+,idiom_surgery,Egg on your face,"egg on your case / your base / your lace | embarrassed | Egg on my case, egg on my base, egg on my lace",face,,food;body;sound-swap,agent,,to check
+,idiom_surgery,Full of hot air,"hot chair / hot flair / hot pair | boastful; balloon fuel | Hot chair, hot flair, hot air balloon",air,,travel;weather;both,agent,,to check
+,idiom_surgery,Apples and pears,apples and stairs / and chairs / and bears | Cockney stairs | Up the apples and pears to the dorm,pears,,food;hostel;sound-swap,agent,,to check
+,idiom_surgery,Dog and bone,"dog and phone / and stone / and loan | Cockney phone | Dog and phone, dog and stone",bone,,animals;money;sound-swap,agent,,to check
+,idiom_surgery,Trouble and strife,"trouble and life / and wife / and knife | Cockney wife | Trouble and knife, trouble and life",strife,,law;sound-swap,agent,,to check
+,idiom_surgery,Brown bread,"brown fled / head / dead | Cockney dead | Brown head, brown dead, brown bread",bread,,food;sound-swap,agent,,to check
+,idiom_surgery,Rosie Lee,"Rosie sea / tea / glee | Cockney tea | Rosie sea, Rosie glee, Rosie tea",Lee,,drink;sound-swap,agent,,to check
+,idiom_surgery,Pork pies,"pork lies / skies / flies | Cockney lies | Pork skies, pork flies, pork lies",pies,,food;sound-swap,agent,,to check
+,idiom_surgery,Butcher's hook,"butcher's look / book / cook | Cockney look | Butcher's book, butcher's cook, butcher's look",hook,,food;sound-swap,agent,,to check
+,idiom_surgery,Taking the mickey,"taking the Mickey / the pickie / the quickie | teasing | Took the mickey, took the quickie, took the Mickey in Disney",mickey,,travel;sound-swap,agent,,to check
+,idiom_surgery,Hang a left,"hang a theft / a cleft / a deft | turn left | Hung a left, hung a deft, hung a cleft",left,,travel;bikes;sound-swap,agent,,to check
+,idiom_surgery,Mind the gap,"mind the map / the cap / the strap | tube warning | Mind the map, mind the strap, mind the cap",gap,,travel;sound-swap,agent,,to check
+,idiom_surgery,Rule of the road,"rule of the code / toad / load | traffic law | Rule of the toad, rule of the load",road,,law;bikes;animals;sound-swap,agent,,to check
+,idiom_surgery,Back seat driver,"back seat diver / fiver / striver | passenger who instructs | Back seat fiver, back seat diver, back seat striver",driver,,travel;money;sound-swap,agent,,to check
+,idiom_surgery,Wing and a prayer,"wing and a pair / care / chair | hopeful effort | Wing and a pair, wing and a care, wing and a chair",prayer,,travel;sound-swap,agent,,to check
+,idiom_surgery,Fly off the handle,"fly off the candle / the sandal / the scandal | lose temper | Flew off the sandal, flew off the scandal",handle,,travel;sound-swap,agent,,to check
+,idiom_surgery,Jet set,"jet bet / jet debt / jet net | rich travellers | Jet debt, jet bet, jet net",set,,travel;money;sound-swap,agent,,to check
+,idiom_surgery,Heads or tails,"heads or nails / ales / sails | coin toss | Heads or ales, heads or sails, heads or nails",tails,,money;games;sound-swap,agent,,to check
+,idiom_surgery,Spend a penny,"spend a Jenny / many / Kenny | use the loo | Spent a Jenny, spent a Kenny, spent plenty",penny,,money;sound-swap,agent,,to check
+,idiom_surgery,On the house,"on the mouse / blouse / grouse | free drink | On the grouse, on the mouse, on the blouse",house,,drink;animals;sound-swap,agent,,to check

@@ -63,3 +63,6 @@ isnt	IH1 Z AH0 N T
 theyre	DH EH1 R
 mopped	M AA1 P T
 moped	M OW1 P EH2 D
+youll	Y UW1 L
+hoodie	HH UH1 D IY0
+dont	D OW1 N T
