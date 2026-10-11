@@ -1,0 +1,54 @@
+# word<TAB>ARPAbet (British-ish; same format as OVR in toolkit/rhyme_tools.py). Loaded by toolkit/bank.py. Joe/Claude: fix any that sound wrong.
+mallorca	M AH0 Y AO1 K AH0
+machan	M AH0 CH AA1 N
+kandy	K AE1 N D IY0
+sigiriya	S IH0 G IH0 R IY1 Y AH0
+interlaken	IH2 N T ER0 L AA1 K AH0 N
+ullapool	AH1 L AH0 P UW2 L
+durness	D ER1 N AH0 S
+applecross	AE1 P AH0 L K R AO2 S
+dawlish	D AO1 L IH0 SH
+phangan	P AA1 NG AA0 N
+phuket	P UW1 K EH2 T
+krabi	K R AA1 B IY0
+samui	S AH0 M UW1 IY0
+ayutthaya	AA0 Y UW1 T AY0 AH0
+sapa	S AA1 P AH0
+hai	HH AY1
+van	V AE1 N
+vang	V AE1 NG
+vieng	V Y EH1 NG
+luang	L W AA1 NG
+prabang	P R AH0 B AE1 NG
+vientiane	V Y EH2 N T Y AA1 N
+angkor	AE1 NG K AO0
+wat	W AO1 T
+gili	JH IH1 L IY0
+trawangan	T R AH0 W AE1 NG AH0 N
+ubud	UW1 B UH2 D
+lombok	L AO1 M B AO2 K
+langkawi	L AE0 NG K AA1 W IY0
+palawan	P AH0 L AA1 W AH0 N
+boracay	B AO1 R AH0 K AY2
+yangon	Y AE1 N G AO2 N
+queenstown	K W IY1 N Z T AW2 N
+rotorua	R OW2 T AH0 R UW1 AH0
+taupo	T AW1 P OW0
+wanaka	W AA1 N AH0 K AH0
+fiordland	F Y AO1 D L AH0 N D
+kaikoura	K AY2 K AO1 R AH0
+tauranga	T AW0 R AE1 NG AH0
+whakatane	F AA1 K AH0 T AA2 N IY0
+waitomo	W AY0 T OW1 M OW0
+hobbiton	HH AO1 B IH0 T AH0 N
+townsville	T AW1 N Z V IH0 L
+macquarie	M AH0 K W AO1 R IY0
+uluru	UW2 L UW0 R UW1
+barossa	B AH0 R AO1 S AH0
+yarra	Y AE1 R AH0
+rarotonga	R AE2 R AH0 T AO1 NG AH0
+kathmandu	K AE2 T M AE0 N D UW1
+jaipur	JH AY1 P UH2 R
+jid	JH AY1 AY1 D IY1
+tt	T IY1 T IY1
+rovinj	R AO1 V IY0 N

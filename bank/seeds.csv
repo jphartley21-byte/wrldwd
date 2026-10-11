@@ -1,0 +1,218 @@
+term,kind,region,joe_trip,note
+Bordeaux,place,France,y,2023 bike; Joe hook
+Porto,place,Portugal,y,2023 bike
+Lisbon,place,Portugal,n,Joe note: rhymes Brisbane
+Majorca,place,Spain,y,2014
+Mallorca,place,Spain,y,alt spelling
+Pavos,word,Spain,y,Spanish: turkeys; slang money
+Bergen,place,Norway,y,in-laws; Christmas
+Oslo,place,Norway,y,2024 road trip
+fjord,word,Norway,y,
+Sweden,place,Sweden,n,Joe line
+smorgasbord,word,Sweden,n,Joe line
+Dahl,name,Norway/UK,n,Joe line: split like Dahl
+Sri Lanka,place,Sri Lanka,y,Joe line (machan)
+machan,slang,Sri Lanka,y,
+Colombo,place,Sri Lanka,n,
+Kandy,place,Sri Lanka,n,
+Galle,place,Sri Lanka,n,
+Ella,place,Sri Lanka,n,
+Sigiriya,place,Sri Lanka,n,
+Marrakesh,place,Morocco,y,2025
+Naples,place,Italy,y,2026 stag
+Pompeii,place,Italy,y,2026
+Florence,place,Italy,y,2019
+Vienna,place,Austria,y,2019
+Ljubljana,place,Slovenia,y,2019
+Bratislava,place,Slovakia,y,2019
+Zurich,place,Switzerland,y,2019
+Bern,place,Switzerland,y,2019
+Interlaken,place,Switzerland,y,2019
+Lauterbrunnen,place,Switzerland,y,2019
+Munich,place,Germany,y,2019
+Zell am See,place,Austria,y,2019
+Amsterdam,place,Netherlands,y,
+Rotterdam,place,Netherlands,y,Joe note: Rotter damn
+Douglas,place,Isle of Man,y,2023
+Isle of Man,place,Isle of Man,y,Joe note: rhymes Amsterdam
+Dublin,place,Ireland,y,2017/2023
+Donegal,place,Ireland,y,2023
+John o' Groats,place,Scotland,y,2024
+Isle of Skye,place,Scotland,n,Joe note
+Edinburgh,place,Scotland,n,Joe note: Fringe
+Inverness,place,Scotland,n,NC500
+Ullapool,place,Scotland,n,NC500
+Durness,place,Scotland,n,NC500
+Applecross,place,Scotland,n,NC500
+Snowdon,place,Wales,y,2024
+Pen y Fan,place,Wales,y,2024
+Cornwall,place,England,y,
+Padstow,place,England,y,
+Dawlish,place,England,y,
+Reading,place,England,y,home
+Bristol,place,England,y,home
+Boomtown,place,England,y,festival
+Bangkok,place,Thailand,y,2015
+Koh Tao,place,Thailand,y,2015 (scuba)
+Koh Phangan,place,Thailand,n,Full Moon Party
+Pai,place,Thailand,n,Joe note: Pai Canyon
+Chiang Mai,place,Thailand,n,
+Phuket,place,Thailand,n,
+Krabi,place,Thailand,n,
+Koh Samui,place,Thailand,n,
+Ayutthaya,place,Thailand,n,
+Hanoi,place,Vietnam,y,2015
+Saigon,place,Vietnam,n,
+Ho Chi Minh,place,Vietnam,n,
+Da Nang,place,Vietnam,n,
+Hoi An,place,Vietnam,n,
+Hue,place,Vietnam,n,
+Sapa,place,Vietnam,n,
+Ha Long Bay,place,Vietnam,n,
+Hai Van,place,Vietnam,n,pass
+Vietnam,place,Vietnam,y,Honda Wins
+Honda Win,word,Vietnam,y,Joe note
+Laos,place,Laos,y,2015 tubing; weed pizza
+Vang Vieng,place,Laos,y,
+Luang Prabang,place,Laos,n,
+Vientiane,place,Laos,n,
+Cambodia,place,Cambodia,n,
+Phnom Penh,place,Cambodia,n,
+Siem Reap,place,Cambodia,n,
+Angkor Wat,place,Cambodia,n,
+Bali,place,Indonesia,y,2016
+Gili Trawangan,place,Indonesia,y,2016
+Jakarta,place,Indonesia,n,
+Ubud,place,Indonesia,n,
+Lombok,place,Indonesia,n,
+Java,place,Indonesia,n,
+Kuala Lumpur,place,Malaysia,n,
+Penang,place,Malaysia,n,
+Langkawi,place,Malaysia,n,
+Singapore,place,Singapore,n,
+Manila,place,Philippines,n,
+Cebu,place,Philippines,n,
+Palawan,place,Philippines,n,
+Boracay,place,Philippines,n,
+Myanmar,place,Myanmar,n,
+Yangon,place,Myanmar,n,
+Christchurch,place,New Zealand,y,2015
+Queenstown,place,New Zealand,n,bungee; canyon swing
+Auckland,place,New Zealand,n,
+Wellington,place,New Zealand,n,
+Rotorua,place,New Zealand,n,
+Taupo,place,New Zealand,n,skydive
+Wanaka,place,New Zealand,n,
+Dunedin,place,New Zealand,n,
+Fiordland,place,New Zealand,n,
+Milford Sound,place,New Zealand,n,
+Franz Josef,place,New Zealand,n,
+Kaikoura,place,New Zealand,n,
+Nelson,place,New Zealand,n,
+Picton,place,New Zealand,n,
+Tauranga,place,New Zealand,n,
+Whakatane,place,New Zealand,n,
+Waitomo,place,New Zealand,n,
+Hobbiton,place,New Zealand,n,
+Sydney,place,Australia,y,2015/2017; Mad Monkey
+Melbourne,place,Australia,y,2017
+Brisbane,place,Australia,y,2017; Joe note: rhymes Lisbon
+Byron Bay,place,Australia,y,2017
+Noosa,place,Australia,y,2017
+Rainbow Beach,place,Australia,y,2017
+Fraser Island,place,Australia,y,2017 (K'gari)
+Hervey Bay,place,Australia,y,2017
+Whitsundays,place,Australia,y,2017 boat
+Townsville,place,Australia,y,2017
+Magnetic Island,place,Australia,y,2017
+Cairns,place,Australia,y,2017
+Port Macquarie,place,Australia,y,2017
+Perth,place,Australia,y,2016
+Adelaide,place,Australia,n,
+Darwin,place,Australia,n,
+Alice Springs,place,Australia,n,
+Uluru,place,Australia,n,
+Tasmania,place,Australia,n,
+Hobart,place,Australia,n,
+Canberra,place,Australia,n,
+Gold Coast,place,Australia,n,
+Surfers Paradise,place,Australia,n,
+Bondi,place,Australia,n,
+Barossa,place,Australia,n,grapes; wine
+Margaret River,place,Australia,n,grapes; wine
+Yarra Valley,place,Australia,n,grapes; wine
+Hunter Valley,place,Australia,n,grapes; wine
+Kakadu,place,Australia,n,
+Fiji,place,Fiji,n,
+Rarotonga,place,Cook Islands,n,
+Tokyo,place,Japan,n,
+Kyoto,place,Japan,n,
+Kathmandu,place,Nepal,n,
+Delhi,place,India,n,
+Jaipur,place,India,n,2028 plan
+Goa,place,India,n,
+Kendrick Lamar,name,USA,n,Joe note: afar
+JID,name,USA,n,Joe note
+TT,word,Isle of Man,n,Joe note: TT races
+Tobago,place,Caribbean,n,
+Barcelona,place,Spain,y,2026
+Ibiza,place,Spain,n,
+Madrid,place,Spain,n,
+Sevilla,place,Spain,n,
+Bilbao,place,Spain,y,2023
+Burgos,place,Spain,y,2023
+Paris,place,France,n,
+Calais,place,France,y,2023
+Nantes,place,France,y,2018
+Larrau,place,France,y,2023
+Marseille,place,France,n,
+Nice,place,France,n,
+Lyon,place,France,n,
+Brittany,place,France,y,ferry
+Rome,place,Italy,n,
+Venice,place,Italy,n,
+Milan,place,Italy,n,
+Verona,place,Italy,n,
+Prague,place,Czechia,n,
+Budapest,place,Hungary,n,
+Krakow,place,Poland,n,
+Berlin,place,Germany,n,
+Hamburg,place,Germany,n,
+Black Forest,place,Germany,y,2019/2026
+Copenhagen,place,Denmark,n,
+Stockholm,place,Sweden,n,
+Helsinki,place,Finland,n,
+Reykjavik,place,Iceland,n,
+Athens,place,Greece,n,
+Crete,place,Greece,y,2012
+Istanbul,place,Turkey,n,
+Dubrovnik,place,Croatia,n,
+Split,place,Croatia,n,
+Rovinj,place,Croatia,n,
+monkey,animal,,n,GBP 500 slang
+crocodile,animal,Australia,n,
+croc,animal,Australia,n,
+kangaroo,animal,Australia,n,
+kiwi,animal,New Zealand,n,
+gecko,animal,SE Asia,n,
+buffalo,animal,SE Asia,n,
+elephant,animal,SE Asia,n,
+tiger,animal,SE Asia,n,
+snake,animal,SE Asia,n,
+koala,animal,Australia,n,
+wallaby,animal,Australia,n,
+possum,animal,Australia,n,
+bat,animal,,n,
+lizard,animal,,n,
+turkey,animal,,n,Pavos
+goon,slang,Australia,y,box wine
+rice wine,word,SE Asia,y,
+weed pizza,word,Laos,y,
+full moon,word,Thailand,y,Full Moon Party
+bungee,word,New Zealand,y,
+skydive,word,New Zealand,y,
+canyon swing,word,New Zealand,y,
+scuba,word,Thailand,y,
+Thatchers,brand,England,n,Joe draft
+Rolex,brand,,n,Joe draft
+Bombay Sapphire,brand,,n,Joe draft
