@@ -13,7 +13,7 @@
 ## Stage tracker (update after each stop)
 | Section | beats | mine | patterns | draft | polish | review | locked |
 |---|---|---|---|---|---|---|---|
-| Hook | - | - | - | - | - | - | - |
+| Hook | draft sheet, awaiting Joe | 107 raw ideas (rough), awaiting ticks | auto report done (ideas/patterns_hook.md) | - | - | - | - |
 
 ## Open decisions for Joe
 - Real artists as name-drops (Kendrick, JID)? Brand names? Strict vegetarian detail? "Horfield/BS7" as a name? Invented cartoonish flourishes on true places?
