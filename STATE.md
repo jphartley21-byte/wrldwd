@@ -7,6 +7,7 @@
 - Round 2: replacing idea lists with exhaustive banks (bank/, toolkit/bank.py, bank/index.html).
 
 ## Next
+0. Joe: open bank/index.html (1,785+ rows: rhymes, sound-alikes, idioms/puns, slang, names, places/events), star what you like, press 'Copy my stars', paste them back. Then `/patterns hook` and `/draft hook`.
 1. Joe: answer the voice open questions; add trip details/photos for research (material/media/<trip>/).
 2. Pick a section to work on (suggest: Hook 1-8) and run `/beats hook`.
 3. Fill research/ (rhyme bank, places, events, craft) with `/research` and `/media-notes`.

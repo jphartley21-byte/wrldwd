@@ -1,0 +1,319 @@
+id,type,text,items,sound,places,tags,source,joe_says_it,status
+pla1,place_fact,"Honda Winner is a clutch bike, about 350,000 VND/day (about GBP 11) to rent on the Ha Giang loop",price ladder; Joe's 'Honda Wins' seed; win/Winner pun,Win/tin/chin,"Vietnam, Ha Giang","joe-seed,price,bike",https://www.thebrokebackpacker.com/ha-giang-loop-vietnam-itinerary,,verified
+pla2,place_fact,"Honda Blade semi-auto about 180,000 VND/day; XR150 about 550,000 VND/day; fuel about 70,000 VND/day; insurance extra",price list for a number run,Blade/made,"Vietnam, Ha Giang","price,bike",https://www.thebrokebackpacker.com/ha-giang-loop-vietnam-itinerary,,verified
+pla3,place_fact,"Ha Giang Loop is a far-north mountain loop, usually 3 days from Hanoi, ridden yourself or with an 'easy rider' driver",route; passenger-on-the-back joke angle,loop/group,"Vietnam, Ha Giang","route,bike",https://www.jonnymelon.com/ha-giang-loop/,,verified
+pla4,place_fact,"Hai Van Pass is about 21 km long between Da Nang and Hue, summit roughly 500 m, over the Truong Son mountains",'Hai Van' = high van; Joe may have meant this route,Hai Van/high van,"Vietnam, Hai Van Pass","route,bike",https://goasia.cc/en/article/hai-van-pass,,verified
+pla5,place_fact,Top Gear's Vietnam Special put Hai Van Pass on the map for Brits,British hook; Jeremy-style banter without naming,pass/class,"Vietnam, Hai Van Pass",uk-link,https://goasia.cc/en/article/hai-van-pass,,verified
+pla6,place_fact,"Hai Van Pass is often foggy or misty off the sea; hairpins, heavy trucks, unpredictable traffic","sensory: fog, truck horns",mist/missed,"Vietnam, Hai Van Pass","sensory,danger",https://roaming-renegades.beehiiv.com/p/hai-van-pass-motorbike,,verified
+pla7,place_fact,Riding the pass takes 1-2 hours; Hoi An to Hue takes 4-6 hours with photo stops,timing line,,"Vietnam, Hai Van Pass",time,https://goasia.cc/en/article/hai-van-pass,,verified
+pla8,place_fact,"Whole families on one scooter, constant horn-blare, petrol sold in old bottles by the roadside","sensory picture, deadpan",,Vietnam,"sensory,traffic",,,to check
+pla9,place_fact,"Bia hoi is fresh draught beer on tiny plastic stools, around 10,000-20,000 VND a glass",cheap-pint contrast with Bristol,hoi/boy,"Vietnam, Hanoi","drink,price",,,to check
+pla10,place_fact,Egg coffee is a Hanoi speciality,"food detail, odd-sounding",,"Vietnam, Hanoi",food,,,to check
+pla11,place_fact,Pho is said 'fuh'; banh mi is 'bun mee',pronunciation rhymes: pho/go/low,pho/go/no,Vietnam,"food,word",,,to check
+pla12,place_fact,"Rice wine ('ruou') is poured by mountain homestay hosts, often as 'happy water' and in repeated shots",Joe's rice wine seed; hospitality-as-peer-pressure angle,,"Vietnam, Ha Giang","joe-seed,drink",,,to check
+pla13,place_fact,"Vietnam currency is the dong; about 33,000 VND to GBP 1, so everyone is a millionaire",millionaire-for-a-tenner joke angle,dong/long/song,Vietnam,money,,,to check
+pla14,place_fact,Water buffalo wander onto mountain roads and hold traffic,animal pun: buffalo/buff-a-low,buffalo/low,Vietnam,"animal,traffic",,,to check
+pla15,place_fact,"Halong Bay: limestone karst islands, overnight boats",scenery word; Halong/long/song,Halong/long/song,"Vietnam, Ha Long Bay",scenery,,,to check
+pla16,place_fact,Hoi An: tailors will make a suit in a day or two; lantern-lit old town,bespoke-suit brag for a cheap price,Hoi An/hoy an,"Vietnam, Hoi An","shopping,price",,,to check
+pla17,place_fact,Sapa: rice terraces and hill-tribe trekking in the far north,scenery; Sapa/rapper rhyme,Sapa/rapper,"Vietnam, Sapa",scenery,,,to check
+pla18,place_fact,"Saigon is the old name of Ho Chi Minh City, locals still say Saigon",two-names gag,Saigon/gone,"Vietnam, Ho Chi Minh City",word,,,to check
+pla19,place_fact,"Vang Vieng tubing on the Nam Song river was a backpacker rite of passage with riverside bars, rope swings and towers",Joe's tubing seed; peak chaos story,"tube/lube,Nam Song/song","Laos, Vang Vieng","joe-seed,tubing",https://theworld.org/stories/2012/02/11/vang-vieng-laos-backpacker-mecca-turned-disaster-magnet,,verified
+pla20,place_fact,After tourist deaths in 2011-12 the riverside bars were cracked down on,dark but deadpan history,,"Laos, Vang Vieng","history,danger",https://theworld.org/stories/2012/02/11/vang-vieng-laos-backpacker-mecca-turned-disaster-magnet,,verified
+pla21,place_fact,"Tubing today: far fewer bars, rope swings and slides removed, route ends at Smile Beach Bar",then-vs-now contrast,,"Laos, Vang Vieng",tubing,https://www.backpackerswanderlust.com/river-tubing-vang-vieng-laos/,,verified
+pla22,place_fact,"Tube hire 120,000-160,000 kip (about USD 7-10) including a returnable deposit; tuk-tuk upstream included; 2-3 hours down",price line; return tube by early evening or lose deposit,kip/trip,"Laos, Vang Vieng","tubing,price",https://www.backpackerswanderlust.com/river-tubing-vang-vieng-laos/,,verified
+pla23,place_fact,"Older tubing price: 55,000 kip plus 60,000 kip deposit (about GBP 2 + 2.20)",tiny-money joke,kip/trip,"Laos, Vang Vieng","tubing,price",https://southeastasiabackpacker.com/tubing-vang-vieng-whats-all-the-fuss/,,verified
+pla24,place_fact,Bars on some Lao menus advertise 'happy' pizzas and shakes; weed is illegal in Laos,"Joe's weed pizza seed; joke is the menu, not the product",pizza/pie in the sky,"Laos, Vang Vieng","joe-seed,menu",https://southeastasiabackpacker.com/tubing-vang-vieng-whats-all-the-fuss/,,verified
+pla25,place_fact,Beerlao is the national lager,"brand word, rhymes cow/now",Beerlao/now,Laos,drink,,,to check
+pla26,place_fact,"Lao currency is the kip, tens of thousands per pound",big-number gag,kip/trip/flip,Laos,money,,,to check
+pla27,place_fact,Sabaidee (sa-bye-dee) is hello; khop chai is thanks,words for a chant,sabaidee/baby,Laos,word,,,to check
+pla28,place_fact,Luang Prabang: dawn alms-giving where monks collect rice; tourist misbehaviour is a known problem,respect line; contrast with party reputation,,"Laos, Luang Prabang",culture,https://themaritimeexplorer.ca/2023/08/10/alms-giving-in-luang-prabang/,,verified
+pla29,place_fact,"Kuang Si Falls near Luang Prabang: turquoise travertine pools and a bear rescue centre, about 30 km out",scenery plus bear animal pun,,"Laos, Luang Prabang","scenery,animal",https://www.audleytravel.com/us/laos/things-to-do/kuang-si-waterfalls-and-the-surrounding-countryside-full-day,,verified
+pla30,place_fact,Laos was once called Land of a Million Elephants,elephant pun bank,,Laos,"animal,history",,,to check
+pla31,place_fact,"Cows and water buffalo on the road, geckos on the wall",sensory animal set,cow/now,Laos,animal,,,to check
+pla32,place_fact,"Pai Canyon: narrow dusty ridges with no safety rails, donation entry, packed at sunset, don't wear white",Joe's Pai Canyon seed; danger/dust,Pai/pie/sky/high,"Thailand, Pai","joe-seed,danger",https://themanduls.com/pai-canyon/,,verified
+pla33,place_fact,"Pai Walking Street night market opens about 17:00, peaks 19:00-21:00; pad Thai, mango sticky rice, live music",sensory market list,,"Thailand, Pai","food,market",https://thailandmagazine.com/pai/see-do/pai-walking-street/,,verified
+pla34,place_fact,Pai is coldest at night in Nov-Feb,contrast with 'tropical' expectation,,"Thailand, Pai",weather,https://themanduls.com/pai-canyon/,,verified
+pla35,place_fact,Full Moon Party entry about 200 THB (about GBP 4.50); bucket 150-250 THB; beer 80-150 THB,price ladder,bucket/duck it,"Thailand, Koh Phangan","joe-seed,price",https://fullmoonparty-thailand.com/full-moon-party-cost/,,verified
+pla36,place_fact,"A budget night at the Full Moon Party costs about 1,500-2,200 THB",money line,,"Thailand, Koh Phangan",price,https://fullmoonparty-thailand.com/full-moon-party-cost/,,verified
+pla37,place_fact,"Full Moon Party on Haad Rin beach: origin disputed, 1983 or 1988; no electricity at first so parties were held under the brightest moon",'started because of power cut' gag,moon/soon,"Thailand, Koh Phangan",history,https://theculturetrip.com/asia/thailand/articles/about-thailands-full-moon-party,,verified
+pla38,place_fact,"Full Moon Party crowd: about 8,000 low season, over 30,000 high season",crowd size,,"Thailand, Koh Phangan",crowd,https://theculturetrip.com/asia/thailand/articles/about-thailands-full-moon-party,,verified
+pla39,place_fact,"Neon body paint, fire-skipping ropes and buckets of spirit and mixer are the Full Moon Party look",sensory kit list,,"Thailand, Koh Phangan",sensory,,,to check
+pla40,place_fact,"Shroom shakes appear on some island bar menus; legal position murky, keep it a deadpan menu joke",Joe's shake seed; menu not instructions,shake/lake,"Thailand, Koh Phangan","joe-seed,menu",,,to check
+pla41,place_fact,"Koh Tao Open Water course about 11,000-12,500 THB (about GBP 250-285); fun dives 800-1,000 THB",Joe's scuba seed; price ladder,Tao/now,"Thailand, Koh Tao","joe-seed,price",https://www.bigbluediving.com/blog/budget-guide-2026-how-much-is-diving-on-koh-tao/,,verified
+pla42,place_fact,Koh Tao means Turtle Island,animal pun,Tao/cow/now,"Thailand, Koh Tao",animal,,,to check
+pla43,place_fact,Songthaew shared pickup trucks rattle round islands and towns,sensory transport,,Thailand,transport,,,to check
+pla44,place_fact,7-Eleven toasties are a backpacker staple in Thailand,cheap-food joke,,Thailand,food,,,to check
+pla45,place_fact,Chang means elephant; Singha is the lion beer; Leo is the third,beer rhyme run,Chang/bang/gang,Thailand,"drink,animal",,,to check
+pla46,place_fact,'Same same but different' is the souvenir T-shirt slogan,tourist cliche,,Thailand,souvenir,,,to check
+pla47,place_fact,"Khao San Road, Bangkok: backpacker strip of buckets, braids and fake IDs",scene; Khao San/son/fun,Khao San/sun/done,"Thailand, Bangkok","hostel,nightlife",,,to check
+pla48,place_fact,Tuk-tuk drivers in Bangkok quote tourist prices and detour via a tailor,scam angle,,"Thailand, Bangkok","scam,transport",,,to check
+pla49,place_fact,"Mosquito coils, geckos chirping, fans on full",night sensory,,Thailand,sensory,,,to check
+pla50,place_fact,Thai baht about 44 to GBP 1,exchange-rate line; baht/that,baht/that,Thailand,money,,,to check
+pla51,place_fact,"Chiang Mai: temples, elephants (ethical sanctuaries), Sunday night market",scene,Chiang Mai/my/high,"Thailand, Chiang Mai",scene,,,to check
+pla52,place_fact,Angkor Wat at sunrise is crowded with phones,tourist-queue joke,Wat/what/hot,"Cambodia, Siem Reap",scene,,,to check
+pla53,place_fact,Cambodia uses both riel and US dollars; ATMs give out dollars,money oddity,,Cambodia,money,,,to check
+pla54,place_fact,Kampot is famous for its pepper,food word; Kampot/lot/hot,Kampot/hot/got,"Cambodia, Kampot",food,,,to check
+pla55,place_fact,Ubud Monkey Forest: macaques steal sunglasses and phones,"monkey pun, ties to 'monkey' = GBP 500",,"Indonesia, Bali, Ubud","animal,scam",,,to check
+pla56,place_fact,Bali belly is the traveller's stomach bug joke,body-humour deadpan,belly/jelly,"Indonesia, Bali",health,,,to check
+pla57,place_fact,Bintang beer means 'star',brand word,,Indonesia,drink,,,to check
+pla58,place_fact,Komodo dragons live on Komodo island,commando/Komodo rhyme,Komodo/commando,"Indonesia, Komodo",animal,,,to check
+pla59,place_fact,"Gili islands have no motor vehicles, only bicycles and horse carts",scene; Gili/silly,Gili/silly/chilly,"Indonesia, Gili Trawangan",scene,,,to check
+pla60,place_fact,"Rupiah come in tens of thousands to the pound, so a beer is 'a hundred grand'",millionaire gag,,Indonesia,money,,,to check
+pla61,place_fact,"Petronas Twin Towers, Kuala Lumpur, among the world's tallest twin towers",landmark; KL,,"Malaysia, Kuala Lumpur",landmark,,,to check
+pla62,place_fact,Orangutans live in Borneo,animal word,,"Malaysia, Borneo",animal,,,to check
+pla63,place_fact,Halo-halo is a Filipino dessert; San Miguel is the beer,food and drink words,halo/hello,Philippines,"food,drink",,,to check
+pla64,place_fact,Tarsier is a tiny big-eyed primate in Bohol,animal word,,"Philippines, Bohol",animal,,,to check
+pla65,place_fact,"Nevis Bungy 134 m from NZ$395 (about GBP 190), photo and video included",Joe's NZ bungee seed; price,Nevis/heavies,"New Zealand, Queenstown","joe-seed,price",https://www.newzealand.com/au/plan/business/nevis-swing-aj-hackett-bungy/,,verified
+pla66,place_fact,Nevis Swing NZ$325; Nevis Catapult NZ$295,price ladder,swing/thing,"New Zealand, Queenstown",price,https://www.newzealand.com/au/plan/business/nevis-swing-aj-hackett-bungy/,,verified
+pla67,place_fact,Shotover Canyon Swing is billed as the world's highest cliff jump over the Shotover River,Joe's canyon swing seed; superlative,swing/thing,"New Zealand, Queenstown","joe-seed,superlative",https://www.newzealand.com.au/experiences/bungy-jumping-and-aerial-adventures/queenstown,,verified
+pla68,place_fact,Queenstown calls itself the adventure capital of the world,slogan,Queenstown/down,"New Zealand, Queenstown",slogan,,,to check
+pla69,place_fact,Fergburger in Queenstown has a famous queue,food queue joke,burger/jerk,"New Zealand, Queenstown",food,,,to check
+pla70,place_fact,AJ Hackett opened the world's first commercial bungy at Kawarau Bridge in 1988,origin fact to check,bungy/bunji,"New Zealand, Queenstown",history,,,to check
+pla71,place_fact,Kea is an alpine parrot that rips rubber off cars,animal thief character,kea/key,New Zealand,animal,,,to check
+pla72,place_fact,Sandflies bite on the South Island,itch deadpan,,New Zealand,sensory,,,to check
+pla73,place_fact,There are more sheep than people in NZ,stat to check,,New Zealand,stat,,,to check
+pla74,place_fact,"NZ words: jandals (flip-flops), chilly bin (cool box), dairy (corner shop), togs, sweet as, yeah nah",slang bank,chur/sir,New Zealand,slang,,,to check
+pla75,place_fact,Tui beer ads say 'Yeah right',brand,,New Zealand,drink,,,to check
+pla76,place_fact,Wanaka rhymes with banana; Taupo with go,rhyme hooks,Wanaka/banana,New Zealand,rhyme,,,to check
+pla77,place_fact,Rotorua smells of sulphur from geothermal pools,sensory: eggs,,"New Zealand, Rotorua",sensory,,,to check
+pla78,place_fact,Hobbiton film set at Matamata,film tourism; no film name needed,,"New Zealand, Matamata",landmark,,,to check
+pla79,place_fact,"Christchurch is Joe's NZ base (Oct-Nov 2015, per his history)","personal anchor, from material",Christchurch/church,"New Zealand, Christchurch",joe-trip,,,to check
+pla80,place_fact,"Goon is boxed or cask wine; the bag inside is the goon bag or sack, probably from 'flagon'",Joe's goon seed,goon/loon/gone,Australia,"joe-seed,drink",https://www.macquariedictionary.com.au/skol-these-drinking-words/,,verified
+pla81,place_fact,Goon of Fortune: drinking game with bags on a rotating Hills Hoist clothes line,game visual,,Australia,"drink,game",https://en.wikipedia.org/wiki/Box_wine,,verified
+pla82,place_fact,"Goon nicknames: boxie, box monster, Dapto briefcase, Dubbo handbag",slang list,,Australia,"drink,slang",https://theconversation.com/plonk-a-language-lovers-guide-to-australian-drinking-78092,,verified
+pla83,place_fact,A 4 L box of goon is about A$12-20,price line,,Australia,"drink,price",,,to check
+pla84,place_fact,"Margaret River WA: peak vintage Feb-Apr, pruning Jun-Sep",Joe's grape picking seed; seasons,,"Australia, Margaret River","joe-seed,work",https://jp.yha.com.au/hostels/wa/south-west/margaret-river/jobs,,verified
+pla85,place_fact,"Riverland SA is Australia's largest vineyard area, about 60% of SA wine grapes",grape-picking region,,"Australia, Riverland",work,https://www.regionalwork.sa.gov.au/regions/riverland,,verified
+pla86,place_fact,Second-year working holiday visa needs 88 days regional work (check Home Affairs),visa grind detail,,Australia,"work,visa",,,to check
+pla87,place_fact,Mildura/Sunraysia VIC is a grape-picking region,region,,"Australia, Mildura",work,,,to check
+pla88,place_fact,"Mad Monkey Sydney is in Kings Cross/Potts Point; dorm beds about A$45-50, 4/6/8-bed dorms, free tea and coffee, some nightly dinners",Joe's hostel seed; monkey = GBP 500 pun,monkey/funky,"Australia, Sydney","joe-seed,hostel,price",https://www.sydneytourism.org/best-hostels-in-sydney-for-backpackers/,,verified
+pla89,place_fact,Mad Monkey hostels are 18+ only and ask for a passport at check-in,hostel rule,,"Australia, Sydney",hostel,https://www.kayak.com/Sydney-Hotels-Mad-Monkey-Potts-Point.9492037.ksp,,verified
+pla90,place_fact,Brisbane (Brizz-bin) is Joe's slant rhyme with Lisbon,Joe's rhyme,Brisbane/Lisbon,"Australia, Brisbane","joe-seed,rhyme",,,to check
+pla91,place_fact,"K'gari (Fraser Island) is the biggest sand island, 4WD only, with dingoes",Joe's 2017 route; sand-island line,,"Australia, K'gari","animal,4wd",,,to check
+pla92,place_fact,Whitsundays: Whitehaven Beach silica sand and sailing trips,scenery; Joe's 2017 route,,"Australia, Whitsundays",scenery,,,to check
+pla93,place_fact,"Byron Bay: surf, hippies, lighthouse at the most easterly point",scene,Byron/iron,"Australia, Byron Bay",scene,,,to check
+pla94,place_fact,"Aussie slang: arvo, servo, brekkie, esky, thongs, ute, bottle-o, smoko, dunny",slang bank,arvo/bravo,Australia,slang,,,to check
+pla95,place_fact,"Aussie animals: roo, croc, koala (not a bear), wombat, dingo, emu, cassowary, drop bear (joke), quokka, platypus",animal pun bank,,Australia,animal,,,to check
+pla96,place_fact,Redback and funnel-web spiders and taipan snakes in the folklore,danger gag,,Australia,"animal,danger",,,to check
+pla97,place_fact,Magpies swoop cyclists in nesting season,small-danger joke,,Australia,animal,,,to check
+pla98,place_fact,"Bondi Beach, Sydney: surf, backpacker coastal walk to Coogee",scene,Bondi/fond-y,"Australia, Sydney",scene,,,to check
+pla99,place_fact,Uluru is a huge sandstone monolith in the Northern Territory,landmark,Uluru/do-do,"Australia, Uluru",landmark,,,to check
+pla100,place_fact,NC500 is 516 miles / 830 km from Inverness and back,Joe's NC500 seed; number,,"Scotland, NC500","joe-seed,route",https://www.wildernessscotland.com/blog/north-coast-500-distilleries-breweries/,,verified
+pla101,place_fact,"NC500 distilleries: Glen Ord, Glenmorangie, Balblair, Clynelish, Old Pulteney in Wick",whisky run,dram/ham,"Scotland, NC500",whisky,https://www.wildernessscotland.com/blog/north-coast-500-distilleries-breweries/,,verified
+pla102,place_fact,"Standard NC500 loop: Inverness, Dornoch, Wick, Durness, Ullapool, Applecross, Inverness, either direction",route order,,"Scotland, NC500",route,https://www.visitbritain.org/scotlands-north-coast-500,,verified
+pla103,place_fact,"Bealach na Ba near Applecross is billed as Britain's steepest road, climbing over 2,000 ft",hairpin line,,"Scotland, Applecross","danger,route",https://www.visitbritain.org/scotlands-north-coast-500,,verified
+pla104,place_fact,Smoo Cave sits one mile east of Durness; boat trips go into it,sensory cave; Smoo/you,Smoo/you,"Scotland, Durness",scenery,https://www.visitbritain.org/scotlands-north-coast-500,,verified
+pla105,place_fact,Durness to Ullapool is a long stretch of single-track road (about 64-68 miles),passing-places line,,"Scotland, NC500",road,https://www.visitbritain.org/scotlands-north-coast-500,,verified
+pla106,place_fact,Ullapool is a harbour town with a ferry to the Summer Isles,scene; Ullapool/fool/cool,Ullapool/cool,"Scotland, Ullapool",scene,https://www.visitbritain.org/scotlands-north-coast-500,,verified
+pla107,place_fact,Applecross Inn is known for seafood,food stop,,"Scotland, Applecross",food,https://www.visitbritain.org/scotlands-north-coast-500,,verified
+pla108,place_fact,Talisker is Skye's oldest working distillery at Carbost on Loch Harport; tours need booking,Joe's Skye/whisky seed,Talisker/risky,"Scotland, Isle of Skye","joe-seed,whisky",https://uk.nordicvisitor.com/travel-guide/attractions/scotland/talisker-distillery,,verified
+pla109,place_fact,Skye is not on the NC500 itself,accuracy note: avoid saying NC500 includes Skye,Skye/sky/high/pie,"Scotland, Isle of Skye",correction,https://www.wildernessscotland.com/blog/north-coast-500-distilleries-breweries/,,verified
+pla110,place_fact,Dram of whisky about GBP 5-12; distillery tour GBP 15-30,price ladder,dram/ham/jam,Scotland,"whisky,price",,,to check
+pla111,place_fact,"Scotch spelled whisky, Irish and American whiskey",spelling note for Joe's seed,whisky/risky,Scotland,whisky,,,to check
+pla112,place_fact,Highland cows ('coos') block single-track roads,animal traffic,coo/do,Scotland,animal,,,to check
+pla113,place_fact,"Midges: tiny biting flies, worst on still summer evenings",itch joke,,Scotland,"sensory,animal",,,to check
+pla114,place_fact,"Single-track roads use passing places, wave to say thanks",etiquette line,,Scotland,road,,,to check
+pla115,place_fact,John o' Groats to Land's End is the classic end-to-end; Joe was at John o' Groats in 2024,anchor line from Joe's history,Groats/oats,"Scotland, John o' Groats",joe-trip,,,to check
+pla116,place_fact,Irn-Bru and deep-fried Mars bar are the Scottish food cliches,food,,Scotland,food,,,to check
+pla117,place_fact,"Scottish words: wee, aye, braw, dram, slainte, ken, bairn, dinnae",slang bank,,Scotland,slang,,,to check
+pla118,place_fact,Edinburgh Fringe is billed as the world's largest arts festival; comedy is the largest share of the programme,superlative for Joe's Fringe seed,Fringe/binge,"Scotland, Edinburgh","joe-seed,superlative",https://www.edfringe.com/learn/news-and-events/world-s-largest-arts-festival-draws-to-a-close-for-another-year,,verified
+pla119,place_fact,Fringe ticket prices commonly GBP 10-17; many shows free or pay-what-you-can; Half Price Hut for same-day,price ladder,,"Scotland, Edinburgh",price,https://www.edinburghfestivalcity.com/inspiration/560-edinburgh-festivals-august-guide,,verified
+pla120,place_fact,"Fringe 2026 listing: 3,649 shows, 258 venues, 7-31 August (travel-guide figure)",number run,,"Scotland, Edinburgh",numbers,https://radicalstorage.com/travel/edinburgh-fringe-2026/,,verified
+pla121,place_fact,"Edinburgh Royal Mile is flyer-central in August, a flyer in every hand",flyer joke angle; flyering not sourced,,"Scotland, Edinburgh",scene,,,to check
+pla122,place_fact,Rotterdam (Rotter damn) is Joe's pun seed,Joe's rhyme,Rotterdam/rotter damn,"Netherlands, Rotterdam","joe-seed,rhyme",,,to check
+pla123,place_fact,"Rotterdam was bombed on 14 May 1940 and rebuilt modern, so the skyline is glass and steel",contrast with Amsterdam,,"Netherlands, Rotterdam",history,https://voicemap.me/tour/rotterdam/rotterdam-in-a-day-a-guide-to-its-art-history-and-architecture,,verified
+pla124,place_fact,Erasmus Bridge (1996) is nicknamed the Swan,landmark nickname,Swan/gone,"Netherlands, Rotterdam",landmark,https://voicemap.me/tour/rotterdam/rotterdam-in-a-day-a-guide-to-its-art-history-and-architecture,,verified
+pla125,place_fact,"Markthal opened 2014 with a painted ceiling, called the Sistine Chapel of Rotterdam",landmark,,"Netherlands, Rotterdam",landmark,https://voicemap.me/tour/rotterdam/rotterdam-in-a-day-a-guide-to-its-art-history-and-architecture,,verified
+pla126,place_fact,Cube houses by Piet Blom: tilted cubes you can tour,landmark,,"Netherlands, Rotterdam",landmark,https://www.theintrepidguide.com/best-things-to-do-in-rotterdam/,,verified
+pla127,place_fact,Rolling Loud Rotterdam launched 30 Jun-1 Jul 2023 at Rotterdam Ahoy; Kendrick Lamar headlined,Joe's trip 2023; Kendrick/afar seed,"Ahoy/boy, Kendrick Lamar/afar","Netherlands, Rotterdam","joe-seed,festival",https://en.wikipedia.org/wiki/Rolling_Loud,,verified
+pla128,place_fact,"Santa Claus statue by Paul McCarthy, the Buttplug Gnome, on Eendrachtsplein","from Joe's photo notes; risque, use knowingly",,"Netherlands, Rotterdam","joe-trip,statue",,,to check
+pla129,place_fact,Amsterdam rhymes with Isle of Man (Joe),Joe's rhyme,Amsterdam/Isle of Man,"Netherlands, Amsterdam","joe-seed,rhyme",,,to check
+pla130,place_fact,Amsterdam bikes outnumber cars; bikes get fished out of canals,bike joke,,"Netherlands, Amsterdam",bike,,,to check
+pla131,place_fact,"Dutch words: proost (cheers), gezellig (cosy), doei (bye), bitterballen, stroopwafel, patatje oorlog",word bank,proost/roost,Netherlands,"slang,food",,,to check
+pla132,place_fact,Beer in Amsterdam about EUR 4-6; festival beer EUR 6-8,price,,Netherlands,"price,drink",,,to check
+pla133,place_fact,"TT Mountain Course is 37.73 miles with 200+ corners, each named on roadside boards",Joe's TT seed; number,TT/tea/me,Isle of Man,"joe-seed,tt",https://en.wikipedia.org/wiki/List_of_named_corners_of_the_Snaefell_Mountain_Course,,verified
+pla134,place_fact,"Bray Hill is the steep downhill start section of the course, just past the Grandstand",named place,Bray/day,"Isle of Man, Douglas",tt,https://en.wikipedia.org/wiki/Bray_Hill,,verified
+pla135,place_fact,Mad Sunday: the Sunday of race week when the mountain section is open to the public; now one-way in race direction,fan tradition,,Isle of Man,tt,https://en.wikipedia.org/wiki/List_of_named_corners_of_the_Snaefell_Mountain_Course,,verified
+pla136,place_fact,"TT 2026 ran 25 May-6 Jun, qualifying week then race week",dates,,Isle of Man,tt,https://www.iomtoday.co.im/news/isle-of-man-tt-2026-full-race-schedule-road-closures-and-key-changes-908650,,verified
+pla137,place_fact,Isle of Man has Manx cats (no tails) and Loaghtan sheep with four horns,animal pun bank,Man/can/van,Isle of Man,animal,,,to check
+pla138,place_fact,Laxey Wheel is the world's largest working waterwheel; Snaefell Mountain Railway; Douglas horse trams,landmarks Joe photographed (Laxey),Laxey/axe-y,Isle of Man,"joe-trip,landmark",,,to check
+pla139,place_fact,Peel is known for kippers; Castletown is the old capital,food and place,Peel/feel/steal,Isle of Man,food,,,to check
+pla140,place_fact,Bee Gees statue on Douglas promenade (Joe's photos),Joe's trip; statue,Bee Gees,"Isle of Man, Douglas","joe-trip,statue",,,to check
+pla141,place_fact,Ferry to the island from Heysham is about GBP 100+ with a bike,price; travel logistics,,Isle of Man,"price,ferry",,,to check
+pla142,place_fact,Machan is Sinhala slang for mate or bro,Joe's machan seed,machan/Stan/man,Sri Lanka,"joe-seed,slang",https://en.wikipedia.org/wiki/Sinhala_slang,,verified
+pla143,place_fact,Ayubowan means 'may you live long': greeting and farewell with palms together,greeting word,,Sri Lanka,slang,https://omniglot.com/language/phrases/sinhala.php,,verified
+pla144,place_fact,Kohomada? means how are you; ayis amma/sha means wow,slang bank,,Sri Lanka,slang,https://en.wikipedia.org/wiki/Sinhala_slang,,verified
+pla145,place_fact,"Kottu is chopped roti fried with loud metal blades at night, about 800-1,500 LKR (to check current)",sound-based line; kottu/hot too,kottu/hot too,Sri Lanka,food,,,to check
+pla146,place_fact,Kandy to Ella train: third class about USD 12 per a booking site; observation seat about USD 19,price; scenic train,Ella/fella/Stella,"Sri Lanka, Ella","transport,price",https://12go.asia/en/travel/kandy/ella,,verified
+pla147,place_fact,Ella tuk-tuks start about 100-400 LKR for short rides; bicycle rental about 500 LKR/day,price line,,"Sri Lanka, Ella","transport,price",https://thedailypackers.com/cost-to-travel-in-sri-lanka/,,verified
+pla148,place_fact,"Kandy rhymes with candy, handy, brandy",rhyme hook,Kandy/candy/brandy,"Sri Lanka, Kandy",rhyme,,,to check
+pla149,place_fact,Sigiriya Lion Rock is a rock fortress with frescoes,landmark,,"Sri Lanka, Sigiriya",landmark,,,to check
+pla150,place_fact,Blue whales off Mirissa; leopards in Yala; elephants at Pinnawala,animal set,Mirissa/miss her,Sri Lanka,animal,,,to check
+pla151,place_fact,"Elephant House ginger beer, Lion Lager, arrack are the drinks",drink bank,arrack/black,Sri Lanka,drink,,,to check
+pla152,place_fact,"Money slang: nicker/quid = 1, fiver 5, tenner 10, score 20, pony 25, ton 100, monkey 500, grand/bag of sand 1,000",number ladder for the hook; monkey ties to Mad Monkey,"monkey/funky,bag/sand/grand",UK,"money,joe-seed",https://www.worldwidewords.org/articles/money.htm,,verified
+pla153,place_fact,Pavos is Spanish for turkeys and Spanish slang for money,"Joe's pavos wordplay: turkey, talking turkey, cold turkey",pavos/gravel,Spain,"joe-seed,money",,,to check
+pla154,place_fact,"Lisbon and Porto (Joe's 2023 bike trip), Bordeaux (Joe hook)",bike-trip anchors,Lisbon/Brisbane,"Portugal, France",joe-trip,,,to check
+pla155,place_fact,"Marrakesh souks: haggling, mint tea, snake charmers",scene; Joe 2025,,"Morocco, Marrakesh","joe-trip,scam",,,to check
+pla156,place_fact,"Naples: pizza home, scooters, Pompeii day trip (Joe's 2026 stag)",scene,,"Italy, Naples",joe-trip,,,to check
+pla157,place_fact,Interlaken and Lauterbrunnen: Swiss adventure base with waterfalls; Joe 2019,scene; Joe's trip,,Switzerland,joe-trip,,,to check
+pla158,place_fact,Snowdon and Pen y Fan are the Welsh peaks Joe did in 2024,local peaks; Welsh,,Wales,joe-trip,,,to check
+pla159,place_fact,Boomtown Fair near Winchester is a themed festival Joe attends most years,festival anchor,,"England, Winchester","joe-trip,festival",,,to check
+pla160,event,"Full Moon Party, Haad Rin, Koh Phangan; monthly around the full moon; buckets, neon paint, fire ropes; entry about 200 THB",Joe's seed,,"Thailand, Koh Phangan","party,monthly",https://fullmoonparty-thailand.com/full-moon-party-cost/,,verified
+pla161,event,"Songkran, Thai New Year, 13-15 April; nationwide water fights",soaking cliche,,Thailand,"water,april",,,to check
+pla162,event,"Loy Krathong, Thai lantern/float festival, November full moon",lantern line; Chiang Mai Yi Peng,,Thailand,lantern,,,to check
+pla163,event,"Tet, Vietnamese New Year, late Jan or Feb; fireworks, family return, cities empty",scene,,Vietnam,new-year,,,to check
+pla164,event,"Lao New Year (Pi Mai) mid-April, water splashing like Songkran",,,Laos,"water,april",,,to check
+pla165,event,"Luang Prabang dawn alms-giving, daily",respect scene,,"Laos, Luang Prabang",culture,https://themaritimeexplorer.ca/2023/08/10/alms-giving-in-luang-prabang/,,verified
+pla166,event,"Bun Bang Fai rocket festival in Laos, May",odd,,Laos,rocket,,,to check
+pla167,event,"Nyepi, Bali's Day of Silence, March; the airport shuts",contrast with party,,"Indonesia, Bali",silence,,,to check
+pla168,event,"Thaipusam at Batu Caves, Kuala Lumpur, Jan/Feb",scene,,Malaysia,religion,,,to check
+pla169,event,"Angkor Wat sunrise crowds, daily",,,Cambodia,crowd,,,to check
+pla170,event,"Pai Walking Street night market, nightly from about 17:00",,,"Thailand, Pai",market,https://thailandmagazine.com/pai/see-do/pai-walking-street/,,verified
+pla171,event,"Edinburgh Festival Fringe, August (2026: 7-31 Aug); comedy, theatre, thousands of shows",Joe's seed,,"Scotland, Edinburgh","festival,august",https://www.edinburghfestivalcity.com/inspiration/560-edinburgh-festivals-august-guide,,verified
+pla172,event,Edinburgh International Festival and Military Tattoo run alongside the Fringe in August,,,"Scotland, Edinburgh","festival,august",https://www.edinburghfestivalcity.com/inspiration/560-edinburgh-festivals-august-guide,,verified
+pla173,event,"Hogmanay, Edinburgh street party, 31 Dec",,,"Scotland, Edinburgh",new-year,,,to check
+pla174,event,"Isle of Man TT, late May to early June; 37.73-mile Mountain Course; road closures",Joe's seed (TT),,Isle of Man,"bikes,may",https://www.iomtoday.co.im/news/isle-of-man-tt-2026-full-race-schedule-road-closures-and-key-changes-908650,,verified
+pla175,event,"Mad Sunday, the Sunday of TT race week, public ride on the Mountain Course",,,Isle of Man,bikes,https://en.wikipedia.org/wiki/List_of_named_corners_of_the_Snaefell_Mountain_Course,,verified
+pla176,event,"Manx Grand Prix, late August, amateur road races on the same course",,,Isle of Man,"bikes,august",,,to check
+pla177,event,"Rolling Loud Rotterdam, 30 Jun-1 Jul 2023, Ahoy Rotterdam",Joe was there; Kendrick headlined,,"Netherlands, Rotterdam","rap,festival",https://en.wikipedia.org/wiki/Rolling_Loud,,verified
+pla178,event,"King's Day, 27 April, orange everything, boats on Amsterdam canals, free markets",Joe's 2019 Amsterdam trip per song bible,,"Netherlands, Amsterdam","orange,april",,,to check
+pla179,event,"Amsterdam Dance Event, October",,,"Netherlands, Amsterdam",dance,,,to check
+pla180,event,"North Sea Jazz, Rotterdam, July",,,"Netherlands, Rotterdam",jazz,,,to check
+pla181,event,"Rotterdam Blitz anniversary, 14 May (remembrance, not for jokes)",history context,,"Netherlands, Rotterdam",history,https://voicemap.me/tour/rotterdam/rotterdam-in-a-day-a-guide-to-its-art-history-and-architecture,,verified
+pla182,event,"Oktoberfest Munich, mid-Sept to first Sunday in October; litre steins, lederhosen",Joe was in Munich 2019,,"Germany, Munich",beer,,,to check
+pla183,event,"La Tomatina, Buñol, Spain, last Wednesday of August; tomato fight",,,Spain,"food-fight,august",,,to check
+pla184,event,"Running of the Bulls, San Fermin, Pamplona, 6-14 July",,,Spain,"bulls,july",,,to check
+pla185,event,"Burning Man, Nevada, late Aug/early Sept; temporary city, playa dust",,,USA,desert,,,to check
+pla186,event,"Boomtown Fair, Winchester, August, themed city festival",Joe attends,,"England, Winchester","festival,august",,,to check
+pla187,event,"Reading Festival, August bank holiday weekend",Joe's home town,,"England, Reading","festival,august",,,to check
+pla188,event,"Glastonbury, late June, mud and tickets sell out in minutes",British anchor,,"England, Somerset","festival,june",,,to check
+pla189,event,"Notting Hill Carnival, August bank holiday",,,"England, London","carnival,august",,,to check
+pla190,event,"Bonfire Night, 5 November, UK",,,UK,fireworks,,,to check
+pla191,event,"Queenstown Winter Festival, June/July",,,"New Zealand, Queenstown","winter,june",,,to check
+pla192,event,"Matariki, Maori New Year, June/July",,,New Zealand,culture,,,to check
+pla193,event,"Waitangi Day, 6 February",,,New Zealand,national-day,,,to check
+pla194,event,"Anzac Day, 25 April, dawn services and two-up in pubs",,,"Australia, New Zealand",remembrance,,,to check
+pla195,event,"Australia Day, 26 January, barbies and the day-off",,,Australia,national-day,,,to check
+pla196,event,"Melbourne Cup Day, first Tuesday of November, 'the race that stops a nation'",,,"Australia, Melbourne","racing,november",,,to check
+pla197,event,Sydney New Year's Eve fireworks over the Harbour Bridge,,,"Australia, Sydney",new-year,,,to check
+pla198,event,"Vivid Sydney, May-June light festival",,,"Australia, Sydney",lights,,,to check
+pla199,event,"Mardi Gras Sydney, February/March",,,"Australia, Sydney",pride,,,to check
+pla200,event,"Splendour in the Grass, Byron Bay, July",,,"Australia, Byron Bay",festival,,,to check
+pla201,event,"Margaret River vintage, Feb-Apr",Joe's grape picking,,"Australia, Margaret River",harvest,https://jp.yha.com.au/hostels/wa/south-west/margaret-river/jobs,,verified
+pla202,event,"Kandy Esala Perahera, July/August, decorated elephants parade",,,"Sri Lanka, Kandy",elephants,,,to check
+pla203,event,"Sinhala and Tamil New Year, April",,,Sri Lanka,new-year,,,to check
+pla204,event,"Chinese New Year, Jan/Feb across SE Asia",,,"Singapore, Malaysia, Vietnam",new-year,,,to check
+pla205,event,"Diwali, Oct/Nov",,,"India, UK",lights,,,to check
+pla206,event,"Holi, March, colour throwing",,,India,colour,,,to check
+pla207,event,"Carnival in Rio, Feb/March",,,Brazil,carnival,,,to check
+pla208,event,"Day of the Dead, 1-2 November",,,Mexico,culture,,,to check
+pla209,event,"St Patrick's Day, 17 March, Dublin",Joe in Dublin 2017/2023,,"Ireland, Dublin","green,march",,,to check
+pla210,event,Bergen: Christmas markets and Norwegian family Christmas,Joe's in-laws in Bergen,,"Norway, Bergen",christmas,,,to check
+pla211,event,"17 May, Norwegian National Day, bunad costumes and ice cream",,,Norway,national-day,,,to check
+pla212,event,"Midsummer in Sweden, late June, flower crowns and herring",smorgasbord line,,Sweden,midsummer,,,to check
+pla213,event,"Pride Amsterdam canal parade, August",,,"Netherlands, Amsterdam",pride,,,to check
+pla214,event,"Download Festival, Donington, June",,,England,festival,,,to check
+pla215,event,Isle of Skye: Skye Live and Highland Games in summer,,,"Scotland, Skye",games,,,to check
+pla216,event,"Highland Games with tossing the caber, summer weekends",caber/sabre,,Scotland,games,,,to check
+pla217,event,"Burns Night, 25 January, haggis and whisky",,,Scotland,whisky,,,to check
+pla218,event,"Up Helly Aa, Shetland, last Tuesday in January, fire festival",,,"Scotland, Shetland",fire,,,to check
+pla219,event,Beerlao-fuelled Vang Vieng river party season (dry season Nov-Mar),,,"Laos, Vang Vieng",tubing,https://www.backpackerswanderlust.com/river-tubing-vang-vieng-laos/,,verified
+pla220,event,"Koh Tao Jungle Party about 1,000 THB",,,"Thailand, Koh Tao",party,,,to check
+pla221,event,"Tomorrowland, Boom, Belgium, July",,,Belgium,festival,,,to check
+pla222,event,"Roskilde, Denmark, late June/July festival",,,Denmark,festival,,,to check
+pla223,activity,"Skydive, Queenstown/NZ; tandem from NZ$299 (9,000 ft) to NZ$439 (15,000 ft), about GBP 140-210",NZ$ + GBP; Joe's seed,,"New Zealand, Queenstown","skydive,price",https://www.1964.co.nz/?p=1932,,verified
+pla224,activity,"Nevis Bungy 134 m, NZ$395 (about GBP 190)",Joe's seed,,"New Zealand, Queenstown","bungee,price",https://www.newzealand.com/au/plan/business/nevis-swing-aj-hackett-bungy/,,verified
+pla225,activity,"Nevis Swing, NZ$325 (about GBP 155)",,,"New Zealand, Queenstown","swing,price",https://www.newzealand.com/au/plan/business/nevis-swing-aj-hackett-bungy/,,verified
+pla226,activity,"Shotover Canyon Swing, about NZ$180+ solo (older figure, likely higher now)",Joe's seed,,"New Zealand, Queenstown","canyon-swing,price",,,to check
+pla227,activity,"Kawarau Bridge bungy, 43 m, the original",,,"New Zealand, Queenstown",bungee,,,to check
+pla228,activity,"Skydive, Australia (e.g. Byron Bay, Cairns), tandem about A$350-450, about GBP 180-230",,,Australia,"skydive,price",,,to check
+pla229,activity,"Scuba Open Water course, Koh Tao, 11,000-12,500 THB (GBP 250-285)",Joe's seed,,"Thailand, Koh Tao","scuba,price",https://www.bigbluediving.com/blog/budget-guide-2026-how-much-is-diving-on-koh-tao/,,verified
+pla230,activity,"Fun dive Koh Tao, 800-1,000 THB each",,,"Thailand, Koh Tao","scuba,price",https://www.bigbluediving.com/blog/budget-guide-2026-how-much-is-diving-on-koh-tao/,,verified
+pla231,activity,"Scuba off Cairns/Great Barrier Reef, liveaboard or day trip, about A$200-300",,,"Australia, Cairns","scuba,price",,,to check
+pla232,activity,"River tubing Vang Vieng, 120,000-160,000 kip with deposit (USD 7-10)",Joe's seed,,"Laos, Vang Vieng","tubing,price",https://www.backpackerswanderlust.com/river-tubing-vang-vieng-laos/,,verified
+pla233,activity,Kuang Si Falls swim and bear sanctuary visit,,,"Laos, Luang Prabang",swim,https://www.audleytravel.com/us/laos/things-to-do/kuang-si-waterfalls-and-the-surrounding-countryside-full-day,,verified
+pla234,activity,"Motorbike hire Vietnam, Honda Winner about 350,000 VND/day (GBP 11)",Joe's seed,,"Vietnam, Ha Giang","bike,price",https://www.thebrokebackpacker.com/ha-giang-loop-vietnam-itinerary,,verified
+pla235,activity,"Ha Giang Loop 3-day, with easy rider driver",,,"Vietnam, Ha Giang",bike,https://www.jonnymelon.com/ha-giang-loop/,,verified
+pla236,activity,"Hai Van Pass ride, 1-2 hours over the pass",,,"Vietnam, Hai Van Pass",bike,https://goasia.cc/en/article/hai-van-pass,,verified
+pla237,activity,"Pai Canyon sunset walk, donation entry",Joe's seed,,"Thailand, Pai",walk,https://themanduls.com/pai-canyon/,,verified
+pla238,activity,"Full Moon Party night, about 1,500-2,200 THB",Joe's seed,,"Thailand, Koh Phangan","party,price",https://fullmoonparty-thailand.com/full-moon-party-cost/,,verified
+pla239,activity,"Muay Thai class or fight night in Thailand, tourist-friendly",,,Thailand,fight,,,to check
+pla240,activity,"Elephant sanctuary visit (ethical, no riding), Chiang Mai",,,"Thailand, Chiang Mai",animal,,,to check
+pla241,activity,Cooking class: pad Thai/pho in a market,,,"Thailand, Vietnam",food,,,to check
+pla242,activity,"Picking grapes, Margaret River/Riverland, vintage Feb-Apr; pay by hour or by bin",Joe's seed,,Australia,"work,grape",https://jp.yha.com.au/hostels/wa/south-west/margaret-river/jobs,,verified
+pla243,activity,88 regional days for a second working holiday visa,,,Australia,work,,,to check
+pla244,activity,"4WD on K'gari (Fraser Island), beach as motorway, dingoes, sand blows",Joe's 2017 route,,"Australia, K'gari",4wd,,,to check
+pla245,activity,"Whitsundays sailing trip, 2-3 nights, about A$400-700",,,"Australia, Whitsundays","sailing,price",,,to check
+pla246,activity,"Surf lesson, Byron Bay, about A$70-90",,,"Australia, Byron Bay","surf,price",,,to check
+pla247,activity,Sydney Harbour Bridge climb,,,"Australia, Sydney",climb,,,to check
+pla248,activity,"Road trip with a campervan, East Coast Australia",,,Australia,road-trip,,,to check
+pla249,activity,"NC500 on a motorbike, 516 miles, May 2024 (Joe)",Joe's seed,,"Scotland, NC500","bike,road-trip",https://www.wildernessscotland.com/blog/north-coast-500-distilleries-breweries/,,verified
+pla250,activity,"Distillery tour, Talisker, Skye, GBP 15-30",Joe's seed,,"Scotland, Isle of Skye","whisky,price",https://uk.nordicvisitor.com/travel-guide/attractions/scotland/talisker-distillery,,verified
+pla251,activity,"Munro bagging, Scottish hills over 3,000 ft",,,Scotland,walk,,,to check
+pla252,activity,"Fringe: see a show for GBP 10-17, or a free one at the Free Fringe",Joe's seed,,"Scotland, Edinburgh","comedy,price",https://www.edinburghfestivalcity.com/inspiration/560-edinburgh-festivals-august-guide,,verified
+pla253,activity,Watch TT racing from the roadside at Bray Hill or Creg-ny-Baa,Joe's seed,,Isle of Man,bikes,https://en.wikipedia.org/wiki/Bray_Hill,,verified
+pla254,activity,Ride the Mountain Course on Mad Sunday,,,Isle of Man,bikes,https://en.wikipedia.org/wiki/List_of_named_corners_of_the_Snaefell_Mountain_Course,,verified
+pla255,activity,Snaefell Mountain Railway and Laxey Wheel,,,Isle of Man,train,,,to check
+pla256,activity,Rolling Loud Rotterdam festival day,Joe was there,,"Netherlands, Rotterdam",festival,https://en.wikipedia.org/wiki/Rolling_Loud,,verified
+pla257,activity,Amsterdam bike hire EUR 12-15/day,,,"Netherlands, Amsterdam","bike,price",,,to check
+pla258,activity,Canal boat on King's Day,,,"Netherlands, Amsterdam",boat,,,to check
+pla259,activity,"Kandy to Ella train, 3rd class about USD 12 (booking site)",,,Sri Lanka,"train,price",https://12go.asia/en/travel/kandy/ella,,verified
+pla260,activity,Safari in Yala for leopards,,,"Sri Lanka, Yala",safari,,,to check
+pla261,activity,Whale watching in Mirissa,,,"Sri Lanka, Mirissa",whales,,,to check
+pla262,activity,Snowdon summit walk,Joe 2024,,Wales,walk,,,to check
+pla263,activity,Pen y Fan summit,Joe 2024,,Wales,walk,,,to check
+pla264,activity,Interlaken canyoning/paragliding,Joe's 2019 trip,,"Switzerland, Interlaken",adventure,,,to check
+pla265,activity,Via ferrata or paragliding in Lauterbrunnen,,,Switzerland,adventure,,,to check
+pla266,activity,"Tuk-tuk haggling, any country",,,SE Asia,haggle,,,to check
+pla267,activity,"Hostel pub crawl, about USD 10 includes shots",,,SE Asia,hostel,,,to check
+pla268,activity,"Hammock in a bamboo bungalow, about GBP 5/night",,,SE Asia,"sleep,price",,,to check
+pla269,activity,"Booze cruise/boat party, Koh Phangan or Phi Phi",,,Thailand,boat,,,to check
+pla270,activity,Visa run across a border,,,SE Asia,border,,,to check
+pla271,activity,"Night train across Vietnam, sleeper berth",,,Vietnam,train,,,to check
+pla272,activity,Sandboarding or dune bashing,,,"Australia, Port Stephens",sand,,,to check
+pla273,activity,Cave tubing or kayaking near Vang Vieng,,,Laos,cave,https://www.backpackerswanderlust.com/river-tubing-vang-vieng-laos/,,verified
+pla274,activity,Haggling for a suit in Hoi An,,,"Vietnam, Hoi An",shopping,,,to check
+pla275,activity,Day trip to Pompeii from Naples,Joe 2026,,Italy,history,,,to check
+pla276,character,The hostel mate who has been 'about to leave' for six weeks,everyone-stayed-too-long line,,,hostel,,,to check
+pla277,character,"The loud Aussie at 3am telling you about his gap yah, in a dorm",,,,hostel,,,to check
+pla278,character,The guy with an acoustic guitar and four songs,,,,hostel,,,to check
+pla279,character,The couple having an argument in a dorm in whispers,,,,hostel,,,to check
+pla280,character,The traveller who found himself in Thailand and a topknot,,,,hostel,,,to check
+pla281,character,The one who has been everywhere and tells you,one-upmanship,,,hostel,,,to check
+pla282,character,"The German who got the best bunk, every time, with a towel",,,,hostel,,,to check
+pla283,character,The Brit abroad in a football shirt at 10am,,,,hostel,,,to check
+pla284,character,The person who 'doesn't really drink' and has a bucket,,,,party,,,to check
+pla285,character,"The snorer, the night-owl and the early-riser sharing a six-bed",,,,hostel,,,to check
+pla286,character,Tuk-tuk driver whose 'cousin' has a tailor,,,,scam,,,to check
+pla287,character,Tuk-tuk driver who says the temple is closed today,classic scam,,,scam,,,to check
+pla288,character,Moped hire shop that keeps your passport as deposit,,,,scam,,,to check
+pla289,character,Moped hire shop that then charges for an old scratch,,,,scam,,,to check
+pla290,character,The stranger on a mountain pass who waves you into the 'best homestay',,,,scam,,,to check
+pla291,character,The street-food seller who holds up fingers for the price,,,,food,,,to check
+pla292,character,"The fake monk or friendly local who wants to practise English, then a gem shop",,,,scam,,,to check
+pla293,character,"The beach vendor with fruit, bracelets and a cooler",,,,vendor,,,to check
+pla294,character,The bar tout with a flyer and a free shot,,,,party,,,to check
+pla295,character,The Full Moon bucket seller,,,,party,,,to check
+pla296,character,The Vang Vieng bar owner who offers the happy menu,,,,menu,,,to check
+pla297,character,The dive instructor with a tan and one joke,,,,dive,,,to check
+pla298,character,The dive buddy who uses all the air first,,,,dive,,,to check
+pla299,character,The bungee operator who weighs you and writes it on your hand,real NZ practice; weight in marker on hand,,,bungee,,,to check
+pla300,character,The skydive videographer who films you screaming,,,,skydive,,,to check
+pla301,character,The vineyard supervisor who counts the buckets,,,,work,,,to check
+pla302,character,The farm owner who is also the hostel owner and the employer,,,,work,,,to check
+pla303,character,The backpacker who has done three 88 days,,,,work,,,to check
+pla304,character,The goon-bag mate who gets the bag on the washing line,,,,drink,,,to check
+pla305,character,Ranger or guide with a snake in a bag,,,,animal,,,to check
+pla306,character,Monkey that takes your sunglasses,"monkey pun, monkey = 500",,,animal,,,to check
+pla307,character,Maitre d' at a Fringe venue with a clipboard and a flyer,,,,fringe,,,to check
+pla308,character,Fringe performer in a bin bag doing their hour to six people,,,,fringe,,,to check
+pla309,character,The whisky guide who says 'a wee dram' to every question,,,,whisky,,,to check
+pla310,character,The TT marshal in hi-vis who has seen it all,,,,tt,,,to check
+pla311,character,The Mad Sunday rider on a brand-new bike,,,,tt,,,to check
+pla312,character,The Dutchman who cycles at you in the cycle lane,,,,bike,,,to check
+pla313,character,The Rotterdam festival-goer in a bucket hat and a rap tee,,,,festival,,,to check
+pla314,character,"The mate who owes you money (Gaz, in Joe's notes)",from CLAUDE.md story slots; fictional placeholder,,,money,,,to check
+pla315,character,The stag party in matching T-shirts in Naples,Joe's 2026 stag,,,stag,,,to check
+pla316,character,The friendly stranger who then asks for money,,,,scam,,,to check
+pla317,character,The sleepy official at the border with a stamp and an eyebrow,,,,border,,,to check
+pla318,character,The Marrakesh souk man who says 'my friend',,,,scam,,,to check
