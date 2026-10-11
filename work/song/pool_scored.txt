@@ -1,0 +1,50 @@
+1. Dorm of eight, one alarm, seven awake
+2. Gecko took my bunk. I took it personally.
+3. Skye in the rain: sideways, then upwards
+4. Fastest road race on earth. I took the ferry.
+5. Skydive man asked if I'd eaten. I had.
+6. Amsterdam? less said the better
+7. Picked grapes all day, then bought them as goon
+8. Boss said pavos, I brought turkeys
+9. Marrakesh: it's a gift. Then he said the price.
+10. Pavos gonna pour this quarter
+11. Went home for week got bored though
+12. Boss man bout to bring that order
+13. Cows in the Pyrenees have right of way
+14. Canyon swing asks your weight, not your name
+15. Happy pizza took forty minutes. Nobody was.
+16. Back on my bike put the foot to the floor
+17. Fjord views, twelve quid a beer
+18. Goon bag pillow, full circle
+19. Bucket at the Full Moon. Colour: unknown.
+20. Locker's two dollars. My stuff's worth two.
+21. Larrau fog: the cow bell's my sat nav
+22. Whitsundays boat, skipper says no worries
+23. Bergen rains two hundred days. They call it Tuesday.
+24. Lost the tube, kept the bar tab
+25. Naples: Pompeii at nine, pizza at ten
+26. Forty frozen birds. Cold turkey.
+27. Eurotunnel: thirty quid to say bonjour
+28. Hanoi traffic: walk slowly and believe
+29. Raise that pulse then I split like Dahl
+30. Rotterdam, Rotter damn near drowned
+31. Sea fog, Isle of Man, can't see the heather
+32. Fish at Koh Tao had seen it all
+33. Rope swing sign said no. Sign's in the river.
+34. North Coast 500. Three hundred sheep.
+35. Monkey on my back, I owe the lender
+36. Mopeds fun but a big bikes better
+37. Train to Ella, door open, tea in hand
+38. Bought a Honda Win, sold a Honda Win. Win-win.
+39. Vegemite on toast, spider on the wall
+40. Pai Canyon, sign says careful. Noted.
+41. Shroom shake, banana pancake, same menu
+42. Oh la to the bros in Porto
+43. Souk guide said my friend. He wasn't.
+44. Bungee in Queenstown. Said I'm fine. I lied.
+45. Dark by three in Bergen, ribs for dinner
+## Scores (blind critics, 11 Oct 2026). Authors: ids 6,10,11,12,16,29,36,42 are Joe's; the rest are Claude's.
+Page-wit critic (pub one-liner lens) keep>=4: 2,4,7,8,9,14,15,19,20,23,33,38,40,43. Joe's bars scored 1-2 (10,11,12,16,29,36,42 = 1; 6 = 2).
+Sonic critic (rap/flow lens) keep>=4: 8,30,38,42. Joe's bars 1-4 (42 Porto = 4; 29 Dahl = 3; 10 Pavos pour = 3; 11 bored though = 1; 36 Mopeds = 1).
+Only 8 (Boss said pavos, I brought turkeys) and 38 (Honda Win win-win) scored >=4 on BOTH.
+FINDING: neither critic reproduces Joe's taste (they rank several of his own bars last). Critic scores are NOT calibrated and cannot certify "high quality" on their own.

@@ -20,3 +20,10 @@ No explained jokes, no setup-punchline gags, no holiday itinerary lists, no heav
 3. quality.py on each; discard those below bar.
 4. Critic on the best one; fix flagged bars; repeat (max 6 rounds).
 5. Only a stanza that clears all four gates goes into a draft. Joe sees the draft once, complete.
+
+## Gate 0: CALIBRATION (added 11 Oct 2026, after the critic round on work/song/pool_scored.txt)
+A critic's scores count only if the critic is calibrated to Joe: Joe's own bars (and bars he has praised) must score in its top half. On 11 Oct two critics (page-wit lens and rap-sound lens) both ranked several of Joe's own bars last, so neither is calibrated. Until Joe ranks a small sample (his taste is the one thing the gate cannot supply), critic scores may guide editing but can NOT be used to certify a draft. Record Joe's ranking in voice/calibration.md and re-check the critic against it.
+## Lessons from the 11 Oct rounds
+- Flat, specific, deadpan bars with one turn ("Forty frozen birds. Cold turkey.", "Sign's in the river.") outscored every rhyme-driven bar I wrote.
+- My rhyme-chasing stanzas (-ape, -ide, -happy, -oon) scored 2-3 on every critic; do not write stanzas to fit a sound.
+- Joe's own bars are sound-play and chantable; page critics underrate that. The best bars are specific AND sonic (pavos/turkeys, Win-win).

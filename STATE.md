@@ -7,7 +7,8 @@
 - Round 2: replacing idea lists with exhaustive banks (bank/, toolkit/bank.py, bank/index.html).
 
 ## Latest run (11 Oct 2026)
-- Full pipeline run end to end: work/song/ (beats, stars, patterns, draft notes, review) -> writing/full_draft_v17.md (proposal; v16 untouched). Stars were Claude's provisional picks.
+- v17 was rejected by Joe (writing/rejected/). Quality guard added (CLAUDE.md principle 0, quality/gate.md). Three critic rounds + a bar-pool test run; NO draft cleared. Blocker: critics are not calibrated to Joe's taste (they rank his own bars last). Needs Joe's ranking of ~12 bars (work/song/calibration_bars.md). Nothing is shown until then.
+- (older) - Full pipeline run end to end: work/song/ (beats, stars, patterns, draft notes, review) -> writing/full_draft_v17.md (proposal; v16 untouched). Stars were Claude's provisional picks.
 
 ## Next
 0. Joe: open bank/index.html (1,785+ rows: rhymes, sound-alikes, idioms/puns, slang, names, places/events), star what you like, press 'Copy my stars', paste them back. Then `/patterns hook` and `/draft hook`.
