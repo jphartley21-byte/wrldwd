@@ -6,6 +6,9 @@
 - Voice profile v1 is evidence-only (voice/provenance.md). v0 wrongly used agent-written lines. Joe: do voice/quiz.md and optionally add voice/samples/.
 - Round 2: replacing idea lists with exhaustive banks (bank/, toolkit/bank.py, bank/index.html).
 
+## Latest run (11 Oct 2026)
+- Full pipeline run end to end: work/song/ (beats, stars, patterns, draft notes, review) -> writing/full_draft_v17.md (proposal; v16 untouched). Stars were Claude's provisional picks.
+
 ## Next
 0. Joe: open bank/index.html (1,785+ rows: rhymes, sound-alikes, idioms/puns, slang, names, places/events), star what you like, press 'Copy my stars', paste them back. Then `/patterns hook` and `/draft hook`.
 1. Joe: answer the voice open questions; add trip details/photos for research (material/media/<trip>/).

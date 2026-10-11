@@ -1,0 +1,4 @@
+# Ingredient picks (stage 2). PROVISIONAL: picked by Claude from bank/ because Joe has not starred yet. Joe: star differently in bank/index.html and I will redo.
+- Joe's seeds used: Rotter damn~Rotterdam; Amsterdam~Isle of Man (TT); Kendrick Lamar~afar; JID (AY carpet); monkey = GBP 500 / Mad Monkey; goon; grape picking; Pai Canyon; Honda Win; weed pizza; Laos tubing; Full Moon Party; scuba; NZ bungee, canyon swing, skydive; Whitsundays; Skye / NC500 / Fringe; Pavos = turkeys/money; animals (gecko, ape, turtle).
+- Bank rows pulled: places_events (Nam Song tubing, Mad Monkey Sydney, Pavos), rhymes (escape/ape/shape family, -ide family), names_culture (Kendrick, JID), wordplay_idioms (monkey on my back, on the side, cold turkey).
+- Left out on purpose: swear down / skint / mate (not confirmed as Joe's), agent-written crime lines (gendarme bribe, Gaz, Rolex).
