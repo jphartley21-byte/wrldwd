@@ -17171,70 +17171,248 @@
 }
 ]
 },
-"Yo, bonjourno\nSaid damn at the on-stage porno\nFront row on my phone, so bored, though\nSo I boarded a plane out to Bordeaux": [
+"Kaixo, I'm not later\nI did the tour with my old matey\nI stood by the spider and looked straight\nThe ferry's delayed, I'm told to wait": [
 {
 "n": 1,
-"reading": "Hello, good day.",
+"reading": "Hello, I am not later.",
 "grammatical": true,
-"sense": 2,
-"issue": ""
+"sense": 1,
+"issue": "'not later' is an odd way to say on time"
 },
 {
 "n": 2,
-"reading": "I said 'damn' at the on-stage pornographic performance.",
+"reading": "I did the tour with my old friend.",
 "grammatical": true,
 "sense": 2,
 "issue": ""
 },
 {
 "n": 3,
-"reading": "I was in the front row on my phone, so I was bored, though.",
+"reading": "I stood by the spider and looked straight.",
 "grammatical": true,
-"sense": 2,
-"issue": ""
+"sense": 1,
+"issue": "'looked straight' meaning unclear"
 },
 {
 "n": 4,
-"reading": "So I boarded a plane out to Bordeaux.",
+"reading": "The ferry is delayed and I am told to wait.",
 "grammatical": true,
 "sense": 2,
 "issue": ""
 }
 ],
-"Hey Rotterdam I own the quarry\nCouncil want the gnome back, I am not sorry\nGnome off the back of a lorry\nMight lie low over in lorry": [
-{
-"n": 1,
-"reading": "Hey Rotterdam, I own the quarry.",
-"grammatical": true,
-"sense": 2,
-"issue": ""
-},
-{
-"n": 2,
-"reading": "The council want the gnome back, and I am not sorry.",
-"grammatical": true,
-"sense": 2,
-"issue": ""
-},
-{
-"n": 3,
-"reading": "The gnome came off the back of a lorry.",
-"grammatical": true,
-"sense": 2,
-"issue": ""
-},
-{
-"n": 4,
-"reading": "I might lie low over in the lorry.",
-"grammatical": true,
-"sense": 2,
-"issue": ""
-}
-],
-"BLOCK\nHey Rotterdam I own the quarry\nCouncil want the gnome back, I am not sorry\nGnome off the back of a lorry\nMight lie low over in lorry": {
-"thread": "A speaker in Rotterdam claims to own a quarry and has taken a garden gnome from a lorry, refusing to return it to the council.",
+"BLOCK\nKaixo, I'm not later\nI did the tour with my old matey\nI stood by the spider and looked straight\nThe ferry's delayed, I'm told to wait": {
+"thread": "A speaker greets, mentions touring with an old friend, stands by a spider, then is told the ferry is delayed.",
 "coherent": 1,
-"issue": "Quarry ownership and gnome theft are unrelated, and 'lorry' shifts meaning.",
+"issue": "No clear connection between the tour, the spider, and the ferry.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": false,
+"issue": "Spider appears with no context or link to the tour."
+},
+{
+"n": 4,
+"follows": false,
+"issue": "Ferry delay is a new subject with no signal."
+}
+]
+},
+"Kaixo, see you later\nI toured with my old school waiter\nI stood by the spider and looked straight\nThe ferry's delayed, I'm told to wait": [
+{
+"n": 1,
+"reading": "Hello, see you later.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "I toured with my old school waiter.",
+"grammatical": true,
+"sense": 1,
+"issue": "Odd phrase 'old school waiter' unclear."
+},
+{
+"n": 3,
+"reading": "I stood by the spider and looked straight.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Looked straight' lacks object or direction."
+},
+{
+"n": 4,
+"reading": "The ferry is delayed, and I am told to wait.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"BLOCK\nKaixo, see you later\nI toured with my old school waiter\nI stood by the spider and looked straight\nThe ferry's delayed, I'm told to wait": {
+"thread": "A speaker greets someone, mentions touring with an old school waiter, stands by a spider, and is told the ferry is delayed.",
+"coherent": 0,
+"issue": "No clear thread; bars jump between unrelated events and images.",
+"links": [
+{
+"n": 2,
+"follows": false,
+"issue": "Touring with a waiter is unrelated to the greeting."
+},
+{
+"n": 3,
+"follows": false,
+"issue": "Standing by a spider is a non sequitur."
+},
+{
+"n": 4,
+"follows": false,
+"issue": "Ferry delay is unrelated to the spider."
+}
+]
+},
+"Kaixo, I'm no waiter\nI toured with my old school skater\nI stood by the spider and looked straight\nThe ferry's delayed, I'm told to wait": [
+{
+"n": 1,
+"reading": "Hello, I am not a waiter.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "I went on tour with my old school skater.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "I stood beside the spider and looked straight.",
+"grammatical": true,
+"sense": 1,
+"issue": "'looked straight' vague; what did he look at?"
+},
+{
+"n": 4,
+"reading": "The ferry is delayed and I am told to wait.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"BLOCK\nKaixo, I'm no waiter\nI toured with my old school skater\nI stood by the spider and looked straight\nThe ferry's delayed, I'm told to wait": {
+"thread": "A speaker greets, mentions touring with an old school skater, stands by a spider, then is told the ferry is delayed.",
+"coherent": 1,
+"issue": "Bars 2-4 jump between unrelated scenes with no connective thread.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": false,
+"issue": "Abrupt shift from touring to standing by a spider."
+},
+{
+"n": 4,
+"follows": false,
+"issue": "Ferry delay unrelated to spider or skater."
+}
+]
+},
+"I did the whole east coast as a package tour trade.\nThe driver said the fare was fully paid.\nThen the bloke at the hostel said I had it made.\nSo I threw shade at the driver in the shade.": [
+{
+"n": 1,
+"reading": "I travelled the whole east coast as part of a package tour trade.",
+"grammatical": true,
+"sense": 1,
+"issue": "'package tour trade' meaning strained"
+},
+{
+"n": 2,
+"reading": "The driver said the fare was fully paid.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "Then the man at the hostel said I had it made.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "So I threw shade at the driver in the shade.",
+"grammatical": true,
+"sense": 1,
+"issue": "'threw shade' and 'in the shade' clash oddly"
+}
+],
+"BLOCK\nI did the whole east coast as a package tour trade.\nThe driver said the fare was fully paid.\nThen the bloke at the hostel said I had it made.\nSo I threw shade at the driver in the shade.": {
+"thread": "A traveller does an east coast package tour, is told the fare is paid and he has it made, then throws shade at the driver.",
+"coherent": 1,
+"issue": "Bar 4's 'threw shade' and 'in the shade' is confusing and unmotivated.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": true,
+"issue": ""
+},
+{
+"n": 4,
+"follows": false,
+"issue": "Sudden unexplained hostility; 'in the shade' unclear."
+}
+]
+},
+"I drove up K'gari with the sand as the ground.\nThe only law there was the tide's own sound.\nI got the four-wheel-drive bogged and then I was found.\nSo then I should have gone the other way round.": [
+{
+"n": 1,
+"reading": "I drove up K'gari with the sand as the ground.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "The only law there was the tide's own sound.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "I got the four-wheel-drive bogged and then I was found.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "So then I should have gone the other way round.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"BLOCK\nI drove up K'gari with the sand as the ground.\nThe only law there was the tide's own sound.\nI got the four-wheel-drive bogged and then I was found.\nSo then I should have gone the other way round.": {
+"thread": "A driver gets bogged on K'gari's sand and regrets not taking the other route.",
+"coherent": 2,
+"issue": "",
 "links": [
 {
 "n": 2,
@@ -17253,103 +17431,2416 @@
 }
 ]
 },
-"Bunk with a bike\nBank replied\nKeith had a word\nKeith as guide\nPaint on the van\nGaz asks\nGaz runs\nKeith updates": [
+"The Whitsundays skipper ran the tour like a show.\nThen he said one rule, sit tight, here we go.\nI didn't know the route, I didn't ask to know.\nThe tide was low and I had to go lie low.": [
+{
+"n": 1,
+"reading": "The Whitsundays skipper ran the tour like a show.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "Then he said one rule, sit tight, here we go.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "I didn't know the route, and I didn't ask to know.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "The tide was low and I had to go lie low.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"BLOCK\nThe Whitsundays skipper ran the tour like a show.\nThen he said one rule, sit tight, here we go.\nI didn't know the route, I didn't ask to know.\nThe tide was low and I had to go lie low.": {
+"thread": "A Whitsundays skipper runs a boat tour, and the narrator, not knowing the route, lies low because of the low tide.",
+"coherent": 1,
+"issue": "Bar 4's low tide and lying low is a loose, unclear turn.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": true,
+"issue": ""
+},
+{
+"n": 4,
+"follows": false,
+"issue": "Low tide to lying low is an unexplained jump."
+}
+]
+},
+"So I got to Cairns and looked for the check-in sign.\nThen the queue at bag drop was a long line.\nThe woman at the desk said I've plenty of time.\nThe parking ticket said the fine was just fine.": [
+{
+"n": 1,
+"reading": "I arrived at Cairns and looked for the check-in sign.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "The queue at the bag drop was a long line.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "The woman at the desk said I have plenty of time.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "The parking ticket said the fine was just fine.",
+"grammatical": true,
+"sense": 1,
+"issue": "'fine' as penalty and as okay is a strained pun"
+}
+],
+"BLOCK\nSo I got to Cairns and looked for the check-in sign.\nThen the queue at bag drop was a long line.\nThe woman at the desk said I've plenty of time.\nThe parking ticket said the fine was just fine.": {
+"thread": "A traveller arrives at Cairns airport, queues at bag drop, is reassured by the desk woman, and notes his parking fine is acceptable.",
+"coherent": 1,
+"issue": "Parking ticket bar is a non sequitur after airport check-in.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": true,
+"issue": ""
+},
+{
+"n": 4,
+"follows": false,
+"issue": "Sudden shift to parking fine with no link to airport queue."
+}
+]
+},
+"So then I drove an old rented four-wheel-drive truck.\nThen it got bogged in the sand and got stuck.\nThen the lads said a dingo sighting was good luck.\nThe dingo in my truck sounded like a duck.": [
+{
+"n": 1,
+"reading": "So then I drove an old rented four-wheel-drive truck.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "Then it got bogged in the sand and got stuck.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "Then the lads said a dingo sighting was good luck.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "The dingo in my truck sounded like a duck.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"BLOCK\nSo then I drove an old rented four-wheel-drive truck.\nThen it got bogged in the sand and got stuck.\nThen the lads said a dingo sighting was good luck.\nThe dingo in my truck sounded like a duck.": {
+"thread": "A driver gets a rented four-wheel-drive bogged in sand, and the lads claim a dingo sighting is good luck.",
+"coherent": 1,
+"issue": "Bar 4's dingo in the truck is a confusing non sequitur.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": true,
+"issue": ""
+},
+{
+"n": 4,
+"follows": false,
+"issue": "Dingo suddenly in truck, no link to sighting or bogging."
+}
+]
+},
+"I did Noosa to Rainbow Beach and it was quick.\nThe traffic was slow and the air was thick.\nSo then I asked the bloke which hostel I should pick.\nThe bloke said ask again and I'd get the stick.": [
+{
+"n": 1,
+"reading": "I travelled from Noosa to Rainbow Beach and it was quick.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "The traffic was slow and the air was thick.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "So then I asked the bloke which hostel I should pick.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "The bloke said that if I asked again I would get the stick.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"BLOCK\nI did Noosa to Rainbow Beach and it was quick.\nThe traffic was slow and the air was thick.\nSo then I asked the bloke which hostel I should pick.\nThe bloke said ask again and I'd get the stick.": {
+"thread": "A traveller drives from Noosa to Rainbow Beach, hits slow traffic, then asks a local which hostel to choose and gets threatened.",
+"coherent": 2,
+"issue": "",
+"links": [
+{
+"n": 1,
+"follows": true,
+"issue": ""
+},
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": true,
+"issue": ""
+},
+{
+"n": 4,
+"follows": true,
+"issue": ""
+}
+]
+},
+"The lads park the scooters by the thicket.\nThe copper writes a parking ticket.\nHe says the lads made a sticky wicket.\nThen the copper tells me riding two up is just not cricket.": [
+{
+"n": 1,
+"reading": "The lads park the scooters by the thicket.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "The copper writes a parking ticket.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "He says the lads made a sticky wicket.",
+"grammatical": true,
+"sense": 1,
+"issue": "Sticky wicket is a strained metaphor here."
+},
+{
+"n": 4,
+"reading": "Then the copper tells me riding two up is just not cricket.",
+"grammatical": true,
+"sense": 1,
+"issue": "Two-up idiom and cricket pun strain meaning."
+}
+],
+"BLOCK\nThe lads park the scooters by the thicket.\nThe copper writes a parking ticket.\nHe says the lads made a sticky wicket.\nThen the copper tells me riding two up is just not cricket.": {
+"thread": "Lads park scooters by a thicket, a copper tickets them and lectures about riding two-up.",
+"coherent": 2,
+"issue": "",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": true,
+"issue": ""
+},
+{
+"n": 4,
+"follows": true,
+"issue": ""
+}
+]
+},
+"The lads park the scooters by the picket.\nThe copper writes a parking ticket.\nHe says the lads made a sticky wicket.\nThen the copper tells me riding two up is just not cricket.": [
+{
+"n": 1,
+"reading": "The lads park the scooters by the picket.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "The copper writes a parking ticket.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "He says the lads made a sticky wicket.",
+"grammatical": true,
+"sense": 1,
+"issue": "'made a sticky wicket' is strained idiom"
+},
+{
+"n": 4,
+"reading": "Then the copper tells me riding two up is just not cricket.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"BLOCK\nThe lads park the scooters by the picket.\nThe copper writes a parking ticket.\nHe says the lads made a sticky wicket.\nThen the copper tells me riding two up is just not cricket.": {
+"thread": "Lads park scooters by a picket, a copper tickets them and lectures about riding two-up.",
+"coherent": 2,
+"issue": "",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": true,
+"issue": ""
+},
+{
+"n": 4,
+"follows": true,
+"issue": ""
+}
+]
+},
+"At four I walk in Jemaa el-Fna it's a battle\nSix stalls in a row say special price just for you like cattle\nI offer half for the lamp and he gives it a rattle\nHe says forty flat, no prattle": [
+{
+"n": 1,
+"reading": "At four o'clock I walk into Jemaa el-Fna and it is a battle.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "Six stalls in a row say 'special price just for you' like cattle.",
+"grammatical": true,
+"sense": 1,
+"issue": "'like cattle' comparison unclear"
+},
+{
+"n": 3,
+"reading": "I offer half the price for the lamp and he gives it a rattle.",
+"grammatical": true,
+"sense": 1,
+"issue": "'gives it a rattle' meaning strained"
+},
+{
+"n": 4,
+"reading": "He says forty flat, no prattle.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"BLOCK\nAt four I walk in Jemaa el-Fna it's a battle\nSix stalls in a row say special price just for you like cattle\nI offer half for the lamp and he gives it a rattle\nHe says forty flat, no prattle": {
+"thread": "A shopper haggles over a lamp with a stallholder in Marrakech's Jemaa el-Fna market.",
+"coherent": 2,
+"issue": "",
+"links": [
+{
+"n": 1,
+"follows": true,
+"issue": ""
+},
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": true,
+"issue": ""
+},
+{
+"n": 4,
+"follows": true,
+"issue": ""
+}
+]
+},
+"I say hoi, Rotterdam, quarry.\nI left the main stage for the gnome, sorry.\nIt's off the back of a lorry.\nI'm in Oslo, by a corrie.": [
+{
+"n": 1,
+"reading": "I say hoi, Rotterdam, quarry.",
+"grammatical": false,
+"sense": 0,
+"issue": "Word list; no verb connecting Rotterdam and quarry."
+},
+{
+"n": 2,
+"reading": "I left the main stage for the gnome, sorry.",
+"grammatical": true,
+"sense": 1,
+"issue": "Why a gnome? Meaning strained."
+},
+{
+"n": 3,
+"reading": "It is off the back of a lorry.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "I am in Oslo, by a corrie.",
+"grammatical": true,
+"sense": 1,
+"issue": "Corrie is a Scottish mountain hollow, not Oslo."
+}
+],
+"BLOCK\nI say hoi, Rotterdam, quarry.\nI left the main stage for the gnome, sorry.\nIt's off the back of a lorry.\nI'm in Oslo, by a corrie.": {
+"thread": "A speaker moves from Rotterdam to Oslo, addressing a gnome and mentioning stolen goods.",
+"coherent": 1,
+"issue": "No clear connection between Rotterdam, gnome, lorry, and Oslo.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": false,
+"issue": "Sudden unexplained shift to stolen goods."
+},
+{
+"n": 4,
+"follows": false,
+"issue": "Abrupt location change to Oslo with no signal."
+}
+]
+},
+"The lads park the scooters by the picket.\nThe copper writes a parking ticket.\nHe says the lads have parked on a wicket.\nThen the copper tells me riding two up is just not cricket.": [
+{
+"n": 1,
+"reading": "The lads park the scooters by the picket.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "The copper writes a parking ticket.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "He says the lads have parked on a wicket.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "Then the copper tells me that riding two up is just not cricket.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"BLOCK\nThe lads park the scooters by the picket.\nThe copper writes a parking ticket.\nHe says the lads have parked on a wicket.\nThen the copper tells me riding two up is just not cricket.": {
+"thread": "Two lads park scooters by a picket, a copper tickets them for parking on a wicket and for riding two-up.",
+"coherent": 2,
+"issue": "",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": true,
+"issue": ""
+},
+{
+"n": 4,
+"follows": true,
+"issue": ""
+}
+]
+},
+"The lads park the scooters by the picket.\nThe copper writes a parking ticket.\nHe says the lads have blocked a wicket.\nThen the copper tells me riding two up is just not cricket.": [
+{
+"n": 1,
+"reading": "The lads park the scooters by the picket.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "The copper writes a parking ticket.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "He says the lads have blocked a wicket.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "Then the copper tells me riding two up is just not cricket.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"BLOCK\nThe lads park the scooters by the picket.\nThe copper writes a parking ticket.\nHe says the lads have blocked a wicket.\nThen the copper tells me riding two up is just not cricket.": {
+"thread": "Lads park scooters by a picket, a copper tickets them for blocking a wicket and for riding two-up.",
+"coherent": 2,
+"issue": "",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": true,
+"issue": ""
+},
+{
+"n": 4,
+"follows": true,
+"issue": ""
+}
+]
+},
+"I say hoi at the big porter.\nI skip the headline slot for his daughter.\nThe gnome goes home on the water.\nIf asked, I'm in Oslo quarter.": [
+{
+"n": 1,
+"reading": "I say hoi at the big porter.",
+"grammatical": true,
+"sense": 1,
+"issue": "Unclear what 'hoi' or 'big porter' means."
+},
+{
+"n": 2,
+"reading": "I skip the headline slot for his daughter.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "The gnome goes home on the water.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "If asked, I'm in Oslo quarter.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Oslo quarter' is unclear."
+}
+],
+"BLOCK\nI say hoi at the big porter.\nI skip the headline slot for his daughter.\nThe gnome goes home on the water.\nIf asked, I'm in Oslo quarter.": {
+"thread": "A speaker greets a porter, skips a headline slot for someone's daughter, sends a gnome home by water, and claims to be in Oslo quarter if asked.",
+"coherent": 1,
+"issue": "Bars are disconnected; no clear who, where, or why.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": false,
+"issue": "New subject 'the gnome' with no introduction."
+},
+{
+"n": 4,
+"follows": false,
+"issue": "Abrupt shift to Oslo quarter, no link."
+}
+]
+},
+"I say hoi at the big porter.\nI skip the headline set for her daughter.\nThe gnome goes home on the water.\nIf asked, I'm in Oslo quarter.": [
+{
+"n": 1,
+"reading": "I say hoi at the big porter.",
+"grammatical": true,
+"sense": 1,
+"issue": "hoi unclear; odd phrasing"
+},
+{
+"n": 2,
+"reading": "I skip the headline set for her daughter.",
+"grammatical": true,
+"sense": 1,
+"issue": "why for her daughter unclear"
+},
+{
+"n": 3,
+"reading": "The gnome goes home on the water.",
+"grammatical": true,
+"sense": 1,
+"issue": "literal but odd; unclear meaning"
+},
+{
+"n": 4,
+"reading": "If asked, I'm in Oslo quarter.",
+"grammatical": true,
+"sense": 1,
+"issue": "Oslo quarter unclear"
+}
+],
+"BLOCK\nI say hoi at the big porter.\nI skip the headline set for her daughter.\nThe gnome goes home on the water.\nIf asked, I'm in Oslo quarter.": {
+"thread": "A speaker greets a porter, skips a headline set for someone's daughter, sends a gnome home by water, and claims to be in Oslo quarter if asked.",
+"coherent": 1,
+"issue": "Bars are disconnected; no clear who, where, or why.",
+"links": [
+{
+"n": 2,
+"follows": false,
+"issue": "New action and person with no link to greeting porter."
+},
+{
+"n": 3,
+"follows": false,
+"issue": "Gnome appears from nowhere; unrelated to daughter."
+},
+{
+"n": 4,
+"follows": false,
+"issue": "Oslo claim unrelated to gnome or prior bars."
+}
+]
+},
+"I say hoi at the big porter.\nI skip the headline gig for the daughter.\nThe gnome goes home on the water.\nIf asked, I'm in Oslo quarter.": [
+{
+"n": 1,
+"reading": "I say hoi at the big porter.",
+"grammatical": true,
+"sense": 1,
+"issue": "Unclear what 'hoi' or 'big porter' means."
+},
+{
+"n": 2,
+"reading": "I skip the headline gig for the daughter.",
+"grammatical": true,
+"sense": 1,
+"issue": "Unclear which daughter or why."
+},
+{
+"n": 3,
+"reading": "The gnome goes home on the water.",
+"grammatical": true,
+"sense": 1,
+"issue": "Unclear how a gnome travels on water."
+},
+{
+"n": 4,
+"reading": "If asked, I'm in Oslo quarter.",
+"grammatical": true,
+"sense": 1,
+"issue": "Unclear what 'Oslo quarter' refers to."
+}
+],
+"BLOCK\nI say hoi at the big porter.\nI skip the headline gig for the daughter.\nThe gnome goes home on the water.\nIf asked, I'm in Oslo quarter.": {
+"thread": "A speaker greets a porter, skips a headline gig for his daughter, sends a gnome home by water, and claims to be in Oslo quarter if asked.",
+"coherent": 1,
+"issue": "Bars are disconnected; no clear single thread or setting.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": false,
+"issue": "Gnome appears with no introduction; abrupt subject change."
+},
+{
+"n": 4,
+"follows": false,
+"issue": "Oslo quarter unrelated to gnome or daughter."
+}
+]
+},
+"Kaixo, no shower\nI did the tour with no avowal\nI stand under the spider right now\nThe ramp goes down and I take a bow": [
 {
 "n": 1,
 "reading": "UNCLEAR",
 "grammatical": false,
 "sense": 0,
-"issue": "Noun phrase, no verb or clause"
+"issue": "Greeting plus noun phrase, no verb or claim"
 },
 {
 "n": 2,
-"reading": "The bank replied.",
+"reading": "I did the tour without any avowal.",
 "grammatical": true,
-"sense": 2,
-"issue": ""
+"sense": 1,
+"issue": "'No avowal' is odd; meaning strained"
 },
 {
 "n": 3,
-"reading": "Keith had a word.",
+"reading": "I am standing under the spider right now.",
 "grammatical": true,
 "sense": 2,
 "issue": ""
 },
 {
 "n": 4,
-"reading": "UNCLEAR",
-"grammatical": false,
-"sense": 0,
-"issue": "Fragment, no verb"
-},
-{
-"n": 5,
-"reading": "There is paint on the van.",
+"reading": "The ramp goes down and I take a bow.",
 "grammatical": true,
 "sense": 2,
 "issue": ""
-},
-{
-"n": 6,
-"reading": "Gaz asks.",
-"grammatical": true,
-"sense": 2,
-"issue": ""
-},
-{
-"n": 7,
-"reading": "Gaz runs.",
-"grammatical": true,
-"sense": 2,
-"issue": ""
-},
-{
-"n": 8,
-"reading": "Keith updates.",
-"grammatical": true,
-"sense": 1,
-"issue": "Updates what? Object missing"
 }
 ],
-"BLOCK\nBunk with a bike\nBank replied\nKeith had a word\nKeith as guide\nPaint on the van\nGaz asks\nGaz runs\nKeith updates": {
-"thread": "NO THREAD",
-"coherent": 0,
-"issue": "Disconnected fragments; no clear who, what or where.",
+"BLOCK\nKaixo, no shower\nI did the tour with no avowal\nI stand under the spider right now\nThe ramp goes down and I take a bow": {
+"thread": "A speaker greets, mentions touring without a vow, stands under a spider, and bows as a ramp descends.",
+"coherent": 1,
+"issue": "No clear connection between the four actions; 'spider' and 'ramp' unexplained.",
 "links": [
 {
 "n": 2,
-"follows": false,
-"issue": "Bank replied to what? No prior action."
+"follows": true,
+"issue": ""
 },
 {
 "n": 3,
 "follows": false,
-"issue": "Keith appears with no introduction."
+"issue": "Abrupt shift to standing under a spider with no link."
 },
 {
 "n": 4,
 "follows": false,
-"issue": "Keith as guide to what? Unclear."
+"issue": "Ramp and bowing appear from nowhere."
+}
+]
+},
+"Kaixo, no power\nThen I did the tour, no avowal\nI stand under the spider right now\nThe ramp goes down and I take a bow": [
+{
+"n": 1,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 0,
+"issue": "Greeting plus noun phrase; no verb or claim"
+},
+{
+"n": 2,
+"reading": "Then I did the tour without any avowal.",
+"grammatical": true,
+"sense": 1,
+"issue": "'No avowal' is strained and vague"
+},
+{
+"n": 3,
+"reading": "I am standing under the spider right now.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "The ramp goes down and I take a bow.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"BLOCK\nKaixo, no power\nThen I did the tour, no avowal\nI stand under the spider right now\nThe ramp goes down and I take a bow": {
+"thread": "A speaker greets with 'no power', mentions doing a tour without avowal, stands under a spider, and bows as a ramp descends.",
+"coherent": 1,
+"issue": "No clear who, where, or why; bars are loosely linked images.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": false,
+"issue": "Abrupt shift to standing under a spider with no signal."
+},
+{
+"n": 4,
+"follows": true,
+"issue": ""
+}
+]
+},
+"Kaixo, one tower\nI did the tour without avowal\nI stand under the spider right now\nThe ramp goes down and I take a bow": [
+{
+"n": 1,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 0,
+"issue": "Greeting plus noun phrase; no verb or claim"
+},
+{
+"n": 2,
+"reading": "I did the tour without making any avowal.",
+"grammatical": true,
+"sense": 1,
+"issue": "Meaning of 'without avowal' strained"
+},
+{
+"n": 3,
+"reading": "I am standing under the spider right now.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "The ramp goes down and I take a bow.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"BLOCK\nKaixo, one tower\nI did the tour without avowal\nI stand under the spider right now\nThe ramp goes down and I take a bow": {
+"thread": "A speaker stands beneath a spider-like tower after touring it without making any vow.",
+"coherent": 1,
+"issue": "Vague referents and abrupt shifts make the thread hard to follow.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": true,
+"issue": ""
+},
+{
+"n": 4,
+"follows": false,
+"issue": "The ramp and bow are a non sequitur after standing under the spider."
+}
+]
+},
+"The lads park the scooters by the thicket.\nThe copper writes a parking ticket.\nHe says the lads parked right on the wicket.\nThen the copper tells me that is why we can't play cricket.": [
+{
+"n": 1,
+"reading": "The lads park the scooters by the thicket.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "The copper writes a parking ticket.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "He says the lads parked right on the wicket.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "Then the copper tells me that is why we can't play cricket.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"BLOCK\nThe lads park the scooters by the thicket.\nThe copper writes a parking ticket.\nHe says the lads parked right on the wicket.\nThen the copper tells me that is why we can't play cricket.": {
+"thread": "Lads park scooters by a thicket, a copper tickets them for parking on the cricket wicket, stopping play.",
+"coherent": 2,
+"issue": "",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": true,
+"issue": ""
+},
+{
+"n": 4,
+"follows": true,
+"issue": ""
+}
+]
+},
+"The lads park the scooters by the thicket.\nThe copper writes a parking ticket.\nHe says the lads parked right on the cricket.\nThen the copper tells me that is why we can't use the wicket.": [
+{
+"n": 1,
+"reading": "The lads park the scooters by the thicket.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "The copper writes a parking ticket.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "He says the lads parked right on the cricket.",
+"grammatical": true,
+"sense": 1,
+"issue": "Parked on the cricket is odd; cricket is a game, not ground."
+},
+{
+"n": 4,
+"reading": "Then the copper tells me that is why we cannot use the wicket.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"BLOCK\nThe lads park the scooters by the thicket.\nThe copper writes a parking ticket.\nHe says the lads parked right on the cricket.\nThen the copper tells me that is why we can't use the wicket.": {
+"thread": "Lads park scooters by the thicket, a copper tickets them for blocking the cricket wicket.",
+"coherent": 2,
+"issue": "",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": true,
+"issue": ""
+},
+{
+"n": 4,
+"follows": true,
+"issue": ""
+}
+]
+},
+"The lads park the scooters by the thicket.\nThe copper writes a parking ticket.\nHe says the lads parked across the wicket.\nThen the copper tells me that is why we can't play cricket.": [
+{
+"n": 1,
+"reading": "The lads park the scooters by the thicket.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "The copper writes a parking ticket.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "He says the lads parked across the wicket.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "Then the copper tells me that is why we cannot play cricket.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"BLOCK\nThe lads park the scooters by the thicket.\nThe copper writes a parking ticket.\nHe says the lads parked across the wicket.\nThen the copper tells me that is why we can't play cricket.": {
+"thread": "Lads park scooters by a thicket, a copper tickets them for blocking the cricket wicket.",
+"coherent": 2,
+"issue": "",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": true,
+"issue": ""
+},
+{
+"n": 4,
+"follows": true,
+"issue": ""
+}
+]
+},
+"We took two Honda Wins from Hanoi with no clues\nTwo weeks of mountain roads and rice field views\nA biblical downpour soaked me to my shoes\nWe lost each other in the scooter queues\nI ditched the bike at the roadside and had the blues\nI lost the key and the helmets got stolen, bad news\nThe rental place spoke no English, only booze\nWe flew to New Zealand, nothing to lose": [
+{
+"n": 1,
+"reading": "We took two Honda Wins from Hanoi with no clues.",
+"grammatical": true,
+"sense": 1,
+"issue": "'with no clues' is vague; unclear what clues means here"
+},
+{
+"n": 2,
+"reading": "Two weeks of mountain roads and rice field views.",
+"grammatical": false,
+"sense": 1,
+"issue": "noun phrase, no verb or clause"
+},
+{
+"n": 3,
+"reading": "A biblical downpour soaked me to my shoes.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "We lost each other in the scooter queues.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
 },
 {
 "n": 5,
-"follows": false,
-"issue": "Paint on the van is a non sequitur."
+"reading": "I ditched the bike at the roadside and had the blues.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
 },
 {
 "n": 6,
-"follows": false,
-"issue": "Gaz appears with no introduction."
+"reading": "I lost the key and the helmets got stolen, bad news.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
 },
 {
 "n": 7,
-"follows": false,
-"issue": "Gaz runs where or why? No signal."
+"reading": "The rental place spoke no English, only booze.",
+"grammatical": true,
+"sense": 1,
+"issue": "'spoke only booze' is strained; places do not speak booze"
+},
+{
+"n": 8,
+"reading": "We flew to New Zealand, nothing to lose.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"BLOCK\nWe took two Honda Wins from Hanoi with no clues\nTwo weeks of mountain roads and rice field views\nA biblical downpour soaked me to my shoes\nWe lost each other in the scooter queues\nI ditched the bike at the roadside and had the blues\nI lost the key and the helmets got stolen, bad news\nThe rental place spoke no English, only booze\nWe flew to New Zealand, nothing to lose": {
+"thread": "Two travellers ride Honda Wins from Hanoi through mountain roads and a downpour, lose each other and their gear, then fly to New Zealand.",
+"coherent": 1,
+"issue": "Bar 8 jumps to New Zealand with no transition from the Vietnam mishaps.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": true,
+"issue": ""
+},
+{
+"n": 4,
+"follows": true,
+"issue": ""
+},
+{
+"n": 5,
+"follows": true,
+"issue": ""
+},
+{
+"n": 6,
+"follows": true,
+"issue": ""
+},
+{
+"n": 7,
+"follows": true,
+"issue": ""
 },
 {
 "n": 8,
 "follows": false,
-"issue": "Keith updates whom about what? Unclear."
+"issue": "Abrupt location change to New Zealand with no signal."
+}
+]
+},
+"We left Hanoi on Honda Wins with no clues\nWe rode two weeks past mountains and rice field views\nBiblical rain soaked me through my shoes\nWe lost each other in the scooter queues\nI ditched the bike at the roadside and had the blues\nI lost the key and the helmets got stolen, bad news\nNo English at the rental place, they were on the booze\nSo off to New Zealand, nothing to lose": [
+{
+"n": 1,
+"reading": "We left Hanoi on Honda Wins with no clues.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "We rode for two weeks past mountains and views of rice fields.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "Biblical rain soaked me through my shoes.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "We lost each other in the queues of scooters.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "I ditched the bike at the roadside and had the blues.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "I lost the key and the helmets got stolen, which was bad news.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "There was no English at the rental place; they were on the booze.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "So we went off to New Zealand with nothing to lose.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"BLOCK\nWe left Hanoi on Honda Wins with no clues\nWe rode two weeks past mountains and rice field views\nBiblical rain soaked me through my shoes\nWe lost each other in the scooter queues\nI ditched the bike at the roadside and had the blues\nI lost the key and the helmets got stolen, bad news\nNo English at the rental place, they were on the booze\nSo off to New Zealand, nothing to lose": {
+"thread": "Two travellers leave Hanoi on motorbikes, get separated and robbed of gear in the rain, then fly to New Zealand.",
+"coherent": 1,
+"issue": "Sudden unexplained jump to New Zealand; bar 7's drunk rental staff is a loose aside.",
+"links": [
+{
+"n": 1,
+"follows": true,
+"issue": ""
+},
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": true,
+"issue": ""
+},
+{
+"n": 4,
+"follows": true,
+"issue": ""
+},
+{
+"n": 5,
+"follows": true,
+"issue": ""
+},
+{
+"n": 6,
+"follows": true,
+"issue": ""
+},
+{
+"n": 7,
+"follows": true,
+"issue": ""
+},
+{
+"n": 8,
+"follows": false,
+"issue": "Abrupt shift to New Zealand with no link to the rental dispute."
+}
+]
+},
+"At the Full Moon Party we had shroom shakes then maybe\nThen we went on an hour's journey to find the chewing gum, lady\nThen we saw a 7-Eleven sign ahead, crazy\nThen we got close and saw a platform\nIt's called Seven Elephant, outweigh\nSign said Seven Elephant, easy\nThe name was Seven Elephant, cheeky\nThere was no chewing gum, just a stage and a sound system, easy": [
+{
+"n": 1,
+"reading": "At the Full Moon Party we had shroom shakes and then maybe something else.",
+"grammatical": false,
+"sense": 1,
+"issue": "Ends with 'maybe' with no clause."
+},
+{
+"n": 2,
+"reading": "Then we went on an hour's journey to find the chewing gum, lady.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "Then we saw a 7-Eleven sign ahead, which was crazy.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "Then we got close and saw a platform.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "It is called Seven Elephant, outweigh.",
+"grammatical": false,
+"sense": 0,
+"issue": "'outweigh' is a dangling verb with no object."
+},
+{
+"n": 6,
+"reading": "The sign said Seven Elephant, easy.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "The name was Seven Elephant, cheeky.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "There was no chewing gum, just a stage and a sound system, easy.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"BLOCK\nAt the Full Moon Party we had shroom shakes then maybe\nThen we went on an hour's journey to find the chewing gum, lady\nThen we saw a 7-Eleven sign ahead, crazy\nThen we got close and saw a platform\nIt's called Seven Elephant, outweigh\nSign said Seven Elephant, easy\nThe name was Seven Elephant, cheeky\nThere was no chewing gum, just a stage and a sound system, easy": {
+"thread": "At a Full Moon Party, the narrator drinks shroom shakes and then journeys to find chewing gum, ending at a Seven Elephant venue with a stage and sound system.",
+"coherent": 1,
+"issue": "Repetitive bars about the sign and no chewing gum stall the thread.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": true,
+"issue": ""
+},
+{
+"n": 4,
+"follows": true,
+"issue": ""
+},
+{
+"n": 5,
+"follows": true,
+"issue": ""
+},
+{
+"n": 6,
+"follows": true,
+"issue": ""
+},
+{
+"n": 7,
+"follows": true,
+"issue": ""
+},
+{
+"n": 8,
+"follows": true,
+"issue": ""
+}
+]
+},
+"The shroom shakes at the Full Moon Party were a real daily\nThen an hour's journey for gum that never turned up, tasty\nWe saw a bright sign that looked like a 7-Eleven, payday\nAs we got closer it turned into a market\nThe stage was called Seven Elephant, display\nThe sign said Seven Elephant, not 7-Eleven, speedy\nI looked at the name and I thought it was greedy\nNo chewing gum at all, just a stage and some lights, needy": [
+{
+"n": 1,
+"reading": "The shroom shakes at the Full Moon Party were a real daily.",
+"grammatical": false,
+"sense": 1,
+"issue": "Ends with dangling adjective 'daily' with no noun."
+},
+{
+"n": 2,
+"reading": "Then an hour's journey for gum that never turned up, tasty.",
+"grammatical": false,
+"sense": 1,
+"issue": "Fragment; 'tasty' dangles with nothing described."
+},
+{
+"n": 3,
+"reading": "We saw a bright sign that looked like a 7-Eleven, payday.",
+"grammatical": false,
+"sense": 1,
+"issue": "'Payday' tacked on with no grammatical link."
+},
+{
+"n": 4,
+"reading": "As we got closer it turned into a market.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "The stage was called Seven Elephant, display.",
+"grammatical": false,
+"sense": 1,
+"issue": "'Display' dangles with no connection to the clause."
+},
+{
+"n": 6,
+"reading": "The sign said Seven Elephant, not 7-Eleven, speedy.",
+"grammatical": false,
+"sense": 1,
+"issue": "'Speedy' tacked on with no grammatical link."
+},
+{
+"n": 7,
+"reading": "I looked at the name and I thought it was greedy.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Greedy' meaning for a name is strained."
+},
+{
+"n": 8,
+"reading": "There was no chewing gum at all, just a stage and some lights, needy.",
+"grammatical": false,
+"sense": 1,
+"issue": "'Needy' dangles with nothing it describes."
+}
+],
+"BLOCK\nThe shroom shakes at the Full Moon Party were a real daily\nThen an hour's journey for gum that never turned up, tasty\nWe saw a bright sign that looked like a 7-Eleven, payday\nAs we got closer it turned into a market\nThe stage was called Seven Elephant, display\nThe sign said Seven Elephant, not 7-Eleven, speedy\nI looked at the name and I thought it was greedy\nNo chewing gum at all, just a stage and some lights, needy": {
+"thread": "A group at the Full Moon Party mistakes a market stage sign for a 7-Eleven while searching for chewing gum.",
+"coherent": 1,
+"issue": "Bars 6-7 repeat the sign realisation and 'greedy' is unclear.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": true,
+"issue": ""
+},
+{
+"n": 4,
+"follows": true,
+"issue": ""
+},
+{
+"n": 5,
+"follows": true,
+"issue": ""
+},
+{
+"n": 6,
+"follows": true,
+"issue": ""
+},
+{
+"n": 7,
+"follows": false,
+"issue": "'greedy' has no clear referent or link"
+},
+{
+"n": 8,
+"follows": true,
+"issue": ""
+}
+]
+},
+"At the Full Moon Party we had shroom shakes in order\nThen we went on an hour's journey for gum, like water\nWe saw a 7-Eleven sign right on the corner\nAs we got closer it was a stage, not a border\nThe stage was called Seven Elephant, offshore\nThe sign said Seven Elephant, easy\nI read the name and I said that's breezy\nThere was no chewing gum, just a stage, a bit sleezy": [
+{
+"n": 1,
+"reading": "At the Full Moon Party we had shroom shakes in order.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "Then we went on an hour's journey for gum, like water.",
+"grammatical": true,
+"sense": 1,
+"issue": "like water is an unclear simile"
+},
+{
+"n": 3,
+"reading": "We saw a 7-Eleven sign right on the corner.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "As we got closer it was a stage, not a border.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "The stage was called Seven Elephant, offshore.",
+"grammatical": true,
+"sense": 1,
+"issue": "offshore is a dangling modifier"
+},
+{
+"n": 6,
+"reading": "The sign said Seven Elephant, easy.",
+"grammatical": true,
+"sense": 1,
+"issue": "easy is an unclear tag"
+},
+{
+"n": 7,
+"reading": "I read the name and I said that's breezy.",
+"grammatical": true,
+"sense": 1,
+"issue": "breezy is an unclear slang term"
+},
+{
+"n": 8,
+"reading": "There was no chewing gum, just a stage, a bit sleezy.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"BLOCK\nAt the Full Moon Party we had shroom shakes in order\nThen we went on an hour's journey for gum, like water\nWe saw a 7-Eleven sign right on the corner\nAs we got closer it was a stage, not a border\nThe stage was called Seven Elephant, offshore\nThe sign said Seven Elephant, easy\nI read the name and I said that's breezy\nThere was no chewing gum, just a stage, a bit sleezy": {
+"thread": "At a Full Moon Party, the narrator drinks shroom shakes, travels an hour for gum, and finds a stage called Seven Elephant instead of a shop.",
+"coherent": 2,
+"issue": "",
+"links": [
+{
+"n": 1,
+"follows": true,
+"issue": ""
+},
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": true,
+"issue": ""
+},
+{
+"n": 4,
+"follows": true,
+"issue": ""
+},
+{
+"n": 5,
+"follows": true,
+"issue": ""
+},
+{
+"n": 6,
+"follows": true,
+"issue": ""
+},
+{
+"n": 7,
+"follows": true,
+"issue": ""
+},
+{
+"n": 8,
+"follows": true,
+"issue": ""
+}
+]
+},
+"We drank the shroom shakes then set off on our way.\nIt took an hour to hunt down some gum that day.\nWe saw a 7-Eleven display.\nThe shop was a stage, so no gum maybe.\nWe got closer and read the sign that did say.\nThe sign read Seven Elephant, a stage at play.\nSo we stood for a bit and let the bass stay.\nThe stage had no gum then to convey.": [
+{
+"n": 1,
+"reading": "We drank the mushroom shakes and then we set off on our way.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "It took an hour to hunt down some chewing gum that day.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "We saw a 7-Eleven display.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "The shop was a stage, so maybe there was no gum.",
+"grammatical": true,
+"sense": 1,
+"issue": "Awkward phrasing; unclear connection between stage and gum."
+},
+{
+"n": 5,
+"reading": "We got closer and read the sign that did say.",
+"grammatical": false,
+"sense": 1,
+"issue": "Incomplete: 'did say' needs an object or clause."
+},
+{
+"n": 6,
+"reading": "The sign read Seven Elephant, a stage at play.",
+"grammatical": true,
+"sense": 1,
+"issue": "'A stage at play' is unclear."
+},
+{
+"n": 7,
+"reading": "So we stood for a bit and let the bass stay.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Let the bass stay' is odd; unclear meaning."
+},
+{
+"n": 8,
+"reading": "The stage had no gum then to convey.",
+"grammatical": false,
+"sense": 0,
+"issue": "Incoherent: 'to convey' has no clear meaning."
+}
+],
+"BLOCK\nWe drank the shroom shakes then set off on our way.\nIt took an hour to hunt down some gum that day.\nWe saw a 7-Eleven display.\nThe shop was a stage, so no gum maybe.\nWe got closer and read the sign that did say.\nThe sign read Seven Elephant, a stage at play.\nSo we stood for a bit and let the bass stay.\nThe stage had no gum then to convey.": {
+"thread": "Two people drink mushroom shakes, go looking for gum, and end up at a 7-Eleven sign that reads 'Seven Elephant' with a stage and bass.",
+"coherent": 1,
+"issue": "Gum hunt and stage/sign confusion; 'stage' and 'convey' are vague.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": true,
+"issue": ""
+},
+{
+"n": 4,
+"follows": false,
+"issue": "'The shop was a stage' is a non sequitur."
+},
+{
+"n": 5,
+"follows": true,
+"issue": ""
+},
+{
+"n": 6,
+"follows": true,
+"issue": ""
+},
+{
+"n": 7,
+"follows": true,
+"issue": ""
+},
+{
+"n": 8,
+"follows": false,
+"issue": "'convey' is unclear and repeats the gum point."
+}
+]
+},
+"We drank shroom shakes at the Full Moon, big array.\nIt took an hour to find some gum, a dull grey.\nWe saw a 7-Eleven in bay.\nIt was a stage, so no gum that Sunday.\nWe got closer and read the sign made of spray.\nThe sign read Seven Elephant, a stage at play.\nSo we stood for a bit and let the bass stay.\nThere was no gum, not even a stray.": [
+{
+"n": 1,
+"reading": "We drank mushroom shakes at the Full Moon, which was a big array.",
+"grammatical": true,
+"sense": 1,
+"issue": "'big array' tacked on, unclear what it describes"
+},
+{
+"n": 2,
+"reading": "It took an hour to find some gum, which was a dull grey.",
+"grammatical": true,
+"sense": 1,
+"issue": "'a dull grey' dangling, unclear what is grey"
+},
+{
+"n": 3,
+"reading": "We saw a 7-Eleven in the bay.",
+"grammatical": true,
+"sense": 1,
+"issue": "'in bay' odd; missing article or meaning"
+},
+{
+"n": 4,
+"reading": "It was a stage, so there was no gum that Sunday.",
+"grammatical": true,
+"sense": 1,
+"issue": "'stage' unexplained; link to no gum strained"
+},
+{
+"n": 5,
+"reading": "We got closer and read the sign that was made of spray.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "The sign read Seven Elephant, a stage at play.",
+"grammatical": true,
+"sense": 1,
+"issue": "'a stage at play' unclear tag-on"
+},
+{
+"n": 7,
+"reading": "So we stood for a bit and let the bass stay.",
+"grammatical": true,
+"sense": 1,
+"issue": "'let the bass stay' meaning strained"
+},
+{
+"n": 8,
+"reading": "There was no gum, not even a stray one.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"BLOCK\nWe drank shroom shakes at the Full Moon, big array.\nIt took an hour to find some gum, a dull grey.\nWe saw a 7-Eleven in bay.\nIt was a stage, so no gum that Sunday.\nWe got closer and read the sign made of spray.\nThe sign read Seven Elephant, a stage at play.\nSo we stood for a bit and let the bass stay.\nThere was no gum, not even a stray.": {
+"thread": "Two people drink mushroom shakes at a Full Moon gathering, search for gum, and find a 7-Eleven that turns out to be a stage sign reading Seven Elephant.",
+"coherent": 1,
+"issue": "Gum hunt and stage-sign confusion drift; 'bay' and 'spray' are forced.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": true,
+"issue": ""
+},
+{
+"n": 4,
+"follows": true,
+"issue": ""
+},
+{
+"n": 5,
+"follows": true,
+"issue": ""
+},
+{
+"n": 6,
+"follows": true,
+"issue": ""
+},
+{
+"n": 7,
+"follows": true,
+"issue": ""
+},
+{
+"n": 8,
+"follows": true,
+"issue": ""
+}
+]
+},
+"We drank the shroom shakes and set off in our prime.\nIt took an hour to find some gum, a real climb.\nWe saw a 7-Eleven in slime.\nIt was a stage, so no gum, a lifetime.\nWe got closer and heard the stage give a chime.\nThe sign read Seven Elephant, a stage with rhyme.\nSo we stood for a bit and watched the crowd mime.\nWe couldn't walk and chew gum at one time.": [
+{
+"n": 1,
+"reading": "We drank the mushroom milkshakes and set off in our prime.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "It took an hour to find some gum, which was a real climb.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "We saw a 7-Eleven in slime.",
+"grammatical": true,
+"sense": 1,
+"issue": "In slime? Unclear setting."
+},
+{
+"n": 4,
+"reading": "It was a stage, so there was no gum, a lifetime.",
+"grammatical": false,
+"sense": 0,
+"issue": "A lifetime tacked on, no verb."
+},
+{
+"n": 5,
+"reading": "We got closer and heard the stage give a chime.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "The sign read Seven Elephant, a stage with rhyme.",
+"grammatical": false,
+"sense": 1,
+"issue": "A stage with rhyme is a dangling fragment."
+},
+{
+"n": 7,
+"reading": "So we stood for a bit and watched the crowd mime.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "We couldn't walk and chew gum at one time.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"BLOCK\nWe drank the shroom shakes and set off in our prime.\nIt took an hour to find some gum, a real climb.\nWe saw a 7-Eleven in slime.\nIt was a stage, so no gum, a lifetime.\nWe got closer and heard the stage give a chime.\nThe sign read Seven Elephant, a stage with rhyme.\nSo we stood for a bit and watched the crowd mime.\nWe couldn't walk and chew gum at one time.": {
+"thread": "Two people drink mushroom shakes, set off, and struggle to find gum before reaching a stage called Seven Elephant.",
+"coherent": 1,
+"issue": "Gum hunt and stage arrival are loosely linked; 'slime' and 'lifetime' bars confuse.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": true,
+"issue": ""
+},
+{
+"n": 4,
+"follows": false,
+"issue": "'It was a stage' unclear; contradicts gum search."
+},
+{
+"n": 5,
+"follows": true,
+"issue": ""
+},
+{
+"n": 6,
+"follows": true,
+"issue": ""
+},
+{
+"n": 7,
+"follows": true,
+"issue": ""
+},
+{
+"n": 8,
+"follows": false,
+"issue": "Sudden idiom, no link to watching crowd."
+}
+]
+},
+"We drank shroom shakes then walked an hour for something new.\nThe whole walk felt like a trip I didn't plan through.\nWe finally saw a shop sign out of the blue.\nWe got closer and the Seven sign was just music.\nThe big stage was called Seven Elephant, no fluke.\nThe name was a bad pun on the shop, that's the truth.\nWe never found the gum so we left without a clue.\nThe sign said Seven Elephant, who knew?": [
+{
+"n": 1,
+"reading": "We drank shroom shakes and then walked for an hour in search of something new.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "The whole walk felt like a trip that I had not planned through.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "We finally saw a shop sign unexpectedly.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "We got closer and the Seven sign was just music.",
+"grammatical": true,
+"sense": 1,
+"issue": "What 'Seven sign was just music' means is unclear."
+},
+{
+"n": 5,
+"reading": "The big stage was called Seven Elephant, and that was no fluke.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "The name was a bad pun on the shop, and that is the truth.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "We never found the gum, so we left without a clue.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Without a clue' is vague; what clue?"
+},
+{
+"n": 8,
+"reading": "The sign said Seven Elephant, and who knew?",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"BLOCK\nWe drank shroom shakes then walked an hour for something new.\nThe whole walk felt like a trip I didn't plan through.\nWe finally saw a shop sign out of the blue.\nWe got closer and the Seven sign was just music.\nThe big stage was called Seven Elephant, no fluke.\nThe name was a bad pun on the shop, that's the truth.\nWe never found the gum so we left without a clue.\nThe sign said Seven Elephant, who knew?": {
+"thread": "Two people drink mushroom shakes, walk an hour looking for something new, find a shop sign called Seven Elephant that turns out to be a music stage, and leave without what they came for.",
+"coherent": 2,
+"issue": "",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": true,
+"issue": ""
+},
+{
+"n": 4,
+"follows": true,
+"issue": ""
+},
+{
+"n": 5,
+"follows": true,
+"issue": ""
+},
+{
+"n": 6,
+"follows": true,
+"issue": ""
+},
+{
+"n": 7,
+"follows": true,
+"issue": ""
+},
+{
+"n": 8,
+"follows": true,
+"issue": ""
+}
+]
+},
+"My Full Moon Party trip was off the chain, it's true.\nI searched for gum for over an hour, that's my due.\nThe only shop I saw was miles from my view.\nThe shop became a stage with no gum for chewing.\nThe sign said Seven Elephant, I still can't refute.\nThe name was a daft pun on the shop, like bad food.\nWe never got the gum, so we left a bit blue.\nThe gum was out of stock, that's a boo.": [
+{
+"n": 1,
+"reading": "My Full Moon Party trip was wild, it is true.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "I searched for gum for more than an hour, and that is what I was owed.",
+"grammatical": true,
+"sense": 1,
+"issue": "'that's my due' meaning strained"
+},
+{
+"n": 3,
+"reading": "The only shop I saw was miles away from where I could see it.",
+"grammatical": true,
+"sense": 1,
+"issue": "'miles from my view' is odd"
+},
+{
+"n": 4,
+"reading": "The shop turned into a stage with no gum to chew.",
+"grammatical": true,
+"sense": 1,
+"issue": "shop becoming a stage is unclear"
+},
+{
+"n": 5,
+"reading": "The sign said Seven Elephant, and I still cannot deny it.",
+"grammatical": true,
+"sense": 1,
+"issue": "'refute' misused for deny"
+},
+{
+"n": 6,
+"reading": "The name was a silly pun on the shop, like bad food.",
+"grammatical": true,
+"sense": 1,
+"issue": "'like bad food' comparison unclear"
+},
+{
+"n": 7,
+"reading": "We never got the gum, so we left feeling a bit sad.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "The gum was out of stock, which is a disappointment.",
+"grammatical": true,
+"sense": 1,
+"issue": "'that's a boo' is a fragment"
+}
+],
+"BLOCK\nMy Full Moon Party trip was off the chain, it's true.\nI searched for gum for over an hour, that's my due.\nThe only shop I saw was miles from my view.\nThe shop became a stage with no gum for chewing.\nThe sign said Seven Elephant, I still can't refute.\nThe name was a daft pun on the shop, like bad food.\nWe never got the gum, so we left a bit blue.\nThe gum was out of stock, that's a boo.": {
+"thread": "A tourist at a Full Moon Party searches in vain for chewing gum, finds only a punningly named shop, and leaves disappointed.",
+"coherent": 2,
+"issue": "",
+"links": [
+{
+"n": 1,
+"follows": true,
+"issue": ""
+},
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": true,
+"issue": ""
+},
+{
+"n": 4,
+"follows": true,
+"issue": ""
+},
+{
+"n": 5,
+"follows": true,
+"issue": ""
+},
+{
+"n": 6,
+"follows": true,
+"issue": ""
+},
+{
+"n": 7,
+"follows": true,
+"issue": ""
+},
+{
+"n": 8,
+"follows": true,
+"issue": ""
+}
+]
+},
+"We hit the Full Moon Party with a shroom shake, true.\nAn hour later we were still hunting for a single clue.\nThen we saw a sign that looked like something new.\nWe got close and the sign was just for music.\nThe big stage was named Seven Elephant, no fluke.\nThe name was a bad pun on the shop, I can't refute.\nThe sign said Elephant, it filled me with doom.\nThat was our elephant in the room.": [
+{
+"n": 1,
+"reading": "We went to the Full Moon Party with a mushroom shake, it's true.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "An hour later we were still searching for a single clue.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "Then we saw a sign that looked like something new.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "We got close and the sign was only for music.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "The big stage was named Seven Elephant, and that was no fluke.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "The name was a bad pun on the shop, and I can't deny it.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "The sign said Elephant, and it filled me with doom.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "That was our elephant in the room.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"BLOCK\nWe hit the Full Moon Party with a shroom shake, true.\nAn hour later we were still hunting for a single clue.\nThen we saw a sign that looked like something new.\nWe got close and the sign was just for music.\nThe big stage was named Seven Elephant, no fluke.\nThe name was a bad pun on the shop, I can't refute.\nThe sign said Elephant, it filled me with doom.\nThat was our elephant in the room.": {
+"thread": "At the Full Moon Party on a shroom shake, the group hunts for a clue and finds a music-stage sign named Seven Elephant, a pun on a shop.",
+"coherent": 2,
+"issue": "",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": true,
+"issue": ""
+},
+{
+"n": 4,
+"follows": true,
+"issue": ""
+},
+{
+"n": 5,
+"follows": true,
+"issue": ""
+},
+{
+"n": 6,
+"follows": true,
+"issue": ""
+},
+{
+"n": 7,
+"follows": true,
+"issue": ""
+},
+{
+"n": 8,
+"follows": true,
+"issue": ""
+}
+]
+},
+"The ride was Honda Wins from Hanoi down there.\nThe rain came down like a biblical affair.\nWe got split up at the edge of the square.\nI ditched my bike and left it anywhere.\nI lost the key, the helmets were just a pair.\nThe rental blokes were drunk and spoke no English, I swear.\nSo we ditched the bike and flew with naught to wear.\nThen I sat on the plane in a chair.": [
+{
+"n": 1,
+"reading": "The ride was a Honda Win from Hanoi down there.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "The rain came down like a biblical affair.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "We got split up at the edge of the square.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "I ditched my bike and left it anywhere.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "I lost the key, and the helmets were just a pair.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "The rental blokes were drunk and spoke no English, I swear.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "So we ditched the bike and flew with naught to wear.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "Then I sat on the plane in a chair.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"BLOCK\nThe ride was Honda Wins from Hanoi down there.\nThe rain came down like a biblical affair.\nWe got split up at the edge of the square.\nI ditched my bike and left it anywhere.\nI lost the key, the helmets were just a pair.\nThe rental blokes were drunk and spoke no English, I swear.\nSo we ditched the bike and flew with naught to wear.\nThen I sat on the plane in a chair.": {
+"thread": "A rider loses his rented Honda in Hanoi rain, abandons it, and flies out with nothing.",
+"coherent": 2,
+"issue": "",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": true,
+"issue": ""
+},
+{
+"n": 4,
+"follows": true,
+"issue": ""
+},
+{
+"n": 5,
+"follows": true,
+"issue": ""
+},
+{
+"n": 6,
+"follows": true,
+"issue": ""
+},
+{
+"n": 7,
+"follows": true,
+"issue": ""
+},
+{
+"n": 8,
+"follows": true,
+"issue": ""
+}
+]
+},
+"We rode the length of Vietnam without a care.\nThe Honda Wins went through rain with none to spare.\nWe split up in the storm, I did not dare.\nI ditched the bike and left it in nowhere.\nI lost the key, the helmets both were quite rare.\nThe rental blokes were drunk and gave me a blank glare.\nSo we ditched the bike and flew with not a fare.\nThen we landed and found a safe lair.": [
+{
+"n": 1,
+"reading": "We travelled the whole length of Vietnam without any worry.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "The Honda Wins rode through rain with none to spare.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Honda Wins' unclear; 'none to spare' vague"
+},
+{
+"n": 3,
+"reading": "We separated in the storm, and I did not dare.",
+"grammatical": true,
+"sense": 1,
+"issue": "'did not dare' lacks what he did not dare do"
+},
+{
+"n": 4,
+"reading": "I abandoned the bike and left it in nowhere.",
+"grammatical": true,
+"sense": 1,
+"issue": "'in nowhere' is not idiomatic English"
+},
+{
+"n": 5,
+"reading": "I lost the key, and both helmets were quite rare.",
+"grammatical": true,
+"sense": 1,
+"issue": "'rare' helmets makes little sense"
+},
+{
+"n": 6,
+"reading": "The rental men were drunk and gave me a blank glare.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "So we abandoned the bike and flew without paying a fare.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "Then we landed and found a safe place to stay.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"BLOCK\nWe rode the length of Vietnam without a care.\nThe Honda Wins went through rain with none to spare.\nWe split up in the storm, I did not dare.\nI ditched the bike and left it in nowhere.\nI lost the key, the helmets both were quite rare.\nThe rental blokes were drunk and gave me a blank glare.\nSo we ditched the bike and flew with not a fare.\nThen we landed and found a safe lair.": {
+"thread": "Two people ride a Honda Win the length of Vietnam, abandon it in a storm, and fly on to find a safe place.",
+"coherent": 1,
+"issue": "Bar 7 says 'we ditched the bike' after bar 4 already had the narrator ditch it alone.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": true,
+"issue": ""
+},
+{
+"n": 4,
+"follows": true,
+"issue": ""
+},
+{
+"n": 5,
+"follows": true,
+"issue": ""
+},
+{
+"n": 6,
+"follows": false,
+"issue": "Rental blokes appear with no prior mention or link."
+},
+{
+"n": 7,
+"follows": false,
+"issue": "Contradicts bar 4: bike already ditched, now 'we' ditch it."
+},
+{
+"n": 8,
+"follows": true,
+"issue": ""
+}
+]
+},
+"The big biblical rainfall answered the call.\nWe rode through it and hit a right solid wall.\nThe group got split up, the lanes were all small.\nI just ditched the bike and walked overall.\nI lost the key, the helmets were stacked up tall.\nThe rental blokes were drunk and spoke no English at all.\nSo we ditched the bike and flew with a long haul.\nThen the rain stopped, and that was the fall.": [
+{
+"n": 1,
+"reading": "The big biblical rainfall answered the call.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "We rode through it and hit a right solid wall.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "The group got split up, and the lanes were all small.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "I just ditched the bike and walked overall.",
+"grammatical": true,
+"sense": 1,
+"issue": "'walked overall' is odd; meaning strained"
+},
+{
+"n": 5,
+"reading": "I lost the key, and the helmets were stacked up tall.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "The rental blokes were drunk and spoke no English at all.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "So we ditched the bike and flew with a long haul.",
+"grammatical": true,
+"sense": 1,
+"issue": "'flew with a long haul' is strained"
+},
+{
+"n": 8,
+"reading": "Then the rain stopped, and that was the fall.",
+"grammatical": true,
+"sense": 1,
+"issue": "'that was the fall' unclear"
+}
+],
+"BLOCK\nThe big biblical rainfall answered the call.\nWe rode through it and hit a right solid wall.\nThe group got split up, the lanes were all small.\nI just ditched the bike and walked overall.\nI lost the key, the helmets were stacked up tall.\nThe rental blokes were drunk and spoke no English at all.\nSo we ditched the bike and flew with a long haul.\nThen the rain stopped, and that was the fall.": {
+"thread": "A group rides motorbikes through heavy rain, crashes into a wall, gets split up, abandons the bike and flies home.",
+"coherent": 1,
+"issue": "Bar 8's 'that was the fall' is vague and muddles the ending.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": true,
+"issue": ""
+},
+{
+"n": 4,
+"follows": true,
+"issue": ""
+},
+{
+"n": 5,
+"follows": true,
+"issue": ""
+},
+{
+"n": 6,
+"follows": true,
+"issue": ""
+},
+{
+"n": 7,
+"follows": true,
+"issue": ""
+},
+{
+"n": 8,
+"follows": false,
+"issue": "'that was the fall' unclear and shifts away from the bike story."
 }
 ]
 }

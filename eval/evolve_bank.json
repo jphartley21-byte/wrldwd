@@ -1,12 +1,6 @@
 {
 "winners": [
 [
-"Six men want my dirhams and they all start to battle",
-"They herd me to a lamp stall like I am some kind of cattle",
-"Now he shakes the brass lantern so the glass starts to rattle",
-"I pay the first price and I leave"
-],
-[
 "The snow in Zermatt soaked my new ten quid shoes",
 "Then I walked up to Fiesole for the views",
 "Then in Ljubljana I got more bad news",
@@ -47,6 +41,12 @@
 "I sent it by mail",
 "The man charged me for a big box",
 "He said it was bound to fail"
+],
+[
+"So then I drove an old rented four-wheel-drive truck.",
+"Then it got bogged in the sand and got stuck.",
+"Then the lads said a dingo sighting was good luck.",
+"The dingo in my truck sounded like a duck."
 ]
 ],
 "by_len": {
@@ -59,12 +59,12 @@
 "At the bar I ask for sherry"
 ],
 "10": [
-"I never unpacked, had a shower",
 "So I paid the ferry, gave a bow",
 "The bike's on the car deck of the ferry.",
 "The deckhand waves me through, then pours perry.",
 "I strap the bike down on the car ferry",
-"The deckhand waves me through, says make merry"
+"The deckhand waves me through, says make merry",
+"Then it got bogged in the sand and got stuck."
 ],
 "9": [
 "Hoi, I'm in the Rotterdam garden",
@@ -75,12 +75,12 @@
 "The barman tops my drink with cherry"
 ],
 "13": [
-"Then a seagull nicked my chips down at Bondi Bay",
 "Six men want my dirhams and they all start to battle",
 "The Black Forest walk gave me a real proper bruise",
 "The tall blue cocktails are a neon green beacon",
 "Then I check the hire shop and they say no bother",
-"The tent weighed more than the post office would accept"
+"The tent weighed more than the post office would accept",
+"Then the lads said a dingo sighting was good luck."
 ],
 "5": [
 "The man said sign here",
@@ -120,12 +120,12 @@
 "They herd me to a lamp stall like I am some kind of cattle"
 ],
 "12": [
-"I smoke on the bench by a large canopy",
-"The coffee shop menu is a catapult",
 "The tide on Fraser was the only law by far",
 "Then the tide came in and I left the rental car",
 "I queued for the lost property at the big top",
-"Then I left Sydney and never looked back that way"
+"Then I left Sydney and never looked back that way",
+"So then I drove an old rented four-wheel-drive truck.",
+"The dingo in my truck sounded like a duck."
 ]
 }
 }

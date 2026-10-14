@@ -5,7 +5,7 @@ Tags: [O] official Suno, [C] third-party (rule of thumb), [M] inference.
 - **V5.5 is retired.** [O] "All models prior to v6 have been retired" (9 Sep 2026): v6, v6-wild (Pro/Premier), v6-mini (free). Old songs stay; extending/covering them runs on v6, so the voice may drift. Re-test V5.5 prompts.
 - **200 characters is obsolete** (V4 and older). Since V4.5, unchanged in v5.5/v6, web UI: Style 1,000, Lyrics 5,000, Exclude 1,000 [C, read from the composer], Title 80-100. API: Exclude 200, Title 80.
 - **Short still wins.** 4-8 non-conflicting descriptors (~150-350 chars). Lyrics past ~3,000 chars / ~60 lines get rushed or skipped. [C]
-- **Names.** [O] Moderation can block well-known artists/people and trademarked terms. [C] Nicknames, "sounds like" and lyrics are checked too. Keep "Pete & Bas", "Mr Worldwide" and brands out of style, lyrics, title. Describe BPM, era, timbre, instruments, mood.
+- **Names.** Joe, 14 Oct 2026 (from using Suno): artist and celebrity names are FINE in the LYRICS box; only the STYLE (and exclude) field is moderated. So name real artists, films, brands and places freely in lyrics for texture; keep artist names, 'sounds like' and song titles ("Pete & Bas", "Mr Worldwide") OUT of the style prompt and the title. (Earlier note, superseded: a third-party rule of thumb said lyrics are checked too.)
 
 ## 1. Controls (Custom > Advanced)
 - Vocal Gender Male: a guide, not a guarantee; also write "gruff" in style. [O]

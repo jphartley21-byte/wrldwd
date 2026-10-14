@@ -6,3 +6,9 @@ eval/ledger/
 eval/_*
 __pycache__/
 *.pyc
+
+# Joe's personal stories (drugs, sex, police): never push (the repo is public)
+material/joes_own_stories.md
+material/nightlife_assumptions.md
+
+writing/verse_bank.md
