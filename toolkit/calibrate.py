@@ -194,4 +194,8 @@ _fe = subprocess.run([sys.executable, os.path.join(HERE, "frameecho.py"), "--sel
 good = _fe.returncode == 0
 ok &= good
 print(("ok  " if good else "BAD ") + "frameecho selftest: " + _fe.stdout.strip()[-110:])
+_tf = subprocess.run([sys.executable, os.path.join(HERE, "timefit.py"), "--selftest"], capture_output=True, text=True, encoding="utf8", errors="replace")
+good = _tf.returncode == 0
+ok &= good
+print(("ok  " if good else "BAD ") + "timefit selftest: " + _tf.stdout.strip()[-110:])
 print("CALIBRATION", "PASSED" if ok else "FAILED: fix the tools before using them")
