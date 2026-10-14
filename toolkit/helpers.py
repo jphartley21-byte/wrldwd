@@ -100,11 +100,17 @@ def uk(word):
     return britfone().get(word.lower().strip("'"))
 
 
+# Words as SUNG (Joe's ear), in the scorer's IPA, that beat Britfone: "moi" in the French line of the hook is sung
+# "mwah" (it rhymes France / dance on the open ah), Britfone has a short o. Added 15 Oct 2026 when the original itself
+# failed its own scheme check on exactly this word.
+SUNG = {"moi": ["m", "w", "ˈɑː"]}
+
+
 def uk_phones(word):
     """British phones for SCORING: the Britfone dictionary, else the CMU dictionary plus the project's OVR
     table (see _ovr_phones for why the fallback is needed)."""
     w = word.lower().strip("'")
-    return britfone().get(w) or _ovr_phones(w)
+    return SUNG.get(w) or britfone().get(w) or _ovr_phones(w)
 
 
 def vowels_of(phones):

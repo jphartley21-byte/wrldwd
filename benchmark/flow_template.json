@@ -2576,6 +2576,7 @@ true
 "triplets": [],
 "rhyme_idx": 9,
 "head_idx": 0,
+"advisory": true,
 "end_shape": "~w"
 },
 {

@@ -13,9 +13,10 @@ SECS = [("Hook 1-4", 0, 4), ("Hook 5-8", 4, 8), ("Hook 9-16", 8, 16), ("V1 1-8",
 run = lambda args, text: subprocess.run([sys.executable] + args, input=text, capture_output=True, text=True, encoding="utf8", errors="replace").stdout
 orig = [l.strip() for l in open(sys.argv[1], encoding="utf8") if l.strip()][:76]
 ok = True
+# the by-ear scheme line is NOT exempt from the "original passes" test any more: the exemption hid three failing slots (15 Oct 2026)
 for n, a, b in SECS:
     out = run([os.path.join(HERE, "match.py"), "--slot", n, "-"], chr(10).join(orig[a:b])).splitlines()
-    bad = [l for l in out if "FAIL" in l and not l.startswith("original rhyme scheme")]; good = not bad; v = "ok (by-ear scheme is the spec)" if good else "; ".join(bad)[:120]
+    bad = [l for l in out if "FAIL" in l]; good = not bad; v = "ok (by-ear scheme is the spec)" if good else "; ".join(bad)[:120]
     ok &= good
     print(("ok  " if good else "BAD ") + f"original vs own profile {n}: {v}")
 f = run([os.path.join(HERE, "flow_fit.py"), "1", "-"], "\n".join(orig))
@@ -168,4 +169,20 @@ good = "PASSED" in fn
 ok &= good
 print(("ok  " if good else "BAD ") + "pun proxy selftest: " +
       ("unexpectedness and second-reading lookups hold" if good else fn.strip()[:110]))
+# the whole original must pass check_all --song (a crashed sub-check used to read as ALL PASS; check_all.run now raises),
+# and must pass the flow verdict leave-one-section-out (thresholds come from its own spread, so no section may exceed the rest)
+import tempfile
+_tmp = tempfile.NamedTemporaryFile("w", suffix=".txt", delete=False, encoding="utf8")
+_tmp.write("\n".join(orig)); _tmp.close()
+try:
+    ca = subprocess.run([sys.executable, os.path.join(HERE, "check_all.py"), "--song", _tmp.name], capture_output=True, text=True, encoding="utf8", errors="replace")
+    good = ca.returncode == 0 and "SONG: ALL PASS" in ca.stdout
+    ok &= good
+    print(("ok  " if good else "BAD ") + "original passes check_all --song in every slot" + ("" if good else ": " + (ca.stdout + ca.stderr).strip()[-160:]))
+    fv = subprocess.run([sys.executable, os.path.join(HERE, "flowverdict.py"), "--calibrate", _tmp.name], capture_output=True, text=True, encoding="utf8", errors="replace")
+    good = fv.returncode == 0
+    ok &= good
+    print(("ok  " if good else "BAD ") + "flow verdict leave-one-out on the original: " + fv.stdout.strip()[-110:])
+finally:
+    os.unlink(_tmp.name)
 print("CALIBRATION", "PASSED" if ok else "FAILED: fix the tools before using them")

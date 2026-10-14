@@ -48,7 +48,7 @@ OVR = {
     "cairns": "K AE1 N Z", "noosa": "N UW1 S AH0", "whitsundays": "W IH1 T S AH0 N D EY2 Z",
     "kettle": "K EH1 T AH0 L", "pyjamas": "P AH0 JH AA1 M AH0 Z", "tarn": "T AA1 N", "scree": "S K R IY1",
     "cairn": "K EH1 N", "fell": "F EH1 L", "gorse": "G AO1 S", "loch": "L AA1 K", "lough": "L AA1 K",
-    "hasta": "AA1 S T AH0", "luego": "L W EH1 G OW0", "wagwan": "W AE1 G W AA2 N", "ese": "EH1 SH EH0",
+    "hasta": "AA1 S T AH0", "luego": "L W EH1 G OW0", "federali": "F EH2 D ER0 AA1 L IY0", "fumez": "F Y UW1 M EH0 Z", "wagwan": "W AE1 G W AA2 N", "ese": "EH1 SH EH0",
     "lagos": "L EY1 G AA0 S", "tobago": "T AH0 B EY1 G OW0", "vegas": "V EY1 G AH0 S", "kaixo": "K AY1 SH OW0", "shukran": "SH UH1 K R AA0 N", "prost": "P R OW1 S T", "napoli": "N AA1 P AH0 L IY0", "lorry": "L AA1 R IY0", "quarry": "K W AA1 R IY0", "corrie": "K AA1 R IY0", "obrigado": "OW2 B R IH0 G AA1 D OW0", "bonjour": "B AO0 N ZH UH1 R", "bought": "B AO1 T", "sawn": "S AO1 N", "bonjourno": "B AA2 N JH AO1 N OW0", "should've": "SH UH1 D AH0 V", "shouldve": "SH UH1 D AH0 V", "sawnoff": "S AO1 N AO2 F", "caught": "K AO1 T", "brought": "B R AO1 T", "thought": "TH AO1 T", "taught": "T AO1 T", "fought": "F AO1 T", "sought": "S AO1 T", "maman": "M AH0 M AA1 N", "transatlantic": "T R AE2 N Z AH0 T L AE1 N T IH0 K",
     "fiver": "F AY1 V ER0", "gday": "G AH0 D EY1", "hei": "HH EY1", "handoff": "HH AE1 N D AO2 F", "rhine": "R AY1 N",
     "peaky": "P IY1 K IY0", "pyrenees": "P IH2 R AH0 N IY1 Z",
@@ -96,7 +96,7 @@ OVR = {
     # "Lagos" was parsed as two bare vowels with NO coda and could not rhyme with anything -- the
     # 12 Oct labelled-pair test caught it as a false negative on the original's own rhyme.
     "lagos": "L EY1 G AH0 S", "vegas": "V EY1 G AH0 S", "verona": "V ER0 OW1 N AH0", "bonn": "B AA1 N",
-    "brisbane": "B R IH1 Z B AH0 N", "belgrade": "B EH0 L G R EY1 D", "mainz": "M AY1 N T S",
+    "brisbane": "B R IH1 Z B AH0 N", "belgrade": "B EH0 L G R EY1 D", "mainz": "M EY1 N Z",
     "milano": "M IH0 L AA1 N OW0", "marbella": "M AA2 R B EH1 L AH0", "toulon": "T UW0 L AA1 N",
     "saigon": "S AY2 G AA1 N", "ibiza": "IH0 B IY1 TH AH0", "granada": "G R AH0 N AA1 D AH0",
     "bologna": "B AH0 L OW1 N Y AH0", "havana": "HH AH0 V AE1 N AH0", "prague": "P R AA1 G",

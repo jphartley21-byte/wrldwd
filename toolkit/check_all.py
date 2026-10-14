@@ -17,7 +17,14 @@ SIZES = {"Hook 1-4": 4, "Hook 5-8": 4, "Hook 9-16": 8, "V1 1-8": 8, "V1 9-16": 8
 
 
 def run(args, text):
-    return subprocess.run([sys.executable] + args, input=text, capture_output=True, text=True, encoding="utf8").stdout
+    """run a sub-check and return its stdout. A crashed sub-check used to return an empty string, which read as
+    "no problems" and made check_all print ALL PASS for anything (found 15 Oct 2026 when `wordfreq` was missing:
+    the AI-written song passed every slot). A non-zero exit or a traceback now raises, so a broken instrument is
+    a visible failure and never a pass."""
+    r = subprocess.run([sys.executable] + args, input=text, capture_output=True, text=True, encoding="utf8")
+    if r.returncode != 0 or "Traceback (most recent call last)" in r.stderr:
+        raise RuntimeError("sub-check crashed: %s\n%s" % (" ".join(os.path.basename(x) for x in args[:3]), r.stderr.strip()[-400:]))
+    return r.stdout
 
 
 def problems_of(slot, lines):
