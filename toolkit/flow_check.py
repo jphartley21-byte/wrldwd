@@ -80,6 +80,29 @@ def rare_joins(line):
     return [(a, b, r) for a, b, rs in joins(line) for r in rs if r in RARE]
 
 
+# Vowel position (height 0 close..3 open, backness 0 front..2 back, rounded). Inference from standard phonetics tables; see
+# benchmark/mouth_and_duration.md. Used for vowel travel between adjacent syllables, report-only until calibrated.
+VPOS = {"IY": (0, 0, 0), "IH": (1, 0, 0), "EY": (1, 0, 0), "EH": (2, 0, 0), "AE": (3, 0, 0), "AY": (3, 1, 0), "AA": (3, 2, 0),
+        "AO": (2, 2, 1), "OW": (1, 2, 1), "UH": (1, 2, 1), "UW": (0, 2, 1), "AW": (3, 2, 1), "OY": (2, 2, 1), "AH": (2, 1, 0), "ER": (2, 1, 0)}
+
+
+def vowel_travel(line):
+    """[(word_a, word_b, distance)] between the stressed-or-full vowels of adjacent content syllables.
+    Distance = height + backness + 2*rounding change (0..~7). Report-only: the par is not yet measured on the original."""
+    seq = []
+    for w in re.findall(r"[A-Za-z'å]+", line):
+        if w.lower() in FUNC:
+            continue
+        for p in (pron(w.lower().replace("å", "a")) or []):
+            if is_v(p) and strip(p) in VPOS and (p[-1] in "12" or strip(p) not in ("AH", "ER")):
+                seq.append((w, VPOS[strip(p)]))
+    out = []
+    for (a, va), (b, vb) in zip(seq, seq[1:]):
+        d = abs(va[0] - vb[0]) + abs(va[1] - vb[1]) + 2 * abs(va[2] - vb[2])
+        out.append((a, b, d))
+    return out
+
+
 def bar_profile(line):
     words = re.findall(r"[A-Za-z'å]+|[,;:\-–—]", line)
     stress, pauses, clusters = [], 0, 0

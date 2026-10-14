@@ -54,6 +54,12 @@ good = "PASSED" in vg
 ok &= good
 print(("ok  " if good else "BAD ") + "vocab ledger selftest: " +
       ("G2 separates common from obscure, upsert and filter hold" if good else vg.strip()[:110]))
+# duration model: classes, template laying and need-vs-have flags
+du = run([os.path.join(HERE, "duration.py"), "--selftest"], "")
+good = "PASSED" in du
+ok &= good
+print(("ok  " if good else "BAD ") + "duration selftest: " +
+      ("classes, laying and need-vs-have flags hold" if good else du.strip()[:110]))
 # the fast inner loop must parse candidate blocks and memoise the form check
 tb = run([os.path.join(HERE, "trybars.py"), "--selftest"], "")
 good = "PASSED" in tb
