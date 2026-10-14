@@ -10,6 +10,7 @@ sys.path.insert(0, HERE)
 import check_all  # noqa: E402
 import timefit as _tf  # noqa: E402
 import timefit2 as _t2  # noqa: E402
+import rhymedepth as _rd  # noqa: E402
 
 
 def lines_of(path):
@@ -48,6 +49,13 @@ def timefit_status(lines):
     return out
 
 
+def rhyme_status(lines):
+    secs, i = {}, 0
+    for slot, n in _tf.SIZES.items():
+        secs[slot] = lines[i:i + n]; i += n
+    return _rd.stats(secs)
+
+
 def keepers_report(text, K):
     t = text.lower()
     return [p for p in K["phrases"] + K["places"] if p.lower() not in t]
@@ -75,6 +83,20 @@ if __name__ == "__main__":
         elif m_n > m_o + 0.25:
             bad.append(f"{slot}: timefit2 mean cost rose {m_o:.2f} -> {m_n:.2f}")
     print("timefit2 sections over limit: before", [s for s in to if to[s][0] > to[s][2]] or "none", "| after", [s for s in tn if tn[s][0] > tn[s][2]] or "none")
+    ro, rn = rhyme_status(lo), rhyme_status(ln)
+    for slot in ro:
+        o, n = ro[slot], rn[slot]
+        if not o or not n:
+            continue
+        if n["hard"] and not o["hard"]:
+            bad.append(f"{slot}: rhyme depth floor now fails ({n['hard'][0]})")
+        if (n["median"] or 0) < (o["median"] or 0):
+            bad.append(f"{slot}: end rhyme depth median fell {o['median']} -> {n['median']}")
+        if (n["multisyl"] or 0) < 0.75 * (o["multisyl"] or 0):
+            bad.append(f"{slot}: multisyllabic runs fell {o['multisyl']} -> {n['multisyl']}")
+        bo, bn = o["beat_step"] + o["beat_beat"] + o["beat_half"], n["beat_step"] + n["beat_beat"] + n["beat_half"]
+        if bn < bo - 1:
+            bad.append(f"{slot}: internal rhymes on matched beats fell {bo} -> {bn}")
     lost = [k for k in keepers_report(open(new, encoding="utf8").read(), K) if k not in keepers_report(open(old, encoding="utf8").read(), K)]
     if lost:
         bad.append("keepers lost: " + ", ".join(lost))

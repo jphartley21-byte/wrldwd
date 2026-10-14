@@ -206,4 +206,8 @@ _tt = subprocess.run([sys.executable, os.path.join(HERE, "timefit_try.py"), "--s
 good = _tt.returncode == 0
 ok &= good
 print(("ok  " if good else "BAD ") + "timefit_try selftest: " + _tt.stdout.strip()[-110:])
+_rdp = subprocess.run([sys.executable, os.path.join(HERE, "rhymedepth.py"), "--selftest"], capture_output=True, text=True, encoding="utf8", errors="replace")
+good = _rdp.returncode == 0
+ok &= good
+print(("ok  " if good else "BAD ") + "rhymedepth selftest: " + _rdp.stdout.strip()[-110:])
 print("CALIBRATION", "PASSED" if ok else "FAILED: fix the tools before using them")
