@@ -37555,6 +37555,12 @@
   "source": "reviewed",
   "via": "phonetician agent"
  },
+ "torchlight": {
+  "arpabet": "T AO1 R CH L AY2 T",
+  "needs_check": false,
+  "source": "compound",
+  "via": "torch+light"
+ },
  "torchwood": {
   "arpabet": "T AO1 CH W UH2 D",
   "lexicon": true,

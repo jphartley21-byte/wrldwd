@@ -495,6 +495,16 @@ def check(slot: str, bars: list[str], context: list[str] | None = None, tol: int
                     hard.append(f"sense ACROSS bars: {bc_.get('issue') or bc_.get('thread', '')[:80]} (bars that do not follow: {[n for n, _ in bc_['fails']]})")
         except Exception as e:  # noqa: BLE001
             notes.append(f"sense gate unavailable: {str(e)[:60]}")
+    # RECOUNT (14 Oct 2026): a block that tells what happened in time order (past-tense event runs, "stop one / then / next" place lists)
+    # instead of claiming something. HARD, par from the original (toolkit/recount.py; registry: validated). WW_RECOUNT=0 switches it off.
+    if os.environ.get("WW_RECOUNT", "1") != "0":
+        try:
+            import recount as _rc
+            _m = _rc.section_measures(bars)
+            hard += [f"recount: {x.split(': ', 1)[-1]}" for x in _rc.section_fails(slot, _m)]
+            notes.append(f"recount codes {_m['codes']} (E event, I itinerary, s stance)")
+        except Exception as e:  # noqa: BLE001  (spaCy missing: say so, never pass silently as if measured)
+            notes.append(f"recount unavailable: {str(e)[:60]}")
     try:
         from . import cadence
         cad = cadence.check(slot, bars)

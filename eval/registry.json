@@ -55,6 +55,14 @@
     "toolkit/phon.best_end (rhyme grader)": {
       "evidence": "refit 12 Oct on 14 by-ear pairs: 4/10 wrong -> 1/14 wrong; assonance at 0.80 still passes as rhyme",
       "status": "validated"
+    },
+    "toolkit/recount.py (claim-share quota)": {
+      "evidence": "original passes its own par; 3 of 3 named recounts fail; deterministic",
+      "status": "validated"
+    },
+    "ww/judge/reader.py event/claim labels": {
+      "evidence": "never run against the original; ww/judge/reader_validate.py is the test (needs DEEPSEEK_API_KEY, absent in the 14 Oct cloud session)",
+      "status": "unvalidated"
     }
   },
   "locked_at": 1791817472.995,

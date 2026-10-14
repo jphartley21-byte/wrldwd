@@ -129,8 +129,8 @@ def check(bars: list[str], llm=None) -> dict:
 
 
 BLOCK_SYSTEM = """You are a strict, plain-speaking British editor. You are given the bars of one block of a deadpan rap, in order. Judge ONLY how the bars hold together as a passage a stranger would follow when hearing it once.
-- thread: say in ONE sentence what the whole block is about (who does what, where). If you cannot, write "NO THREAD".
-- links: for every bar after the first, follows = true if it continues, answers, contrasts with or escalates the bar before it (or the thread) in a way a listener can follow; false if it is a non sequitur, changes subject or place with no signal, or uses 'he/she/it/they' with nobody introduced.
+- thread: say in ONE sentence what the block ARGUES and who the speaker is (the claim it makes about him or his world). A list of what happened in time order ("he went here, then there, then this happened") argues nothing: write "NO THREAD" for it, and also if you cannot state a claim.
+- links: for every bar after the first, follows = true if it supports, escalates, contrasts with or deflates the claim (or the bar before it) in a way a listener can follow; false if it is a non sequitur, merely the next event or place in time order, changes subject with no signal, or uses 'he/she/it/they' with nobody introduced.
 - coherent: 2 = one clear thread and every bar belongs; 1 = a thread but some bars are loose or the order is confusing; 0 = a pile of unrelated bars.
 - issue: the worst problem in at most 15 words, or "".
 Be harsh: a shared rhyme sound is not a thread. Return JSON only."""
@@ -147,7 +147,7 @@ BLOCK_SCHEMA = {
 def block_check(bars: list[str], llm=None, model: str = "ds-flash") -> dict:
     """ACROSS bars (Joe, 14 Oct 2026): one thread per block, every bar follows the one before it. Cached. Fails on coherent < 2 or any link that does not follow."""
     cache = _load()
-    key = "BLOCK\n" + "\n".join(bars)
+    key = "BLOCK2\n" + "\n".join(bars)   # BLOCK2 = the argument-thread prompt (14 Oct 2026); verdicts under the old "who does what, where" prompt are not reused
     if key in cache:
         r = cache[key]
     else:
@@ -190,13 +190,18 @@ def calibrate(llm=None) -> tuple[bool, str]:
 
 BLOCK_GOOD = ["Yo, bonjourno", "Said damn at the on-stage porno", "Front row on my phone, so bored, though", "So I boarded a plane out to Bordeaux"]
 BLOCK_BAD = ["Hey port and the road to Porto", "Two glasses cold lager then cut corners", "Lager chips and the last orders", "Might hit the road then the border"]
+# the itinerary (v17 V1 33-44, 14 Oct 2026): under the old "who does what, where" thread it passed; it argues nothing, so it must fail now
+BLOCK_RECOUNT = ["Stop one is Zurich and it's pricey", "Florence next and David is a must", "Then Ljubljana's dragon bridge is green with rust",
+                 "Then Vienna where Freud's couch filled me with disgust"]
 
 
 def calibrate_block(llm=None) -> tuple[bool, str]:
-    g, b = block_check(BLOCK_GOOD, llm=llm), block_check(BLOCK_BAD, llm=llm)
-    if g.get("unjudged") or b.get("unjudged"):
+    g, b, r = block_check(BLOCK_GOOD, llm=llm), block_check(BLOCK_BAD, llm=llm), block_check(BLOCK_RECOUNT, llm=llm)
+    if g.get("unjudged") or b.get("unjudged") or r.get("unjudged"):
         return True, "sensecheck block: calibration skipped (model unreachable)"
-    return g["ok"], f"sensecheck block calibration: Joe's approved bars coherent={g['coherent']} ok={g['ok']} (must pass); the anti-example coherent={b['coherent']} ok={b['ok']} (NOT separated: the block judge is a sift, read its notes)"
+    return g["ok"] and not r["ok"], (f"sensecheck block calibration: Joe's approved bars coherent={g['coherent']} ok={g['ok']} (must pass); the itinerary "
+                                     f"coherent={r['coherent']} ok={r['ok']} (must fail: a timeline argues nothing); the anti-example coherent={b['coherent']} "
+                                     f"ok={b['ok']} (NOT separated: the block judge is a sift, read its notes)")
 
 
 def selftest() -> tuple[bool, str]:

@@ -28,14 +28,14 @@ BANK = config.EVAL_DIR / "_verse_bank.json"
 OUT = config.ROOT / "writing" / "verse_bank.md"
 FRAMES = ["V2 1-8", "V1 25-32", "V1 1-8", "V1 9-16", "Hook 9-16"]
 ANGLES = [
-    "DEADPAN REPORT: tell it as a flat itinerary or a form being filled in; the absurd thing is said in the voice of an errand, no reaction.",
+    "DEADPAN CLAIM: the narrator states what he IS and HAS as a matter of routine; the story's objects become his normal kit, filed like an errand or a form (present tense, no timeline), no reaction.",
     "BOAST AND BATHOS: open with the biggest claim of the story and let each bar get smaller and more petty until the last stressed word lands the smallest detail.",
     "CASHED PHRASE: build the verse around ONE real stock phrase taken literally, with its payoff word in the rhyme slot of the closing bar (the phrase can come from the story's objects).",
     "CHARACTER FIRST: a narrator who is slightly bored, a bit proud and never explains; one running object or number from the story recurs and changes meaning each time.",
 ]
 SYSTEM = """You are the lyricist of a deadpan British rap, 140 BPM, for the narrator: {persona}
 You write ONE 8-bar verse (twelve if the frame says so) built on the ESSENCE of a real story. You are a poet, not a reporter: do NOT retell the events in order. Pick the two or three moments that carry the irony, drop the rest, compress, reorder, exaggerate, use image, metaphor, simile and wordplay, and let the rhyme word bring the joke. Keep the story's truth (its irony and key objects) but you may paraphrase freely and add small cartoon embellishments; do not invent new named people or places. Swearing and vulgar slang are allowed; sex and drugs stay innuendo and aftermath, never explicit, never instructional.
-CRAFT: every bar is a complete spoken English sentence a stranger follows on one hearing (no dropped articles or verbs to save syllables, nothing ending on a dangling in/on/out/up); the bars are ONE thread and each follows from the one before; the comedy is a flat voice reporting something big or petty; the payoff lands on the last stressed word; real names (artists, brands, places, local words) are welcome for specificity; cash a stock phrase literally where it fits; no moral, no summary, no explaining the joke.
+CRAFT: every bar is a complete spoken English sentence a stranger follows on one hearing (no dropped articles or verbs to save syllables, nothing ending on a dangling in/on/out/up); the bars make ONE argument about the narrator and each serves it (not the next event in time order: never chain past-tense events or sequence places); the comedy is a flat voice reporting something big or petty; the payoff lands on the last stressed word; real names (artists, brands, places, local words) are welcome for specificity; cash a stock phrase literally where it fits; no moral, no summary, no explaining the joke.
 SOUND: the frame lists which bars rhyme (same letter): they must rhyme on a STRESSED syllable (not a shared -ing/-ly/-ed/-er/-ation suffix); all end words different. Count syllables: a machine counts with a UK pronouncer and rejects a bar more than 2 out; write short plain words.
 {exemplars}
 Return JSON only: {{"verses": [{{"angle": "...", "end_words": [...], "idiom": "stock phrase cashed or ''", "bars": [strings]}}]}}"""
@@ -96,9 +96,9 @@ def essence(llm: LLM, story: dict) -> dict:
     if story["id"] in cache:
         return cache[story["id"]]
     req = Request(model=evolve.WRITER, system="You are a comedy editor for a deadpan British rap. Given a true anecdote, find its ESSENCE the way a good lyricist would: not the sequence of events but what makes it funny or striking. Return JSON only.",
-                  messages=[{"role": "user", "content": story["title"] + "\n" + story["text"] + "\n\nReturn JSON with keys: irony (one sentence on the real joke or turn), image (the single most vivid concrete image), drop (details a lyric should leave out), handles (5 figurative or wordplay handles: similes, double meanings, stock phrases taken literally, sound-alikes), punchline (the best last-bar landing), mood (the narrator's attitude in a few words)."}],
+                  messages=[{"role": "user", "content": story["title"] + "\n" + story["text"] + "\n\nReturn JSON with keys: irony (one sentence on the real joke or turn), image (the single most vivid concrete image), drop (details a lyric should leave out), handles (5 figurative or wordplay handles: similes, double meanings, stock phrases taken literally, sound-alikes), punchline (the best last-bar landing), mood (the narrator's attitude in a few words), contradiction (the gap between how big it sounds and how small it is, one sentence), trait (the character trait it reveals about the narrator, a few words)."}],
                   max_tokens=1200, effort=None, temperature=0.7, stage="versebank_essence", scope="write",
-                  schema={"type": "object", "properties": {k: {"type": ("array" if k == "handles" else "string"), **({"items": {"type": "string"}} if k == "handles" else {})} for k in ("irony", "image", "drop", "handles", "punchline", "mood")}})
+                  schema={"type": "object", "properties": {k: {"type": ("array" if k == "handles" else "string"), **({"items": {"type": "string"}} if k == "handles" else {})} for k in ("irony", "image", "drop", "handles", "punchline", "mood", "contradiction", "trait")}})
     try:
         e = (llm.complete(req, use_cache=True).parsed or {})
     except Exception:  # noqa: BLE001
@@ -109,16 +109,21 @@ def essence(llm: LLM, story: dict) -> dict:
     return e
 
 
-def writer_request(story: dict, slot: str, n: int, ess: dict | None = None) -> Request:
+def writer_request(story: dict, slot: str, n: int, ess: dict | None = None, argument: str | None = None) -> Request:
     ft, _ = _frame_text(slot)
     angles = "\n".join(f"  {i + 1}. {a}" for i, a in enumerate(ANGLES[:n]))
     if ess:
         body = (f"ESSENCE ({story['level']}): {story['title']}\nThe turn: {ess.get('irony', '')}\nThe image: {ess.get('image', '')}\nLeave out: {ess.get('drop', '')}\n"
-                f"Handles you may use: " + "; ".join(ess.get("handles", [])) + f"\nBest landing: {ess.get('punchline', '')}\nNarrator's mood: {ess.get('mood', '')}")
+                f"Handles you may use: " + "; ".join(ess.get("handles", [])) + f"\nBest landing: {ess.get('punchline', '')}\nNarrator's mood: {ess.get('mood', '')}"
+                + (f"\nThe gap (big vs small): {ess['contradiction']}" if ess.get("contradiction") else "")
+                + (f"\nThe trait it shows: {ess['trait']}" if ess.get("trait") else ""))
     else:
-        body = f"STORY ({story['level']}): {story['title']}\n{story['text']}"
+        body = (f"INGREDIENTS ({story['level']}): {story['title']}\n{story['text']}\n(These are raw facts to transform into claims; do NOT retell them "
+                f"in the order they happened.)")
     user = (f"{body}\n\n{ft}\n\nWrite {n} DIFFERENT verses, one per angle, in this order:\n{angles}\n"
-            f"Each verse is exactly {slotcheck.spec(slot)['n']} bars and must tell or boast this story's core in its own way.")
+            + (f"SECTION ARGUMENT: {argument}\n" if argument else "") +
+            f"Each verse is exactly {slotcheck.spec(slot)['n']} bars and must make a claim this essence earns -- what the narrator is, has or "
+            f"shrugs off -- not the events in order (a checker fails more than three past-tense event bars in a row).")
     sylls = slotcheck.spec(slot)["sylls"]
     return Request(model=evolve.WRITER, system=SYSTEM.format(persona=seed_stage.PERSONA, exemplars=evolve.exemplars(sylls)),
                    messages=[{"role": "user", "content": user}], max_tokens=7000, effort="medium", temperature=None, stage="versebank", scope="write",

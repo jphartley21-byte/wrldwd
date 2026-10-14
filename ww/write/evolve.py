@@ -99,11 +99,15 @@ _KNOWN = None
 
 
 def known_names() -> set:
-    """capitalised words that appear in Joe's material, the plan or the local-word list: the only proper nouns a bar may use (rule 5: true or flagged)."""
+    """capitalised words that appear in Joe's material, the plan, the local-word list or the persona bible's flagged list: the only proper nouns a
+    bar may use (rule 5: true or flagged). Song-wide: a place is not tied to the section or story it came from."""
     global _KNOWN
     if _KNOWN is None:
         k = set()
-        for p in list((config.ROOT / "material").glob("*.md")) + [config.EVAL_DIR / "_plan_v5.json", config.ROOT / "toolkit" / "local_words.txt"]:
+        # brief/persona.md carries the FLAGGED embellishments (rule 5 "(persona)") Joe can veto: a name listed there may be used anywhere,
+        # like a true place (14 Oct 2026: places are ingredients, not locked to the story they came from).
+        for p in list((config.ROOT / "material").glob("*.md")) + [config.EVAL_DIR / "_plan_v5.json", config.ROOT / "toolkit" / "local_words.txt",
+                                                                  config.ROOT / "brief" / "persona.md"]:
             try:
                 k |= {w.lower() for w in re.findall(r"[A-Z][a-zA-Z'\-]+", p.read_text(encoding="utf-8"))}
             except OSError:
@@ -216,7 +220,7 @@ def exemplars(sylls: list[int]) -> str:
 SYSTEM = """You are the lyricist of a deadpan British rap, 140 BPM, for the narrator: {persona}
 You write ONE quad (four consecutive bars). The craft that wins:
 - SAY SOMETHING. Every bar is a complete spoken English sentence (or a real spoken fragment like a greeting) that a stranger understands on one hearing. Never drop articles, verbs or objects to save syllables. Never end a bar on a dangling 'in/on/out/up'.
-- ONE THREAD. The four bars are one little scene or one argument; each bar follows from the one before (use 'then', 'so', 'while', 'but', a pronoun with a clear antecedent). Pronouns need someone introduced.
+- ONE ARGUMENT, NOT A TIMELINE. The four bars argue one thing about the narrator (what he is, has, does as routine, brags about or shrugs off); each bar follows from the one before because it serves that claim, not because it happened next. Do not sequence events or places ('then', 'next', 'stop one', 'we left... we rode...'): at most two bars in a row may report a past event. Pronouns need someone introduced.
 - CHARACTER AND PAYOFF. The comedy is a flat, nonchalant voice reporting something big, illicit or petty in an everyday British register (queues, tickets, prices, telling-offs). The last stressed word of the final bar (and of any bar that cashes a phrase) carries the payoff: a stock phrase taken literally, a pun, a sound-alike, or a deflating small detail. Do not explain the joke. No moral, no summary, no 'and that is why'.
 - SPECIFIC. Named places, prices, objects, brands, local words, real British slang, and real artists, films and festival lineups by NAME (artist names are fine in lyrics; the festival and event lineups in the brief are fair game), but never aim menace or an accusation at a real person. Swearing and vulgar slang are allowed if the bar needs them.
 - RHYME FAMILY FIRST. Before writing, pick the end words. In a hook-type quad the original rhymes ALL FOUR bars on one family (same stressed vowel AND same ending sound, e.g. porter / shorter / daughter / water): choose four different real common words (or places) that share it, then write each sentence to land on its word. Two couplets on different vowels (garden/pardon + sorry/lorry) is a FAIL.

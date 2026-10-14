@@ -12,6 +12,11 @@ from typing import Optional
 from ..llm import LLM, Request
 from . import seed_stage, sound_plan
 
+# the attitude each bar takes (14 Oct 2026). A bar that only reports the next thing that happened takes no stance; the recount gate
+# (toolkit/recount.py) fails blocks made of them, so the writer is asked to name each bar's stance up front.
+STANCES = ["claim", "boast", "deadpan_report", "deflate", "menace_in_bland", "aside", "callback"]
+
+
 def block_schema(nbars: int) -> dict:
     """The writer's schema, sized to the SECTION. It was fixed at exactly 4 bars, so a section-length block could not be asked
     for at all: the verses are 8 bars and V1 33-44 is 12. The bar count now comes from the plan's own per-bar targets."""
@@ -21,9 +26,10 @@ def block_schema(nbars: int) -> dict:
             "type": "object", "required": ["argument", "bars", "payoff_bar"],
             "properties": {"argument": {"type": "string"}, "payoff_bar": {"type": "integer"},
                            "bars": {"type": "array", "minItems": nbars, "maxItems": nbars, "items": {
-                               "type": "object", "required": ["text", "end_word", "claim", "plain"],
+                               "type": "object", "required": ["text", "end_word", "claim", "stance", "plain"],
                                "properties": {"text": {"type": "string"}, "end_word": {"type": "string"},
                                               "claim": {"type": "string"}, "plain": {"type": "string"},
+                                              "stance": {"type": "string", "enum": STANCES},
                                               "no_fit": {"type": "boolean"}}}}}}}},
     }
 
@@ -32,7 +38,7 @@ BLOCK_SCHEMA = block_schema(4)
 
 JOBS_HOOK = [
     "Bar 1 - sets the scene: names a place, may open with a short local-language greeting. Do NOT use the pattern '[greeting] to the boys/lads/birds in [place]'.",
-    "Bar 2 - the flat report, in the frame's own everyday British phrases, setting the seed up.",
+    "Bar 2 - a flat CLAIM in an errand register (present tense, the frame's own everyday British phrases), setting the seed up. Not what happened next: what the narrator IS, HAS or DOES as a matter of routine.",
     "Bar 3 - the PAYOFF: the seed's payoff word is the LAST word of this bar and the extraordinary thing lands here.",
     "Bar 4 - the closer: a modal understatement ('might ...') or a petty concrete detail naming a different place or object; it must not explain anything.",
 ]
@@ -50,7 +56,9 @@ GRAMMAR: introduce every person and thing before you refer to it. A bar may not 
 JOBS:
 {jobs}
 
-For each bar also give: claim (what it says in at most 15 words) and plain (the same thing said in ordinary speech with no rhyme constraint). Return JSON only."""
+NOT A DIARY: the bars are CLAIMS by a character, not a list of what happened in order. Never chain past-tense events ("we left... we rode... then...") and never sequence places ("stop one... then... next..."). A true event is an ingredient: turn it into a present-tense claim, a boast, a routine, or a flat aside. At most two bars in a row may report a past event.
+
+For each bar also give: claim (what it says in at most 15 words), stance (the attitude the bar takes: claim, boast, deadpan_report, deflate, menace_in_bland, aside or callback) and plain (the same thing said in ordinary speech with no rhyme constraint). Return JSON only."""
 
 
 def _length_rule(sylls, examples=None) -> str:

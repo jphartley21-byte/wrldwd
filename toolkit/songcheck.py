@@ -273,6 +273,26 @@ def verse_gate(sections, fails, notes):
             fails.append(f"{vslot}: no bar >= {LONG_BAR} syllables; every verse has one")
 
 
+def recount_gates(sections, fails, notes):
+    """Section and song level: does the song CLAIM or does it tell a holiday diary (toolkit/recount.py, 14 Oct 2026)?
+    Par is the original's own: longest run of recounted bars (3 in a verse), the busiest section's recount share plus one bar,
+    no itinerary bars, and a song-wide recount share within 10 points of the original's 0.20. Only full songs are judged at
+    song level (a single section cannot carry the song's share)."""
+    try:
+        import recount
+    except Exception as e:   # spaCy missing: say so rather than pass silently
+        notes.append(f"recount not measured ({e.__class__.__name__})")
+        return
+    named = [(s, b) for s, b in sections if s and b]
+    if not named:
+        return
+    rf, _rows, song = recount.run(named, overlap=False, quiet=True)
+    if len(named) < 5:
+        rf = [f for f in rf if not f.startswith("SONG")]
+    fails.extend("recount: " + f for f in rf)
+    notes.append(f"recount share {song:.0%} (the original 20%)")
+
+
 def run(sections, title):
     fails, notes = [], []
     for slot, bars in sections:
@@ -281,6 +301,7 @@ def run(sections, title):
         line_gates(slot, bars, fails)
         scheme_gate(slot, bars, fails, notes)
     verse_gate(sections, fails, notes)
+    recount_gates(sections, fails, notes)
     device_gates(sections, fails, notes)
     imagery_gates(sections, fails, notes)
     song_gates(sections, title, fails, notes)

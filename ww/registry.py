@@ -52,7 +52,25 @@ LEGACY = {
     "ml/meaning_judge.py (llama3 paraphrase)": ("unvalidated", "93% on 14 bars, half authored by the assistant; a sifter, not a gate"),
     "toolkit/forge.py / pipeline.py / tryforms.py": ("failed_validation", "recombine only; best score identical for 14 cycles; crowned a gibberish block"),
     "toolkit/check_all.py as a quality gate": ("failed_validation", "fails Joe's own accepted bars; kept as a ranking readout"),
+    # 14 Oct 2026: the claim-share quota (PREREG exit floor) is measured by recount.py, deterministically. Calibrated on the original
+    # (passes its own par: song recount share 0.20, longest verse chain 3, no itinerary bars) and catches all three named recounts
+    # (v17 V1 33-44 itinerary, v17 V2 1-8 Hanoi diary, v5 V1 9-16 jeep). Song shares: original 0.20, v17 0.50, v5 0.66, pasted 0.78.
+    "toolkit/recount.py (claim-share quota)": ("validated", "original passes its own par; 3 of 3 named recounts fail; deterministic"),
+    "ww/judge/reader.py event/claim labels": ("unvalidated", "never run against the original; ww/judge/reader_validate.py is the test "
+                                                             "(needs DEEPSEEK_API_KEY, absent in the 14 Oct cloud session)"),
 }
+
+
+def claim_share(sections) -> dict:
+    """the PREREG claim-share quota: share of bars that do NOT recount (1 - recount share), song-wide, with recount.py's verdict.
+    sections = [(slot, bars)]."""
+    import os
+    import sys
+    sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "toolkit"))
+    import recount
+    fails, _rows, song = recount.run(sections, overlap=False, quiet=True)
+    return {"claim_share": round(1 - song, 3), "floor": round(1 - recount.ORIGINAL_SONG_SHARE - recount.SONG_MARGIN, 3),
+            "fails": fails}
 
 
 def prereg_hash() -> str:
@@ -77,6 +95,8 @@ def init() -> dict:
         d["prereg_version"] += 1
         d.setdefault("prereg_history", []).append({"version": d["prereg_version"] - 1, "hash": d["prereg_hash"], "changed_at": round(time.time(), 3)})
         d["prereg"], d["prereg_hash"] = PREREG, prereg_hash()
+    for k, (st, ev) in LEGACY.items():   # a legacy instrument added after the file was first written must still be known
+        d.setdefault("legacy", {}).setdefault(k, {"status": st, "evidence": ev})
     _save(d)
     return d
 
@@ -162,6 +182,12 @@ def selftest() -> tuple[bool, str]:
                 problems.append("failed legacy instrument must not gate")
             if not may_gate("toolkit/flow_fit syllable count + end shape"):
                 problems.append("exact legacy fact should be usable")
+            if may_gate("ww/judge/reader.py event/claim labels"):
+                problems.append("the unvalidated reader must not gate")
+            diary = [("V2 1-8", ["We left the hostel at nine with no clues", "We rode the bikes along the coast for days",
+                                 "The rain came down and soaked us to the bone", "We lost each other in the traffic queues"])]
+            if not claim_share(diary)["fails"]:
+                problems.append("claim-share quota must fail a past-tense diary")
         finally:
             REGISTRY = old
     return (not problems, "; ".join(problems) if problems else "pre-registered rule, sealed-look counter and legacy statuses behave")

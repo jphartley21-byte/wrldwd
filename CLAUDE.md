@@ -16,6 +16,10 @@ Joe (33, from Reading, lives in Bristol) wants a Suno track that sounds like he 
 7. SUNO: v6 only. Joe signs in himself. Fill title, lyrics, style and exclude fields, screenshot, then STOP before Create until Joe says yes. Variety 0, Style Influence about 70, Weirdness about 30, vocal gender male; exclude: singing, melodic hook, autotune, choir, female vocals. Test 140 BPM and 70 half-time (the original measures exactly 140.00 BPM, 13 Oct 2026). Details in brief/suno_rap_rules.md. Leave the key out of the prompt. Artist names are fine in the LYRICS (Joe, 14 Oct 2026); keep them out of the style, exclude and title fields.
 8. DECISIONS STILL OPEN (ask Joe once, concisely): strict vegetarian detail in the song? Horfield/BS7 as a name? everyday British brand names (the original uses them)? invented cartoonish flourishes on true places (a bribe, a rival firm)?
 
+## Process order (14 Oct 2026: claims, not a diary)
+Every draft before 14 Oct read as a holiday diary (toolkit/recount.py: the original's song recount share is 0.20; v17 0.50, the pasted song 0.78, the flow-fitted v5 0.66). The order is now:
+premise (brief/premises.json, from brief/persona.md) -> section argument -> per-bar MOVES (claim, flex, deflate, aside, callback, cash) -> INGREDIENTS (material/ingredients.md: objects, numbers, the gap, the trait, an admin register; any order) -> full sentences that make the claim -> FIT (`python toolkit/fitbar.py`) -> GATES (recount, meaning, songcheck, phrase_audit, ratchet). Fitting is last. A bar may report a past event, but never more than three in a row and never places in time order ("stop one... then... next..."). Details: .claude/commands/write.md.
+
 ## Folder map
 - STATE.md: where we are and the next three steps (imported above).
 - brief/: song_bible.md (premise and bar budget; parts superseded by rule 1), suno_rap_rules.md (Suno settings and a draft style prompt).

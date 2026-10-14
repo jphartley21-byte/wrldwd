@@ -4,6 +4,17 @@ argument-hint: <which sections, e.g. "all" or "V1 17-24, V2 9-16"> [source draft
 ---
 Write $ARGUMENTS using the process that worked (9 Oct 2026). Joe has approved multi-agent drafting for this command.
 
+PROCESS ORDER (14 Oct 2026; fitting is LAST, because the flow frame rewards noun stacks and the plan's beats produced holiday diaries)
+1. PREMISE: one claim about the narrator for the whole song (brief/premises.json, built from brief/persona.md). `python -m ww.write.premise --list`.
+2. SECTION ARGUMENT: what this section claims about him (the premise's section entry), never "what happened next".
+3. MOVES: one per bar (claim, flex, deflate, aside, callback, cash). Old plans with `beats` are migrated: argue_stage.beats_to_moves / migrate_plan.
+4. INGREDIENTS: objects, numbers, local words, the gap and the trait from material/ingredients.md (`python -m ww.write.ingredients`), used in any order.
+5. SENTENCES: write each bar as a full spoken sentence that makes its move's claim. Present tense for claims; at most 2-3 past-tense event bars in a row.
+6. FIT: `python toolkit/fitbar.py bars` (candidates "N | text" against bar N's audio frame), then `python toolkit/fitbar.py song DRAFT`.
+7. GATES: recount (`python toolkit/recount.py DRAFT`: chain, share, itinerary vs the original's par), meaning_gate, songcheck, phrase_audit, ratchet.
+A draft that fits the frame and fails recount is a diary: go back to step 3, not to step 6.
+Rule 6 (CLAUDE.md) still holds: do this in the main thread; the AGENTS section below applies only if Joe asks for agents.
+
 SETUP (main thread)
 1. Calibrate: `python toolkit/calibrate.py C:\Users\Joe\Documents\Worldwide_private\original_lines.txt` must PASS.
 2. Song map: writing/song_map.md (each section's original job, Joe's true places for it, places owned by one section only). Read material/travel_history.md only for new places.

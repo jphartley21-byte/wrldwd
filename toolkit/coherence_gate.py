@@ -168,11 +168,26 @@ def links(prev, cur, frame_of):
         return "repeated word: " + ", ".join(sorted(pc & cc))
     if any(w in PRON for w in [x.lower() for x in words(cur)]) and pc:
         return "reference (pronoun back to the previous bar)"
-    if words(cur) and words(cur)[0].lower() in CONNECT:
-        return "conjunction: " + words(cur)[0].lower()
+    # A connective ("then", "so", "and") used to count as a link on its own. It is the glue of a recount ("then Vienna, then Prague"),
+    # not cohesion: since 14 Oct 2026 a bar links by a shared FIELD (the same image or argument territory), not by a time word.
+    shared = _shared_field(prev, cur)
+    if shared:
+        return "shared field: " + shared
     if frame_of(prev) and frame_of(prev) == frame_of(cur):
         return "repeated frame: " + frame_of(cur)
     return None
+
+
+def _shared_field(prev, cur):
+    """the first image field (toolkit/imagery.py, theme_words.txt plus the sensory fields) both bars draw on, or None."""
+    try:
+        import imagery
+    except Exception:  # noqa: BLE001
+        return None
+    fp = {f for w in imagery.toks(prev) for f in imagery.IDX.get(w, ()) if f not in imagery.NOT_IMAGE}
+    fc = {f for w in imagery.toks(cur) for f in imagery.IDX.get(w, ()) if f not in imagery.NOT_IMAGE}
+    both = sorted(fp & fc)
+    return both[0] if both else None
 
 
 def frame_of(bar):

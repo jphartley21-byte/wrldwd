@@ -50,6 +50,39 @@ def _source_guards() -> tuple[bool, str]:
     return (not problems, "; ".join(problems) if problems else "no private clients outside calib, no torch, no hard-coded paths")
 
 
+def _lazy(mod: str):
+    def run():
+        import importlib
+        return importlib.import_module(f"ww.write.{mod}").selftest()
+    return run
+
+
+def _recount_selftest():
+    import io
+    import contextlib
+    from . import config
+    sys.path.insert(0, str(config.ROOT / "toolkit"))
+    import recount
+    buf = io.StringIO()
+    with contextlib.redirect_stdout(buf):
+        ok = recount.selftest()
+        neg = recount.negatives_check()
+    missed = [lab for lab, f in neg if not f]
+    return ok and not missed, f"fixtures hold; named recounts caught {len(neg) - len(missed)}/{len(neg)}" + (f" MISSED {missed}" if missed else "")
+
+
+def _moves_selftest():
+    from .write import argue_stage
+    sec = {"beats": [{"bars": "bar 1", "job": "A greeting, then the place", "content": "hello and the port"},
+                     {"bars": "bar 2", "job": "What the tour was, as a chore", "content": "three countries reported like a delivery round"},
+                     {"bars": "bar 3", "job": "The last sight", "content": "the spider under the bridge"},
+                     {"bars": "bar 4", "job": "The exit", "content": "the ferry"}]}
+    mv = argue_stage.beats_to_moves(sec)
+    got = [m["move"] for m in mv]
+    ok = got[0] == "aside" and got[-1] == "deflate" and all(m["move"] in argue_stage.MOVES for m in mv) and mv[1]["transform"] == "re-file as admin"
+    return ok, f"an itinerary's beats become moves {got} with the source kept as the ingredient"
+
+
 def cmd_selftest(_args) -> int:
     from . import bridge, freeze, registry
     from .eval import degrade, gold
@@ -91,6 +124,10 @@ def cmd_selftest(_args) -> int:
         ("pop-culture graph", graph.selftest),
         ("frame ban-list", frames.selftest),
         ("source guards", _source_guards),
+        ("recount (claims vs diary)", _recount_selftest),
+        ("ingredients", _lazy("ingredients")),
+        ("premises", _lazy("premise")),
+        ("beats -> moves migration", _moves_selftest),
     ]
     ok = True
     for name, check in results:      # each check runs on its own: one crash (e.g. a git-ignored plan file missing) used to abort them all

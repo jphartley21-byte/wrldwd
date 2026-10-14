@@ -34,7 +34,11 @@ from typing import Optional
 from .. import config, failures
 from . import seed_stage
 
-PLAN_PATH = next((p for p in (config.EVAL_DIR / "_plan_v5.json", config.EVAL_DIR / "_plan_v4.json") if p.exists()), config.EVAL_DIR / "_plan_v3.json")   # v5 = claims not events, cadence per block (14 Oct 2026)   # v4 = the story seeds rewritten to Joe's real events (13 Oct 2026)
+import os as _os
+from pathlib import Path as _Path
+# WW_PLAN overrides the plan file: a premise plan from ww/write/premise.py (eval/_plan_premise_ID.json), or a migrated private plan
+PLAN_PATH = (_Path(_os.environ["WW_PLAN"]) if _os.environ.get("WW_PLAN") else
+             next((p for p in (config.EVAL_DIR / "_plan_v5.json", config.EVAL_DIR / "_plan_v4.json") if p.exists()), config.EVAL_DIR / "_plan_v3.json"))   # v5 = claims not events, cadence per block (14 Oct 2026)   # v4 = the story seeds rewritten to Joe's real events (13 Oct 2026)
 
 # the plan's mechanism numbering -> the seed stage's mechanism names (the plan labels them "1 CASHED IDIOM", "8 EUPHEMISM AS LOGISTICS"...)
 MECH_BY_NUMBER = {
@@ -70,7 +74,7 @@ def _section(slot: str) -> dict:
 
 def ledger() -> dict:
     """{slot: [stock phrase, ...]} parsed from the spine's own ledger rule. The plan's one-cash-per-phrase discipline, machine-readable."""
-    for rule in load_plan()["plan"]["spine"]["voice_rules"]:
+    for rule in (load_plan()["plan"].get("spine") or {}).get("voice_rules") or []:   # a premise plan has no spine ledger
         if rule.strip().startswith("Each stock phrase is cashed ONCE"):
             body = rule.split("Ledger:", 1)[-1]
             out = {}
@@ -170,17 +174,76 @@ def plan_jobs(slot: str) -> list[str]:
     return out or None
 
 
+# MOVES, not beats (14 Oct 2026). The plan's per-bar `beats` were an itinerary ("the last sight", "the exit", "then the ferry"): the
+# writer was handed the trip in time order and wrote it back in time order, which toolkit/recount.py now measures (the original's song
+# recount share is 0.20; every draft built from beats measured 0.50-0.78). A move is what a bar DOES to the listener; a true fact is an
+# INGREDIENT the move transforms, never a step in a timeline.
+MOVES = {
+    "claim": "state something about the narrator or the world as plain fact, present tense, no time order",
+    "flex": "a boast: something big or illicit said flatly in an everyday register",
+    "deflate": "drop the big thing to a small, domestic or admin detail",
+    "aside": "a one-bar stamp: a place, a local word, a brand or a greeting, said in passing",
+    "callback": "return to an earlier prop or claim with a new verb",
+    "cash": "a stock phrase cashed literally, the payoff word in the rhyme slot",
+}
+TRANSFORMS = ["exaggerate", "invert", "understate", "re-file as admin", "hypothetical", "boast", "as routine", "none"]
+_MOVE_KEYS = [("cash", r"idiom|cash|stock phrase|pun|double"), ("aside", r"greet|hello|stamp|place|local word|brand|name"),
+              ("callback", r"callback|return|again"), ("deflate", r"clos|exit|small|petty|bathos|deflat|modal|might|admin|detail"),
+              ("flex", r"boast|brag|flex|illicit|big|menace|extraordinary")]
+
+
+def beats_to_moves(section: dict) -> list[dict]:
+    """migrate a plan section's itinerary `beats` to `moves` (deterministic, keyword-based; the source text is kept as the ingredient).
+    The last bar of a block defaults to deflate (the original's runs end on a closer that drops from big to small)."""
+    beats = section.get("beats") or []
+    out = []
+    for k, b in enumerate(beats):
+        text = f"{b.get('job', '')} {b.get('content', '')}".lower()
+        move = next((m for m, pat in _MOVE_KEYS if re.search(pat, text)), None)
+        if move is None:
+            move = "deflate" if k == len(beats) - 1 and len(beats) > 1 else "claim"
+        transform = {"flex": "exaggerate", "deflate": "understate", "cash": "none", "aside": "none", "callback": "invert"}.get(move)
+        if transform is None:
+            transform = "re-file as admin" if re.search(r"report|chore|delivery|round|admin|errand", text) else "as routine"
+        out.append({"bars": b.get("bars") or b.get("bar") or "", "move": move, "transform": transform,
+                    "source": b.get("content", ""), "was_job": b.get("job", "")})
+    return out
+
+
+def migrate_plan(path_in, path_out=None) -> int:
+    """write a copy of a plan with `moves` added to every section that has only `beats` (the beats are kept for the record).
+    Returns the number of sections migrated. Used for Joe's private eval/_plan_v5.json, which is git-ignored and absent here."""
+    d = json.load(io.open(path_in, encoding="utf-8"))
+    secs = d["plan"]["sections"] if isinstance(d, dict) and "plan" in d else d
+    n = 0
+    for sec in secs:
+        if sec.get("beats") and not sec.get("moves"):
+            sec["moves"] = beats_to_moves(sec)
+            n += 1
+    io.open(path_out or path_in, "w", encoding="utf-8").write(json.dumps(d, indent=1, ensure_ascii=False))
+    return n
+
+
 def _beat_rows(slot: str) -> list[dict]:
-    """one row per planned bar: {label, n, syl, shape, job, content} (the plan writes the bar's syllable count and end shape in the label)."""
+    """one row per planned bar: {label, n, syl, shape, job, content, move, transform} (the plan writes the bar's syllable count and end
+    shape in the label). A section with `moves` is read as moves; a section with only `beats` is migrated on the fly, so the writer
+    never sees a timeline: `job` is the move and its transform, `content` is the fact as an INGREDIENT."""
+    sec = _section(slot)
+    moves = sec.get("moves") or beats_to_moves(sec)
     rows = []
-    for b in _section(slot).get("beats") or []:
+    for b in moves:
         label = str(b.get("bars") or b.get("bar") or "")
         m = re.search(r"bar[s]?\s*([\d\-–and ]+)", label)
         rng = m.group(1).strip() if m else ""
         syl = re.search(r"(\d+)\s*(?:syl|,)", label)
         shapes = re.findall(r"\|S+[wS]*|~[wS]+", label)
+        mv = b.get("move", "claim")
+        tf = b.get("transform", "none")
+        job = f"MOVE {mv} ({MOVES.get(mv, mv)})" + (f"; transform the ingredient: {tf}" if tf and tf != "none" else "")
+        src = b.get("source", "")
         rows.append({"label": label or rng, "bars": rng, "syl": int(syl.group(1)) if syl else None,
-                     "shape": shapes[0] if shapes else None, "job": b.get("job", ""), "content": b.get("content", "")})
+                     "shape": shapes[0] if shapes else None, "job": job, "move": mv, "transform": tf,
+                     "content": f"ingredient: {src}" if src else ""})
     return rows
 
 
@@ -276,6 +339,11 @@ def family_lock(slot: str) -> list[str]:
 
 SEED_SCHEMA_ARGS = seed_stage.SEED_SCHEMA
 
+ANTI_RECOUNT = ("NOT A DIARY. The section argues something; it does not tell the trip. Never chain past-tense events ('we left... we rode... "
+                "we lost...') and never sequence places ('stop one... then... next...'): the original's longest run of past-tense event bars is "
+                "three, and it never lists places in time order (toolkit/recount.py fails a block that does). A true fact may be moved anywhere, "
+                "exaggerated, inverted, understated or re-filed as admin; a flagged embellishment (persona) is allowed.")
+
 
 def seed_request(slot: str, n: int = 6, model: str = "ds-flash", effort: str = "high",
                  temperature: Optional[float] = None, negatives: str = "", kit: str = ""):
@@ -294,13 +362,17 @@ def seed_request(slot: str, n: int = 6, model: str = "ds-flash", effort: str = "
         shape_rule=seed_stage.SHAPE_RULES["trochee"]) +
         f"\n\nTHIS SECTION ALREADY HAS AN ARGUMENT. Your seeds do not choose the subject; they find the joke inside it.\n"
         f"ARGUMENT (one sentence, the whole section must serve it): {b['argument']}\n"
-        f"PAYOFF WORD: it MUST be one of {', '.join(lock or b['payoffs'])}. All four bars of the block end on words that "
-        f"RHYME WITH EACH OTHER, so the payoff family has to be one family; the section's other planned payoff words "
-        f"({', '.join(w for w in b['payoffs'] if w not in (lock or []))}) may appear INSIDE a bar instead.\n"
+        + (f"PAYOFF WORD: it MUST be one of {', '.join(lock or b['payoffs'])}. All four bars of the block end on words that "
+           f"RHYME WITH EACH OTHER, so the payoff family has to be one family; the section's other planned payoff words "
+           f"({', '.join(w for w in b['payoffs'] if w not in (lock or []))}) may appear INSIDE a bar instead.\n"
+           if (lock or b["payoffs"]) else
+           "PAYOFF WORD: the plan names none (a premise plan): choose a common word that cashes the ARGUMENT, and the block's end "
+           "words must rhyme with it on a stressed syllable.\n")
         + (f"OTHER families available in this section if you need a different pair: "
            f"{'; '.join('/'.join(g) for g in fams if g != lock)}\n" if [g for g in fams if g != lock] else "") +
         f"MECHANISMS: use only the mechanisms listed above, one per seed, at most one pun mechanism in the set.\n"
-        f"BAR JOBS the section's four bars must do:\n" + "\n".join(f"  - {r['label']}: {r['job']} {r['content']}" for r in b["beats"]))
+        f"BAR MOVES (what each bar DOES to the listener -- not a timeline):\n" + "\n".join(f"  - {r['label']}: {r['job']} {r['content']}" for r in b["beats"])
+        + "\n\n" + ANTI_RECOUNT)
     if b["critic_note"]:
         system += f"\n\nThe plan's own critic flagged this section before writing: {b['critic_note']}"
     if negatives:
@@ -310,7 +382,8 @@ def seed_request(slot: str, n: int = 6, model: str = "ds-flash", effort: str = "
         system += (f"\n\n{kit}\n\nKIT RULE: at least {max(2, n // 3)} of the {n} seeds MUST use mechanism lore_allusion, with `entity` set to the exact name of "
                    f"one kit item; its parts, figures, aliases and known-for hooks do the work, and the claim must not name the item. "
                    f"Every seed's mechanism must be one of: {', '.join(allowed)}; a seed using any other mechanism is thrown away.")
-    user = (f"SECTION: {slot}\nARGUMENT: {b['argument']}\nREAL MATERIAL AVAILABLE: {'; '.join(b['facts'])}\n"
+    user = (f"SECTION: {slot}\nARGUMENT: {b['argument']}\nINGREDIENTS (true facts to TRANSFORM into claims; never retell them in the "
+            f"order they happened):\n{chr(10).join(b['facts'])}\n"
             f"CALLBACKS IN: {b['callbacks_in']}\nCALLBACKS OUT: {b['callbacks_out']}\nCLOSER: {b['closer']}\n\n"
             f"Design {n} seeds for THIS section. Every seed's persona_claim must advance the argument above and must be sayable by the narrator.")
     return Request(model=model, system=system, messages=[{"role": "user", "content": user}], schema=seed_stage.SEED_SCHEMA,
@@ -438,19 +511,18 @@ def check_block(slot: str, bars: list[str], allow_other_payoff: bool = False) ->
 
 
 _HEDGE = re.compile(r"\b(might|may|could|would|should)\b")
-_OBJ = re.compile(r"\b(the|a|an|my|his|her|their|your)\s+[a-z]{3,}")
 
 
 def _cashes(bar: str) -> bool:
-    """a bar 'cashes' if the repo's own cash measure finds a banked stock phrase in it (coherence_gate.craft_idioms, the
-    same fuzzy phrase matcher the coherence gate uses), or if it reports an object flatly."""
+    """a bar 'cashes' only if the repo's own cash measure finds a banked stock phrase in it (coherence_gate.craft_idioms, the same
+    fuzzy matcher over toolkit/phrases.txt the coherence gate uses). Until 14 Oct 2026 any '(the|a|my) + noun' also counted, so every
+    bar that reported an object ("a flat", "the bike") was a 'cash' -- a recount scored as wordplay. A double reading the plan declares
+    is verified separately (slotcheck.verify_cash), not guessed here."""
     try:
         import coherence_gate
-        if coherence_gate.craft_idioms(bar):
-            return True
+        return bool(coherence_gate.craft_idioms(bar))
     except Exception:  # noqa: BLE001 - the phrase ledger is a refinement, never a crash
-        pass
-    return bool(_OBJ.search(bar.lower()))
+        return False
 
 
 def _first_person(bar: str) -> bool:
@@ -565,8 +637,8 @@ def run(llm, slot: str, seeds: int = 6, blocks_per_seed: int = 2, model: str = "
 def _plan_fact(slot: str):
     """the section's argument dressed as a Fact so the existing writer path works unchanged (the writer never reads the fact's place)."""
     b = brief(slot)
-    return seed_stage.Fact(id=f"plan:{slot}", place=slot, trip="plan v3", detail=b["argument"],
-                           kind="argument", source="plan_v3", tags=b["mechanisms"])
+    return seed_stage.Fact(id=f"plan:{slot}", place=slot, trip=PLAN_PATH.stem, detail=b["argument"],
+                           kind="argument", source=PLAN_PATH.stem, tags=b["mechanisms"])
 
 
 def report(res: dict, path=None) -> str:

@@ -162,4 +162,15 @@ good = "PASSED" in fn
 ok &= good
 print(("ok  " if good else "BAD ") + "pun proxy selftest: " +
       ("unexpectedness and second-reading lookups hold" if good else fn.strip()[:110]))
+# RECOUNT (14 Oct 2026): does a section tell what happened in time order instead of claiming something? The par is
+# the original's own (it must pass), and the named recounts (the v17 itinerary, the v17 Hanoi diary, the v5 jeep)
+# must fail. This is the claim-share quota of ww/registry.PREREG, measured deterministically.
+rs = run([os.path.join(HERE, "recount.py"), "--selftest"], "")
+rcal = run([os.path.join(HERE, "recount.py"), "--calibrate", sys.argv[1]], "")
+rneg = run([os.path.join(HERE, "recount.py"), "--negatives"], "")
+good = "PASSED" in rs and "CALIBRATION: PASSED" in rcal and "NEGATIVES: PASSED" in rneg
+ok &= good
+print(("ok  " if good else "BAD ") + "recount (claims vs diary): " +
+      ("the original clears its own par, the itinerary / diary / jeep recounts all fail" if good
+       else (rs + rcal + rneg).strip()[-160:]))
 print("CALIBRATION", "PASSED" if ok else "FAILED: fix the tools before using them")
