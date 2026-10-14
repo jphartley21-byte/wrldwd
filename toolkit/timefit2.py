@@ -24,7 +24,8 @@ MS_STEP = 60000 / 140 / 4  # a true 16th at 140 BPM = 107 ms
 R0, TOL = 1.45, 0.7         # overwritten from the baseline file when present
 LF0, LF_W = 0.3, 2.0        # length-follows-gap: the original's median per-bar correlation of syllable length with its gap
 W_D = 1.0
-SUB_BAD, SKIP_T_S, SKIP_T_W, SKIP_O_S, SKIP_O_W = 1.0, 1.0, 0.3, 0.6, 0.25
+# 15 Oct 2026 (Joe): "the 'ted' and 'the' make all the difference" -> an extra or missing syllable is no longer nearly free (it was 0.25-0.6)
+SUB_BAD, SKIP_T_S, SKIP_T_W, SKIP_O_S, SKIP_O_W = 1.5, 2.0, 1.5, 2.0, 1.5
 
 
 def load_params():
@@ -225,9 +226,9 @@ def verdict(path, show=True):
     bj = json.load(open(BASE2))
     sm = bj["section_mean"]
     hi, lo = max(sm.values()), min(sm.values())
-    thr = max(hi + 0.5 * (hi - lo), bj["joe_hook_mean"] + 0.1)
+    thr = hi + 0.5 * (hi - lo)   # Joe 15 Oct 2026: forget the approved bars, the floor is the ORIGINAL alone
     bs = sorted(bj["bar_costs"])
-    bar_lim = max(bs[int(len(bs) * 0.95)], bj["joe_bar_max"])
+    bar_lim = bs[int(len(bs) * 0.95)]
     bad, over, scored, nostep, missing, n_all = 0, [], 0, [], [], 0
     for slot, rows in res.items():
         cs = [r[0] for _, r in rows if r]
