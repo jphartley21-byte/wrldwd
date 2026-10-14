@@ -167,7 +167,7 @@ def section_scores(secs):
         rows = []
         for k in range(n):
             line = secs.get(slot, [None] * n)[k] if slot in secs and k < len(secs[slot]) else None
-            r = fit(line, B[i]) if line and not B[i].get('advisory') else None
+            r = fit(line, B[i]) if line else None
             rows.append((line, r))
             i += 1
         res[slot] = rows
