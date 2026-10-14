@@ -1,0 +1,23 @@
+# Rhyme verdicts measured BY EAR from the original and from Joe's own rejections.
+# Format:  want <TAB> bar A <TAB> bar B
+#   want 1 = these rhyme (best_end must reach the 0.78 scheme floor)
+#   want 0 = these do not rhyme (best_end must stay under the floor)
+#   want ? = the model CANNOT decide: same shape on both sides of the floor, so it must not be asserted.
+# match.py --selftest asserts every 1 and 0. calibrate.py runs it.
+1	he knows the waters in the orders	no names on the borders
+1	favours	flavours
+1	Lagos	Vegas
+1	out in Mainz	out in Spain
+1	Jamaica	out in Spain
+1	the boat is in Porto	the week we did in Oslo
+1	might take the ferry to Belgrade	out in Spain
+0	a page of the orders	might do a week in Ljubljana
+0	no names on the borders	might do a week in Ljubljana
+0	paid him by the weight	a page of the orders
+0	the van in the yard	paid him by the weight
+0	the boat is in Porto	paid him by the weight
+# metric limit (12 Oct): "dot" ~ "Ljubljana" scores 1.00 on the stressed vowel and passes at 0.80, but
+# the original's own "Jamaica" ~ "Mainz" (a place against a country) scores 0.85. The model therefore
+# RANKS this non-rhyme ABOVE a rhyme the track actually uses, so no floor can separate them: the end
+# word has to be judged by ear, and the scheme check stays advisory in the 0.78-0.85 band.
+?	ola and the lot on the dot	might do a week in Ljubljana

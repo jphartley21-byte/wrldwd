@@ -1,0 +1,3066 @@
+{
+ "slot": "V1 1-8",
+ "target": {
+  "slot": "V1 1-8",
+  "targets": [
+   {
+    "bar": 1,
+    "syl": 10,
+    "shape": "|Sw",
+    "shape_class": "Sw",
+    "marker": "|",
+    "vowels": [
+     "əʊ",
+     "ə"
+    ],
+    "vowel": "əʊ"
+   },
+   {
+    "bar": 2,
+    "syl": 10,
+    "shape": "|Sw",
+    "shape_class": "Sw",
+    "marker": "|",
+    "vowels": [
+     "əʊ",
+     "ə"
+    ],
+    "vowel": "əʊ"
+   },
+   {
+    "bar": 3,
+    "syl": 8,
+    "shape": "|Sw",
+    "shape_class": "Sw",
+    "marker": "|",
+    "vowels": [
+     "əʊ",
+     "ə"
+    ],
+    "vowel": "əʊ"
+   },
+   {
+    "bar": 4,
+    "syl": 9,
+    "shape": "|Sw",
+    "shape_class": "Sw",
+    "marker": "|",
+    "vowels": [
+     "əʊ",
+     "ə"
+    ],
+    "vowel": "əʊ"
+   },
+   {
+    "bar": 5,
+    "syl": 6,
+    "shape": "|Sw",
+    "shape_class": "Sw",
+    "marker": "|",
+    "vowels": [
+     "əʊ",
+     "ə"
+    ],
+    "vowel": "əʊ"
+   },
+   {
+    "bar": 6,
+    "syl": 8,
+    "shape": "|Sw",
+    "shape_class": "Sw",
+    "marker": "|",
+    "vowels": [
+     "əʊ",
+     "ə"
+    ],
+    "vowel": "əʊ"
+   },
+   {
+    "bar": 7,
+    "syl": 7,
+    "shape": "|S",
+    "shape_class": "S",
+    "marker": "|",
+    "vowels": [
+     "eɪ"
+    ],
+    "vowel": "eɪ"
+   },
+   {
+    "bar": 8,
+    "syl": 13,
+    "shape": "|Sw",
+    "shape_class": "Sw",
+    "marker": "|",
+    "vowels": [
+     "əʊ",
+     "ə"
+    ],
+    "vowel": "əʊ"
+   }
+  ],
+  "scheme": "aaaaaaba",
+  "manual_scheme": "AAAAAABA",
+  "carpet": {
+   "pairs": 21,
+   "total": 28,
+   "min": 0.0,
+   "share": 0.75
+  },
+  "keys": [
+   [
+    [
+     "əʊ",
+     "ə"
+    ],
+    2
+   ],
+   [
+    [
+     "əʊ",
+     "ə"
+    ],
+    2
+   ],
+   [
+    [
+     "əʊ",
+     "ə"
+    ],
+    2
+   ],
+   [
+    [
+     "əʊ",
+     "ə"
+    ],
+    2
+   ],
+   [
+    [
+     "əʊ",
+     "ə"
+    ],
+    2
+   ],
+   [
+    [
+     "əʊ",
+     "ə"
+    ],
+    2
+   ],
+   [
+    [
+     "eɪ"
+    ],
+    1
+   ],
+   [
+    [
+     "əʊ",
+     "ə"
+    ],
+    2
+   ]
+  ]
+ },
+ "grouping": "scheme+vowel+shape",
+ "threshold": 0.78,
+ "aim": 0.95,
+ "groups": [
+  [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   7
+  ]
+ ],
+ "unmet_groups": [],
+ "cliques": [
+  [
+   {
+    "bars": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     7
+    ],
+    "words": [
+     "going",
+     "open",
+     "growing",
+     "holding",
+     "broken",
+     "showing",
+     "Snowdon"
+    ],
+    "min": 0.88,
+    "places": 1,
+    "zipf": 4.798571428571429
+   },
+   {
+    "bars": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     7
+    ],
+    "words": [
+     "going",
+     "open",
+     "growing",
+     "holding",
+     "broken",
+     "showing",
+     "knowing"
+    ],
+    "min": 0.88,
+    "places": 0,
+    "zipf": 5.11
+   },
+   {
+    "bars": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     7
+    ],
+    "words": [
+     "going",
+     "open",
+     "growing",
+     "holding",
+     "broken",
+     "knowing",
+     "showing"
+    ],
+    "min": 0.88,
+    "places": 0,
+    "zipf": 5.11
+   },
+   {
+    "bars": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     7
+    ],
+    "words": [
+     "going",
+     "open",
+     "growing",
+     "holding",
+     "broken",
+     "showing",
+     "ocean"
+    ],
+    "min": 0.88,
+    "places": 0,
+    "zipf": 5.101428571428571
+   },
+   {
+    "bars": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     7
+    ],
+    "words": [
+     "going",
+     "open",
+     "growing",
+     "holding",
+     "broken",
+     "showing",
+     "golden"
+    ],
+    "min": 0.88,
+    "places": 0,
+    "zipf": 5.097142857142857
+   },
+   {
+    "bars": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     7
+    ],
+    "words": [
+     "going",
+     "open",
+     "growing",
+     "holding",
+     "broken",
+     "showing",
+     "hoping"
+    ],
+    "min": 0.88,
+    "places": 0,
+    "zipf": 5.097142857142857
+   }
+  ]
+ ],
+ "free_bars": [
+  6
+ ],
+ "per_bar": [
+  [
+   {
+    "word": "going",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.94,
+    "lead": 8
+   },
+   {
+    "word": "open",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.48,
+    "lead": 8
+   },
+   {
+    "word": "local",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.43,
+    "lead": 8
+   },
+   {
+    "word": "social",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.42,
+    "lead": 8
+   },
+   {
+    "word": "moment",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.24,
+    "lead": 8
+   },
+   {
+    "word": "total",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.21,
+    "lead": 8
+   },
+   {
+    "word": "lower",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.11,
+    "lead": 8
+   },
+   {
+    "word": "october",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.11,
+    "lead": 7
+   },
+   {
+    "word": "focus",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.0,
+    "lead": 8
+   },
+   {
+    "word": "photo",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.97,
+    "lead": 8
+   },
+   {
+    "word": "posted",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.97,
+    "lead": 8
+   },
+   {
+    "word": "global",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.95,
+    "lead": 8
+   },
+   {
+    "word": "growing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.94,
+    "lead": 8
+   },
+   {
+    "word": "older",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.92,
+    "lead": 8
+   },
+   {
+    "word": "notice",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.9,
+    "lead": 8
+   },
+   {
+    "word": "holding",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.89,
+    "lead": 8
+   },
+   {
+    "word": "broken",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.88,
+    "lead": 8
+   },
+   {
+    "word": "holy",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.88,
+    "lead": 8
+   },
+   {
+    "word": "showing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.88,
+    "lead": 8
+   },
+   {
+    "word": "mobile",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.85,
+    "lead": 8
+   },
+   {
+    "word": "opened",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.85,
+    "lead": 8
+   },
+   {
+    "word": "mostly",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.83,
+    "lead": 8
+   },
+   {
+    "word": "owner",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.83,
+    "lead": 8
+   },
+   {
+    "word": "knowing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.76,
+    "lead": 8
+   },
+   {
+    "word": "closer",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.73,
+    "lead": 8
+   },
+   {
+    "word": "ocean",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.7,
+    "lead": 8
+   },
+   {
+    "word": "soldiers",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.7,
+    "lead": 8
+   },
+   {
+    "word": "noted",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.69,
+    "lead": 8
+   },
+   {
+    "word": "golden",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.67,
+    "lead": 8
+   },
+   {
+    "word": "hoping",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.67,
+    "lead": 8
+   },
+   {
+    "word": "focused",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.65,
+    "lead": 8
+   },
+   {
+    "word": "owners",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.65,
+    "lead": 8
+   },
+   {
+    "word": "tony",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.64,
+    "lead": 8
+   },
+   {
+    "word": "noticed",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.63,
+    "lead": 8
+   },
+   {
+    "word": "slowly",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.63,
+    "lead": 8
+   },
+   {
+    "word": "moments",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.62,
+    "lead": 8
+   },
+   {
+    "word": "voted",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.62,
+    "lead": 8
+   },
+   {
+    "word": "voting",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.62,
+    "lead": 8
+   },
+   {
+    "word": "chosen",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.61,
+    "lead": 8
+   },
+   {
+    "word": "solo",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.61,
+    "lead": 8
+   }
+  ],
+  [
+   {
+    "word": "going",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.94,
+    "lead": 8
+   },
+   {
+    "word": "open",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.48,
+    "lead": 8
+   },
+   {
+    "word": "local",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.43,
+    "lead": 8
+   },
+   {
+    "word": "social",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.42,
+    "lead": 8
+   },
+   {
+    "word": "moment",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.24,
+    "lead": 8
+   },
+   {
+    "word": "total",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.21,
+    "lead": 8
+   },
+   {
+    "word": "lower",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.11,
+    "lead": 8
+   },
+   {
+    "word": "october",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.11,
+    "lead": 7
+   },
+   {
+    "word": "focus",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.0,
+    "lead": 8
+   },
+   {
+    "word": "photo",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.97,
+    "lead": 8
+   },
+   {
+    "word": "posted",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.97,
+    "lead": 8
+   },
+   {
+    "word": "global",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.95,
+    "lead": 8
+   },
+   {
+    "word": "growing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.94,
+    "lead": 8
+   },
+   {
+    "word": "older",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.92,
+    "lead": 8
+   },
+   {
+    "word": "notice",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.9,
+    "lead": 8
+   },
+   {
+    "word": "holding",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.89,
+    "lead": 8
+   },
+   {
+    "word": "broken",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.88,
+    "lead": 8
+   },
+   {
+    "word": "holy",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.88,
+    "lead": 8
+   },
+   {
+    "word": "showing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.88,
+    "lead": 8
+   },
+   {
+    "word": "mobile",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.85,
+    "lead": 8
+   },
+   {
+    "word": "opened",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.85,
+    "lead": 8
+   },
+   {
+    "word": "mostly",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.83,
+    "lead": 8
+   },
+   {
+    "word": "owner",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.83,
+    "lead": 8
+   },
+   {
+    "word": "knowing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.76,
+    "lead": 8
+   },
+   {
+    "word": "closer",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.73,
+    "lead": 8
+   },
+   {
+    "word": "ocean",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.7,
+    "lead": 8
+   },
+   {
+    "word": "soldiers",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.7,
+    "lead": 8
+   },
+   {
+    "word": "noted",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.69,
+    "lead": 8
+   },
+   {
+    "word": "golden",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.67,
+    "lead": 8
+   },
+   {
+    "word": "hoping",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.67,
+    "lead": 8
+   },
+   {
+    "word": "focused",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.65,
+    "lead": 8
+   },
+   {
+    "word": "owners",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.65,
+    "lead": 8
+   },
+   {
+    "word": "tony",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.64,
+    "lead": 8
+   },
+   {
+    "word": "noticed",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.63,
+    "lead": 8
+   },
+   {
+    "word": "slowly",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.63,
+    "lead": 8
+   },
+   {
+    "word": "moments",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.62,
+    "lead": 8
+   },
+   {
+    "word": "voted",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.62,
+    "lead": 8
+   },
+   {
+    "word": "voting",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.62,
+    "lead": 8
+   },
+   {
+    "word": "chosen",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.61,
+    "lead": 8
+   },
+   {
+    "word": "solo",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.61,
+    "lead": 8
+   }
+  ],
+  [
+   {
+    "word": "going",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.94,
+    "lead": 6
+   },
+   {
+    "word": "open",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.48,
+    "lead": 6
+   },
+   {
+    "word": "local",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.43,
+    "lead": 6
+   },
+   {
+    "word": "social",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.42,
+    "lead": 6
+   },
+   {
+    "word": "moment",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.24,
+    "lead": 6
+   },
+   {
+    "word": "total",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.21,
+    "lead": 6
+   },
+   {
+    "word": "lower",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.11,
+    "lead": 6
+   },
+   {
+    "word": "october",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.11,
+    "lead": 5
+   },
+   {
+    "word": "focus",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.0,
+    "lead": 6
+   },
+   {
+    "word": "photo",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.97,
+    "lead": 6
+   },
+   {
+    "word": "posted",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.97,
+    "lead": 6
+   },
+   {
+    "word": "global",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.95,
+    "lead": 6
+   },
+   {
+    "word": "growing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.94,
+    "lead": 6
+   },
+   {
+    "word": "older",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.92,
+    "lead": 6
+   },
+   {
+    "word": "notice",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.9,
+    "lead": 6
+   },
+   {
+    "word": "holding",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.89,
+    "lead": 6
+   },
+   {
+    "word": "broken",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.88,
+    "lead": 6
+   },
+   {
+    "word": "holy",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.88,
+    "lead": 6
+   },
+   {
+    "word": "showing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.88,
+    "lead": 6
+   },
+   {
+    "word": "mobile",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.85,
+    "lead": 6
+   },
+   {
+    "word": "opened",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.85,
+    "lead": 6
+   },
+   {
+    "word": "mostly",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.83,
+    "lead": 6
+   },
+   {
+    "word": "owner",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.83,
+    "lead": 6
+   },
+   {
+    "word": "knowing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.76,
+    "lead": 6
+   },
+   {
+    "word": "closer",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.73,
+    "lead": 6
+   },
+   {
+    "word": "ocean",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.7,
+    "lead": 6
+   },
+   {
+    "word": "soldiers",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.7,
+    "lead": 6
+   },
+   {
+    "word": "noted",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.69,
+    "lead": 6
+   },
+   {
+    "word": "golden",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.67,
+    "lead": 6
+   },
+   {
+    "word": "hoping",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.67,
+    "lead": 6
+   },
+   {
+    "word": "focused",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.65,
+    "lead": 6
+   },
+   {
+    "word": "owners",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.65,
+    "lead": 6
+   },
+   {
+    "word": "tony",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.64,
+    "lead": 6
+   },
+   {
+    "word": "noticed",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.63,
+    "lead": 6
+   },
+   {
+    "word": "slowly",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.63,
+    "lead": 6
+   },
+   {
+    "word": "moments",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.62,
+    "lead": 6
+   },
+   {
+    "word": "voted",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.62,
+    "lead": 6
+   },
+   {
+    "word": "voting",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.62,
+    "lead": 6
+   },
+   {
+    "word": "chosen",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.61,
+    "lead": 6
+   },
+   {
+    "word": "solo",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.61,
+    "lead": 6
+   }
+  ],
+  [
+   {
+    "word": "going",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.94,
+    "lead": 7
+   },
+   {
+    "word": "open",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.48,
+    "lead": 7
+   },
+   {
+    "word": "local",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.43,
+    "lead": 7
+   },
+   {
+    "word": "social",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.42,
+    "lead": 7
+   },
+   {
+    "word": "moment",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.24,
+    "lead": 7
+   },
+   {
+    "word": "total",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.21,
+    "lead": 7
+   },
+   {
+    "word": "lower",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.11,
+    "lead": 7
+   },
+   {
+    "word": "october",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.11,
+    "lead": 6
+   },
+   {
+    "word": "focus",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.0,
+    "lead": 7
+   },
+   {
+    "word": "photo",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.97,
+    "lead": 7
+   },
+   {
+    "word": "posted",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.97,
+    "lead": 7
+   },
+   {
+    "word": "global",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.95,
+    "lead": 7
+   },
+   {
+    "word": "growing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.94,
+    "lead": 7
+   },
+   {
+    "word": "older",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.92,
+    "lead": 7
+   },
+   {
+    "word": "notice",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.9,
+    "lead": 7
+   },
+   {
+    "word": "holding",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.89,
+    "lead": 7
+   },
+   {
+    "word": "broken",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.88,
+    "lead": 7
+   },
+   {
+    "word": "holy",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.88,
+    "lead": 7
+   },
+   {
+    "word": "showing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.88,
+    "lead": 7
+   },
+   {
+    "word": "mobile",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.85,
+    "lead": 7
+   },
+   {
+    "word": "opened",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.85,
+    "lead": 7
+   },
+   {
+    "word": "mostly",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.83,
+    "lead": 7
+   },
+   {
+    "word": "owner",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.83,
+    "lead": 7
+   },
+   {
+    "word": "knowing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.76,
+    "lead": 7
+   },
+   {
+    "word": "closer",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.73,
+    "lead": 7
+   },
+   {
+    "word": "ocean",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.7,
+    "lead": 7
+   },
+   {
+    "word": "soldiers",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.7,
+    "lead": 7
+   },
+   {
+    "word": "noted",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.69,
+    "lead": 7
+   },
+   {
+    "word": "golden",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.67,
+    "lead": 7
+   },
+   {
+    "word": "hoping",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.67,
+    "lead": 7
+   },
+   {
+    "word": "focused",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.65,
+    "lead": 7
+   },
+   {
+    "word": "owners",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.65,
+    "lead": 7
+   },
+   {
+    "word": "tony",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.64,
+    "lead": 7
+   },
+   {
+    "word": "noticed",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.63,
+    "lead": 7
+   },
+   {
+    "word": "slowly",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.63,
+    "lead": 7
+   },
+   {
+    "word": "moments",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.62,
+    "lead": 7
+   },
+   {
+    "word": "voted",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.62,
+    "lead": 7
+   },
+   {
+    "word": "voting",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.62,
+    "lead": 7
+   },
+   {
+    "word": "chosen",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.61,
+    "lead": 7
+   },
+   {
+    "word": "solo",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.61,
+    "lead": 7
+   }
+  ],
+  [
+   {
+    "word": "going",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.94,
+    "lead": 4
+   },
+   {
+    "word": "open",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.48,
+    "lead": 4
+   },
+   {
+    "word": "local",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.43,
+    "lead": 4
+   },
+   {
+    "word": "social",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.42,
+    "lead": 4
+   },
+   {
+    "word": "moment",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.24,
+    "lead": 4
+   },
+   {
+    "word": "total",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.21,
+    "lead": 4
+   },
+   {
+    "word": "lower",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.11,
+    "lead": 4
+   },
+   {
+    "word": "october",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.11,
+    "lead": 3
+   },
+   {
+    "word": "focus",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.0,
+    "lead": 4
+   },
+   {
+    "word": "photo",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.97,
+    "lead": 4
+   },
+   {
+    "word": "posted",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.97,
+    "lead": 4
+   },
+   {
+    "word": "global",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.95,
+    "lead": 4
+   },
+   {
+    "word": "growing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.94,
+    "lead": 4
+   },
+   {
+    "word": "older",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.92,
+    "lead": 4
+   },
+   {
+    "word": "notice",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.9,
+    "lead": 4
+   },
+   {
+    "word": "holding",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.89,
+    "lead": 4
+   },
+   {
+    "word": "broken",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.88,
+    "lead": 4
+   },
+   {
+    "word": "holy",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.88,
+    "lead": 4
+   },
+   {
+    "word": "showing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.88,
+    "lead": 4
+   },
+   {
+    "word": "mobile",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.85,
+    "lead": 4
+   },
+   {
+    "word": "opened",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.85,
+    "lead": 4
+   },
+   {
+    "word": "mostly",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.83,
+    "lead": 4
+   },
+   {
+    "word": "owner",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.83,
+    "lead": 4
+   },
+   {
+    "word": "knowing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.76,
+    "lead": 4
+   },
+   {
+    "word": "closer",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.73,
+    "lead": 4
+   },
+   {
+    "word": "ocean",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.7,
+    "lead": 4
+   },
+   {
+    "word": "soldiers",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.7,
+    "lead": 4
+   },
+   {
+    "word": "noted",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.69,
+    "lead": 4
+   },
+   {
+    "word": "golden",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.67,
+    "lead": 4
+   },
+   {
+    "word": "hoping",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.67,
+    "lead": 4
+   },
+   {
+    "word": "focused",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.65,
+    "lead": 4
+   },
+   {
+    "word": "owners",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.65,
+    "lead": 4
+   },
+   {
+    "word": "tony",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.64,
+    "lead": 4
+   },
+   {
+    "word": "noticed",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.63,
+    "lead": 4
+   },
+   {
+    "word": "slowly",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.63,
+    "lead": 4
+   },
+   {
+    "word": "moments",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.62,
+    "lead": 4
+   },
+   {
+    "word": "voted",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.62,
+    "lead": 4
+   },
+   {
+    "word": "voting",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.62,
+    "lead": 4
+   },
+   {
+    "word": "chosen",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.61,
+    "lead": 4
+   },
+   {
+    "word": "solo",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.61,
+    "lead": 4
+   }
+  ],
+  [
+   {
+    "word": "going",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.94,
+    "lead": 6
+   },
+   {
+    "word": "open",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.48,
+    "lead": 6
+   },
+   {
+    "word": "local",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.43,
+    "lead": 6
+   },
+   {
+    "word": "social",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.42,
+    "lead": 6
+   },
+   {
+    "word": "moment",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.24,
+    "lead": 6
+   },
+   {
+    "word": "total",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.21,
+    "lead": 6
+   },
+   {
+    "word": "lower",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.11,
+    "lead": 6
+   },
+   {
+    "word": "october",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.11,
+    "lead": 5
+   },
+   {
+    "word": "focus",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.0,
+    "lead": 6
+   },
+   {
+    "word": "photo",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.97,
+    "lead": 6
+   },
+   {
+    "word": "posted",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.97,
+    "lead": 6
+   },
+   {
+    "word": "global",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.95,
+    "lead": 6
+   },
+   {
+    "word": "growing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.94,
+    "lead": 6
+   },
+   {
+    "word": "older",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.92,
+    "lead": 6
+   },
+   {
+    "word": "notice",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.9,
+    "lead": 6
+   },
+   {
+    "word": "holding",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.89,
+    "lead": 6
+   },
+   {
+    "word": "broken",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.88,
+    "lead": 6
+   },
+   {
+    "word": "holy",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.88,
+    "lead": 6
+   },
+   {
+    "word": "showing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.88,
+    "lead": 6
+   },
+   {
+    "word": "mobile",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.85,
+    "lead": 6
+   },
+   {
+    "word": "opened",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.85,
+    "lead": 6
+   },
+   {
+    "word": "mostly",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.83,
+    "lead": 6
+   },
+   {
+    "word": "owner",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.83,
+    "lead": 6
+   },
+   {
+    "word": "knowing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.76,
+    "lead": 6
+   },
+   {
+    "word": "closer",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.73,
+    "lead": 6
+   },
+   {
+    "word": "ocean",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.7,
+    "lead": 6
+   },
+   {
+    "word": "soldiers",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.7,
+    "lead": 6
+   },
+   {
+    "word": "noted",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.69,
+    "lead": 6
+   },
+   {
+    "word": "golden",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.67,
+    "lead": 6
+   },
+   {
+    "word": "hoping",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.67,
+    "lead": 6
+   },
+   {
+    "word": "focused",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.65,
+    "lead": 6
+   },
+   {
+    "word": "owners",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.65,
+    "lead": 6
+   },
+   {
+    "word": "tony",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.64,
+    "lead": 6
+   },
+   {
+    "word": "noticed",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.63,
+    "lead": 6
+   },
+   {
+    "word": "slowly",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.63,
+    "lead": 6
+   },
+   {
+    "word": "moments",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.62,
+    "lead": 6
+   },
+   {
+    "word": "voted",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.62,
+    "lead": 6
+   },
+   {
+    "word": "voting",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.62,
+    "lead": 6
+   },
+   {
+    "word": "chosen",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.61,
+    "lead": 6
+   },
+   {
+    "word": "solo",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.61,
+    "lead": 6
+   }
+  ],
+  [
+   {
+    "word": "make",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 6.08,
+    "lead": 6
+   },
+   {
+    "word": "way",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 6.01,
+    "lead": 6
+   },
+   {
+    "word": "day",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.95,
+    "lead": 6
+   },
+   {
+    "word": "made",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.92,
+    "lead": 6
+   },
+   {
+    "word": "take",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.92,
+    "lead": 6
+   },
+   {
+    "word": "say",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.89,
+    "lead": 6
+   },
+   {
+    "word": "great",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.88,
+    "lead": 6
+   },
+   {
+    "word": "same",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.8,
+    "lead": 6
+   },
+   {
+    "word": "state",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.78,
+    "lead": 6
+   },
+   {
+    "word": "game",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.72,
+    "lead": 6
+   },
+   {
+    "word": "place",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.71,
+    "lead": 6
+   },
+   {
+    "word": "away",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.62,
+    "lead": 5
+   },
+   {
+    "word": "days",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.61,
+    "lead": 6
+   },
+   {
+    "word": "name",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.61,
+    "lead": 6
+   },
+   {
+    "word": "play",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.61,
+    "lead": 6
+   },
+   {
+    "word": "case",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.55,
+    "lead": 6
+   },
+   {
+    "word": "today",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.55,
+    "lead": 5
+   },
+   {
+    "word": "change",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.54,
+    "lead": 6
+   },
+   {
+    "word": "states",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.52,
+    "lead": 6
+   },
+   {
+    "word": "based",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.51,
+    "lead": 6
+   },
+   {
+    "word": "came",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.5,
+    "lead": 6
+   },
+   {
+    "word": "makes",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.46,
+    "lead": 6
+   },
+   {
+    "word": "face",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.45,
+    "lead": 6
+   },
+   {
+    "word": "games",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.44,
+    "lead": 6
+   },
+   {
+    "word": "pay",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.4,
+    "lead": 6
+   },
+   {
+    "word": "wait",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.35,
+    "lead": 6
+   },
+   {
+    "word": "late",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.34,
+    "lead": 6
+   },
+   {
+    "word": "stay",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.33,
+    "lead": 6
+   },
+   {
+    "word": "age",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.32,
+    "lead": 6
+   },
+   {
+    "word": "gave",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.25,
+    "lead": 6
+   },
+   {
+    "word": "main",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.24,
+    "lead": 6
+   },
+   {
+    "word": "played",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.23,
+    "lead": 6
+   },
+   {
+    "word": "re",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.23,
+    "lead": 6
+   },
+   {
+    "word": "space",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.23,
+    "lead": 6
+   },
+   {
+    "word": "date",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.22,
+    "lead": 6
+   },
+   {
+    "word": "break",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.18,
+    "lead": 6
+   },
+   {
+    "word": "takes",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.18,
+    "lead": 6
+   },
+   {
+    "word": "became",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.15,
+    "lead": 5
+   },
+   {
+    "word": "ok",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.14,
+    "lead": 5
+   },
+   {
+    "word": "rate",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.14,
+    "lead": 6
+   }
+  ],
+  [
+   {
+    "word": "going",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.94,
+    "lead": 11
+   },
+   {
+    "word": "open",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.48,
+    "lead": 11
+   },
+   {
+    "word": "local",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.43,
+    "lead": 11
+   },
+   {
+    "word": "social",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.42,
+    "lead": 11
+   },
+   {
+    "word": "moment",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.24,
+    "lead": 11
+   },
+   {
+    "word": "total",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.21,
+    "lead": 11
+   },
+   {
+    "word": "lower",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.11,
+    "lead": 11
+   },
+   {
+    "word": "october",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.11,
+    "lead": 10
+   },
+   {
+    "word": "focus",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.0,
+    "lead": 11
+   },
+   {
+    "word": "photo",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.97,
+    "lead": 11
+   },
+   {
+    "word": "posted",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.97,
+    "lead": 11
+   },
+   {
+    "word": "global",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.95,
+    "lead": 11
+   },
+   {
+    "word": "growing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.94,
+    "lead": 11
+   },
+   {
+    "word": "older",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.92,
+    "lead": 11
+   },
+   {
+    "word": "notice",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.9,
+    "lead": 11
+   },
+   {
+    "word": "holding",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.89,
+    "lead": 11
+   },
+   {
+    "word": "broken",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.88,
+    "lead": 11
+   },
+   {
+    "word": "holy",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.88,
+    "lead": 11
+   },
+   {
+    "word": "showing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.88,
+    "lead": 11
+   },
+   {
+    "word": "mobile",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.85,
+    "lead": 11
+   },
+   {
+    "word": "opened",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.85,
+    "lead": 11
+   },
+   {
+    "word": "mostly",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.83,
+    "lead": 11
+   },
+   {
+    "word": "owner",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.83,
+    "lead": 11
+   },
+   {
+    "word": "knowing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.76,
+    "lead": 11
+   },
+   {
+    "word": "closer",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.73,
+    "lead": 11
+   },
+   {
+    "word": "ocean",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.7,
+    "lead": 11
+   },
+   {
+    "word": "soldiers",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.7,
+    "lead": 11
+   },
+   {
+    "word": "noted",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.69,
+    "lead": 11
+   },
+   {
+    "word": "golden",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.67,
+    "lead": 11
+   },
+   {
+    "word": "hoping",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.67,
+    "lead": 11
+   },
+   {
+    "word": "focused",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.65,
+    "lead": 11
+   },
+   {
+    "word": "owners",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.65,
+    "lead": 11
+   },
+   {
+    "word": "tony",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.64,
+    "lead": 11
+   },
+   {
+    "word": "noticed",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.63,
+    "lead": 11
+   },
+   {
+    "word": "slowly",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.63,
+    "lead": 11
+   },
+   {
+    "word": "moments",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.62,
+    "lead": 11
+   },
+   {
+    "word": "voted",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.62,
+    "lead": 11
+   },
+   {
+    "word": "voting",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.62,
+    "lead": 11
+   },
+   {
+    "word": "chosen",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.61,
+    "lead": 11
+   },
+   {
+    "word": "solo",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.61,
+    "lead": 11
+   }
+  ]
+ ],
+ "sets": [
+  {
+   "words": [
+    "going",
+    "open",
+    "growing",
+    "holding",
+    "broken",
+    "showing",
+    "make",
+    "Snowdon"
+   ],
+   "min": 0.88,
+   "carpet_min": 0.0,
+   "places": 1,
+   "lead": [
+    8,
+    8,
+    6,
+    7,
+    4,
+    6,
+    6,
+    11
+   ],
+   "zipf": 4.96
+  },
+  {
+   "words": [
+    "going",
+    "open",
+    "growing",
+    "holding",
+    "broken",
+    "showing",
+    "way",
+    "Snowdon"
+   ],
+   "min": 0.88,
+   "carpet_min": 0.0,
+   "places": 1,
+   "lead": [
+    8,
+    8,
+    6,
+    7,
+    4,
+    6,
+    6,
+    11
+   ],
+   "zipf": 4.95
+  },
+  {
+   "words": [
+    "going",
+    "open",
+    "growing",
+    "holding",
+    "broken",
+    "showing",
+    "day",
+    "Snowdon"
+   ],
+   "min": 0.88,
+   "carpet_min": 0.0,
+   "places": 1,
+   "lead": [
+    8,
+    8,
+    6,
+    7,
+    4,
+    6,
+    6,
+    11
+   ],
+   "zipf": 4.94
+  },
+  {
+   "words": [
+    "going",
+    "open",
+    "growing",
+    "holding",
+    "broken",
+    "showing",
+    "made",
+    "Snowdon"
+   ],
+   "min": 0.88,
+   "carpet_min": 0.0,
+   "places": 1,
+   "lead": [
+    8,
+    8,
+    6,
+    7,
+    4,
+    6,
+    6,
+    11
+   ],
+   "zipf": 4.94
+  },
+  {
+   "words": [
+    "going",
+    "open",
+    "growing",
+    "holding",
+    "broken",
+    "showing",
+    "take",
+    "Snowdon"
+   ],
+   "min": 0.88,
+   "carpet_min": 0.0,
+   "places": 1,
+   "lead": [
+    8,
+    8,
+    6,
+    7,
+    4,
+    6,
+    6,
+    11
+   ],
+   "zipf": 4.94
+  },
+  {
+   "words": [
+    "going",
+    "open",
+    "growing",
+    "holding",
+    "broken",
+    "showing",
+    "say",
+    "Snowdon"
+   ],
+   "min": 0.88,
+   "carpet_min": 0.0,
+   "places": 1,
+   "lead": [
+    8,
+    8,
+    6,
+    7,
+    4,
+    6,
+    6,
+    11
+   ],
+   "zipf": 4.94
+  }
+ ],
+ "places_known": 113,
+ "supply": 79470
+}

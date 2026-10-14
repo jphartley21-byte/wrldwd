@@ -7,11 +7,42 @@ python toolkit/helpers.py dm WORD [rhy|nry|sl] [min_freq]  # Datamuse rhymes / n
 """
 import json, os, re, sys, urllib.request
 from wordfreq import zipf_frequency
-sys.stdout.reconfigure(encoding="utf-8")
+if hasattr(sys.stdout, "reconfigure"): sys.stdout.reconfigure(encoding="utf-8")
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 VOWELS = "iɪeɛæʌɒʊəuɑɔɜa"
+# CMU phones that are not vowels (match.CMU2IPA covers those), as Britfone-style IPA.
+CMU_CONS = {"B": "b", "CH": "tʃ", "D": "d", "DH": "ð", "F": "f", "G": "g", "HH": "h", "JH": "dʒ", "K": "k",
+            "L": "l", "M": "m", "N": "n", "NG": "ŋ", "P": "p", "R": "ɹ", "S": "s", "SH": "ʃ", "T": "t",
+            "TH": "θ", "V": "v", "W": "w", "Y": "j", "Z": "z", "ZH": "ʒ"}
+# CMU vowels -> British IPA. ONE copy: match.uk_vowels and _ovr_phones both go through cmu_vowels, because
+# two copies of this mapping is exactly how "Zurich" came to be scored without its consonants.
+CMU_VOW = {"AE": "æ", "AO": "ɔː", "AW": "aʊ", "AY": "aɪ", "EH": "e", "EY": "eɪ", "IH": "ɪ", "OW": "əʊ",
+           "OY": "ɔɪ", "UH": "ʊ", "UW": "uː"}
 _BF = None
+
+
+def cmu_vowels(ph, word):
+    """British (vowel, primary_stress) pairs for a CMU phone list. Shared by match.uk_vowels and the
+    Britfone fallback. AA is the two-way one: British /ɑː/ in "bath/grass" words, /ɒ/ otherwise."""
+    out = []
+    for x in ph:
+        base, st = x.rstrip("012"), x[-1] == "1"
+        if base not in CMU_VOW and base not in ("AA", "AH", "ER", "IY"):
+            continue
+        if base == "AA":
+            first = next((c for c in word if c in "aeiou"), "o")
+            v = "ɑː" if first == "a" else "ɒ"
+        elif base == "AH":
+            v = "ʌ" if st else "ə"
+        elif base == "ER":
+            v = "ɜː" if st else "ə"
+        elif base == "IY":
+            v = "iː" if st else "i"
+        else:
+            v = CMU_VOW[base]
+        out.append((v, st))
+    return out
 
 
 def britfone():
@@ -32,8 +63,48 @@ def words(text):
     return re.findall(r"[a-zA-Zå']+", text)
 
 
+def _ovr_phones(w):
+    """British phones for a word Britfone does NOT have, from the CMU dictionary plus the project's OVR
+    table (rhyme_tools), converted to the same IPA tokens Britfone returns.
+
+    Why this exists (13 Oct 2026): without it, word_phones fell through to a VOWELS-ONLY fallback, so every
+    place name missing from Britfone silently lost its consonants. "Zurich" was scored as the vowels (ʊ, ɪ)
+    with no final /k/, which capped Zurich ~ traffic / Munich / panic at 0.80 ("slant") even though all four
+    share the -ɪk rime -- and the same applied to Porto, Bordeaux, Ljubljana, Majorca and the original's own
+    "Spoons". The vowel part comes from match.uk_vowels so the two cannot drift apart; the consonants are the
+    standard CMU phoneset.
+    """
+    from rhyme_tools import pron, uk as drop_r, is_v
+    ph = pron(w)
+    if not ph:
+        return None
+    vowels = cmu_vowels(ph, w)
+    out, vi = [], 0
+    for p in drop_r(ph):
+        if is_v(p):
+            if vi < len(vowels):
+                v, stressed = vowels[vi]
+                vi += 1
+                out.append(("ˈ" if stressed else "") + v)
+            continue
+        cons = CMU_CONS.get(p.rstrip("012"))
+        if cons:
+            out.append(cons)
+    return out or None
+
+
 def uk(word):
+    """British phones from the Britfone DICTIONARY, or None. Dictionary membership is the point: vocab.py
+    decides whether a candidate is junk ("no commonness and no British dictionary entry") with it, so it must
+    not resolve words Britfone does not have. Use uk_phones when you want phones for scoring."""
     return britfone().get(word.lower().strip("'"))
+
+
+def uk_phones(word):
+    """British phones for SCORING: the Britfone dictionary, else the CMU dictionary plus the project's OVR
+    table (see _ovr_phones for why the fallback is needed)."""
+    w = word.lower().strip("'")
+    return britfone().get(w) or _ovr_phones(w)
 
 
 def vowels_of(phones):

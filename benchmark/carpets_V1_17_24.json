@@ -1,0 +1,3022 @@
+{
+ "slot": "V1 17-24",
+ "target": {
+  "slot": "V1 17-24",
+  "targets": [
+   {
+    "bar": 1,
+    "syl": 9,
+    "shape": "|Sw",
+    "shape_class": "Sw",
+    "marker": "|",
+    "vowels": [
+     "ʌ",
+     "ɪ"
+    ],
+    "vowel": "ʌ"
+   },
+   {
+    "bar": 2,
+    "syl": 7,
+    "shape": "|Sww",
+    "shape_class": "Sww",
+    "marker": "|",
+    "vowels": [
+     "ʌ",
+     "ə",
+     "ɪ"
+    ],
+    "vowel": "ʌ"
+   },
+   {
+    "bar": 3,
+    "syl": 11,
+    "shape": "|Sww",
+    "shape_class": "Sww",
+    "marker": "|",
+    "vowels": [
+     "ʌ",
+     "ə",
+     "ɪ"
+    ],
+    "vowel": "ʌ"
+   },
+   {
+    "bar": 4,
+    "syl": 11,
+    "shape": "|Sww",
+    "shape_class": "Sww",
+    "marker": "|",
+    "vowels": [
+     "ʌ",
+     "ə",
+     "ɪ"
+    ],
+    "vowel": "ʌ"
+   },
+   {
+    "bar": 5,
+    "syl": 11,
+    "shape": "|w",
+    "shape_class": "w",
+    "marker": "|",
+    "vowels": [
+     "æ",
+     "ɪ",
+     "ɪ"
+    ],
+    "vowel": "æ"
+   },
+   {
+    "bar": 6,
+    "syl": 10,
+    "shape": "|Sww",
+    "shape_class": "Sww",
+    "marker": "|",
+    "vowels": [
+     "æ",
+     "ə",
+     "ə"
+    ],
+    "vowel": "æ"
+   },
+   {
+    "bar": 7,
+    "syl": 10,
+    "shape": "|w",
+    "shape_class": "w",
+    "marker": "|",
+    "vowels": [
+     "æ",
+     "ɪ",
+     "ɪ"
+    ],
+    "vowel": "æ"
+   },
+   {
+    "bar": 8,
+    "syl": 10,
+    "shape": "|SwS",
+    "shape_class": "SwS",
+    "marker": "|",
+    "vowels": [
+     "æ",
+     "ə",
+     "ə"
+    ],
+    "vowel": "æ"
+   }
+  ],
+  "scheme": "aaaabbbb",
+  "manual_scheme": "AAAABBBB",
+  "carpet": {
+   "pairs": 24,
+   "total": 28,
+   "min": 0.0,
+   "share": 0.86
+  },
+  "rhyme_map": [
+   [
+    "open-end",
+    0,
+    0,
+    0.85
+   ],
+   [
+    "end-end",
+    0,
+    1,
+    0.8
+   ],
+   [
+    "end-end",
+    0,
+    2,
+    0.8
+   ],
+   [
+    "end-end",
+    0,
+    3,
+    1.0
+   ],
+   [
+    "end-end",
+    1,
+    2,
+    1.0
+   ],
+   [
+    "end-end",
+    1,
+    3,
+    0.8
+   ],
+   [
+    "open-end",
+    2,
+    0,
+    0.92
+   ],
+   [
+    "open-end",
+    2,
+    1,
+    0.8
+   ],
+   [
+    "open-end",
+    2,
+    2,
+    0.8
+   ],
+   [
+    "end-end",
+    2,
+    3,
+    0.8
+   ],
+   [
+    "open-end",
+    2,
+    3,
+    0.92
+   ],
+   [
+    "open-end",
+    3,
+    1,
+    0.82
+   ],
+   [
+    "open-end",
+    3,
+    2,
+    0.82
+   ],
+   [
+    "end-end",
+    4,
+    6,
+    1.0
+   ],
+   [
+    "end-end",
+    5,
+    7,
+    1.0
+   ]
+  ],
+  "keys": [
+   [
+    [
+     "ʌ",
+     "ɪ"
+    ],
+    2
+   ],
+   [
+    [
+     "ʌ",
+     "ə",
+     "ɪ"
+    ],
+    3
+   ],
+   [
+    [
+     "ʌ",
+     "ə",
+     "ɪ"
+    ],
+    3
+   ],
+   [
+    [
+     "ʌ",
+     "ə",
+     "ɪ"
+    ],
+    3
+   ],
+   [
+    [
+     "æ",
+     "ɪ",
+     "ɪ"
+    ],
+    3
+   ],
+   [
+    [
+     "æ",
+     "ə",
+     "ə"
+    ],
+    3
+   ],
+   [
+    [
+     "æ",
+     "ɪ",
+     "ɪ"
+    ],
+    3
+   ],
+   [
+    [
+     "æ",
+     "ə",
+     "ə"
+    ],
+    3
+   ]
+  ]
+ },
+ "grouping": "by-ear scheme",
+ "threshold": 0.78,
+ "aim": 0.95,
+ "groups": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   4,
+   5,
+   6,
+   7
+  ]
+ ],
+ "unmet_groups": [
+  [
+   4,
+   5,
+   6,
+   7
+  ]
+ ],
+ "cliques": [
+  [
+   {
+    "bars": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "words": [
+     "getting",
+     "going",
+     "something",
+     "during"
+    ],
+    "min": 1.0,
+    "places": 0,
+    "zipf": 5.76
+   },
+   {
+    "bars": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "words": [
+     "looking",
+     "going",
+     "something",
+     "during"
+    ],
+    "min": 1.0,
+    "places": 0,
+    "zipf": 5.76
+   },
+   {
+    "bars": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "words": [
+     "nothing",
+     "going",
+     "something",
+     "during"
+    ],
+    "min": 1.0,
+    "places": 0,
+    "zipf": 5.755
+   }
+  ]
+ ],
+ "free_bars": [
+  4,
+  5,
+  6,
+  7
+ ],
+ "per_bar": [
+  [
+   {
+    "word": "going",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.94,
+    "lead": 7
+   },
+   {
+    "word": "something",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.81,
+    "lead": 7
+   },
+   {
+    "word": "little",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.75,
+    "lead": 7
+   },
+   {
+    "word": "another",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.74,
+    "lead": 6
+   },
+   {
+    "word": "during",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.72,
+    "lead": 7
+   },
+   {
+    "word": "mr",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.69,
+    "lead": 7
+   },
+   {
+    "word": "money",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.64,
+    "lead": 7
+   },
+   {
+    "word": "number",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.62,
+    "lead": 7
+   },
+   {
+    "word": "city",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.61,
+    "lead": 7
+   },
+   {
+    "word": "getting",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.57,
+    "lead": 7
+   },
+   {
+    "word": "looking",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.57,
+    "lead": 7
+   },
+   {
+    "word": "public",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.57,
+    "lead": 7
+   },
+   {
+    "word": "women",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.57,
+    "lead": 7
+   },
+   {
+    "word": "business",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.56,
+    "lead": 7
+   },
+   {
+    "word": "system",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.56,
+    "lead": 7
+   },
+   {
+    "word": "nothing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.55,
+    "lead": 7
+   },
+   {
+    "word": "making",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.54,
+    "lead": 7
+   },
+   {
+    "word": "including",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.52,
+    "lead": 6
+   },
+   {
+    "word": "music",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.52,
+    "lead": 7
+   },
+   {
+    "word": "service",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.49,
+    "lead": 7
+   },
+   {
+    "word": "country",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.48,
+    "lead": 7
+   },
+   {
+    "word": "children",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.47,
+    "lead": 7
+   },
+   {
+    "word": "united",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.47,
+    "lead": 6
+   },
+   {
+    "word": "using",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.47,
+    "lead": 7
+   },
+   {
+    "word": "following",
+    "place": null,
+    "syl": 3,
+    "shape": "|Sww",
+    "zipf": 5.46,
+    "lead": 6
+   },
+   {
+    "word": "working",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.45,
+    "lead": 7
+   },
+   {
+    "word": "given",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.41,
+    "lead": 7
+   },
+   {
+    "word": "single",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.41,
+    "lead": 7
+   },
+   {
+    "word": "coming",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.4,
+    "lead": 7
+   },
+   {
+    "word": "office",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.4,
+    "lead": 7
+   },
+   {
+    "word": "started",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.39,
+    "lead": 7
+   },
+   {
+    "word": "taking",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.39,
+    "lead": 7
+   },
+   {
+    "word": "pretty",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.38,
+    "lead": 7
+   },
+   {
+    "word": "playing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.37,
+    "lead": 7
+   },
+   {
+    "word": "saying",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.37,
+    "lead": 7
+   },
+   {
+    "word": "wanted",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.36,
+    "lead": 7
+   },
+   {
+    "word": "fucking",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.33,
+    "lead": 7
+   },
+   {
+    "word": "million",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.33,
+    "lead": 7
+   },
+   {
+    "word": "morning",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.33,
+    "lead": 7
+   },
+   {
+    "word": "minutes",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.31,
+    "lead": 7
+   }
+  ],
+  [
+   {
+    "word": "going",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.94,
+    "lead": 5
+   },
+   {
+    "word": "something",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.81,
+    "lead": 5
+   },
+   {
+    "word": "during",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.72,
+    "lead": 5
+   },
+   {
+    "word": "getting",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.57,
+    "lead": 5
+   },
+   {
+    "word": "government",
+    "place": null,
+    "syl": 3,
+    "shape": "|Sww",
+    "zipf": 5.57,
+    "lead": 4
+   },
+   {
+    "word": "looking",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.57,
+    "lead": 5
+   },
+   {
+    "word": "public",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.57,
+    "lead": 5
+   },
+   {
+    "word": "women",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.57,
+    "lead": 5
+   },
+   {
+    "word": "business",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.56,
+    "lead": 5
+   },
+   {
+    "word": "nothing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.55,
+    "lead": 5
+   },
+   {
+    "word": "making",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.54,
+    "lead": 5
+   },
+   {
+    "word": "including",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.52,
+    "lead": 4
+   },
+   {
+    "word": "music",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.52,
+    "lead": 5
+   },
+   {
+    "word": "american",
+    "place": null,
+    "syl": 4,
+    "shape": "~Sww",
+    "zipf": 5.49,
+    "lead": 3
+   },
+   {
+    "word": "service",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.49,
+    "lead": 5
+   },
+   {
+    "word": "united",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.47,
+    "lead": 4
+   },
+   {
+    "word": "using",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.47,
+    "lead": 5
+   },
+   {
+    "word": "following",
+    "place": null,
+    "syl": 3,
+    "shape": "|Sww",
+    "zipf": 5.46,
+    "lead": 4
+   },
+   {
+    "word": "working",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.45,
+    "lead": 5
+   },
+   {
+    "word": "video",
+    "place": null,
+    "syl": 3,
+    "shape": "|Sww",
+    "zipf": 5.43,
+    "lead": 4
+   },
+   {
+    "word": "coming",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.4,
+    "lead": 5
+   },
+   {
+    "word": "office",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.4,
+    "lead": 5
+   },
+   {
+    "word": "started",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.39,
+    "lead": 5
+   },
+   {
+    "word": "taking",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.39,
+    "lead": 5
+   },
+   {
+    "word": "playing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.37,
+    "lead": 5
+   },
+   {
+    "word": "saying",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.37,
+    "lead": 5
+   },
+   {
+    "word": "possible",
+    "place": null,
+    "syl": 3,
+    "shape": "|Sww",
+    "zipf": 5.36,
+    "lead": 4
+   },
+   {
+    "word": "wanted",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.36,
+    "lead": 5
+   },
+   {
+    "word": "fucking",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.33,
+    "lead": 5
+   },
+   {
+    "word": "morning",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.33,
+    "lead": 5
+   },
+   {
+    "word": "development",
+    "place": null,
+    "syl": 4,
+    "shape": "~Sww",
+    "zipf": 5.31,
+    "lead": 3
+   },
+   {
+    "word": "minutes",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.31,
+    "lead": 5
+   },
+   {
+    "word": "services",
+    "place": null,
+    "syl": 3,
+    "shape": "|Sww",
+    "zipf": 5.31,
+    "lead": 4
+   },
+   {
+    "word": "living",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.3,
+    "lead": 5
+   },
+   {
+    "word": "building",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.29,
+    "lead": 5
+   },
+   {
+    "word": "market",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.29,
+    "lead": 5
+   },
+   {
+    "word": "political",
+    "place": null,
+    "syl": 4,
+    "shape": "~Sww",
+    "zipf": 5.29,
+    "lead": 3
+   },
+   {
+    "word": "talking",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.29,
+    "lead": 5
+   },
+   {
+    "word": "according",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.28,
+    "lead": 4
+   },
+   {
+    "word": "available",
+    "place": null,
+    "syl": 4,
+    "shape": "~Sww",
+    "zipf": 5.28,
+    "lead": 3
+   }
+  ],
+  [
+   {
+    "word": "going",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.94,
+    "lead": 9
+   },
+   {
+    "word": "something",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.81,
+    "lead": 9
+   },
+   {
+    "word": "during",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.72,
+    "lead": 9
+   },
+   {
+    "word": "getting",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.57,
+    "lead": 9
+   },
+   {
+    "word": "government",
+    "place": null,
+    "syl": 3,
+    "shape": "|Sww",
+    "zipf": 5.57,
+    "lead": 8
+   },
+   {
+    "word": "looking",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.57,
+    "lead": 9
+   },
+   {
+    "word": "public",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.57,
+    "lead": 9
+   },
+   {
+    "word": "women",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.57,
+    "lead": 9
+   },
+   {
+    "word": "business",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.56,
+    "lead": 9
+   },
+   {
+    "word": "nothing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.55,
+    "lead": 9
+   },
+   {
+    "word": "making",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.54,
+    "lead": 9
+   },
+   {
+    "word": "including",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.52,
+    "lead": 8
+   },
+   {
+    "word": "music",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.52,
+    "lead": 9
+   },
+   {
+    "word": "american",
+    "place": null,
+    "syl": 4,
+    "shape": "~Sww",
+    "zipf": 5.49,
+    "lead": 7
+   },
+   {
+    "word": "service",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.49,
+    "lead": 9
+   },
+   {
+    "word": "united",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.47,
+    "lead": 8
+   },
+   {
+    "word": "using",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.47,
+    "lead": 9
+   },
+   {
+    "word": "following",
+    "place": null,
+    "syl": 3,
+    "shape": "|Sww",
+    "zipf": 5.46,
+    "lead": 8
+   },
+   {
+    "word": "working",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.45,
+    "lead": 9
+   },
+   {
+    "word": "video",
+    "place": null,
+    "syl": 3,
+    "shape": "|Sww",
+    "zipf": 5.43,
+    "lead": 8
+   },
+   {
+    "word": "coming",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.4,
+    "lead": 9
+   },
+   {
+    "word": "office",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.4,
+    "lead": 9
+   },
+   {
+    "word": "started",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.39,
+    "lead": 9
+   },
+   {
+    "word": "taking",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.39,
+    "lead": 9
+   },
+   {
+    "word": "playing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.37,
+    "lead": 9
+   },
+   {
+    "word": "saying",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.37,
+    "lead": 9
+   },
+   {
+    "word": "possible",
+    "place": null,
+    "syl": 3,
+    "shape": "|Sww",
+    "zipf": 5.36,
+    "lead": 8
+   },
+   {
+    "word": "wanted",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.36,
+    "lead": 9
+   },
+   {
+    "word": "fucking",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.33,
+    "lead": 9
+   },
+   {
+    "word": "morning",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.33,
+    "lead": 9
+   },
+   {
+    "word": "development",
+    "place": null,
+    "syl": 4,
+    "shape": "~Sww",
+    "zipf": 5.31,
+    "lead": 7
+   },
+   {
+    "word": "minutes",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.31,
+    "lead": 9
+   },
+   {
+    "word": "services",
+    "place": null,
+    "syl": 3,
+    "shape": "|Sww",
+    "zipf": 5.31,
+    "lead": 8
+   },
+   {
+    "word": "living",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.3,
+    "lead": 9
+   },
+   {
+    "word": "building",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.29,
+    "lead": 9
+   },
+   {
+    "word": "market",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.29,
+    "lead": 9
+   },
+   {
+    "word": "political",
+    "place": null,
+    "syl": 4,
+    "shape": "~Sww",
+    "zipf": 5.29,
+    "lead": 7
+   },
+   {
+    "word": "talking",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.29,
+    "lead": 9
+   },
+   {
+    "word": "according",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.28,
+    "lead": 8
+   },
+   {
+    "word": "available",
+    "place": null,
+    "syl": 4,
+    "shape": "~Sww",
+    "zipf": 5.28,
+    "lead": 7
+   }
+  ],
+  [
+   {
+    "word": "going",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.94,
+    "lead": 9
+   },
+   {
+    "word": "something",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.81,
+    "lead": 9
+   },
+   {
+    "word": "during",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.72,
+    "lead": 9
+   },
+   {
+    "word": "getting",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.57,
+    "lead": 9
+   },
+   {
+    "word": "government",
+    "place": null,
+    "syl": 3,
+    "shape": "|Sww",
+    "zipf": 5.57,
+    "lead": 8
+   },
+   {
+    "word": "looking",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.57,
+    "lead": 9
+   },
+   {
+    "word": "public",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.57,
+    "lead": 9
+   },
+   {
+    "word": "women",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.57,
+    "lead": 9
+   },
+   {
+    "word": "business",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.56,
+    "lead": 9
+   },
+   {
+    "word": "nothing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.55,
+    "lead": 9
+   },
+   {
+    "word": "making",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.54,
+    "lead": 9
+   },
+   {
+    "word": "including",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.52,
+    "lead": 8
+   },
+   {
+    "word": "music",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.52,
+    "lead": 9
+   },
+   {
+    "word": "american",
+    "place": null,
+    "syl": 4,
+    "shape": "~Sww",
+    "zipf": 5.49,
+    "lead": 7
+   },
+   {
+    "word": "service",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.49,
+    "lead": 9
+   },
+   {
+    "word": "united",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.47,
+    "lead": 8
+   },
+   {
+    "word": "using",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.47,
+    "lead": 9
+   },
+   {
+    "word": "following",
+    "place": null,
+    "syl": 3,
+    "shape": "|Sww",
+    "zipf": 5.46,
+    "lead": 8
+   },
+   {
+    "word": "working",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.45,
+    "lead": 9
+   },
+   {
+    "word": "video",
+    "place": null,
+    "syl": 3,
+    "shape": "|Sww",
+    "zipf": 5.43,
+    "lead": 8
+   },
+   {
+    "word": "coming",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.4,
+    "lead": 9
+   },
+   {
+    "word": "office",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.4,
+    "lead": 9
+   },
+   {
+    "word": "started",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.39,
+    "lead": 9
+   },
+   {
+    "word": "taking",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.39,
+    "lead": 9
+   },
+   {
+    "word": "playing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.37,
+    "lead": 9
+   },
+   {
+    "word": "saying",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.37,
+    "lead": 9
+   },
+   {
+    "word": "possible",
+    "place": null,
+    "syl": 3,
+    "shape": "|Sww",
+    "zipf": 5.36,
+    "lead": 8
+   },
+   {
+    "word": "wanted",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.36,
+    "lead": 9
+   },
+   {
+    "word": "fucking",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.33,
+    "lead": 9
+   },
+   {
+    "word": "morning",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.33,
+    "lead": 9
+   },
+   {
+    "word": "development",
+    "place": null,
+    "syl": 4,
+    "shape": "~Sww",
+    "zipf": 5.31,
+    "lead": 7
+   },
+   {
+    "word": "minutes",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.31,
+    "lead": 9
+   },
+   {
+    "word": "services",
+    "place": null,
+    "syl": 3,
+    "shape": "|Sww",
+    "zipf": 5.31,
+    "lead": 8
+   },
+   {
+    "word": "living",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.3,
+    "lead": 9
+   },
+   {
+    "word": "building",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.29,
+    "lead": 9
+   },
+   {
+    "word": "market",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.29,
+    "lead": 9
+   },
+   {
+    "word": "political",
+    "place": null,
+    "syl": 4,
+    "shape": "~Sww",
+    "zipf": 5.29,
+    "lead": 7
+   },
+   {
+    "word": "talking",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.29,
+    "lead": 9
+   },
+   {
+    "word": "according",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.28,
+    "lead": 8
+   },
+   {
+    "word": "available",
+    "place": null,
+    "syl": 4,
+    "shape": "~Sww",
+    "zipf": 5.28,
+    "lead": 7
+   }
+  ],
+  [
+   {
+    "word": "think",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 6.08,
+    "lead": 10
+   },
+   {
+    "word": "back",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 6.04,
+    "lead": 10
+   },
+   {
+    "word": "going",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.94,
+    "lead": 9
+   },
+   {
+    "word": "man",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.82,
+    "lead": 10
+   },
+   {
+    "word": "something",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.81,
+    "lead": 9
+   },
+   {
+    "word": "little",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.75,
+    "lead": 9
+   },
+   {
+    "word": "since",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.75,
+    "lead": 10
+   },
+   {
+    "word": "things",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.74,
+    "lead": 10
+   },
+   {
+    "word": "during",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.72,
+    "lead": 9
+   },
+   {
+    "word": "thing",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.72,
+    "lead": 10
+   },
+   {
+    "word": "give",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.71,
+    "lead": 10
+   },
+   {
+    "word": "mr",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.69,
+    "lead": 9
+   },
+   {
+    "word": "big",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.67,
+    "lead": 10
+   },
+   {
+    "word": "family",
+    "place": null,
+    "syl": 2,
+    "shape": "~ww",
+    "zipf": 5.66,
+    "lead": 9
+   },
+   {
+    "word": "city",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.61,
+    "lead": 9
+   },
+   {
+    "word": "until",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.61,
+    "lead": 9
+   },
+   {
+    "word": "different",
+    "place": null,
+    "syl": 2,
+    "shape": "~ww",
+    "zipf": 5.59,
+    "lead": 9
+   },
+   {
+    "word": "getting",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.57,
+    "lead": 9
+   },
+   {
+    "word": "looking",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.57,
+    "lead": 9
+   },
+   {
+    "word": "public",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.57,
+    "lead": 9
+   },
+   {
+    "word": "women",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.57,
+    "lead": 9
+   },
+   {
+    "word": "business",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.56,
+    "lead": 9
+   },
+   {
+    "word": "system",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.56,
+    "lead": 9
+   },
+   {
+    "word": "anything",
+    "place": null,
+    "syl": 3,
+    "shape": "|SwS",
+    "zipf": 5.55,
+    "lead": 8
+   },
+   {
+    "word": "nothing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.55,
+    "lead": 9
+   },
+   {
+    "word": "everything",
+    "place": null,
+    "syl": 3,
+    "shape": "|SwS",
+    "zipf": 5.54,
+    "lead": 8
+   },
+   {
+    "word": "live",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.54,
+    "lead": 10
+   },
+   {
+    "word": "making",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.54,
+    "lead": 9
+   },
+   {
+    "word": "bad",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.53,
+    "lead": 10
+   },
+   {
+    "word": "including",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.52,
+    "lead": 8
+   },
+   {
+    "word": "music",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.52,
+    "lead": 9
+   },
+   {
+    "word": "national",
+    "place": null,
+    "syl": 2,
+    "shape": "~ww",
+    "zipf": 5.51,
+    "lead": 9
+   },
+   {
+    "word": "actually",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sww",
+    "zipf": 5.49,
+    "lead": 8
+   },
+   {
+    "word": "service",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.49,
+    "lead": 9
+   },
+   {
+    "word": "shit",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.48,
+    "lead": 10
+   },
+   {
+    "word": "thank",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.48,
+    "lead": 10
+   },
+   {
+    "word": "children",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.47,
+    "lead": 9
+   },
+   {
+    "word": "united",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.47,
+    "lead": 8
+   },
+   {
+    "word": "using",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.47,
+    "lead": 9
+   },
+   {
+    "word": "Black",
+    "place": "travel_history.md",
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.46,
+    "lead": 10
+   }
+  ],
+  [
+   {
+    "word": "people",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 6.25,
+    "lead": 8
+   },
+   {
+    "word": "after",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 6.11,
+    "lead": 8
+   },
+   {
+    "word": "better",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.76,
+    "lead": 8
+   },
+   {
+    "word": "little",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.75,
+    "lead": 8
+   },
+   {
+    "word": "another",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.74,
+    "lead": 7
+   },
+   {
+    "word": "mr",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.69,
+    "lead": 8
+   },
+   {
+    "word": "second",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.63,
+    "lead": 8
+   },
+   {
+    "word": "number",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.62,
+    "lead": 8
+   },
+   {
+    "word": "different",
+    "place": null,
+    "syl": 2,
+    "shape": "~ww",
+    "zipf": 5.59,
+    "lead": 8
+   },
+   {
+    "word": "however",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.58,
+    "lead": 7
+   },
+   {
+    "word": "government",
+    "place": null,
+    "syl": 3,
+    "shape": "|Sww",
+    "zipf": 5.57,
+    "lead": 7
+   },
+   {
+    "word": "system",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.56,
+    "lead": 8
+   },
+   {
+    "word": "person",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.55,
+    "lead": 8
+   },
+   {
+    "word": "power",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.52,
+    "lead": 8
+   },
+   {
+    "word": "water",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.52,
+    "lead": 8
+   },
+   {
+    "word": "national",
+    "place": null,
+    "syl": 2,
+    "shape": "~ww",
+    "zipf": 5.51,
+    "lead": 8
+   },
+   {
+    "word": "actually",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sww",
+    "zipf": 5.49,
+    "lead": 7
+   },
+   {
+    "word": "american",
+    "place": null,
+    "syl": 4,
+    "shape": "~Sww",
+    "zipf": 5.49,
+    "lead": 6
+   },
+   {
+    "word": "later",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.49,
+    "lead": 8
+   },
+   {
+    "word": "order",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.49,
+    "lead": 8
+   },
+   {
+    "word": "open",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.48,
+    "lead": 8
+   },
+   {
+    "word": "season",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.48,
+    "lead": 8
+   },
+   {
+    "word": "children",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.47,
+    "lead": 8
+   },
+   {
+    "word": "general",
+    "place": null,
+    "syl": 2,
+    "shape": "~ww",
+    "zipf": 5.47,
+    "lead": 8
+   },
+   {
+    "word": "together",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.46,
+    "lead": 7
+   },
+   {
+    "word": "important",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.44,
+    "lead": 7
+   },
+   {
+    "word": "able",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.43,
+    "lead": 8
+   },
+   {
+    "word": "information",
+    "place": null,
+    "syl": 4,
+    "shape": "~Sw",
+    "zipf": 5.43,
+    "lead": 6
+   },
+   {
+    "word": "local",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.43,
+    "lead": 8
+   },
+   {
+    "word": "social",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.42,
+    "lead": 8
+   },
+   {
+    "word": "given",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.41,
+    "lead": 8
+   },
+   {
+    "word": "level",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.41,
+    "lead": 8
+   },
+   {
+    "word": "often",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.41,
+    "lead": 8
+   },
+   {
+    "word": "single",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.41,
+    "lead": 8
+   },
+   {
+    "word": "hours",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.4,
+    "lead": 8
+   },
+   {
+    "word": "problem",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.4,
+    "lead": 8
+   },
+   {
+    "word": "several",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.39,
+    "lead": 8
+   },
+   {
+    "word": "matter",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.38,
+    "lead": 8
+   },
+   {
+    "word": "remember",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.38,
+    "lead": 7
+   },
+   {
+    "word": "possible",
+    "place": null,
+    "syl": 3,
+    "shape": "|Sww",
+    "zipf": 5.36,
+    "lead": 7
+   }
+  ],
+  [
+   {
+    "word": "think",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 6.08,
+    "lead": 9
+   },
+   {
+    "word": "back",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 6.04,
+    "lead": 9
+   },
+   {
+    "word": "going",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.94,
+    "lead": 8
+   },
+   {
+    "word": "man",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.82,
+    "lead": 9
+   },
+   {
+    "word": "something",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.81,
+    "lead": 8
+   },
+   {
+    "word": "little",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.75,
+    "lead": 8
+   },
+   {
+    "word": "since",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.75,
+    "lead": 9
+   },
+   {
+    "word": "things",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.74,
+    "lead": 9
+   },
+   {
+    "word": "during",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.72,
+    "lead": 8
+   },
+   {
+    "word": "thing",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.72,
+    "lead": 9
+   },
+   {
+    "word": "give",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.71,
+    "lead": 9
+   },
+   {
+    "word": "mr",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.69,
+    "lead": 8
+   },
+   {
+    "word": "big",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.67,
+    "lead": 9
+   },
+   {
+    "word": "family",
+    "place": null,
+    "syl": 2,
+    "shape": "~ww",
+    "zipf": 5.66,
+    "lead": 8
+   },
+   {
+    "word": "city",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.61,
+    "lead": 8
+   },
+   {
+    "word": "until",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.61,
+    "lead": 8
+   },
+   {
+    "word": "different",
+    "place": null,
+    "syl": 2,
+    "shape": "~ww",
+    "zipf": 5.59,
+    "lead": 8
+   },
+   {
+    "word": "getting",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.57,
+    "lead": 8
+   },
+   {
+    "word": "looking",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.57,
+    "lead": 8
+   },
+   {
+    "word": "public",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.57,
+    "lead": 8
+   },
+   {
+    "word": "women",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.57,
+    "lead": 8
+   },
+   {
+    "word": "business",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.56,
+    "lead": 8
+   },
+   {
+    "word": "system",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.56,
+    "lead": 8
+   },
+   {
+    "word": "anything",
+    "place": null,
+    "syl": 3,
+    "shape": "|SwS",
+    "zipf": 5.55,
+    "lead": 7
+   },
+   {
+    "word": "nothing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.55,
+    "lead": 8
+   },
+   {
+    "word": "everything",
+    "place": null,
+    "syl": 3,
+    "shape": "|SwS",
+    "zipf": 5.54,
+    "lead": 7
+   },
+   {
+    "word": "live",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.54,
+    "lead": 9
+   },
+   {
+    "word": "making",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.54,
+    "lead": 8
+   },
+   {
+    "word": "bad",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.53,
+    "lead": 9
+   },
+   {
+    "word": "including",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.52,
+    "lead": 7
+   },
+   {
+    "word": "music",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.52,
+    "lead": 8
+   },
+   {
+    "word": "national",
+    "place": null,
+    "syl": 2,
+    "shape": "~ww",
+    "zipf": 5.51,
+    "lead": 8
+   },
+   {
+    "word": "actually",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sww",
+    "zipf": 5.49,
+    "lead": 7
+   },
+   {
+    "word": "service",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.49,
+    "lead": 8
+   },
+   {
+    "word": "shit",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.48,
+    "lead": 9
+   },
+   {
+    "word": "thank",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.48,
+    "lead": 9
+   },
+   {
+    "word": "children",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.47,
+    "lead": 8
+   },
+   {
+    "word": "united",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.47,
+    "lead": 7
+   },
+   {
+    "word": "using",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.47,
+    "lead": 8
+   },
+   {
+    "word": "Black",
+    "place": "travel_history.md",
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.46,
+    "lead": 9
+   }
+  ],
+  [
+   {
+    "word": "president",
+    "place": null,
+    "syl": 3,
+    "shape": "|SwS",
+    "zipf": 5.45,
+    "lead": 7
+   },
+   {
+    "word": "anyone",
+    "place": null,
+    "syl": 3,
+    "shape": "|SwS",
+    "zipf": 5.38,
+    "lead": 7
+   },
+   {
+    "word": "reality",
+    "place": null,
+    "syl": 4,
+    "shape": "~SwS",
+    "zipf": 4.89,
+    "lead": 6
+   },
+   {
+    "word": "magazine",
+    "place": null,
+    "syl": 3,
+    "shape": "|SwS",
+    "zipf": 4.74,
+    "lead": 7
+   },
+   {
+    "word": "alcohol",
+    "place": null,
+    "syl": 3,
+    "shape": "|SwS",
+    "zipf": 4.61,
+    "lead": 7
+   },
+   {
+    "word": "attitude",
+    "place": null,
+    "syl": 3,
+    "shape": "|SwS",
+    "zipf": 4.58,
+    "lead": 7
+   },
+   {
+    "word": "amazon",
+    "place": null,
+    "syl": 3,
+    "shape": "|SwS",
+    "zipf": 4.55,
+    "lead": 7
+   },
+   {
+    "word": "absolute",
+    "place": null,
+    "syl": 3,
+    "shape": "|SwS",
+    "zipf": 4.54,
+    "lead": 7
+   },
+   {
+    "word": "democrats",
+    "place": null,
+    "syl": 3,
+    "shape": "|SwS",
+    "zipf": 4.54,
+    "lead": 7
+   },
+   {
+    "word": "le",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.5,
+    "lead": 9
+   },
+   {
+    "word": "atmosphere",
+    "place": null,
+    "syl": 3,
+    "shape": "|SwS",
+    "zipf": 4.46,
+    "lead": 7
+   },
+   {
+    "word": "retired",
+    "place": null,
+    "syl": 3,
+    "shape": "|wS",
+    "zipf": 4.44,
+    "lead": 7
+   },
+   {
+    "word": "avenue",
+    "place": null,
+    "syl": 3,
+    "shape": "|SwS",
+    "zipf": 4.43,
+    "lead": 7
+   },
+   {
+    "word": "satellite",
+    "place": null,
+    "syl": 3,
+    "shape": "|SwS",
+    "zipf": 4.33,
+    "lead": 7
+   },
+   {
+    "word": "sacrifice",
+    "place": null,
+    "syl": 3,
+    "shape": "|SwS",
+    "zipf": 4.29,
+    "lead": 7
+   },
+   {
+    "word": "satisfied",
+    "place": null,
+    "syl": 3,
+    "shape": "|SwS",
+    "zipf": 4.28,
+    "lead": 7
+   },
+   {
+    "word": "parallel",
+    "place": null,
+    "syl": 3,
+    "shape": "|SwS",
+    "zipf": 4.27,
+    "lead": 7
+   },
+   {
+    "word": "anime",
+    "place": null,
+    "syl": 3,
+    "shape": "|SwS",
+    "zipf": 4.26,
+    "lead": 7
+   },
+   {
+    "word": "classified",
+    "place": null,
+    "syl": 3,
+    "shape": "|SwS",
+    "zipf": 4.26,
+    "lead": 7
+   },
+   {
+    "word": "democrat",
+    "place": null,
+    "syl": 3,
+    "shape": "|SwS",
+    "zipf": 4.24,
+    "lead": 7
+   },
+   {
+    "word": "er",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.24,
+    "lead": 9
+   },
+   {
+    "word": "afghanistan",
+    "place": null,
+    "syl": 4,
+    "shape": "~SwS",
+    "zipf": 4.23,
+    "lead": 6
+   },
+   {
+    "word": "queensland",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 4.23,
+    "lead": 8
+   },
+   {
+    "word": "amateur",
+    "place": null,
+    "syl": 3,
+    "shape": "|SwS",
+    "zipf": 4.22,
+    "lead": 7
+   },
+   {
+    "word": "birmingham",
+    "place": null,
+    "syl": 3,
+    "shape": "|SwS",
+    "zipf": 4.18,
+    "lead": 7
+   },
+   {
+    "word": "marathon",
+    "place": null,
+    "syl": 3,
+    "shape": "|SwS",
+    "zipf": 4.16,
+    "lead": 7
+   },
+   {
+    "word": "paradise",
+    "place": null,
+    "syl": 3,
+    "shape": "|SwS",
+    "zipf": 4.16,
+    "lead": 7
+   },
+   {
+    "word": "phenomenon",
+    "place": null,
+    "syl": 4,
+    "shape": "~SwS",
+    "zipf": 4.13,
+    "lead": 6
+   },
+   {
+    "word": "um",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.13,
+    "lead": 9
+   },
+   {
+    "word": "magazines",
+    "place": null,
+    "syl": 3,
+    "shape": "|SwS",
+    "zipf": 4.07,
+    "lead": 7
+   },
+   {
+    "word": "retire",
+    "place": null,
+    "syl": 3,
+    "shape": "|wS",
+    "zipf": 4.05,
+    "lead": 7
+   },
+   {
+    "word": "lineup",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 4.04,
+    "lead": 8
+   },
+   {
+    "word": "Amsterdam",
+    "place": "travel_history.md",
+    "syl": 3,
+    "shape": "|SwS",
+    "zipf": 4.03,
+    "lead": 7
+   },
+   {
+    "word": "paragraph",
+    "place": null,
+    "syl": 3,
+    "shape": "|SwS",
+    "zipf": 4.03,
+    "lead": 7
+   },
+   {
+    "word": "bernard",
+    "place": null,
+    "syl": 2,
+    "shape": "|wS",
+    "zipf": 4.02,
+    "lead": 8
+   },
+   {
+    "word": "attitudes",
+    "place": null,
+    "syl": 3,
+    "shape": "|SwS",
+    "zipf": 4.01,
+    "lead": 7
+   },
+   {
+    "word": "caroline",
+    "place": null,
+    "syl": 3,
+    "shape": "|SwS",
+    "zipf": 4.01,
+    "lead": 7
+   },
+   {
+    "word": "evaluate",
+    "place": null,
+    "syl": 4,
+    "shape": "~SwS",
+    "zipf": 4.01,
+    "lead": 6
+   },
+   {
+    "word": "inspire",
+    "place": null,
+    "syl": 3,
+    "shape": "|SS",
+    "zipf": 4.0,
+    "lead": 7
+   },
+   {
+    "word": "magnitude",
+    "place": null,
+    "syl": 3,
+    "shape": "|SwS",
+    "zipf": 4.0,
+    "lead": 7
+   }
+  ]
+ ],
+ "sets": [
+  {
+   "words": [
+    "getting",
+    "going",
+    "something",
+    "during",
+    "think",
+    "people",
+    "think",
+    "president"
+   ],
+   "min": 1.0,
+   "carpet_min": 0.0,
+   "places": 0,
+   "lead": [
+    7,
+    5,
+    9,
+    9,
+    10,
+    8,
+    9,
+    7
+   ],
+   "zipf": 5.86
+  },
+  {
+   "words": [
+    "getting",
+    "going",
+    "something",
+    "during",
+    "think",
+    "people",
+    "back",
+    "president"
+   ],
+   "min": 1.0,
+   "carpet_min": 0.0,
+   "places": 0,
+   "lead": [
+    7,
+    5,
+    9,
+    9,
+    10,
+    8,
+    9,
+    7
+   ],
+   "zipf": 5.86
+  },
+  {
+   "words": [
+    "getting",
+    "going",
+    "something",
+    "during",
+    "back",
+    "people",
+    "think",
+    "president"
+   ],
+   "min": 1.0,
+   "carpet_min": 0.0,
+   "places": 0,
+   "lead": [
+    7,
+    5,
+    9,
+    9,
+    10,
+    8,
+    9,
+    7
+   ],
+   "zipf": 5.86
+  }
+ ],
+ "places_known": 113,
+ "supply": 79470
+}

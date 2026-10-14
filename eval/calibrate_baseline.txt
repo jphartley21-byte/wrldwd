@@ -1,0 +1,40 @@
+ok  original vs own profile Hook 1-4: ok (by-ear scheme is the spec)
+ok  original vs own profile Hook 5-8: ok (by-ear scheme is the spec)
+ok  original vs own profile Hook 9-16: ok (by-ear scheme is the spec)
+ok  original vs own profile V1 1-8: ok (by-ear scheme is the spec)
+ok  original vs own profile V1 9-16: ok (by-ear scheme is the spec)
+ok  original vs own profile V1 17-24: ok (by-ear scheme is the spec)
+ok  original vs own profile V1 25-32: ok (by-ear scheme is the spec)
+ok  original vs own profile V1 33-44: ok (by-ear scheme is the spec)
+ok  original vs own profile V2 1-8: ok (by-ear scheme is the spec)
+ok  original vs own profile V2 9-16: ok (by-ear scheme is the spec)
+ok  original vs own flow templates: 66/76
+ok  Joe-rejected rejected_v10_iom.txt is caught: form NOT YET (7 fails) / flow NOT YET (2 bars off t
+ok  Joe-rejected rejected_v12_hook915.txt is caught: form NOT YET (5 fails) / flow NOT YET (3 bars off t
+ok  Joe-rejected rejected_v12_snowdon.txt is caught: form NOT YET (2 fails) / flow NOT YET (7 bars off t
+ok  Joe-rejected rejected_v14_majorca.txt is caught: form NOT YET (1 fails) / flow NOT YET (2 bars off t
+ok  Joe-rejected rejected_v7_iom.txt is caught: form NOT YET (7 fails) / flow NOT YET (1 bars off t
+ok  Joe-rejected rejected_v9_iom.txt is caught: form NOT YET (10 fails) / flow NOT YET (2 bars off t
+ok  Joe's locked bars 1-4 pass the by-ear scheme
+ok  meaning_gate selftest: passes locked bars, catches a known-bad stanza
+ok  rhyme verdicts by ear: all 12 asserted pairs hold, 1 unspecified
+ok  vocab ledger selftest: G2 separates common from obscure, upsert and filter hold
+ok  trybars selftest: block parsing, tail families and the form memo hold
+ok  tryforms selftest: pool parsing, scheme pairs and the wrong-length guard hold
+ok  bank selftest: phrases resolve to end sounds and the UK everyday list holds
+ok  carpet selftest: grouping, shape/budget filtering and the clique search hold
+ok  phrase_audit selftest: duplicates, repeated openers, repeated phrases and the comma rate are all caught
+ok  phrase_audit vs the original: the original clears every repetition threshold (its chorus repeat is exempt by design)
+ok  meaning_judge selftest: the parser reads fenced, padded and string kinds and the verdict rule rejects lists
+ok  meaning_gate inventory rule vs the original: fires on none of the original's lines
+ok  devices selftest: simile/metaphor/bathos/litotes/hyperbole/anaphora fire on fixtures, quiet on reportage
+ok  regression gates selftest: approved bars pass all three, both weak blocks fail at least one
+ok  level gates (line/quad/verse/hook/song) hold on the original: all levels PASS
+ok  ear devices (pivot / drum / echo / crutch): the original's couplet fires both, Joe's bars carry a device and no crutch, our filler is caught
+ok  image chains (develop + land on the rhyme, bridge words): a chain that lands is found, flat bars stay quiet, a two-field word reads as a bridge
+ok  pun proxy selftest: unexpectedness and second-reading lookups hold
+CALIBRATION PASSED
+
+real	0m36.576s
+user	0m0.030s
+sys	0m0.015s

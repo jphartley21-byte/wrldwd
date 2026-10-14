@@ -1,0 +1,2994 @@
+{
+ "slot": "Hook 9-16",
+ "target": {
+  "slot": "Hook 9-16",
+  "targets": [
+   {
+    "bar": 1,
+    "syl": 7,
+    "shape": "|S",
+    "shape_class": "S",
+    "marker": "|",
+    "vowels": [
+     "ɑː"
+    ],
+    "vowel": "ɑː"
+   },
+   {
+    "bar": 2,
+    "syl": 9,
+    "shape": "|S",
+    "shape_class": "S",
+    "marker": "|",
+    "vowels": [
+     "ɒ"
+    ],
+    "vowel": "ɒ"
+   },
+   {
+    "bar": 3,
+    "syl": 8,
+    "shape": "~Sw",
+    "shape_class": "Sw",
+    "marker": "~",
+    "vowels": [
+     "eɪ",
+     "ə"
+    ],
+    "vowel": "eɪ"
+   },
+   {
+    "bar": 4,
+    "syl": 9,
+    "shape": "|S",
+    "shape_class": "S",
+    "marker": "|",
+    "vowels": [
+     "ɑː"
+    ],
+    "vowel": "ɑː"
+   },
+   {
+    "bar": 5,
+    "syl": 12,
+    "shape": "|S",
+    "shape_class": "S",
+    "marker": "|",
+    "vowels": [
+     "ɪ"
+    ],
+    "vowel": "ɪ"
+   },
+   {
+    "bar": 6,
+    "syl": 5,
+    "shape": "|S",
+    "shape_class": "S",
+    "marker": "|",
+    "vowels": [
+     "aɪ"
+    ],
+    "vowel": "aɪ"
+   },
+   {
+    "bar": 7,
+    "syl": 8,
+    "shape": "|S",
+    "shape_class": "S",
+    "marker": "|",
+    "vowels": [
+     "aʊ"
+    ],
+    "vowel": "aʊ"
+   },
+   {
+    "bar": 8,
+    "syl": 7,
+    "shape": "|S",
+    "shape_class": "S",
+    "marker": "|",
+    "vowels": [
+     "eɪ"
+    ],
+    "vowel": "eɪ"
+   }
+  ],
+  "scheme": "abcadcec",
+  "manual_scheme": "AABACBDB",
+  "carpet": {
+   "pairs": 4,
+   "total": 28,
+   "min": 0.0,
+   "share": 0.14
+  },
+  "keys": [
+   [
+    [
+     "ɑː"
+    ],
+    1
+   ],
+   [
+    [
+     "ɒ"
+    ],
+    1
+   ],
+   [
+    [
+     "eɪ",
+     "ə"
+    ],
+    2
+   ],
+   [
+    [
+     "ɑː"
+    ],
+    1
+   ],
+   [
+    [
+     "ɪ"
+    ],
+    1
+   ],
+   [
+    [
+     "aɪ"
+    ],
+    1
+   ],
+   [
+    [
+     "aʊ"
+    ],
+    1
+   ],
+   [
+    [
+     "eɪ"
+    ],
+    1
+   ]
+  ]
+ },
+ "grouping": "scheme+vowel+shape",
+ "threshold": 0.78,
+ "aim": 0.95,
+ "groups": [
+  [
+   0,
+   3
+  ]
+ ],
+ "unmet_groups": [],
+ "cliques": [
+  [
+   {
+    "bars": [
+     0,
+     3
+    ],
+    "words": [
+     "last",
+     "part"
+    ],
+    "min": 1.0,
+    "places": 0,
+    "zipf": 5.82
+   },
+   {
+    "bars": [
+     0,
+     3
+    ],
+    "words": [
+     "last",
+     "start"
+    ],
+    "min": 1.0,
+    "places": 0,
+    "zipf": 5.71
+   },
+   {
+    "bars": [
+     0,
+     3
+    ],
+    "words": [
+     "last",
+     "past"
+    ],
+    "min": 1.0,
+    "places": 0,
+    "zipf": 5.61
+   },
+   {
+    "bars": [
+     0,
+     3
+    ],
+    "words": [
+     "last",
+     "heart"
+    ],
+    "min": 1.0,
+    "places": 0,
+    "zipf": 5.585
+   },
+   {
+    "bars": [
+     0,
+     3
+    ],
+    "words": [
+     "last",
+     "asked"
+    ],
+    "min": 1.0,
+    "places": 0,
+    "zipf": 5.58
+   },
+   {
+    "bars": [
+     0,
+     3
+    ],
+    "words": [
+     "last",
+     "art"
+    ],
+    "min": 1.0,
+    "places": 0,
+    "zipf": 5.575
+   }
+  ]
+ ],
+ "free_bars": [
+  1,
+  2,
+  4,
+  5,
+  6,
+  7
+ ],
+ "per_bar": [
+  [
+   {
+    "word": "last",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.86,
+    "lead": 6
+   },
+   {
+    "word": "part",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.78,
+    "lead": 6
+   },
+   {
+    "word": "start",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.56,
+    "lead": 6
+   },
+   {
+    "word": "hard",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.53,
+    "lead": 6
+   },
+   {
+    "word": "far",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.5,
+    "lead": 6
+   },
+   {
+    "word": "car",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.45,
+    "lead": 6
+   },
+   {
+    "word": "half",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.41,
+    "lead": 6
+   },
+   {
+    "word": "large",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.39,
+    "lead": 6
+   },
+   {
+    "word": "class",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.36,
+    "lead": 6
+   },
+   {
+    "word": "past",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.36,
+    "lead": 6
+   },
+   {
+    "word": "ask",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.34,
+    "lead": 6
+   },
+   {
+    "word": "heart",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.31,
+    "lead": 6
+   },
+   {
+    "word": "asked",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.3,
+    "lead": 6
+   },
+   {
+    "word": "art",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.29,
+    "lead": 6
+   },
+   {
+    "word": "chance",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.26,
+    "lead": 6
+   },
+   {
+    "word": "march",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.26,
+    "lead": 6
+   },
+   {
+    "word": "star",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.19,
+    "lead": 6
+   },
+   {
+    "word": "park",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.16,
+    "lead": 6
+   },
+   {
+    "word": "fast",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.13,
+    "lead": 6
+   },
+   {
+    "word": "staff",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.08,
+    "lead": 6
+   },
+   {
+    "word": "parts",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.07,
+    "lead": 6
+   },
+   {
+    "word": "la",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.05,
+    "lead": 6
+   },
+   {
+    "word": "mark",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.05,
+    "lead": 6
+   },
+   {
+    "word": "pass",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.05,
+    "lead": 6
+   },
+   {
+    "word": "card",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.04,
+    "lead": 6
+   },
+   {
+    "word": "dark",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.04,
+    "lead": 6
+   },
+   {
+    "word": "charge",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.02,
+    "lead": 6
+   },
+   {
+    "word": "ass",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.0,
+    "lead": 6
+   },
+   {
+    "word": "France",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.94,
+    "lead": 6
+   },
+   {
+    "word": "bar",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.94,
+    "lead": 6
+   },
+   {
+    "word": "dance",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.93,
+    "lead": 6
+   },
+   {
+    "word": "passed",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.92,
+    "lead": 6
+   },
+   {
+    "word": "cars",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.89,
+    "lead": 6
+   },
+   {
+    "word": "plant",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.89,
+    "lead": 6
+   },
+   {
+    "word": "stars",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.86,
+    "lead": 6
+   },
+   {
+    "word": "glass",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.85,
+    "lead": 6
+   },
+   {
+    "word": "demand",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.84,
+    "lead": 5
+   },
+   {
+    "word": "smart",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.83,
+    "lead": 6
+   },
+   {
+    "word": "starts",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.83,
+    "lead": 6
+   },
+   {
+    "word": "arms",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.82,
+    "lead": 6
+   }
+  ],
+  [
+   {
+    "word": "want",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 6.04,
+    "lead": 8
+   },
+   {
+    "word": "because",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 6.03,
+    "lead": 7
+   },
+   {
+    "word": "got",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.91,
+    "lead": 8
+   },
+   {
+    "word": "long",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.81,
+    "lead": 8
+   },
+   {
+    "word": "lot",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.61,
+    "lead": 8
+   },
+   {
+    "word": "god",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.57,
+    "lead": 8
+   },
+   {
+    "word": "top",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.57,
+    "lead": 8
+   },
+   {
+    "word": "stop",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.52,
+    "lead": 8
+   },
+   {
+    "word": "job",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.5,
+    "lead": 8
+   },
+   {
+    "word": "lost",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.39,
+    "lead": 8
+   },
+   {
+    "word": "wrong",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.39,
+    "lead": 8
+   },
+   {
+    "word": "along",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.38,
+    "lead": 7
+   },
+   {
+    "word": "john",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.38,
+    "lead": 8
+   },
+   {
+    "word": "watch",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.34,
+    "lead": 8
+   },
+   {
+    "word": "non",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.29,
+    "lead": 8
+   },
+   {
+    "word": "song",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.26,
+    "lead": 8
+   },
+   {
+    "word": "across",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.25,
+    "lead": 7
+   },
+   {
+    "word": "cost",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.24,
+    "lead": 8
+   },
+   {
+    "word": "wants",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.24,
+    "lead": 8
+   },
+   {
+    "word": "shot",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.22,
+    "lead": 8
+   },
+   {
+    "word": "strong",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.22,
+    "lead": 8
+   },
+   {
+    "word": "gone",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.17,
+    "lead": 8
+   },
+   {
+    "word": "hot",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.16,
+    "lead": 8
+   },
+   {
+    "word": "mom",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.12,
+    "lead": 8
+   },
+   {
+    "word": "dog",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.1,
+    "lead": 8
+   },
+   {
+    "word": "involved",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.1,
+    "lead": 7
+   },
+   {
+    "word": "loss",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.07,
+    "lead": 8
+   },
+   {
+    "word": "lol",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.05,
+    "lead": 8
+   },
+   {
+    "word": "box",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.04,
+    "lead": 8
+   },
+   {
+    "word": "response",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.03,
+    "lead": 7
+   },
+   {
+    "word": "rock",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.03,
+    "lead": 8
+   },
+   {
+    "word": "cross",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.0,
+    "lead": 8
+   },
+   {
+    "word": "drop",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.99,
+    "lead": 8
+   },
+   {
+    "word": "beyond",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.98,
+    "lead": 7
+   },
+   {
+    "word": "jobs",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.98,
+    "lead": 8
+   },
+   {
+    "word": "costs",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.96,
+    "lead": 8
+   },
+   {
+    "word": "stock",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.93,
+    "lead": 8
+   },
+   {
+    "word": "spot",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.89,
+    "lead": 8
+   },
+   {
+    "word": "block",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.88,
+    "lead": 8
+   },
+   {
+    "word": "lots",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.88,
+    "lead": 8
+   }
+  ],
+  [
+   {
+    "word": "making",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.54,
+    "lead": 6
+   },
+   {
+    "word": "later",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.49,
+    "lead": 6
+   },
+   {
+    "word": "maybe",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.45,
+    "lead": 6
+   },
+   {
+    "word": "able",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.43,
+    "lead": 6
+   },
+   {
+    "word": "information",
+    "place": null,
+    "syl": 4,
+    "shape": "~Sw",
+    "zipf": 5.43,
+    "lead": 4
+   },
+   {
+    "word": "taking",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.39,
+    "lead": 6
+   },
+   {
+    "word": "playing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.37,
+    "lead": 6
+   },
+   {
+    "word": "saying",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.37,
+    "lead": 6
+   },
+   {
+    "word": "data",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.34,
+    "lead": 6
+   },
+   {
+    "word": "taken",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.33,
+    "lead": 6
+   },
+   {
+    "word": "major",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.3,
+    "lead": 6
+   },
+   {
+    "word": "players",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.3,
+    "lead": 6
+   },
+   {
+    "word": "education",
+    "place": null,
+    "syl": 4,
+    "shape": "~Sw",
+    "zipf": 5.28,
+    "lead": 4
+   },
+   {
+    "word": "baby",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.26,
+    "lead": 6
+   },
+   {
+    "word": "april",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.19,
+    "lead": 6
+   },
+   {
+    "word": "player",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.19,
+    "lead": 6
+   },
+   {
+    "word": "training",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.18,
+    "lead": 6
+   },
+   {
+    "word": "david",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.13,
+    "lead": 6
+   },
+   {
+    "word": "changes",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.12,
+    "lead": 6
+   },
+   {
+    "word": "amazing",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.1,
+    "lead": 5
+   },
+   {
+    "word": "related",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.1,
+    "lead": 5
+   },
+   {
+    "word": "situation",
+    "place": null,
+    "syl": 4,
+    "shape": "~Sw",
+    "zipf": 5.09,
+    "lead": 4
+   },
+   {
+    "word": "crazy",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.07,
+    "lead": 6
+   },
+   {
+    "word": "daily",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.07,
+    "lead": 6
+   },
+   {
+    "word": "paper",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.07,
+    "lead": 6
+   },
+   {
+    "word": "Australia",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.06,
+    "lead": 5
+   },
+   {
+    "word": "waiting",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.06,
+    "lead": 6
+   },
+   {
+    "word": "created",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.05,
+    "lead": 5
+   },
+   {
+    "word": "table",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.05,
+    "lead": 6
+   },
+   {
+    "word": "cases",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.04,
+    "lead": 6
+   },
+   {
+    "word": "places",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.03,
+    "lead": 6
+   },
+   {
+    "word": "association",
+    "place": null,
+    "syl": 5,
+    "shape": "~Sw",
+    "zipf": 5.01,
+    "lead": 3
+   },
+   {
+    "word": "population",
+    "place": null,
+    "syl": 4,
+    "shape": "~Sw",
+    "zipf": 5.01,
+    "lead": 4
+   },
+   {
+    "word": "station",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.01,
+    "lead": 6
+   },
+   {
+    "word": "nature",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.98,
+    "lead": 6
+   },
+   {
+    "word": "safety",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.97,
+    "lead": 6
+   },
+   {
+    "word": "statement",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.97,
+    "lead": 6
+   },
+   {
+    "word": "lady",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.95,
+    "lead": 6
+   },
+   {
+    "word": "australian",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.93,
+    "lead": 5
+   },
+   {
+    "word": "latest",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.92,
+    "lead": 6
+   }
+  ],
+  [
+   {
+    "word": "last",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.86,
+    "lead": 8
+   },
+   {
+    "word": "part",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.78,
+    "lead": 8
+   },
+   {
+    "word": "start",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.56,
+    "lead": 8
+   },
+   {
+    "word": "hard",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.53,
+    "lead": 8
+   },
+   {
+    "word": "far",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.5,
+    "lead": 8
+   },
+   {
+    "word": "car",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.45,
+    "lead": 8
+   },
+   {
+    "word": "half",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.41,
+    "lead": 8
+   },
+   {
+    "word": "large",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.39,
+    "lead": 8
+   },
+   {
+    "word": "class",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.36,
+    "lead": 8
+   },
+   {
+    "word": "past",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.36,
+    "lead": 8
+   },
+   {
+    "word": "ask",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.34,
+    "lead": 8
+   },
+   {
+    "word": "heart",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.31,
+    "lead": 8
+   },
+   {
+    "word": "asked",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.3,
+    "lead": 8
+   },
+   {
+    "word": "art",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.29,
+    "lead": 8
+   },
+   {
+    "word": "chance",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.26,
+    "lead": 8
+   },
+   {
+    "word": "march",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.26,
+    "lead": 8
+   },
+   {
+    "word": "star",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.19,
+    "lead": 8
+   },
+   {
+    "word": "park",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.16,
+    "lead": 8
+   },
+   {
+    "word": "fast",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.13,
+    "lead": 8
+   },
+   {
+    "word": "staff",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.08,
+    "lead": 8
+   },
+   {
+    "word": "parts",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.07,
+    "lead": 8
+   },
+   {
+    "word": "la",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.05,
+    "lead": 8
+   },
+   {
+    "word": "mark",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.05,
+    "lead": 8
+   },
+   {
+    "word": "pass",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.05,
+    "lead": 8
+   },
+   {
+    "word": "card",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.04,
+    "lead": 8
+   },
+   {
+    "word": "dark",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.04,
+    "lead": 8
+   },
+   {
+    "word": "charge",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.02,
+    "lead": 8
+   },
+   {
+    "word": "ass",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.0,
+    "lead": 8
+   },
+   {
+    "word": "France",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.94,
+    "lead": 8
+   },
+   {
+    "word": "bar",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.94,
+    "lead": 8
+   },
+   {
+    "word": "dance",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.93,
+    "lead": 8
+   },
+   {
+    "word": "passed",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.92,
+    "lead": 8
+   },
+   {
+    "word": "cars",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.89,
+    "lead": 8
+   },
+   {
+    "word": "plant",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.89,
+    "lead": 8
+   },
+   {
+    "word": "stars",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.86,
+    "lead": 8
+   },
+   {
+    "word": "glass",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.85,
+    "lead": 8
+   },
+   {
+    "word": "demand",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.84,
+    "lead": 7
+   },
+   {
+    "word": "smart",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.83,
+    "lead": 8
+   },
+   {
+    "word": "starts",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.83,
+    "lead": 8
+   },
+   {
+    "word": "arms",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.82,
+    "lead": 8
+   }
+  ],
+  [
+   {
+    "word": "think",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 6.08,
+    "lead": 11
+   },
+   {
+    "word": "since",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.75,
+    "lead": 11
+   },
+   {
+    "word": "things",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.74,
+    "lead": 11
+   },
+   {
+    "word": "thing",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.72,
+    "lead": 11
+   },
+   {
+    "word": "give",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.71,
+    "lead": 11
+   },
+   {
+    "word": "big",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.67,
+    "lead": 11
+   },
+   {
+    "word": "until",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.61,
+    "lead": 10
+   },
+   {
+    "word": "live",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.54,
+    "lead": 11
+   },
+   {
+    "word": "shit",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.48,
+    "lead": 11
+   },
+   {
+    "word": "win",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.39,
+    "lead": 11
+   },
+   {
+    "word": "bit",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.37,
+    "lead": 11
+   },
+   {
+    "word": "hit",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.37,
+    "lead": 11
+   },
+   {
+    "word": "six",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.29,
+    "lead": 11
+   },
+   {
+    "word": "kids",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.28,
+    "lead": 11
+   },
+   {
+    "word": "list",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.28,
+    "lead": 11
+   },
+   {
+    "word": "bring",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.27,
+    "lead": 11
+   },
+   {
+    "word": "killed",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.22,
+    "lead": 11
+   },
+   {
+    "word": "miss",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.22,
+    "lead": 11
+   },
+   {
+    "word": "film",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.2,
+    "lead": 11
+   },
+   {
+    "word": "wish",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.18,
+    "lead": 11
+   },
+   {
+    "word": "king",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.17,
+    "lead": 11
+   },
+   {
+    "word": "bill",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.15,
+    "lead": 11
+   },
+   {
+    "word": "lives",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.14,
+    "lead": 11
+   },
+   {
+    "word": "kill",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.09,
+    "lead": 11
+   },
+   {
+    "word": "pick",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.08,
+    "lead": 11
+   },
+   {
+    "word": "built",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.07,
+    "lead": 11
+   },
+   {
+    "word": "risk",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.05,
+    "lead": 11
+   },
+   {
+    "word": "build",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.04,
+    "lead": 11
+   },
+   {
+    "word": "gives",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.03,
+    "lead": 11
+   },
+   {
+    "word": "kid",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.99,
+    "lead": 11
+   },
+   {
+    "word": "link",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.99,
+    "lead": 11
+   },
+   {
+    "word": "quick",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.98,
+    "lead": 11
+   },
+   {
+    "word": "fit",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.95,
+    "lead": 11
+   },
+   {
+    "word": "ship",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.93,
+    "lead": 11
+   },
+   {
+    "word": "spring",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.92,
+    "lead": 11
+   },
+   {
+    "word": "rich",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.91,
+    "lead": 11
+   },
+   {
+    "word": "skin",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.91,
+    "lead": 11
+   },
+   {
+    "word": "drink",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.9,
+    "lead": 11
+   },
+   {
+    "word": "fish",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.9,
+    "lead": 11
+   },
+   {
+    "word": "sit",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.9,
+    "lead": 11
+   }
+  ],
+  [
+   {
+    "word": "like",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 6.41,
+    "lead": 4
+   },
+   {
+    "word": "time",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 6.29,
+    "lead": 4
+   },
+   {
+    "word": "right",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.96,
+    "lead": 4
+   },
+   {
+    "word": "why",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.93,
+    "lead": 4
+   },
+   {
+    "word": "life",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.89,
+    "lead": 4
+   },
+   {
+    "word": "while",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.86,
+    "lead": 4
+   },
+   {
+    "word": "find",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.76,
+    "lead": 4
+   },
+   {
+    "word": "high",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.75,
+    "lead": 4
+   },
+   {
+    "word": "night",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.61,
+    "lead": 4
+   },
+   {
+    "word": "times",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.56,
+    "lead": 4
+   },
+   {
+    "word": "white",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.51,
+    "lead": 4
+   },
+   {
+    "word": "side",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.5,
+    "lead": 4
+   },
+   {
+    "word": "try",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.5,
+    "lead": 4
+   },
+   {
+    "word": "line",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.49,
+    "lead": 4
+   },
+   {
+    "word": "five",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.45,
+    "lead": 4
+   },
+   {
+    "word": "kind",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.45,
+    "lead": 4
+   },
+   {
+    "word": "guys",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.41,
+    "lead": 4
+   },
+   {
+    "word": "mind",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.41,
+    "lead": 4
+   },
+   {
+    "word": "guy",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.4,
+    "lead": 4
+   },
+   {
+    "word": "nice",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.37,
+    "lead": 4
+   },
+   {
+    "word": "light",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.33,
+    "lead": 4
+   },
+   {
+    "word": "buy",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.32,
+    "lead": 4
+   },
+   {
+    "word": "child",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.3,
+    "lead": 4
+   },
+   {
+    "word": "behind",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.29,
+    "lead": 3
+   },
+   {
+    "word": "quite",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.29,
+    "lead": 4
+   },
+   {
+    "word": "sometimes",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.28,
+    "lead": 3
+   },
+   {
+    "word": "type",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.27,
+    "lead": 4
+   },
+   {
+    "word": "dr",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.24,
+    "lead": 4
+   },
+   {
+    "word": "fight",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.23,
+    "lead": 4
+   },
+   {
+    "word": "fine",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.23,
+    "lead": 4
+   },
+   {
+    "word": "price",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.23,
+    "lead": 4
+   },
+   {
+    "word": "wife",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.23,
+    "lead": 4
+   },
+   {
+    "word": "site",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.22,
+    "lead": 4
+   },
+   {
+    "word": "eyes",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.21,
+    "lead": 4
+   },
+   {
+    "word": "died",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.2,
+    "lead": 4
+   },
+   {
+    "word": "inside",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.19,
+    "lead": 3
+   },
+   {
+    "word": "rights",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.19,
+    "lead": 4
+   },
+   {
+    "word": "design",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.17,
+    "lead": 3
+   },
+   {
+    "word": "july",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.17,
+    "lead": 3
+   },
+   {
+    "word": "tried",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.16,
+    "lead": 4
+   }
+  ],
+  [
+   {
+    "word": "about",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 6.4,
+    "lead": 6
+   },
+   {
+    "word": "how",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 6.24,
+    "lead": 7
+   },
+   {
+    "word": "now",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 6.18,
+    "lead": 7
+   },
+   {
+    "word": "around",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.77,
+    "lead": 6
+   },
+   {
+    "word": "house",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.71,
+    "lead": 7
+   },
+   {
+    "word": "found",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.68,
+    "lead": 7
+   },
+   {
+    "word": "South",
+    "place": "travel_history.md",
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.4,
+    "lead": 7
+   },
+   {
+    "word": "town",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.24,
+    "lead": 7
+   },
+   {
+    "word": "account",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.21,
+    "lead": 6
+   },
+   {
+    "word": "ground",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.15,
+    "lead": 7
+   },
+   {
+    "word": "sound",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.15,
+    "lead": 7
+   },
+   {
+    "word": "round",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.14,
+    "lead": 7
+   },
+   {
+    "word": "amount",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.13,
+    "lead": 6
+   },
+   {
+    "word": "allowed",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.03,
+    "lead": 6
+   },
+   {
+    "word": "allow",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.01,
+    "lead": 6
+   },
+   {
+    "word": "brown",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.01,
+    "lead": 7
+   },
+   {
+    "word": "throughout",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.99,
+    "lead": 6
+   },
+   {
+    "word": "sounds",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.97,
+    "lead": 7
+   },
+   {
+    "word": "announced",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.96,
+    "lead": 6
+   },
+   {
+    "word": "wow",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.96,
+    "lead": 7
+   },
+   {
+    "word": "doubt",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.9,
+    "lead": 7
+   },
+   {
+    "word": "count",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.83,
+    "lead": 7
+   },
+   {
+    "word": "mouth",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.83,
+    "lead": 7
+   },
+   {
+    "word": "proud",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.78,
+    "lead": 7
+   },
+   {
+    "word": "accounts",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.73,
+    "lead": 6
+   },
+   {
+    "word": "crowd",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.7,
+    "lead": 7
+   },
+   {
+    "word": "allows",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.67,
+    "lead": 6
+   },
+   {
+    "word": "crown",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.56,
+    "lead": 7
+   },
+   {
+    "word": "loud",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.53,
+    "lead": 7
+   },
+   {
+    "word": "pounds",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.53,
+    "lead": 7
+   },
+   {
+    "word": "mount",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.47,
+    "lead": 7
+   },
+   {
+    "word": "bound",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.46,
+    "lead": 7
+   },
+   {
+    "word": "cloud",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.46,
+    "lead": 7
+   },
+   {
+    "word": "grounds",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.43,
+    "lead": 7
+   },
+   {
+    "word": "amounts",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.41,
+    "lead": 6
+   },
+   {
+    "word": "towns",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.39,
+    "lead": 7
+   },
+   {
+    "word": "pound",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.32,
+    "lead": 7
+   },
+   {
+    "word": "mouse",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.31,
+    "lead": 7
+   },
+   {
+    "word": "rounds",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.3,
+    "lead": 7
+   },
+   {
+    "word": "counts",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.28,
+    "lead": 7
+   }
+  ],
+  [
+   {
+    "word": "make",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 6.08,
+    "lead": 6
+   },
+   {
+    "word": "way",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 6.01,
+    "lead": 6
+   },
+   {
+    "word": "day",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.95,
+    "lead": 6
+   },
+   {
+    "word": "made",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.92,
+    "lead": 6
+   },
+   {
+    "word": "take",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.92,
+    "lead": 6
+   },
+   {
+    "word": "say",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.89,
+    "lead": 6
+   },
+   {
+    "word": "great",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.88,
+    "lead": 6
+   },
+   {
+    "word": "same",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.8,
+    "lead": 6
+   },
+   {
+    "word": "state",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.78,
+    "lead": 6
+   },
+   {
+    "word": "game",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.72,
+    "lead": 6
+   },
+   {
+    "word": "place",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.71,
+    "lead": 6
+   },
+   {
+    "word": "away",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.62,
+    "lead": 5
+   },
+   {
+    "word": "days",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.61,
+    "lead": 6
+   },
+   {
+    "word": "name",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.61,
+    "lead": 6
+   },
+   {
+    "word": "play",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.61,
+    "lead": 6
+   },
+   {
+    "word": "case",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.55,
+    "lead": 6
+   },
+   {
+    "word": "today",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.55,
+    "lead": 5
+   },
+   {
+    "word": "change",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.54,
+    "lead": 6
+   },
+   {
+    "word": "states",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.52,
+    "lead": 6
+   },
+   {
+    "word": "based",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.51,
+    "lead": 6
+   },
+   {
+    "word": "came",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.5,
+    "lead": 6
+   },
+   {
+    "word": "makes",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.46,
+    "lead": 6
+   },
+   {
+    "word": "face",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.45,
+    "lead": 6
+   },
+   {
+    "word": "games",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.44,
+    "lead": 6
+   },
+   {
+    "word": "pay",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.4,
+    "lead": 6
+   },
+   {
+    "word": "wait",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.35,
+    "lead": 6
+   },
+   {
+    "word": "late",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.34,
+    "lead": 6
+   },
+   {
+    "word": "stay",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.33,
+    "lead": 6
+   },
+   {
+    "word": "age",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.32,
+    "lead": 6
+   },
+   {
+    "word": "gave",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.25,
+    "lead": 6
+   },
+   {
+    "word": "main",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.24,
+    "lead": 6
+   },
+   {
+    "word": "played",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.23,
+    "lead": 6
+   },
+   {
+    "word": "re",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.23,
+    "lead": 6
+   },
+   {
+    "word": "space",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.23,
+    "lead": 6
+   },
+   {
+    "word": "date",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.22,
+    "lead": 6
+   },
+   {
+    "word": "break",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.18,
+    "lead": 6
+   },
+   {
+    "word": "takes",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.18,
+    "lead": 6
+   },
+   {
+    "word": "became",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.15,
+    "lead": 5
+   },
+   {
+    "word": "ok",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.14,
+    "lead": 5
+   },
+   {
+    "word": "rate",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.14,
+    "lead": 6
+   }
+  ]
+ ],
+ "sets": [
+  {
+   "words": [
+    "last",
+    "want",
+    "making",
+    "part",
+    "think",
+    "like",
+    "about",
+    "make"
+   ],
+   "min": 1.0,
+   "carpet_min": 0.0,
+   "places": 0,
+   "lead": [
+    6,
+    8,
+    6,
+    8,
+    11,
+    4,
+    6,
+    6
+   ],
+   "zipf": 6.02
+  },
+  {
+   "words": [
+    "last",
+    "want",
+    "making",
+    "part",
+    "think",
+    "like",
+    "about",
+    "way"
+   ],
+   "min": 1.0,
+   "carpet_min": 0.0,
+   "places": 0,
+   "lead": [
+    6,
+    8,
+    6,
+    8,
+    11,
+    4,
+    6,
+    6
+   ],
+   "zipf": 6.02
+  },
+  {
+   "words": [
+    "last",
+    "want",
+    "later",
+    "part",
+    "think",
+    "like",
+    "about",
+    "make"
+   ],
+   "min": 1.0,
+   "carpet_min": 0.0,
+   "places": 0,
+   "lead": [
+    6,
+    8,
+    6,
+    8,
+    11,
+    4,
+    6,
+    6
+   ],
+   "zipf": 6.02
+  },
+  {
+   "words": [
+    "last",
+    "want",
+    "making",
+    "part",
+    "think",
+    "like",
+    "about",
+    "day"
+   ],
+   "min": 1.0,
+   "carpet_min": 0.0,
+   "places": 0,
+   "lead": [
+    6,
+    8,
+    6,
+    8,
+    11,
+    4,
+    6,
+    6
+   ],
+   "zipf": 6.01
+  },
+  {
+   "words": [
+    "last",
+    "want",
+    "making",
+    "part",
+    "think",
+    "time",
+    "about",
+    "make"
+   ],
+   "min": 1.0,
+   "carpet_min": 0.0,
+   "places": 0,
+   "lead": [
+    6,
+    8,
+    6,
+    8,
+    11,
+    4,
+    6,
+    6
+   ],
+   "zipf": 6.01
+  },
+  {
+   "words": [
+    "last",
+    "want",
+    "later",
+    "part",
+    "think",
+    "like",
+    "about",
+    "way"
+   ],
+   "min": 1.0,
+   "carpet_min": 0.0,
+   "places": 0,
+   "lead": [
+    6,
+    8,
+    6,
+    8,
+    11,
+    4,
+    6,
+    6
+   ],
+   "zipf": 6.01
+  }
+ ],
+ "places_known": 113,
+ "supply": 79469
+}

@@ -8,7 +8,7 @@ For each bar, our syllables are placed in order onto the original's measured syl
 Prints the original rhythm, ours, and the misses. Stress is dictionary-based: confirm by ear.
 """
 import json, os, sys
-sys.stdout.reconfigure(encoding="utf-8")
+if hasattr(sys.stdout, "reconfigure"): sys.stdout.reconfigure(encoding="utf-8")
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from flow_check import bar_profile  # noqa: E402
@@ -24,7 +24,15 @@ def grid(steps, marks, length):
     return "".join(g)
 
 
-WEAKFN = {"a", "an", "the", "of", "to", "and", "in", "on", "at", "for", "with", "as", "is", "it", "its", "it's", "ya", "this", "him", "them", "'em", "her", "us"}
+WEAKFN = set("""a an the of to and in on at for with as is it its it's was were be been am are i me my we our us
+you your he she him her they them their his this that these those from by or but so if then than up out off do did
+does not no can will would just 'em ya""".split())
+# Kept deliberately identical to ww/write/flowaudit.FUNC -- that is the auditor the song is read with, and the
+# two must not disagree about what a function word is. The old 23-word list here was missing every pronoun and
+# contraction, so "so he says I nicked" measured as four consecutive STRONG syllables and the strong/weak
+# pattern printed against the original's was wrong (14 Oct 2026). The stored per-bar patterns in
+# benchmark/flow_template.json are DERIVED with this list: rebuild them (flow_fit.py --add-weak, --add-rhyme-pos)
+# after any change, or the original stops agreeing with itself.
 
 
 def sylls(line):
@@ -80,6 +88,13 @@ def fit(bar_no, line):
     if t.get("missing"):
         return None, "no template (not heard)"
     orig = [s for s in t["steps"]]
+    # A template that disagrees with itself cannot be met by any line: its stored text pattern (from
+    # sylls) and its audio step list describe different syllable counts, so every rule downstream is
+    # phase-shifted. Exactly 1 of the original's 92 bars is in this state -- bar 64, where the text counts
+    # "would've" as two syllables and the aligner heard one onset. Waived, and printed, never silent.
+    if t.get("weak") and len(t["weak"]) != len(orig):
+        return True, (f"WAIVED: this bar's template disagrees with itself (text pattern {len(t['weak'])} vs "
+                      f"audio steps {len(orig)}) - no line can be measured against it")
     weak = sylls(line)
     n = len(weak)
     why = []
@@ -93,7 +108,10 @@ def fit(bar_no, line):
         why.append(f"syllables per beat {b} vs {a}")
     ow = t.get("weak")
     if ow:
-        m = min(n, len(ow))
+        # len(orig) belongs in this min(): the stored pattern comes from the TEXT model and the steps come
+        # from the AUDIO, so a bar whose text counts one syllable more than the aligner heard (bar 64,
+        # "would've") used to index past the end of the step list and kill the whole run at that bar.
+        m = min(n, len(ow), len(orig))
         beats = [i for i in range(m) if orig[i] % 4 == 0]
         beat_miss = [i + 1 for i in beats if weak[i] != ow[i]]
         agree = sum(1 for i in range(m) if weak[i] == ow[i]) / max(1, m)
@@ -111,9 +129,16 @@ def fit(bar_no, line):
                 why.append(f"end shape {mine} vs original {es} (| = the rhyme starts a word, ~ = it lands mid-word; then strong/weak syllables from the rhyme on)")
         if our_ri < len(orig) and ri < len(orig) and orig[our_ri] != orig[ri]:
             why.append(f"end rhyme starts on step {orig[min(our_ri, len(orig) - 1)]} (syllable {our_ri + 1}) vs original step {orig[ri]} (syllable {ri + 1})")
-    bad = [i + 1 for i, st in enumerate(steps) if st % 4 == 0 and i < n and weak[i]]
-    if len(bad) > 1:
-        why.append(f"weak syllable on the beat at syllable {bad}")
+    own = ow if ow else orig
+    nbad = [i + 1 for i, st in enumerate(steps) if st % 4 == 0 and i < n and weak[i]]
+    # Par, not zero. The reference bar is the allowance: the original lands two or more weak syllables on a
+    # downbeat in 14 of its 76 bars, so "more than one" cannot be the rule (a gate the benchmark fails is a
+    # wrong gate -- the same reason the carpet, cash and places demands are all par comparisons). The bar is
+    # flagged only when it is worse than the reference at the same position, and the reference's count is
+    # printed so the flag can be argued with.
+    obad = sum(1 for i, st in enumerate(orig) if st % 4 == 0 and i < len(own) and own[i])
+    if len(nbad) > max(1, obad):
+        why.append(f"weak syllable on the beat at syllable {nbad} (original has {obad})")
     length = 16 * t.get("bars_spanned", 1)
     o = grid(orig, ["X" if s % 4 == 0 else "x" for s in orig], length)
     u = grid(steps, ["w" if weak[i] else "S" for i in range(n)], length)

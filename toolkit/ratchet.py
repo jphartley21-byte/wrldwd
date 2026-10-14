@@ -4,14 +4,18 @@ Fails (exit 1) if: a section that passed check_all now fails; a section's proble
 (toolkit/keepers.json) disappeared; a locked line changed. Use it after every pass: if it fails, revert that change.
 """
 import io, json, os, sys, contextlib
-sys.stdout.reconfigure(encoding="utf-8")
+if hasattr(sys.stdout, "reconfigure"): sys.stdout.reconfigure(encoding="utf-8")
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import check_all  # noqa: E402
 
 
 def lines_of(path):
-    return [l.strip() for l in open(path, encoding="utf8") if l.strip() and not l.startswith(("[", "#", "("))]
+    # "==" section headers were counted as BARS, so every slot window was shifted by the number of headers
+    # before it and the ratchet reported problem counts for the wrong block ("Hook 9-16 rose 15 -> 16" with
+    # no bar changed, 12 Oct 2026). blockcheck and songcheck already skip them.
+    return [l.strip() for l in open(path, encoding="utf8")
+            if l.strip() and not l.startswith(("[", "#", "(", "=="))]
 
 
 def section_status(lines):

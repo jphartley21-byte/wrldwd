@@ -8,7 +8,7 @@ audio: exact line length, end rhyme landing on the original's step, strong/weak 
 passes that bar (the audio is the better witness). Meaning gates G1-G6 and the job check stay human: see /review.
 """
 import os, subprocess, sys
-sys.stdout.reconfigure(encoding="utf-8")
+if hasattr(sys.stdout, "reconfigure"): sys.stdout.reconfigure(encoding="utf-8")
 HERE = os.path.dirname(os.path.abspath(__file__))
 SLOTS = {"Hook 1-4": 1, "Hook 5-8": 5, "Hook 9-16": 9, "V1 1-8": 17, "V1 9-16": 25, "V1 17-24": 33,
          "V1 25-32": 41, "V1 33-44": 49, "V2 1-8": 61, "V2 9-16": 69}
@@ -20,7 +20,15 @@ def run(args, text):
     return subprocess.run([sys.executable] + args, input=text, capture_output=True, text=True, encoding="utf8").stdout
 
 
-def check(slot, lines, quiet=False):
+def problems_of(slot, lines):
+    """The raw form verdict: (ok, problems, waived, rare).
+
+    Exposed because the pass/fail is not always the right thing to act on. check_all measures
+    SIMILARITY TO THE ORIGINAL'S AUDIO-MEASURED RHYTHM, and Joe's own approved bars 1-4 fail it
+    (bar 2 is 8 syllables vs the original's 9; stress grid and end shape miss). So a caller may
+    legitimately want the PROBLEM COUNT as a ranking signal rather than a veto - that is what
+    ml/generate.py does, and what the Definition of Done now says. See CLAUDE.md.
+    """
     start = SLOTS[slot]
     text = "\n".join(l.replace("å", "a") for l in lines)
     m = run([os.path.join(HERE, "match.py"), "--slot", slot, "-"], text).splitlines()
@@ -51,8 +59,13 @@ def check(slot, lines, quiet=False):
             problems[-1] += " -> " + l.strip()[5:150]
     problems = [p for p in problems if p != "__adv__"]
     rare = [l.strip()[:120] for l in r if "RARE" in l]
-    ok = not problems
+    return (not problems), problems, waived, rare
+
+
+def check(slot, lines, quiet=False):
+    ok, problems, waived, rare = problems_of(slot, lines)
     if not quiet:
+        start = SLOTS[slot]
         print(f"== {slot} (bars {start}-{start + len(lines) - 1}): {'ALL PASS' if ok else f'{len(problems)} PROBLEMS'}")
         for p in problems:
             print("  x", p)
@@ -65,11 +78,24 @@ def check(slot, lines, quiet=False):
 
 if __name__ == "__main__":
     a = sys.argv[1:]
+    if a and a[0] == "--score":
+        # the RANKING form of the verdict: how many form problems, not pass/fail (see the DoD in
+        # CLAUDE.md and ml/generate.py). Exit code 0 always - this is a measurement, not a gate.
+        lines = [l.strip() for l in sys.stdin.read().splitlines() if l.strip() and not l.startswith(("[", "#", "("))]
+        ok, problems, waived, rare = problems_of(a[1], lines)
+        print(f"{a[1]}: {len(problems)} form problems ({len(waived)} waived), "
+              f"{len(rare)} rare-word lines -> {'exact form' if ok else 'NOT exact form'}")
+        sys.exit(0)
     if a and a[0] == "--slot":
         lines = [l.strip() for l in sys.stdin.read().splitlines() if l.strip() and not l.startswith(("[", "#", "("))]
         sys.exit(0 if check(a[1], lines) else 1)
     if a and a[0] == "--song":
-        ours = [l.strip() for l in open(a[1], encoding="utf8") if l.strip() and not l.startswith(("[", "#", "("))]
+        # "==" is the slot header this file writes for the project format; without it the header lines
+        # were read as BARS, so every slot window was shifted by one and each slot was scored against
+        # the wrong lines (it reported "== Hook 5-8" as a bar of 1 syllable and made bar 1 of Hook 5-8
+        # "So I boarded a plane out to Bordeaux", which belongs to Hook 1-4). Found 13 Oct 2026, the
+        # same defect ratchet.py had.
+        ours = [l.strip() for l in open(a[1], encoding="utf8") if l.strip() and not l.startswith(("[", "#", "(", "=="))]
         i, allok = 0, True
         for slot, size in SIZES.items():
             allok &= check(slot, ours[i:i + size])

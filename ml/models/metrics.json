@@ -1,0 +1,35 @@
+{
+ "rows": 77,
+ "tiers": {
+  "accept": 4,
+  "like": 17,
+  "reject": 44,
+  "weak_neg": 12
+ },
+ "positive_blocks": 2,
+ "rank_separation": {
+  "accept": 0.129,
+  "like": 0.005,
+  "reject": 0.941,
+  "weak_neg": 0.815
+ },
+ "contract_failures": [],
+ "lopo": {
+  "folds": 2,
+  "held_out_positive_below_reject_mean": 2,
+  "detail": [
+   {
+    "held_out_block": "keepers.json:locked_lines#accept",
+    "score": 0.832,
+    "reject_mean": 0.962,
+    "below": true
+   },
+   {
+    "held_out_block": "keepers.json:phrases#like",
+    "score": 0.002,
+    "reject_mean": 0.863,
+    "below": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,3104 @@
+{
+ "slot": "V1 25-32",
+ "target": {
+  "slot": "V1 25-32",
+  "targets": [
+   {
+    "bar": 1,
+    "syl": 13,
+    "shape": "|Sw",
+    "shape_class": "Sw",
+    "marker": "|",
+    "vowels": [
+     "ɜː",
+     "i"
+    ],
+    "vowel": "ɜː"
+   },
+   {
+    "bar": 2,
+    "syl": 15,
+    "shape": "|Sw",
+    "shape_class": "Sw",
+    "marker": "|",
+    "vowels": [
+     "ɜː",
+     "i"
+    ],
+    "vowel": "ɜː"
+   },
+   {
+    "bar": 3,
+    "syl": 14,
+    "shape": "|Sw",
+    "shape_class": "Sw",
+    "marker": "|",
+    "vowels": [
+     "ɜː",
+     "i"
+    ],
+    "vowel": "ɜː"
+   },
+   {
+    "bar": 4,
+    "syl": 8,
+    "shape": "|Sw",
+    "shape_class": "Sw",
+    "marker": "|",
+    "vowels": [
+     "əʊ",
+     "ɪ"
+    ],
+    "vowel": "əʊ"
+   },
+   {
+    "bar": 5,
+    "syl": 9,
+    "shape": "|SS",
+    "shape_class": "SS",
+    "marker": "|",
+    "vowels": [
+     "ɜː",
+     "i"
+    ],
+    "vowel": "ɜː"
+   },
+   {
+    "bar": 6,
+    "syl": 9,
+    "shape": "|Sw",
+    "shape_class": "Sw",
+    "marker": "|",
+    "vowels": [
+     "ɔː",
+     "i"
+    ],
+    "vowel": "ɔː"
+   },
+   {
+    "bar": 7,
+    "syl": 10,
+    "shape": "|S",
+    "shape_class": "S",
+    "marker": "|",
+    "vowels": [
+     "æ",
+     "ə",
+     "ɪ"
+    ],
+    "vowel": "æ"
+   },
+   {
+    "bar": 8,
+    "syl": 15,
+    "shape": "|Sw",
+    "shape_class": "Sw",
+    "marker": "|",
+    "vowels": [
+     "ɔː",
+     "i"
+    ],
+    "vowel": "ɔː"
+   }
+  ],
+  "scheme": "aaabacdc",
+  "manual_scheme": "AAABACCC",
+  "carpet": {
+   "pairs": 21,
+   "total": 28,
+   "min": 0.0,
+   "share": 0.75
+  },
+  "keys": [
+   [
+    [
+     "ɜː",
+     "i"
+    ],
+    2
+   ],
+   [
+    [
+     "ɜː",
+     "i"
+    ],
+    2
+   ],
+   [
+    [
+     "ɜː",
+     "i"
+    ],
+    2
+   ],
+   [
+    [
+     "əʊ",
+     "ɪ"
+    ],
+    2
+   ],
+   [
+    [
+     "ɜː",
+     "i"
+    ],
+    2
+   ],
+   [
+    [
+     "ɔː",
+     "i"
+    ],
+    2
+   ],
+   [
+    [
+     "æ",
+     "ə",
+     "ɪ"
+    ],
+    3
+   ],
+   [
+    [
+     "ɔː",
+     "i"
+    ],
+    2
+   ]
+  ]
+ },
+ "grouping": "scheme+vowel+shape",
+ "threshold": 0.78,
+ "aim": 0.95,
+ "groups": [
+  [
+   0,
+   1,
+   2
+  ],
+  [
+   5,
+   7
+  ]
+ ],
+ "unmet_groups": [],
+ "cliques": [
+  [
+   {
+    "bars": [
+     0,
+     1,
+     2
+    ],
+    "words": [
+     "person",
+     "certain",
+     "version"
+    ],
+    "min": 1.0,
+    "places": 0,
+    "zipf": 5.260000000000001
+   },
+   {
+    "bars": [
+     0,
+     1,
+     2
+    ],
+    "words": [
+     "person",
+     "certain",
+     "German"
+    ],
+    "min": 1.0,
+    "places": 0,
+    "zipf": 5.22
+   },
+   {
+    "bars": [
+     0,
+     1,
+     2
+    ],
+    "words": [
+     "person",
+     "working",
+     "Bergen"
+    ],
+    "min": 0.88,
+    "places": 1,
+    "zipf": 4.773333333333333
+   },
+   {
+    "bars": [
+     0,
+     1,
+     2
+    ],
+    "words": [
+     "person",
+     "working",
+     "certain"
+    ],
+    "min": 0.88,
+    "places": 0,
+    "zipf": 5.386666666666667
+   },
+   {
+    "bars": [
+     0,
+     1,
+     2
+    ],
+    "words": [
+     "person",
+     "certain",
+     "working"
+    ],
+    "min": 0.88,
+    "places": 0,
+    "zipf": 5.386666666666667
+   },
+   {
+    "bars": [
+     0,
+     1,
+     2
+    ],
+    "words": [
+     "person",
+     "working",
+     "version"
+    ],
+    "min": 0.88,
+    "places": 0,
+    "zipf": 5.3566666666666665
+   }
+  ],
+  [
+   {
+    "bars": [
+     5,
+     7
+    ],
+    "words": [
+     "water",
+     "order"
+    ],
+    "min": 1.0,
+    "places": 0,
+    "zipf": 5.505
+   },
+   {
+    "bars": [
+     5,
+     7
+    ],
+    "words": [
+     "water",
+     "former"
+    ],
+    "min": 1.0,
+    "places": 0,
+    "zipf": 5.4
+   },
+   {
+    "bars": [
+     5,
+     7
+    ],
+    "words": [
+     "water",
+     "daughter"
+    ],
+    "min": 1.0,
+    "places": 0,
+    "zipf": 5.295
+   },
+   {
+    "bars": [
+     5,
+     7
+    ],
+    "words": [
+     "water",
+     "california"
+    ],
+    "min": 1.0,
+    "places": 0,
+    "zipf": 5.26
+   },
+   {
+    "bars": [
+     5,
+     7
+    ],
+    "words": [
+     "water",
+     "author"
+    ],
+    "min": 1.0,
+    "places": 0,
+    "zipf": 5.234999999999999
+   },
+   {
+    "bars": [
+     5,
+     7
+    ],
+    "words": [
+     "water",
+     "smaller"
+    ],
+    "min": 1.0,
+    "places": 0,
+    "zipf": 5.16
+   }
+  ]
+ ],
+ "free_bars": [
+  3,
+  4,
+  6
+ ],
+ "per_bar": [
+  [
+   {
+    "word": "person",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.55,
+    "lead": 11
+   },
+   {
+    "word": "service",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.49,
+    "lead": 11
+   },
+   {
+    "word": "working",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.45,
+    "lead": 11
+   },
+   {
+    "word": "early",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.43,
+    "lead": 11
+   },
+   {
+    "word": "certain",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.16,
+    "lead": 11
+   },
+   {
+    "word": "version",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.07,
+    "lead": 11
+   },
+   {
+    "word": "German",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.95,
+    "lead": 11
+   },
+   {
+    "word": "workers",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.95,
+    "lead": 11
+   },
+   {
+    "word": "commercial",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.92,
+    "lead": 10
+   },
+   {
+    "word": "learning",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.92,
+    "lead": 11
+   },
+   {
+    "word": "purpose",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.88,
+    "lead": 11
+   },
+   {
+    "word": "murder",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.86,
+    "lead": 11
+   },
+   {
+    "word": "surface",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.83,
+    "lead": 11
+   },
+   {
+    "word": "journal",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.77,
+    "lead": 11
+   },
+   {
+    "word": "purchase",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.71,
+    "lead": 11
+   },
+   {
+    "word": "turning",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.71,
+    "lead": 11
+   },
+   {
+    "word": "attorney",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.69,
+    "lead": 10
+   },
+   {
+    "word": "internal",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.66,
+    "lead": 10
+   },
+   {
+    "word": "jersey",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.66,
+    "lead": 11
+   },
+   {
+    "word": "journey",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.65,
+    "lead": 11
+   },
+   {
+    "word": "urban",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.65,
+    "lead": 11
+   },
+   {
+    "word": "determined",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.64,
+    "lead": 10
+   },
+   {
+    "word": "determine",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.63,
+    "lead": 10
+   },
+   {
+    "word": "serving",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.62,
+    "lead": 11
+   },
+   {
+    "word": "Turkey",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.56,
+    "lead": 11
+   },
+   {
+    "word": "circle",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.55,
+    "lead": 11
+   },
+   {
+    "word": "dirty",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.55,
+    "lead": 11
+   },
+   {
+    "word": "external",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.52,
+    "lead": 10
+   },
+   {
+    "word": "burning",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.5,
+    "lead": 11
+   },
+   {
+    "word": "returning",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.49,
+    "lead": 10
+   },
+   {
+    "word": "universal",
+    "place": null,
+    "syl": 4,
+    "shape": "~Sw",
+    "zipf": 4.49,
+    "lead": 9
+   },
+   {
+    "word": "circuit",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.47,
+    "lead": 11
+   },
+   {
+    "word": "purchased",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.47,
+    "lead": 11
+   },
+   {
+    "word": "server",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.46,
+    "lead": 11
+   },
+   {
+    "word": "persons",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.43,
+    "lead": 11
+   },
+   {
+    "word": "worker",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.43,
+    "lead": 11
+   },
+   {
+    "word": "nervous",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.42,
+    "lead": 11
+   },
+   {
+    "word": "colonel",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.41,
+    "lead": 11
+   },
+   {
+    "word": "searching",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.36,
+    "lead": 11
+   },
+   {
+    "word": "referring",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.35,
+    "lead": 10
+   }
+  ],
+  [
+   {
+    "word": "person",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.55,
+    "lead": 13
+   },
+   {
+    "word": "service",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.49,
+    "lead": 13
+   },
+   {
+    "word": "working",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.45,
+    "lead": 13
+   },
+   {
+    "word": "early",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.43,
+    "lead": 13
+   },
+   {
+    "word": "certain",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.16,
+    "lead": 13
+   },
+   {
+    "word": "version",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.07,
+    "lead": 13
+   },
+   {
+    "word": "German",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.95,
+    "lead": 13
+   },
+   {
+    "word": "workers",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.95,
+    "lead": 13
+   },
+   {
+    "word": "commercial",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.92,
+    "lead": 12
+   },
+   {
+    "word": "learning",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.92,
+    "lead": 13
+   },
+   {
+    "word": "purpose",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.88,
+    "lead": 13
+   },
+   {
+    "word": "murder",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.86,
+    "lead": 13
+   },
+   {
+    "word": "surface",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.83,
+    "lead": 13
+   },
+   {
+    "word": "journal",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.77,
+    "lead": 13
+   },
+   {
+    "word": "purchase",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.71,
+    "lead": 13
+   },
+   {
+    "word": "turning",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.71,
+    "lead": 13
+   },
+   {
+    "word": "attorney",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.69,
+    "lead": 12
+   },
+   {
+    "word": "internal",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.66,
+    "lead": 12
+   },
+   {
+    "word": "jersey",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.66,
+    "lead": 13
+   },
+   {
+    "word": "journey",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.65,
+    "lead": 13
+   },
+   {
+    "word": "urban",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.65,
+    "lead": 13
+   },
+   {
+    "word": "determined",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.64,
+    "lead": 12
+   },
+   {
+    "word": "determine",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.63,
+    "lead": 12
+   },
+   {
+    "word": "serving",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.62,
+    "lead": 13
+   },
+   {
+    "word": "Turkey",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.56,
+    "lead": 13
+   },
+   {
+    "word": "circle",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.55,
+    "lead": 13
+   },
+   {
+    "word": "dirty",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.55,
+    "lead": 13
+   },
+   {
+    "word": "external",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.52,
+    "lead": 12
+   },
+   {
+    "word": "burning",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.5,
+    "lead": 13
+   },
+   {
+    "word": "returning",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.49,
+    "lead": 12
+   },
+   {
+    "word": "universal",
+    "place": null,
+    "syl": 4,
+    "shape": "~Sw",
+    "zipf": 4.49,
+    "lead": 11
+   },
+   {
+    "word": "circuit",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.47,
+    "lead": 13
+   },
+   {
+    "word": "purchased",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.47,
+    "lead": 13
+   },
+   {
+    "word": "server",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.46,
+    "lead": 13
+   },
+   {
+    "word": "persons",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.43,
+    "lead": 13
+   },
+   {
+    "word": "worker",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.43,
+    "lead": 13
+   },
+   {
+    "word": "nervous",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.42,
+    "lead": 13
+   },
+   {
+    "word": "colonel",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.41,
+    "lead": 13
+   },
+   {
+    "word": "searching",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.36,
+    "lead": 13
+   },
+   {
+    "word": "referring",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.35,
+    "lead": 12
+   }
+  ],
+  [
+   {
+    "word": "person",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.55,
+    "lead": 12
+   },
+   {
+    "word": "service",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.49,
+    "lead": 12
+   },
+   {
+    "word": "working",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.45,
+    "lead": 12
+   },
+   {
+    "word": "early",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.43,
+    "lead": 12
+   },
+   {
+    "word": "certain",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.16,
+    "lead": 12
+   },
+   {
+    "word": "version",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.07,
+    "lead": 12
+   },
+   {
+    "word": "German",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.95,
+    "lead": 12
+   },
+   {
+    "word": "workers",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.95,
+    "lead": 12
+   },
+   {
+    "word": "commercial",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.92,
+    "lead": 11
+   },
+   {
+    "word": "learning",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.92,
+    "lead": 12
+   },
+   {
+    "word": "purpose",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.88,
+    "lead": 12
+   },
+   {
+    "word": "murder",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.86,
+    "lead": 12
+   },
+   {
+    "word": "surface",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.83,
+    "lead": 12
+   },
+   {
+    "word": "journal",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.77,
+    "lead": 12
+   },
+   {
+    "word": "purchase",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.71,
+    "lead": 12
+   },
+   {
+    "word": "turning",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.71,
+    "lead": 12
+   },
+   {
+    "word": "attorney",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.69,
+    "lead": 11
+   },
+   {
+    "word": "internal",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.66,
+    "lead": 11
+   },
+   {
+    "word": "jersey",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.66,
+    "lead": 12
+   },
+   {
+    "word": "journey",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.65,
+    "lead": 12
+   },
+   {
+    "word": "urban",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.65,
+    "lead": 12
+   },
+   {
+    "word": "determined",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.64,
+    "lead": 11
+   },
+   {
+    "word": "determine",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.63,
+    "lead": 11
+   },
+   {
+    "word": "serving",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.62,
+    "lead": 12
+   },
+   {
+    "word": "Turkey",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.56,
+    "lead": 12
+   },
+   {
+    "word": "circle",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.55,
+    "lead": 12
+   },
+   {
+    "word": "dirty",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.55,
+    "lead": 12
+   },
+   {
+    "word": "external",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.52,
+    "lead": 11
+   },
+   {
+    "word": "burning",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.5,
+    "lead": 12
+   },
+   {
+    "word": "returning",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.49,
+    "lead": 11
+   },
+   {
+    "word": "universal",
+    "place": null,
+    "syl": 4,
+    "shape": "~Sw",
+    "zipf": 4.49,
+    "lead": 10
+   },
+   {
+    "word": "circuit",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.47,
+    "lead": 12
+   },
+   {
+    "word": "purchased",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.47,
+    "lead": 12
+   },
+   {
+    "word": "server",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.46,
+    "lead": 12
+   },
+   {
+    "word": "persons",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.43,
+    "lead": 12
+   },
+   {
+    "word": "worker",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.43,
+    "lead": 12
+   },
+   {
+    "word": "nervous",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.42,
+    "lead": 12
+   },
+   {
+    "word": "colonel",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.41,
+    "lead": 12
+   },
+   {
+    "word": "searching",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.36,
+    "lead": 12
+   },
+   {
+    "word": "referring",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.35,
+    "lead": 11
+   }
+  ],
+  [
+   {
+    "word": "going",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.94,
+    "lead": 6
+   },
+   {
+    "word": "open",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.48,
+    "lead": 6
+   },
+   {
+    "word": "local",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.43,
+    "lead": 6
+   },
+   {
+    "word": "social",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.42,
+    "lead": 6
+   },
+   {
+    "word": "moment",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.24,
+    "lead": 6
+   },
+   {
+    "word": "total",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.21,
+    "lead": 6
+   },
+   {
+    "word": "lower",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.11,
+    "lead": 6
+   },
+   {
+    "word": "october",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.11,
+    "lead": 5
+   },
+   {
+    "word": "focus",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.0,
+    "lead": 6
+   },
+   {
+    "word": "photo",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.97,
+    "lead": 6
+   },
+   {
+    "word": "posted",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.97,
+    "lead": 6
+   },
+   {
+    "word": "global",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.95,
+    "lead": 6
+   },
+   {
+    "word": "growing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.94,
+    "lead": 6
+   },
+   {
+    "word": "older",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.92,
+    "lead": 6
+   },
+   {
+    "word": "notice",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.9,
+    "lead": 6
+   },
+   {
+    "word": "holding",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.89,
+    "lead": 6
+   },
+   {
+    "word": "broken",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.88,
+    "lead": 6
+   },
+   {
+    "word": "holy",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.88,
+    "lead": 6
+   },
+   {
+    "word": "showing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.88,
+    "lead": 6
+   },
+   {
+    "word": "mobile",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.85,
+    "lead": 6
+   },
+   {
+    "word": "opened",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.85,
+    "lead": 6
+   },
+   {
+    "word": "mostly",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.83,
+    "lead": 6
+   },
+   {
+    "word": "owner",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.83,
+    "lead": 6
+   },
+   {
+    "word": "knowing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.76,
+    "lead": 6
+   },
+   {
+    "word": "closer",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.73,
+    "lead": 6
+   },
+   {
+    "word": "ocean",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.7,
+    "lead": 6
+   },
+   {
+    "word": "soldiers",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.7,
+    "lead": 6
+   },
+   {
+    "word": "noted",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.69,
+    "lead": 6
+   },
+   {
+    "word": "golden",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.67,
+    "lead": 6
+   },
+   {
+    "word": "hoping",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.67,
+    "lead": 6
+   },
+   {
+    "word": "focused",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.65,
+    "lead": 6
+   },
+   {
+    "word": "owners",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.65,
+    "lead": 6
+   },
+   {
+    "word": "tony",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.64,
+    "lead": 6
+   },
+   {
+    "word": "noticed",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.63,
+    "lead": 6
+   },
+   {
+    "word": "slowly",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.63,
+    "lead": 6
+   },
+   {
+    "word": "moments",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.62,
+    "lead": 6
+   },
+   {
+    "word": "voted",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.62,
+    "lead": 6
+   },
+   {
+    "word": "voting",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.62,
+    "lead": 6
+   },
+   {
+    "word": "chosen",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.61,
+    "lead": 6
+   },
+   {
+    "word": "solo",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.61,
+    "lead": 6
+   }
+  ],
+  [
+   {
+    "word": "birthday",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 4.76,
+    "lead": 7
+   },
+   {
+    "word": "girlfriend",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 4.68,
+    "lead": 7
+   },
+   {
+    "word": "thursday",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 4.62,
+    "lead": 7
+   },
+   {
+    "word": "worldwide",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 4.54,
+    "lead": 7
+   },
+   {
+    "word": "thirty",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 4.38,
+    "lead": 7
+   },
+   {
+    "word": "earthquake",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 4.15,
+    "lead": 7
+   },
+   {
+    "word": "workshop",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 4.15,
+    "lead": 7
+   },
+   {
+    "word": "workplace",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 4.04,
+    "lead": 7
+   },
+   {
+    "word": "workout",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 4.02,
+    "lead": 7
+   },
+   {
+    "word": "workforce",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 3.94,
+    "lead": 7
+   },
+   {
+    "word": "thirteen",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 3.89,
+    "lead": 7
+   },
+   {
+    "word": "workshops",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 3.88,
+    "lead": 7
+   },
+   {
+    "word": "sherlock",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 3.73,
+    "lead": 7
+   },
+   {
+    "word": "girlfriends",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 3.68,
+    "lead": 7
+   },
+   {
+    "word": "turnout",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 3.68,
+    "lead": 7
+   },
+   {
+    "word": "earthquakes",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 3.62,
+    "lead": 7
+   },
+   {
+    "word": "sergio",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 3.57,
+    "lead": 7
+   },
+   {
+    "word": "turmoil",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 3.52,
+    "lead": 7
+   },
+   {
+    "word": "workouts",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 3.51,
+    "lead": 7
+   },
+   {
+    "word": "surname",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 3.5,
+    "lead": 7
+   },
+   {
+    "word": "birthdays",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 3.48,
+    "lead": 7
+   },
+   {
+    "word": "mermaid",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 3.47,
+    "lead": 7
+   },
+   {
+    "word": "sherwood",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 3.47,
+    "lead": 7
+   },
+   {
+    "word": "workload",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 3.45,
+    "lead": 7
+   },
+   {
+    "word": "birthplace",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 3.37,
+    "lead": 7
+   },
+   {
+    "word": "turnbull",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 3.32,
+    "lead": 7
+   },
+   {
+    "word": "inferno",
+    "place": null,
+    "syl": 3,
+    "shape": "~SS",
+    "zipf": 3.3,
+    "lead": 6
+   },
+   {
+    "word": "worldview",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 3.26,
+    "lead": 7
+   },
+   {
+    "word": "whirlwind",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 3.24,
+    "lead": 7
+   },
+   {
+    "word": "firmware",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 3.23,
+    "lead": 7
+   },
+   {
+    "word": "boroughs",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 3.22,
+    "lead": 7
+   },
+   {
+    "word": "vertex",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 3.21,
+    "lead": 7
+   },
+   {
+    "word": "turnpike",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 3.18,
+    "lead": 7
+   },
+   {
+    "word": "burbank",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 3.17,
+    "lead": 7
+   },
+   {
+    "word": "kershaw",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 3.17,
+    "lead": 7
+   },
+   {
+    "word": "workflow",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 3.16,
+    "lead": 7
+   },
+   {
+    "word": "burnout",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 3.15,
+    "lead": 7
+   },
+   {
+    "word": "erwin",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 3.08,
+    "lead": 7
+   },
+   {
+    "word": "birthright",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 3.02,
+    "lead": 7
+   },
+   {
+    "word": "whirlpool",
+    "place": null,
+    "syl": 2,
+    "shape": "|SS",
+    "zipf": 2.99,
+    "lead": 7
+   }
+  ],
+  [
+   {
+    "word": "water",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.52,
+    "lead": 7
+   },
+   {
+    "word": "order",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.49,
+    "lead": 7
+   },
+   {
+    "word": "story",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.45,
+    "lead": 7
+   },
+   {
+    "word": "important",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.44,
+    "lead": 6
+   },
+   {
+    "word": "morning",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.33,
+    "lead": 7
+   },
+   {
+    "word": "talking",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.29,
+    "lead": 7
+   },
+   {
+    "word": "according",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.28,
+    "lead": 6
+   },
+   {
+    "word": "former",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.28,
+    "lead": 7
+   },
+   {
+    "word": "performance",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.16,
+    "lead": 6
+   },
+   {
+    "word": "forward",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.12,
+    "lead": 7
+   },
+   {
+    "word": "august",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.1,
+    "lead": 7
+   },
+   {
+    "word": "daughter",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.07,
+    "lead": 7
+   },
+   {
+    "word": "normal",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.01,
+    "lead": 7
+   },
+   {
+    "word": "california",
+    "place": null,
+    "syl": 4,
+    "shape": "~Sw",
+    "zipf": 5.0,
+    "lead": 5
+   },
+   {
+    "word": "reported",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.0,
+    "lead": 6
+   },
+   {
+    "word": "forces",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.98,
+    "lead": 7
+   },
+   {
+    "word": "calling",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.96,
+    "lead": 7
+   },
+   {
+    "word": "author",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.95,
+    "lead": 7
+   },
+   {
+    "word": "stories",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.95,
+    "lead": 7
+   },
+   {
+    "word": "insurance",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.94,
+    "lead": 6
+   },
+   {
+    "word": "awesome",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.92,
+    "lead": 7
+   },
+   {
+    "word": "walking",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.86,
+    "lead": 7
+   },
+   {
+    "word": "Northern",
+    "place": "place_specifics.md",
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.85,
+    "lead": 7
+   },
+   {
+    "word": "sources",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.84,
+    "lead": 7
+   },
+   {
+    "word": "smaller",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.8,
+    "lead": 7
+   },
+   {
+    "word": "corner",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.75,
+    "lead": 7
+   },
+   {
+    "word": "ordered",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.74,
+    "lead": 7
+   },
+   {
+    "word": "orders",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.73,
+    "lead": 7
+   },
+   {
+    "word": "quarter",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.72,
+    "lead": 7
+   },
+   {
+    "word": "supporting",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.71,
+    "lead": 6
+   },
+   {
+    "word": "border",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.7,
+    "lead": 7
+   },
+   {
+    "word": "supported",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.68,
+    "lead": 6
+   },
+   {
+    "word": "falling",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.66,
+    "lead": 7
+   },
+   {
+    "word": "recorded",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.66,
+    "lead": 6
+   },
+   {
+    "word": "causes",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.63,
+    "lead": 7
+   },
+   {
+    "word": "warning",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.59,
+    "lead": 7
+   },
+   {
+    "word": "drawing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.58,
+    "lead": 7
+   },
+   {
+    "word": "importance",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.56,
+    "lead": 6
+   },
+   {
+    "word": "performing",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.56,
+    "lead": 6
+   },
+   {
+    "word": "surely",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.55,
+    "lead": 7
+   }
+  ],
+  [
+   {
+    "word": "back",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 6.04,
+    "lead": 9
+   },
+   {
+    "word": "man",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.82,
+    "lead": 9
+   },
+   {
+    "word": "bad",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.53,
+    "lead": 9
+   },
+   {
+    "word": "thank",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.48,
+    "lead": 9
+   },
+   {
+    "word": "Black",
+    "place": "travel_history.md",
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.46,
+    "lead": 9
+   },
+   {
+    "word": "thanks",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.43,
+    "lead": 9
+   },
+   {
+    "word": "fact",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.41,
+    "lead": 9
+   },
+   {
+    "word": "hand",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.41,
+    "lead": 9
+   },
+   {
+    "word": "understand",
+    "place": null,
+    "syl": 3,
+    "shape": "~S",
+    "zipf": 5.37,
+    "lead": 7
+   },
+   {
+    "word": "act",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.3,
+    "lead": 9
+   },
+   {
+    "word": "plan",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.29,
+    "lead": 9
+   },
+   {
+    "word": "land",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.22,
+    "lead": 9
+   },
+   {
+    "word": "al",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.16,
+    "lead": 9
+   },
+   {
+    "word": "bank",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.16,
+    "lead": 9
+   },
+   {
+    "word": "hands",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.16,
+    "lead": 9
+   },
+   {
+    "word": "stand",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.14,
+    "lead": 9
+   },
+   {
+    "word": "tax",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.14,
+    "lead": 9
+   },
+   {
+    "word": "match",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.13,
+    "lead": 9
+   },
+   {
+    "word": "add",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.09,
+    "lead": 9
+   },
+   {
+    "word": "attack",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.09,
+    "lead": 8
+   },
+   {
+    "word": "damn",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.09,
+    "lead": 9
+   },
+   {
+    "word": "perhaps",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.09,
+    "lead": 8
+   },
+   {
+    "word": "began",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.07,
+    "lead": 8
+   },
+   {
+    "word": "fans",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.03,
+    "lead": 9
+   },
+   {
+    "word": "track",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.02,
+    "lead": 9
+   },
+   {
+    "word": "gas",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.01,
+    "lead": 9
+   },
+   {
+    "word": "plans",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.01,
+    "lead": 9
+   },
+   {
+    "word": "contact",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.99,
+    "lead": 8
+   },
+   {
+    "word": "san",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.97,
+    "lead": 9
+   },
+   {
+    "word": "dad",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.95,
+    "lead": 9
+   },
+   {
+    "word": "contract",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.94,
+    "lead": 8
+   },
+   {
+    "word": "band",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.92,
+    "lead": 9
+   },
+   {
+    "word": "cash",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.92,
+    "lead": 9
+   },
+   {
+    "word": "fan",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.92,
+    "lead": 9
+   },
+   {
+    "word": "lack",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.92,
+    "lead": 9
+   },
+   {
+    "word": "grand",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.91,
+    "lead": 9
+   },
+   {
+    "word": "glad",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.9,
+    "lead": 9
+   },
+   {
+    "word": "japan",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.89,
+    "lead": 8
+   },
+   {
+    "word": "catch",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.87,
+    "lead": 9
+   },
+   {
+    "word": "mass",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.87,
+    "lead": 9
+   }
+  ],
+  [
+   {
+    "word": "water",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.52,
+    "lead": 13
+   },
+   {
+    "word": "order",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.49,
+    "lead": 13
+   },
+   {
+    "word": "story",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.45,
+    "lead": 13
+   },
+   {
+    "word": "important",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.44,
+    "lead": 12
+   },
+   {
+    "word": "morning",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.33,
+    "lead": 13
+   },
+   {
+    "word": "talking",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.29,
+    "lead": 13
+   },
+   {
+    "word": "according",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.28,
+    "lead": 12
+   },
+   {
+    "word": "former",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.28,
+    "lead": 13
+   },
+   {
+    "word": "performance",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.16,
+    "lead": 12
+   },
+   {
+    "word": "forward",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.12,
+    "lead": 13
+   },
+   {
+    "word": "august",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.1,
+    "lead": 13
+   },
+   {
+    "word": "daughter",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.07,
+    "lead": 13
+   },
+   {
+    "word": "normal",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 5.01,
+    "lead": 13
+   },
+   {
+    "word": "california",
+    "place": null,
+    "syl": 4,
+    "shape": "~Sw",
+    "zipf": 5.0,
+    "lead": 11
+   },
+   {
+    "word": "reported",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 5.0,
+    "lead": 12
+   },
+   {
+    "word": "forces",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.98,
+    "lead": 13
+   },
+   {
+    "word": "calling",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.96,
+    "lead": 13
+   },
+   {
+    "word": "author",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.95,
+    "lead": 13
+   },
+   {
+    "word": "stories",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.95,
+    "lead": 13
+   },
+   {
+    "word": "insurance",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.94,
+    "lead": 12
+   },
+   {
+    "word": "awesome",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.92,
+    "lead": 13
+   },
+   {
+    "word": "walking",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.86,
+    "lead": 13
+   },
+   {
+    "word": "Northern",
+    "place": "place_specifics.md",
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.85,
+    "lead": 13
+   },
+   {
+    "word": "sources",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.84,
+    "lead": 13
+   },
+   {
+    "word": "smaller",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.8,
+    "lead": 13
+   },
+   {
+    "word": "corner",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.75,
+    "lead": 13
+   },
+   {
+    "word": "ordered",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.74,
+    "lead": 13
+   },
+   {
+    "word": "orders",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.73,
+    "lead": 13
+   },
+   {
+    "word": "quarter",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.72,
+    "lead": 13
+   },
+   {
+    "word": "supporting",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.71,
+    "lead": 12
+   },
+   {
+    "word": "border",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.7,
+    "lead": 13
+   },
+   {
+    "word": "supported",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.68,
+    "lead": 12
+   },
+   {
+    "word": "falling",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.66,
+    "lead": 13
+   },
+   {
+    "word": "recorded",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.66,
+    "lead": 12
+   },
+   {
+    "word": "causes",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.63,
+    "lead": 13
+   },
+   {
+    "word": "warning",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.59,
+    "lead": 13
+   },
+   {
+    "word": "drawing",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.58,
+    "lead": 13
+   },
+   {
+    "word": "importance",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.56,
+    "lead": 12
+   },
+   {
+    "word": "performing",
+    "place": null,
+    "syl": 3,
+    "shape": "~Sw",
+    "zipf": 4.56,
+    "lead": 12
+   },
+   {
+    "word": "surely",
+    "place": null,
+    "syl": 2,
+    "shape": "|Sw",
+    "zipf": 4.55,
+    "lead": 13
+   }
+  ]
+ ],
+ "sets": [
+  {
+   "words": [
+    "person",
+    "working",
+    "Bergen",
+    "going",
+    "birthday",
+    "water",
+    "Black",
+    "order"
+   ],
+   "min": 0.88,
+   "carpet_min": 0.0,
+   "places": 2,
+   "lead": [
+    11,
+    13,
+    12,
+    6,
+    7,
+    7,
+    9,
+    13
+   ],
+   "zipf": 5.19
+  },
+  {
+   "words": [
+    "person",
+    "working",
+    "Bergen",
+    "going",
+    "girlfriend",
+    "water",
+    "Black",
+    "order"
+   ],
+   "min": 0.88,
+   "carpet_min": 0.0,
+   "places": 2,
+   "lead": [
+    11,
+    13,
+    12,
+    6,
+    7,
+    7,
+    9,
+    13
+   ],
+   "zipf": 5.18
+  },
+  {
+   "words": [
+    "person",
+    "working",
+    "Bergen",
+    "going",
+    "thursday",
+    "water",
+    "Black",
+    "order"
+   ],
+   "min": 0.88,
+   "carpet_min": 0.0,
+   "places": 2,
+   "lead": [
+    11,
+    13,
+    12,
+    6,
+    7,
+    7,
+    9,
+    13
+   ],
+   "zipf": 5.17
+  },
+  {
+   "words": [
+    "person",
+    "working",
+    "Bergen",
+    "going",
+    "worldwide",
+    "water",
+    "Black",
+    "order"
+   ],
+   "min": 0.88,
+   "carpet_min": 0.0,
+   "places": 2,
+   "lead": [
+    11,
+    13,
+    12,
+    6,
+    7,
+    7,
+    9,
+    13
+   ],
+   "zipf": 5.16
+  },
+  {
+   "words": [
+    "person",
+    "working",
+    "Bergen",
+    "going",
+    "birthday",
+    "water",
+    "Black",
+    "former"
+   ],
+   "min": 0.88,
+   "carpet_min": 0.0,
+   "places": 2,
+   "lead": [
+    11,
+    13,
+    12,
+    6,
+    7,
+    7,
+    9,
+    13
+   ],
+   "zipf": 5.16
+  },
+  {
+   "words": [
+    "person",
+    "working",
+    "Bergen",
+    "going",
+    "girlfriend",
+    "water",
+    "Black",
+    "former"
+   ],
+   "min": 0.88,
+   "carpet_min": 0.0,
+   "places": 2,
+   "lead": [
+    11,
+    13,
+    12,
+    6,
+    7,
+    7,
+    9,
+    13
+   ],
+   "zipf": 5.15
+  }
+ ],
+ "places_known": 113,
+ "supply": 79469
+}

@@ -1,0 +1,52 @@
+{
+ "Hook 5-8": {
+  "slot": "Hook 5-8",
+  "kind": "carpet_family",
+  "kept_family": [
+   "lorry",
+   "sorry"
+  ],
+  "deferred": [
+   "pardon"
+  ],
+  "measured": "the slot's original holds 6/6 end pairs; a block mixing two families scores 2/6",
+  "change": "all four end words in one family (lorry/sorry); pardon may appear inside a bar"
+ },
+ "Hook 9-16": {
+  "slot": "Hook 9-16",
+  "kind": "carpet_family",
+  "kept_family": [
+   "head",
+   "bread"
+  ],
+  "deferred": [
+   "crown"
+  ],
+  "measured": "the slot's original holds 6/6 end pairs; a block mixing two families scores 2/6",
+  "change": "all four end words in one family (head/bread); crown may appear inside a bar"
+ },
+ "V1 17-24": {
+  "slot": "V1 17-24",
+  "kind": "carpet_family",
+  "kept_family": [
+   "in"
+  ],
+  "deferred": [
+   "aisle"
+  ],
+  "measured": "the slot's original holds 6/6 end pairs; a block mixing two families scores 2/6",
+  "change": "all four end words in one family (in); aisle may appear inside a bar"
+ },
+ "V2 9-16": {
+  "slot": "V2 9-16",
+  "kind": "carpet_family",
+  "kept_family": [
+   "red"
+  ],
+  "deferred": [
+   "shot"
+  ],
+  "measured": "the slot's original holds 6/6 end pairs; a block mixing two families scores 2/6",
+  "change": "all four end words in one family (red); shot may appear inside a bar"
+ }
+}

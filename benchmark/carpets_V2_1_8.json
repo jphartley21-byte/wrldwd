@@ -1,0 +1,3063 @@
+{
+ "slot": "V2 1-8",
+ "target": {
+  "slot": "V2 1-8",
+  "targets": [
+   {
+    "bar": 1,
+    "syl": 11,
+    "shape": "|S",
+    "shape_class": "S",
+    "marker": "|",
+    "vowels": [
+     "uː"
+    ],
+    "vowel": "uː"
+   },
+   {
+    "bar": 2,
+    "syl": 11,
+    "shape": "|S",
+    "shape_class": "S",
+    "marker": "|",
+    "vowels": [
+     "uː"
+    ],
+    "vowel": "uː"
+   },
+   {
+    "bar": 3,
+    "syl": 10,
+    "shape": "|S",
+    "shape_class": "S",
+    "marker": "|",
+    "vowels": [
+     "uː"
+    ],
+    "vowel": "uː"
+   },
+   {
+    "bar": 4,
+    "syl": 10,
+    "shape": "|S",
+    "shape_class": "S",
+    "marker": "|",
+    "vowels": [
+     "uː"
+    ],
+    "vowel": "uː"
+   },
+   {
+    "bar": 5,
+    "syl": 11,
+    "shape": "|S",
+    "shape_class": "S",
+    "marker": "|",
+    "vowels": [
+     "uː"
+    ],
+    "vowel": "uː"
+   },
+   {
+    "bar": 6,
+    "syl": 12,
+    "shape": "|S",
+    "shape_class": "S",
+    "marker": "|",
+    "vowels": [
+     "uː"
+    ],
+    "vowel": "uː"
+   },
+   {
+    "bar": 7,
+    "syl": 11,
+    "shape": "|S",
+    "shape_class": "S",
+    "marker": "|",
+    "vowels": [
+     "uː"
+    ],
+    "vowel": "uː"
+   },
+   {
+    "bar": 8,
+    "syl": 9,
+    "shape": "|S",
+    "shape_class": "S",
+    "marker": "|",
+    "vowels": [
+     "uː"
+    ],
+    "vowel": "uː"
+   }
+  ],
+  "scheme": "aaaaaaaa",
+  "manual_scheme": "AAAAAAAA",
+  "carpet": {
+   "pairs": 28,
+   "total": 28,
+   "min": 0.8,
+   "share": 1.0
+  },
+  "keys": [
+   [
+    [
+     "uː"
+    ],
+    1
+   ],
+   [
+    [
+     "uː"
+    ],
+    1
+   ],
+   [
+    [
+     "uː"
+    ],
+    1
+   ],
+   [
+    [
+     "uː"
+    ],
+    1
+   ],
+   [
+    [
+     "uː"
+    ],
+    1
+   ],
+   [
+    [
+     "uː"
+    ],
+    1
+   ],
+   [
+    [
+     "uː"
+    ],
+    1
+   ],
+   [
+    [
+     "uː"
+    ],
+    1
+   ]
+  ]
+ },
+ "grouping": "carpet",
+ "threshold": 0.78,
+ "aim": 0.95,
+ "groups": [
+  [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ]
+ ],
+ "unmet_groups": [],
+ "cliques": [
+  [
+   {
+    "bars": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "words": [
+     "new",
+     "two",
+     "through",
+     "use",
+     "used",
+     "school",
+     "group",
+     "news"
+    ],
+    "min": 0.8,
+    "places": 0,
+    "zipf": 5.81875
+   },
+   {
+    "bars": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "words": [
+     "new",
+     "two",
+     "through",
+     "use",
+     "used",
+     "school",
+     "group",
+     "food"
+    ],
+    "min": 0.8,
+    "places": 0,
+    "zipf": 5.81375
+   },
+   {
+    "bars": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "words": [
+     "new",
+     "two",
+     "through",
+     "use",
+     "used",
+     "school",
+     "group",
+     "true"
+    ],
+    "min": 0.8,
+    "places": 0,
+    "zipf": 5.81375
+   },
+   {
+    "bars": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "words": [
+     "new",
+     "two",
+     "through",
+     "use",
+     "used",
+     "school",
+     "group",
+     "room"
+    ],
+    "min": 0.8,
+    "places": 0,
+    "zipf": 5.8125
+   },
+   {
+    "bars": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "words": [
+     "new",
+     "two",
+     "through",
+     "use",
+     "used",
+     "school",
+     "group",
+     "due"
+    ],
+    "min": 0.8,
+    "places": 0,
+    "zipf": 5.8075
+   },
+   {
+    "bars": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "words": [
+     "new",
+     "two",
+     "through",
+     "use",
+     "used",
+     "school",
+     "group",
+     "move"
+    ],
+    "min": 0.8,
+    "places": 0,
+    "zipf": 5.8075
+   }
+  ]
+ ],
+ "free_bars": [],
+ "per_bar": [
+  [
+   {
+    "word": "new",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 6.25,
+    "lead": 10
+   },
+   {
+    "word": "two",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 6.1,
+    "lead": 10
+   },
+   {
+    "word": "through",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.87,
+    "lead": 10
+   },
+   {
+    "word": "use",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.81,
+    "lead": 10
+   },
+   {
+    "word": "used",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.8,
+    "lead": 10
+   },
+   {
+    "word": "school",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.71,
+    "lead": 10
+   },
+   {
+    "word": "group",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.57,
+    "lead": 10
+   },
+   {
+    "word": "news",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.44,
+    "lead": 10
+   },
+   {
+    "word": "food",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.4,
+    "lead": 10
+   },
+   {
+    "word": "true",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.4,
+    "lead": 10
+   },
+   {
+    "word": "room",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.39,
+    "lead": 10
+   },
+   {
+    "word": "due",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.35,
+    "lead": 10
+   },
+   {
+    "word": "move",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.35,
+    "lead": 10
+   },
+   {
+    "word": "soon",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.32,
+    "lead": 10
+   },
+   {
+    "word": "include",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.21,
+    "lead": 9
+   },
+   {
+    "word": "june",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.21,
+    "lead": 10
+   },
+   {
+    "word": "knew",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.2,
+    "lead": 10
+   },
+   {
+    "word": "view",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.19,
+    "lead": 10
+   },
+   {
+    "word": "cool",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.15,
+    "lead": 10
+   },
+   {
+    "word": "blue",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.13,
+    "lead": 10
+   },
+   {
+    "word": "groups",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.12,
+    "lead": 10
+   },
+   {
+    "word": "review",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.12,
+    "lead": 9
+   },
+   {
+    "word": "lose",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.08,
+    "lead": 10
+   },
+   {
+    "word": "huge",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.06,
+    "lead": 10
+   },
+   {
+    "word": "rules",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.06,
+    "lead": 10
+   },
+   {
+    "word": "schools",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.05,
+    "lead": 10
+   },
+   {
+    "word": "truth",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.05,
+    "lead": 10
+   },
+   {
+    "word": "moved",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.01,
+    "lead": 10
+   },
+   {
+    "word": "includes",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.96,
+    "lead": 9
+   },
+   {
+    "word": "rule",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.94,
+    "lead": 10
+   },
+   {
+    "word": "choose",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.91,
+    "lead": 10
+   },
+   {
+    "word": "produced",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.87,
+    "lead": 9
+   },
+   {
+    "word": "views",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.83,
+    "lead": 10
+   },
+   {
+    "word": "dude",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.81,
+    "lead": 10
+   },
+   {
+    "word": "improve",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.79,
+    "lead": 9
+   },
+   {
+    "word": "removed",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.79,
+    "lead": 9
+   },
+   {
+    "word": "produce",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.78,
+    "lead": 9
+   },
+   {
+    "word": "prove",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.77,
+    "lead": 10
+   },
+   {
+    "word": "youth",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.75,
+    "lead": 10
+   },
+   {
+    "word": "reduce",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.73,
+    "lead": 9
+   }
+  ],
+  [
+   {
+    "word": "new",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 6.25,
+    "lead": 10
+   },
+   {
+    "word": "two",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 6.1,
+    "lead": 10
+   },
+   {
+    "word": "through",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.87,
+    "lead": 10
+   },
+   {
+    "word": "use",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.81,
+    "lead": 10
+   },
+   {
+    "word": "used",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.8,
+    "lead": 10
+   },
+   {
+    "word": "school",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.71,
+    "lead": 10
+   },
+   {
+    "word": "group",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.57,
+    "lead": 10
+   },
+   {
+    "word": "news",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.44,
+    "lead": 10
+   },
+   {
+    "word": "food",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.4,
+    "lead": 10
+   },
+   {
+    "word": "true",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.4,
+    "lead": 10
+   },
+   {
+    "word": "room",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.39,
+    "lead": 10
+   },
+   {
+    "word": "due",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.35,
+    "lead": 10
+   },
+   {
+    "word": "move",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.35,
+    "lead": 10
+   },
+   {
+    "word": "soon",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.32,
+    "lead": 10
+   },
+   {
+    "word": "include",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.21,
+    "lead": 9
+   },
+   {
+    "word": "june",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.21,
+    "lead": 10
+   },
+   {
+    "word": "knew",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.2,
+    "lead": 10
+   },
+   {
+    "word": "view",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.19,
+    "lead": 10
+   },
+   {
+    "word": "cool",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.15,
+    "lead": 10
+   },
+   {
+    "word": "blue",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.13,
+    "lead": 10
+   },
+   {
+    "word": "groups",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.12,
+    "lead": 10
+   },
+   {
+    "word": "review",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.12,
+    "lead": 9
+   },
+   {
+    "word": "lose",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.08,
+    "lead": 10
+   },
+   {
+    "word": "huge",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.06,
+    "lead": 10
+   },
+   {
+    "word": "rules",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.06,
+    "lead": 10
+   },
+   {
+    "word": "schools",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.05,
+    "lead": 10
+   },
+   {
+    "word": "truth",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.05,
+    "lead": 10
+   },
+   {
+    "word": "moved",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.01,
+    "lead": 10
+   },
+   {
+    "word": "includes",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.96,
+    "lead": 9
+   },
+   {
+    "word": "rule",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.94,
+    "lead": 10
+   },
+   {
+    "word": "choose",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.91,
+    "lead": 10
+   },
+   {
+    "word": "produced",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.87,
+    "lead": 9
+   },
+   {
+    "word": "views",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.83,
+    "lead": 10
+   },
+   {
+    "word": "dude",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.81,
+    "lead": 10
+   },
+   {
+    "word": "improve",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.79,
+    "lead": 9
+   },
+   {
+    "word": "removed",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.79,
+    "lead": 9
+   },
+   {
+    "word": "produce",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.78,
+    "lead": 9
+   },
+   {
+    "word": "prove",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.77,
+    "lead": 10
+   },
+   {
+    "word": "youth",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.75,
+    "lead": 10
+   },
+   {
+    "word": "reduce",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.73,
+    "lead": 9
+   }
+  ],
+  [
+   {
+    "word": "new",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 6.25,
+    "lead": 9
+   },
+   {
+    "word": "two",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 6.1,
+    "lead": 9
+   },
+   {
+    "word": "through",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.87,
+    "lead": 9
+   },
+   {
+    "word": "use",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.81,
+    "lead": 9
+   },
+   {
+    "word": "used",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.8,
+    "lead": 9
+   },
+   {
+    "word": "school",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.71,
+    "lead": 9
+   },
+   {
+    "word": "group",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.57,
+    "lead": 9
+   },
+   {
+    "word": "news",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.44,
+    "lead": 9
+   },
+   {
+    "word": "food",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.4,
+    "lead": 9
+   },
+   {
+    "word": "true",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.4,
+    "lead": 9
+   },
+   {
+    "word": "room",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.39,
+    "lead": 9
+   },
+   {
+    "word": "due",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.35,
+    "lead": 9
+   },
+   {
+    "word": "move",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.35,
+    "lead": 9
+   },
+   {
+    "word": "soon",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.32,
+    "lead": 9
+   },
+   {
+    "word": "include",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.21,
+    "lead": 8
+   },
+   {
+    "word": "june",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.21,
+    "lead": 9
+   },
+   {
+    "word": "knew",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.2,
+    "lead": 9
+   },
+   {
+    "word": "view",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.19,
+    "lead": 9
+   },
+   {
+    "word": "cool",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.15,
+    "lead": 9
+   },
+   {
+    "word": "blue",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.13,
+    "lead": 9
+   },
+   {
+    "word": "groups",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.12,
+    "lead": 9
+   },
+   {
+    "word": "review",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.12,
+    "lead": 8
+   },
+   {
+    "word": "lose",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.08,
+    "lead": 9
+   },
+   {
+    "word": "huge",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.06,
+    "lead": 9
+   },
+   {
+    "word": "rules",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.06,
+    "lead": 9
+   },
+   {
+    "word": "schools",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.05,
+    "lead": 9
+   },
+   {
+    "word": "truth",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.05,
+    "lead": 9
+   },
+   {
+    "word": "moved",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.01,
+    "lead": 9
+   },
+   {
+    "word": "includes",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.96,
+    "lead": 8
+   },
+   {
+    "word": "rule",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.94,
+    "lead": 9
+   },
+   {
+    "word": "choose",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.91,
+    "lead": 9
+   },
+   {
+    "word": "produced",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.87,
+    "lead": 8
+   },
+   {
+    "word": "views",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.83,
+    "lead": 9
+   },
+   {
+    "word": "dude",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.81,
+    "lead": 9
+   },
+   {
+    "word": "improve",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.79,
+    "lead": 8
+   },
+   {
+    "word": "removed",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.79,
+    "lead": 8
+   },
+   {
+    "word": "produce",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.78,
+    "lead": 8
+   },
+   {
+    "word": "prove",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.77,
+    "lead": 9
+   },
+   {
+    "word": "youth",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.75,
+    "lead": 9
+   },
+   {
+    "word": "reduce",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.73,
+    "lead": 8
+   }
+  ],
+  [
+   {
+    "word": "new",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 6.25,
+    "lead": 9
+   },
+   {
+    "word": "two",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 6.1,
+    "lead": 9
+   },
+   {
+    "word": "through",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.87,
+    "lead": 9
+   },
+   {
+    "word": "use",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.81,
+    "lead": 9
+   },
+   {
+    "word": "used",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.8,
+    "lead": 9
+   },
+   {
+    "word": "school",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.71,
+    "lead": 9
+   },
+   {
+    "word": "group",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.57,
+    "lead": 9
+   },
+   {
+    "word": "news",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.44,
+    "lead": 9
+   },
+   {
+    "word": "food",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.4,
+    "lead": 9
+   },
+   {
+    "word": "true",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.4,
+    "lead": 9
+   },
+   {
+    "word": "room",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.39,
+    "lead": 9
+   },
+   {
+    "word": "due",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.35,
+    "lead": 9
+   },
+   {
+    "word": "move",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.35,
+    "lead": 9
+   },
+   {
+    "word": "soon",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.32,
+    "lead": 9
+   },
+   {
+    "word": "include",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.21,
+    "lead": 8
+   },
+   {
+    "word": "june",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.21,
+    "lead": 9
+   },
+   {
+    "word": "knew",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.2,
+    "lead": 9
+   },
+   {
+    "word": "view",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.19,
+    "lead": 9
+   },
+   {
+    "word": "cool",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.15,
+    "lead": 9
+   },
+   {
+    "word": "blue",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.13,
+    "lead": 9
+   },
+   {
+    "word": "groups",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.12,
+    "lead": 9
+   },
+   {
+    "word": "review",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.12,
+    "lead": 8
+   },
+   {
+    "word": "lose",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.08,
+    "lead": 9
+   },
+   {
+    "word": "huge",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.06,
+    "lead": 9
+   },
+   {
+    "word": "rules",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.06,
+    "lead": 9
+   },
+   {
+    "word": "schools",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.05,
+    "lead": 9
+   },
+   {
+    "word": "truth",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.05,
+    "lead": 9
+   },
+   {
+    "word": "moved",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.01,
+    "lead": 9
+   },
+   {
+    "word": "includes",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.96,
+    "lead": 8
+   },
+   {
+    "word": "rule",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.94,
+    "lead": 9
+   },
+   {
+    "word": "choose",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.91,
+    "lead": 9
+   },
+   {
+    "word": "produced",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.87,
+    "lead": 8
+   },
+   {
+    "word": "views",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.83,
+    "lead": 9
+   },
+   {
+    "word": "dude",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.81,
+    "lead": 9
+   },
+   {
+    "word": "improve",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.79,
+    "lead": 8
+   },
+   {
+    "word": "removed",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.79,
+    "lead": 8
+   },
+   {
+    "word": "produce",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.78,
+    "lead": 8
+   },
+   {
+    "word": "prove",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.77,
+    "lead": 9
+   },
+   {
+    "word": "youth",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.75,
+    "lead": 9
+   },
+   {
+    "word": "reduce",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.73,
+    "lead": 8
+   }
+  ],
+  [
+   {
+    "word": "new",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 6.25,
+    "lead": 10
+   },
+   {
+    "word": "two",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 6.1,
+    "lead": 10
+   },
+   {
+    "word": "through",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.87,
+    "lead": 10
+   },
+   {
+    "word": "use",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.81,
+    "lead": 10
+   },
+   {
+    "word": "used",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.8,
+    "lead": 10
+   },
+   {
+    "word": "school",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.71,
+    "lead": 10
+   },
+   {
+    "word": "group",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.57,
+    "lead": 10
+   },
+   {
+    "word": "news",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.44,
+    "lead": 10
+   },
+   {
+    "word": "food",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.4,
+    "lead": 10
+   },
+   {
+    "word": "true",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.4,
+    "lead": 10
+   },
+   {
+    "word": "room",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.39,
+    "lead": 10
+   },
+   {
+    "word": "due",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.35,
+    "lead": 10
+   },
+   {
+    "word": "move",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.35,
+    "lead": 10
+   },
+   {
+    "word": "soon",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.32,
+    "lead": 10
+   },
+   {
+    "word": "include",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.21,
+    "lead": 9
+   },
+   {
+    "word": "june",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.21,
+    "lead": 10
+   },
+   {
+    "word": "knew",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.2,
+    "lead": 10
+   },
+   {
+    "word": "view",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.19,
+    "lead": 10
+   },
+   {
+    "word": "cool",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.15,
+    "lead": 10
+   },
+   {
+    "word": "blue",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.13,
+    "lead": 10
+   },
+   {
+    "word": "groups",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.12,
+    "lead": 10
+   },
+   {
+    "word": "review",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.12,
+    "lead": 9
+   },
+   {
+    "word": "lose",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.08,
+    "lead": 10
+   },
+   {
+    "word": "huge",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.06,
+    "lead": 10
+   },
+   {
+    "word": "rules",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.06,
+    "lead": 10
+   },
+   {
+    "word": "schools",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.05,
+    "lead": 10
+   },
+   {
+    "word": "truth",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.05,
+    "lead": 10
+   },
+   {
+    "word": "moved",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.01,
+    "lead": 10
+   },
+   {
+    "word": "includes",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.96,
+    "lead": 9
+   },
+   {
+    "word": "rule",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.94,
+    "lead": 10
+   },
+   {
+    "word": "choose",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.91,
+    "lead": 10
+   },
+   {
+    "word": "produced",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.87,
+    "lead": 9
+   },
+   {
+    "word": "views",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.83,
+    "lead": 10
+   },
+   {
+    "word": "dude",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.81,
+    "lead": 10
+   },
+   {
+    "word": "improve",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.79,
+    "lead": 9
+   },
+   {
+    "word": "removed",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.79,
+    "lead": 9
+   },
+   {
+    "word": "produce",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.78,
+    "lead": 9
+   },
+   {
+    "word": "prove",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.77,
+    "lead": 10
+   },
+   {
+    "word": "youth",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.75,
+    "lead": 10
+   },
+   {
+    "word": "reduce",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.73,
+    "lead": 9
+   }
+  ],
+  [
+   {
+    "word": "new",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 6.25,
+    "lead": 11
+   },
+   {
+    "word": "two",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 6.1,
+    "lead": 11
+   },
+   {
+    "word": "through",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.87,
+    "lead": 11
+   },
+   {
+    "word": "use",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.81,
+    "lead": 11
+   },
+   {
+    "word": "used",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.8,
+    "lead": 11
+   },
+   {
+    "word": "school",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.71,
+    "lead": 11
+   },
+   {
+    "word": "group",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.57,
+    "lead": 11
+   },
+   {
+    "word": "news",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.44,
+    "lead": 11
+   },
+   {
+    "word": "food",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.4,
+    "lead": 11
+   },
+   {
+    "word": "true",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.4,
+    "lead": 11
+   },
+   {
+    "word": "room",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.39,
+    "lead": 11
+   },
+   {
+    "word": "due",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.35,
+    "lead": 11
+   },
+   {
+    "word": "move",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.35,
+    "lead": 11
+   },
+   {
+    "word": "soon",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.32,
+    "lead": 11
+   },
+   {
+    "word": "include",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.21,
+    "lead": 10
+   },
+   {
+    "word": "june",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.21,
+    "lead": 11
+   },
+   {
+    "word": "knew",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.2,
+    "lead": 11
+   },
+   {
+    "word": "view",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.19,
+    "lead": 11
+   },
+   {
+    "word": "cool",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.15,
+    "lead": 11
+   },
+   {
+    "word": "blue",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.13,
+    "lead": 11
+   },
+   {
+    "word": "groups",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.12,
+    "lead": 11
+   },
+   {
+    "word": "review",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.12,
+    "lead": 10
+   },
+   {
+    "word": "lose",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.08,
+    "lead": 11
+   },
+   {
+    "word": "huge",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.06,
+    "lead": 11
+   },
+   {
+    "word": "rules",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.06,
+    "lead": 11
+   },
+   {
+    "word": "schools",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.05,
+    "lead": 11
+   },
+   {
+    "word": "truth",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.05,
+    "lead": 11
+   },
+   {
+    "word": "moved",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.01,
+    "lead": 11
+   },
+   {
+    "word": "includes",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.96,
+    "lead": 10
+   },
+   {
+    "word": "rule",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.94,
+    "lead": 11
+   },
+   {
+    "word": "choose",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.91,
+    "lead": 11
+   },
+   {
+    "word": "produced",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.87,
+    "lead": 10
+   },
+   {
+    "word": "views",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.83,
+    "lead": 11
+   },
+   {
+    "word": "dude",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.81,
+    "lead": 11
+   },
+   {
+    "word": "improve",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.79,
+    "lead": 10
+   },
+   {
+    "word": "removed",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.79,
+    "lead": 10
+   },
+   {
+    "word": "produce",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.78,
+    "lead": 10
+   },
+   {
+    "word": "prove",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.77,
+    "lead": 11
+   },
+   {
+    "word": "youth",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.75,
+    "lead": 11
+   },
+   {
+    "word": "reduce",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.73,
+    "lead": 10
+   }
+  ],
+  [
+   {
+    "word": "new",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 6.25,
+    "lead": 10
+   },
+   {
+    "word": "two",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 6.1,
+    "lead": 10
+   },
+   {
+    "word": "through",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.87,
+    "lead": 10
+   },
+   {
+    "word": "use",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.81,
+    "lead": 10
+   },
+   {
+    "word": "used",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.8,
+    "lead": 10
+   },
+   {
+    "word": "school",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.71,
+    "lead": 10
+   },
+   {
+    "word": "group",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.57,
+    "lead": 10
+   },
+   {
+    "word": "news",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.44,
+    "lead": 10
+   },
+   {
+    "word": "food",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.4,
+    "lead": 10
+   },
+   {
+    "word": "true",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.4,
+    "lead": 10
+   },
+   {
+    "word": "room",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.39,
+    "lead": 10
+   },
+   {
+    "word": "due",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.35,
+    "lead": 10
+   },
+   {
+    "word": "move",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.35,
+    "lead": 10
+   },
+   {
+    "word": "soon",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.32,
+    "lead": 10
+   },
+   {
+    "word": "include",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.21,
+    "lead": 9
+   },
+   {
+    "word": "june",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.21,
+    "lead": 10
+   },
+   {
+    "word": "knew",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.2,
+    "lead": 10
+   },
+   {
+    "word": "view",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.19,
+    "lead": 10
+   },
+   {
+    "word": "cool",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.15,
+    "lead": 10
+   },
+   {
+    "word": "blue",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.13,
+    "lead": 10
+   },
+   {
+    "word": "groups",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.12,
+    "lead": 10
+   },
+   {
+    "word": "review",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.12,
+    "lead": 9
+   },
+   {
+    "word": "lose",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.08,
+    "lead": 10
+   },
+   {
+    "word": "huge",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.06,
+    "lead": 10
+   },
+   {
+    "word": "rules",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.06,
+    "lead": 10
+   },
+   {
+    "word": "schools",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.05,
+    "lead": 10
+   },
+   {
+    "word": "truth",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.05,
+    "lead": 10
+   },
+   {
+    "word": "moved",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.01,
+    "lead": 10
+   },
+   {
+    "word": "includes",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.96,
+    "lead": 9
+   },
+   {
+    "word": "rule",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.94,
+    "lead": 10
+   },
+   {
+    "word": "choose",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.91,
+    "lead": 10
+   },
+   {
+    "word": "produced",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.87,
+    "lead": 9
+   },
+   {
+    "word": "views",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.83,
+    "lead": 10
+   },
+   {
+    "word": "dude",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.81,
+    "lead": 10
+   },
+   {
+    "word": "improve",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.79,
+    "lead": 9
+   },
+   {
+    "word": "removed",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.79,
+    "lead": 9
+   },
+   {
+    "word": "produce",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.78,
+    "lead": 9
+   },
+   {
+    "word": "prove",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.77,
+    "lead": 10
+   },
+   {
+    "word": "youth",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.75,
+    "lead": 10
+   },
+   {
+    "word": "reduce",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.73,
+    "lead": 9
+   }
+  ],
+  [
+   {
+    "word": "new",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 6.25,
+    "lead": 8
+   },
+   {
+    "word": "two",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 6.1,
+    "lead": 8
+   },
+   {
+    "word": "through",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.87,
+    "lead": 8
+   },
+   {
+    "word": "use",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.81,
+    "lead": 8
+   },
+   {
+    "word": "used",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.8,
+    "lead": 8
+   },
+   {
+    "word": "school",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.71,
+    "lead": 8
+   },
+   {
+    "word": "group",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.57,
+    "lead": 8
+   },
+   {
+    "word": "news",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.44,
+    "lead": 8
+   },
+   {
+    "word": "food",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.4,
+    "lead": 8
+   },
+   {
+    "word": "true",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.4,
+    "lead": 8
+   },
+   {
+    "word": "room",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.39,
+    "lead": 8
+   },
+   {
+    "word": "due",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.35,
+    "lead": 8
+   },
+   {
+    "word": "move",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.35,
+    "lead": 8
+   },
+   {
+    "word": "soon",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.32,
+    "lead": 8
+   },
+   {
+    "word": "include",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.21,
+    "lead": 7
+   },
+   {
+    "word": "june",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.21,
+    "lead": 8
+   },
+   {
+    "word": "knew",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.2,
+    "lead": 8
+   },
+   {
+    "word": "view",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.19,
+    "lead": 8
+   },
+   {
+    "word": "cool",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.15,
+    "lead": 8
+   },
+   {
+    "word": "blue",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.13,
+    "lead": 8
+   },
+   {
+    "word": "groups",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.12,
+    "lead": 8
+   },
+   {
+    "word": "review",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 5.12,
+    "lead": 7
+   },
+   {
+    "word": "lose",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.08,
+    "lead": 8
+   },
+   {
+    "word": "huge",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.06,
+    "lead": 8
+   },
+   {
+    "word": "rules",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.06,
+    "lead": 8
+   },
+   {
+    "word": "schools",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.05,
+    "lead": 8
+   },
+   {
+    "word": "truth",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.05,
+    "lead": 8
+   },
+   {
+    "word": "moved",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 5.01,
+    "lead": 8
+   },
+   {
+    "word": "includes",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.96,
+    "lead": 7
+   },
+   {
+    "word": "rule",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.94,
+    "lead": 8
+   },
+   {
+    "word": "choose",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.91,
+    "lead": 8
+   },
+   {
+    "word": "produced",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.87,
+    "lead": 7
+   },
+   {
+    "word": "views",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.83,
+    "lead": 8
+   },
+   {
+    "word": "dude",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.81,
+    "lead": 8
+   },
+   {
+    "word": "improve",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.79,
+    "lead": 7
+   },
+   {
+    "word": "removed",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.79,
+    "lead": 7
+   },
+   {
+    "word": "produce",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.78,
+    "lead": 7
+   },
+   {
+    "word": "prove",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.77,
+    "lead": 8
+   },
+   {
+    "word": "youth",
+    "place": null,
+    "syl": 1,
+    "shape": "|S",
+    "zipf": 4.75,
+    "lead": 8
+   },
+   {
+    "word": "reduce",
+    "place": null,
+    "syl": 2,
+    "shape": "~S",
+    "zipf": 4.73,
+    "lead": 7
+   }
+  ]
+ ],
+ "sets": [
+  {
+   "words": [
+    "new",
+    "two",
+    "through",
+    "use",
+    "used",
+    "school",
+    "group",
+    "news"
+   ],
+   "min": 0.8,
+   "carpet_min": 0.8,
+   "places": 0,
+   "lead": [
+    10,
+    10,
+    9,
+    9,
+    10,
+    11,
+    10,
+    8
+   ],
+   "zipf": 5.82
+  },
+  {
+   "words": [
+    "new",
+    "two",
+    "through",
+    "use",
+    "used",
+    "school",
+    "group",
+    "food"
+   ],
+   "min": 0.8,
+   "carpet_min": 0.8,
+   "places": 0,
+   "lead": [
+    10,
+    10,
+    9,
+    9,
+    10,
+    11,
+    10,
+    8
+   ],
+   "zipf": 5.81
+  },
+  {
+   "words": [
+    "new",
+    "two",
+    "through",
+    "use",
+    "used",
+    "school",
+    "group",
+    "true"
+   ],
+   "min": 0.8,
+   "carpet_min": 0.8,
+   "places": 0,
+   "lead": [
+    10,
+    10,
+    9,
+    9,
+    10,
+    11,
+    10,
+    8
+   ],
+   "zipf": 5.81
+  },
+  {
+   "words": [
+    "new",
+    "two",
+    "through",
+    "use",
+    "used",
+    "school",
+    "group",
+    "room"
+   ],
+   "min": 0.8,
+   "carpet_min": 0.8,
+   "places": 0,
+   "lead": [
+    10,
+    10,
+    9,
+    9,
+    10,
+    11,
+    10,
+    8
+   ],
+   "zipf": 5.81
+  },
+  {
+   "words": [
+    "new",
+    "two",
+    "through",
+    "use",
+    "used",
+    "school",
+    "group",
+    "due"
+   ],
+   "min": 0.8,
+   "carpet_min": 0.8,
+   "places": 0,
+   "lead": [
+    10,
+    10,
+    9,
+    9,
+    10,
+    11,
+    10,
+    8
+   ],
+   "zipf": 5.81
+  },
+  {
+   "words": [
+    "new",
+    "two",
+    "through",
+    "use",
+    "used",
+    "school",
+    "group",
+    "move"
+   ],
+   "min": 0.8,
+   "carpet_min": 0.8,
+   "places": 0,
+   "lead": [
+    10,
+    10,
+    9,
+    9,
+    10,
+    11,
+    10,
+    8
+   ],
+   "zipf": 5.81
+  }
+ ],
+ "places_known": 113,
+ "supply": 79469
+}

@@ -1,4 +1,6 @@
 # Bars 1-4, v12 (9 Oct 2026): Joe's bar 3
+# CANONICAL (Joe, 12 Oct 2026). The four lines below are the approved text. Earlier quotes in
+# STATE.md and toolkit/keepers.json were variants; toolkit/canonical.py is now the single source.
 Yo, bonjourno
 Said damn at the on-stage porno
 Front row on my phone, so bored, though

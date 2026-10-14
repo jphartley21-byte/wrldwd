@@ -1,0 +1,9 @@
+# Positive-control fixture for the gates' selftests. NOT a draft source.
+# Joe scrapped toolkit/canonical.py on 12 Oct 2026: nothing in the song is locked any more and no draft
+# may be assembled from a protected list. These four bars survive only because the gates need a block
+# that is known to pass (by-ear scheme, meaning gate, regression gates, ear devices). Edit the bars here,
+# not in code.
+Yo, bonjourno
+Said damn at the on-stage porno
+Front row on my phone, so bored, though
+So I boarded a plane out to Bordeaux

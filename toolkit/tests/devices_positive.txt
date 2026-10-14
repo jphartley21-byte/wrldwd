@@ -1,0 +1,34 @@
+# Labelled fixtures for toolkit/devices.py. Format:  expected device | example line
+# The device name must appear in the detectors' output for that line. "no-device" means the line is
+# plain reportage and NOTHING should fire - that is the half that keeps the detectors honest.
+#
+# simile
+simile | Cold as a cellar up in Bergen
+simile | Came at me like a whippet off the lead
+simile-cliche | It all went like clockwork on the day
+#
+# metaphor
+metaphor | The van is a coffin with a radio
+metaphor | The bike is a mountain by the third day
+#
+# understatement: negation + downgrader, then the modal hedge the original's own closers use
+litotes | Not the worst bit of weather we have had
+hedge | Might hit the road past the border
+#
+# hyperbole
+hyperbole | I have told him a million times
+hyperbole | Everyone's on the make round there
+#
+# bathos: bland setup, then a short clause landing on something mundane
+bathos | Paid the bloke on the border, put the kettle on
+bathos | Drove the whole way in second gear, then the bins
+#
+# anaphora and polysyndeton
+anaphora | Same box, same box, same box, and it is all the same price
+polysyndeton | And I packed it and shipped it and rang the man
+#
+# plain reportage - the style's default register; none of the six should fire here
+no-device | Took the ferry, tunnel, and the car
+no-device | Skint the next day, mate
+no-device | Nobody signed it in Bergen, so it is not my car
+no-device | Boomtown, the souk, three in a row

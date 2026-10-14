@@ -1,0 +1,59 @@
+[
+ {
+  "slot": "Hook 1-4",
+  "_note": "ASSISTANT-AUTHORED 13 Oct 2026 for the from-scratch rebuild; story updated the same day to Joe's real events (party / adventure / fun). NOT approved by Joe.",
+  "argument": "I come off a three-week motorbike tour at Bilbao, say hello in Basque, and the only thing left between me and home is a ferry.",
+  "mechanisms": [
+   "3 LOANWORD SOUNDALIKE (ciao: hello and goodbye)",
+   "9 BATHOS CLOSER"
+  ],
+  "beats": [
+   {
+    "bars": "bar 1 (5 syl, |Sw)",
+    "job": "A greeting in Basque, then the place",
+    "content": "'Kaixo' (Basque hello) and Bilbao. Short."
+   },
+   {
+    "bars": "bar 2 (9 syl, ~Sw)",
+    "job": "What the tour was, as a chore",
+    "content": "France, Spain and Portugal on a loaded bike in two weeks, reported like a delivery round. Mid-word rhyme."
+   },
+   {
+    "bars": "bar 3 (9 syl, |S)",
+    "job": "The last sight",
+    "content": "The giant bronze spider under the green bridge and the Guggenheim's flower dog, seen from the bike. Hard end."
+   },
+   {
+    "bars": "bar 4 (9 syl, |S)",
+    "job": "The exit",
+    "content": "The ferry to Portsmouth; one small detail (the ticket, the ramp). Hard end."
+   }
+  ],
+  "concepts": [
+   {
+    "mechanism": "3 LOANWORD SOUNDALIKE",
+    "idiom_or_pair": "ciao (hello and goodbye in one word) against Bilbao",
+    "literal_reading": "The greeting is also the farewell: the narrator says hello to the port and goodbye to it in the same breath",
+    "payoff_word": "ciao"
+   },
+   {
+    "mechanism": "9 BATHOS CLOSER",
+    "idiom_or_pair": "a grand exit followed by the smallest admin detail",
+    "literal_reading": "The departure is a boarding-gate detail, not a getaway",
+    "payoff_word": "now"
+   }
+  ],
+  "cross_world_pair": "ciao (hello / goodbye) and now (urgency) and how (the form's own question) share one sound: the -ow family (aU).",
+  "rhyme_seed_words": [
+   "A (bars 1-4): the -ow family: Bilbao, Koh Tao, ciao, now, how, allow, vow, brow, wow, somehow. Hard endings |S for bars 3-4 (now, how, allow); Bilbao and Koh Tao are the two real places in the family."
+  ],
+  "facts_used": [
+   "Bilbao 10 Jun 2023: the giant bronze spider 'Maman' under a green bridge, the Guggenheim's flower dog and mirror-ball sculpture (real)",
+   "Brittany Ferries home, 11-12 Jun 2023 (real)",
+   "Koh Tao 2015 (real, used only for the -ow rhyme)"
+  ],
+  "callbacks_in": "",
+  "callbacks_out": "The narrator is already travelling: Hook 5-8 opens in Rotterdam.",
+  "closer": "Bar 4 ends on a hard -ow word."
+ }
+]

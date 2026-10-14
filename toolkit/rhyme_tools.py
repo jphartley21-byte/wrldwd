@@ -35,13 +35,79 @@ OVR = {
     "nevis": "N EH1 V IH0 S", "bergen": "B ER1 G AH0 N", "oslo": "AA1 Z L OW0", "padstow": "P AE1 D S T OW0",
     "porto": "P AO1 R T OW0", "hurtin": "HH ER1 T IH0 N", "fam": "F AE1 M", "grouse": "G R AW1 S", "bergen": "B ER1 G AH0 N", "skal": "S K AO1 L", "hurtigruten": "HH ER1 T IY0 G R UW2 T AH0 N", "majorca": "M AH0 Y AO1 R K AH0", "portsmouth": "P AO1 R T S M AH0 TH", "bordeaux": "B AO0 R D OW1", "vienna": "V IY0 EH1 N AH0", "zurich": "Z UH1 R IH0 K",
     "bern": "B ER1 N", "amsterdam": "AE1 M S T ER0 D AE2 M", "interrail": "IH1 N T ER0 R EY2 L",
+    # Isle of Man and Donegal (the May 2023 motorbike trip in material/travel_history.md). Added 12 Oct
+    # 2026: V1 17-24 owns these places and the tools could not pronounce a single one of them.
+    "laxey": "L AE1 K S IY0", "castletown": "K AE1 S AH0 L T AW2 N", "douglas": "D AH1 G L AH0 S",
+    "ramsey": "R AE1 M Z IY0", "onchan": "AA1 N CH AH0 N", "tynwald": "T IH1 N W AO0 L D",
+    "snaefell": "S N EY1 F EH2 L", "peel": "P IY1 L", "donegal": "D AA2 N IH0 G AO1 L",
+    "letterkenny": "L EH2 T ER0 K EH1 N IY0", "bundoran": "B AH2 N D AO1 R AH0 N",
+    "malin": "M AE1 L IH0 N", "maughold": "M AO1 K AH0 L D",
     "panniers": "P AE1 N Y ER0 Z", "wetherspoons": "W EH1 DH ER0 S P UW2 N Z", "spoons": "S P UW1 N Z",
+    "guten": "G UW1 T AH0 N", "morgen": "M AO1 R G AH0 N", "freiburg": "F R AY1 B UH0 R G",
     "horfield": "HH AO1 F IY0 L D", "rotterdam": "R AA1 T ER0 D AE2 M", "donegal": "D AA1 N AH0 G AO2 L",
     "cairns": "K AE1 N Z", "noosa": "N UW1 S AH0", "whitsundays": "W IH1 T S AH0 N D EY2 Z",
     "kettle": "K EH1 T AH0 L", "pyjamas": "P AH0 JH AA1 M AH0 Z", "tarn": "T AA1 N", "scree": "S K R IY1",
     "cairn": "K EH1 N", "fell": "F EH1 L", "gorse": "G AO1 S", "loch": "L AA1 K", "lough": "L AA1 K",
     "hasta": "AA1 S T AH0", "luego": "L W EH1 G OW0", "wagwan": "W AE1 G W AA2 N", "ese": "EH1 SH EH0",
-    "lagos": "L EY1 G AA0 S", "tobago": "T AH0 B EY1 G OW0", "vegas": "V EY1 G AH0 S", "kaixo": "K AY1 SH OW0", "obrigado": "OW2 B R IH0 G AA1 D OW0", "bonjour": "B AO0 N ZH UH1 R", "bought": "B AO1 T", "sawn": "S AO1 N", "bonjourno": "B AA2 N JH AO1 N OW0", "should've": "SH UH1 D AH0 V", "shouldve": "SH UH1 D AH0 V", "sawnoff": "S AO1 N AO2 F", "caught": "K AO1 T", "brought": "B R AO1 T", "thought": "TH AO1 T", "taught": "T AO1 T", "fought": "F AO1 T", "sought": "S AO1 T", "maman": "M AH0 M AA1 N", "transatlantic": "T R AE2 N Z AH0 T L AE1 N T IH0 K",
+    "lagos": "L EY1 G AA0 S", "tobago": "T AH0 B EY1 G OW0", "vegas": "V EY1 G AH0 S", "kaixo": "K AY1 SH OW0", "shukran": "SH UH1 K R AA0 N", "prost": "P R OW1 S T", "napoli": "N AA1 P AH0 L IY0", "lorry": "L AA1 R IY0", "quarry": "K W AA1 R IY0", "corrie": "K AA1 R IY0", "obrigado": "OW2 B R IH0 G AA1 D OW0", "bonjour": "B AO0 N ZH UH1 R", "bought": "B AO1 T", "sawn": "S AO1 N", "bonjourno": "B AA2 N JH AO1 N OW0", "should've": "SH UH1 D AH0 V", "shouldve": "SH UH1 D AH0 V", "sawnoff": "S AO1 N AO2 F", "caught": "K AO1 T", "brought": "B R AO1 T", "thought": "TH AO1 T", "taught": "T AO1 T", "fought": "F AO1 T", "sought": "S AO1 T", "maman": "M AH0 M AA1 N", "transatlantic": "T R AE2 N Z AH0 T L AE1 N T IH0 K",
+    "fiver": "F AY1 V ER0", "gday": "G AH0 D EY1", "hei": "HH EY1", "handoff": "HH AE1 N D AO2 F", "rhine": "R AY1 N",
+    "peaky": "P IY1 K IY0", "pyrenees": "P IH2 R AH0 N IY1 Z",
+    # The transactional local words (toolkit/local_words.txt), by the country they belong to. Without these
+    # the whole code-switching supply was unmeasurable: the toolkit could not count syllables, place stress
+    # or rhyme any bar that used one, so a bar built on a local word read as a vowel blob. Anglicised on
+    # purpose -- the song is in English and the word has to scan in an English line.
+    "zdravo": "Z D R AA1 V OW0", "hvala": "HH V AA1 L AH0", "prosim": "P R OW1 S IH0 M",
+    "pivo": "P IY1 V OW0", "kava": "K AA1 V AH0", "dakujem": "D Y AA1 K UW0 Y EH2 M",
+    "danke": "D AA1 NG K AH0", "rechnung": "R EH1 K N UH0 NG",
+    "grazie": "G R AA1 T S IY0", "birra": "B IH1 R AH0", "conto": "K AA1 N T OW0", "scusi": "S K UW1 Z IY0",
+    "flics": "F L IH1 K S", "cuenta": "K W EH1 N T AH0", "tio": "T IY1 OW0",
+    "cerveja": "S ER0 V EY1 ZH AH0", "conta": "K OW1 N T AH0", "vinho": "V IY1 N Y OW0",
+    "yamas": "Y AA1 M AH0 S", "ouzo": "UW1 Z OW0", "parakalo": "P AA0 R AA1 K AH0 L OW0",
+    "efharisto": "EH0 F AA0 R IY1 S T OW0",
+    "takk": "T AA1 K", "ol": "OW1 L", "regningen": "R AY1 N IH0 NG AH0 N",
+    "khop": "K AO1 P", "bhat": "B AE1 T", "farang": "F AA0 R AE1 NG", "xin": "S IH1 N",
+    "bia": "B IY1 AH0", "certi": "S ER1 T IY0", "guap": "G W AE1 P",
+    "nore": "N AO1 R AH0", "slideshow": "S L AY1 D SH OW0",
+    # The -ow / -o family, where cmudict is inconsistent with itself: it marks the final syllable of
+    # borrow, shadow, willow, potato, tobacco, tornado, solo, photo, tempo, kilo, memo as secondary-stressed
+    # (OW2) and the identical syllable of sorrow, follow, hollow, yellow, window, burrow, polo, demo, weirdo,
+    # logo, zero as unstressed (OW0). In speech they are all the same unstressed /əʊ/. The difference is not
+    # cosmetic: the hook's end shape is |Sw (Joe's bars and the original's both), and an OW2 final makes a
+    # perfect rhyme word read as two strong syllables, so a bar written to the shape FAILS as if it were
+    # wrong. Measured 12 Oct 2026.
+    "borrow": "B AA1 R OW0", "borrowed": "B AA1 R OW0 D", "tomorrow": "T AH0 M AA1 R OW0", "shadow": "SH AE1 D OW0",
+    "willow": "W IH1 L OW0", "potato": "P AH0 T EY1 T OW0", "tomato": "T AH0 M EY1 T OW0",
+    "tobacco": "T AH0 B AE1 K OW0", "tornado": "T AO0 R N EY1 D OW0", "solo": "S OW1 L OW0",
+    "photo": "F OW1 T OW0", "tempo": "T EH1 M P OW0", "kilo": "K IH1 L OW0", "memo": "M EH1 M OW0",
+    "calais": "K AE0 L EY1", "kaixo": "K AY1 SH OW0", "koh": "K OW1",
+    "g'day": "G AH0 D EY1", "ahoj": "AH0 HH OY1", "zivjo": "ZH IY1 V Y OW0",
+    # UK slang and everyday British words absent from cmudict. Without a pronunciation here the
+    # toolkit cannot count syllables, place stress or rhyme the word, so these were unusable.
+    "skint": "S K IH1 N T", "knackered": "N AE1 K ER0 D", "chuffed": "CH AH1 F T", "dodgy": "D AO1 JH IY0", "minging": "M IH1 NG IH0 NG", "bevvy": "B EH1 V IY0",
+    "bevvies": "B EH1 V IY0 Z", "bevvied": "B EH1 V IY0 D", "sarnie": "S AA1 N IY0", "butty": "B AH1 T IY0", "scran": "S K R AE1 N", "trollied": "T R AO1 L IY0 D",
+    "wazzock": "W AE1 Z AH0 K", "skive": "S K AY1 V", "skiving": "S K AY1 V IH0 NG", "faff": "F AE1 F", "faffing": "F AE1 F IH0 NG", "kipping": "K IH1 P IH0 NG",
+    "nicking": "N IH1 K IH0 NG", "scarper": "S K AA1 P ER0", "scarpered": "S K AA1 P ER0 D", "rozzer": "R AA1 Z ER0", "numpty": "N AH1 M P T IY0", "div": "D IH1 V",
+    "gormless": "G AO1 M L AH0 S", "doolally": "D UW1 L AE2 L IY0", "barmy": "B AA1 M IY0", "narky": "N AA1 K IY0", "mardy": "M AA1 D IY0", "buzzin": "B AH1 Z IH0 N",
+    "chav": "CH AE1 V", "plonker": "P L AA1 NG K ER0", "pillock": "P IH1 L AH0 K", "tosser": "T AA1 S ER0", "stonking": "S T AA1 NG K IH0 NG", "chocka": "CH AA1 K AH0",
+    "chocker": "CH AA1 K ER0", "chippies": "CH IH1 P IY0 Z", "caff": "K AE1 F", "cushdy": "K UH1 SH D IY0", "blag": "B L AE1 G", "blagged": "B L AE1 G D",
+    "innit": "IH1 N IH0 T", "cuppa": "K AH1 P AH0", "boozers": "B UW1 Z ER0 Z", "mullered": "M AH1 L ER0 D", "baccy": "B AE1 K IY0",
+    # Place names that were MISSING, which mattered more than it sounds: phon.word_phones falls back
+    # to a vowels-only guess when the dictionary has no entry, silently dropping every consonant. So
+    # "Lagos" was parsed as two bare vowels with NO coda and could not rhyme with anything -- the
+    # 12 Oct labelled-pair test caught it as a false negative on the original's own rhyme.
+    "lagos": "L EY1 G AH0 S", "vegas": "V EY1 G AH0 S", "verona": "V ER0 OW1 N AH0", "bonn": "B AA1 N",
+    "brisbane": "B R IH1 Z B AH0 N", "belgrade": "B EH0 L G R EY1 D", "mainz": "M AY1 N T S",
+    "milano": "M IH0 L AA1 N OW0", "marbella": "M AA2 R B EH1 L AH0", "toulon": "T UW0 L AA1 N",
+    "saigon": "S AY2 G AA1 N", "ibiza": "IH0 B IY1 TH AH0", "granada": "G R AH0 N AA1 D AH0",
+    "bologna": "B AH0 L OW1 N Y AH0", "havana": "HH AH0 V AE1 N AH0", "prague": "P R AA1 G",
+    # Australian slang (Joe, 14 Oct 2026: Aussie slang into the pool; the Sydney / Australia 2017 trips). Anglicised, as the song is English.
+    "bottlo": "B AA1 T L OW0", "esky": "EH1 S K IY0", "brekkie": "B R EH1 K IY0", "ute": "Y UW1 T", "tinnie": "T IH1 N IY0", "smoko": "S M OW1 K OW0",
+    "dunny": "D AH1 N IY0", "durry": "D ER1 IY0", "mozzie": "M AA1 Z IY0", "sickie": "S IH1 K IY0", "drongo": "D R AA1 NG G OW0", "larrikin": "L AE1 R IH0 K IH0 N",
+    "galah": "G AH0 L AA1", "bludger": "B L AH1 JH ER0", "cobber": "K AA1 B ER0", "hooroo": "HH UW0 R UW1", "crikey": "K R AY1 K IY0", "strewth": "S T R UW1 TH",
+    "bonzer": "B AA1 N Z ER0", "sook": "S UH1 K", "yakka": "Y AE1 K AH0", "bikkie": "B IH1 K IY0", "doona": "D UW1 N AH0", "billabong": "B IH1 L AH0 B AO2 NG",
+    "swag": "S W AE1 G", "jackaroo": "JH AE2 K ER0 UW1", "tradie": "T R EY1 D IY0", "cossie": "K AA1 Z IY0", "maccas": "M AE1 K AH0 Z", "middy": "M IH1 D IY0",
+    "chunder": "CH AH1 N D ER0", "dinkum": "D IH1 NG K AH0 M", "uey": "Y UW1 IY0", "coldie": "K OW1 L D IY0", "donger": "D AO1 NG ER0", "wallopers": "W AA1 L AH0 P ER0 Z",
+    "straya": "S T R EY1 Y AH0", "kaixo": "K AY1 SH OW0",
 }
 FUNC = set("""ya this a an the of to in on at for and or but so if as i my me we you he she it is was are am be been by
 with from up that this his her our your they them their its im ill ive dont cant wont isnt wasnt then than do did
@@ -63,7 +129,19 @@ def is_v(p):
 
 
 def pron(word):
-    w = re.sub(r"[^a-z]", "", word.lower())
+    # The apostrophe must survive the lookup. It used to be stripped first, which made every contraction
+    # in cmudict and in OVR an OOV word: "he's" (HH IY1 Z, present in BOTH tables) resolved to None, so
+    # it fell through to the vowel-group estimate and lost its /h/ and /z/ entirely. Consequence (14 Oct
+    # 2026): a join such as "whites, he's" could not be measured for consonants at all, and the word
+    # could not be stress-classified. Measured before the fix: 27 apostrophe tokens in the original's 92
+    # bars, 5 of them unresolvable; and after it, the original's own syllable counts and stress patterns
+    # are unchanged bar for bar, so the fix is a repair, not a recalibration.
+    raw = word.lower().strip().strip(".,?!;:")
+    if raw in OVR:
+        return OVR[raw].split()
+    if raw in D:
+        return list(D[raw][0])
+    w = re.sub(r"[^a-z]", "", raw)
     if not w:
         return None
     if w in OVR:
@@ -464,6 +542,16 @@ def read_bars(f):
 NUMS = set("one two three four five six seven eight nine ten eleven twelve twenty thirty forty fifty sixty seventy eighty ninety hundred thousand grand ton".split())
 
 
+def _letter(i):
+    """A..Z, then AA, AB, ... so blocks longer than 8 bars still get a scheme."""
+    n, s = i, ""
+    while True:
+        s = chr(ord("A") + n % 26) + s
+        n = n // 26 - 1
+        if n < 0:
+            return s
+
+
 def quad_stats(bars):
     S = build_S(bars, quiet=True)
     nb = len(bars)
@@ -477,13 +565,13 @@ def quad_stats(bars):
         for gi, g in enumerate(groups):
             sc = [vsim(x[3], y[3]) for x, y in zip(g, t)]
             if len(sc) == 2 and min(sc) > 0:
-                letters.append("ABCDEFGH"[gi]); break
+                letters.append(_letter(gi)); break
         else:
-            groups.append(t); letters.append("ABCDEFGH"[len(groups) - 1])
+            groups.append(t); letters.append(_letter(len(groups) - 1))
     out["scheme2"] = "".join(letters)
     lv = [strip(r[-1][3]) if r else "-" for r in rows]
     m = {}
-    out["scheme1"] = "".join(m.setdefault(v, "ABCDEFGH"[len(m)]) for v in lv)
+    out["scheme1"] = "".join(m.setdefault(v, _letter(len(m))) for v in lv)
     out["end_cover2"] = max(out["scheme2"].count(c) for c in set(out["scheme2"]))
     out["fem_end"] = sum(1 for r in rows if r and not r[-1][5])
     out["enjamb"] = sum(1 for b in bars if re.findall(r"[A-Za-z']+", b)[-1].lower() in FUNC)
@@ -544,7 +632,15 @@ def quad_stats(bars):
     cw = [w for w in words if w not in FUNC and len(w) > 3]
     out["echo_words"] = sorted({w for w in cw if cw.count(w) > 1})
     out["numbers"] = sum(1 for w in words if w in NUMS)
-    out["redup"] = sum(1 for b in bars for m_ in re.finditer(r"(\w+)[- ](\w+)", b.lower()) if m_.group(1) == m_.group(2) or (m_.group(1)[1:] == m_.group(2)[1:] and len(m_.group(1)) > 2))
+    rep = 0
+    for b in bars:
+        lb = b.lower()
+        rep += len(re.findall(r"\b(\w+)-\1\b", lb))       # bye-bye, pop-pop
+        rep += len(re.findall(r"\b(\w+)\s\1\b", lb))      # dot dot
+        for m_ in re.finditer(r"\b(\w+)[- ](\w+)\b", lb):  # click-clack (first letter dropped)
+            if m_.group(1) != m_.group(2) and len(m_.group(1)) > 2 and m_.group(1)[1:] == m_.group(2)[1:]:
+                rep += 1
+    out["redup"] = rep
     out["mate"] = words.count("mate")
     return out
 
@@ -635,6 +731,9 @@ def cmd_syllmap(a):
 
 
 def main():
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")   # the map prints IPA; under a pipe on
+    #                                                           # Windows the default is cp1252 and the CLI
+    #                                                           # dies instead of printing
     ap = argparse.ArgumentParser()
     sp = ap.add_subparsers(dest="cmd", required=True)
     p = sp.add_parser("pron"); p.add_argument("text"); p.set_defaults(f=cmd_pron)

@@ -1,0 +1,155 @@
+[
+ {
+  "round": 1,
+  "minutes": 21.2,
+  "taken": 16,
+  "duel_score": 7.5,
+  "of": 19,
+  "stats": {
+   "candidates": 144,
+   "fail_syl": 45,
+   "fail_sense": 54,
+   "fail_shape": 164,
+   "fail_endword": 3,
+   "fail_thread": 7,
+   "repaired": 72,
+   "fail_rhyme": 18,
+   "fail_narrator": 7
+  },
+  "per_quad": {
+   "0": {
+    "took": true,
+    "duel": 0.0,
+    "clean": 0,
+    "passed": 2,
+    "err": null
+   },
+   "1": {
+    "took": true,
+    "duel": 1.0,
+    "clean": 6,
+    "passed": 1,
+    "err": null
+   },
+   "2": {
+    "took": true,
+    "duel": 1.0,
+    "clean": 6,
+    "passed": 1,
+    "err": null
+   },
+   "3": {
+    "took": true,
+    "duel": 1.0,
+    "clean": 5,
+    "passed": 3,
+    "err": null
+   },
+   "4": {
+    "took": true,
+    "duel": 0.0,
+    "clean": 0,
+    "passed": 1,
+    "err": null
+   },
+   "5": {
+    "took": true,
+    "duel": 0.0,
+    "clean": 0,
+    "passed": 3,
+    "err": null
+   },
+   "6": {
+    "took": true,
+    "duel": 0.5,
+    "clean": 0,
+    "passed": 3,
+    "err": null
+   },
+   "7": {
+    "took": true,
+    "duel": 0.5,
+    "clean": 4,
+    "passed": 1,
+    "err": null
+   },
+   "8": {
+    "took": true,
+    "duel": 0.0,
+    "clean": 1,
+    "passed": 4,
+    "err": null
+   },
+   "9": {
+    "took": false,
+    "duel": 0.0,
+    "clean": 0,
+    "passed": 0,
+    "err": null
+   },
+   "10": {
+    "took": true,
+    "duel": 1.0,
+    "clean": 5,
+    "passed": 2,
+    "err": null
+   },
+   "11": {
+    "took": false,
+    "duel": 0.0,
+    "clean": null,
+    "passed": null,
+    "err": "deepseek returned empty content in JSON mode (finish_reason=length, out_tokens=26000): raise max_tokens/lower effort"
+   },
+   "12": {
+    "took": false,
+    "duel": 0.0,
+    "clean": 0,
+    "passed": 0,
+    "err": null
+   },
+   "13": {
+    "took": true,
+    "duel": 0.0,
+    "clean": 1,
+    "passed": 2,
+    "err": null
+   },
+   "14": {
+    "took": true,
+    "duel": 0.5,
+    "clean": 8,
+    "passed": 3,
+    "err": null
+   },
+   "15": {
+    "took": true,
+    "duel": 1.0,
+    "clean": 7,
+    "passed": 3,
+    "err": null
+   },
+   "16": {
+    "took": true,
+    "duel": 1.0,
+    "clean": 7,
+    "passed": 4,
+    "err": null
+   },
+   "17": {
+    "took": true,
+    "duel": 0.0,
+    "clean": 6,
+    "passed": 2,
+    "err": null
+   },
+   "18": {
+    "took": true,
+    "duel": 0.0,
+    "clean": 6,
+    "passed": 2,
+    "err": null
+   }
+  }
+ }
+]

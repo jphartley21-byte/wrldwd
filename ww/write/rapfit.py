@@ -1,0 +1,494 @@
+"""rapfit: does this pair of bar endings rhyme the way it sounds WHEN RAPPED, not only on paper?   (a RANKING layer; status UNVALIDATED, ww/registry.py)
+
+WHY IT EXISTS (Joe, 13 Oct 2026): the repo's grader (toolkit/phon.py + match.best_end, frozen, calibrate-protected) credits pairs that technically rhyme and
+do not sound like a rhyme on the beat. Measured: "audit / biscuit / credit / orbit" and "limit / jacket / pocket / knit" graded 28/28 PERFECT in draft 8 because
+the grader accepts a bare unstressed "-it" as a one-syllable rhyme, while the four stressed vowels (ɔː, ɪ, e, ɔː) all differ. In rap the rhyme lives on the syllables
+that land on the beat; an unstressed tail echo is not heard as a rhyme. Reweighting the frozen grader failed twice (it broke the original's own checks), so this is a
+separate layer that never edits it.
+
+WHAT IT MEASURES (all from British phones through phon.syllables; no lyrics, no model):
+  anchor      the rime starts at the LAST STRESSED syllable (that is where the beat falls). A bar that ends on a full vowel after it (bonjourno / though,
+              Tobago / home) also offers the FINAL syllable as a second anchor, at a small discount: the ear hears the closing diphthong.
+  stressed    vowel match (phon.vsim: height/backness/rounding, closing diphthongs by their glide) and coda match (consonant classes, from the right).
+              Assonance counts: the original's carpets are vowel-led (goose/cruise/suit/do/shoot/through) and rate well by design.
+  tail        the syllables after the anchor. Matching tails (favours/flavours, Lagos/Vegas) are a multisyllabic rhyme and earn a bonus; a tail on only one side
+              (day / waiter) costs a little (masculine against feminine lands on a different beat).
+  cap         if the stressed vowels do not match (< 0.55) the pair cannot exceed 0.30: a tail echo is not a rhyme.
+Flags are reported beside the number: IDENTICAL word, TAIL-ONLY (the grader says rhyme, this says no), CHEAP (the rime is among the most common in English).
+
+HONEST LIMITS: the only ear-labelled pairs in the repo are the original's by-ear scheme (positives: same letter; negatives: different letter) and the 12 pairs in
+toolkit/tests/rhyme_pairs.txt. None of them is a "technically rhymes but sounds flat" pair, so the cap cannot be fitted, only checked for not breaking those
+labels. The pairs it demotes need Joe's ear: `python -m ww.cli rapfit --labels` writes the sheet.
+"""
+from __future__ import annotations
+
+import collections
+import itertools
+import re
+from functools import lru_cache
+
+from .. import bridge
+
+WEAK = {"ə", "ɪ", "i"}
+# rapfit has its OWN scale (true rhymes in the original: median 0.74, quartiles 0.60-0.84; its non-rhymes: median 0.05). FLOOR is the single threshold that best
+# separates Joe's by-ear pairs for the original: recall 91%, non-rhymes accepted 6% (Youden J 0.85, IN-SAMPLE on 274 pairs; the frozen grader at its 0.78 floor:
+# recall 93%, accepted 28%). STRONG is where a pair is clearly a perfect-sounding rhyme. Neither is validated out of sample.
+FLOOR = 0.50
+STRONG = 0.80
+GRADER_FLOOR = 0.78
+FINAL_ANCHOR_DISCOUNT = 0.92
+
+
+# words as they are SUNG on the original, where the dictionary says otherwise (Joe's ear: luego rhymes with Tobago, Mainz with Spain)
+SUNG = {"luego": "L W EY1 G OW0", "mainz": "M EY1 N Z",
+        "chicas": "CH IY1 K AH0 Z",                                    # the dictionary guess gave the second syllable a full vowel
+        "transatlantic": "T R AE2 N Z AE2 T L AE1 N T IH0 K"}        # trans-AT-LAN-tic: all three syllables are the same full vowel as delivered
+
+
+def _phon():
+    bridge._toolkit_on_path()
+    bridge._pron_ready()          # teaches the toolkit the words only ww knows (loanwords, names): without it 'chicas' has no syllables at all
+    import rhyme_tools
+    for w, a in SUNG.items():
+        rhyme_tools.OVR[w] = a
+    import phon
+    return phon
+
+
+@lru_cache(maxsize=None)
+def _syl(text: str) -> tuple:
+    try:
+        p = _phon()
+        out = []
+        # per WORD, so each syllable can say whether another syllable of its word follows (4th field). The toolkit's syllables attach every consonant before the next
+        # vowel to the PREVIOUS syllable ('por' = ɔː+n, 'Bor' = ɔː+d), but the ear hears por-no / bor-DOH as the same open /ɔː/ + a new onset.
+        for w in re.findall(r"[A-Za-z'å]+", text.replace("å", "a").replace("-", " ")):
+            sy = p.syllables(w)
+            for k, (v, st, c) in enumerate(sy):
+                out.append((v, bool(st), tuple(c), k < len(sy) - 1))
+        return tuple(out)
+    except Exception:    # noqa: BLE001 - unpronounceable text has no syllables
+        return ()
+
+
+def _codasim(ca: tuple, cb: tuple) -> float:
+    if ca == cb:
+        return 1.0
+    p = _phon()
+    sims = []
+    for x, y in itertools.zip_longest(reversed(ca), reversed(cb)):
+        sims.append(0.35 if (x is None or y is None) else p.csim(x, y))
+    return sum(sims) / len(sims)
+
+
+def _coda_sim_syl(x: tuple, y: tuple) -> float:
+    """ending similarity of two syllables, AMBISYLLABIC: where another syllable of the word follows, its last consonant may really be that syllable's onset
+    (por-no, bor-deaux, fa-vours, la-gos), so the better of 'consonant in the ending' and 'consonant belongs to the next syllable' counts."""
+    best = _codasim(x[2], y[2])
+    xi = len(x) > 3 and x[3]
+    yi = len(y) > 3 and y[3]
+    if xi or yi:
+        best = max(best, _codasim(x[2][:-1] if xi else x[2], y[2][:-1] if yi else y[2]))
+    return best
+
+
+def _anchors(sy: tuple) -> list[tuple[int, bool]]:
+    """[(index, is_secondary)] where the rime may start."""
+    idx = [i for i, s in enumerate(sy) if s[1]]
+    out: list[tuple[int, bool]] = []
+    if idx:
+        out.append((idx[-1], False))
+    last = len(sy) - 1
+    if last >= 0 and sy[last][0] not in WEAK and (not out or out[-1][0] != last):
+        out.append((last, True))
+    if not out and last >= 0:
+        out.append((last, False))
+    return out
+
+
+def _core(a: tuple, b: tuple) -> tuple[float, bool]:
+    """(score, tail_matched) for rimes a, b (syllable tuples that start on the anchor)."""
+    p = _phon()
+    sv = p.vsim(a[0][0], b[0][0])
+    if sv < 0.55:
+        return 0.30 * sv, False                                   # the stressed vowels do not rhyme: a tail echo is not a rhyme
+    sc = _codasim(a[0][2], b[0][2])          # the PAIR SCORE keeps the strict ending: it ranks Joe's by-ear pairs better (AUC 0.931 vs 0.917 ambisyllabic)
+    ta, tb = a[1:], b[1:]
+    if ta and tb:
+        k = min(len(ta), len(tb))
+        sims = []
+        for x, y in zip(ta[:k], tb[:k]):
+            v = 0.85 if (x[0] in WEAK and y[0] in WEAK) else p.vsim(x[0], y[0])
+            sims.append(0.5 * v + 0.5 * _codasim(x[2], y[2]))
+        st = sum(sims) / k
+        matched = sum(1 for s in sims if s >= 0.85)
+        # a multisyllabic rime is carried by the vowel and the TAIL together, so a differing consonant inside it (global/mogul) costs less
+        total = 0.45 * sv + 0.20 * sc + 0.35 * st + 0.04 * min(2, matched) - 0.08 * abs(len(ta) - len(tb))
+        return max(0.0, min(1.0, total)), matched > 0
+    total = 0.60 * sv + 0.40 * sc - 0.08 * (len(ta) + len(tb))   # masculine against feminine lands on a different beat
+    return max(0.0, min(1.0, total)), False
+
+
+def score(a: str, b: str) -> dict:
+    """{'score', 'multi', 'flags'} for two bar-ending texts."""
+    A, B = _syl(a), _syl(b)
+    if not A or not B:
+        return {"score": 0.0, "multi": False, "flags": ["UNPRONOUNCEABLE"]}
+    best, multi = 0.0, False
+    for ia, sa in _anchors(A):
+        for ib, sb in _anchors(B):
+            s, m = _core(A[ia:], B[ib:])
+            if sa or sb:
+                s *= FINAL_ANCHOR_DISCOUNT
+            if s > best:
+                best, multi = s, m
+    flags = []
+    if a.strip().lower() == b.strip().lower():
+        flags.append("IDENTICAL")
+    try:
+        base = bridge.rhyme_score(a, b)
+    except Exception:    # noqa: BLE001
+        base = 0.0
+    if base >= GRADER_FLOOR and best < FLOOR:
+        flags.append("TAIL-ONLY")
+    return {"score": round(best, 2), "multi": multi, "flags": flags, "grader": round(base, 2)}
+
+
+def selftest() -> tuple[bool, str]:
+    problems = []
+
+    def s(a, b):
+        return score(a, b)["score"]
+    if s("audit", "biscuit") >= FLOOR or s("credit", "orbit") >= FLOOR:
+        problems.append(f"a bare unstressed -it must not rhyme: audit~biscuit {s('audit', 'biscuit')}, credit~orbit {s('credit', 'orbit')}")
+    if "TAIL-ONLY" not in score("audit", "biscuit")["flags"]:
+        problems.append("audit~biscuit should be flagged TAIL-ONLY (the grader says perfect)")
+    for a, b in (("favours", "flavours"), ("Lagos", "Vegas"), ("fox", "box"), ("debt", "vet"), ("global", "mogul"), ("goose", "cruise"), ("bonjourno", "though")):
+        if s(a, b) < FLOOR:
+            problems.append(f"{a}~{b} should rhyme: {s(a, b)}")
+    if s("ferry", "Mary") < FLOOR or s("gammon", "hammer") < FLOOR:
+        problems.append("near-vowel and consonant-variant pairs the original also uses should still rhyme")
+    if s("fox", "fox") < 0.95 or "IDENTICAL" not in score("fox", "fox")["flags"]:
+        problems.append("identical words are flagged, not hidden")
+    if s("day", "waiter") >= s("day", "way"):
+        problems.append("masculine~feminine should cost something against a plain masculine pair")
+    problems += depth_selftest()
+    c = chain_best(_syl("Dublin"), _syl("double it"))
+    if c["depth"] < 2:
+        problems.append(f"Dublin / double it share a syllabic-l rime and should reach depth 2: {c}")
+    cb = check_block("Hook 1-4", ["Yo, bonjourno", "Said damn at the on-stage porno", "Front row on my phone, so bored, though", "So I boarded a plane out to Bordeaux"])
+    if cb["hard"]:
+        problems.append(f"Joe's accepted hook must pass the stress-anchor gate: {cb['hard']}")
+    bad = check_block("V1 17-24", ["Audit", "Biscuit", "Credit", "Orbit", "Limit", "Jacket", "Pocket", "Knit"])
+    if not bad["hard"]:
+        problems.append("a block of bare -it endings must fail the stress-anchor gate")
+    return (not problems, "; ".join(problems) if problems else "bare -it tails demoted and flagged; favours~flavours, Lagos~Vegas, fox~box, goose~cruise, bonjourno~though all rhyme; masculine~feminine costs a little")
+
+
+# ------------------------------------------------------------------ evaluation against Joe's ear
+
+def ear_pairs() -> list[dict]:
+    """labelled pairs from the original's BY-EAR scheme (slotcheck.spec): same letter = rhymes (1), different letter or a lone letter = does not (0).
+    Read from the private file; only isolated end words are ever printed, nothing is written."""
+    from . import rhymeview, slotcheck
+    orig = rhymeview.load_original()
+    out = []
+    for slot, bars in orig.items():
+        scheme = slotcheck.spec(slot)["scheme"]
+        if len(scheme) != len(bars):
+            continue
+        tails = [rhymeview.tail_text(b.split()) for b in bars]
+        for i, j in itertools.combinations(range(len(bars)), 2):
+            same = scheme[i] == scheme[j] and scheme.count(scheme[i]) >= 2
+            out.append({"slot": slot, "i": i, "j": j, "a": tails[i], "b": tails[j], "y": 1 if same else 0})
+    return out
+
+
+def _auc(pos: list[float], neg: list[float]) -> float:
+    if not pos or not neg:
+        return float("nan")
+    wins = sum((p > n) + 0.5 * (p == n) for p in pos for n in neg)
+    return wins / (len(pos) * len(neg))
+
+
+def evaluate(verbose: bool = True) -> dict:
+    pairs = ear_pairs()
+    floors = {"base": GRADER_FLOOR, "rap": FLOOR}
+    for p in pairs:
+        p["base"] = float(bridge.rhyme_score(p["a"], p["b"]))
+        p["rap"] = score(p["a"], p["b"])["score"]
+    res = {"n": len(pairs), "pos": sum(p["y"] for p in pairs)}
+    for name in ("base", "rap"):
+        pos = [p[name] for p in pairs if p["y"]]
+        neg = [p[name] for p in pairs if not p["y"]]
+        res[name] = {"auc": round(_auc(pos, neg), 3), "recall": round(sum(v >= floors[name] for v in pos) / len(pos), 3),
+                     "false_accept": round(sum(v >= floors[name] for v in neg) / len(neg), 3)}
+    # leave-one-slot-out is moot for a model with no fitted weights; per-slot AUC shows where each scorer is blind
+    res["by_slot"] = {}
+    for slot in dict.fromkeys(p["slot"] for p in pairs):
+        ps = [p for p in pairs if p["slot"] == slot]
+        res["by_slot"][slot] = {n: round(_auc([p[n] for p in ps if p["y"]], [p[n] for p in ps if not p["y"]]), 2) for n in ("base", "rap")}
+    res["rap_misses"] = [(p["slot"], p["a"].split()[-1], p["b"].split()[-1], p["rap"], p["base"]) for p in pairs if p["y"] and p["rap"] < FLOOR]
+    res["rap_false"] = [(p["slot"], p["a"].split()[-1], p["b"].split()[-1], p["rap"], p["base"]) for p in pairs if not p["y"] and p["rap"] >= FLOOR]
+    res["base_false"] = [(p["slot"], p["a"].split()[-1], p["b"].split()[-1], p["rap"], p["base"]) for p in pairs if not p["y"] and p["base"] >= GRADER_FLOOR]
+    if verbose:
+        print(f"BY-EAR LABELS from the original: {res['n']} pairs, {res['pos']} rhyme / {res['n'] - res['pos']} do not (Joe's scheme letters)")
+        for name, label in (("base", "grader (match.best_end, frozen)"), ("rap", "rapfit (new layer)")):
+            r = res[name]
+            print(f"  {label:34} AUC {r['auc']:.3f} | recall of true rhymes {r['recall']:.0%} | non-rhymes wrongly accepted {r['false_accept']:.0%}")
+        print("  per-slot AUC (grader / rapfit): " + "; ".join(f"{s} {v['base']}/{v['rap']}" for s, v in res["by_slot"].items()))
+    return res
+
+
+# ------------------------------------------------------------------ the sheet only Joe's ear can fill in
+
+def label_sheet(draft_path: str, out_path: str, max_tech: int = 24) -> dict:
+    """Pairs from OUR draft, written as a markdown table for Joe to mark (rhymes when rapped? y / n / meh). Three kinds, shuffled by id so the kind is not
+    obvious: TECH (the grader accepts, rapfit does not hear it), BORDER (rapfit 0.50-0.70) and STRONG controls (rapfit >= 0.90 and the grader agrees).
+    Only our own words are written."""
+    import random
+    from . import rhymeview
+    secs = rhymeview.load_draft(draft_path)
+    seen, tech, border, strong = set(), [], [], []
+    for slot, bars in secs.items():
+        tails = [rhymeview.tail_text(b.split()) for b in bars]
+        lab = rhymeview._group_grader(tails)
+        for g in {x for x in lab if x is not None}:
+            mem = [i for i, x in enumerate(lab) if x == g]
+            for i, j in itertools.combinations(mem, 2):
+                a, b = tails[i], tails[j]
+                if a == b or (a, b) in seen or (b, a) in seen:
+                    continue
+                seen.add((a, b))
+                r = score(a, b)
+                row = {"slot": slot, "a": a, "b": b, "rap": r["score"], "grader": r["grader"]}
+                if "TAIL-ONLY" in r["flags"]:
+                    tech.append(row)
+                elif FLOOR <= r["score"] < 0.70:
+                    border.append(row)
+                elif r["score"] >= 0.90 and r["grader"] >= GRADER_FLOOR:
+                    strong.append(row)
+    rnd = random.Random(13)
+    pick = lambda xs, n: rnd.sample(xs, min(n, len(xs)))
+    rows = [dict(r, kind="TECH") for r in pick(tech, max_tech)] + [dict(r, kind="BORDER") for r in pick(border, 8)] + [dict(r, kind="STRONG") for r in pick(strong, 8)]
+    rnd.shuffle(rows)
+    L = ["# Does this rhyme when it is RAPPED? (ear sheet for rapfit)", "",
+         "Say each pair on the beat. Mark **y** = it sounds like a rhyme, **n** = it only rhymes on paper, **m** = meh / borderline. Nothing here is a verdict until you mark it.",
+         "The kind of pair is hidden on purpose. Your marks become the labels that set rapfit's floor and test whether it favours what sounds good.", "",
+         "| id | slot | pair | your ear (y / n / m) |", "|---|---|---|---|"]
+    for k, r in enumerate(rows, 1):
+        L.append(f"| {k} | {r['slot']} | {r['a']} ~ {r['b']} | |")
+    L += ["", "<!-- answer key, do not read before marking: " + "; ".join(f"{k}={r['kind']}(rap {r['rap']}, grader {r['grader']})" for k, r in enumerate(rows, 1)) + " -->"]
+    from pathlib import Path
+    Path(out_path).write_text("\n".join(L) + "\n", encoding="utf-8")
+    return {"tech": len(tech), "border": len(border), "strong": len(strong), "written": len(rows), "path": out_path}
+
+
+# ------------------------------------------------------------------ syllable-level matching (the unit a rapper hears)
+
+SHORT = {"ɪ", "e", "æ", "ʌ", "ɒ", "ʊ"}
+
+
+def syl_match(x: tuple, y: tuple) -> int:
+    """2 = same vowel AND coda (the syllables rhyme), 1 = same vowel only (assonance), 0 = different.  x, y = (vowel, stressed, coda)."""
+    p = _phon()
+    sv = p.vsim(x[0], y[0])
+    if 0.9 <= sv < 0.99:
+        return 1                     # a near vowel that shares a glide (aɪ ~ eɪ: eye ~ ba) is assonance, never an exact rime
+    if sv < 0.9:
+        # a NEAR stressed vowel with a matching ending still rhymes by ear (ferry / Mary: e ~ eə; Holtman: vowels that differ only slightly in height or length)
+        return 1 if (sv >= 0.62 and (x[1] or y[1]) and _coda_sim_syl(x, y) >= 0.75) else 0
+    return 2 if _coda_sim_syl(x, y) >= 0.75 else 1
+
+
+def long_vowel(v: str) -> bool:
+    """long monophthong or diphthong (iː uː ɑː ɔː ɜː eɪ aɪ ɔɪ əʊ aʊ ɪə eə ʊə): the ear still leans on it when it is unstressed (bonjourNO, tobaGO)."""
+    return bool(_phon().V.get(v, (0, 0, 0, 0))[3])
+
+
+def prominent(s: tuple) -> bool:
+    """a syllable a rapper puts weight on: stressed, or ANY full vowel (trans-at-LAN-tic is delivered four-square, so the unstressed full 'æ' of 'trans' counts). Only the
+    reduced vowels (ə, ɪ, i) do not: the 'it' of biscuit / credit is a tail, not a rhyme."""
+    return bool(s[1]) or s[0] not in WEAK
+
+
+def chain(A: tuple, B: tuple) -> dict:
+    """syllable-by-syllable match from the END of two tails. {'states': [2|1 ...] from the last syllable backwards, 'depth', 'echo'}.
+    depth = length of the matching run IF it reaches a prominent syllable (a real rhyme); echo = the run's length when it does NOT
+    (an unstressed tail echo: biscuit / credit share only the 'it')."""
+    states = []
+    for k in range(1, min(len(A), len(B)) + 1):
+        m = syl_match(A[-k], B[-k])
+        if m == 0:
+            break
+        states.append(m)
+    prom = any(prominent(A[-1 - k]) or prominent(B[-1 - k]) for k in range(len(states)))
+    return {"states": states, "depth": len(states) if prom else 0, "echo": 0 if prom else len(states)}
+
+
+def depth_selftest() -> list[str]:
+    problems = []
+
+    def c(a, b):
+        return chain(_syl(a), _syl(b))
+    r = c("audit", "biscuit")
+    if r["depth"] != 0 or r["echo"] != 1:
+        problems.append(f"audit/biscuit should be a 1-syllable tail echo only: {r}")
+    r = c("favours", "flavours")
+    if r["depth"] != 2 or r["states"] != [2, 2]:
+        problems.append(f"favours/flavours should be a 2-syllable full rhyme: {r}")
+    if c("luego", "Tobago")["depth"] < 1:
+        problems.append("luego/Tobago share a full closing vowel and should count as a rhyme")
+    if c("fox", "box")["depth"] != 1:
+        problems.append("fox/box is a 1-syllable stressed rhyme")
+    r = c("porno", "Bordeaux")
+    if r["depth"] != 2 or r["states"] != [2, 2]:
+        problems.append(f"por-no / bor-deaux are the same open vowel then the same closing vowel (the n/d belong to the next syllable): {r}")
+    r = c("Lagos", "favours")
+    if r["depth"] != 2:
+        problems.append(f"Lagos / favours are a two-syllable rhyme: {r}")
+    if syl_match(_syl("eye")[0], _syl("plain")[0]) == 2:
+        problems.append("eye (aɪ) and plain (eɪ) share a glide but are not an exact rime")
+    if syl_match(_syl("plain")[0], _syl("plane")[0]) != 2:
+        problems.append("plain / plane are homophones: an exact rime")
+    sy = _syl("transatlantic")
+    if [prominent(x) for x in sy] != [True, True, True, False]:
+        problems.append(f"transatlantic: trans, at and lan carry full æ and tic is the weak tail: {[prominent(x) for x in sy]}")
+    r = c("luego", "Tobago")
+    if r["depth"] != 2:
+        problems.append(f"luego (sung 'lway-go') and Tobago share eɪ then əʊ: {r}")
+    return problems
+
+
+# ------------------------------------------------------------------ the enforcement layer (13 Oct 2026, Joe: "placement and vowel type enforced during the writing process")
+
+TARGETS_PATH = None
+
+
+def _elide(sy: tuple) -> tuple:
+    """syllabic l / n / m: a schwa that only carries l, n or m after a consonant is the end of the PREVIOUS syllable (double = dʌbl, not dʌ-bə-l), so
+    'double it' (three dictionary syllables) can rhyme with 'Dublin' (two): move the consonant into the previous coda and drop the schwa syllable."""
+    out: list = []
+    for k, x in enumerate(sy):
+        if k > 0 and x[0] == "ə" and not x[1] and x[2] and x[2][0] in ("l", "n", "m") and out and out[-1][2]:
+            prev = out[-1]
+            out[-1] = (prev[0], prev[1], tuple(prev[2]) + tuple(x[2])) + ((x[3],) if len(x) > 3 else ())
+            continue
+        out.append(x)
+    return tuple(out)
+
+
+def chain_best(A: tuple, B: tuple) -> dict:
+    """chain() tried on the dictionary syllables and on the syllabic-consonant reading of each side; the deepest real rhyme wins."""
+    best = None
+    for a in {A, _elide(A)}:
+        for b in {B, _elide(B)}:
+            c = chain(a, b)
+            key = (c["depth"], c["echo"])
+            if best is None or key > best[0]:
+                best = (key, c)
+    return best[1]
+
+
+def _targets() -> dict:
+    global TARGETS_PATH
+    from .. import config
+    import json as _j
+    p = config.BENCHMARK / "rhyme_depth_targets.json"
+    return _j.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
+
+
+def write_depth_targets() -> dict:
+    """numbers only (rule 4): for each slot of the ORIGINAL, the median rhyme depth (in syllables) of its end-rhyming bars, from Joe's by-ear groups."""
+    import json as _j
+    import statistics
+    from .. import config
+    from . import rhymeview
+    orig = rhymeview.load_original()
+    out = {}
+    for slot, bars in orig.items():
+        a = rhymeview.analyze({slot: bars}, ear=True)
+        ds = [d for _, d, e in a["depths"] if d > 0]
+        if ds:
+            out[slot] = {"median_depth": int(statistics.median(ds)), "max_depth": max(ds), "bars": len(ds)}
+    p = config.BENCHMARK / "rhyme_depth_targets.json"
+    p.write_text(_j.dumps({"_note": "median rhyme depth in syllables of the original's end-rhyming bars per slot (rapfit.chain_best, Joe's by-ear groups); numbers only", **out}, indent=1), encoding="utf-8")
+    return out
+
+
+def check_block(slot: str, bars: list[str]) -> dict:
+    """STRESS-ANCHOR GATE for the writing process.
+    HARD: inside every by-ear scheme group of 2+ bars, each bar must have at least one partner it rhymes with THROUGH A PROMINENT SYLLABLE (rime depth >= 1).
+          A bar whose partners share only an unstressed tail ('-it' of biscuit / credit) or nothing fails: that is not a rhyme (rule R1, benchmark/rhyme_theory.md).
+    SOFT: the bar's best depth is below the original's median for this slot."""
+    from . import rhymeview, slotcheck
+    hard, soft, depths = [], [], []
+    try:
+        scheme = slotcheck.spec(slot)["scheme"]
+    except Exception:    # noqa: BLE001 - unknown slot: nothing to enforce
+        return {"hard": [], "soft": [], "depths": [], "target": None}
+    n = min(len(bars), len(scheme))
+    tails = [rhymeview.tail_text(b.split()) for b in bars[:n]]
+    syls = [_syl(t) for t in tails]
+    tg = _targets().get(slot, {}).get("median_depth")
+    for i in range(n):
+        mates = [j for j in range(n) if j != i and scheme[j] == scheme[i]]
+        if not mates:
+            depths.append(None)
+            continue
+        cs = [chain_best(syls[i], syls[j]) for j in mates]
+        d = max(c["depth"] for c in cs)
+        e = max(c["echo"] for c in cs)
+        depths.append(d)
+        end = tails[i].split()[-1] if tails[i] else "?"
+        if d == 0:
+            if e:
+                hard.append(f"bar {i + 1} ('{end}'): rhymes with its group only on an unstressed tail ({e} syllable), the stressed syllables do not rhyme; a rhyme must start on a stressed syllable")
+            else:
+                # the tool hears NOTHING here. On the original that is mostly its own blind spots (loanwords, loose sections), so it is a check-by-ear note, not a veto.
+                soft.append(f"bar {i + 1} ('{end}'): the tool hears no syllable match with its rhyme group ({scheme[i]}); check it by ear")
+        elif tg and d < tg:
+            soft.append(f"bar {i + 1} ('{end}'): rhyme depth {d} syllable(s); the original's median for {slot} is {tg}")
+    # TEMPLATE / BLOCK RULES (Joe, 13 Oct 2026; measured on the original's V1 17-24: the stressed rhyme syllable sits at the same distance from the end in 4 of 4 bars of BOTH blocks)
+    if tg and tg >= 2:
+        for k in range(0, n - 3, 4):
+            vals = [d for d in depths[k:k + 4] if d is not None]
+            if len(vals) < 3:
+                continue
+            modal, cnt = collections.Counter(vals).most_common(1)[0]
+            if cnt < 3:
+                soft.append(f"bars {k + 1}-{k + 4}: the rhyme sits at different depths ({sorted(vals)}); a block should repeat ONE template, the same stressed syllable the same distance from the end in at least 3 of 4 bars")
+            if tg >= 3 and sum(1 for d in vals if d >= 3) < 3:
+                hard.append(f"bars {k + 1}-{k + 4}: {slot} is a 3-syllable slot (the original's bars 1-4 and 5-8 each end on one three-syllable rhyme in at least 3 of 4 bars); only {sum(1 for d in vals if d >= 3)} of these bars do")
+    return {"hard": hard, "soft": soft, "depths": depths, "target": tg}
+
+
+def internal_echo(bars: list[str]) -> dict:
+    """REWARD (a ranking number in 0..1, not a gate): does the end rhyme's stressed vowel come back INSIDE the bar, and does it sit at about the same point in the next bar?
+    Per 4-bar block: the end vowels are the full vowels of each bar's closing syllables; an internal echo is an earlier prominent syllable with one of them. Score = half the share of bars
+    that have an echo + half the mean closeness of the echoes in ADJACENT bars, closeness = 1 - 4 x (distance between their positions as a share of the bar's syllables), floored at 0
+    (one syllable apart in a ten-syllable bar = 0.6, two = 0.2)."""
+    from . import rhymeview
+    scores, detail = [], []
+    for k in range(0, len(bars) - 3, 4):
+        blk = bars[k:k + 4]
+        sy = [_syl(rhymeview.tail_text(b.split())) for b in blk]
+        endv = {x[0] for s_ in sy for x in s_[-3:] if prominent(x)}
+        pos = []
+        for b in blk:
+            st = []
+            for w in b.split():
+                c = rhymeview.core(w)
+                if c:
+                    st += [(c, x) for x in _syl(c)]
+            n = len(st)
+            tail_n = len(_syl(rhymeview.tail_text(b.split())))
+            pos.append([(i + 0.5) / n for i, (c, x) in enumerate(st[:max(0, n - tail_n)]) if prominent(x) and x[0] in endv])
+        has = sum(1 for p in pos if p) / 4
+        close = []
+        for a, b2 in zip(pos, pos[1:]):
+            close.append(max(0.0, 1 - 4 * min(abs(x - y) for x in a for y in b2)) if a and b2 else 0.0)
+        sc = 0.5 * has + 0.5 * (sum(close) / len(close))
+        scores.append(sc)
+        detail.append({"bars": f"{k + 1}-{k + 4}", "echo_share": round(has, 2), "closeness": [round(c, 2) for c in close], "score": round(sc, 2)})
+    return {"score": round(sum(scores) / len(scores), 3) if scores else 0.0, "blocks": detail}

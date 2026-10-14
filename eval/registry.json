@@ -1,0 +1,83 @@
+{
+  "legacy": {
+    "ml/judge.py (learned)": {
+      "evidence": "trained on 1 positive block; 3 of 5 of Joe's rules inverted; word-level coefficients <= 0.014",
+      "status": "failed_validation"
+    },
+    "ml/meaning_judge.py (llama3 paraphrase)": {
+      "evidence": "93% on 14 bars, half authored by the assistant; a sifter, not a gate",
+      "status": "unvalidated"
+    },
+    "toolkit/attest.py": {
+      "evidence": "flags Joe's approved bars as hard as gibberish",
+      "status": "failed_validation"
+    },
+    "toolkit/check_all.py as a quality gate": {
+      "evidence": "fails Joe's own accepted bars; kept as a ranking readout",
+      "status": "failed_validation"
+    },
+    "toolkit/coherence_gate": {
+      "evidence": "calibrated on the original; gibberish passed it",
+      "status": "diagnostic"
+    },
+    "toolkit/ear.py device rate": {
+      "evidence": "original 53% of quads; a 60% gate failed the benchmark",
+      "status": "diagnostic"
+    },
+    "toolkit/flow_fit pattern % / beat grid": {
+      "evidence": "ranked Joe's approved bars (50/50/50/33%) below a rejected bar (62%)",
+      "status": "failed_validation"
+    },
+    "toolkit/flow_fit syllable count + end shape": {
+      "evidence": "measured from the original's audio; hard facts, not quality",
+      "status": "accepted_exact_fact"
+    },
+    "toolkit/forge.py / pipeline.py / tryforms.py": {
+      "evidence": "recombine only; best score identical for 14 cycles; crowned a gibberish block",
+      "status": "failed_validation"
+    },
+    "toolkit/funny.py": {
+      "evidence": "89% base rate",
+      "status": "failed_validation"
+    },
+    "toolkit/imagery.py chains": {
+      "evidence": "Joe's approved bars have zero chains",
+      "status": "diagnostic"
+    },
+    "toolkit/match.py (scheme/length vs original profile)": {
+      "evidence": "similarity to the original's audio, not quality: fails Joe's own accepted bars on 3 of 4 sub-checks",
+      "status": "diagnostic"
+    },
+    "toolkit/meaning_gate inventory rule": {
+      "evidence": "catches 6/11 known-dead bars, fires on 0/92 original lines; prefilter only",
+      "status": "diagnostic"
+    },
+    "toolkit/phon.best_end (rhyme grader)": {
+      "evidence": "refit 12 Oct on 14 by-ear pairs: 4/10 wrong -> 1/14 wrong; assonance at 0.80 still passes as rhyme",
+      "status": "validated"
+    }
+  },
+  "locked_at": 1791817472.995,
+  "measures": {},
+  "prereg": {
+    "artefact_detector_corr_must_be_below_sense_corr": true,
+    "assistant_labels": "weight 0.25, dev only, never in sealed test or any exit criterion",
+    "cluster_lower_bound_min": 0.65,
+    "dev_vs_sealed_gap_max": 0.1,
+    "exit_floors": "one-sided non-inferiority vs the original per accepted axis; filler/nonsense rate <= original + margin; >= 8 of 76 bars verified cashed-payoff; worst-quad rule; claim-share quota; tripwire quiet",
+    "multiple_comparison_correction": "Holm across axes x degradations",
+    "null_edit_tie_rate_min": 0.7,
+    "order_flip_rate_max": 0.15,
+    "point_accuracy_min": 0.9,
+    "sealed_looks_per_frozen_version": 1,
+    "statistics_reported_not_gated": [
+      "AUC",
+      "Cohen kappa (reliability between independent judges, not validity)",
+      "Joe-accepted-vs-rejected block ranking (k of n smoke check)"
+    ],
+    "unit_of_resampling": "cluster (quad / block / poem); never bars or pairs"
+  },
+  "prereg_hash": "3f6e727fe1214ed5341785b7c3c024651d1d4c04b8fde3963a23eb49ebdba61a",
+  "prereg_version": 1,
+  "sealed_looks": {}
+}

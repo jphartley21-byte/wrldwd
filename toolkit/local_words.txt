@@ -1,0 +1,112 @@
+# Local words that DO WORK in a bar: shop, bill, drink, police, money, cheers, greeting.
+# Word | language | where it is true | register | gloss
+#
+# Why this file exists (12 Oct 2026). The Wiktionary harvest (loanwords.txt) filled itself from country
+# translation tables, so it holds obvious primary words and MISSES the ones the original actually uses: the
+# words that appear in the middle of a transaction. One of the original's best bars turns on a word an
+# Italian says across a shop counter, and another on a foreign word for the police. Neither was in the
+# supply, which made the code-switching engine look unused in the verses when in fact it is used five times.
+#
+# Registers are the point: a bar earns its local word by using it in a situation (paying, ordering,
+# greeting, being stopped), not by dropping a country's name in. Everything here is a word Joe could
+# actually have met on a trip in material/travel_history.md.
+zdravo | Slovene | Ljubljana 2019 | greeting | hello
+hvala | Slovene | Ljubljana 2019 | thanks | thank you
+prosim | Slovene | Ljubljana 2019 | shop | please / you're welcome
+pivo | Slovene | Ljubljana 2019 | drink | beer
+kava | Slovene | Ljubljana 2019 | drink | coffee
+ahoj | Slovak | Bratislava 2019 | greeting | hi
+dakujem | Slovak | Bratislava 2019 | thanks | thank you
+servus | German | Vienna, Munich, Black Forest | greeting | hi (southern German/Austrian)
+prost | German | Vienna, Munich | cheers | cheers
+danke | German | Vienna, Munich, Black Forest | thanks | thank you
+bier | German | Vienna, Munich, Black Forest | drink | beer
+rechnung | German | Vienna, Munich | bill | the bill, please
+prego | Italian | Florence 2019 | shop | you're welcome / go ahead / after you
+ciao | Italian | Florence 2019 | greeting | hi / bye
+grazie | Italian | Florence 2019 | thanks | thank you
+birra | Italian | Florence 2019 | drink | beer
+conto | Italian | Florence 2019 | bill | the bill
+scusi | Italian | Florence 2019 | shop | excuse me
+bonjour | French | Bordeaux, Nantes, Saint-Omer | greeting | hello
+merci | French | Bordeaux, Nantes, Saint-Omer | thanks | thank you
+vin | French | Bordeaux 2023 | drink | wine
+addition | French | Bordeaux, Nantes | bill | the bill
+gendarme | French | France | police | a policeman
+flics | French | France | police | the police (slang)
+hola | Spanish | Bilbao, Burgos, Barcelona, Mallorca | greeting | hi
+gracias | Spanish | Spain | thanks | thank you
+cerveza | Spanish | Spain | drink | beer
+cuenta | Spanish | Spain | bill | the bill
+guardia | Spanish | Spain | police | a police officer
+pavos | Spanish | Spain | money | money (slang: "pavos")
+tio | Spanish | Spain | people | mate, bloke
+obrigado | Portuguese | Porto 2023 | thanks | thank you
+cerveja | Portuguese | Porto 2023 | drink | beer
+conta | Portuguese | Porto 2023 | bill | the bill
+vinho | Portuguese | Porto 2023 | drink | wine
+yamas | Greek | Crete 2012 | cheers | cheers
+ouzo | Greek | Crete 2012 | drink | ouzo
+parakalo | Greek | Crete 2012 | shop | please
+efharisto | Greek | Crete 2012 | thanks | thank you
+skal | Norwegian | Bergen, Oslo | cheers | cheers
+takk | Norwegian | Bergen, Oslo | thanks | thank you
+ol | Norwegian | Bergen, Oslo | drink | beer
+regningen | Norwegian | Bergen, Oslo | bill | the bill
+politi | Norwegian | Bergen, Oslo | police | the police
+sawasdee | Thai | Koh Tao 2015 | greeting | hello
+khop | Thai | Koh Tao 2015 | thanks | thank you (as in khop khun)
+bhat | Thai | Koh Tao 2015 | money | the currency
+farang | Thai | Koh Tao 2015 | foreigner | a foreigner
+xin | Vietnamese | Vietnam 2015 | greeting | hello (as in xin chao)
+bia | Vietnamese | Vietnam 2015 | drink | beer
+dong | Vietnamese | Vietnam 2015 | money | the currency
+# Slang registers. These are in the supply because the original uses them in its VERSES, and the first
+# version of this file omitted them, which made the verses look like they never code-switch. Slang is a
+# lexical set of its own: money, police, product, and the plural forms that make a line scan.
+certi | slang | UK | slang | certain, for sure
+doobies | slang | UK/US | slang | joints
+guap | slang | US | money | money
+quid | slang | UK | money | pounds
+pavos | slang | ES | money | money (already listed above as Spanish)
+yams | slang | UK | money | money
+
+# --- Australia (added 14 Oct 2026, Joe: "add Aussie slang to the word pool"; Australia 2017 and Sydney 2015). Register-tagged like the rest.
+g'day | Australian English | Australia | greeting | hello
+hooroo | Australian English | Australia | greeting | goodbye
+cheers | Australian English | Australia | cheers | thanks / goodbye
+schooner | Australian English | Australia | drink | a big glass of beer
+middy | Australian English | Australia | drink | a medium glass of beer
+tinnie | Australian English | Australia | drink | a can of beer
+stubby | Australian English | Australia | drink | a small beer bottle
+goon | Australian English | Australia | drink | boxed cheap wine
+slab | Australian English | Australia | drink | a case of 24 cans
+bottlo | Australian English | Australia | shop | the bottle shop
+servo | Australian English | Australia | shop | the petrol station
+woolies | Australian English | Australia | shop | Woolworths, the supermarket
+maccas | Australian English | Australia | shop | McDonald's
+wallopers | Australian English | Australia | police | the police
+dollarydoos | Australian English | Australia | money | Australian dollars (the joke word)
+arvo | Australian English | Australia | slang | afternoon
+barbie | Australian English | Australia | slang | a barbecue
+brekkie | Australian English | Australia | slang | breakfast
+esky | Australian English | Australia | slang | a cool box
+thongs | Australian English | Australia | slang | flip-flops
+sunnies | Australian English | Australia | slang | sunglasses
+ute | Australian English | Australia | slang | a pick-up truck
+bogan | Australian English | Australia | slang | a chav
+dunny | Australian English | Australia | slang | a toilet
+chunder | Australian English | Australia | slang | to be sick
+sickie | Australian English | Australia | slang | a day off pretending to be ill
+smoko | Australian English | Australia | slang | a work tea or cigarette break
+tradie | Australian English | Australia | slang | a tradesman
+drongo | Australian English | Australia | slang | an idiot
+galah | Australian English | Australia | slang | a fool (also a pink bird)
+bludger | Australian English | Australia | slang | a scrounger
+mozzie | Australian English | Australia | slang | a mosquito
+snag | Australian English | Australia | slang | a sausage
+ripper | Australian English | Australia | slang | great
+heaps | Australian English | Australia | slang | lots
+stoked | Australian English | Australia | slang | delighted
+dinkum | Australian English | Australia | slang | genuine (fair dinkum)
+straya | Australian English | Australia | slang | Australia

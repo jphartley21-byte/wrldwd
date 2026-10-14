@@ -1,0 +1,286 @@
+# Stock phrases whose LITERAL reading is a concrete thing (rule 1: the payoff word goes in the
+# rhyme slot). Format:  phrase | payoff word | sense
+# The payoff word is the one whose literal sense gets switched on; bank.py computes its ending
+# sound, syllable count and rhyme key from cmudict+OVR, so nothing here needs a hand-typed sound.
+# Add freely; anything unmeasurable is reported by `bank.py check`.
+#
+# money
+on the house | house | money
+on the slate | slate | money
+on tick | tick | money
+in the red | red | money
+in the black | black | money
+hard cash | cash | money
+loose change | change | money
+small change | change | money
+pocket money | money | money
+easy money | money | money
+money for old rope | rope | money
+a tidy sum | sum | money
+a tidy packet | packet | money
+the asking price | price | money
+the going rate | rate | money
+cash flow | flow | money
+cash cow | cow | money
+the bottom line | line | money
+pay through the nose | nose | money
+break even | even | money
+break the bank | bank | money
+shell out | out | money
+fork out | out | money
+cough up | up | money
+pay up | up | money
+splash out | out | money
+splash the cash | cash | money
+flash the cash | cash | money
+the takings | takings | money
+the ledger | ledger | money
+running a tab | tab | money
+a fair whack | whack | money
+the full whack | whack | money
+short change | change | money
+#
+# admin and business
+off the books | books | admin
+on the books | books | admin
+by the book | book | admin
+the order book | book | admin
+out of pocket | pocket | admin
+in the pipeline | pipeline | admin
+signed sealed delivered | delivered | admin
+on the dot | dot | admin
+the wrong address | address | admin
+no receipt | receipt | admin
+no fixed abode | abode | admin
+in the diary | diary | admin
+back to back | back | admin
+on order | order | admin
+in order | order | admin
+out of order | order | admin
+a tall order | order | admin
+a clean run | run | admin
+the long haul | haul | admin
+the home stretch | stretch | admin
+the last mile | mile | admin
+a flying visit | visit | admin
+on the map | map | admin
+off the map | map | admin
+off grid | grid | admin
+the paperwork | paperwork | admin
+a paper trail | trail | admin
+the small print | print | admin
+the last leg | leg | admin
+the short leg | leg | admin
+set in stone | stone | admin
+in writing | writing | admin
+#
+# travel and road
+carry-on | carry | travel
+excess baggage | baggage | travel
+hand luggage | luggage | travel
+a head start | start | travel
+flying start | start | travel
+red-eye | eye | travel
+the long way | way | travel
+the wrong way | way | travel
+miss the boat | boat | travel
+on the road | road | travel
+hit the road | road | travel
+back of beyond | beyond | travel
+the back road | road | travel
+the ferry over | ferry | travel
+the last ferry | ferry | travel
+the early boat | boat | travel
+straight on | straight | travel
+the scenic route | route | travel
+a detour | detour | travel
+the short cut | cut | travel
+cut corners | corners | travel
+the toll road | toll | travel
+past the border | border | travel
+over the border | border | travel
+#
+# menace, quiet business
+under the counter | counter | menace
+under the table | table | menace
+on the quiet | quiet | menace
+on the make | make | menace
+on the take | take | menace
+in the know | know | menace
+one eye open | open | menace
+under the radar | radar | menace
+in the dark | dark | menace
+keep it quiet | quiet | menace
+no questions asked | asked | menace
+on the fiddle | fiddle | menace
+on the game | game | menace
+off the back of a lorry | lorry | menace
+fell off a lorry | lorry | menace
+knocked off | off | menace
+a nod and a wink | wink | menace
+word of mouth | mouth | menace
+behind closed doors | doors | menace
+no names no pack drill | drill | menace
+the quiet word | word | menace
+a bit of business | business | menace
+#
+# law and the police
+bang to rights | rights | law
+stitched up | up | law
+fitted up | up | law
+grassed up | up | law
+banged up | up | law
+doing time | time | law
+on the run | run | law
+lying low | low | law
+under cover | cover | law
+the alibi | alibi | law
+the heat | heat | law
+bail out | out | law
+slap on the wrist | wrist | law
+the drop | drop | law
+the cell | cell | law
+the charge sheet | sheet | law
+#
+# time
+in the nick of time | time | time
+big time | time | time
+small time | time | time
+half a chance | chance | time
+no chance | chance | time
+a dead heat | heat | time
+at the drop of a hat | hat | time
+the eleventh hour | hour | time
+first light | light | time
+knocking off time | time | time
+#
+# domestic
+the kettle on | kettle | domestic
+the bins out | bins | domestic
+the washing up | up | domestic
+the tea on | tea | domestic
+in the garden | garden | domestic
+the shed | shed | domestic
+the front room | room | domestic
+the back garden | garden | domestic
+in the garage | garage | domestic
+the missus | missus | domestic
+the in-laws | laws | domestic
+#
+# booze and the pub
+the last orders | orders | booze
+a lock-in | lock | booze
+the next round | round | booze
+on the lash | lash | booze
+the local | local | booze
+in the snug | snug | booze
+a swift half | half | booze
+off the wagon | wagon | booze
+on the wagon | wagon | booze
+hair of the dog | dog | booze
+the beer garden | garden | booze
+the bar tab | tab | booze
+#
+# food
+the full English | English | food
+a chippy tea | tea | food
+the chippy | chippy | food
+a builder's brew | brew | food
+the greasy spoon | spoon | food
+a dodgy kebab | kebab | food
+the Sunday roast | roast | food
+a bacon roll | roll | food
+the milk round | round | food
+#
+# lark and carry-on
+a laugh | laugh | lark
+a bit of a do | do | lark
+a right carry on | carry | lark
+taking the mickey | mickey | lark
+a wind-up | up | lark
+in on the joke | joke | lark
+the banter | banter | lark
+#
+# weather
+the heavens opened | opened | weather
+raining sideways | sideways | weather
+a bit of drizzle | drizzle | weather
+the sun's out | out | weather
+blowing a gale | gale | weather
+#
+# mood, state, outcome
+over the moon | moon | mood
+blue in the face | face | mood
+out of the blue | blue | mood
+up the wall | wall | mood
+off the rails | rails | mood
+take the biscuit | biscuit | mood
+on the nose | nose | mood
+the last straw | straw | mood
+down the drain | drain | mood
+back on track | track | mood
+in the clear | clear | mood
+the coast is clear | clear | mood
+no strings | strings | mood
+strings attached | attached | mood
+the green light | light | mood
+red light | light | mood
+in the frame | frame | mood
+out of the frame | frame | mood
+in the bag | bag | mood
+up for grabs | grabs | mood
+off the shelf | shelf | mood
+on the shelf | shelf | mood
+plain clothes | clothes | mood
+lights out | out | mood
+chips down | down | mood
+hold it down | down | mood
+off the top | top | mood
+on the level | level | mood
+above board | board | mood
+below the belt | belt | mood
+in a pickle | pickle | mood
+on the blink | blink | mood
+the short straw | straw | mood
+pass the buck | buck | mood
+back to square one | square | mood
+the same again | again | mood
+a done deal | deal | mood
+the long game | game | mood
+in at the deep end | end | mood
+over the odds | odds | mood
+against the odds | odds | mood
+on the cards | cards | mood
+a turn for the worse | worse | mood
+
+# --- Australian English (14 Oct 2026, Joe). Curated: the payoff word is the literal thing that gets switched on.
+fair dinkum | dinkum | mood
+no worries | worries | mood
+she'll be right | right | mood
+chuck a sickie | sickie | lark
+chuck a uey | uey | travel
+chuck a wobbly | wobbly | mood
+mad as a cut snake | snake | mood
+flat out like a lizard drinking | drinking | mood
+give it a burl | burl | lark
+down under | under | travel
+across the ditch | ditch | travel
+the big smoke | smoke | travel
+dog's breakfast | breakfast | mood
+stone the crows | crows | mood
+grab a coldie | coldie | booze
+a slab of tinnies | tinnies | booze
+stubby holder | holder | booze
+two pot screamer | screamer | booze
+tall poppy | poppy | mood
+fair go | go | law
+no dramas | dramas | mood
+shrimp on the barbie | barbie | food
+bring a plate | plate | food
+hit the frog and toad | toad | travel
+off like a bucket of prawns in the sun | sun | weather
+dry as a dead dingo's donger | donger | weather
+doing a runner | runner | law
+chuck a u-ey at the servo | servo | travel
+bonzer day | day | weather
+happy as larry | larry | mood

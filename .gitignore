@@ -1,0 +1,8 @@
+
+# ww (the Worldwide writer): never commit keys, caches, ledgers or downloaded sources
+.env
+eval/cache/
+eval/ledger/
+eval/_*
+__pycache__/
+*.pyc

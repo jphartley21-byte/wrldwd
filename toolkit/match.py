@@ -5,7 +5,7 @@ The original is piped in, never saved. Output: per-bar PASS/FAIL with reasons, s
 A section is "form-matched" only when every line says PASS. Sense and voice (gates G1-G6) are still judged separately.
 """
 import io, contextlib, os, re, sys
-sys.stdout.reconfigure(encoding="utf-8")
+if hasattr(sys.stdout, "reconfigure"): sys.stdout.reconfigure(encoding="utf-8")
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from rhyme_tools import pron_phrase, uk, vidx, strip, quad_stats  # noqa: E402
@@ -44,24 +44,8 @@ def uk_vowels(word):
     q = pron(w)
     if not q:
         return None
-    out = []
-    for x in q:
-        if not is_v(x):
-            continue
-        base, st = strip(x), x[-1] == "1"
-        if base == "AA":
-            first = next((c for c in w if c in "aeiou"), "o")
-            v = "ɑː" if first == "a" else "ɒ"
-        elif base == "AH":
-            v = "ʌ" if st else "ə"
-        elif base == "ER":
-            v = "ɜː" if st else "ə"
-        elif base == "IY":
-            v = "iː" if st else "i"
-        else:
-            v = CMU2IPA.get(base, base)
-        out.append((v, st))
-    return out
+    from helpers import cmu_vowels
+    return cmu_vowels(q, w)
 
 
 def end_key(line):
@@ -90,12 +74,19 @@ def end_key(line):
 
 
 def rhymes(a, b):
-    """same stressed vowel; unstressed syllables weak-or-equal; lengths within 1"""
+    """same stressed vowel (or a same-glide diphthong pair, e.g. EY~AY); unstressed syllables weak-or-equal;
+    lengths within 1. The diphthong tolerance is not a convenience: the original rhymes its own place names
+    against country names (a German city against a country across the hook), and an exact-symbol test made
+    that unrepresentable, so the original failed its own profile. Measured 12 Oct."""
     if a is None or b is None:
         return False
     (ta, na), (tb, nb) = a, b
-    if ta[0] != tb[0] or abs(na - nb) > 1:
+    if abs(na - nb) > 1:
         return False
+    if ta[0] != tb[0]:
+        import phon
+        if phon.vsim(ta[0], tb[0]) < 0.80:
+            return False
     return all(x == y or (x in UKWEAK and y in UKWEAK) for x, y in zip(ta[1:], tb[1:]))
 
 
@@ -182,7 +173,15 @@ def stressed_sylls(line):
 
 def best_end(a_line, b_line):
     """best graded rhyme between two bar endings over the last 1-3 syllables (a span must start on a stressed syllable
-    unless it is the final syllable): handles 'plain clothes' ~ 'Tobago' and 'lonesome' ~ 'long one'"""
+    unless it is the final syllable): handles 'plain clothes' ~ 'Tobago' and 'lonesome' ~ 'long one'
+
+    Only alignments the scorer ACCEPTS are considered. phon.score reports a rejected alignment as
+    (total, "none") -- the total is still computed for inspection -- and this function used to take the
+    max over those rejected totals too. That is how "orders" ~ "Ljubljana" scored 0.80 and passed a
+    0.78 scheme floor: the last syllables are both weak schwas (vsim 1.0) with no coda agreement, the
+    scorer gated it, and the gated number still won. Measured against ten pairs with known verdicts,
+    ignoring "none" plus the weak-final rule in phon.score takes this from 4 wrong to 0.
+    """
     import phon
     A, B = phon.syllables(a_line), phon.syllables(b_line)
     best = 0.0
@@ -192,10 +191,14 @@ def best_end(a_line, b_line):
         a, b = A[-k:], B[-k:]
         if k > 1 and not (a[0][1] or b[0][1]):
             continue
-        best = max(best, phon.score(a, b)[0])
+        sc, kind = phon.score(a, b)
+        if kind != "none":
+            best = max(best, sc)
     ea, eb = spans(a_line)[1], spans(b_line)[1]  # stressed-syllable-aligned tails: waiter ~ way, people ~ beat
     if ea and eb:
-        best = max(best, phon.score(ea, eb)[0])
+        sc, kind = phon.score(ea, eb)
+        if kind != "none":
+            best = max(best, sc)
     return best
 
 
@@ -237,13 +240,63 @@ def quiet_quad(lines):
 PROFILE = os.path.join(HERE, "..", "benchmark", "original_profile.json")
 
 
+def carpet_of(lines):
+    """The end-rhyme CARPET: of all pairs of bar-end words, how many rhyme (>= 0.78).
+
+    This is what Joe hears as "near perfect rhymes" and what the profile was not recording. The original's
+    4-bar hook blocks carpet COMPLETELY -- all six pairs, minimum 0.80 -- and so do Joe's locked bars 1-4
+    (all six at 1.00). Our v11 and v12 rhymed only two pairs of six, because the only pairs the checker
+    demanded were the ones the by-ear scheme names: the block passed while two thirds of its sound
+    relationships were absent. Measured 12 Oct 2026.
+    """
+    n = len(lines)
+    sc = [best_end(lines[i], lines[j]) for i in range(n) for j in range(i + 1, n)]
+    if not sc:
+        return {"pairs": 0, "total": 0, "min": 0.0, "share": 0.0}
+    ok = sum(1 for s in sc if s >= 0.78)
+    return {"pairs": ok, "total": len(sc), "min": round(min(sc), 2), "share": round(ok / len(sc), 2)}
+
+
+def end_pairs_of(lines, floor=0.78):
+    """Which of the stanza's bar-ends rhyme with each other, as index pairs. Stored in the profile so the
+    per-bar check can demand OUR bars rhyme where the original's do without reading the original's text."""
+    return [[i, j] for i in range(len(lines)) for j in range(i + 1, len(lines))
+            if best_end(lines[i], lines[j]) >= floor]
+
+
 def profile_of(lines):
     so, ko = scheme(lines)
-    return {"bars": [bar_profile(l) for l in lines], "keys": ko, "scheme": so, "bookends": bookends(lines), "rhyme_map": rhyme_map(lines), "internal": internal_density(lines), "quad": {k: v for k, v in quiet_quad(lines).items() if k in ("multisyl", "internal_bars", "allit_bars")}}
+    return {"bars": [bar_profile(l) for l in lines], "keys": ko, "scheme": so, "bookends": bookends(lines), "rhyme_map": rhyme_map(lines), "internal": internal_density(lines), "carpet": carpet_of(lines), "end_pairs": end_pairs_of(lines), "quad": {k: v for k, v in quiet_quad(lines).items() if k in ("multisyl", "internal_bars", "allit_bars")}}
+
+
+def selftest():
+    """tests/rhyme_pairs.txt: verdicts measured by ear. '?' = the model cannot decide, so it is reported
+    rather than asserted. A rhyme metric that silently changes its mind is worse than no metric."""
+    path = os.path.join(HERE, "tests", "rhyme_pairs.txt")
+    wrong, n = [], 0
+    for line in open(path, encoding="utf8"):
+        line = line.rstrip("\n")
+        if not line.strip() or line.lstrip().startswith("#"):
+            continue
+        want, a, b = [x.strip() for x in line.split("\t")]
+        s = best_end(a, b)
+        if want == "?":
+            print(f"     (unspecified, metric limit) {s:.2f}  {a.split()[-1]} ~ {b.split()[-1]}")
+            continue
+        n += 1
+        if (s >= 0.78) != (want == "1"):
+            wrong.append(f"{a.split()[-1]} ~ {b.split()[-1]} scored {s:.2f}, wanted {want}")
+    print("rhyme verdicts:", "PASSED" if not wrong else f"FAILED ({len(wrong)} of {n} wrong): " + "; ".join(wrong))
+    return not wrong
 
 
 def main():
     import json
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")   # the messages carry IPA; under a pipe on
+    #                                                           # Windows the default is cp1252 and the
+    #                                                           # harness dies decoding instead of reading
+    if "--selftest" in sys.argv:
+        sys.exit(0 if selftest() else 1)
     rows = [l.strip() for l in sys.stdin.read().splitlines() if l.strip() and not l.startswith(("[", "#", "("))]
     if "--build" in sys.argv:  # stdin: '== SLOT' headers + original lines; writes numbers only
         prof, cur = {}, None
@@ -258,15 +311,24 @@ def main():
         P = json.load(open(PROFILE))[sys.argv[sys.argv.index("--slot") + 1]]
         D = rows
         po_bars, ko, so, qo = P["bars"], [tuple(k) if k else None for k in P["keys"]], P["scheme"], P["quad"]
+        op = {tuple(p) for p in (P.get("end_pairs") or [])}
     else:
         k = rows.index("---")
         O, D = rows[:k], rows[k + 1:]
         P = profile_of(O)
         po_bars, ko, so, qo = P["bars"], P["keys"], P["scheme"], P["quad"]
+        op = {tuple(p) for p in P["end_pairs"]}
     O = po_bars
     if len(O) != len(D):
         print(f"FAIL: {len(D)} bars vs original {len(O)}"); return
     sd, kd = scheme(D)
+    # Joe's by-ear scheme is the spec for WHICH pairs must rhyme (benchmark/bars_1-8_breakdown.md, his
+    # correction of 9 Oct: the 5-8 block is A C C A, not a b b b). The original's own keys misread its
+    # slant A-rhyme (bars 1 and 4) as a singleton, so the paired demand below asked our bar 2 to rhyme
+    # with our bar 4 -- a rhyme the benchmark never asks for. Measured 12 Oct.
+    ms_here = MANUAL_SCHEME.get(sys.argv[sys.argv.index("--slot") + 1]) if "--slot" in sys.argv else None
+    if ms_here and len(ms_here) != len(D):
+        ms_here = None
     fails = 0
     for i, (po, d) in enumerate(zip(O, D)):
         pd = bar_profile(d)
@@ -283,11 +345,20 @@ def main():
         if pd["pause"] > po["pause"]:
             why.append("extra mid-bar pause")
         for j in range(len(O)):
-            if j != i and rhymes(_k(ko[i]), _k(ko[j])):
-                if not rhymes(kd[i], kd[j]):
+            # "Do these two bars rhyme" must be ONE measure everywhere. It was two: this loop used the
+            # strict key comparison while the by-ear scheme and the carpet used best_end, so a pair could
+            # score 1.00 on the carpet and FAIL here in the same run -- which is what happened to Porto/Oslo
+            # (both end /əʊ/, the ear accepts them, Joe's locked bars rhyme the same way). Measured 12 Oct.
+            if j != i and (i, j) in op:
+                if ms_here and ms_here[i] != ms_here[j]:
+                    continue          # the spec does not pair these bars; do not demand the rhyme
+                if best_end(D[i], D[j]) < 0.78:
                     why.append(f"must rhyme with bar {j + 1} (original does; ours {'-'.join(kd[i][0]) if kd[i] else '?'} vs {'-'.join(kd[j][0]) if kd[j] else '?'})"); break
-                if depth(kd[i], kd[j]) < min(depth(_k(ko[i]), _k(ko[j])), 3):
-                    why.append(f"rhyme with bar {j + 1} only {depth(kd[i], kd[j])} syllables deep; original {depth(_k(ko[i]), _k(ko[j]))}"); break
+                # No depth demand here. Depth is measured on the strict key comparison, which counts a
+                # shared STRESSED vowel as depth and a shared FINAL vowel as nothing -- so it flags the
+                # carpet the ear accepts (Porto/Oslo, 1.00) and passes words that only share a stressed
+                # vowel. Rhyme depth in the multisyllabic sense is gated separately by the quad's multisyl
+                # count against the original's. Measured 12 Oct 2026.
         fails += bool(why)
         print(f"{i + 1:>2}. {'PASS' if not why else 'FAIL: ' + '; '.join(why)}   | {d}")
     qd = quiet_quad(D)
@@ -320,15 +391,21 @@ def main():
         sp = [spans(l) for l in D]
         weak = []
         for kind, i, j, sc in rm:
+            if ms_here and kind == "end-end" and ms_here[i] != ms_here[j]:
+                continue          # same reason as the per-bar loop: the spec does not pair these
             ka, kb = (1, 1) if kind == "end-end" else (0, 1)
             a, b = sp[i][ka] if i < len(sp) else None, sp[j][kb] if j < len(sp) else None
             ours = phon.score(a, b)[0] if a and b else 0.0
             if ours < min(sc, 0.9) - 0.08:
                 weak.append(f"{kind} bar {i + 1}->{j + 1}: ours {ours:.2f} vs original {sc:.2f}")
-        strong = [x for x in weak if "open-end" in x or float(x.split("original ")[1]) >= 0.85]
-        ok = not strong and len(weak) <= len(rm) // 5
-        fails += not ok
-        print(f"rhyme strength map ({len(rm)} links in the original, incl. slant and opening-to-end): {'PASS' if ok else 'FAIL'}" + ("" if not weak else "; weaker: " + "; ".join(weak[:8])))
+        # REPORTED, not gated (12 Oct 2026). Two measurements say it is not a gate: Joe's locked bars 1-4 --
+        # the standard everything else is calibrated against -- fail it, on an opening-to-end link his ear
+        # does not require (ours 0.45 vs the original's 0.83); and its scores come from phon.score on syllable
+        # spans, which disagrees with best_end on pairs the ear accepts (it scores the perfect favours/flavours
+        # pair at 1.00 but calls Porto/Oslo strangers). The sound demands that ARE gated are the by-ear
+        # scheme, the end-rhyme carpet and the internal-rhyme density.
+        print(f"~     rhyme strength map ({len(rm)} links in the original, incl. slant and opening-to-end): "
+              f"{'all links matched' if not weak else 'weaker: ' + '; '.join(weak[:8])} (note, not a gate)")
     bo, bd = P.get("bookends"), bookends(D)
     if bo:
         miss = [i + 1 for i, (a, b) in enumerate(zip(bo, bd)) if a and not b]
@@ -337,6 +414,18 @@ def main():
         fails += not ok
         print(f"bookend multis (bar opens on the stanza's end rhyme): original bars {[i + 1 for i, a in enumerate(bo) if a]}, ours {[i + 1 for i, b in enumerate(bd) if b]} -> {'PASS' if ok else 'FAIL, missing in bars ' + str(miss)}")
     print(f"scheme: ours {sd} vs original {so}")
+    co, cd = P.get("carpet"), carpet_of(D)
+    if co and co["total"]:
+        # The original's own 4-bar hook blocks are 6/6 (a complete carpet), so a 4-bar block is held to all
+        # of its pairs. Its 8-bar blocks break the carpet on purpose (measured share 14%-100%, because the
+        # nearer blocks change family mid-stanza), so a share comparison is all their length can carry --
+        # the pairs that MUST rhyme there are already named by the by-ear scheme.
+        slack = 1.0 if co["total"] <= 6 else 0.8
+        ok = cd["pairs"] >= co["pairs"] * slack
+        fails += not ok
+        print(f"end-rhyme carpet (every pair of bar-ends rhymes): ours {cd['pairs']}/{cd['total']} "
+              f"(min {cd['min']:.2f}) vs original {co['pairs']}/{co['total']} (min {co['min']:.2f}) "
+              f"-> {'PASS' if ok else 'FAIL'}")
     for key, slack in (("multisyl", 0.8), ("internal_bars", 0.8), ("allit_bars", 1.0)):
         a, b = qo.get(key, 0), qd.get(key, 0)
         ok = b >= a * slack if key != "allit_bars" else b >= a - 1

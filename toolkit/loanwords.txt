@@ -1,0 +1,267 @@
+# Loanwords for the rhyme slot: the word a place uses for a common idea.
+# Sources: English Wiktionary translation tables (CC BY-SA). Rebuilt by
+#   python toolkit/harvest.py loanwords [--offline]
+# Format:  word | lang code | country | the English idea it renders
+# A word is only usable in the rhyme slot once cmudict or OVR knows how to say it;
+# run  python toolkit/bank.py check  to list the ones that need a pronunciation.
+#
+betalingsmiddel | da | Denmark | money
+dans | da | Denmark | dance
+farvel | da | Denmark | goodbye
+fest | da | Denmark | party
+føde | da | Denmark | food
+god | da | Denmark | good
+hej | da | Denmark | hello
+nul | da | Denmark | love
+politi | da | Denmark | police
+skål | da | Denmark | cheers
+smuk | da | Denmark | beautiful
+tak | da | Denmark | thank you
+vande | da | Denmark | water
+vej | da | Denmark | road
+vin | da | Denmark | wine
+vær så venlig | da | Denmark | please
+argent | fr | France | money
+arroser | fr | France | water
+beau | fr | France | beautiful
+bière | fr | France | beer
+bon | fr | France | good
+bon vent | fr | France | goodbye
+bonjour | fr | France | hello
+danse | fr | France | dance
+merci | fr | France | thank you
+nourriture | fr | France | food
+oui | fr | France | yes
+partie | fr | France | party
+plaire | fr | France | please
+police | fr | France | police
+route | fr | France | road
+se lier d'amitié | fr | France | friend
+ville | fr | France | city
+vin | fr | France | wine
+zéro | fr | France | love
+à votre santé | fr | France | cheers
+anfreunden | de | Germany | friend
+auf wiedersehen | de | Germany | goodbye
+bier | de | Germany | beer
+danke | de | Germany | thank you
+doch | de | Germany | yes
+feminisieren | de | Germany | woman
+gefallen | de | Germany | please
+geld | de | Germany | money
+gießen | de | Germany | water
+gut | de | Germany | good
+hallo | de | Germany | hello
+nahrung | de | Germany | food
+null | de | Germany | love
+partei | de | Germany | party
+polizei | de | Germany | police
+prost | de | Germany | cheers
+schön | de | Germany | beautiful
+stadt | de | Germany | city
+straße | de | Germany | road
+tanz | de | Germany | dance
+wein | de | Germany | wine
+anggur | id | Indonesia | wine
+baik | id | Indonesia | good
+bersulang | id | Indonesia | cheers
+bir | id | Indonesia | beer
+hai | id | Indonesia | hello
+indah | id | Indonesia | beautiful
+jalan | id | Indonesia | road
+kota | id | Indonesia | city
+makanan | id | Indonesia | food
+minta tolong | id | Indonesia | please
+pihak | id | Indonesia | party
+polisi | id | Indonesia | police
+selamat tinggal | id | Indonesia | goodbye
+siram | id | Indonesia | water
+tari | id | Indonesia | dance
+terima kasih | id | Indonesia | thank you
+uang | id | Indonesia | money
+airgead | ga | Ireland | money
+beoir | ga | Ireland | beer
+bia | ga | Ireland | food
+bóthar | ga | Ireland | road
+cathair | ga | Ireland | city
+cóisir | ga | Ireland | party
+damhsa | ga | Ireland | dance
+dia dhuit | ga | Ireland | hello
+fíon | ga | Ireland | wine
+gardaí | ga | Ireland | police
+go raibh maith agat | ga | Ireland | thank you
+maith | ga | Ireland | good
+sea | ga | Ireland | yes
+sláinte | ga | Ireland | cheers
+slán agat | ga | Ireland | goodbye
+sásaigh | ga | Ireland | please
+uiscigh | ga | Ireland | water
+álainn | ga | Ireland | beautiful
+accontentare | it | Italy | please
+annaffiare | it | Italy | water
+arrivederci | it | Italy | goodbye
+ballo | it | Italy | dance
+bello | it | Italy | beautiful
+birra | it | Italy | beer
+buono | it | Italy | good
+ciao | it | Italy | hello
+cibo | it | Italy | food
+cin cin | it | Italy | cheers
+città | it | Italy | city
+denaro | it | Italy | money
+grazie | it | Italy | thank you
+invece sì | it | Italy | yes
+parte | it | Italy | party
+polizia | it | Italy | police
+strada | it | Italy | road
+vino | it | Italy | wine
+zero | it | Italy | love
+ello | jam | Jamaica | hello
+bevallen | nl | Netherlands | please
+bevriend zijn met | nl | Netherlands | friend
+bier | nl | Netherlands | beer
+dank je | nl | Netherlands | thank you
+dans | nl | Netherlands | dance
+geld | nl | Netherlands | money
+goed | nl | Netherlands | good
+hallo | nl | Netherlands | hello
+jawel | nl | Netherlands | yes
+mooi | nl | Netherlands | beautiful
+nul | nl | Netherlands | love
+partij | nl | Netherlands | party
+politie | nl | Netherlands | police
+proost | nl | Netherlands | cheers
+sproeien | nl | Netherlands | water
+stad | nl | Netherlands | city
+tot ziens | nl | Netherlands | goodbye
+voedsel | nl | Netherlands | food
+weg | nl | Netherlands | road
+wijn | nl | Netherlands | wine
+behage | no | Norway | please
+kontanter | no | Norway | money
+null | no | Norway | love
+skål | no | Norway | cheers
+tisse | no | Norway | water
+yes | no | Norway | yes
+adeus | pt | Portugal | goodbye
+agradar | pt | Portugal | please
+belo | pt | Portugal | beautiful
+bom | pt | Portugal | good
+cerveja | pt | Portugal | beer
+cidade | pt | Portugal | city
+comida | pt | Portugal | food
+dança | pt | Portugal | dance
+dinheiro | pt | Portugal | money
+estrada | pt | Portugal | road
+favorecer | pt | Portugal | friend
+obrigado | pt | Portugal | thank you
+olá | pt | Portugal | hello
+parte | pt | Portugal | party
+polícia | pt | Portugal | police
+regar | pt | Portugal | water
+saúde | pt | Portugal | cheers
+sim | pt | Portugal | yes
+vinho | pt | Portugal | wine
+zero | pt | Portugal | love
+ahoj | sk | Slovakia | hello
+cesta | sk | Slovakia | road
+dobrý | sk | Slovakia | good
+jedlo | sk | Slovakia | food
+krásny | sk | Slovakia | beautiful
+mesto | sk | Slovakia | city
+na zdravie | sk | Slovakia | cheers
+nula | sk | Slovakia | love
+peniaze | sk | Slovakia | money
+pivo | sk | Slovakia | beer
+polícia | sk | Slovakia | police
+prosím | sk | Slovakia | please
+tanec | sk | Slovakia | dance
+víno | sk | Slovakia | wine
+zbohom | sk | Slovakia | goodbye
+áno | sk | Slovakia | yes
+adíjo | sl | Slovenia | goodbye
+cesta | sl | Slovenia | road
+denar | sl | Slovenia | money
+dóber | sl | Slovenia | good
+hrana | sl | Slovenia | food
+hvála | sl | Slovenia | thank you
+lep | sl | Slovenia | beautiful
+mésto | sl | Slovenia | city
+na zdravje | sl | Slovenia | cheers
+pivo | sl | Slovenia | beer
+ples | sl | Slovenia | dance
+policija | sl | Slovenia | police
+vino | sl | Slovenia | wine
+zabava | sl | Slovenia | party
+zadovoljiti | sl | Slovenia | please
+zalivati | sl | Slovenia | water
+zdrávo | sl | Slovenia | hello
+adiós | es | Spain | goodbye
+alimento | es | Spain | food
+baile | es | Spain | dance
+bueno | es | Spain | good
+carretera | es | Spain | road
+cero | es | Spain | love
+cerveza | es | Spain | beer
+ciudad | es | Spain | city
+dinero | es | Spain | money
+favorecer | es | Spain | friend
+gracias | es | Spain | thank you
+gustarle | es | Spain | please
+hermoso | es | Spain | beautiful
+hola | es | Spain | hello
+parte contratante | es | Spain | party
+policía | es | Spain | police
+pues | es | Spain | yes
+regar | es | Spain | water
+salud | es | Spain | cheers
+vino | es | Spain | wine
+adjö | sv | Sweden | goodbye
+behaga | sv | Sweden | please
+dans | sv | Sweden | dance
+fin | sv | Sweden | beautiful
+god | sv | Sweden | good
+godkänna | sv | Sweden | yes
+hallå | sv | Sweden | hello
+hjälpa | sv | Sweden | friend
+mat | sv | Sweden | food
+noll | sv | Sweden | love
+part | sv | Sweden | party
+pengar | sv | Sweden | money
+polis | sv | Sweden | police
+skål | sv | Sweden | cheers
+stad | sv | Sweden | city
+tack | sv | Sweden | thank you
+vattna | sv | Sweden | water
+vin | sv | Sweden | wine
+väg | sv | Sweden | road
+bira | tr | Turkey | beer
+dans | tr | Turkey | dance
+evet | tr | Turkey | yes
+güle güle | tr | Turkey | goodbye
+güzel | tr | Turkey | beautiful
+iyi | tr | Turkey | good
+kent | tr | Turkey | city
+merhaba | tr | Turkey | hello
+mersi | tr | Turkey | thank you
+para | tr | Turkey | money
+polis | tr | Turkey | police
+sevindirmek | tr | Turkey | please
+sulamak | tr | Turkey | water
+sücü | tr | Turkey | wine
+taraf | tr | Turkey | party
+yiyecek | tr | Turkey | food
+yol | tr | Turkey | road
+bia | vi | Vietnam | beer
+bên | vi | Vietnam | party
+cam pôi | vi | Vietnam | cheers
+chào | vi | Vietnam | goodbye
+công an | vi | Vietnam | police
+hay | vi | Vietnam | good
+không | vi | Vietnam | love
+múa | vi | Vietnam | dance
+thành | vi | Vietnam | city
+vâng | vi | Vietnam | yes
+xin | vi | Vietnam | please
+xin chào | vi | Vietnam | hello
+ông | vi | Vietnam | thank you

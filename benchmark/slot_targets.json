@@ -1,0 +1,122 @@
+{
+ "Hook 1-4": {
+  "suffix_ended": 0,
+  "beat_weak_mean": 0.5,
+  "weak_run_max": 3,
+  "bars": 4,
+  "first_person_bars": 1,
+  "subject_bars": 1,
+  "internal_total": 9,
+  "multisyl": 8,
+  "carpet_pairs": 6,
+  "carpet_total": 6
+ },
+ "Hook 5-8": {
+  "suffix_ended": 0,
+  "beat_weak_mean": 0.25,
+  "weak_run_max": 2,
+  "bars": 4,
+  "first_person_bars": 1,
+  "subject_bars": 0,
+  "internal_total": 8,
+  "multisyl": 2,
+  "carpet_pairs": 6,
+  "carpet_total": 6
+ },
+ "Hook 9-16": {
+  "suffix_ended": 0,
+  "beat_weak_mean": 0.71,
+  "weak_run_max": 2,
+  "bars": 8,
+  "first_person_bars": 3,
+  "subject_bars": 3,
+  "internal_total": 19,
+  "multisyl": 3,
+  "carpet_pairs": 4,
+  "carpet_total": 28
+ },
+ "V1 1-8": {
+  "suffix_ended": 0,
+  "beat_weak_mean": 0.5,
+  "weak_run_max": 2,
+  "bars": 8,
+  "first_person_bars": 5,
+  "subject_bars": 5,
+  "internal_total": 27,
+  "multisyl": 19,
+  "carpet_pairs": 21,
+  "carpet_total": 28
+ },
+ "V1 9-16": {
+  "suffix_ended": 0,
+  "beat_weak_mean": 1.12,
+  "weak_run_max": 2,
+  "bars": 8,
+  "first_person_bars": 6,
+  "subject_bars": 5,
+  "internal_total": 24,
+  "multisyl": 11,
+  "carpet_pairs": 21,
+  "carpet_total": 28
+ },
+ "V1 17-24": {
+  "suffix_ended": 0,
+  "beat_weak_mean": 0.62,
+  "weak_run_max": 2,
+  "bars": 8,
+  "first_person_bars": 3,
+  "subject_bars": 3,
+  "internal_total": 31,
+  "multisyl": 9,
+  "carpet_pairs": 24,
+  "carpet_total": 28
+ },
+ "V1 25-32": {
+  "suffix_ended": 3,
+  "beat_weak_mean": 0.88,
+  "weak_run_max": 2,
+  "bars": 8,
+  "first_person_bars": 5,
+  "subject_bars": 4,
+  "internal_total": 35,
+  "multisyl": 35,
+  "carpet_pairs": 21,
+  "carpet_total": 28
+ },
+ "V1 33-44": {
+  "suffix_ended": 1,
+  "beat_weak_mean": 0.45,
+  "weak_run_max": 3,
+  "bars": 12,
+  "first_person_bars": 7,
+  "subject_bars": 3,
+  "internal_total": 48,
+  "multisyl": 40,
+  "carpet_pairs": 25,
+  "carpet_total": 66
+ },
+ "V2 1-8": {
+  "suffix_ended": 0,
+  "beat_weak_mean": 0.5,
+  "weak_run_max": 2,
+  "bars": 8,
+  "first_person_bars": 6,
+  "subject_bars": 6,
+  "internal_total": 52,
+  "multisyl": 9,
+  "carpet_pairs": 28,
+  "carpet_total": 28
+ },
+ "V2 9-16": {
+  "suffix_ended": 0,
+  "beat_weak_mean": 0.12,
+  "weak_run_max": 3,
+  "bars": 8,
+  "first_person_bars": 4,
+  "subject_bars": 4,
+  "internal_total": 35,
+  "multisyl": 22,
+  "carpet_pairs": 4,
+  "carpet_total": 28
+ }
+}
