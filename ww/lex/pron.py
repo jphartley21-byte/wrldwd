@@ -56,6 +56,8 @@ def register_persisted() -> int:
     rt = _rt()
     d = _load()
     for w, rec in d.items():
+        if len(w) < 2:
+            continue   # a persisted guess for the letter "a" ("A1" -> EY1 W AH1 N) turned the article into a 4-phone word in every toolkit measure (found 15 Oct 2026)
         rt.OVR.setdefault(w, rec["arpabet"])
         if rec.get("source") == "g2p" and not rec.get("lexicon"):
             GUESSED.add(w)

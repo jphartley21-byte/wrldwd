@@ -110,3 +110,9 @@ heaps | Australian English | Australia | slang | lots
 stoked | Australian English | Australia | slang | delighted
 dinkum | Australian English | Australia | slang | genuine (fair dinkum)
 straya | Australian English | Australia | slang | Australia
+kaixo | Basque | Bilbao | greeting | hi
+hoi | Dutch | Rotterdam, Amsterdam | greeting | hi
+sabaidee | Lao | Laos | greeting | hi
+chao | Vietnamese | Vietnam | greeting | hello (xin chao)
+kia | Maori | New Zealand | greeting | hello (kia ora)
+ora | Maori | New Zealand | greeting | hello (kia ora)

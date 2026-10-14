@@ -65,7 +65,7 @@ OVR = {
     "yamas": "Y AA1 M AH0 S", "ouzo": "UW1 Z OW0", "parakalo": "P AA0 R AA1 K AH0 L OW0",
     "efharisto": "EH0 F AA0 R IY1 S T OW0",
     "takk": "T AA1 K", "ol": "OW1 L", "regningen": "R AY1 N IH0 NG AH0 N",
-    "khop": "K AO1 P", "bhat": "B AE1 T", "farang": "F AA0 R AE1 NG", "xin": "S IH1 N",
+    "khop": "K AO1 P", "bhat": "B AE1 T", "farang": "F AA0 R AE1 NG", "xin": "S IH1 N", "hoi": "HH OY1", "sabaidee": "S AH0 B AY1 D IY0", "kia": "K IY1 AH0", "ora": "AO1 R AH0", "chao": "CH AW1",
     "bia": "B IY1 AH0", "certi": "S ER1 T IY0", "guap": "G W AE1 P",
     "nore": "N AO1 R AH0", "slideshow": "S L AY1 D SH OW0",
     # The -ow / -o family, where cmudict is inconsistent with itself: it marks the final syllable of
