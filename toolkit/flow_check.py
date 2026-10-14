@@ -6,7 +6,7 @@ Mouth-shape transitions (14 Oct 2026): `joins()` reports where the mouth must re
 boundary -- the thing Joe heard as "difficulty mouth shape transitions" in "whites, he's" and "he's wrecked".
 The blunt 3+ consonant count ("cluster") is NOT the signal: the original averages 0.93 of those per bar. The
 signal is the RARE set (a fricative into /h/, a voiced fricative into a liquid, a same-place stop into a
-stop): the original carries 0 of those in 78% of its 92 bars and 2 or more in only 6 of them, while our
+stop, REMOVED 15 Oct 2026, see EASY_JOIN): the original carries 0 of those in 78% of its 92 bars and 2 or more in only 6 of them, while our
 "whites he's wrecked" bar carries two in one bar -- and they are the two rarest types in the whole song
 (3 occurrences each in 92 lines). Calibrated 14 Oct 2026 by counting the original; see rare_joins().
 """
@@ -35,7 +35,11 @@ for _g, _ps in (("stop", "P B T D K G"), ("fricative", "F V TH DH S Z SH ZH HH")
 # module docstring. "fricative to H" is a glottal reset (the tongue must stop hissing and open the glottis);
 # "voiced fricative to liquid" is the tongue-and-lip jolt of /z/ into /r/; "same-place stop-stop" needs a
 # release to be heard at all.
-RARE = ("fricative to H glottis reset", "voiced fricative to liquid", "same-place stop-stop")
+# "same-place stop-stop" (ship|packs, up|postal) was in this set until 15 Oct 2026 and is OUT: Joe's ear, the mouth does not
+# move at all between two stops made at the same place, so it is the EASIEST join (said as one held closure, "shipPacks").
+# It is still named by joins() as EASY_JOIN so a writer can see it, but it never counts as a mouth-shape problem.
+RARE = ("fricative to H glottis reset", "voiced fricative to liquid")
+EASY_JOIN = "same-place stop-stop (easy: no articulator movement)"
 
 
 def _word_parts(w):
@@ -65,7 +69,7 @@ def joins(line):
             if p1 and p2 and p1 != p2 and m1 != m2:
                 reasons.append(f"{coda[-1]} to {onset[0]}: place and manner both change")
             if p1 == p2 and m1 == m2 == "stop":
-                reasons.append("same-place stop-stop")
+                reasons.append(EASY_JOIN)
             if m1 in ("fricative", "affricate") and m2 == "fricative" and onset[0] == "HH":
                 reasons.append("fricative to H glottis reset")
             if m1 == "fricative" and coda[-1] in "ZV" and m2 == "approximant" and onset[0] in "RL":

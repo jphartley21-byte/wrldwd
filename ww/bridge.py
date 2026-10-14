@@ -83,7 +83,7 @@ def phones(word: str):
 
 def rare_joins(line: str):
     """Word boundaries where the mouth must reorganise in one of the RARE ways: a fricative into /h/ (a glottal
-    reset), a voiced fricative into a liquid, or a same-place stop into a stop. Returns (word_a, word_b, reason).
+    reset), or a voiced fricative into a liquid (same-place stop-stop was removed 15 Oct 2026: it is the easiest join, Joe's ear). Returns (word_a, word_b, reason).
     The original's par, counted on its 92 lines (14 Oct 2026): 0 in 78% of its bars and 2 or more in only 6.
     Joe's ear found this by hand in "whites, he's" / "he's wrecked" before any tool measured it -- see
     toolkit/flow_check.joins for the tables and the calibration."""
