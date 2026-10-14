@@ -58,7 +58,9 @@ def syllables(line):
 def lay(line, bar):
     """pair syllables with template steps; None unless the counts agree"""
     s = syllables(line)
-    steps = bar["steps"]
+    steps = bar.get("steps") or []
+    if not steps:
+        return None
     if len(s) != len(steps):
         return None
     return list(zip(s, steps))
@@ -68,7 +70,7 @@ def pressure(line, bar, step_ms):
     """flags for one bar: need vs have, heavy syllable in a fast run"""
     laid = lay(line, bar)
     if not laid:
-        return ["syllable count %d != template %d" % (len(syllables(line)), len(bar["steps"]))]
+        return ["syllable count %d != template %d" % (len(syllables(line)), len(bar.get("steps") or []))]
     flags = []
     gaps = [b[1] - a[1] for a, b in zip(laid, laid[1:])] + [3]  # last syllable: assume room
     for (syl, st), g in zip(laid, gaps):
