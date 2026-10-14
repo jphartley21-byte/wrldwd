@@ -76,7 +76,7 @@ def syllables(line):
                 cls = "schwa"
             else:
                 cls = "long" if m in LONGV else "short"
-            out.append((w, cls, vms + cms, fin, on[0] if on else None, co[-1] if co else None, k == 0, k + 1 == len(vi)))
+            out.append((w, cls, vms + cms, fin, on[0] if on else None, co[-1] if co else None, k == 0, k + 1 == len(vi), list(co)))
     return out
 
 
@@ -91,13 +91,26 @@ def lay(line, bar):
     return list(zip(s, steps))
 
 
+ASSIM_N = {"K", "G", "P", "B", "M"}
+
+
+def connected(coda):
+    """last consonant as spoken in connected speech: a final /t d/ after another consonant is dropped (and get -> an' get)
+    (Joe, 15 Oct 2026: 'Come and get it' is easy to say). Returns the consonant the mouth actually ends on."""
+    if len(coda) >= 2 and coda[-1] in ("T", "D"):
+        return coda[-2]
+    return coda[-1]
+
+
 def hard_joins(laid, gaps):
     """[(word_a, word_b, cost, gap)] word boundaries where the mouth travels far (PanPhon) across a gap of <= 1 step"""
     out = []
     for i in range(len(laid) - 1):
         a, b = laid[i][0], laid[i + 1][0]
         if a[7] and b[6] and a[5] and b[4]:
-            c = art.join_cost(a[5], b[4])
+            c = art.join_cost(connected(a[8]), b[4])
+            if c is not None and connected(a[8]) == "N" and b[4] in ASSIM_N:
+                c = 0.0  # nasal takes the next stop's place (and get -> ang get): no articulator travel
             if c is not None:
                 out.append((a[0], b[0], c, gaps[i]))
     return out
