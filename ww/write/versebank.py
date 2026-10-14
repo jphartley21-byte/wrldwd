@@ -70,6 +70,18 @@ def _menu(slot: str, groups: dict) -> str:
         pb = d["per_bar"]
     except Exception:  # noqa: BLE001
         return ""
+    import os
+    if os.environ.get("WW_RESERVOIR") == "1":
+        # OPT-IN (14 Oct 2026, UNVALIDATED): offer loaded words instead of the 30 commonest. The carpet JSON is sorted
+        # commonest-first, so the menu began "new, two, through, use, used, school" for V2 1-8 (mean zipf 5.3 against the
+        # original hook's 4.04). toolkit/reservoir.py re-ranks the same pool; entity-tagged words are NOT from Joe's
+        # material (rule 5: flag, never assert). A failure here falls back to the commonest-first menu.
+        try:
+            sys.path.insert(0, str(config.ROOT / "toolkit"))
+            import reservoir
+            pb = [[{"word": w} for w, _t, _g in b["reservoir"]] for b in reservoir.offers(slot, 40)["bars"]]
+        except Exception:  # noqa: BLE001
+            pass
     out = []
     for letter, bars in groups.items():
         if len(bars) < 2:

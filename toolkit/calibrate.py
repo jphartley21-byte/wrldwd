@@ -102,6 +102,18 @@ ok &= good
 print(("ok  " if good else "BAD ") + "phrase_audit vs the original: " +
       ("the original clears every repetition threshold (its chorus repeat is exempt by design)"
        if good else cal.strip()[-110:]))
+# report-only craft readouts (voice, company, stock phrases in the rhyme slot). Selftest only: they rank nothing.
+cr = run([os.path.join(HERE, "craft_readouts.py"), "--selftest"], "")
+good = "PASSED" in cr
+ok &= good
+print(("ok  " if good else "BAD ") + "craft_readouts selftest: " +
+      ("voice share, company per window and rhyme-slot stock phrases are counted" if good else cr.strip()[-110:]))
+# the loaded-word reservoir's ranking rules (hermetic; the slot offers are a report, not a calibration)
+rs = run([os.path.join(HERE, "reservoir.py"), "--selftest"], "")
+good = "PASSED" in rs
+ok &= good
+print(("ok  " if good else "BAD ") + "reservoir selftest: " +
+      ("loaded words lead, the commonest trail, rare words are held back" if good else rs.strip()[-110:]))
 # the meaning judge's PARSER and VERDICT RULE only. The model call is deliberately not calibrated: a
 # calibration that needs a GPU is not a calibration. The measured accuracy of the model lives in STATE.md.
 mj = run([os.path.join(os.path.dirname(HERE), "ml", "meaning_judge.py"), "--selftest"], "")

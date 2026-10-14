@@ -202,6 +202,14 @@ def show(slot, res, idx=0, detail=False):
              for w in re.findall(r"[A-Za-z']+", b)[1:] if w[0].isupper() and w.lower() != "i"]
     print(f"   world named: {len({i for i, _ in props})} of {len(res['bars'])} bars carry a proper noun"
           + (f" ({', '.join(w for _, w in props[:6])})" if props else "  <- nothing outside the room"))
+    # craft_readouts: what the block is made of (voice, company, stock phrases in the rhyme slot). REPORT ONLY.
+    import craft_readouts as cr
+    vo = cr.voice(res["bars"])
+    ot = cr.others(res["bars"], window=len(res["bars"]))
+    ca = cr.cash(res["bars"])
+    print(f"   voice: {vo['first_person']} of {vo['bars']} bars open in the first person; company: "
+          f"{ot[0]['with_other'] if ot else 0} of {len(res['bars'])} bars have somebody else in them; stock phrases in the rhyme slot: "
+          f"{len(ca)} ({sum(1 for x in ca if x['thing'])} with a concrete thing, read them)")
     devs = [(r["bar"], k, t) for r in dv.inspect(res["bars"]) for k, t, _w in r["devices"]]
     print("   figures of speech: " + (", ".join(f"bar {b} {k}({t})" for b, k, t in devs) if devs else "NONE"))
     least = None
