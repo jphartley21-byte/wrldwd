@@ -37,6 +37,8 @@ PIPELINE (continuous, no agents, no LLM): `python toolkit/pipeline.py` loops the
 
 MOUTH + DURATION (15 Oct 2026, report-only): `python toolkit/duration.py --slot-bar N -` (syllable time needed vs the template's step gap at 140/70), `flow_check.vowel_travel()`, reference benchmark/mouth_and_duration.md. PanPhon (`pip install panphon`) place features + Klatt durations (toolkit/articulation.py); calibrated on the original 15 Oct 2026, still report-only.
 
+FLOW VERDICT + SHAPE (15 Oct 2026): `python toolkit/flowverdict.py FILE` = one PASS/FAIL on flow from the original's own spread (leave-one-section-out validated; a text that is not written to the original's audio template fails it); `python toolkit/flowshape.py FILE` = cross-bar PROFILE (rhyme landing, stress alignment across bars, tension curve) vs the original, `--audio TEMPLATE FILE` for a Suno render run through flow_map.py. Profile rows, never gates. check_all now raises if a sub-check crashes (it used to print ALL PASS).
+
 ## TOOLKIT IN ONE LINE
 `python toolkit/rhyme_tools.py pron "text" | rhymes WORD [--n 0|2|3 --mode perfect|assonance|near] | mosaic "phrase" --nsyl 3 | families --min 3 | check FILE|- | syllmap FILE|-` (syllmap = every syllable: internal, multisyllabic, slant rhymes, alliteration)
 

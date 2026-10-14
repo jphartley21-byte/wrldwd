@@ -185,4 +185,9 @@ try:
     print(("ok  " if good else "BAD ") + "flow verdict leave-one-out on the original: " + fv.stdout.strip()[-110:])
 finally:
     os.unlink(_tmp.name)
+# cross-bar flow profile (rhyme landing, stress alignment across bars, tension curve): toy-block selftest
+_fs = subprocess.run([sys.executable, os.path.join(HERE, "flowshape.py"), "--selftest"], capture_output=True, text=True, encoding="utf8", errors="replace")
+good = _fs.returncode == 0
+ok &= good
+print(("ok  " if good else "BAD ") + "flowshape selftest: " + _fs.stdout.strip()[-110:])
 print("CALIBRATION", "PASSED" if ok else "FAILED: fix the tools before using them")
