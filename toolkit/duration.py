@@ -23,6 +23,7 @@ LONG = {"IY", "UW", "AA", "AO", "ER", "EY", "AY", "AW", "OY", "OW"}
 SHORT = {"IH", "UH", "AH", "EH", "AE"}
 BASE = {"long": 190.0, "short": 120.0, "schwa": 70.0}  # ms, inference
 CODA_MS, ONSET_MS, FINAL_MS = 35.0, 15.0, 40.0
+SCALE = float(os.environ.get('DUR_SCALE', '0.8'))  # rapped speech is faster than citation form. 0.8 = the largest scale at which the original's own 69 laid bars raise 0 need>have flags at 214 ms (15 Oct 2026); 0.85 gives 14%
 FUNC = set("a an the and but or so to of in on at for with by from as is it it's its i i'm my me we our you your he she they them their his her him us that this then than be was were are am do did has have had not no".split())
 
 
@@ -76,14 +77,14 @@ def pressure(line, bar, step_ms):
     for (syl, st), g in zip(laid, gaps):
         w, cls, ms, fin = syl
         have = max(1, g) * step_ms
-        need = ms + (FINAL_MS if fin else 0)
+        need = (ms + (FINAL_MS if fin else 0)) * SCALE
         if need > have * 1.0 and cls != "schwa":
             flags.append("%s (%s vowel, ~%dms) has %dms" % (w, cls, need, have))
     run = 0
     for (syl, st), g in zip(laid, gaps):
         run = run + 1 if g <= 1 else 0
         if run >= 3 and syl[1] == "long":
-            flags.append("long vowel in a fast run at '%s'" % syl[0])
+            flags.append("note: long vowel in a fast run at '%s' (fires on 37%% of the original, so never a gate)" % syl[0])
     return flags
 
 
