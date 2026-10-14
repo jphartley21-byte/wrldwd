@@ -114,6 +114,12 @@ good = "PASSED" in rs
 ok &= good
 print(("ok  " if good else "BAD ") + "reservoir selftest: " +
       ("loaded words lead, the commonest trail, rare words are held back" if good else rs.strip()[-110:]))
+# the multi-word rhyme finder: Joe's labelled pair (Honda wins ~ gone to bins) must be found, names / fragments filtered
+mr = run([os.path.join(HERE, "multirhyme.py"), "--selftest"], "")
+good = "PASSED" in mr
+ok &= good
+print(("ok  " if good else "BAD ") + "multirhyme selftest: " +
+      ("Joe's pair is found, every candidate clears the graders, names and fragments are filtered" if good else mr.strip()[-110:]))
 # the meaning judge's PARSER and VERDICT RULE only. The model call is deliberately not calibrated: a
 # calibration that needs a GPU is not a calibration. The measured accuracy of the model lives in STATE.md.
 mj = run([os.path.join(os.path.dirname(HERE), "ml", "meaning_judge.py"), "--selftest"], "")

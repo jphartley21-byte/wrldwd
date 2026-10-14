@@ -93,7 +93,48 @@ def _menu(slot: str, groups: dict) -> str:
                     seen.append(w["word"])
         if seen:
             out.append(f"  group {letter} (bars {', '.join(map(str, bars))}) rhyme-family words to choose from: {', '.join(seen[:30])}")
-    return ("\nEND-WORD MENU (pick the ones your story lands naturally; build each sentence TOWARD its end word, never pad):\n" + "\n".join(out)) if out else ""
+    menu = ("\nEND-WORD MENU (pick the ones your story lands naturally; build each sentence TOWARD its end word, never pad):\n" + "\n".join(out)) if out else ""
+    return menu + _multi_menu(slot, groups, pb)
+
+
+def _multi_menu(slot: str, groups: dict, pb: list) -> str:
+    """OPT-IN (WW_MULTIRHYME=1, 14 Oct 2026, UNVALIDATED): multi-word endings that rhyme the whole tail of a menu word
+    ("Honda wins" ~ "gone to bins"), plus mid-bar echo words for internal rhyme. Only for slots where the original rhymes
+    two or more syllables deep (benchmark/rhyme_depth_targets.json). The phrases are phonetic matches nobody has read:
+    the writer is told so. Any failure returns an empty string."""
+    import os
+    if os.environ.get("WW_MULTIRHYME") != "1":
+        return ""
+    try:
+        from . import rapfit
+        if (rapfit._targets().get(slot) or {}).get("median_depth", 1) < 2:
+            return ""
+        sys.path.insert(0, str(config.ROOT / "toolkit"))
+        import multirhyme
+        import phon
+        lines, done = [], set()
+        for letter, bars in groups.items():
+            if len(bars) < 2:
+                continue
+            words = []
+            for b in bars:
+                for w in (pb[b - 1][:12] if b - 1 < len(pb) else []):
+                    if w["word"] not in words and w["word"] not in done and len(phon.syllables(w["word"])) >= 2:
+                        words.append(w["word"])
+            done.update(words)
+            for w in words[:3]:
+                real = [r["phrase"] for r in multirhyme.stock(w, None, top=4)]
+                ph = [r["phrase"] for r in multirhyme.find(w, None, shapes=["cfc", "cf", "cc"], top=5)]
+                if ph or real:
+                    lines.append(f"  {w} ~ " + ("REAL PHRASES: " + "; ".join(real) + " | " if real else "") + "; ".join(ph))
+            if words:
+                ech = multirhyme.echo_words(words[0], 8)
+                if ech:
+                    lines.append(f"  mid-bar echoes of '{words[0]}' (internal rhyme): " + ", ".join(ech))
+        return ("\nMULTI-WORD ENDINGS (phonetic matches, NOT read for sense: use one only if it makes an ordinary sentence; "
+                "each rhymes the whole tail of the word before the ~):\n" + "\n".join(lines)) if lines else ""
+    except Exception:  # noqa: BLE001
+        return ""
 
 
 ESS = config.EVAL_DIR / "_essence.json"
@@ -163,6 +204,14 @@ def grade(slot: str, bars: list[str]) -> tuple[str, list[str]]:
         issues.append(f"repeated end words {dup}")
     if names:
         issues.append(f"proper nouns not in Joe's material: {sorted(set(names))}")
+    try:        # report-only (14 Oct 2026): rhyme depth against the original's median for this slot; never changes the grade
+        from . import rapfit as _rf
+        want = (_rf._targets().get(slot) or {}).get("median_depth")
+        ds = sorted(_rf.chain_best(_rf._syl(bars[i]), _rf._syl(bars[j]))["depth"] for i, j in f["pairs"])
+        if want and ds and ds[len(ds) // 2] < want:
+            issues.append(f"NOTE rhyme depth: median {ds[len(ds) // 2]} syllable(s) against the original's {want} in this slot")
+    except Exception:  # noqa: BLE001
+        pass
     sc = sensecheck.check(bars)
     bc = sensecheck.block_check(bars)
     sense_fail = [(k, w) for k, w in sc["fails"]]
