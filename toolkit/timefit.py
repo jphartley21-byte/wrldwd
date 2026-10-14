@@ -51,6 +51,9 @@ def fit(line, bar):
     weak_t = list(bar.get("weak") or [])
     if not steps:
         return None
+    if steps != sorted(steps):  # a few template bars wrap round the bar line (pick-up steps listed after the main run): put them in time order
+        pr = sorted(zip(steps, weak_t + [False] * (len(steps) - len(weak_t))), key=lambda x: x[0])
+        steps, weak_t = [a for a, _ in pr], [b for _, b in pr]
     S = sylinfo(line)
     n = len(S)
     if n == 0:
@@ -190,7 +193,13 @@ def calibrate(path):
         i += n
     res = section_scores(secs)
     m = means(res)
-    json.dump({"section_mean_cost": m, "bar_costs": [round(r[0], 2) if r else None for rows in res.values() for _, r in rows]}, open(BASE, "w"), indent=1)
+    # Joe's own approved bars 1-4 (toolkit/tests/joe_hook_1-4.txt) are a second benchmark: a gate Joe's approved bars fail is a wrong gate.
+    # The template's strong/weak flags were derived from the ORIGINAL's own words, so the original scores ~0 by construction; Joe's bars show what
+    # a well-liked bar that is NOT the original's text costs.
+    jl = [l.strip() for l in open(os.path.join(HERE, "tests", "joe_hook_1-4.txt"), encoding="utf8") if l.strip() and not l.startswith(("=", "#"))][:4]
+    jc = [fit(l, bars_t()[i])[0] for i, l in enumerate(jl)]
+    json.dump({"section_mean_cost": m, "bar_costs": [round(r[0], 2) if r else None for rows in res.values() for _, r in rows],
+               "joe_hook_bar_costs": [round(c, 2) for c in jc], "joe_hook_mean": round(statistics.mean(jc), 2), "joe_bar_max": round(max(jc), 2)}, open(BASE, "w"), indent=1)
     print("original timefit section means:", {k: round(v, 2) for k, v in m.items() if v is not None})
     bc = [r[0] for rows in res.values() for _, r in rows if r]
     print("bars %d, mean %.2f, p90 %.2f, max %.2f; zero-cost bars %d" % (len(bc), statistics.mean(bc), sorted(bc)[int(.9 * len(bc))], max(bc), sum(1 for c in bc if c == 0)))
@@ -200,21 +209,38 @@ def verdict(path, show=True):
     secs = parse(path)
     res = section_scores(secs)
     m = means(res)
-    base = json.load(open(BASE))["section_mean_cost"]
+    bj = json.load(open(BASE))
+    base = bj["section_mean_cost"]
     vals = [v for v in base.values() if v is not None]
     hi, lo = max(vals), min(vals)
-    thr = hi + 0.5 * (hi - lo)
-    bad = 0
+    thr = max(hi + 0.5 * (hi - lo), bj.get("joe_hook_mean", 0) + 0.1)  # original's worst section + half its range, but never below Joe's approved hook
+    bc = sorted(x for x in bj["bar_costs"] if x is not None)
+    bar_lim = max(bc[int(len(bc) * 0.95)], bj.get("joe_bar_max", 0))  # the original's 95th percentile, but never below Joe's worst approved bar
+    bad, over, scored, nostep, missing = 0, [], 0, [], []
+    n_all = 0
     for slot, rows in res.items():
         if show:
             print("== %s  mean cost %.2f (limit %.2f) %s" % (slot, m[slot] if m[slot] is not None else -1, thr, "FAIL" if m[slot] is not None and m[slot] > thr else "ok"))
-            for k, (line, r) in enumerate(rows):
-                if r and (r[1]):
+        for k, (line, r) in enumerate(rows):
+            n_all += 1
+            if line is None:
+                missing.append((slot, k + 1))
+            elif r is None:
+                nostep.append((slot, k + 1, line))
+            else:
+                scored += 1
+                if r[0] > bar_lim:
+                    over.append((slot, k + 1, r[0], line))
+                if show and r[1]:
                     print("   %2d %.1f | %s\n        %s" % (k + 1, r[0], line, "; ".join(r[1][:5])))
         if m[slot] is not None and m[slot] > thr:
             bad += 1
-    print("TIMEFIT VERDICT: %s (%d of %d sections over the limit %.2f; original's own range %.2f-%.2f)" % ("FAIL" if bad else "PASS", bad, len(res), thr, lo, hi))
-    return bad
+    print("ACCOUNTED: %d bars expected, %d scored, %d with no audio steps in the template (judged by ear only: %s), %d MISSING %s" % (
+        n_all, scored, len(nostep), ", ".join("%s #%d" % (a, b) for a, b, _ in nostep) or "-", len(missing), missing or ""))
+    print("BARS OVER THE ORIGINAL'S OWN 95TH PERCENTILE (%.2f): %d %s" % (bar_lim, len(over), ["%s #%d %.1f" % (a, b, c) for a, b, c, _ in over]))
+    fail = bad or over or missing
+    print("TIMEFIT VERDICT: %s (%d of %d sections over the limit %.2f; %d bars over %.2f; original's own section range %.2f-%.2f)" % ("FAIL" if fail else "PASS", bad, len(res), thr, len(over), bar_lim, lo, hi))
+    return 1 if fail else 0
 
 
 def selftest():
