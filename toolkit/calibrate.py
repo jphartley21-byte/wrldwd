@@ -190,4 +190,8 @@ _fs = subprocess.run([sys.executable, os.path.join(HERE, "flowshape.py"), "--sel
 good = _fs.returncode == 0
 ok &= good
 print(("ok  " if good else "BAD ") + "flowshape selftest: " + _fs.stdout.strip()[-110:])
+_fe = subprocess.run([sys.executable, os.path.join(HERE, "frameecho.py"), "--selftest"], capture_output=True, text=True, encoding="utf8", errors="replace")
+good = _fe.returncode == 0
+ok &= good
+print(("ok  " if good else "BAD ") + "frameecho selftest: " + _fe.stdout.strip()[-110:])
 print("CALIBRATION", "PASSED" if ok else "FAILED: fix the tools before using them")
