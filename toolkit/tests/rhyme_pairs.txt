@@ -11,6 +11,8 @@
 1	Jamaica	out in Spain
 1	the boat is in Porto	the week we did in Oslo
 1	might take the ferry to Belgrade	out in Spain
+# Joe, 14 Oct 2026: a three-syllable rhyme across a word break; the short middle vowels (da / to) do not count against it, and the onsets d~t and w~b are free.
+1	Honda wins	gone to bins
 0	a page of the orders	might do a week in Ljubljana
 0	no names on the borders	might do a week in Ljubljana
 0	paid him by the weight	a page of the orders
