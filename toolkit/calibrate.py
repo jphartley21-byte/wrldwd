@@ -210,4 +210,16 @@ _rdp = subprocess.run([sys.executable, os.path.join(HERE, "rhymedepth.py"), "--s
 good = _rdp.returncode == 0
 ok &= good
 print(("ok  " if good else "BAD ") + "rhymedepth selftest: " + _rdp.stdout.strip()[-110:])
+_ga = subprocess.run([sys.executable, os.path.join(HERE, "gates_all.py"), "--selftest"], capture_output=True, text=True, encoding="utf8", errors="replace")
+good = _ga.returncode == 0
+ok &= good
+print(("ok  " if good else "BAD ") + "gates_all selftest: " + _ga.stdout.strip()[-110:])
+# every hard gate in gates_all must hold on the original, except the two Joe set stricter than the benchmark on purpose
+# (timefit2's bar limit is the original's own p95, the character cap is 2): a gate the benchmark fails is a wrong gate
+_go = subprocess.run([sys.executable, os.path.join(HERE, "gates_all.py"), "--original", sys.argv[1]], capture_output=True, text=True, encoding="utf8", errors="replace")
+_hard = [l for l in _go.stdout.splitlines() if " HARD " in l and "timefit2   cost" not in l and "characters" not in l]
+good = not _hard and "GATES_ALL VERDICT" in _go.stdout
+ok &= good
+print(("ok  " if good else "BAD ") + "gates_all hard set holds on the original (bar-limit p95 and the character cap excepted by design)"
+      + ("" if good else ": " + "; ".join(h.strip()[:60] for h in _hard[:3])))
 print("CALIBRATION", "PASSED" if ok else "FAILED: fix the tools before using them")

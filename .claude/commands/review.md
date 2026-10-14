@@ -11,6 +11,7 @@ Review $ARGUMENTS. Main thread only. Original lyrics live OUTSIDE the project at
    - helpers freq: rare words (gate G2 prompt).
    Text stress flags are auto-waived only where the measured flow passes. Every "x" line must be fixed OR explicitly ranked and accepted with a reason: since 11 Oct 2026 check_all is the form TARGET, not the definition of done (it measures similarity to the original's rhythm and Joe's approved bars 1-4 fail it). Drive the problem count DOWN vs the previous draft; the hard gate is the meaning gate + G1-G6.
 2b. TIMING FIT: `python toolkit/timefit2.py FILE` (per bar: cost and the reason, e.g. a weak word on a stressed step, an extra strong syllable, a syllable too long for its gap, a hard mouth join; ACCOUNTED must cover all 76 bars). Verdict from the original alone (bar <= p95, section mean <= worst original section + half its range). Try fixes with `python toolkit/timefit_try.py bar N "line" ...`. Report every failing bar by name, never a section total.
+2d. ALL GATES IN ONE: `python toolkit/gates_all.py FILE` prints every fired flag by bar (HARD / RANK / NOTE) and exits 1 on any hard flag; use it as the summary, the per-tool runs above for detail.
 2c. RHYME DEPTH: `python toolkit/rhymedepth.py FILE` (end depth per bar vs the original median, multisyllabic runs vs the original, internal rhymes on matched beats; FAIL lines are hard, warnings are named). Report per bar.
 3. MEANING GATES (human; tools cannot judge these):
    G1 plain sense (a sentence a mate would say in the pub; the stanza is one connected thought);

@@ -39,6 +39,8 @@ MOUTH + DURATION (15 Oct 2026, report-only): `python toolkit/duration.py --slot-
 
 FLOW VERDICT + SHAPE (15 Oct 2026): `python toolkit/flowverdict.py FILE` = one PASS/FAIL on flow from the original's own spread (leave-one-section-out validated; a text that is not written to the original's audio template fails it); `python toolkit/flowshape.py FILE` = cross-bar PROFILE (rhyme landing, stress alignment across bars, tension curve) vs the original, `--audio TEMPLATE FILE` for a Suno render run through flow_map.py. Profile rows, never gates. check_all now raises if a sub-check crashes (it used to print ALL PASS).
 
+ALL GATES (14 Oct 2026): `python toolkit/gates_all.py FILE` runs timefit2, rhymedepth, check_all, meaning, coherence, regression, phrase_audit, characters, songcheck and frameecho and prints each fired flag by bar; exit 1 = a hard gate fired. `--original PATH` validates the hard set on the original (it must clear all but Joe's two stricter-than-benchmark rules).
+
 ## TOOLKIT IN ONE LINE
 `python toolkit/rhyme_tools.py pron "text" | rhymes WORD [--n 0|2|3 --mode perfect|assonance|near] | mosaic "phrase" --nsyl 3 | families --min 3 | check FILE|- | syllmap FILE|-` (syllmap = every syllable: internal, multisyllabic, slant rhymes, alliteration)
 

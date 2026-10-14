@@ -12,7 +12,7 @@ stop, REMOVED 15 Oct 2026, see EASY_JOIN): the original carries 0 of those in 78
 """
 import re, sys
 sys.path.insert(0, __file__.rsplit("\\", 1)[0].rsplit("/", 1)[0])
-from rhyme_tools import pron, is_v, strip
+from rhyme_tools import pron, is_v, strip, register_caps
 
 FUNC = set("""a an the and but or so to of in on at for with by from up as is it it's its i i'm my me we our you your he she they them their his her him us 'em em
 that that's this then than be been was were are am do did has have had will would can could might may must shall should not no
@@ -108,6 +108,10 @@ def vowel_travel(line):
 
 
 def bar_profile(line):
+    # Register capitals FIRST (15 Oct 2026): without it the result depended on call order -- a fresh process read WWE through the
+    # initialism fallback below (one stress, six weak), while any earlier phon/flow_fit call had already registered the all-stressed
+    # spelling, so the original's own WWE bar was profiled one way at --build and the other at --slot and failed itself.
+    register_caps(line)
     words = re.findall(r"[A-Za-z'å]+|[,;:\-–—]", line)
     stress, pauses, clusters = [], 0, 0
     prev_coda = []

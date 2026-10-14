@@ -1,0 +1,92 @@
+{
+ "Hook 1-4": {
+  "median": 2,
+  "multisyl": 8,
+  "beat_step": 2,
+  "beat_beat": 0,
+  "beat_half": 0,
+  "full": 1,
+  "multi_internal": 0
+ },
+ "Hook 5-8": {
+  "median": 2,
+  "multisyl": 2,
+  "beat_step": 1,
+  "beat_beat": 0,
+  "beat_half": 0,
+  "full": 0,
+  "multi_internal": 0
+ },
+ "Hook 9-16": {
+  "median": 1,
+  "multisyl": 4,
+  "beat_step": 1,
+  "beat_beat": 1,
+  "beat_half": 1,
+  "full": 2,
+  "multi_internal": 2
+ },
+ "V1 1-8": {
+  "median": 2,
+  "multisyl": 18,
+  "beat_step": 2,
+  "beat_beat": 6,
+  "beat_half": 0,
+  "full": 1,
+  "multi_internal": 0
+ },
+ "V1 9-16": {
+  "median": 1,
+  "multisyl": 11,
+  "beat_step": 3,
+  "beat_beat": 1,
+  "beat_half": 0,
+  "full": 1,
+  "multi_internal": 1
+ },
+ "V1 17-24": {
+  "median": 3,
+  "multisyl": 9,
+  "beat_step": 5,
+  "beat_beat": 2,
+  "beat_half": 2,
+  "full": 1,
+  "multi_internal": 1
+ },
+ "V1 25-32": {
+  "median": 2,
+  "multisyl": 25,
+  "beat_step": 6,
+  "beat_beat": 3,
+  "beat_half": 0,
+  "full": 6,
+  "multi_internal": 5
+ },
+ "V1 33-44": {
+  "median": 1,
+  "multisyl": 49,
+  "beat_step": 4,
+  "beat_beat": 2,
+  "beat_half": 0,
+  "full": 4,
+  "multi_internal": 3
+ },
+ "V2 1-8": {
+  "median": 1,
+  "multisyl": 9,
+  "beat_step": 2,
+  "beat_beat": 5,
+  "beat_half": 0,
+  "full": 3,
+  "multi_internal": 2
+ },
+ "V2 9-16": {
+  "median": 1,
+  "multisyl": 20,
+  "beat_step": 4,
+  "beat_beat": 1,
+  "beat_half": 1,
+  "full": 3,
+  "multi_internal": 3
+ }
+}

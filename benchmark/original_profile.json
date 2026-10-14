@@ -3435,13 +3435,19 @@ false
 2,
 3,
 4,
+5,
+6,
+7,
+8,
+9,
+10,
 11
 ],
-"clash": 2,
-"lapse": 6,
+"clash": 9,
+"lapse": 1,
 "pause": 1,
 "cluster": 0,
-"joins": 0,
+"joins": 1,
 "rare": []
 }
 ],
@@ -3490,7 +3496,13 @@ false
 ],
 1
 ],
-null
+[
+[
+"\u00e6",
+"a\u028a"
+],
+2
+]
 ],
 "scheme": "abacdbce",
 "bookends": [
@@ -3515,12 +3527,6 @@ false
 3,
 6,
 0.8
-],
-[
-"end-end",
-5,
-7,
-0.92
 ]
 ],
 "internal": [
@@ -3530,8 +3536,8 @@ false
 5,
 3,
 6,
-4,
-0
+6,
+7
 ],
 "carpet": {
 "pairs": 4,
@@ -3559,7 +3565,7 @@ false
 ],
 "quad": {
 "internal_bars": 3,
-"multisyl": 18,
+"multisyl": 29,
 "allit_bars": 4
 }
 }
