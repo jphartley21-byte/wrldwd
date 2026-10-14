@@ -1,11 +1,4 @@
 {
- "a": {
-  "arpabet": "EY1 W AH1 N",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
  "aa": {
   "arpabet": "EY1 EY1",
   "lexicon": true,
@@ -1105,13 +1098,6 @@
   "source": "reviewed",
   "via": "phonetician agent"
  },
- "ac": {
-  "arpabet": "EY1 S IY1 T W EH1 L V",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
  "acacius": {
   "arpabet": "AH0 K EY1 S IY0 AH0 S",
   "lexicon": true,
@@ -1363,13 +1349,6 @@
   "needs_check": true,
   "source": "g2p",
   "via": "g2p-en"
- },
- "act": {
-  "arpabet": "EY1 S IY0 T IY1",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
  },
  "actimel": {
   "arpabet": "AE1 K T IH0 M EH2 L",
@@ -5486,13 +5465,6 @@
   "source": "g2p",
   "via": "g2p-en"
  },
- "andalusia": {
-  "arpabet": "AE2 N D AH0 L UW1 Z IY0 AH0",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
  "andiamo": {
   "arpabet": "AE2 N D IY0 AA1 M OW0",
   "lexicon": true,
@@ -6396,13 +6368,6 @@
   "source": "g2p",
   "via": "g2p-en"
  },
- "arai": {
-  "arpabet": "AH0 R AY1",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
  "arak": {
   "arpabet": "AE1 R AE0 K",
   "lexicon": true,
@@ -7060,13 +7025,6 @@
   "needs_check": true,
   "source": "g2p",
   "via": "g2p-en"
- },
- "asa": {
-  "arpabet": "EY1 EH1 S EY1",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
  },
  "asado": {
   "arpabet": "AH0 S AA1 D OW0",
@@ -7767,13 +7725,6 @@
   "needs_check": true,
   "source": "g2p",
   "via": "g2p-en"
- },
- "ave": {
-  "arpabet": "AE1 V AH0 N Y UW0",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
  },
  "avebury": {
   "arpabet": "EY1 V B R IY0",
@@ -10488,13 +10439,6 @@
   "source": "g2p",
   "via": "g2p-en"
  },
- "blakes": {
-  "arpabet": "B L EY1 K S S EH1 V AH0 N",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
  "blarney": {
   "arpabet": "B L AA1 N IY0",
   "lexicon": true,
@@ -12328,13 +12272,6 @@
   "source": "g2p",
   "via": "g2p-en"
  },
- "bs": {
-  "arpabet": "B IY1 EH1 S S EH1 V AH0 N",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
  "bsa": {
   "arpabet": "B IY1 EH1 S EY1",
   "lexicon": true,
@@ -13384,13 +13321,6 @@
   "source": "compound",
   "via": "cas+tries"
  },
- "catalonia": {
-  "arpabet": "K AE2 T AH0 L OW1 N IY0 AH0",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
  "catatonia": {
   "arpabet": "K AE2 T AH0 T OW1 N IY0 AH0",
   "lexicon": true,
@@ -13734,13 +13664,6 @@
   "source": "reviewed",
   "via": "phonetician agent"
  },
- "charcuterie": {
-  "arpabet": "SH AA2 K UW2 T ER0 IY1",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
  "chardonnay": {
   "arpabet": "SH AA1 D AH0 N EY2",
   "lexicon": true,
@@ -13888,10 +13811,10 @@
   "via": "phonetician agent"
  },
  "chicas": {
-  "arpabet": "SH IY1 K AE2 Z",
+  "arpabet": "CH IY1 K AH0 Z",
   "needs_check": false,
-  "source": "compound",
-  "via": "chic+as"
+  "source": "reviewed",
+  "via": "hand fix 14 Oct 2026 (was SH IY1 K AE2 Z from chic+as)"
  },
  "chichen": {
   "arpabet": "CH IY0 CH EH1 N",
@@ -15511,13 +15434,6 @@
   "source": "reviewed",
   "via": "phonetician agent"
  },
- "dagenham": {
-  "arpabet": "D AE1 G N AH0 M",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
  "daim": {
   "arpabet": "D AY1 M",
   "lexicon": true,
@@ -16078,13 +15994,6 @@
   "source": "g2p",
   "via": "g2p-en"
  },
- "di": {
-  "arpabet": "D IY1 AY1",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
  "diadora": {
   "arpabet": "D IY2 AH0 D AO1 R AH0",
   "lexicon": true,
@@ -16637,13 +16546,6 @@
   "source": "reviewed",
   "via": "phonetician agent"
  },
- "dr": {
-  "arpabet": "D AA1 K T ER0",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
  "draho": {
   "arpabet": "D R AA1 HH OW0",
   "lexicon": true,
@@ -17069,13 +16971,6 @@
  },
  "dziekuje": {
   "arpabet": "JH EH1 N K UW0 Y EH0",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
- "e": {
-  "arpabet": "IY1 F AO1 R",
   "lexicon": true,
   "needs_check": false,
   "source": "reviewed",
@@ -18296,13 +18191,6 @@
   "source": "reviewed",
   "via": "phonetician agent"
  },
- "film": {
-  "arpabet": "F IH1 L M F AO1 R",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
  "filous": {
   "arpabet": "F IY0 L UW1",
   "lexicon": true,
@@ -18597,13 +18485,6 @@
  },
  "fnaa": {
   "arpabet": "F N AA1",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
- "focaccia": {
-  "arpabet": "F AH0 K AE1 CH AH0",
   "lexicon": true,
   "needs_check": false,
   "source": "reviewed",
@@ -19028,22 +18909,8 @@
   "source": "g2p",
   "via": "g2p-en"
  },
- "fyi": {
-  "arpabet": "EH1 F W AY1 AY1",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
  "fyne": {
   "arpabet": "F AY1 N",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
- "g": {
-  "arpabet": "F AO1 JH IY1",
   "lexicon": true,
   "needs_check": false,
   "source": "reviewed",
@@ -19443,13 +19310,6 @@
  },
  "gennel": {
   "arpabet": "JH EH1 N AH0 L",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
- "geordie": {
-  "arpabet": "JH AO1 D IY0",
   "lexicon": true,
   "needs_check": false,
   "source": "reviewed",
@@ -22705,13 +22565,6 @@
   "source": "g2p",
   "via": "g2p-en"
  },
- "jet": {
-  "arpabet": "JH EH1 T T UW1",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
  "jetboil": {
   "arpabet": "JH EH1 T B OY2 L",
   "lexicon": true,
@@ -22944,13 +22797,6 @@
  },
  "jutro": {
   "arpabet": "Y UW1 T R OW0",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
- "juul": {
-  "arpabet": "JH UW1 L",
   "lexicon": true,
   "needs_check": false,
   "source": "reviewed",
@@ -24312,13 +24158,6 @@
   "source": "g2p",
   "via": "g2p-en"
  },
- "la": {
-  "arpabet": "EH1 L EY1",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
  "laap": {
   "arpabet": "L AA1 P",
   "lexicon": true,
@@ -24634,13 +24473,6 @@
   "source": "reviewed",
   "via": "phonetician agent"
  },
- "lax": {
-  "arpabet": "EH1 L EY1 EH1 K S",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
  "layabout": {
   "arpabet": "L EY1 AH0 B AW2 T",
   "lexicon": true,
@@ -24706,13 +24538,6 @@
  },
  "leche": {
   "arpabet": "L EH1 CH EY0",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
- "led": {
-  "arpabet": "EH1 L IY1 D IY1",
   "lexicon": true,
   "needs_check": false,
   "source": "reviewed",
@@ -24979,13 +24804,6 @@
  },
  "limmy": {
   "arpabet": "L IH1 M IY0",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
- "limoges": {
-  "arpabet": "L IY0 M OW1 ZH",
   "lexicon": true,
   "needs_check": false,
   "source": "reviewed",
@@ -25641,13 +25459,6 @@
   "source": "reviewed",
   "via": "phonetician agent"
  },
- "m": {
-  "arpabet": "EH1 M T W EH1 N T IY0 F AY1 V",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
  "maaf": {
   "arpabet": "M AA1 AE0 F",
   "lexicon": true,
@@ -25937,13 +25748,6 @@
  },
  "maldon": {
   "arpabet": "M AO1 L D AH0 N",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
- "malia": {
-  "arpabet": "M AE1 L Y AH0",
   "lexicon": true,
   "needs_check": false,
   "source": "reviewed",
@@ -26352,13 +26156,6 @@
   "source": "reviewed",
   "via": "phonetician agent"
  },
- "mauritius": {
-  "arpabet": "M AO0 R IH1 SH AH0 S",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
  "maxol": {
   "arpabet": "M AE1 K S AA2 L",
   "lexicon": true,
@@ -26400,13 +26197,6 @@
   "needs_check": true,
   "source": "g2p",
   "via": "g2p-en"
- },
- "mc": {
-  "arpabet": "EH1 M S IY1",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
  },
  "mcbaguette": {
   "arpabet": "M AH0 K B AE0 G EH1 T",
@@ -27226,13 +27016,6 @@
   "source": "reviewed",
   "via": "phonetician agent"
  },
- "montmartre": {
-  "arpabet": "M AA2 N M AA1 T",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
  "montparnasse": {
   "arpabet": "M AA2 N P AA0 N AE1 S",
   "lexicon": true,
@@ -27301,13 +27084,6 @@
   "needs_check": true,
   "source": "g2p",
   "via": "g2p-en"
- },
- "more": {
-  "arpabet": "M AO1 F AO1 R",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
  },
  "morecambe": {
   "arpabet": "M AO1 K AH0 M",
@@ -29315,13 +29091,6 @@
   "source": "g2p",
   "via": "g2p-en"
  },
- "ore": {
-  "arpabet": "AO1 R AH0",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
  "orita": {
   "arpabet": "AO0 R IY1 T AH0",
   "lexicon": true,
@@ -29538,13 +29307,6 @@
   "needs_check": true,
   "source": "g2p",
   "via": "g2p-en"
- },
- "pai": {
-  "arpabet": "P AY1",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
  },
  "paignton": {
   "arpabet": "P EY1 N T AH0 N",
@@ -30423,13 +30185,6 @@
  },
  "pgce": {
   "arpabet": "P IY1 JH IY1 S IY1 IY1",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
- "ph": {
-  "arpabet": "F ER1",
   "lexicon": true,
   "needs_check": false,
   "source": "reviewed",
@@ -31596,13 +31351,6 @@
   "source": "reviewed",
   "via": "phonetician agent"
  },
- "puglia": {
-  "arpabet": "P UW1 L Y AH0",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
  "pukka": {
   "arpabet": "P AH1 K AH0",
   "lexicon": true,
@@ -31700,13 +31448,6 @@
   "needs_check": true,
   "source": "g2p",
   "via": "g2p-en"
- },
- "q": {
-  "arpabet": "K UW1 EY1 T",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
  },
  "qashqai": {
   "arpabet": "K AE1 SH K AY2",
@@ -31908,13 +31649,6 @@
   "source": "reviewed",
   "via": "phonetician agent"
  },
- "radler": {
-  "arpabet": "R AA1 D L ER0",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
  "radox": {
   "arpabet": "R EY1 D AA2 K S",
   "lexicon": true,
@@ -31970,13 +31704,6 @@
   "needs_check": true,
   "source": "g2p",
   "via": "g2p-en"
- },
- "rak": {
-  "arpabet": "R AH0 K UH1",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
  },
  "rakfisk": {
   "arpabet": "R AA1 K F IH2 S K",
@@ -32580,13 +32307,6 @@
   "source": "reviewed",
   "via": "phonetician agent"
  },
- "rip": {
-  "arpabet": "AA1 R AY1 P IY1",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
  "risca": {
   "arpabet": "R IY1 S K AH0",
   "lexicon": true,
@@ -32752,13 +32472,6 @@
   "needs_check": false,
   "source": "compound",
   "via": "rock+slide"
- },
- "roi": {
-  "arpabet": "AA1 R OW0 AY1",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
  },
  "rola": {
   "arpabet": "R OW1 L AH0",
@@ -33137,13 +32850,6 @@
   "source": "g2p",
   "via": "g2p-en"
  },
- "sake": {
-  "arpabet": "S AA1 K EY0",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
  "salar": {
   "arpabet": "S AH0 L AA1 R",
   "lexicon": true,
@@ -33209,13 +32915,6 @@
  },
  "salud": {
   "arpabet": "S AH0 L UW1 D",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
- "salute": {
-  "arpabet": "S AH0 L UW1 T EY0",
   "lexicon": true,
   "needs_check": false,
   "source": "reviewed",
@@ -33340,13 +33039,6 @@
   "source": "g2p",
   "via": "g2p-en"
  },
- "sant": {
-  "arpabet": "S AA0 N T EY1",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
  "santander": {
   "arpabet": "S AE2 N T AE0 N D EH1 R",
   "lexicon": true,
@@ -33430,13 +33122,6 @@
   "needs_check": true,
   "source": "g2p",
   "via": "g2p-en"
- },
- "sate": {
-  "arpabet": "S AA1 T EY0",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
  },
  "satnav": {
   "arpabet": "S AE1 T N AE2 V",
@@ -33573,13 +33258,6 @@
  },
  "scampi": {
   "arpabet": "S K AE1 M P IY0",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
- "scarborough": {
-  "arpabet": "S K AA1 B R AH0",
   "lexicon": true,
   "needs_check": false,
   "source": "reviewed",
@@ -34077,13 +33755,6 @@
   "needs_check": false,
   "source": "compound",
   "via": "sheep+dog"
- },
- "shein": {
-  "arpabet": "SH IY1 IH0 N",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
  },
  "shelltoes": {
   "arpabet": "SH EH1 L T OW2 Z",
@@ -34829,13 +34500,6 @@
   "source": "reviewed",
   "via": "phonetician agent"
  },
- "sky": {
-  "arpabet": "S K AY1 P L AH1 S",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
  "skyfall": {
   "arpabet": "S K AY1 P L AH1 S F AO2 L",
   "lexicon": true,
@@ -35212,13 +34876,6 @@
   "needs_check": true,
   "source": "g2p",
   "via": "g2p-en"
- },
- "soave": {
-  "arpabet": "S W AA1 V EY0",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
  },
  "sobranie": {
   "arpabet": "S AH0 B R AE1 N IY0",
@@ -37744,13 +37401,6 @@
   "source": "reviewed",
   "via": "phonetician agent"
  },
- "toil": {
-  "arpabet": "T OY1 L AH0 T",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
  "toilet": {
   "arpabet": "T OY0 L EH1 T",
   "lexicon": true,
@@ -37946,13 +37596,6 @@
   "needs_check": true,
   "source": "g2p",
   "via": "g2p-en"
- },
- "tottenham": {
-  "arpabet": "T AA1 T N AH0 M",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
  },
  "totterdown": {
   "arpabet": "T AA1 T ER0 D AW2 N",
@@ -38296,13 +37939,6 @@
   "needs_check": true,
   "source": "g2p",
   "via": "g2p-en"
- },
- "trieste": {
-  "arpabet": "T R IY0 EH1 S T",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
  },
  "triglav": {
   "arpabet": "T R IY1 G L AE2 V",
@@ -39212,13 +38848,6 @@
   "source": "reviewed",
   "via": "phonetician agent"
  },
- "vale": {
-  "arpabet": "V AA1 L EY0",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
  "valletta": {
   "arpabet": "V AH0 L EH1 T AH0",
   "lexicon": true,
@@ -39751,13 +39380,6 @@
  },
  "vype": {
   "arpabet": "V AY1 P",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
- "wa": {
-  "arpabet": "D AH1 B Y UW0 EY1",
   "lexicon": true,
   "needs_check": false,
   "source": "reviewed",
@@ -40732,13 +40354,6 @@
   "source": "reviewed",
   "via": "phonetician agent"
  },
- "wretch": {
-  "arpabet": "R EH1 CH TH ER1 T IY0 T UW1",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
  "wrexham": {
   "arpabet": "R EH1 K S AH0 M",
   "lexicon": true,
@@ -40775,11 +40390,11 @@
   "via": "phonetician agent"
  },
  "wwe": {
-  "arpabet": "W IY1",
+  "arpabet": "D AH1 B AH0 L Y UW0 D AH1 B AH0 L Y UW0 IY1",
   "lexicon": true,
-  "needs_check": true,
-  "source": "g2p",
-  "via": "g2p-en"
+  "needs_check": false,
+  "source": "reviewed",
+  "via": "hand fix 14 Oct 2026 (was W IY1 from g2p): spelled out"
  },
  "wyddfa": {
   "arpabet": "W IH1 DH V AH0",
@@ -40811,13 +40426,6 @@
  },
  "xfm": {
   "arpabet": "EH1 K S EH2 F EH1 M",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
- "xian": {
-  "arpabet": "SH IY0 AA1 N",
   "lexicon": true,
   "needs_check": false,
   "source": "reviewed",
@@ -40874,13 +40482,6 @@
  },
  "xt": {
   "arpabet": "EH1 K S T IY1",
-  "lexicon": true,
-  "needs_check": false,
-  "source": "reviewed",
-  "via": "phonetician agent"
- },
- "xtra": {
-  "arpabet": "W AH1 N EH1 K S T R AH0",
   "lexicon": true,
   "needs_check": false,
   "source": "reviewed",

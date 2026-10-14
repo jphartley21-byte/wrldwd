@@ -384,7 +384,7 @@ def analyze(sections: dict[str, list[str]], ear: bool = False) -> dict:
                     sv = max((ph.vsim(v, av) for av in vs), default=0.0)
                     if sv > bs:
                         bs, bg = sv, g
-                if bg is not None and bs >= 0.9:       # same stressed vowel as one of the group's rhyme anchors: an assonant echo of that group
+                if bg is not None and bs >= 0.999:     # the SAME stressed vowel as one of the group's rhyme anchors (identical, not 0.9: aI~eI is 0.93 and made 'eye' an echo of an eI group)
                     marks_all[i][j] = ("int", bg, max(rapfit.score(c, tails[m])["score"] for m in members[bg]))
                 else:
                     leftover.setdefault(v, []).append((i, j, c))
@@ -698,12 +698,15 @@ def _bar_html(row: dict, skeleton: bool) -> str:
     visible = lambda j: row["marks"].get(j) is not None or j in row["al"] or j in shown or (row["g"] is None and j >= row["tail_from"])
     hide: set = set()
     if skeleton:                  # rule 4: never more than 3 consecutive words of the original on show, even when a short bar is all rhyme
+        # a hyphenated token counts as its parts: 'duck-duck' is two words, and counting it as one let a 4-word run of the original through (14 Oct 2026)
+        n_words = lambda j: max(1, len([p for p in re.split(r"[-–]+", ws[j]) if re.search(r"[A-Za-z]", p)]))
         run: list = []
         for j in range(len(ws) + 1):
             if j < len(ws) and visible(j):
                 run.append(j)
             else:
-                hide.update(run[:-3] if len(run) > 3 else [])
+                while run and sum(n_words(k) for k in run) > 3:
+                    hide.add(run.pop(0))
                 run = []
     out = []
     for j, w in enumerate(ws):

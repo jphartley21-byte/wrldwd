@@ -35,7 +35,7 @@ def main():
     for i, l in enumerate(lines):
         syl = len(forge.ff.sylls(l))
         want = fr["syls"][i]
-        ends = mt._k(l)
+        ends = mt._k(mt.end_key(l))
         keys[i] = ends
         frame_end = "".join(P["keys"][i][0]) if P["keys"][i] else "?"
         shape = fr["shapes"][i]

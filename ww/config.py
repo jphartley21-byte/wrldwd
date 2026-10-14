@@ -23,9 +23,12 @@ PD_RAW = DOWNLOADS / "pd_verse" / "raw"
 LEDGER_DIR = EVAL_DIR / "ledger"
 
 # The original's lines. Rule 4: never copied into the repo, never logged, never in writer prompts.
+# Same resolution as toolkit/private_path.py: the toolkit's folder is spelled Worldwide_private, ww's WORLDWIDE_PRIVATE;
+# that is one folder on Windows and two on Linux/macOS, so take whichever exists (WORLDWIDE_PRIVATE first, as before).
 PRIVATE_ORIGINAL = Path(
     os.environ.get("WW_PRIVATE_ORIGINAL")
-    or Path.home() / "Documents" / "WORLDWIDE_PRIVATE" / "original_lines.txt"
+    or next((p for p in (Path.home() / "Documents" / d / "original_lines.txt" for d in ("WORLDWIDE_PRIVATE", "Worldwide_private")) if p.exists()),
+            Path.home() / "Documents" / "WORLDWIDE_PRIVATE" / "original_lines.txt")
 )
 
 # Packages whose versions are recorded in the freeze manifest (requirements.lock equivalent).

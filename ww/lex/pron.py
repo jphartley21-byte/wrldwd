@@ -53,9 +53,16 @@ def is_guess(word: str) -> bool:
 
 
 def register_persisted() -> int:
+    """persisted entries FILL GAPS only: a word cmudict already knows keeps its dictionary pronunciation.
+    The persisted file holds lexicon names keyed with digits and symbols stripped, so without this rule
+    A1 -> 'a' (EY1 W AH1 N), More4 -> 'more' (M AO1 F AO1 R), E4 -> 'e', Film4 -> 'film', Jet2 -> 'jet' shadowed
+    the common words inside every ww process: 23 of the original's 76 bars were mis-counted there while the
+    toolkit CLIs (which never load this file) counted them right (measured 14 Oct 2026)."""
     rt = _rt()
     d = _load()
     for w, rec in d.items():
+        if w in rt.D:
+            continue
         rt.OVR.setdefault(w, rec["arpabet"])
         if rec.get("source") == "g2p" and not rec.get("lexicon"):
             GUESSED.add(w)

@@ -203,19 +203,21 @@ def best_end(a_line, b_line):
 
 
 def internal_density(lines):
-    """for each bar i: number of stressed-syllable vowel matches (>= 0.85) within bar i and between bar i and bar i+1,
-    excluding the final syllables (end rhymes are scored separately)"""
+    """for each bar i: number of stressed-syllable vowel matches within bar i and between bar i and bar i+1,
+    excluding the final syllables (end rhymes are scored separately). A match is the IDENTICAL British vowel: the old
+    floor (phon.vsim >= 0.85) admitted no near monophthong at all, only gliding diphthongs that share an off-glide
+    (aI~eI 0.93, aU~@U 0.89) and 3:~@, i.e. exactly the eye~plain / I'll~say false positives (measured 14 Oct 2026)."""
     import phon
     out = []
     data = [stressed_sylls(l) for l in lines]
     for i in range(len(lines)):
         st, sy = data[i]
         mids = [sy[k][0] for k in st[:-1]]
-        n = sum(1 for a in range(len(mids)) for b in range(a + 1, len(mids)) if phon.vsim(mids[a], mids[b]) >= 0.85)
+        n = sum(1 for a in range(len(mids)) for b in range(a + 1, len(mids)) if mids[a] == mids[b])
         if i + 1 < len(lines):
             st2, sy2 = data[i + 1]
             nxt = [sy2[k][0] for k in st2[:-1]]
-            n += sum(1 for a in mids for b in nxt if phon.vsim(a, b) >= 0.85)
+            n += sum(1 for a in mids for b in nxt if a == b)
         out.append(n)
     return out
 

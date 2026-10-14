@@ -110,3 +110,6 @@ heaps | Australian English | Australia | slang | lots
 stoked | Australian English | Australia | slang | delighted
 dinkum | Australian English | Australia | slang | genuine (fair dinkum)
 straya | Australian English | Australia | slang | Australia
+kaixo | Basque | Bilbao 2023 | greeting | hello (the Basque Country's own word; Joe's hook opens on it)
+hoi | Dutch | Rotterdam 2023 (Rolling Loud) | greeting | hi
+proost | Dutch | Rotterdam 2023, Amsterdam 2013-2023 | cheers | cheers

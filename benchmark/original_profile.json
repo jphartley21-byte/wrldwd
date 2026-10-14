@@ -11,7 +11,9 @@
 "clash": 1,
 "lapse": 1,
 "pause": 1,
-"cluster": 0
+"cluster": 0,
+"joins": 0,
+"rare": []
 },
 {
 "syl": 9,
@@ -23,7 +25,9 @@
 "clash": 0,
 "lapse": 3,
 "pause": 0,
-"cluster": 0
+"cluster": 0,
+"joins": 0,
+"rare": []
 },
 {
 "syl": 9,
@@ -38,7 +42,9 @@
 "clash": 4,
 "lapse": 3,
 "pause": 0,
-"cluster": 1
+"cluster": 1,
+"joins": 4,
+"rare": []
 },
 {
 "syl": 9,
@@ -53,7 +59,9 @@
 "clash": 4,
 "lapse": 2,
 "pause": 0,
-"cluster": 0
+"cluster": 0,
+"joins": 5,
+"rare": []
 }
 ],
 "keys": [
@@ -113,9 +121,9 @@ false
 ],
 "internal": [
 0,
-2,
-6,
-1
+0,
+3,
+0
 ],
 "carpet": {
 "pairs": 6,
@@ -169,7 +177,9 @@ false
 "clash": 2,
 "lapse": 2,
 "pause": 0,
-"cluster": 0
+"cluster": 0,
+"joins": 0,
+"rare": []
 },
 {
 "syl": 10,
@@ -183,7 +193,15 @@ false
 "clash": 2,
 "lapse": 2,
 "pause": 0,
-"cluster": 0
+"cluster": 0,
+"joins": 4,
+"rare": [
+[
+"it",
+"down",
+"same-place stop-stop"
+]
+]
 },
 {
 "syl": 8,
@@ -194,7 +212,9 @@ false
 "clash": 0,
 "lapse": 3,
 "pause": 0,
-"cluster": 0
+"cluster": 0,
+"joins": 2,
+"rare": []
 },
 {
 "syl": 8,
@@ -207,7 +227,9 @@ false
 "clash": 1,
 "lapse": 1,
 "pause": 0,
-"cluster": 1
+"cluster": 1,
+"joins": 4,
+"rare": []
 }
 ],
 "keys": [
@@ -286,8 +308,8 @@ false
 ]
 ],
 "internal": [
-4,
-3,
+2,
+1,
 1,
 0
 ],
@@ -341,7 +363,9 @@ false
 "clash": 0,
 "lapse": 2,
 "pause": 0,
-"cluster": 1
+"cluster": 1,
+"joins": 2,
+"rare": []
 },
 {
 "syl": 9,
@@ -356,7 +380,9 @@ false
 "clash": 2,
 "lapse": 1,
 "pause": 0,
-"cluster": 0
+"cluster": 0,
+"joins": 0,
+"rare": []
 },
 {
 "syl": 8,
@@ -368,7 +394,9 @@ false
 "clash": 1,
 "lapse": 4,
 "pause": 0,
-"cluster": 0
+"cluster": 0,
+"joins": 2,
+"rare": []
 },
 {
 "syl": 9,
@@ -381,7 +409,15 @@ false
 "clash": 1,
 "lapse": 3,
 "pause": 0,
-"cluster": 2
+"cluster": 2,
+"joins": 3,
+"rare": [
+[
+"and",
+"dance",
+"same-place stop-stop"
+]
+]
 },
 {
 "syl": 12,
@@ -396,7 +432,9 @@ false
 "clash": 0,
 "lapse": 2,
 "pause": 0,
-"cluster": 2
+"cluster": 2,
+"joins": 5,
+"rare": []
 },
 {
 "syl": 5,
@@ -407,7 +445,9 @@ false
 "clash": 0,
 "lapse": 2,
 "pause": 0,
-"cluster": 0
+"cluster": 0,
+"joins": 0,
+"rare": []
 },
 {
 "syl": 8,
@@ -422,7 +462,20 @@ false
 "clash": 3,
 "lapse": 1,
 "pause": 0,
-"cluster": 0
+"cluster": 0,
+"joins": 4,
+"rare": [
+[
+"out",
+"down",
+"same-place stop-stop"
+],
+[
+"beach",
+"house",
+"fricative to H glottis reset"
+]
+]
 },
 {
 "syl": 7,
@@ -434,7 +487,9 @@ false
 "clash": 0,
 "lapse": 2,
 "pause": 0,
-"cluster": 1
+"cluster": 1,
+"joins": 1,
+"rare": []
 }
 ],
 "keys": [
@@ -525,8 +580,8 @@ false
 7,
 3,
 4,
-3,
-4,
+2,
+6,
 0
 ],
 "carpet": {
@@ -573,7 +628,9 @@ false
 "clash": 2,
 "lapse": 3,
 "pause": 1,
-"cluster": 1
+"cluster": 1,
+"joins": 2,
+"rare": []
 },
 {
 "syl": 10,
@@ -587,7 +644,9 @@ false
 "clash": 1,
 "lapse": 2,
 "pause": 2,
-"cluster": 0
+"cluster": 0,
+"joins": 2,
+"rare": []
 },
 {
 "syl": 9,
@@ -602,7 +661,9 @@ false
 "clash": 4,
 "lapse": 1,
 "pause": 1,
-"cluster": 2
+"cluster": 2,
+"joins": 4,
+"rare": []
 },
 {
 "syl": 9,
@@ -616,7 +677,25 @@ false
 "clash": 3,
 "lapse": 2,
 "pause": 1,
-"cluster": 0
+"cluster": 0,
+"joins": 3,
+"rare": [
+[
+"ship",
+"packs",
+"same-place stop-stop"
+],
+[
+"out",
+"doing",
+"same-place stop-stop"
+],
+[
+"up",
+"postal",
+"same-place stop-stop"
+]
+]
 },
 {
 "syl": 6,
@@ -628,7 +707,9 @@ false
 "clash": 1,
 "lapse": 2,
 "pause": 0,
-"cluster": 1
+"cluster": 1,
+"joins": 2,
+"rare": []
 },
 {
 "syl": 8,
@@ -641,7 +722,9 @@ false
 "clash": 2,
 "lapse": 3,
 "pause": 0,
-"cluster": 2
+"cluster": 2,
+"joins": 2,
+"rare": []
 },
 {
 "syl": 7,
@@ -654,7 +737,9 @@ false
 "clash": 1,
 "lapse": 2,
 "pause": 0,
-"cluster": 1
+"cluster": 1,
+"joins": 1,
+"rare": []
 },
 {
 "syl": 13,
@@ -668,7 +753,9 @@ false
 "clash": 1,
 "lapse": 2,
 "pause": 1,
-"cluster": 1
+"cluster": 1,
+"joins": 1,
+"rare": []
 }
 ],
 "keys": [
@@ -870,12 +957,12 @@ false
 "internal": [
 3,
 7,
-6,
+5,
 1,
 0,
+2,
 3,
-3,
-4
+2
 ],
 "carpet": {
 "pairs": 21,
@@ -988,7 +1075,9 @@ false
 "clash": 1,
 "lapse": 1,
 "pause": 0,
-"cluster": 0
+"cluster": 0,
+"joins": 0,
+"rare": []
 },
 {
 "syl": 6,
@@ -999,7 +1088,15 @@ false
 "clash": 0,
 "lapse": 2,
 "pause": 0,
-"cluster": 1
+"cluster": 1,
+"joins": 2,
+"rare": [
+[
+"Had",
+"dents",
+"same-place stop-stop"
+]
+]
 },
 {
 "syl": 5,
@@ -1010,7 +1107,9 @@ false
 "clash": 0,
 "lapse": 2,
 "pause": 0,
-"cluster": 0
+"cluster": 0,
+"joins": 1,
+"rare": []
 },
 {
 "syl": 12,
@@ -1025,7 +1124,15 @@ false
 "clash": 3,
 "lapse": 3,
 "pause": 0,
-"cluster": 2
+"cluster": 2,
+"joins": 4,
+"rare": [
+[
+"night",
+"time",
+"same-place stop-stop"
+]
+]
 },
 {
 "syl": 12,
@@ -1041,7 +1148,9 @@ false
 "clash": 2,
 "lapse": 2,
 "pause": 0,
-"cluster": 0
+"cluster": 0,
+"joins": 1,
+"rare": []
 },
 {
 "syl": 10,
@@ -1056,7 +1165,9 @@ false
 "clash": 2,
 "lapse": 2,
 "pause": 0,
-"cluster": 2
+"cluster": 2,
+"joins": 2,
+"rare": []
 },
 {
 "syl": 12,
@@ -1069,7 +1180,9 @@ false
 "clash": 1,
 "lapse": 3,
 "pause": 1,
-"cluster": 1
+"cluster": 1,
+"joins": 2,
+"rare": []
 },
 {
 "syl": 11,
@@ -1082,7 +1195,9 @@ false
 "clash": 0,
 "lapse": 3,
 "pause": 0,
-"cluster": 2
+"cluster": 2,
+"joins": 3,
+"rare": []
 }
 ],
 "keys": [
@@ -1248,10 +1363,10 @@ false
 "internal": [
 1,
 1,
+1,
+10,
+3,
 2,
-12,
-3,
-3,
 1,
 2
 ],
@@ -1366,7 +1481,20 @@ false
 "clash": 1,
 "lapse": 3,
 "pause": 1,
-"cluster": 2
+"cluster": 2,
+"joins": 4,
+"rare": [
+[
+"just",
+"touched",
+"same-place stop-stop"
+],
+[
+"touched",
+"down",
+"same-place stop-stop"
+]
+]
 },
 {
 "syl": 7,
@@ -1378,7 +1506,9 @@ false
 "clash": 1,
 "lapse": 2,
 "pause": 0,
-"cluster": 0
+"cluster": 0,
+"joins": 2,
+"rare": []
 },
 {
 "syl": 11,
@@ -1391,7 +1521,9 @@ false
 "clash": 0,
 "lapse": 2,
 "pause": 0,
-"cluster": 0
+"cluster": 0,
+"joins": 2,
+"rare": []
 },
 {
 "syl": 11,
@@ -1404,7 +1536,9 @@ false
 "clash": 0,
 "lapse": 2,
 "pause": 0,
-"cluster": 0
+"cluster": 0,
+"joins": 4,
+"rare": []
 },
 {
 "syl": 11,
@@ -1417,7 +1551,9 @@ false
 "clash": 0,
 "lapse": 2,
 "pause": 2,
-"cluster": 2
+"cluster": 2,
+"joins": 6,
+"rare": []
 },
 {
 "syl": 10,
@@ -1431,7 +1567,15 @@ false
 "clash": 3,
 "lapse": 2,
 "pause": 1,
-"cluster": 3
+"cluster": 3,
+"joins": 4,
+"rare": [
+[
+"man's",
+"lights",
+"voiced fricative to liquid"
+]
+]
 },
 {
 "syl": 10,
@@ -1443,7 +1587,9 @@ false
 "clash": 0,
 "lapse": 2,
 "pause": 0,
-"cluster": 3
+"cluster": 3,
+"joins": 4,
+"rare": []
 },
 {
 "syl": 10,
@@ -1458,7 +1604,15 @@ false
 "clash": 3,
 "lapse": 2,
 "pause": 0,
-"cluster": 1
+"cluster": 1,
+"joins": 2,
+"rare": [
+[
+"next",
+"day",
+"same-place stop-stop"
+]
+]
 }
 ],
 "keys": [
@@ -1633,11 +1787,11 @@ false
 3,
 4,
 1,
-1,
-7,
+0,
 6,
-8,
-1
+6,
+6,
+0
 ],
 "carpet": {
 "pairs": 24,
@@ -1763,7 +1917,9 @@ false
 "clash": 1,
 "lapse": 3,
 "pause": 1,
-"cluster": 1
+"cluster": 1,
+"joins": 3,
+"rare": []
 },
 {
 "syl": 15,
@@ -1778,7 +1934,15 @@ false
 "clash": 1,
 "lapse": 3,
 "pause": 1,
-"cluster": 2
+"cluster": 2,
+"joins": 5,
+"rare": [
+[
+"Had",
+"to",
+"same-place stop-stop"
+]
+]
 },
 {
 "syl": 14,
@@ -1795,7 +1959,15 @@ false
 "clash": 3,
 "lapse": 2,
 "pause": 1,
-"cluster": 1
+"cluster": 1,
+"joins": 4,
+"rare": [
+[
+"top",
+"but",
+"same-place stop-stop"
+]
+]
 },
 {
 "syl": 8,
@@ -1809,7 +1981,15 @@ false
 "clash": 2,
 "lapse": 1,
 "pause": 0,
-"cluster": 2
+"cluster": 2,
+"joins": 3,
+"rare": [
+[
+"tried",
+"to",
+"same-place stop-stop"
+]
+]
 },
 {
 "syl": 9,
@@ -1823,7 +2003,9 @@ false
 "clash": 3,
 "lapse": 2,
 "pause": 0,
-"cluster": 2
+"cluster": 2,
+"joins": 3,
+"rare": []
 },
 {
 "syl": 9,
@@ -1837,7 +2019,9 @@ false
 "clash": 3,
 "lapse": 2,
 "pause": 0,
-"cluster": 2
+"cluster": 2,
+"joins": 3,
+"rare": []
 },
 {
 "syl": 10,
@@ -1850,7 +2034,9 @@ false
 "clash": 0,
 "lapse": 2,
 "pause": 0,
-"cluster": 0
+"cluster": 0,
+"joins": 4,
+"rare": []
 },
 {
 "syl": 15,
@@ -1866,7 +2052,9 @@ false
 "clash": 2,
 "lapse": 2,
 "pause": 1,
-"cluster": 0
+"cluster": 0,
+"joins": 4,
+"rare": []
 }
 ],
 "keys": [
@@ -1984,14 +2172,14 @@ false
 ]
 ],
 "internal": [
-8,
 7,
+6,
 7,
-2,
+1,
 9,
 1,
 4,
-2
+1
 ],
 "carpet": {
 "pairs": 21,
@@ -2102,7 +2290,9 @@ false
 "clash": 0,
 "lapse": 2,
 "pause": 0,
-"cluster": 2
+"cluster": 2,
+"joins": 4,
+"rare": []
 },
 {
 "syl": 9,
@@ -2116,7 +2306,9 @@ false
 "clash": 2,
 "lapse": 2,
 "pause": 2,
-"cluster": 1
+"cluster": 1,
+"joins": 2,
+"rare": []
 },
 {
 "syl": 7,
@@ -2127,21 +2319,25 @@ false
 "clash": 0,
 "lapse": 2,
 "pause": 0,
-"cluster": 1
+"cluster": 1,
+"joins": 1,
+"rare": []
 },
 {
 "syl": 10,
 "grid": [
-1,
+3,
 5,
 7,
 8,
 9
 ],
 "clash": 2,
-"lapse": 3,
+"lapse": 2,
 "pause": 0,
-"cluster": 3
+"cluster": 3,
+"joins": 4,
+"rare": []
 },
 {
 "syl": 5,
@@ -2153,7 +2349,9 @@ false
 "clash": 1,
 "lapse": 1,
 "pause": 0,
-"cluster": 1
+"cluster": 1,
+"joins": 2,
+"rare": []
 },
 {
 "syl": 10,
@@ -2169,7 +2367,15 @@ false
 "clash": 5,
 "lapse": 3,
 "pause": 1,
-"cluster": 1
+"cluster": 1,
+"joins": 3,
+"rare": [
+[
+"click",
+"clack",
+"same-place stop-stop"
+]
+]
 },
 {
 "syl": 10,
@@ -2184,7 +2390,9 @@ false
 "clash": 3,
 "lapse": 2,
 "pause": 0,
-"cluster": 2
+"cluster": 3,
+"joins": 5,
+"rare": []
 },
 {
 "syl": 10,
@@ -2197,7 +2405,9 @@ false
 "clash": 1,
 "lapse": 3,
 "pause": 0,
-"cluster": 3
+"cluster": 3,
+"joins": 5,
+"rare": []
 },
 {
 "syl": 7,
@@ -2209,7 +2419,9 @@ false
 "clash": 0,
 "lapse": 3,
 "pause": 0,
-"cluster": 0
+"cluster": 0,
+"joins": 3,
+"rare": []
 },
 {
 "syl": 11,
@@ -2223,7 +2435,9 @@ false
 "clash": 0,
 "lapse": 2,
 "pause": 1,
-"cluster": 1
+"cluster": 1,
+"joins": 2,
+"rare": []
 },
 {
 "syl": 9,
@@ -2237,7 +2451,9 @@ false
 "clash": 1,
 "lapse": 1,
 "pause": 1,
-"cluster": 0
+"cluster": 0,
+"joins": 2,
+"rare": []
 },
 {
 "syl": 10,
@@ -2253,7 +2469,25 @@ false
 "clash": 5,
 "lapse": 3,
 "pause": 1,
-"cluster": 0
+"cluster": 0,
+"joins": 6,
+"rare": [
+[
+"his",
+"head",
+"fricative to H glottis reset"
+],
+[
+"mate",
+"duck",
+"same-place stop-stop"
+],
+[
+"duck",
+"goose",
+"same-place stop-stop"
+]
+]
 }
 ],
 "keys": [
@@ -2297,7 +2531,13 @@ false
 ],
 1
 ],
-null,
+[
+[
+"u\u02d0",
+"e"
+],
+2
+],
 [
 [
 "u\u02d0"
@@ -2330,7 +2570,7 @@ null,
 1
 ]
 ],
-"scheme": "abccddedddfd",
+"scheme": "abccdddddded",
 "bookends": [
 false,
 false,
@@ -2361,6 +2601,12 @@ false
 [
 "end-end",
 4,
+6,
+0.8
+],
+[
+"end-end",
+4,
 7,
 0.8
 ],
@@ -2385,6 +2631,12 @@ false
 [
 "end-end",
 5,
+6,
+0.8
+],
+[
+"end-end",
+5,
 7,
 0.8
 ],
@@ -2405,6 +2657,30 @@ false
 5,
 11,
 0.8
+],
+[
+"end-end",
+6,
+7,
+1.0
+],
+[
+"end-end",
+6,
+8,
+0.92
+],
+[
+"end-end",
+6,
+9,
+0.92
+],
+[
+"end-end",
+6,
+11,
+0.92
 ],
 [
 "end-end",
@@ -2445,23 +2721,23 @@ false
 ],
 "internal": [
 2,
-3,
+2,
+2,
+2,
 3,
 6,
-3,
-6,
-5,
+4,
 2,
 4,
-8,
 5,
+4,
 1
 ],
 "carpet": {
-"pairs": 25,
+"pairs": 31,
 "total": 66,
 "min": 0.0,
-"share": 0.38
+"share": 0.47
 },
 "end_pairs": [
 [
@@ -2510,6 +2786,10 @@ false
 ],
 [
 4,
+6
+],
+[
+4,
 7
 ],
 [
@@ -2526,6 +2806,10 @@ false
 ],
 [
 5,
+6
+],
+[
+5,
 7
 ],
 [
@@ -2538,6 +2822,22 @@ false
 ],
 [
 5,
+11
+],
+[
+6,
+7
+],
+[
+6,
+8
+],
+[
+6,
+9
+],
+[
+6,
 11
 ],
 [
@@ -2566,8 +2866,8 @@ false
 ]
 ],
 "quad": {
-"internal_bars": 2,
-"multisyl": 40,
+"internal_bars": 1,
+"multisyl": 49,
 "allit_bars": 4
 }
 },
@@ -2585,7 +2885,9 @@ false
 "clash": 0,
 "lapse": 2,
 "pause": 0,
-"cluster": 0
+"cluster": 0,
+"joins": 3,
+"rare": []
 },
 {
 "syl": 11,
@@ -2598,7 +2900,9 @@ false
 "clash": 0,
 "lapse": 3,
 "pause": 0,
-"cluster": 1
+"cluster": 1,
+"joins": 3,
+"rare": []
 },
 {
 "syl": 10,
@@ -2613,7 +2917,15 @@ false
 "clash": 3,
 "lapse": 2,
 "pause": 0,
-"cluster": 1
+"cluster": 1,
+"joins": 2,
+"rare": [
+[
+"of",
+"rap",
+"voiced fricative to liquid"
+]
+]
 },
 {
 "syl": 11,
@@ -2625,7 +2937,9 @@ false
 "clash": 0,
 "lapse": 4,
 "pause": 0,
-"cluster": 2
+"cluster": 2,
+"joins": 4,
+"rare": []
 },
 {
 "syl": 11,
@@ -2639,7 +2953,15 @@ false
 "clash": 1,
 "lapse": 2,
 "pause": 0,
-"cluster": 1
+"cluster": 1,
+"joins": 4,
+"rare": [
+[
+"red",
+"dot",
+"same-place stop-stop"
+]
+]
 },
 {
 "syl": 12,
@@ -2653,7 +2975,9 @@ false
 "clash": 0,
 "lapse": 2,
 "pause": 0,
-"cluster": 5
+"cluster": 5,
+"joins": 6,
+"rare": []
 },
 {
 "syl": 11,
@@ -2668,7 +2992,9 @@ false
 "clash": 2,
 "lapse": 2,
 "pause": 0,
-"cluster": 0
+"cluster": 0,
+"joins": 2,
+"rare": []
 },
 {
 "syl": 9,
@@ -2682,7 +3008,9 @@ false
 "clash": 1,
 "lapse": 2,
 "pause": 0,
-"cluster": 0
+"cluster": 0,
+"joins": 1,
+"rare": []
 }
 ],
 "keys": [
@@ -2923,8 +3251,8 @@ false
 5,
 17,
 17,
-10,
-1
+9,
+0
 ],
 "carpet": {
 "pairs": 28,
@@ -3064,7 +3392,9 @@ false
 "clash": 1,
 "lapse": 2,
 "pause": 1,
-"cluster": 1
+"cluster": 1,
+"joins": 2,
+"rare": []
 },
 {
 "syl": 12,
@@ -3076,7 +3406,9 @@ false
 "clash": 0,
 "lapse": 5,
 "pause": 0,
-"cluster": 1
+"cluster": 1,
+"joins": 3,
+"rare": []
 },
 {
 "syl": 10,
@@ -3091,7 +3423,9 @@ false
 "clash": 3,
 "lapse": 3,
 "pause": 1,
-"cluster": 0
+"cluster": 0,
+"joins": 4,
+"rare": []
 },
 {
 "syl": 11,
@@ -3108,7 +3442,20 @@ false
 "clash": 5,
 "lapse": 2,
 "pause": 0,
-"cluster": 1
+"cluster": 1,
+"joins": 6,
+"rare": [
+[
+"Dot",
+"dot",
+"same-place stop-stop"
+],
+[
+"his",
+"long",
+"voiced fricative to liquid"
+]
+]
 },
 {
 "syl": 9,
@@ -3122,7 +3469,9 @@ false
 "clash": 2,
 "lapse": 2,
 "pause": 0,
-"cluster": 2
+"cluster": 2,
+"joins": 3,
+"rare": []
 },
 {
 "syl": 10,
@@ -3138,7 +3487,9 @@ false
 "clash": 4,
 "lapse": 2,
 "pause": 0,
-"cluster": 2
+"cluster": 2,
+"joins": 5,
+"rare": []
 },
 {
 "syl": 9,
@@ -3151,7 +3502,9 @@ false
 "clash": 0,
 "lapse": 2,
 "pause": 0,
-"cluster": 0
+"cluster": 0,
+"joins": 3,
+"rare": []
 },
 {
 "syl": 12,
@@ -3159,12 +3512,22 @@ false
 2,
 3,
 4,
+7,
+10,
 11
 ],
-"clash": 2,
-"lapse": 6,
+"clash": 3,
+"lapse": 2,
 "pause": 1,
-"cluster": 0
+"cluster": 0,
+"joins": 1,
+"rare": [
+[
+"out",
+"WWE",
+"same-place stop-stop"
+]
+]
 }
 ],
 "keys": [
@@ -3212,7 +3575,13 @@ false
 ],
 1
 ],
-null
+[
+[
+"\u00e6",
+"a\u028a"
+],
+2
+]
 ],
 "scheme": "abacdbce",
 "bookends": [
@@ -3237,23 +3606,17 @@ false
 3,
 6,
 0.8
-],
-[
-"end-end",
-5,
-7,
-0.92
 ]
 ],
 "internal": [
 3,
 9,
-8,
+7,
 5,
 3,
-6,
 4,
-0
+3,
+1
 ],
 "carpet": {
 "pairs": 4,
@@ -3281,7 +3644,7 @@ false
 ],
 "quad": {
 "internal_bars": 3,
-"multisyl": 18,
+"multisyl": 20,
 "allit_bars": 4
 }
 }

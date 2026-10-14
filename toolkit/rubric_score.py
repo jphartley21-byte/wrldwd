@@ -15,6 +15,7 @@ import contextlib
 import io
 import json
 import os
+import private_path
 import re
 import sys
 
@@ -26,7 +27,7 @@ from flow_check import bar_profile  # noqa: E402
 
 PROFILE = os.path.join(HERE, "..", "benchmark", "original_profile.json")
 # The original's lyrics live OUTSIDE the project (CLAUDE.md rule 4): read-only input, never stored.
-ORIG = os.path.join(os.path.expanduser("~"), "Documents", "Worldwide_private", "original_lines.txt")
+ORIG = private_path.original_path()
 REF_SLOTS = ["Hook 1-4", "Hook 5-8"]   # the benchmark task's 8 bars
 # documented par values that are not in the profile (rubric / breakdown text)
 PAR_DOC = {"enjamb": 1, "redup": 1, "carpet": 5 / 8, "numbers": 0}

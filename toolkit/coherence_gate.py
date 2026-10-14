@@ -21,6 +21,7 @@ and does it PAY OFF? Built from sourced craft principles (benchmark/craft_princi
   python toolkit/coherence_gate.py --selftest      the original's hook must PASS, a known scrapbook must FAIL
 """
 import os
+import private_path
 import re
 import sys
 from collections import Counter
@@ -188,7 +189,7 @@ SLOT_CASH = None
 
 def _orig_bars():
     import os
-    p = os.path.join(os.path.expanduser("~"), "Documents", "Worldwide_private", "original_lines.txt")
+    p = private_path.original_path()
     if not os.path.exists(p):
         return []
     return [l.strip() for l in open(p, encoding="utf8") if l.strip()]
@@ -357,7 +358,7 @@ def selftest():
           + (f" e.g. {r['fails'][0][:64]}" if r["fails"] else ""))
     # the benchmark's own hook must pass this gate (the original is the standard) - checked quad by
     # quad, because a per-quad cash rule that the original's own back half fails is mis-calibrated
-    orig = os.path.join(os.path.expanduser("~"), "Documents", "Worldwide_private", "original_lines.txt")
+    orig = private_path.original_path()
     if os.path.exists(orig):
         bars = [l.strip() for l in open(orig, encoding="utf8") if l.strip()][:16]
         for a, nm in ((0, "Hook 1-4"), (4, "Hook 5-8"), (8, "Hook 9-16")):

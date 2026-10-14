@@ -108,6 +108,12 @@ OVR = {
     "swag": "S W AE1 G", "jackaroo": "JH AE2 K ER0 UW1", "tradie": "T R EY1 D IY0", "cossie": "K AA1 Z IY0", "maccas": "M AE1 K AH0 Z", "middy": "M IH1 D IY0",
     "chunder": "CH AH1 N D ER0", "dinkum": "D IH1 NG K AH0 M", "uey": "Y UW1 IY0", "coldie": "K OW1 L D IY0", "donger": "D AO1 NG ER0", "wallopers": "W AA1 L AH0 P ER0 Z",
     "straya": "S T R EY1 Y AH0", "kaixo": "K AY1 SH OW0",
+    # The original's own out-of-dictionary words (14 Oct 2026): without these the toolkit dropped them, so bar 76 counted
+    # 3 syllables instead of 12 in `check` and phon, and its rhyme tail had no consonants. Same syllable counts as the
+    # template's vowel-group estimate, so the audio steps still line up.
+    "chicas": "CH IY1 K AH0 Z", "federali": "F EH2 D ER0 AA1 L IY0", "fumez": "F Y UW1 M EH0 Z",
+    "wwe": "D AH1 B AH0 L Y UW0 D AH1 B AH0 L Y UW0 IY1", "smackdown": "S M AE1 K D AW2 N",
+    "shirty": "SH ER1 T IY0", "proost": "P R OW1 S T",   # UK: annoyed, in a mood (absent from cmudict like the 47 everyday British words above)
 }
 FUNC = set("""ya this a an the of to in on at for and or but so if as i my me we you he she it is was are am be been by
 with from up that this his her our your they them their its im ill ive dont cant wont isnt wasnt then than do did

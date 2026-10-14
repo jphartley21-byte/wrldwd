@@ -30,6 +30,7 @@ a headword of <= 3 words (see research.py `_outbound_ok`), never a lyric line or
 import io
 import json
 import os
+import private_path
 import re
 import sys
 
@@ -81,8 +82,7 @@ def orig_words():
     global _ORIG
     if _ORIG is None:
         _ORIG = set()
-        p = os.path.join(os.path.expanduser("~"), "Documents", "Worldwide_private",
-                         "original_lines.txt")
+        p = private_path.original_path()
         if os.path.exists(p):
             for line in io.open(p, encoding="utf8"):
                 _ORIG.update(w.lower().strip(",.?!") for w in line.split())

@@ -60,40 +60,44 @@ def cmd_selftest(_args) -> int:
     from .write import rapfit, rhymeview
     from .calib import anticopy, original as calib_original
     results = [
-        ("bridge contract", bridge.selftest()),
-        ("bridge in spawned workers", bridge.selftest_multiprocessing()),
-        ("freeze primitives", freeze.selftest()),
-        ("llm layer", client.selftest()),
-        ("registry", registry.selftest()),
-        ("gold set", gold.selftest()),
-        ("degraders", degrade.selftest()),
-        ("judge statistics", stats.selftest()),
-        ("semantic reader (stub)", reader.selftest()),
-        ("comparative ranker (stub)", rank.selftest()),
-        ("grammar gate", grammar.selftest()),
-        ("private calibration module", calib_original.selftest()),
-        ("anti-copy (local, numbers only)", anticopy.selftest()),
-        ("pronunciation chain", pron.selftest()),
-        ("sound planner", sound_plan.selftest()),
-        ("seed stage", seed_stage.selftest()),
-        ("argument stage / plan gate", argue_stage.selftest()),
-        ("deterministic block verifier", verify_det.selftest()),
-        ("slot checker", slotcheck.selftest()),
-        ("rhyme bank", rhymebank.selftest()),
-        ("wordplay tools", wordplay.selftest()),
-        ("oronyms", oronym.selftest()),
-        ("flow audit", flowaudit.selftest()),
-        ("ear detectors", earcheck.selftest()),
-        ("lexicon", lexicon.selftest()),
-        ("lore cards", cards.selftest()),
-        ("rhyme map", rhymeview.selftest()),
-        ("rapfit", rapfit.selftest()),
-        ("pop-culture graph", graph.selftest()),
-        ("frame ban-list", frames.selftest()),
-        ("source guards", _source_guards()),
+        ("bridge contract", bridge.selftest),
+        ("bridge in spawned workers", bridge.selftest_multiprocessing),
+        ("freeze primitives", freeze.selftest),
+        ("llm layer", client.selftest),
+        ("registry", registry.selftest),
+        ("gold set", gold.selftest),
+        ("degraders", degrade.selftest),
+        ("judge statistics", stats.selftest),
+        ("semantic reader (stub)", reader.selftest),
+        ("comparative ranker (stub)", rank.selftest),
+        ("grammar gate", grammar.selftest),
+        ("private calibration module", calib_original.selftest),
+        ("anti-copy (local, numbers only)", anticopy.selftest),
+        ("pronunciation chain", pron.selftest),
+        ("sound planner", sound_plan.selftest),
+        ("seed stage", seed_stage.selftest),
+        ("argument stage / plan gate", argue_stage.selftest),
+        ("deterministic block verifier", verify_det.selftest),
+        ("slot checker", slotcheck.selftest),
+        ("rhyme bank", rhymebank.selftest),
+        ("wordplay tools", wordplay.selftest),
+        ("oronyms", oronym.selftest),
+        ("flow audit", flowaudit.selftest),
+        ("ear detectors", earcheck.selftest),
+        ("lexicon", lexicon.selftest),
+        ("lore cards", cards.selftest),
+        ("rhyme map", rhymeview.selftest),
+        ("rapfit", rapfit.selftest),
+        ("pop-culture graph", graph.selftest),
+        ("frame ban-list", frames.selftest),
+        ("source guards", _source_guards),
     ]
     ok = True
-    for name, (good, msg) in results:
+    for name, check in results:      # each check runs on its own: one crash (e.g. a git-ignored plan file missing) used to abort them all
+        try:
+            good, msg = check()
+        except Exception as e:  # noqa: BLE001
+            good, msg = False, f"crashed: {type(e).__name__}: {e}"
         ok &= bool(good)
         print(("ok   " if good else "FAIL ") + f"{name}: {msg}")
     print("SELFTEST PASSED" if ok else "SELFTEST FAILED")

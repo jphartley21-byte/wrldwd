@@ -13,10 +13,11 @@ import csv
 import io
 import json
 import os
+import private_path
 import re
 import sys
 
-ROOT = r"C:\Users\Joe\wrldwd"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # was C:\Users\Joe\wrldwd: Windows-only
 sys.path.insert(0, os.path.join(ROOT, "toolkit"))
 import rubric_score as rs           # noqa: E402
 import rhyme_tools as rt            # noqa: E402
@@ -28,7 +29,7 @@ from flow_check import bar_profile  # noqa: E402
 import flow_fit as ff             # noqa: E402
 from match import MANUAL_SCHEME    # noqa: E402
 
-ORIG = os.path.join(os.path.expanduser("~"), "Documents", "Worldwide_private", "original_lines.txt")
+ORIG = private_path.original_path()
 START = {"Hook 1-4": 1, "Hook 5-8": 5, "Hook 9-16": 9, "V1 1-8": 17, "V1 9-16": 25,
          "V1 17-24": 33, "V1 25-32": 41, "V1 33-44": 49, "V2 1-8": 61, "V2 9-16": 69}
 ROLE = {"Hook 1-4": "opener; greeting frame; the two-bar pun pair",

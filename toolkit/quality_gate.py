@@ -17,6 +17,7 @@ fine and the song still not work:
   python toolkit/quality_gate.py --selftest
 """
 import os
+import private_path
 import re
 import sys
 from collections import Counter
@@ -28,7 +29,7 @@ from rhyme_tools import FUNC, read_bars  # noqa: E402
 import coherence_gate as cg              # noqa: E402
 import meaning_gate as mg                # noqa: E402
 
-ORIG = os.path.join(os.path.expanduser("~"), "Documents", "Worldwide_private", "original_lines.txt")
+ORIG = private_path.original_path()
 SLOT_ORDER = ["Hook 1-4", "Hook 5-8", "Hook 9-16", "V1 1-8", "V1 9-16", "V1 17-24",
               "V1 25-32", "V1 33-44", "V2 1-8", "V2 9-16"]
 

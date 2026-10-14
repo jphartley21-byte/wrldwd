@@ -16,6 +16,7 @@
 No lyric text is ever written out by this module: it reports vowels, words and scores only.
 """
 import os
+import private_path
 import re
 import sys
 
@@ -417,7 +418,7 @@ def _onset_of(word, idx):
 
 if __name__ == "__main__":
     sys.stdout.reconfigure(encoding="utf-8")
-    orig = os.path.join(os.path.expanduser("~"), "Documents", "Worldwide_private", "original_lines.txt")
+    orig = private_path.original_path()
     bars = [l.strip() for l in open(orig, encoding="utf8") if l.strip()][:8]
     print("== bar tails across words ==")
     for i, b in enumerate(bars[:4], 1):

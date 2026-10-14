@@ -26,7 +26,8 @@ def grid(steps, marks, length):
 
 WEAKFN = set("""a an the of to and in on at for with as is it its it's was were be been am are i me my we our us
 you your he she him her they them their his this that these those from by or but so if then than up out off do did
-does not no can will would just 'em ya""".split())
+does not no can will would just 'em ya
+he's she's that's there's what's i'm i've i'd i'll you're we're they're isn't wasn't don't didn't can't won't let's who's where's here's how's""".split())
 # Kept deliberately identical to ww/write/flowaudit.FUNC -- that is the auditor the song is read with, and the
 # two must not disagree about what a function word is. The old 23-word list here was missing every pronoun and
 # contraction, so "so he says I nicked" measured as four consecutive STRONG syllables and the strong/weak
@@ -190,7 +191,7 @@ if __name__ == "__main__" and sys.argv[1] == "--add-weak":
     add_weak(sys.argv[2]); sys.exit()
 if __name__ == "__main__":
     start = int(sys.argv[1])
-    lines = [l.strip() for l in sys.stdin.read().splitlines() if l.strip() and not l.startswith(("[", "#", "("))]
+    lines = [l.strip() for l in sys.stdin.read().lstrip("﻿").splitlines() if l.strip() and not l.startswith(("[", "#", "(", "=="))]
     fails = 0
     for k, line in enumerate(lines):
         ok, msg = fit(start + k, line)

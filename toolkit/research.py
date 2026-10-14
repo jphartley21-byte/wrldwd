@@ -26,6 +26,7 @@ material/travel_history.md - `mine` is how to use them; it is a keyword search o
 """
 import io
 import os
+import private_path
 import re
 import sys
 import urllib.request
@@ -90,7 +91,7 @@ ORIG_WORDS = set()
 
 
 def load_orig_words():
-    p = os.path.join(os.path.expanduser("~"), "Documents", "Worldwide_private", "original_lines.txt")
+    p = private_path.original_path()
     if os.path.exists(p):
         for line in io.open(p, encoding="utf8"):
             ORIG_WORDS.update(w.lower().strip(",.?!") for w in line.split())
