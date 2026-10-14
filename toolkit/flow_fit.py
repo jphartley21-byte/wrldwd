@@ -38,7 +38,8 @@ does not no can will would just 'em ya""".split())
 def sylls(line):
     """per syllable: True if naturally WEAK (unstressed syllable of a polysyllable, or a tiny function word)"""
     import re
-    from rhyme_tools import pron, is_v
+    from rhyme_tools import pron, is_v, register_caps
+    register_caps(line)
     out = []
     for w in re.findall(r"[A-Za-z'å]+", line):
         ph = pron(w.lower().replace("å", "a"))

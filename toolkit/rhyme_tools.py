@@ -127,6 +127,29 @@ def strip(p):
 def is_v(p):
     return p[-1] in "012"
 
+# CAPITALS ARE LETTERS (Joe, 15 Oct 2026: "WWE" is 7 syllables, dub-ul-yoo dub-ul-yoo ee). An all-capitals token of 2+ letters that the dictionary
+# does not know is spelt out letter by letter. The toolkit lower-cases words before looking them up, so the spelling is registered in OVR under the
+# lower-case key the first time a line containing the token is read (register_caps). Tokens whose lower-case form IS a dictionary word (UK, TV, BBC,
+# DJ are already spelt in CMU; NO, IT, US stay words) are left alone, because a lower-case OVR key would corrupt the real word everywhere.
+# Letter names are all stressed, as the original's template was built (7 strong syllables for WWE).
+LETTER_NAMES = {
+    "A": "EY1", "B": "B IY1", "C": "S IY1", "D": "D IY1", "E": "IY1", "F": "EH1 F", "G": "JH IY1", "H": "EY1 CH", "I": "AY1",
+    "J": "JH EY1", "K": "K EY1", "L": "EH1 L", "M": "EH1 M", "N": "EH1 N", "O": "OW1", "P": "P IY1", "Q": "K Y UW1", "R": "AA1 R",
+    "S": "EH1 S", "T": "T IY1", "U": "Y UW1", "V": "V IY1", "W": "D AH1 B AH1 L Y UW1", "X": "EH1 K S", "Y": "W AY1", "Z": "Z EH1 D",
+}
+_CAPS = re.compile(r"(?<![A-Za-z'])[A-Z]{2,}(?![A-Za-z'])")
+
+
+def spell_caps(token):
+    return " ".join(LETTER_NAMES[c] for c in token)
+
+
+def register_caps(text):
+    for m in _CAPS.finditer(text):
+        lc = m.group(0).lower()
+        if lc not in D and lc not in OVR:
+            OVR[lc] = spell_caps(m.group(0))
+
 
 def pron(word):
     # The apostrophe must survive the lookup. It used to be stripped first, which made every contraction

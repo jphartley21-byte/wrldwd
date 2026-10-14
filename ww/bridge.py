@@ -29,6 +29,11 @@ _WORD = re.compile(r"[A-Za-z']+")
 
 def norm(text: str) -> str:
     """curly quotes and dashes to ASCII, so "wouldn’t" is one word (it used to split into 'wouldn' + 't' and read as OOV)."""
+    try:
+        from rhyme_tools import register_caps
+        register_caps(text)
+    except Exception:   # noqa: BLE001 - the toolkit is not on the path yet
+        pass
     return text.replace("’", "'").replace("‘", "'").replace("“", '"').replace("”", '"').replace("—", " - ")
 
 

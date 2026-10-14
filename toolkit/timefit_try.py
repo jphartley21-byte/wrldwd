@@ -63,7 +63,14 @@ def selftest():
     g = gen(5, ["Cold beer|Warm beer", "on the house in Porto"])
     if len(g) != 2:
         p.append("gen should expand 2 x 1 combinations")
-    return (not p, "; ".join(p) if p else "grid, rank and gen run; overlong candidate ranks worse")
+    import duration as _d, flow_fit as _ff, phon as _ph
+    for cap, n in (("WWE", 7), ("Saw WWE live", 9), ("UK DJ NHS", 7)):
+        got = (len(_d.syllables(cap)), len(_ff.sylls(cap)), len(_ph.syllables(cap)))
+        if got != (n, n, n):
+            p.append("capitals are letters: %r should be %d syllables in every counter, got %s" % (cap, n, got))
+    if len(_d.syllables("IT")) != 1:
+        p.append("a shouted dictionary word (IT) must stay one syllable")
+    return (not p, "; ".join(p) if p else "grid, rank and gen run; overlong candidate ranks worse; WWE is 7 syllables in every counter")
 
 
 if __name__ == "__main__":

@@ -78,7 +78,8 @@ def is_vowel(t):
 
 def syllables(text):
     """[(vowel, stressed, coda_consonants)] for a phrase; consonants before the next vowel go to the coda (rhyme view)."""
-    from rhyme_tools import FUNC
+    from rhyme_tools import FUNC, register_caps
+    register_caps(text)
     out = []
     for w in re.findall(r"[A-Za-z'å]+", text.replace("å", "a").replace("-", " ")):
         ph = word_phones(w)

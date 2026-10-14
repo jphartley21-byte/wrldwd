@@ -16,7 +16,7 @@ puts one line in ONE 140 BPM bar a step is 107 ms (full-time double speed). STEP
 import json, os, re, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-from rhyme_tools import pron, is_v, strip
+from rhyme_tools import pron, is_v, strip, register_caps as rt_register_caps
 import articulation as art
 
 TEMPLATE = os.path.join(HERE, "..", "benchmark", "flow_template.json")
@@ -44,6 +44,7 @@ def _vowel_mrpa(base, stress, word):
 def syllables(line):
     """[(word, vowel_class, need_ms, is_phrase_final, onset_first, coda_last, first_in_word, last_in_word)] one per syllable.
     need_ms = Klatt vowel (inherent if stressed, minimum if not) + the syllable's consonants, in read-speech ms (not yet SCALEd)."""
+    rt_register_caps(line)
     out = []
     ws = re.findall(r"[A-Za-z'å]+", line)
     for wi, w in enumerate(ws):
