@@ -202,4 +202,8 @@ _t2 = subprocess.run([sys.executable, os.path.join(HERE, "timefit2.py"), "--self
 good = _t2.returncode == 0
 ok &= good
 print(("ok  " if good else "BAD ") + "timefit2 selftest: " + _t2.stdout.strip()[-110:])
+_tt = subprocess.run([sys.executable, os.path.join(HERE, "timefit_try.py"), "--selftest"], capture_output=True, text=True, encoding="utf8", errors="replace")
+good = _tt.returncode == 0
+ok &= good
+print(("ok  " if good else "BAD ") + "timefit_try selftest: " + _tt.stdout.strip()[-110:])
 print("CALIBRATION", "PASSED" if ok else "FAILED: fix the tools before using them")
