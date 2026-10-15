@@ -561,9 +561,13 @@ def check(slot: str, bars: list[str], context: list[str] | None = None, tol: int
         try:
             from . import sensecheck
             sc_ = sensecheck.check(bars)
+            par_ = sensecheck.slot_par(slot)   # Claude judge: per-slot par from the original (it fails 37/76 of the original's bars per bar)
             for n_, why_ in sc_["fails"]:
-                hard.append(f"sense: bar {n_}: {why_}")
+                (hard if par_ is None else notes).append(f"sense: bar {n_}: {why_}")
                 rows[n_ - 1]["issues"].append(f"sense: {why_}") if n_ - 1 < len(rows) else None
+            if par_ is not None and len(sc_["fails"]) > par_["fail"] + sensecheck.SENSE_SLACK:
+                hard.append(f"sense: {len(sc_['fails'])} bars fail the sense read {[n for n, _ in sc_['fails']]}; the original's {slot} fails "
+                            f"{par_['fail']} (+{sensecheck.SENSE_SLACK} slack): make the worst ones plain sentences")
             if len(bars) >= 3:
                 bc_ = sensecheck.block_check(bars)
                 if not bc_["ok"]:

@@ -1,7 +1,8 @@
 """The only way ww talks to a model (R12). Routes by model name, enforces budgets, retries, caches, validates, ledgers.
 
   deepseek-flash / deepseek-v4-pro (ds-flash, ds-pro) -> DeepSeek API  (needs DEEPSEEK_API_KEY; uses `requests`)
-  claude-* (haiku, sonnet, opus, fable)               -> Anthropic API (optional; needs `anthropic` + ANTHROPIC_API_KEY)
+  claude-* (haiku, sonnet, opus, fable)               -> Anthropic API when ANTHROPIC_API_KEY is set, else the logged-in
+                                                         `claude` CLI headless (no key; WW_CLAUDE_VIA=api|cli forces one)
   stub*                                               -> deterministic offline backend for tests
   anything else                                       -> local Ollama (ww.llm.local)
 
@@ -274,6 +275,66 @@ class AnthropicBackend:
                    cache_write=getattr(u, "cache_creation_input_tokens", 0) or 0)
 
 
+class ClaudeCLIBackend:
+    """Claude through the logged-in `claude` CLI in headless mode (`claude -p`): no API key needed. Joe, 15 Oct 2026: "Why do I
+    need an API key? I should be able to use claude too". Used for claude-* models when ANTHROPIC_API_KEY is unset.
+    Tools, MCP servers, settings, hooks and session files are all off, and it runs in an empty temp dir, so the reader never
+    sees this repo's CLAUDE.md or knows who wrote the bars. Schema -> --json-schema (validated by the CLI, returned as
+    structured_output). Probe 15 Oct: ~5 s and ~$0.0004 per small Haiku call (total_cost_usd is notional on a subscription)."""
+    EFFORT = {"low": "low", "medium": "medium", "high": "high", "max": "max"}
+
+    def __init__(self, exe: Optional[str] = None, run: Optional[Callable] = None, timeout: float = 300.0):
+        import shutil
+        self.exe = exe or shutil.which("claude")
+        self._run = run
+        self.timeout = timeout
+        if not self.exe and run is None:
+            raise RuntimeError("no ANTHROPIC_API_KEY and no `claude` CLI on PATH")
+
+    def argv(self, req: Request) -> list:
+        a = [self.exe or "claude", "-p", "--model", pricing.resolve(req.model), "--output-format", "json", "--tools", "",
+             "--no-session-persistence", "--strict-mcp-config", "--setting-sources", "",
+             "--system-prompt", req.system or "You are a careful reader."]
+        if req.effort and req.effort != "none":
+            a += ["--effort", self.EFFORT.get(req.effort, "low")]
+        if req.schema:
+            a += ["--json-schema", json.dumps(req.schema, ensure_ascii=False)]
+        return a
+
+    @staticmethod
+    def prompt(req: Request) -> str:
+        if len(req.messages) == 1:
+            return req.messages[0]["content"]
+        return "\n\n".join(f"[{m['role']}]\n{m['content']}" for m in req.messages)
+
+    def call(self, req: Request) -> Raw:
+        import subprocess
+        import tempfile
+        argv, stdin = self.argv(req), self.prompt(req)
+        if self._run is not None:
+            out = self._run(argv, stdin)
+        else:
+            with tempfile.TemporaryDirectory() as cwd:
+                p = subprocess.run(argv, input=stdin, capture_output=True, text=True, timeout=self.timeout, cwd=cwd)
+            if p.returncode != 0 and not p.stdout.strip():
+                raise TransientAPIError(f"claude cli exit {p.returncode}: {p.stderr[:200]}")
+            out = p.stdout
+        try:
+            d = json.loads(out)
+        except json.JSONDecodeError as e:
+            raise TransientAPIError(f"claude cli returned non-JSON: {out[:200]}") from e
+        if d.get("is_error"):
+            e = RuntimeError(f"claude cli error: {str(d.get('result'))[:200]}")
+            e.status_code = d.get("api_error_status") or 500
+            raise e
+        so = d.get("structured_output")
+        text = json.dumps(so, ensure_ascii=False) if so is not None else (d.get("result") or "")
+        u = d.get("usage") or {}
+        return Raw(text=text, in_tokens=u.get("input_tokens", 0) or 0, out_tokens=u.get("output_tokens", 0) or 0,
+                   cache_read=u.get("cache_read_input_tokens", 0) or 0,
+                   cache_write=u.get("cache_creation_input_tokens", 0) or 0)
+
+
 def private_allowlist() -> tuple:
     env = os.environ.get("WW_PRIVATE_ALLOW")
     return tuple(x.strip() for x in env.split(",") if x.strip()) if env else PRIVATE_ALLOW_DEFAULT
@@ -299,8 +360,9 @@ class LLM:
                 raise RuntimeError("stub model requested but no StubBackend supplied")
             return self.stub
         if prov == "anthropic":
-            if self._anthropic is None:
-                self._anthropic = AnthropicBackend()
+            if self._anthropic is None:   # API when a key is set, else the logged-in claude CLI (Joe, 15 Oct)
+                via = os.environ.get("WW_CLAUDE_VIA") or ("api" if config.secret("ANTHROPIC_API_KEY") else "cli")
+                self._anthropic = AnthropicBackend() if via == "api" else ClaudeCLIBackend()
             return self._anthropic
         if prov == "deepseek":
             if self._deepseek is None:
@@ -516,6 +578,22 @@ def selftest() -> tuple[bool, str]:
                b'data: {"choices":[],"usage":{"prompt_cache_miss_tokens":5,"prompt_cache_hit_tokens":2,"completion_tokens":9}}', b"data: [DONE]"]
         st, su = parse_sse(sse)
         check(st == '{"ok": true}' and su.get("completion_tokens") == 9, f"SSE parse: {st!r} {su}")
+        # claude CLI backend: argv shape + structured_output / usage mapping (fake subprocess, no network)
+        seen = []
+        def fake_run(argv, stdin):
+            seen.append((argv, stdin))
+            return json.dumps({"is_error": False, "result": "ignored", "structured_output": {"ok": True},
+                               "usage": {"input_tokens": 3, "output_tokens": 7, "cache_read_input_tokens": 11,
+                                         "cache_creation_input_tokens": 13}})
+        cli = ClaudeCLIBackend(run=fake_run)
+        rc = cli.call(Request(model="haiku", system="S", messages=[{"role": "user", "content": "bars"}], schema=schema,
+                              effort="low"))
+        av = seen[0][0]
+        check(av[av.index("--model") + 1] == "claude-haiku-5-5" and av[av.index("--tools") + 1] == ""
+              and av[av.index("--effort") + 1] == "low" and "--json-schema" in av and seen[0][1] == "bars",
+              f"claude cli argv: {av}")
+        check(json.loads(rc.text) == {"ok": True} and (rc.in_tokens, rc.out_tokens, rc.cache_read, rc.cache_write) == (3, 7, 11, 13),
+              f"claude cli mapping: {rc}")
         # pricing arithmetic
         check(abs(pricing.cost_usd("sonnet", 1_000_000, 1_000_000) - 12.0) < 1e-9, "sonnet price")
         off = dt.datetime(2026, 10, 10, 12, 0, tzinfo=dt.timezone.utc)   # a Saturday

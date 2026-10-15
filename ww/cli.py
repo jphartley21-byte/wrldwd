@@ -127,6 +127,8 @@ def cmd_selftest(_args) -> int:
         ("recount (claims vs diary)", _recount_selftest),
         ("ingredients", _lazy("ingredients")),
         ("premises", _lazy("premise")),
+        ("quality reader (Claude, report-only)", _lazy("qualityread")),
+        ("sense screen", _lazy("sensecheck")),
         ("beats -> moves migration", _moves_selftest),
     ]
     ok = True

@@ -1,0 +1,7026 @@
+{
+"38bceaf348d6d2f2391f179278f38616867ae6067e938a12b673bd0aacbf9641": [
+{
+"n": 1,
+"first_listen": 1,
+"rewind": 1,
+"forced": "",
+"in_character": 1,
+"clever": 0,
+"note": "Hoi is a real Dutch greeting, but 'so honest' is flat and the stereotype is generic."
+},
+{
+"n": 2,
+"first_listen": 2,
+"rewind": 1,
+"forced": "rock solid",
+"in_character": 2,
+"clever": 1,
+"note": "House-sized gnome is a good petty-proof image; 'rock solid' is tacked-on padding."
+},
+{
+"n": 3,
+"first_listen": 1,
+"rewind": 2,
+"forced": "",
+"in_character": 2,
+"clever": 2,
+"note": "'Cross my Noord' twists 'cross my heart' into a pun on Noord and the wallet threat."
+},
+{
+"n": 4,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Flat trade-admin tone sells the gnome for profit; the callback to the gnome lands, though the punchline is explained."
+}
+],
+"cbc18a8f2b6883977cffad2c1c759e6cddb3e08f1e66bd4e7a0dcb94d891092f": [
+{
+"n": 1,
+"first_listen": 2,
+"rewind": 0,
+"forced": "",
+"in_character": 1,
+"clever": 0,
+"note": "Plain toast; no boast or proof yet, just a setup."
+},
+{
+"n": 2,
+"first_listen": 1,
+"rewind": 1,
+"forced": "I continue",
+"in_character": 1,
+"clever": 1,
+"note": "Rocks double as ice and abandonment; 'I continue' is stiff padding."
+},
+{
+"n": 3,
+"first_listen": 1,
+"rewind": 0,
+"forced": "and it's",
+"in_character": 1,
+"clever": 0,
+"note": "Bern and Perth aren't ports; a list of places, no joke."
+},
+{
+"n": 4,
+"first_listen": 1,
+"rewind": 1,
+"forced": "",
+"in_character": 1,
+"clever": 1,
+"note": "'A good few' hangs unfinished, so the listener supplies the people he knows."
+}
+],
+"d13f2ca9fb369bf42942dfe87c2c0185df5fb707988fd1e4006654845180dc42": [
+{
+"n": 1,
+"first_listen": 1,
+"rewind": 1,
+"forced": "is larger",
+"in_character": 2,
+"clever": 1,
+"note": "Flat, confident opener, but 'the rest is larger' is clumsy word order."
+},
+{
+"n": 2,
+"first_listen": 1,
+"rewind": 2,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Honesty box dodge; paying in karma is a petty, funny proof."
+},
+{
+"n": 3,
+"first_listen": 2,
+"rewind": 0,
+"forced": "",
+"in_character": 1,
+"clever": 0,
+"note": "Plain brand-drop boast; anyone could rap it."
+},
+{
+"n": 4,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Knows a guy with a boat in Palma; the connection flex works."
+},
+{
+"n": 5,
+"first_listen": 1,
+"rewind": 1,
+"forced": "parka",
+"in_character": 2,
+"clever": 1,
+"note": "Stab vest under a Barbour is a good image; 'parka' is wrong and padded."
+},
+{
+"n": 6,
+"first_listen": 1,
+"rewind": 2,
+"forced": "",
+"in_character": 2,
+"clever": 2,
+"note": "Lager bribe for a judge: petty proof, clean hands double meaning. Strong."
+},
+{
+"n": 7,
+"first_listen": 2,
+"rewind": 0,
+"forced": "",
+"in_character": 1,
+"clever": 0,
+"note": "Generic threat line; clear but a cliché with no twist."
+},
+{
+"n": 8,
+"first_listen": 1,
+"rewind": 1,
+"forced": "on a pass",
+"in_character": 2,
+"clever": 1,
+"note": "Grazie as menace and the rail-pass proof work; 'on a pass' is stiff."
+}
+],
+"d2eed93d312ddd9e4150c1e0d8999c8c16df7c8a120c7705fe46916f0bc2f8ee": [
+{
+"n": 1,
+"first_listen": 2,
+"rewind": 0,
+"forced": "",
+"in_character": 1,
+"clever": 0,
+"note": "Clear set-up, but a generic origin line with no proof or menace."
+},
+{
+"n": 2,
+"first_listen": 1,
+"rewind": 0,
+"forced": "we",
+"in_character": 1,
+"clever": 0,
+"note": "Trails off; 'we' dangles to rhyme with 'me'. Reads as a fragment."
+},
+{
+"n": 3,
+"first_listen": 2,
+"rewind": 0,
+"forced": "",
+"in_character": 1,
+"clever": 0,
+"note": "Meta stage direction; flat, but breaks the narrator's voice into narration."
+},
+{
+"n": 4,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Flat admin tone ('cops came round') and 'scot free' lands the understatement."
+},
+{
+"n": 5,
+"first_listen": 1,
+"rewind": 0,
+"forced": "my face goes round with",
+"in_character": 1,
+"clever": 0,
+"note": "Unclear what his face doing rounds with athletes means; no sting."
+},
+{
+"n": 6,
+"first_listen": 2,
+"rewind": 0,
+"forced": "",
+"in_character": 1,
+"clever": 0,
+"note": "Sea view is a small specific proof, but 'living the dream' is a stock cliché."
+},
+{
+"n": 7,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "'Top thief' as top of the police list is a neat, petty proof."
+},
+{
+"n": 8,
+"first_listen": 1,
+"rewind": 1,
+"forced": "he's discreet",
+"in_character": 2,
+"clever": 1,
+"note": "'Guy's guy' shows the network well; 'he's discreet' is padding for the rhyme."
+}
+],
+"c58eeb9fe8b7a90cc2732ebf3425dff76bae14d7e2ca1522bfbe38acad4c76ae": [
+{
+"n": 1,
+"first_listen": 1,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "'Torch' is ambiguous (flashlight or blowtorch); the fixer idea lands only after a beat."
+},
+{
+"n": 2,
+"first_listen": 2,
+"rewind": 2,
+"forced": "",
+"in_character": 2,
+"clever": 2,
+"note": "'Brief' plus the Better Call Saul pun is instant and earns its place."
+},
+{
+"n": 3,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Flat, funny car-dies-on-arrival; 'Four-wheeler?' as a question is slightly stiff."
+},
+{
+"n": 4,
+"first_listen": 2,
+"rewind": 0,
+"forced": "",
+"in_character": 2,
+"clever": 0,
+"note": "Clear, menacing threat, but a stock bouncer boast with no twist."
+},
+{
+"n": 5,
+"first_listen": 1,
+"rewind": 1,
+"forced": "cash for Wales",
+"in_character": 1,
+"clever": 1,
+"note": "Wales is rhyme padding in a place list; 'scales' gives a drug-dealing wink but it's a list."
+},
+{
+"n": 6,
+"first_listen": 1,
+"rewind": 1,
+"forced": "and then you buy",
+"in_character": 1,
+"clever": 1,
+"note": "Prost toast and buying a round is a nice cliché, but the object is missing and 'and then you buy' is padded."
+},
+{
+"n": 7,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 2,
+"note": "Hanoi bikes as getaway cars is a sharp, specific, quotable image."
+},
+{
+"n": 8,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "'I know a guy' is the right flat menace, echoing the torch man in bar 1."
+}
+],
+"46eaab95f36a55ff78c4be64f5e6f2a66e2a5208c298b8ac8b65cacbb45b9043": [
+{
+"n": 1,
+"first_listen": 1,
+"rewind": 1,
+"forced": "",
+"in_character": 1,
+"clever": 0,
+"note": "Laxey drop plus tab-on-credit is flat; the joke never pays off."
+},
+{
+"n": 2,
+"first_listen": 2,
+"rewind": 0,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Clean, instant size boast in the right register."
+},
+{
+"n": 3,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 2,
+"note": "Deadpan customs cover story; 'medical' quietly sets up the next bar."
+},
+{
+"n": 4,
+"first_listen": 1,
+"rewind": 1,
+"forced": "Chemical",
+"in_character": 2,
+"clever": 1,
+"note": "Deadpan one-word answer works, but 'Chemical' is rhyme-driven and a beat slow."
+},
+{
+"n": 5,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "'Just a passenger' is a sly lie; the blanket makes it land."
+},
+{
+"n": 6,
+"first_listen": 1,
+"rewind": 1,
+"forced": "",
+"in_character": 1,
+"clever": 1,
+"note": "'A canister' is ambiguous; repeats bar 4's question-answer pattern."
+},
+{
+"n": 7,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Lying low in Canada: far-off hiding, clear and in voice."
+},
+{
+"n": 8,
+"first_listen": 1,
+"rewind": 0,
+"forced": "the whole marathon",
+"in_character": 1,
+"clever": 0,
+"note": "Van-to-van handover is clear, but 'the whole marathon' is padding with no payoff."
+}
+],
+"0ab65597b29c9a2f4f2f34de3d7b2f68a0279d3b23041061181c869e5797749b": [
+{
+"n": 1,
+"first_listen": 1,
+"rewind": 0,
+"forced": "",
+"in_character": 1,
+"clever": 0,
+"note": "Supplier-in-every-city idea works, but 'the staples?' is vague."
+},
+{
+"n": 2,
+"first_listen": 1,
+"rewind": 1,
+"forced": "so check the label",
+"in_character": 1,
+"clever": 0,
+"note": "'So check the label' is a limp connective; the label hint is faint."
+},
+{
+"n": 3,
+"first_listen": 2,
+"rewind": 2,
+"forced": "",
+"in_character": 2,
+"clever": 2,
+"note": "Cut-throat as razor and as threat; cards on the table is menace."
+},
+{
+"n": 4,
+"first_listen": 0,
+"rewind": 0,
+"forced": "Dead fatal",
+"in_character": 1,
+"clever": 0,
+"note": "Boots in Bergen means nothing; 'dead fatal' is filler."
+},
+{
+"n": 5,
+"first_listen": 1,
+"rewind": 1,
+"forced": "",
+"in_character": 1,
+"clever": 1,
+"note": "'Flat calm' doubles as deadpan delivery, but it's another place-list."
+},
+{
+"n": 6,
+"first_listen": 2,
+"rewind": 0,
+"forced": "dead cheeky",
+"in_character": 1,
+"clever": 0,
+"note": "Cheap fags lands; 'dead cheeky' is the same tic, padded."
+},
+{
+"n": 7,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Forty a day and 'sorting me' is a sly, deadpan habit joke."
+},
+{
+"n": 8,
+"first_listen": 1,
+"rewind": 1,
+"forced": "for a quick sneaky",
+"in_character": 1,
+"clever": 1,
+"note": "Guy's guy escalates well; 'quick sneaky' dangles without a noun."
+}
+],
+"3ab4a4937d3592023079214e747db00ba65e6df95b1141ed331253c1940d4d8b": [
+{
+"n": 1,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 1,
+"clever": 0,
+"note": "Clear claim, but 'own code' is generic; could be a postcode nod."
+},
+{
+"n": 2,
+"first_listen": 2,
+"rewind": 0,
+"forced": "and up to",
+"in_character": 1,
+"clever": 0,
+"note": "Pure place list with no proof of notoriety; the card forbids this."
+},
+{
+"n": 3,
+"first_listen": 1,
+"rewind": 1,
+"forced": "the face is on",
+"in_character": 2,
+"clever": 1,
+"note": "Wanted-poster face callback works, but the ellipsis makes it land late."
+},
+{
+"n": 4,
+"first_listen": 2,
+"rewind": 0,
+"forced": "and so I struck gold",
+"in_character": 1,
+"clever": 0,
+"note": "Lone wolf and struck gold are stock rap clichés; 'so' is padding."
+},
+{
+"n": 5,
+"first_listen": 2,
+"rewind": 0,
+"forced": "in the nightlife",
+"in_character": 1,
+"clever": 0,
+"note": "Generic top-dog boast with no small specific proof."
+},
+{
+"n": 6,
+"first_listen": 1,
+"rewind": 0,
+"forced": "big boss the tough guy",
+"in_character": 0,
+"clever": 0,
+"note": "Broken syntax; 'I'm big boss the tough guy' reads as word salad."
+},
+{
+"n": 7,
+"first_listen": 2,
+"rewind": 2,
+"forced": "",
+"in_character": 2,
+"clever": 2,
+"note": "Boxing callback: no ref, no bell, no rules. Menace in his voice."
+},
+{
+"n": 8,
+"first_listen": 2,
+"rewind": 0,
+"forced": "and the main lifeline",
+"in_character": 1,
+"clever": 0,
+"note": "Helper boast is flat; 'the main lifeline' is padding with no proof."
+}
+],
+"3c6855cbb9d97ab217ad48f0b64e6f4bb6a3f6c98555403e1cd35a8b75676f4b": [
+{
+"n": 1,
+"first_listen": 1,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Tinnie as boat and as can of beer: a neat double meaning."
+},
+{
+"n": 2,
+"first_listen": 1,
+"rewind": 0,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "K'gari and ute are local colour; the do-or-die menace works."
+},
+{
+"n": 3,
+"first_listen": 0,
+"rewind": 0,
+"forced": "the top fried rice",
+"in_character": 1,
+"clever": 0,
+"note": "Place list with no point; 'the top fried rice' is meaningless filler."
+},
+{
+"n": 4,
+"first_listen": 1,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Sharks in crossfire turns the reef dive into a gunfight. Good."
+},
+{
+"n": 5,
+"first_listen": 1,
+"rewind": 0,
+"forced": "",
+"in_character": 1,
+"clever": 0,
+"note": "Vague boast with no proof; the illicit hint is too weak to land."
+},
+{
+"n": 6,
+"first_listen": 1,
+"rewind": 0,
+"forced": "So pigs can fly",
+"in_character": 2,
+"clever": 1,
+"note": "Dismissive idiom works, but 'so pigs can fly' bends it to fit 'guy'."
+},
+{
+"n": 7,
+"first_listen": 2,
+"rewind": 0,
+"forced": "",
+"in_character": 1,
+"clever": 0,
+"note": "Clear logistics and plain menace, but no proof of notoriety."
+},
+{
+"n": 8,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Clean, flat closer; one call is the untouchable boast in plain register."
+}
+],
+"936349cd726355b4dd26491ef4865c4072aacacc40b92526fe0bed96f9ccd43a": [
+{
+"n": 1,
+"first_listen": 2,
+"rewind": 0,
+"forced": "",
+"in_character": 2,
+"clever": 0,
+"note": "Clear past-tense illicit report; flat and on-brief, but no image."
+},
+{
+"n": 2,
+"first_listen": 1,
+"rewind": 1,
+"forced": "Seedy? Seedy?",
+"in_character": 2,
+"clever": 1,
+"note": "Mock-innocent deflection works; the repeated 'Seedy' is padding."
+},
+{
+"n": 3,
+"first_listen": 2,
+"rewind": 0,
+"forced": "",
+"in_character": 1,
+"clever": 0,
+"note": "Plain set-up; 'my guy' fits but nothing lands."
+},
+{
+"n": 4,
+"first_listen": 1,
+"rewind": 1,
+"forced": "the deal's all sunny",
+"in_character": 1,
+"clever": 1,
+"note": "'Sunny' is a neat Spain nod, but 'the deal's all sunny' is stilted."
+},
+{
+"n": 5,
+"first_listen": 2,
+"rewind": 0,
+"forced": "",
+"in_character": 2,
+"clever": 0,
+"note": "Menace in four words, but flat with no image or twist."
+},
+{
+"n": 6,
+"first_listen": 2,
+"rewind": 1,
+"forced": "front page",
+"in_character": 2,
+"clever": 1,
+"note": "Clear Boomtown callback; 'front page' for a poster is a stretch."
+},
+{
+"n": 7,
+"first_listen": 1,
+"rewind": 2,
+"forced": "in the dock Old Bailey",
+"in_character": 2,
+"clever": 2,
+"note": "'Dock' as court and as never-convicted; the missing 'at' is deliberate."
+},
+{
+"n": 8,
+"first_listen": 2,
+"rewind": 1,
+"forced": "So",
+"in_character": 1,
+"clever": 1,
+"note": "Beer garden saving face is a tidy, small image; 'So' is filler."
+},
+{
+"n": 9,
+"first_listen": 1,
+"rewind": 1,
+"forced": "It's your ten days' grace",
+"in_character": 2,
+"clever": 1,
+"note": "Grace period in admin register works; 'It's your' is stiff phrasing."
+},
+{
+"n": 10,
+"first_listen": 1,
+"rewind": 1,
+"forced": "it's fair game",
+"in_character": 2,
+"clever": 2,
+"note": "Conkers as a threat is a deflating, quotable British joke."
+},
+{
+"n": 11,
+"first_listen": 2,
+"rewind": 1,
+"forced": "Crown on, top hat",
+"in_character": 1,
+"clever": 1,
+"note": "Silly stacked regalia is cartoon fun, but generic 'king' boast."
+},
+{
+"n": 12,
+"first_listen": 2,
+"rewind": 1,
+"forced": "no names",
+"in_character": 2,
+"clever": 1,
+"note": "'I know a guy' is on-brief; 'no names' is a dry shrug."
+}
+],
+"89e8062ee22344c84e232b0af7063c55f5bc49b4b0ef79dcb6b22982e98fc21d": {
+"consistent": 1,
+"contradictions": [
+{
+"a": 58,
+"b": 72,
+"why": "Bar 58 has his crew; bar 72 claims he's a lone wolf."
+}
+],
+"off_card": [
+{
+"bar": 27,
+"why": "Chronological skip-through of his rise; card forbids ordered accounts of events."
+},
+{
+"bar": 49,
+"why": "Extended past-tense report beyond the allowed two-bar illicit account."
+}
+]
+},
+"195cb4f2280189417984f6bd11097e5000d2043f5b308bf150b00918a1f6ed27": [
+{
+"n": 1,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 1,
+"clever": 0,
+"note": "Clear toast, but generic. Anyone could open a rap with it; no notoriety yet."
+},
+{
+"n": 2,
+"first_listen": 1,
+"rewind": 2,
+"forced": "I continue",
+"in_character": 2,
+"clever": 2,
+"note": "'On the rocks' works as drink and as stranded; the flat 'I continue' is a deadpan, gruff button."
+},
+{
+"n": 3,
+"first_listen": 1,
+"rewind": 0,
+"forced": "",
+"in_character": 1,
+"clever": 0,
+"note": "Bare list of places with no proof. Only the 'same game' claim carries it, and that is not a joke."
+},
+{
+"n": 4,
+"first_listen": 0,
+"rewind": 0,
+"forced": "a good few",
+"in_character": 1,
+"clever": 0,
+"note": "Sentence trails off with no noun, so 'a good few' of what is lost."
+}
+],
+"03643876b4413aa22b78992dce6cca9fff236814d2ca39230ef6a9f8c37892bd": [
+{
+"n": 1,
+"first_listen": 0,
+"rewind": 0,
+"forced": "",
+"in_character": 1,
+"clever": 0,
+"note": "Picket and whites don't connect; the cop image never lands or ties to the gnome."
+},
+{
+"n": 2,
+"first_listen": 2,
+"rewind": 1,
+"forced": "rock solid",
+"in_character": 2,
+"clever": 1,
+"note": "Gnome as tall as a house is the petty-proof joke. 'Rock solid' is padding."
+},
+{
+"n": 3,
+"first_listen": 0,
+"rewind": 2,
+"forced": "Cross my Noord man",
+"in_character": 1,
+"clever": 1,
+"note": "Cross my heart to Noord is a real pun, but needs Amsterdam knowledge to land."
+},
+{
+"n": 4,
+"first_listen": 2,
+"rewind": 1,
+"forced": "for profit",
+"in_character": 2,
+"clever": 1,
+"note": "Sales-patter 'Want one?' sells the gnome well. 'For profit' is stock filler."
+}
+],
+"77cdf8fa86bc7b1ed941f96de96ba0296fa76cc4a640125c8920d34265a2229f": [
+{
+"n": 1,
+"first_listen": 1,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Dutch greeting plus 'oi oi' reads as a cheeky hello; 'honest' is the sly irony."
+},
+{
+"n": 2,
+"first_listen": 2,
+"rewind": 2,
+"forced": "so he says",
+"in_character": 2,
+"clever": 2,
+"note": "'In good nick' versus 'nicked it' is the strongest pun in the hook."
+},
+{
+"n": 3,
+"first_listen": 0,
+"rewind": 1,
+"forced": "it's your wallet",
+"in_character": 2,
+"clever": 1,
+"note": "'Noord' oath is hard to place; 'it's your wallet' is elliptical and vague."
+},
+{
+"n": 4,
+"first_listen": 2,
+"rewind": 1,
+"forced": "for profit",
+"in_character": 2,
+"clever": 1,
+"note": "'Want one? I'll flog it' is deadpan; 'for profit' pads the rhyme."
+}
+],
+"b87ce731425c426b7fd63e8011d489bef4841d204c139d94672258ff2761b47f": [
+{
+"n": 1,
+"first_listen": 1,
+"rewind": 1,
+"forced": "",
+"in_character": 1,
+"clever": 0,
+"note": "'Torch on call' is a vague nod to the torch bloke; it reads as a fragment."
+},
+{
+"n": 2,
+"first_listen": 2,
+"rewind": 2,
+"forced": "",
+"in_character": 2,
+"clever": 2,
+"note": "Better Call Saul pun; 'brief' and 'call' both land on one hearing."
+},
+{
+"n": 3,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "'Dead on arrival' is a neat car-breakdown turn with a dry tone."
+},
+{
+"n": 4,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 1,
+"clever": 1,
+"note": "Red Bull wings idiom works; the tense shift to 'he's running free' is loose."
+},
+{
+"n": 5,
+"first_listen": 1,
+"rewind": 1,
+"forced": "cash for Wales",
+"in_character": 1,
+"clever": 0,
+"note": "Cash-for list is padding; Wales and scales exist only for the rhyme."
+},
+{
+"n": 6,
+"first_listen": 1,
+"rewind": 1,
+"forced": "and then you buy",
+"in_character": 1,
+"clever": 0,
+"note": "Prost cue is fine, but 'and then you buy' is unfinished and flat."
+},
+{
+"n": 7,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 1,
+"clever": 1,
+"note": "Hanoi bikes as getaway cars is a vivid, clean callback to the hedge bike."
+},
+{
+"n": 8,
+"first_listen": 2,
+"rewind": 0,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Flat 'I know a guy' delivers the people claim exactly as the card wants."
+}
+],
+"447144db9237f350bc16662e7def2f40dc05c61582b8f437ff411eb2b27310c8": [
+{
+"n": 1,
+"first_listen": 2,
+"rewind": 1,
+"forced": "see",
+"in_character": 1,
+"clever": 1,
+"note": "Clean wanted claim, but 'see' is filler tag padding the line."
+},
+{
+"n": 2,
+"first_listen": 1,
+"rewind": 2,
+"forced": "",
+"in_character": 2,
+"clever": 2,
+"note": "Better Call Saul pun works, though it needs the show known."
+},
+{
+"n": 3,
+"first_listen": 0,
+"rewind": 1,
+"forced": "",
+"in_character": 1,
+"clever": 1,
+"note": "'Four-wheeler' and 'dead on arrival' don't clearly say what happens."
+},
+{
+"n": 4,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Doorman menace lands; 'through the floor' is a familiar idiom."
+},
+{
+"n": 5,
+"first_listen": 1,
+"rewind": 1,
+"forced": "cash for scales",
+"in_character": 1,
+"clever": 0,
+"note": "Place-list rhyme with no joke; 'cash for scales' is forced."
+},
+{
+"n": 6,
+"first_listen": 1,
+"rewind": 1,
+"forced": "then you buy",
+"in_character": 1,
+"clever": 1,
+"note": "'Prost' toast-then-buy is neat, but the last clause is clumsy."
+},
+{
+"n": 7,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Bikes as getaway cars flips the cliché and ties to the Hanoi claim."
+},
+{
+"n": 8,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "'I know a guy' is on-brief, but a stock phrase with little bite."
+}
+],
+"ed7f53d70c8dedcb416d07375633400f84136a3ae7811a6617b8ce79e85d3002": [
+{
+"n": 1,
+"first_listen": 2,
+"rewind": 0,
+"forced": "",
+"in_character": 1,
+"clever": 0,
+"note": "Clear toast, but no boast or proof; anyone could say it."
+},
+{
+"n": 2,
+"first_listen": 1,
+"rewind": 1,
+"forced": "I continue",
+"in_character": 1,
+"clever": 1,
+"note": "Rocks double as 'left for dead' and the drink; 'I continue' is stilted."
+},
+{
+"n": 3,
+"first_listen": 1,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Impossible cruise across Bern, Perth and Crete is the joke; list still needs a payoff."
+},
+{
+"n": 4,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 2,
+"note": "Petty admin file two foot thick plus cold case: the best bar of the four."
+}
+],
+"3c6ef4401b7a2c8a656b04c52afed483bc93e9193a05766c6574bf2e7d9dfe89": [
+{
+"n": 1,
+"first_listen": 1,
+"rewind": 1,
+"forced": "",
+"in_character": 1,
+"clever": 0,
+"note": "'Torch on call' is vague; reads as a fixer, but the G'day Aussie tag is a nice touch."
+},
+{
+"n": 2,
+"first_listen": 2,
+"rewind": 2,
+"forced": "",
+"in_character": 1,
+"clever": 2,
+"note": "Brief/barrister plus Better Call Saul is a clean, quotable lawyer pun."
+},
+{
+"n": 3,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 1,
+"clever": 1,
+"note": "Dead on arrival does double duty for the car and the boast; flat and funny."
+},
+{
+"n": 4,
+"first_listen": 1,
+"rewind": 0,
+"forced": "through the floor",
+"in_character": 2,
+"clever": 0,
+"note": "Menace is right, but 'through the floor' is a clumsy idiom that jars the rhythm."
+},
+{
+"n": 5,
+"first_listen": 0,
+"rewind": 0,
+"forced": "cash for scales",
+"in_character": 0,
+"clever": 0,
+"note": "Place-and-object list with 'scales' and 'Wales' rhymed for padding; no joke, no sense."
+},
+{
+"n": 6,
+"first_listen": 1,
+"rewind": 1,
+"forced": "and then you buy",
+"in_character": 1,
+"clever": 1,
+"note": "Toast then pay the round is understood, but 'buy' needs an object; elliptical."
+},
+{
+"n": 7,
+"first_listen": 0,
+"rewind": 0,
+"forced": "Dressed in pink my floppy top hat",
+"in_character": 1,
+"clever": 0,
+"note": "No verb, broken syntax; the image is comic but the line doesn't parse."
+},
+{
+"n": 8,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Flat, plain 'I know a guy' delivery is exactly the narrator; stuck echoes dead on arrival."
+}
+],
+"3cf433683b1bfb33100754d953d78f026ac2bb8ca375232e0ebb7c9d75760a8a": [
+{
+"n": 1,
+"first_listen": 2,
+"rewind": 0,
+"forced": "",
+"in_character": 1,
+"clever": 1,
+"note": "Clear and deadpan; sets up the 'my guy' network motif."
+},
+{
+"n": 2,
+"first_listen": 1,
+"rewind": 1,
+"forced": "when I'm able",
+"in_character": 1,
+"clever": 0,
+"note": "'When I'm able' is clumsy padding; 'check the label' is a faint hint at contraband."
+},
+{
+"n": 3,
+"first_listen": 1,
+"rewind": 1,
+"forced": "",
+"in_character": 1,
+"clever": 1,
+"note": "'Cut-throat' carries menace; 'cards on the table' gives a small hustle double meaning."
+},
+{
+"n": 4,
+"first_listen": 0,
+"rewind": 0,
+"forced": "Dead fatal",
+"in_character": 1,
+"clever": 0,
+"note": "Unclear what the boots did or why it's fatal; no payoff."
+},
+{
+"n": 5,
+"first_listen": 1,
+"rewind": 1,
+"forced": "",
+"in_character": 1,
+"clever": 0,
+"note": "Place-name list with no punchline; 'flat calm' only hints at effortlessness."
+},
+{
+"n": 6,
+"first_listen": 2,
+"rewind": 0,
+"forced": "dead cheeky",
+"in_character": 1,
+"clever": 0,
+"note": "Cheap fags lands on money, but 'dead cheeky' is filler built to rhyme with 'sneaky'."
+},
+{
+"n": 7,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Forty a day, flatly sorted by 'my guy': the deadpan proof lands."
+},
+{
+"n": 8,
+"first_listen": 1,
+"rewind": 1,
+"forced": "for a quick sneaky",
+"in_character": 1,
+"clever": 1,
+"note": "'My guy's guy' escalates the network joke; 'a quick sneaky' is an ungrammatical rhyme-fill ending."
+}
+],
+"cf987f7a828c0a233c7b0e5a5a6c65aa6f3b89aa60d60debaa315013d15e2253": [
+{
+"n": 1,
+"first_listen": 1,
+"rewind": 0,
+"forced": "The staples?",
+"in_character": 2,
+"clever": 1,
+"note": "Q-and-A rhythm lands the guy-in-every-town idea, but 'the staples' is vague."
+},
+{
+"n": 2,
+"first_listen": 1,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "'Check the label' hints at fakes, a nice sly word, but reads as a loose tag."
+},
+{
+"n": 3,
+"first_listen": 2,
+"rewind": 1,
+"forced": "cards on the table",
+"in_character": 2,
+"clever": 1,
+"note": "Free shave with a cut-throat is a good menace joke; 'cards on the table' is padding."
+},
+{
+"n": 4,
+"first_listen": 0,
+"rewind": 0,
+"forced": "Dead fatal",
+"in_character": 1,
+"clever": 0,
+"note": "Boots in Bergen goes nowhere; 'dead fatal' is filler with no clear meaning."
+},
+{
+"n": 5,
+"first_listen": 1,
+"rewind": 1,
+"forced": "",
+"in_character": 1,
+"clever": 0,
+"note": "'Flat calm' is a neat deadpan pun, but the bar is just scenery."
+},
+{
+"n": 6,
+"first_listen": 2,
+"rewind": 0,
+"forced": "dead cheeky",
+"in_character": 2,
+"clever": 0,
+"note": "Cheap fags is clear, but 'dead cheeky' is a generic tag that adds nothing."
+},
+{
+"n": 7,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Forty a day with the guy sorting him is a clean, flat, believable boast."
+},
+{
+"n": 8,
+"first_listen": 1,
+"rewind": 1,
+"forced": "a quick sneaky",
+"in_character": 2,
+"clever": 1,
+"note": "'My guy's guy' escalates the network joke; 'a quick sneaky' is missing its noun."
+}
+],
+"a852364558660134c276163a27be3575f21566af5cd24bbb00a784c8b2594a1c": [
+{
+"n": 1,
+"first_listen": 1,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 0,
+"note": "Question-and-answer rhythm is clear, but Mozzarella and stranger float unanchored."
+},
+{
+"n": 2,
+"first_listen": 1,
+"rewind": 0,
+"forced": "so check the label",
+"in_character": 1,
+"clever": 0,
+"note": "'Check the label' is filler; the guy-everywhere point is already made."
+},
+{
+"n": 3,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Cut-throat blade and 'on the house' carry menace and a free-shave double meaning."
+},
+{
+"n": 4,
+"first_listen": 1,
+"rewind": 0,
+"forced": "",
+"in_character": 1,
+"clever": 0,
+"note": "'Dead fatal' is unclear; the boots-in-Bergen point never lands."
+},
+{
+"n": 5,
+"first_listen": 1,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "'Flat calm' doubles as his flat delivery; Thai mainland needs a beat."
+},
+{
+"n": 6,
+"first_listen": 2,
+"rewind": 0,
+"forced": "",
+"in_character": 2,
+"clever": 0,
+"note": "Cheap fags, dead cheeky: petty, British, and exactly the right proof."
+},
+{
+"n": 7,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Forty a day with 'my guy is sorting me' is a clean, petty flex."
+},
+{
+"n": 8,
+"first_listen": 1,
+"rewind": 1,
+"forced": "quick sneaky",
+"in_character": 2,
+"clever": 1,
+"note": "Noun dropped for rhyme, but guy's guy and sneaky escalate the network joke."
+}
+],
+"6ec916f6c2659159be8726caae0a2b77db4a10029460df3ca83748f8889d5261": [
+{
+"n": 1,
+"first_listen": 1,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "G'day sells the Aussie; torch is ambiguous, so the image takes a beat."
+},
+{
+"n": 2,
+"first_listen": 2,
+"rewind": 2,
+"forced": "",
+"in_character": 2,
+"clever": 2,
+"note": "Better Call Saul pun on 'call', echoing bar 1. Clean."
+},
+{
+"n": 3,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 1,
+"clever": 1,
+"note": "Dead on arrival plays both ways: a dead car, and a dead man walking in."
+},
+{
+"n": 4,
+"first_listen": 2,
+"rewind": 0,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Clear, cartoon menace. Fits the doorman, no extra layer."
+},
+{
+"n": 5,
+"first_listen": 1,
+"rewind": 0,
+"forced": "",
+"in_character": 1,
+"clever": 0,
+"note": "Pure list of places. Nothing is claimed or joked; it's a list."
+},
+{
+"n": 6,
+"first_listen": 1,
+"rewind": 1,
+"forced": "and then you buy",
+"in_character": 1,
+"clever": 1,
+"note": "Prost as a round-buying toast works, but 'and then you buy' is clunky, padded."
+},
+{
+"n": 7,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Scooters as getaway cars lands at once and nods back to the hedge bike."
+},
+{
+"n": 8,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Flat, menacing offer of help. The 'guy' callback to the torch bloke works."
+}
+],
+"ccdcfc84b820b2e9ea931038dc4bb0c207495202e45b8c7500957d2b13b2007a": [
+{
+"n": 1,
+"first_listen": 1,
+"rewind": 0,
+"forced": "",
+"in_character": 1,
+"clever": 0,
+"note": "Flat opener, but 'nada' is filler and the aliases claim is vague."
+},
+{
+"n": 2,
+"first_listen": 1,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Honesty box joke works: he pays in karma, not cash. Neat, but a little soft."
+},
+{
+"n": 3,
+"first_listen": 2,
+"rewind": 0,
+"forced": "",
+"in_character": 1,
+"clever": 0,
+"note": "Brand-name flex, clear on one hearing, but it's just a list of labels."
+},
+{
+"n": 4,
+"first_listen": 2,
+"rewind": 0,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Good people-everywhere claim in plain, flat voice; the boat is specific."
+},
+{
+"n": 5,
+"first_listen": 1,
+"rewind": 2,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Stab vest under Under Armour is a real double meaning on rewind."
+},
+{
+"n": 6,
+"first_listen": 0,
+"rewind": 1,
+"forced": "Parma",
+"in_character": 1,
+"clever": 1,
+"note": "Bribe-by-ham is obscure; Parma is rhyme-chosen, and the joke is lost."
+},
+{
+"n": 7,
+"first_listen": 2,
+"rewind": 0,
+"forced": "",
+"in_character": 1,
+"clever": 0,
+"note": "Clear menace, but generic. Anyone could say it; no proof attached."
+},
+{
+"n": 8,
+"first_listen": 0,
+"rewind": 1,
+"forced": "And so grazie",
+"in_character": 1,
+"clever": 0,
+"note": "'And so grazie' is padding. The rail pass nod is only half-clear."
+}
+],
+"7914e80e2632018b0e799ea6301d6941483bcd097437360e8e117cc670784c31": [
+{
+"n": 1,
+"first_listen": 2,
+"rewind": 0,
+"forced": "",
+"in_character": 1,
+"clever": 0,
+"note": "Plain obscurity setup; sets up the contrast without any spark."
+},
+{
+"n": 2,
+"first_listen": 0,
+"rewind": 0,
+"forced": "we",
+"in_character": 1,
+"clever": 0,
+"note": "Sentence trails off with a dangling 'we'; rhyme-driven, unfinished."
+},
+{
+"n": 3,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 1,
+"clever": 1,
+"note": "Clear time-skip; 'the end' hints at the story's outcome."
+},
+{
+"n": 4,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Flat past-tense report of an escape; 'scot free' gives a faint tax-dodge wink."
+},
+{
+"n": 5,
+"first_listen": 2,
+"rewind": 1,
+"forced": "goes round",
+"in_character": 2,
+"clever": 2,
+"note": "Face on a keyring is petty, specific proof of fame. Strong."
+},
+{
+"n": 6,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 2,
+"note": "Sea view deflated by a cup of tea; very British, quotable. Strong."
+},
+{
+"n": 7,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Police list with him top three; 'top three' is a neat petty ranking."
+},
+{
+"n": 8,
+"first_listen": 1,
+"rewind": 1,
+"forced": "for a fee",
+"in_character": 2,
+"clever": 1,
+"note": "Main guy's guy chain is menacing; 'for a fee' is padding to rhyme."
+}
+],
+"8c5c1a669327d5d9ce2bb3d6233551b0bb923cf29668565f40ba08183efb547f": [
+{
+"n": 1,
+"first_listen": 1,
+"rewind": 0,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Tinnie slang needs a beat; the fixer boast is clear once decoded."
+},
+{
+"n": 2,
+"first_listen": 1,
+"rewind": 0,
+"forced": "where you do or die",
+"in_character": 1,
+"clever": 0,
+"note": "K'gari is obscure, and 'where you do or die' is padding around a stock phrase."
+},
+{
+"n": 3,
+"first_listen": 2,
+"rewind": 0,
+"forced": "",
+"in_character": 1,
+"clever": 0,
+"note": "A list of places and food with no turn. Reads as a menu, not a boast."
+},
+{
+"n": 4,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 2,
+"note": "Tiny sharks as proof of untouchability. The scale flip is the joke, and it's quotable."
+},
+{
+"n": 5,
+"first_listen": 0,
+"rewind": 0,
+"forced": "up high",
+"in_character": 1,
+"clever": 0,
+"note": "Word salad: 'big boats and jets up high' says nothing, and 'up high' is pure padding."
+},
+{
+"n": 6,
+"first_listen": 2,
+"rewind": 1,
+"forced": "So pigs can fly",
+"in_character": 1,
+"clever": 1,
+"note": "Good idiom payoff, but 'when pigs fly' is the real phrase; 'So' breaks it."
+},
+{
+"n": 7,
+"first_listen": 2,
+"rewind": 0,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Casual day-trip ease fits the voice, but the bay is unnamed and there's no sting."
+},
+{
+"n": 8,
+"first_listen": 2,
+"rewind": 0,
+"forced": "and I'll try",
+"in_character": 1,
+"clever": 0,
+"note": "'And I'll try' is a filler tag that undercuts the untouchable boast."
+}
+],
+"3169dbcd96c21fb615675127e8a8a511ca6130bbdf0850cb5355da439a1febf8": [
+{
+"n": 1,
+"first_listen": 2,
+"rewind": 0,
+"forced": "Sure",
+"in_character": 1,
+"clever": 0,
+"note": "Flat, clear opener; 'Sure' is throwaway filler."
+},
+{
+"n": 2,
+"first_listen": 1,
+"rewind": 1,
+"forced": "Never seedy",
+"in_character": 1,
+"clever": 0,
+"note": "'Seedy' is a limp rhyme that means little; the denial is weak."
+},
+{
+"n": 3,
+"first_listen": 2,
+"rewind": 0,
+"forced": "",
+"in_character": 2,
+"clever": 0,
+"note": "Plain and clear: the guy has the money."
+},
+{
+"n": 4,
+"first_listen": 1,
+"rewind": 1,
+"forced": "all sunny",
+"in_character": 1,
+"clever": 1,
+"note": "Brown envelope bribe lands; 'all sunny' is padding to rhyme."
+},
+{
+"n": 5,
+"first_listen": 2,
+"rewind": 0,
+"forced": "",
+"in_character": 1,
+"clever": 0,
+"note": "Clear threat, but says nothing new."
+},
+{
+"n": 6,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Boomtown poster callback to the WANTED bar; tidy."
+},
+{
+"n": 7,
+"first_listen": 1,
+"rewind": 2,
+"forced": "Old Bailey",
+"in_character": 2,
+"clever": 1,
+"note": "'Dock' works twice: courtroom box and Bristol docks. Tacked-on Old Bailey is clumsy."
+},
+{
+"n": 8,
+"first_listen": 2,
+"rewind": 0,
+"forced": "So",
+"in_character": 2,
+"clever": 0,
+"note": "Beer garden holding sway is vivid; 'So' is a weak opener."
+},
+{
+"n": 9,
+"first_listen": 1,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "'Pay day' flips debt into his payday; a menacing reversal."
+},
+{
+"n": 10,
+"first_listen": 1,
+"rewind": 1,
+"forced": "fair play",
+"in_character": 1,
+"clever": 1,
+"note": "Conkers as punishment is absurd and British; 'fair play' is a filler tag."
+},
+{
+"n": 11,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Crown and top hat make the boast obvious and funny."
+},
+{
+"n": 12,
+"first_listen": 2,
+"rewind": 1,
+"forced": "okay",
+"in_character": 2,
+"clever": 0,
+"note": "Dealers and 'a guy' call back well; 'okay' is pure padding."
+}
+],
+"7adc6382376ca23e8e292da11a8312d8c41277a4915803006f56275fec8513c3": [
+{
+"n": 1,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Petty, flat, everyday detail undercuts the boast. Good opener, the deadpan works."
+},
+{
+"n": 2,
+"first_listen": 2,
+"rewind": 0,
+"forced": "",
+"in_character": 1,
+"clever": 0,
+"note": "Pure list of places, no proof. Snowdon is in Wales, so the list stutters."
+},
+{
+"n": 3,
+"first_listen": 1,
+"rewind": 0,
+"forced": "just as well",
+"in_character": 1,
+"clever": 0,
+"note": "Clumsy syntax; 'just as well known' is padding to reach the rhyme."
+},
+{
+"n": 4,
+"first_listen": 1,
+"rewind": 1,
+"forced": "and proud and it's all",
+"in_character": 1,
+"clever": 0,
+"note": "'Home-grown' is a faint wink, but 'and proud and' is filler for rhythm."
+},
+{
+"n": 5,
+"first_listen": 2,
+"rewind": 0,
+"forced": "in the nightlife",
+"in_character": 1,
+"clever": 0,
+"note": "Stock nightlife boast with no specific proof. Anyone could rap it."
+},
+{
+"n": 6,
+"first_listen": 1,
+"rewind": 0,
+"forced": "the tough guy",
+"in_character": 1,
+"clever": 0,
+"note": "'Don't need one' has no clear antecedent; 'the tough guy' is tacked on."
+},
+{
+"n": 7,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 2,
+"note": "Boxing ring image: no ref, no bell means no rules. Seconds doubles as time."
+},
+{
+"n": 8,
+"first_listen": 2,
+"rewind": 1,
+"forced": "and the main lifeline",
+"in_character": 1,
+"clever": 1,
+"note": "Lifeline nods back to the flip phone, but the line reads like a service advert."
+}
+],
+"eb705a993460974e32698845f6a3040db06e2eaffeeeec9d4c2a3be9ab81d5cf": [
+{
+"n": 1,
+"first_listen": 2,
+"rewind": 0,
+"forced": "",
+"in_character": 1,
+"clever": 0,
+"note": "Clear greeting to Dutch posse; flat setup that does no work yet."
+},
+{
+"n": 2,
+"first_listen": 2,
+"rewind": 1,
+"forced": "rock solid",
+"in_character": 2,
+"clever": 1,
+"note": "Giant gnome is the right petty proof; 'rock solid' is padding."
+},
+{
+"n": 3,
+"first_listen": 1,
+"rewind": 1,
+"forced": "Cross my Noord man",
+"in_character": 1,
+"clever": 0,
+"note": "'Cross my Noord' is muddled; cross-as-swindle only half lands."
+},
+{
+"n": 4,
+"first_listen": 1,
+"rewind": 2,
+"forced": "",
+"in_character": 2,
+"clever": 2,
+"note": "Selling counterfeit gnome copies: sly, flat, and pays off the gnome."
+}
+],
+"bddd18e81b393e5c69b893af124494cd96a4703b31e450c3be62391992f2aef9": [
+{
+"n": 1,
+"first_listen": 1,
+"rewind": 0,
+"forced": "",
+"in_character": 1,
+"clever": 0,
+"note": "Pure image with no claim or punchline; sits as scenery, not evidence of reach."
+},
+{
+"n": 2,
+"first_listen": 2,
+"rewind": 1,
+"forced": "",
+"in_character": 2,
+"clever": 1,
+"note": "Anonymous files of numbers suggest a faceless, untouchable operation. Clean and flat."
+},
+{
+"n": 3,
+"first_listen": 0,
+"rewind": 0,
+"forced": "wear it like bread",
+"in_character": 0,
+"clever": 0,
+"note": "'Wear it like bread' is meaningless; the simile exists only to hit the rhyme."
+},
+{
+"n": 4,
+"first_listen": 0,
+"rewind": 0,
+"forced": "like little",
+"in_character": 0,
+"clever": 0,
+"note": "Broken syntax with a missing noun; 'orange like little' is word salad."
+},
+{
+"n": 5,
+"first_listen": 1,
+"rewind": 1,
+"forced": "buying in",
+"in_character": 1,
+"clever": 1,
+"note": "Queue for a film he's buying in is a decent flex, but 'buying in' is awkward."
+},
+{
+"n": 6,
+"first_listen": 0,
+"rewind": 0,
+"forced": "dandy",
+"in_character": 1,
+"clever": 0,
+"note": "A string of nouns; 'dandy' is padding and the bar never lands a claim."
+},
+{
+"n": 7,
+"first_listen": 1,
+"rewind": 2,
+"forced": "",
+"in_character": 2,
+"clever": 2,
+"note": "Direct-to-rust tin pays off 'paint the town red' literally and as an idiom. Quotable."
+}
+],
+"bb055130b76f9707c62ff468612adee35672674eb4b21645279e256f7f66ccdf": [
+{
+"n": 1,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Plain toast; no notoriety or proof yet, so it reads as filler.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.5,
+"clever": 1.0,
+"forced": "I continue",
+"forced_rate": 1.0,
+"note": "Rocks doubles as a drink and a left-for-dead image; 'I continue' is stiff.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.5,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Reach claim is clear, but a bare list of places has no joke.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "there's a good few",
+"forced_rate": 1.0,
+"note": "Trails off: 'a good few' has no noun, so the line is unfinished.",
+"reads": 2
+}
+],
+"573984bfd59aa654e94b8f8dfd6a281a840c770c588e7ac0b41a0703ffe5e231": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Dutch greeting lands for most; 'so honest' ironic against a thief.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 2.0,
+"rewind": 2.0,
+"in_character": 2.0,
+"clever": 2.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "'Good nick' versus 'nicked' on a gnome: the strongest pun in the hook.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 0.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "Cross my Noord man",
+"forced_rate": 1.0,
+"note": "'Noord' is obscure and 'cross my' is padding; the wallet payoff is lost.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "for profit",
+"forced_rate": 1.0,
+"note": "Salesman pitch works, but 'for profit' explains the joke it should leave alone.",
+"reads": 2
+}
+],
+"151b1af77bbceeb5691022ac3b721f626c53a4f0c7c4a4433c681c2d79cc0c6d": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.5,
+"clever": 0.5,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Torch reads as a flashlight; the bloke-with-a-torch idea needs a beat.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 1.5,
+"rewind": 2.0,
+"in_character": 2.0,
+"clever": 2.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Brief/Better Call Saul pun is sharp; the lawyer boast is real.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 1.5,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Dead on arrival doubles as a threat. Cartoon menace, delivered flat.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "he's running free",
+"forced_rate": 1.0,
+"note": "Red Bull wings slogan lands; 'he's running free' is rhyme padding.",
+"reads": 2
+},
+{
+"n": 5,
+"first_listen": 0.5,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "cash for scales",
+"forced_rate": 1.0,
+"note": "Scales/Wales is sound-only; no joke, no clear meaning.",
+"reads": 2
+},
+{
+"n": 6,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "then you buy",
+"forced_rate": 1.0,
+"note": "Prost toast, then buying the round: gets there, but object dangles.",
+"reads": 2
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Hanoi bikes as getaway cars: concrete, funny, ties back to the hedge.",
+"reads": 2
+},
+{
+"n": 8,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Right fixer-for-hire menace; 'I know a guy' is the card's people claim.",
+"reads": 2
+}
+],
+"534063fb7c84074404b0cead330762a0891952884718084e7ecb6087ed238db9": [
+{
+"n": 1,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Clean present-tense boast; the Boomtown poster lands instantly.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 1.5,
+"rewind": 2.0,
+"in_character": 2.0,
+"clever": 2.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Better Call Saul pun on 'brief' lands hard; the best bar here.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 1.5,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "'Dead on arrival' is a neat jab, but the target is vague.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 2.0,
+"clever": 0.5,
+"forced": "through the floor",
+"forced_rate": 0.5,
+"note": "Clean cartoon menace; 'through the floor' is generic hyperbole.",
+"reads": 2
+},
+{
+"n": 5,
+"first_listen": 1.0,
+"rewind": 0.5,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "cash for scales",
+"forced_rate": 1.0,
+"note": "Padded place-list rhyme; 'cash for scales' isn't a real phrase.",
+"reads": 2
+},
+{
+"n": 6,
+"first_listen": 1.0,
+"rewind": 0.5,
+"in_character": 1.5,
+"clever": 1.0,
+"forced": "and then you buy",
+"forced_rate": 0.5,
+"note": "Elliptical toast; 'then you buy' stalls and the cash joke is buried.",
+"reads": 2
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.5,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Concrete, specific image; the getaway-bike idea lands straight away.",
+"reads": 2
+},
+{
+"n": 8,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Flat, knowing close; the 'guy' callback works, though it's stock.",
+"reads": 2
+}
+],
+"8a346aa13a0a3f8d1421c21c87183b135c870a342095a032c4a66042878e7b28": [
+{
+"n": 1,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Clear toast, but generic. No boast, no proof, nothing specific to him.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 2.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "I continue",
+"forced_rate": 1.0,
+"note": "'On the rocks' is ice and being stranded. Deadpan 'I continue' is in voice but stiff.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 1.0,
+"rewind": 0.5,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "and it's a day's cruise",
+"forced_rate": 0.5,
+"note": "Bare place list. Perth to Bern in a day is absurd, but it reads as filler.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 1.5,
+"rewind": 1.5,
+"in_character": 2.0,
+"clever": 2.0,
+"forced": "a real",
+"forced_rate": 0.5,
+"note": "Two-foot police file is petty, specific proof. 'Cold case' reads as wanted and ties to the ice in bar 2.",
+"reads": 2
+}
+],
+"c36a5d3f1ea5bbd7c8e657b1886c6e08f27384b504be5febbcd3819e69146ae8": [
+{
+"n": 1,
+"first_listen": 1.5,
+"rewind": 0.5,
+"in_character": 2.0,
+"clever": 0.5,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Dutch 'hoi' greeting lands, but 'so honest' is a flat, unexplained stereotype.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 2.0,
+"rewind": 0.5,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "rock solid",
+"forced_rate": 1.0,
+"note": "Giant gnome sets scale well; 'rock solid' is filler for the rhyme.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 0.5,
+"rewind": 2.0,
+"in_character": 1.5,
+"clever": 2.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "'Cross my Noord' puns on 'cross my heart'; the wallet payoff is a real twist.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 0.5,
+"forced": "Ten feet of it",
+"forced_rate": 1.0,
+"note": "'It' is unclear, and ten feet contradicts the house-sized gnome.",
+"reads": 2
+}
+],
+"193e586cbce0922c60e6614053c7931cad180358b9100c145e1a0ac3e9707ec6": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 0.5,
+"in_character": 1.5,
+"clever": 0.5,
+"forced": "on call",
+"forced_rate": 0.5,
+"note": "Torch-man fixer is clear only after a beat; 'G'day' sells Perth.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Needs the poster callback; 'excessive energy' reads as a tag line, which suits him.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.5,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Dead on arrival turns the car into the casualty; the joke is half-heard.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 2.0,
+"rewind": 0.5,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Plain menace, present tense, lands first time. Idiom has no extra layer.",
+"reads": 2
+},
+{
+"n": 5,
+"first_listen": 0.5,
+"rewind": 0.5,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "scales",
+"forced_rate": 1.0,
+"note": "Place-list padding; 'cash for Wales' means nothing, only rhymes with scales.",
+"reads": 2
+},
+{
+"n": 6,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "then you buy",
+"forced_rate": 1.0,
+"note": "Prost toast and the round work, but 'then you buy' is a dangling fragment built for the rhyme.",
+"reads": 2
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.5,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Bikes swapped for getaway cars: clean, petty-proof, quotable image.",
+"reads": 2
+},
+{
+"n": 8,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Stuck-and-a-guy closes the hook well; 'guy' does the fixer work.",
+"reads": 2
+}
+],
+"ba7bfcb05c37ef9a5eceb4bb05e826825d5f12b1a34b25a1947c247a25c2d931": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "on call",
+"forced_rate": 0.5,
+"note": "G'day sets the Aussie tone; torch on call is vague but reads as a fixer.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 2.0,
+"rewind": 2.0,
+"in_character": 2.0,
+"clever": 2.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Better Call Saul pun, and brief/call picks up bar 1. Strongest line in the hook.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 1.5,
+"rewind": 1.0,
+"in_character": 1.5,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Dead on arrival is a neat breakdown pun, but the bar is only a flat joke.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 2.0,
+"rewind": 0.5,
+"in_character": 1.5,
+"clever": 0.5,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Standard bouncer threat; anyone could say it. No twist.",
+"reads": 2
+},
+{
+"n": 5,
+"first_listen": 0.5,
+"rewind": 0.5,
+"in_character": 0.5,
+"clever": 0.0,
+"forced": "cash for scales",
+"forced_rate": 1.0,
+"note": "Cash for Spain and Wales is a rhyme-driven list of places with no joke.",
+"reads": 2
+},
+{
+"n": 6,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.5,
+"clever": 0.5,
+"forced": "and then you buy",
+"forced_rate": 0.5,
+"note": "Prost is a fair toast, but the word order is clumsy and the point is unclear.",
+"reads": 2
+},
+{
+"n": 7,
+"first_listen": 0.5,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "my floppy top hat",
+"forced_rate": 1.0,
+"note": "No verb: dressed in pink, my floppy top hat is a fragment, not a claim.",
+"reads": 2
+},
+{
+"n": 8,
+"first_listen": 2.0,
+"rewind": 0.5,
+"in_character": 2.0,
+"clever": 0.5,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Clear 'I know a guy' people-claim, but flat with no proof or twist.",
+"reads": 2
+}
+],
+"c38cc5906088f66ec6ef3b4c564b6493589c0838bd26044b67f74d5e24f28b5b": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "'Torch' is a vague fixer; 'on call' only lands via the card.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 2.0,
+"in_character": 2.0,
+"clever": 2.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Brief/barrister plus Better Call Saul pun. Strongest bar in the hook.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 1.5,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "Four-wheeler?",
+"forced_rate": 0.5,
+"note": "Clear, flat, and 'dead on arrival' doubles nicely with the car.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 1.5,
+"rewind": 0.0,
+"in_character": 1.5,
+"clever": 0.5,
+"forced": "through the floor",
+"forced_rate": 0.5,
+"note": "Doorman threat is clear but 'through the floor' is clumsy and generic.",
+"reads": 2
+},
+{
+"n": 5,
+"first_listen": 2.0,
+"rewind": 0.5,
+"in_character": 1.0,
+"clever": 0.5,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Pure place list with no payoff; the card forbids this.",
+"reads": 2
+},
+{
+"n": 6,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "and then you buy",
+"forced_rate": 0.5,
+"note": "Toast-then-buy is elliptical; the meaning and the line both stall.",
+"reads": 2
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Hanoi bikes as getaway cars: a concrete, specific, true-feeling image.",
+"reads": 2
+},
+{
+"n": 8,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 1.5,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Clean hook closer; 'I know a guy' is a stock phrase anyone could say.",
+"reads": 2
+}
+],
+"eb057782f1b17f56c958190912daa21fd4055c459204dea101a5fab08286dd32": [
+{
+"n": 1,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.5,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Clear 'guy everywhere' boast; the mozzarella is a plain, believable detail.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 0.5,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "when I'm able",
+"forced_rate": 1.0,
+"note": "'Check the label' hints at fakes, but 'when I'm able' is padding.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 2.0,
+"rewind": 2.0,
+"in_character": 2.0,
+"clever": 2.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "'Cut-throat' works as razor and ruthless; 'on the house' and 'cards on the table' land.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 0.5,
+"rewind": 0.5,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Bergen boots with no payoff; 'dead fatal' is meaningless here.",
+"reads": 2
+},
+{
+"n": 5,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.5,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "'Flat calm' doubles as deadpan delivery; the ferry reach is clear.",
+"reads": 2
+},
+{
+"n": 6,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "dead cheeky",
+"forced_rate": 0.5,
+"note": "Cheap fags is clear, but 'dead cheeky' is filler built to rhyme with 'sneaky'.",
+"reads": 2
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "'Forty a day' and 'sorting me' read as a supply line; deadpan and specific.",
+"reads": 2
+},
+{
+"n": 8,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "a quick sneaky",
+"forced_rate": 1.0,
+"note": "'Guy's guy' chain is funny, but 'a quick sneaky' is a missing noun.",
+"reads": 2
+}
+],
+"13af55e9eec3a2184d59d3b876b37871d1e77a661802211bc748990c866d1482": [
+{
+"n": 1,
+"first_listen": 1.5,
+"rewind": 0.5,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "'The staples?' is vague; Naples-as-supplier does the work.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.5,
+"clever": 0.5,
+"forced": "so check the label",
+"forced_rate": 1.0,
+"note": "Half-price fakes implied; 'check the label' is a filler tag, not a punchline.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 2.0,
+"rewind": 1.5,
+"in_character": 1.5,
+"clever": 1.5,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Cut-throat blade and free cut land; 'cards on the table' is a neat extra.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 0.0,
+"rewind": 0.5,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "Dead fatal",
+"forced_rate": 0.5,
+"note": "Bergen rain idea never lands; 'dead fatal' is meaningless here.",
+"reads": 2
+},
+{
+"n": 5,
+"first_listen": 1.0,
+"rewind": 0.5,
+"in_character": 1.0,
+"clever": 0.5,
+"forced": "Thai mainland",
+"forced_rate": 0.5,
+"note": "Flat calm sea on the ferry works; no clear claim until the next bar.",
+"reads": 2
+},
+{
+"n": 6,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.5,
+"clever": 0.0,
+"forced": "dead cheeky",
+"forced_rate": 0.5,
+"note": "Cheap fags is clear; 'dead cheeky' is filler that adds nothing.",
+"reads": 2
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.5,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Forty a day, guy sorting him: tight, petty, exactly the right proof.",
+"reads": 2
+},
+{
+"n": 8,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "for a quick sneaky",
+"forced_rate": 1.0,
+"note": "'My guy's guy' escalates well, but 'quick sneaky' is a rhyme-forced fragment.",
+"reads": 2
+}
+],
+"7f6417e5225d9a82b1bb47a82c09bbeba3e9f64d3491d26e890009cddfba39ff": [
+{
+"n": 1,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Dutch 'hoi' greeting lands; 'hoi' also echoes British 'oi'. Solid opener.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 2.0,
+"rewind": 0.5,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Giant gnome is petty proof; 'rock solid' hints it's literally stone.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 1.0,
+"rewind": 2.0,
+"in_character": 2.0,
+"clever": 2.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "'Cross my Noord' twists 'cross my heart' and nods to Amsterdam's ferry. Threat is clipped but clear.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 1.0,
+"rewind": 2.0,
+"in_character": 2.0,
+"clever": 2.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "'Knock up' means both mass-produce and get pregnant. Deadpan counterfeit offer; strongest bar.",
+"reads": 2
+}
+],
+"a145b42428ca31bd6d347ee99036c0f12b99b40013473f0ff3d3702fab1a4cae": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.5,
+"clever": 0.5,
+"forced": "",
+"forced_rate": 0.0,
+"note": "'Torch' is unclear without the card; 'G'day' is a nice Aussie cue.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 2.0,
+"rewind": 1.5,
+"in_character": 2.0,
+"clever": 2.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Brief (UK barrister) plus Better Call Saul, and 'call' echoes bar 1.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 1.5,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Dead-on-arrival idiom works, but it's a vague, unexplained stranding image.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Clear cartoon menace from a doorman; a stock threat, though.",
+"reads": 2
+},
+{
+"n": 5,
+"first_listen": 1.5,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Pure place list with no joke; Wales is a dead weight.",
+"reads": 2
+},
+{
+"n": 6,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.5,
+"forced": "and then you buy",
+"forced_rate": 0.5,
+"note": "'Prost' toast then 'you buy' is a neat tab joke, but thin.",
+"reads": 2
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Motorbikes as getaway cars; ties to the hedge bike, a clear image.",
+"reads": 2
+},
+{
+"n": 8,
+"first_listen": 2.0,
+"rewind": 0.5,
+"in_character": 2.0,
+"clever": 0.5,
+"forced": "",
+"forced_rate": 0.0,
+"note": "'I know a guy' lands the fixer boast, echoing the torch and doorman.",
+"reads": 2
+}
+],
+"d15598e17595e23535a07aac92dbf9b98af94f09de70b6c7bf9d58c902cc8237": [
+{
+"n": 1,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Plain setup line; no proof, no notoriety beat yet.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 0.5,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "we",
+"forced_rate": 1.0,
+"note": "Trailing 'we' is a dangling filler to hit the rhyme; sentence unfinished.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 0.5,
+"clever": 0.0,
+"forced": "Now skip to the end",
+"forced_rate": 0.5,
+"note": "Narrator breaks into narrative structure; reads as stage direction, not his voice.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 1.5,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "scot free",
+"forced_rate": 0.5,
+"note": "Cops coming round and him walking out is the proof; 'scot free' a nod to the Scots.",
+"reads": 2
+},
+{
+"n": 5,
+"first_listen": 2.0,
+"rewind": 0.5,
+"in_character": 2.0,
+"clever": 1.5,
+"forced": "goes round",
+"forced_rate": 0.5,
+"note": "Face on a keyring: petty, specific proof of notoriety, exactly the brief.",
+"reads": 2
+},
+{
+"n": 6,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Sea view and tea is deadpan luxury; the 'cup of tea' undercuts the menace.",
+"reads": 2
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Police list with him top three: admin register and notoriety land cleanly.",
+"reads": 2
+},
+{
+"n": 8,
+"first_listen": 0.5,
+"rewind": 0.5,
+"in_character": 1.5,
+"clever": 0.5,
+"forced": "ring my main guy's guy for a fee",
+"forced_rate": 1.0,
+"note": "Guy's guy padding; 'for a fee' is a bland tag; the boast gets lost.",
+"reads": 2
+}
+],
+"de97407a4b0c3ce76b01e800c6a11bfe714ab17e73b0ace89f2f10781343e431": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "the rest is nada",
+"forced_rate": 0.5,
+"note": "Burner phone, two aliases, then 'nada': the idea lands but flatly.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "pay it good karma",
+"forced_rate": 0.5,
+"note": "Honesty box joke works; 'pay it' echoes 'pay it forward'. 'Good' is padding.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Brand-name flex with no twist; reads as ordinary boasting.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "'My guy' with a boat in Palma is a petty, specific proof of reach.",
+"reads": 2
+},
+{
+"n": 5,
+"first_listen": 2.0,
+"rewind": 1.5,
+"in_character": 2.0,
+"clever": 1.5,
+"forced": "",
+"forced_rate": 0.0,
+"note": "'Under Armour' as a stab vest is a sharp, quotable pun.",
+"reads": 2
+},
+{
+"n": 6,
+"first_listen": 1.0,
+"rewind": 1.5,
+"in_character": 2.0,
+"clever": 1.5,
+"forced": "gets Parma",
+"forced_rate": 0.5,
+"note": "Clean hands and a Parma ham bribe is good, but 'gets Parma' is clumsy for the rhyme.",
+"reads": 2
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Plain menace line; direct and in voice but nothing beyond the surface.",
+"reads": 2
+},
+{
+"n": 8,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.5,
+"forced": "And so grazie",
+"forced_rate": 1.0,
+"note": "'Grazie' is a rhyme-driven thank-you; 'And so' is filler, though the Interrail pass lands.",
+"reads": 2
+}
+],
+"7a5ba5aa19230b910d5ee830feab70aacc88226c4e7ec0c64058b4dc5fe8d72a": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 2.0,
+"clever": 0.5,
+"forced": "A stranger?",
+"forced_rate": 1.0,
+"note": "Naples-mozzarella is neat, but 'A stranger?' is a dangling fragment.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 0.5,
+"in_character": 1.5,
+"clever": 0.5,
+"forced": "when I'm able",
+"forced_rate": 1.0,
+"note": "'Check the label' goes nowhere; padding to hit the rhyme.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 2.0,
+"rewind": 1.5,
+"in_character": 2.0,
+"clever": 2.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Cut-throat razor, free haircut, open cards: menace and a joke.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 1.0,
+"rewind": 0.5,
+"in_character": 1.5,
+"clever": 0.5,
+"forced": "Dead fatal",
+"forced_rate": 0.5,
+"note": "Boots in Bergen works, but 'dead fatal' is vague and clunky.",
+"reads": 2
+},
+{
+"n": 5,
+"first_listen": 1.0,
+"rewind": 0.5,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "Thai mainland",
+"forced_rate": 0.5,
+"note": "Flat calm ferry and place names: a list, no joke landing.",
+"reads": 2
+},
+{
+"n": 6,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 2.0,
+"clever": 0.5,
+"forced": "dead cheeky",
+"forced_rate": 0.5,
+"note": "Cheap fags is clear; 'cheeky' is the wrong word for cheap.",
+"reads": 2
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Forty a day, guy sorting him: flat admin tone, lands cleanly.",
+"reads": 2
+},
+{
+"n": 8,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "a quick sneaky",
+"forced_rate": 1.0,
+"note": "Guy's guy network works, but 'a quick sneaky' is a dangling fragment.",
+"reads": 2
+}
+],
+"53f77ec31a47f5c02f42c9bdda53b26a3f6a01c29b5e947bf673095503587cea": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 0.5,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Tinnie is Aussie slang; the question-mark opener is a good flat hook.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 0.5,
+"in_character": 1.5,
+"clever": 0.5,
+"forced": "where you do or die",
+"forced_rate": 0.5,
+"note": "K'gari needs a beat to place; 'do or die' is a rhyme-filler idiom.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "the top pad Thai",
+"forced_rate": 1.0,
+"note": "Pure place-list with no proof or punchline; 'top' is awkward.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 2.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Sharks being tiny to him is the best dismissive flex so far.",
+"reads": 2
+},
+{
+"n": 5,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "up high",
+"forced_rate": 1.0,
+"note": "Vague non-claim; 'you wouldn't believe' has no object; 'up high' is padding.",
+"reads": 2
+},
+{
+"n": 6,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "So pigs can fly",
+"forced_rate": 0.5,
+"note": "Pigs-might-fly idiom works; 'so pigs can fly' is a clumsy reshaping.",
+"reads": 2
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Flat day-trip admin with a small proof; 'back by five' lands deadpan.",
+"reads": 2
+},
+{
+"n": 8,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "and I'll try",
+"forced_rate": 1.0,
+"note": "'I'll try' is rhyme filler and undercuts the boast by accident.",
+"reads": 2
+}
+],
+"4be54839a0b777b2b42f5a10f1125f7c1baca8c4864f54ce67a0e5435f999c76": [
+{
+"n": 1,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.5,
+"clever": 0.5,
+"forced": "Sure",
+"forced_rate": 1.0,
+"note": "Plain past-tense bust report; opening 'Sure' is throwaway filler.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.5,
+"clever": 0.0,
+"forced": "Never seedy",
+"forced_rate": 1.0,
+"note": "'Never seedy' is an awkward rhyme-fill; 'Me? Never' would be natural.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 2.0,
+"rewind": 0.5,
+"in_character": 2.0,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "'My guy' motif lands; the bribe is clear without explanation.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 1.0,
+"rewind": 1.5,
+"in_character": 1.5,
+"clever": 0.5,
+"forced": "all sunny",
+"forced_rate": 1.0,
+"note": "'Brown envelope' idiom literal and bribe; 'all sunny' is padding.",
+"reads": 2
+},
+{
+"n": 5,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 2.0,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Flat menace, clear threat; generic wording but in voice.",
+"reads": 2
+},
+{
+"n": 6,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "front page",
+"forced_rate": 0.5,
+"note": "Boomtown poster plus front page: petty proof of notoriety, stated flat.",
+"reads": 2
+},
+{
+"n": 7,
+"first_listen": 1.0,
+"rewind": 1.5,
+"in_character": 2.0,
+"clever": 1.5,
+"forced": "Old Bailey",
+"forced_rate": 1.0,
+"note": "Dock as courtroom and dockside, Old Bailey; the pun lands, word order is clumsy.",
+"reads": 2
+},
+{
+"n": 8,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 2.0,
+"clever": 0.5,
+"forced": "So",
+"forced_rate": 1.0,
+"note": "Beer garden 'holding sway' is a stock boast in a mundane setting.",
+"reads": 2
+},
+{
+"n": 9,
+"first_listen": 1.5,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Owe-me reversed into a threat; 'pay day' double meaning works.",
+"reads": 2
+},
+{
+"n": 10,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 2.0,
+"forced": "fair play",
+"forced_rate": 1.0,
+"note": "Conkers as menace is the funniest bar here; 'fair play' is padding.",
+"reads": 2
+},
+{
+"n": 11,
+"first_listen": 2.0,
+"rewind": 0.5,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Crown on top hat is a cartoon image; king of Bristol is a local boast.",
+"reads": 2
+},
+{
+"n": 12,
+"first_listen": 1.5,
+"rewind": 0.5,
+"in_character": 1.5,
+"clever": 0.5,
+"forced": "okay",
+"forced_rate": 1.0,
+"note": "'okay' is a filler tag tacked on for the rhyme; limp close.",
+"reads": 2
+}
+],
+"285e16713657d08f51c6d1dcf1968b3b28759c5a13c645f22e55f4715d566b51": [
+{
+"n": 1,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Flat, unglamorous detail that implies untraceable outlaw. Works without explanation.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 1.5,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "and up to",
+"forced_rate": 0.5,
+"note": "Pure place list with no proof or punchline. Exactly the list the card forbids.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "just as well",
+"forced_rate": 1.0,
+"note": "Clumsy syntax, 'just as well known' is padding to fill the line.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 1.0,
+"rewind": 1.5,
+"in_character": 1.5,
+"clever": 1.0,
+"forced": "and proud and it's all",
+"forced_rate": 1.0,
+"note": "'Home-grown' double meaning: homegrown threat and self-made. Stutter is padding.",
+"reads": 2
+},
+{
+"n": 5,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "in the nightlife",
+"forced_rate": 0.5,
+"note": "Generic bouncer-boast cliché with no specific proof attached.",
+"reads": 2
+},
+{
+"n": 6,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "the tough guy",
+"forced_rate": 1.0,
+"note": "'The tough guy' is tacked on to close the line. Limp, self-announcing.",
+"reads": 2
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 2.0,
+"in_character": 2.0,
+"clever": 2.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Boxing rules gone: 'seconds' is both corner time and seconds on the clock. Strong.",
+"reads": 2
+},
+{
+"n": 8,
+"first_listen": 2.0,
+"rewind": 0.5,
+"in_character": 1.0,
+"clever": 0.5,
+"forced": "and the main",
+"forced_rate": 1.0,
+"note": "Helpline-ad register and a stock 'lifeline' cliché. Limp close, no sting.",
+"reads": 2
+}
+],
+"36f69476f8f827c2fda13133a65a044790ccb83fff49b9cfc823298909390a4a": [
+{
+"n": 1,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Clear Dutch greeting, but 'hoi hoi' is chirpy, not gruff; a flat opener would suit him better.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 1.5,
+"rewind": 1.0,
+"in_character": 1.5,
+"clever": 1.0,
+"forced": "rock solid",
+"forced_rate": 1.0,
+"note": "Inflating the garden gnome to house height is a good absurd twist; 'rock solid' is filler.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 1.0,
+"rewind": 2.0,
+"in_character": 2.0,
+"clever": 2.0,
+"forced": "it's your wallet",
+"forced_rate": 0.5,
+"note": "'Cross my Noord' swaps cross my heart for a wallet-taking threat; the pun lands on a relisten.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 1.0,
+"rewind": 1.5,
+"in_character": 2.0,
+"clever": 1.5,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Market-stall flog fits the register, but 'a copy' of what is unclear; the fake-goods hint is sly.",
+"reads": 2
+}
+],
+"5ec81cfe7f9c2563a8bfcacbbe2428fb005c9a4da0458ea790f845ccc1868875": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "back road corners",
+"forced_rate": 0.5,
+"note": "Pleasant scene, but no boast, no notoriety, no proof. Anyone could say it.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Numbers on folders hints at a criminal file. Shadowy, unexplained, in register.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 0.0,
+"rewind": 0.5,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "wear it like bread",
+"forced_rate": 1.0,
+"note": "'Like bread' is a meaningless simile; bread-as-money hint is too faint.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "orange like little",
+"forced_rate": 1.0,
+"note": "Broken syntax with a missing noun. Word salad, no payoff.",
+"reads": 2
+},
+{
+"n": 5,
+"first_listen": 1.0,
+"rewind": 0.5,
+"in_character": 1.5,
+"clever": 0.5,
+"forced": "buying in",
+"forced_rate": 1.0,
+"note": "Queue for a film he's financed: the boast lands, though 'buying in' is awkward.",
+"reads": 2
+},
+{
+"n": 6,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 0.5,
+"clever": 0.0,
+"forced": "dandy",
+"forced_rate": 1.0,
+"note": "Hammock, bamboo, snow, dandy: a pile of images with no point.",
+"reads": 2
+},
+{
+"n": 7,
+"first_listen": 1.5,
+"rewind": 2.0,
+"in_character": 2.0,
+"clever": 2.0,
+"forced": "paint town red",
+"forced_rate": 0.5,
+"note": "Paint tin pun on 'paint the town red' is sharp; dropping 'the' is forced.",
+"reads": 2
+}
+],
+"96db681606f9ecc9acbcbb4282b0ae8b06e5de268836a5a0a89a7e428a367502": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "he's wrecked my picket",
+"forced_rate": 1.0,
+"note": "Picket/cop in whites is murky; unclear who wrecked what.",
+"reads": 1
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "rock solid",
+"forced_rate": 1.0,
+"note": "Gnome callback fits, but 'rock solid' is filler for the rhyme.",
+"reads": 1
+},
+{
+"n": 3,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "Cross my Noord man it's your wallet",
+"forced_rate": 1.0,
+"note": "'Noord man' unplaceable; garbled threat, wallet link unclear.",
+"reads": 1
+},
+{
+"n": 4,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "I'll flog it for profit",
+"forced_rate": 1.0,
+"note": "Flogging the gnome is clear and petty, but 'for profit' pads.",
+"reads": 1
+}
+],
+"68c489accd7c26e4b1cf92edea835c7dfed91d45a728171c334916c1b185f82b": [
+{
+"n": 1,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "so honest",
+"forced_rate": 1.0,
+"note": "Clear greeting, but 'so honest' is rhyme filler with no joke.",
+"reads": 1
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "so he says I nicked it",
+"forced_rate": 1.0,
+"note": "Gnome callback and 'good nick' pun fit; accusation muddled.",
+"reads": 1
+},
+{
+"n": 3,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "Cross my Noord man it's your wallet",
+"forced_rate": 1.0,
+"note": "'Cross my Noord man' is word salad; wallet link unclear.",
+"reads": 1
+},
+{
+"n": 4,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Clear, flat dealer boast, but generic and no petty proof.",
+"reads": 1
+}
+],
+"d9d0d108eb9c7f1d19c8e5f712ea17a1bf7a34c7592543549e6394fd9bffc2cb": [
+{
+"n": 1,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Generic toast opener; anyone could say it, no proof or boast.",
+"reads": 1
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "I continue",
+"forced_rate": 1.0,
+"note": "'Left on the rocks' pun faint; 'I continue' is rhyme padding.",
+"reads": 1
+},
+{
+"n": 3,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "it's the same game",
+"forced_rate": 1.0,
+"note": "Just a list of places; 'same game' is filler, no petty proof.",
+"reads": 1
+},
+{
+"n": 4,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "a good few",
+"forced_rate": 1.0,
+"note": "Dangling 'good few' with no noun; unfinished, lost on first hearing.",
+"reads": 1
+}
+],
+"af343ffe837c82604cfee22673d875368a33b5833db1e8c35f6c8bbba06573a6": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "G'day",
+"forced_rate": 1.0,
+"note": "Torch guy callback is vague; G'day greeting feels bolted on.",
+"reads": 1
+},
+{
+"n": 2,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Better Call Saul gag is clear but familiar; anyone could say it.",
+"reads": 1
+},
+{
+"n": 3,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "Four-wheeler?",
+"forced_rate": 1.0,
+"note": "Unclear what four-wheeler means; dead on arrival is stock phrase.",
+"reads": 1
+},
+{
+"n": 4,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "he's running free",
+"forced_rate": 1.0,
+"note": "Slogan gag, then switches to third person; filler tag rhyme.",
+"reads": 1
+},
+{
+"n": 5,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "cash for scales and cash for Wales",
+"forced_rate": 1.0,
+"note": "Rhyme-driven word salad; scales and Wales make no sense.",
+"reads": 1
+},
+{
+"n": 6,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "and then you buy",
+"forced_rate": 1.0,
+"note": "Prost drink-up idea half-formed; 'then you buy' is dangling filler.",
+"reads": 1
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Best bar: bikes as getaway cars, matches Vietnam hedge bike notoriety.",
+"reads": 1
+},
+{
+"n": 8,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Clean hook payoff, 'I know a guy' is core claim.",
+"reads": 1
+}
+],
+"8f05b507c286a67d8d0b4312e904f1c131d120e3b77270523895ec096909a0ed": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "see",
+"forced_rate": 1.0,
+"note": "Boomtown poster claim fits, but 'see' is a rhyme-filler tag.",
+"reads": 1
+},
+{
+"n": 2,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Better Call Saul pun clear instantly; lawyer boast is generic though.",
+"reads": 1
+},
+{
+"n": 3,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "Four-wheeler? Dead on arrival",
+"forced_rate": 1.0,
+"note": "Unplaceable; what four-wheeler? Reads as filler, no claim or joke.",
+"reads": 1
+},
+{
+"n": 4,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Clear menace but generic tough-guy; no petty British proof.",
+"reads": 1
+},
+{
+"n": 5,
+"first_listen": 0.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "cash for scales and cash for Wales",
+"forced_rate": 1.0,
+"note": "Spain/scales/Wales is a rhyme list, not a joke.",
+"reads": 1
+},
+{
+"n": 6,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "and then you buy",
+"forced_rate": 1.0,
+"note": "Prost toast then buying a round is slight; wording clipped.",
+"reads": 1
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Vietnam bike callback lands; getaway-car boast is cartoonish and on-card.",
+"reads": 1
+},
+{
+"n": 8,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 2.0,
+"clever": 0.0,
+"forced": "If you're stuck",
+"forced_rate": 1.0,
+"note": "Clean 'knows a guy' claim, but plain and unsurprising closer.",
+"reads": 1
+}
+],
+"5ce08c7d30d2d4ed179504a26959a6a1c160d9fe8030746c92265d6fc2bad6ce": [
+{
+"n": 1,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Generic thank-you opener; anyone could say it, no claim or proof.",
+"reads": 1
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "I continue",
+"forced_rate": 1.0,
+"note": "'I continue' is rhyme padding; desert callback is vague without Perth.",
+"reads": 1
+},
+{
+"n": 3,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "and it's a day's cruise",
+"forced_rate": 1.0,
+"note": "Just a list of places; 'day's cruise' tacked on for rhyme.",
+"reads": 1
+},
+{
+"n": 4,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "a real cold case",
+"forced_rate": 1.0,
+"note": "Thick file fits notoriety; 'cold case' tag is stock and slightly mismatched.",
+"reads": 1
+}
+],
+"9ee67dd2aef2f76c078dd0168787964d6ae5d03ec7f5b556d487066b8f66e6b6": [
+{
+"n": 1,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "so honest",
+"forced_rate": 1.0,
+"note": "Clear greeting, but 'so honest' is rhyme filler with no payoff.",
+"reads": 1
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "rock solid",
+"forced_rate": 1.0,
+"note": "Giant gnome is a decent petty-empire image, but 'rock solid' pads.",
+"reads": 1
+},
+{
+"n": 3,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "Cross my Noord man it's your wallet",
+"forced_rate": 1.0,
+"note": "Garbled; 'Noord' and wallet link are unplaceable, syntax broken.",
+"reads": 1
+},
+{
+"n": 4,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "Ten feet of it",
+"forced_rate": 1.0,
+"note": "Ten-foot gnome guarding garden is the funny petty proof; awkward phrasing.",
+"reads": 1
+}
+],
+"0b59d5f1de8c6ac9e0bcb790e979b22456f9bab9f35fabec33515767c390763b": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "on call",
+"forced_rate": 1.0,
+"note": "Torch bloke callback is thin; 'G'day' is a vague opener.",
+"reads": 1
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "spree",
+"forced_rate": 1.0,
+"note": "Boomtown poster callback fits, but 'spree' is rhyme filler.",
+"reads": 1
+},
+{
+"n": 3,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "Four-wheeler? Dead on arrival",
+"forced_rate": 1.0,
+"note": "Unclear what four-wheeler means; no claim, no proof.",
+"reads": 1
+},
+{
+"n": 4,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Clear doorman menace, but generic rap threat with no petty proof.",
+"reads": 1
+},
+{
+"n": 5,
+"first_listen": 0.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "cash for scales and cash for Wales",
+"forced_rate": 1.0,
+"note": "Scales/Wales is rhyme-driven nonsense; a list of cash, no joke.",
+"reads": 1
+},
+{
+"n": 6,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "and then you buy",
+"forced_rate": 1.0,
+"note": "Prost is German toast; trailing 'you buy' is weak filler.",
+"reads": 1
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Clean notoriety claim; Vietnamese bike callback, petty and true.",
+"reads": 1
+},
+{
+"n": 8,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "If you're stuck",
+"forced_rate": 1.0,
+"note": "'I know a guy' is on-card, but it's a stock phrase.",
+"reads": 1
+}
+],
+"2a54056f39236b5760e70042a4e2a65eea8816320047297ecb7947de9fa77858": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "on call",
+"forced_rate": 1.0,
+"note": "Torch guy callback is vague; 'on call' reads like filler.",
+"reads": 1
+},
+{
+"n": 2,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Better Call Saul pun is clear, but a common joke.",
+"reads": 1
+},
+{
+"n": 3,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "Four-wheeler? Dead on arrival",
+"forced_rate": 1.0,
+"note": "Nobody can place four-wheeler; reads as a non sequitur.",
+"reads": 1
+},
+{
+"n": 4,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "put you through the floor",
+"forced_rate": 1.0,
+"note": "Clear cartoon menace, but generic and no petty proof.",
+"reads": 1
+},
+{
+"n": 5,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "cash for scales and cash for Wales",
+"forced_rate": 1.0,
+"note": "Scales/Wales rhyme is filler; the list has no joke.",
+"reads": 1
+},
+{
+"n": 6,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "and then you buy",
+"forced_rate": 1.0,
+"note": "Prost is a German toast, but the line doesn't land.",
+"reads": 1
+},
+{
+"n": 7,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "my floppy top hat",
+"forced_rate": 1.0,
+"note": "Whimsical image breaks the gruff, flat narrator.",
+"reads": 1
+},
+{
+"n": 8,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "If you're stuck",
+"forced_rate": 1.0,
+"note": "Clear 'I know a guy' payoff to his People claim.",
+"reads": 1
+}
+],
+"07e4712e16f19cf1a720ac6f4d5a97f5275a9eb891f562df27a540ad1e15ff84": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "G'day",
+"forced_rate": 1.0,
+"note": "Torch guy callback is vague; 'G'day' feels tacked on.",
+"reads": 1
+},
+{
+"n": 2,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Better Call Saul gag is clear but a common pun.",
+"reads": 1
+},
+{
+"n": 3,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "Dead on arrival",
+"forced_rate": 1.0,
+"note": "Four-wheeler jab is unclear; cliché phrase, no payoff or proof.",
+"reads": 1
+},
+{
+"n": 4,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Clear menace and bouncer claim, but generic tough-guy boast.",
+"reads": 1
+},
+{
+"n": 5,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "Wales",
+"forced_rate": 1.0,
+"note": "Pure list of places; Wales only for rhyme, no joke.",
+"reads": 1
+},
+{
+"n": 6,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "and then you buy",
+"forced_rate": 1.0,
+"note": "Prost then 'you buy' is muddled; no petty proof.",
+"reads": 1
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Bike-in-Vietnam notoriety lands; getaway-car boast is specific and in voice.",
+"reads": 1
+},
+{
+"n": 8,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "If you're stuck",
+"forced_rate": 1.0,
+"note": "'I know a guy' is on-card but the expected, unsurprising closer.",
+"reads": 1
+}
+],
+"02fd3a6b92f09acd2a025e85743075cc5270dbbc72b34b002953459826c5d8e0": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Knows a guy in Naples; fits 'people' claim but no joke.",
+"reads": 1
+},
+{
+"n": 2,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "so check the label",
+"forced_rate": 1.0,
+"note": "Marrakesh and label jump from mozzarella; filler rhyme, muddled meaning.",
+"reads": 1
+},
+{
+"n": 3,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "on the house, cards on the table",
+"forced_rate": 1.0,
+"note": "Cut-throat blade with idioms is menacing, but stacked clichés.",
+"reads": 1
+},
+{
+"n": 4,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "Dead fatal",
+"forced_rate": 1.0,
+"note": "Boots in Bergen unclear; 'dead fatal' is rhyme padding.",
+"reads": 1
+},
+{
+"n": 5,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "Thai mainland",
+"forced_rate": 1.0,
+"note": "Ferry to Thai mainland is a place-drop with no joke.",
+"reads": 1
+},
+{
+"n": 6,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "dead cheeky",
+"forced_rate": 1.0,
+"note": "Cheap fags gets across; 'dead cheeky' is tacked-on filler.",
+"reads": 1
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Forty a day, my guy sorting me: flat admin menace, lands.",
+"reads": 1
+},
+{
+"n": 8,
+"first_listen": 0.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "for a quick sneaky",
+"forced_rate": 1.0,
+"note": "Guy's guy is a good idea, but the line trails off.",
+"reads": 1
+}
+],
+"fb8f2fcf3a3655a7414153fa466dcde738c9fa5dd9ed60783ba6fd0c4ad4141e": [
+{
+"n": 1,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "The staples?",
+"forced_rate": 1.0,
+"note": "Clear 'knows a guy' claim; Naples/mozzarella is tidy but just a list item.",
+"reads": 1
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "so check the label",
+"forced_rate": 1.0,
+"note": "Half-price Marrakesh goods vague; 'check the label' is filler for rhyme.",
+"reads": 1
+},
+{
+"n": 3,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "cards on the table",
+"forced_rate": 1.0,
+"note": "Cut-throat blade with cards on table is a faint pun; reads as cliché.",
+"reads": 1
+},
+{
+"n": 4,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "Dead fatal",
+"forced_rate": 1.0,
+"note": "Boots in Bergen unclear; 'dead fatal' is a meaningless rhyme filler.",
+"reads": 1
+},
+{
+"n": 5,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "flat calm, Thai mainland",
+"forced_rate": 1.0,
+"note": "Just travel itinerary; no joke, awkward clipped phrasing for rhyme.",
+"reads": 1
+},
+{
+"n": 6,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "dead cheeky",
+"forced_rate": 1.0,
+"note": "Cheap fags fits, but 'dead cheeky' is tacked on to rhyme.",
+"reads": 1
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Forty a day, my guy sorting me: flat British admin, lands.",
+"reads": 1
+},
+{
+"n": 8,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "for a quick sneaky",
+"forced_rate": 1.0,
+"note": "Guy's guy escalation is good; 'quick sneaky' is a dangling forced rhyme.",
+"reads": 1
+}
+],
+"ad92fbac9f309c7ad2075aaf0e5ef985c09c4f133643ca82cf418d6a8ec621be": [
+{
+"n": 1,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "my people",
+"forced_rate": 1.0,
+"note": "Clear greeting, but generic travel shout-out with no proof.",
+"reads": 1
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "rock solid",
+"forced_rate": 1.0,
+"note": "Giant gnome is a good petty-empire image; 'rock solid' is filler.",
+"reads": 1
+},
+{
+"n": 3,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "Cross my Noord man",
+"forced_rate": 1.0,
+"note": "Garbled; 'Noord' unplaceable, syntax broken, meaning lost.",
+"reads": 1
+},
+{
+"n": 4,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "We knock up a sequel",
+"forced_rate": 1.0,
+"note": "Gnome sequel is a cheeky payoff, but the link is unclear.",
+"reads": 1
+}
+],
+"38e5d540c02059961c41712e9e0c5cbc60592038296413d262eab480be677322": [
+{
+"n": 1,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "A stranger?",
+"forced_rate": 1.0,
+"note": "'My guy' premise lands clean; mozzarella a nice petty specific.",
+"reads": 1
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "so check the label",
+"forced_rate": 1.0,
+"note": "'Check the label' is rhyme filler; vague what label means.",
+"reads": 1
+},
+{
+"n": 3,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "on the house, cards on the table",
+"forced_rate": 1.0,
+"note": "Stacked idioms; cut-throat blade menace but barber point blurry.",
+"reads": 1
+},
+{
+"n": 4,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "Dead fatal",
+"forced_rate": 1.0,
+"note": "Boots in Bergen, 'dead fatal' is meaningless rhyme padding.",
+"reads": 1
+},
+{
+"n": 5,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "flat calm, Thai mainland",
+"forced_rate": 1.0,
+"note": "Bergen to Thai mainland ferry nonsense; place-name list, no joke.",
+"reads": 1
+},
+{
+"n": 6,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "dead cheeky",
+"forced_rate": 1.0,
+"note": "Cheap fags is petty and on-brand, but 'dead cheeky' pads.",
+"reads": 1
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Forty a day, 'my guy is sorting me' is good flat admin.",
+"reads": 1
+},
+{
+"n": 8,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "for a quick sneaky",
+"forced_rate": 1.0,
+"note": "Guy's guy is a neat escalation; 'quick sneaky' is a dangling rhyme.",
+"reads": 1
+}
+],
+"400cfedeef33d5f52f642322d4b507620e0a2ee843e7293da5079cb09a2522a4": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "on call",
+"forced_rate": 1.0,
+"note": "Torch guy callback is vague; 'on call' reads as filler.",
+"reads": 1
+},
+{
+"n": 2,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Better Call Saul pun on lawyer lands instantly, but familiar.",
+"reads": 1
+},
+{
+"n": 3,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "dead on arrival",
+"forced_rate": 1.0,
+"note": "Four-wheel drive DOA is unclear; no claim, no joke.",
+"reads": 1
+},
+{
+"n": 4,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "through the wall",
+"forced_rate": 1.0,
+"note": "Clear bouncer menace, but generic tough-guy cliché, no petty proof.",
+"reads": 1
+},
+{
+"n": 5,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "or Wales",
+"forced_rate": 1.0,
+"note": "Just a list of places; Wales tacked on for rhyme.",
+"reads": 1
+},
+{
+"n": 6,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "and then you buy",
+"forced_rate": 1.0,
+"note": "Prost then 'you buy' is thin; German toast, no payoff.",
+"reads": 1
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Hanoi bikes as getaway cars: big boast, small true detail.",
+"reads": 1
+},
+{
+"n": 8,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "If you're stuck",
+"forced_rate": 1.0,
+"note": "Hook payoff, 'I know a guy' is core claim, plainly said.",
+"reads": 1
+}
+],
+"f98350fb9fcbaca4507252d2ad20b0f2d2a698716c749824c6fef0cc93fb4cb3": [
+{
+"n": 1,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Rags-to-riches setup; contradicts notorious-everywhere premise, generic backstory.",
+"reads": 1
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "we",
+"forced_rate": 1.0,
+"note": "Dangling 'we' exists only for rhyme; self-pity-ish, no proof.",
+"reads": 1
+},
+{
+"n": 3,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "Now skip to the end",
+"forced_rate": 1.0,
+"note": "Narrative filler; storyteller signposting, not a boast.",
+"reads": 1
+},
+{
+"n": 4,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "walked out of there scot free",
+"forced_rate": 1.0,
+"note": "Clear untouchable claim but cliché, no petty specific proof.",
+"reads": 1
+},
+{
+"n": 5,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "it's on a keyring",
+"forced_rate": 1.0,
+"note": "Face on a keyring is a decent petty-fame image, undeveloped.",
+"reads": 1
+},
+{
+"n": 6,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "Top floor a sea view",
+"forced_rate": 1.0,
+"note": "Cup of tea is British, but fragment reads like a holiday listing.",
+"reads": 1
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "they've got me top three",
+"forced_rate": 1.0,
+"note": "Police list ranking is on-theme; 'top three' modest and fits.",
+"reads": 1
+},
+{
+"n": 8,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "main guy's guy",
+"forced_rate": 1.0,
+"note": "Muddled 'main guy's guy' garbled; 'I'm out so ring' unclear.",
+"reads": 1
+}
+],
+"c6a609e940583f279250eb71bdb67f2e9467c57cc1373df87c13309b1228d0a4": [
+{
+"n": 1,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Burner-phone fugitive vibe, clean and flat; 'nada' is just the rhyme.",
+"reads": 1
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "I pay it good karma",
+"forced_rate": 1.0,
+"note": "Honesty box payoff is garbled; 'I pay it good karma' is clumsy.",
+"reads": 1
+},
+{
+"n": 3,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "head to toe",
+"forced_rate": 1.0,
+"note": "Prada suit is generic flex; contradicts petty, grubby-traveller narrator.",
+"reads": 1
+},
+{
+"n": 4,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "out in Palma",
+"forced_rate": 1.0,
+"note": "Knows-a-guy claim fits, but Palma is just a rhyme place.",
+"reads": 1
+},
+{
+"n": 5,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Stab vest in sportswear brand is a decent petty detail.",
+"reads": 1
+},
+{
+"n": 6,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "the judge gets Parma",
+"forced_rate": 1.0,
+"note": "Judge getting Parma ham is vague bribe; reads as rhyme-driven.",
+"reads": 1
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "and see what you get",
+"forced_rate": 1.0,
+"note": "Generic threat filler, no proof or specific detail.",
+"reads": 1
+},
+{
+"n": 8,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "And so grazie",
+"forced_rate": 1.0,
+"note": "Four weeks on one pass is good; grazie tacked on awkwardly.",
+"reads": 1
+}
+],
+"5abfd0636a0fc479eb0ca07f54c857db8f0c60573187228cb302211d18ccdd45": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "I've got a guy",
+"forced_rate": 1.0,
+"note": "Knows-a-guy fits the card, but Whitsundays tinnie is just a place.",
+"reads": 1
+},
+{
+"n": 2,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "where you do or die",
+"forced_rate": 1.0,
+"note": "K'gari ute reference is obscure; 'do or die' is filler for rhyme.",
+"reads": 1
+},
+{
+"n": 3,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "the top pad Thai",
+"forced_rate": 1.0,
+"note": "Place list with a food claim; no joke, no boast.",
+"reads": 1
+},
+{
+"n": 4,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Deflating the reef's sharks as tiny is petty proof, in voice.",
+"reads": 1
+},
+{
+"n": 5,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "You wouldn't believe big boats and jets up high",
+"forced_rate": 1.0,
+"note": "Vague word salad; 'jets up high' is pure rhyme padding.",
+"reads": 1
+},
+{
+"n": 6,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "So pigs can fly",
+"forced_rate": 1.0,
+"note": "Pigs-fly cliché; 'free from my guy' is muddled logic.",
+"reads": 1
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Flat untouchable boast with specific time; dive-in-back-by-five is deadpan.",
+"reads": 1
+},
+{
+"n": 8,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "and I'll try",
+"forced_rate": 1.0,
+"note": "'And I'll try' is filler and undercuts the boast with hedging.",
+"reads": 1
+}
+],
+"835f245c16139455aacbb2ed697ecff758d8a57084f2ebfb2655fbace6fc96a8": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "Sure",
+"forced_rate": 1.0,
+"note": "Vague opener; 'Sure the Spanish' is clumsy, no petty proof.",
+"reads": 1
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "Never seedy",
+"forced_rate": 1.0,
+"note": "'Never seedy' is a shaky sea/seedy pun, rhyme-driven.",
+"reads": 1
+},
+{
+"n": 3,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "Then my guy had the money",
+"forced_rate": 1.0,
+"note": "Flat narration, 'knows a guy' claim without any specific proof.",
+"reads": 1
+},
+{
+"n": 4,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "all sunny",
+"forced_rate": 1.0,
+"note": "Brown envelope is clear, but 'all sunny' is filler.",
+"reads": 1
+},
+{
+"n": 5,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "made you pay",
+"forced_rate": 1.0,
+"note": "Unclear meaning; reads as rhyme filler with no claim.",
+"reads": 1
+},
+{
+"n": 6,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "all Boomtown, front page",
+"forced_rate": 1.0,
+"note": "Boomtown wanted poster is on-card, but phrasing is clipped.",
+"reads": 1
+},
+{
+"n": 7,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "Old Bailey",
+"forced_rate": 1.0,
+"note": "Dock Old Bailey is awkward word order; boast without petty proof.",
+"reads": 1
+},
+{
+"n": 8,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "holding sway",
+"forced_rate": 1.0,
+"note": "Beer garden is petty and good; 'holding sway' is cliché filler.",
+"reads": 1
+},
+{
+"n": 9,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "It's your big pay day",
+"forced_rate": 1.0,
+"note": "Owe/pay day logic is muddled; sounds like a generic rapper.",
+"reads": 1
+},
+{
+"n": 10,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "fair play",
+"forced_rate": 1.0,
+"note": "Debt repaid in conkers is petty and funny; fair play tags it.",
+"reads": 1
+},
+{
+"n": 11,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "Crown on, top hat",
+"forced_rate": 1.0,
+"note": "King of Bristol is a nice small-scale boast; image slightly muddled.",
+"reads": 1
+},
+{
+"n": 12,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "okay",
+"forced_rate": 1.0,
+"note": "Filler 'okay' tag; 'know a guy' stated, not shown.",
+"reads": 1
+}
+],
+"86128becf44163aedab2fd7099e56a1ddf743eb74b106e417636bcbee0edaf87": [
+{
+"n": 1,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "my posse",
+"forced_rate": 1.0,
+"note": "Generic shout-out; 'my posse' is tacked on filler.",
+"reads": 1
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "rock solid",
+"forced_rate": 1.0,
+"note": "Gnome as national statue is on-card, but 'rock solid' is padding.",
+"reads": 1
+},
+{
+"n": 3,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "Cross my Noord man it's your wallet",
+"forced_rate": 1.0,
+"note": "'Noord man' is unplaceable; syntax garbled, threat unclear.",
+"reads": 1
+},
+{
+"n": 4,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "a copy",
+"forced_rate": 1.0,
+"note": "Flogging a gnome copy is petty and fits, but setup is muddy.",
+"reads": 1
+}
+],
+"dfe9aca0780da9a19f3d10bcf89650ff1d31fdee787b34f0388fb4c48ca5b4e9": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Flip phone as untraceable fugitive kit; fine but reason hangs unfinished.",
+"reads": 1
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "and up to Snowdon",
+"forced_rate": 1.0,
+"note": "Just a list of places; Snowdon tacked on to rhyme.",
+"reads": 1
+},
+{
+"n": 3,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "just as well known",
+"forced_rate": 1.0,
+"note": "Vague filler; 'solo now' claim has no petty proof.",
+"reads": 1
+},
+{
+"n": 4,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "and it's all home-grown",
+"forced_rate": 1.0,
+"note": "Lone wolf cliché and self-congratulation; home-grown is padding for rhyme.",
+"reads": 1
+},
+{
+"n": 5,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "Big man top dog",
+"forced_rate": 1.0,
+"note": "Generic rap boast stacking synonyms; no specific proof, any rapper.",
+"reads": 1
+},
+{
+"n": 6,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "'cause I'm big boss, the tough guy",
+"forced_rate": 1.0,
+"note": "'Don't need one' has no referent; generic boast, awkward syntax.",
+"reads": 1
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "you get no bell",
+"forced_rate": 1.0,
+"note": "Boxing image clear; no bell is a decent small twist.",
+"reads": 1
+},
+{
+"n": 8,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "and the main lifeline",
+"forced_rate": 1.0,
+"note": "Heroic helper tone breaks gruff character; clumsy word order, cliché.",
+"reads": 1
+}
+],
+"6d62c275a23883aaf1d45cc947b91db777818f2aa01ad8ac034609cb28c85d35": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "back road corners",
+"forced_rate": 1.0,
+"note": "Atmospheric scene-setting; no boast, no proof, anyone could say it.",
+"reads": 1
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Shady admin tone fits, but folders of numbers is vague.",
+"reads": 1
+},
+{
+"n": 3,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "wear it like bread",
+"forced_rate": 1.0,
+"note": "'Wear it like bread' is nonsense, simile chosen for rhyme.",
+"reads": 1
+},
+{
+"n": 4,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "like little",
+"forced_rate": 1.0,
+"note": "Sentence cuts off at 'little'; missing word, lost completely.",
+"reads": 1
+},
+{
+"n": 5,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "I'm buying in",
+"forced_rate": 1.0,
+"note": "Queue round the block is clear, 'buying in' is filler.",
+"reads": 1
+},
+{
+"n": 6,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "dandy",
+"forced_rate": 1.0,
+"note": "Place list with 'dandy' stuck on; no claim, no joke.",
+"reads": 1
+},
+{
+"n": 7,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "no recap",
+"forced_rate": 1.0,
+"note": "Paint town red literalised with rust paint is a decent idea, muddled.",
+"reads": 1
+}
+],
+"d11e2093930ed30649e9e3122a661a56f1fc1ccba992e7835fa3dda6dd9228fa": [
+{
+"n": 1,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "so honest",
+"forced_rate": 1.0,
+"note": "Generic greeting; 'so honest' is rhyme filler, no claim or proof.",
+"reads": 1
+},
+{
+"n": 2,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "rock solid",
+"forced_rate": 1.0,
+"note": "Giant gnome is a fun image, but 'rock solid' is tacked on.",
+"reads": 1
+},
+{
+"n": 3,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "Cross my Noord man",
+"forced_rate": 1.0,
+"note": "Garbled; 'Noord' reference unplaceable, wallet line has no clear meaning.",
+"reads": 1
+},
+{
+"n": 4,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "for profit",
+"forced_rate": 1.0,
+"note": "Flogging the stolen gnome fits the persona; 'for profit' pads the rhyme.",
+"reads": 1
+}
+],
+"dddac7796151fddc9285e25b2624105e892fc331168c6b3c7617dab2f0026202": [
+{
+"n": 1,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "Back then",
+"forced_rate": 1.0,
+"note": "Past-tense scene-setting; generic, no boast or petty proof.",
+"reads": 1
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "we",
+"forced_rate": 1.0,
+"note": "Dangling 'we' exists only to rhyme with 'know me'.",
+"reads": 1
+},
+{
+"n": 3,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "Now skip to the end",
+"forced_rate": 1.0,
+"note": "Narrative filler skipping ahead; sounds like a storyteller, not him.",
+"reads": 1
+},
+{
+"n": 4,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "came round I walked out of it",
+"forced_rate": 1.0,
+"note": "Notorious-escape idea, but vague, no specific small proof, clunky syntax.",
+"reads": 1
+},
+{
+"n": 5,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "with all the athletes",
+"forced_rate": 1.0,
+"note": "Vague 'face goes round with athletes'; reads as fame brag, unclear.",
+"reads": 1
+},
+{
+"n": 6,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "I'm living the dream",
+"forced_rate": 1.0,
+"note": "Cliché and self-satisfied; no petty proof, breaks gruff deadpan.",
+"reads": 1
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "top thief",
+"forced_rate": 1.0,
+"note": "Police list is on-card notoriety; 'top thief' is rhyme-driven.",
+"reads": 1
+},
+{
+"n": 8,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "main guy's guy he's discreet",
+"forced_rate": 1.0,
+"note": "Knows-a-guy fits, but 'main guy's guy' is mumbled padding.",
+"reads": 1
+}
+],
+"87f8e5cbd55a52cad9cab1887132010b9b9bc7d52fd53866ff18b7a59fd69bba": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "G'day",
+"forced_rate": 1.0,
+"note": "Torch on call is the bloke-with-torch claim, but muddy opener.",
+"reads": 1
+},
+{
+"n": 2,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Better Call Saul pun is clear but a well-worn gag.",
+"reads": 1
+},
+{
+"n": 3,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "Four-wheeler?",
+"forced_rate": 1.0,
+"note": "Unclear what four-wheeler is; medical 'dead on arrival' does not land.",
+"reads": 1
+},
+{
+"n": 4,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Generic tough-guy threat; any rapper could say it.",
+"reads": 1
+},
+{
+"n": 5,
+"first_listen": 0.0,
+"rewind": 1.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "cash for scales and cash for Wales",
+"forced_rate": 1.0,
+"note": "Scales/Wales is rhyme-driven list; cash for scales is meaningless.",
+"reads": 1
+},
+{
+"n": 6,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "and then you buy",
+"forced_rate": 1.0,
+"note": "Prost then you buy is a fragment; the joke is unclear.",
+"reads": 1
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Bikes as getaway cars: petty, specific, on-brand Vietnam callback.",
+"reads": 1
+},
+{
+"n": 8,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "If you're stuck",
+"forced_rate": 1.0,
+"note": "Hook tag 'I know a guy' is the card's core claim.",
+"reads": 1
+}
+],
+"8b0178064d057855c468741a3bd9eef587844bfb126c2c1f4656739a49b07c4f": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "the rest is larger",
+"forced_rate": 1.0,
+"note": "Vague opener; 'the rest is larger' is muddy filler, no proof.",
+"reads": 1
+},
+{
+"n": 2,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "I pay it good karma",
+"forced_rate": 1.0,
+"note": "Honesty box paid in karma is petty proof; garbled syntax though.",
+"reads": 1
+},
+{
+"n": 3,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "head to toe",
+"forced_rate": 1.0,
+"note": "Prada suit is generic flex, breaks gruff petty-proof character.",
+"reads": 1
+},
+{
+"n": 4,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "Palma",
+"forced_rate": 1.0,
+"note": "Boat in Palma exists for the rhyme; posh, not petty.",
+"reads": 1
+},
+{
+"n": 5,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Stab vest under Barbour is a nice menace-meets-British image.",
+"reads": 1
+},
+{
+"n": 6,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "gets lager",
+"forced_rate": 1.0,
+"note": "Judge gets lager is bribery, funny but oddly worded.",
+"reads": 1
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "what you get",
+"forced_rate": 1.0,
+"note": "Generic threat filler, anyone could say it.",
+"reads": 1
+},
+{
+"n": 8,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "and no drama",
+"forced_rate": 1.0,
+"note": "Rail pass admin brag fits; 'no drama' tacked on for rhyme.",
+"reads": 1
+}
+],
+"cf16f128ca6e662cde323e28dfa855fb7368c7a81e2aa4d791d41408d31edf77": [
+{
+"n": 1,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "The staples?",
+"forced_rate": 1.0,
+"note": "Clear 'my guy' motif; Naples mozzarella is petty and fits.",
+"reads": 1
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "so check the label",
+"forced_rate": 1.0,
+"note": "Label filler to rhyme 'able'; unclear what the guy supplies.",
+"reads": 1
+},
+{
+"n": 3,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "on the house, cards on the table",
+"forced_rate": 1.0,
+"note": "Idiom pile-up; cut-throat blade menace is fun but muddled.",
+"reads": 1
+},
+{
+"n": 4,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "Dead fatal",
+"forced_rate": 1.0,
+"note": "Boots in Bergen is meaningless; 'dead fatal' is rhyme filler.",
+"reads": 1
+},
+{
+"n": 5,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "flat calm",
+"forced_rate": 1.0,
+"note": "Ferry to Thai mainland is a geography jumble, no point.",
+"reads": 1
+},
+{
+"n": 6,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "dead cheeky",
+"forced_rate": 1.0,
+"note": "Cheap fags is a fine petty proof, but 'dead cheeky' pads.",
+"reads": 1
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Forty a day sorted by my guy: flat British admin, lands.",
+"reads": 1
+},
+{
+"n": 8,
+"first_listen": 0.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "a quick sneaky",
+"forced_rate": 1.0,
+"note": "Guy's guy is a good escalation; ending dangles on 'sneaky'.",
+"reads": 1
+}
+],
+"baea74beacda961f79a6e28cb2ee1856bde490f0875a77090c4bb88d94eb9903": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "and my bar tab's on credit",
+"forced_rate": 1.0,
+"note": "Laxey reference obscure; credit tab is generic, no petty proof.",
+"reads": 1
+},
+{
+"n": 2,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Big boast stated flatly, but crate of elephant is just absurd.",
+"reads": 1
+},
+{
+"n": 3,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "it's medical",
+"forced_rate": 1.0,
+"note": "Deadpan admin excuse lands; customs logic fits the voice.",
+"reads": 1
+},
+{
+"n": 4,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "Chemical",
+"forced_rate": 1.0,
+"note": "One-word answer is rhyme-driven; Gardaí evidence idea unclear.",
+"reads": 1
+},
+{
+"n": 5,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "mate, just a passenger",
+"forced_rate": 1.0,
+"note": "Blanket connection to the crate is muddy; filler tag mate.",
+"reads": 1
+},
+{
+"n": 6,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "A canister",
+"forced_rate": 1.0,
+"note": "Guards answered with canister makes no sense; rhyme-led word salad.",
+"reads": 1
+},
+{
+"n": 7,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "Lying low in Canada",
+"forced_rate": 1.0,
+"note": "Know-a-guy claim is on card but generic, no petty detail.",
+"reads": 1
+},
+{
+"n": 8,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "the whole marathon",
+"forced_rate": 1.0,
+"note": "Tape van to van marathon is unplaceable filler for the rhyme.",
+"reads": 1
+}
+],
+"dff17b24dadb43fce686ff81c359c7b13790a9945912e73b1442e72b2da05b50": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 2.0,
+"clever": 0.0,
+"forced": "I've got a guy",
+"forced_rate": 1.0,
+"note": "Knows-a-guy fits, but Whitsundays tinnie is just a place-drop.",
+"reads": 1
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "where you do or die",
+"forced_rate": 1.0,
+"note": "K'gari ute is a list item; 'do or die' is filler.",
+"reads": 1
+},
+{
+"n": 3,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "the top fried rice",
+"forced_rate": 1.0,
+"note": "Fried rice has no boast or menace; odd word order for rhyme.",
+"reads": 1
+},
+{
+"n": 4,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "were in the crossfire",
+"forced_rate": 1.0,
+"note": "Sharks in crossfire makes no sense; muddled image.",
+"reads": 1
+},
+{
+"n": 5,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "You wouldn't believe",
+"forced_rate": 1.0,
+"note": "Vague filler; big boats and jets claim nothing specific.",
+"reads": 1
+},
+{
+"n": 6,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "So pigs can fly",
+"forced_rate": 1.0,
+"note": "Pigs-can-fly cliché; slight police 'pigs' nod, but weak.",
+"reads": 1
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Flat untouchable boast, back by five; echoes Perth-by-ten.",
+"reads": 1
+},
+{
+"n": 8,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "Name it, my mate:",
+"forced_rate": 1.0,
+"note": "Generic boast; 'my mate' awkward, no petty proof.",
+"reads": 1
+}
+],
+"ca7f0ee42740bbe4ed5473c76010cc34a0879bdb74fa101a6aef6f6f02dcc2d4": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "own code",
+"forced_rate": 1.0,
+"note": "Vague opener; 'code' never pays off in the next bar.",
+"reads": 1
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "and up to Snowdon",
+"forced_rate": 1.0,
+"note": "Just a list of places; no joke, Snowdon tacked on.",
+"reads": 1
+},
+{
+"n": 3,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "the face is on the East Coast",
+"forced_rate": 1.0,
+"note": "Garbled syntax; unclear what the face is doing.",
+"reads": 1
+},
+{
+"n": 4,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "so I struck gold",
+"forced_rate": 1.0,
+"note": "Lone wolf cliché; 'struck gold' is filler for the rhyme.",
+"reads": 1
+},
+{
+"n": 5,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "Big man top dog",
+"forced_rate": 1.0,
+"note": "Generic rap boast; no petty proof, anyone could say it.",
+"reads": 1
+},
+{
+"n": 6,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "Don't need one 'cause I'm big boss the tough guy",
+"forced_rate": 1.0,
+"note": "'One' has no referent; clumsy word order, pure bragging.",
+"reads": 1
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Boxing image is clear; 'no ref, no bell' is decent menace.",
+"reads": 1
+},
+{
+"n": 8,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "and the main lifeline",
+"forced_rate": 1.0,
+"note": "Saviour self-image and tacked-on ending; off the notorious-narrator voice.",
+"reads": 1
+}
+],
+"b6ba1ba6035b91a129630c4066beab64e38762c22d84604d0a2eb1f98b58143c": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "Sure",
+"forced_rate": 1.0,
+"note": "Spanish caught him sets up 'Seedy' pun, but opener is soft.",
+"reads": 1
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "Seedy? Seedy?",
+"forced_rate": 1.0,
+"note": "Seedy/CD or 'see me' pun is murky and repeated.",
+"reads": 1
+},
+{
+"n": 3,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "Then my guy had the money",
+"forced_rate": 1.0,
+"note": "Plain statement; 'my guy' fits but nothing lands.",
+"reads": 1
+},
+{
+"n": 4,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "the deal's all sunny",
+"forced_rate": 1.0,
+"note": "'All sunny' is filler for rhyme; cash envelopes generic.",
+"reads": 1
+},
+{
+"n": 5,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "My guy made you pay",
+"forced_rate": 1.0,
+"note": "Unclear who pays or why; vague, repeats 'my guy'.",
+"reads": 1
+},
+{
+"n": 6,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "front page",
+"forced_rate": 1.0,
+"note": "Boomtown wanted poster is on-card, though 'front page' pads.",
+"reads": 1
+},
+{
+"n": 7,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "Never set foot in the dock Old Bailey",
+"forced_rate": 1.0,
+"note": "Untouchable claim clear, but odd word order for the rhyme.",
+"reads": 1
+},
+{
+"n": 8,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "saving face",
+"forced_rate": 1.0,
+"note": "Beer garden saving face is vague and rhyme-driven.",
+"reads": 1
+},
+{
+"n": 9,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "It's your ten days' grace",
+"forced_rate": 1.0,
+"note": "Admin-flavoured grace period is right register, but loosely joined.",
+"reads": 1
+},
+{
+"n": 10,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "it's fair game",
+"forced_rate": 1.0,
+"note": "Conkers as petty menace is promising, undercut by filler tag.",
+"reads": 1
+},
+{
+"n": 11,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 0.0,
+"clever": 0.0,
+"forced": "Crown on, top hat",
+"forced_rate": 1.0,
+"note": "Clear image but boastful and shouty, not deadpan; list-like.",
+"reads": 1
+},
+{
+"n": 12,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "no names",
+"forced_rate": 1.0,
+"note": "Knows a guy, no names: on-card and clean, if familiar.",
+"reads": 1
+}
+],
+"39b50a0cf7dc827f41777415958b832df6bd5b3bdc7815e21acd3d0248d0617f": {
+"consistent": 1,
+"contradictions": [
+{
+"a": 25,
+"b": 29,
+"why": "Nobody knew him and he was broke, versus now famous; reads as a turn though."
+},
+{
+"a": 71,
+"b": 16,
+"why": "Lone wolf and solo, yet constantly relies on his guy and his crew."
+},
+{
+"a": 72,
+"b": 58,
+"why": "Lone wolf proud, yet threatens with 'my crew' to play conkers."
+},
+{
+"a": 74,
+"b": 76,
+"why": "Needs no one, yet claims to be everyone's lifeline; milder, but also 'main guy' dependence."
+},
+{
+"a": 28,
+"b": 55,
+"why": "Walked free after cops came, versus never set foot in the dock; fine, but 31 says police list."
+},
+{
+"a": 26,
+"b": 33,
+"why": "Broke, kipped on floor then; bar tab on credit conflicts with cash-rich claims elsewhere."
+},
+{
+"a": 31,
+"b": 55,
+"why": "Police have a list naming him top thief, yet claims never in the dock; mild."
+},
+{
+"a": 49,
+"b": 28,
+"why": "Caught by Spanish police versus walked out scot free; unclear timeline, not marked as the same event."
+}
+],
+"off_card": [
+{
+"bar": 18,
+"why": "Honest, good-karma behaviour; a mild moral, against notorious persona."
+},
+{
+"bar": 25,
+"why": "Self-pity-ish ordered backstory: broke, kipped on floor, then now."
+},
+{
+"bar": 26,
+"why": "Chronological rise narrative: broke, then skip to end, then nowadays."
+},
+{
+"bar": 27,
+"why": "Narrates sequence of events, a list in order."
+},
+{
+"bar": 69,
+"why": "Announces a personal code; a moral, and explains himself."
+},
+{
+"bar": 72,
+"why": "Explains himself and states his own identity, never explains."
+},
+{
+"bar": 74,
+"why": "Loud, explanatory self-description rather than flat understatement."
+},
+{
+"bar": 76,
+"why": "Closing moral-like summary of his role."
+},
+{
+"bar": 65,
+"why": "'You wouldn't believe' is explaining and not flat."
+},
+{
+"bar": 35,
+"why": "Instructional smuggling detail, not cartoon menace."
+},
+{
+"bar": 40,
+"why": "Instructional-sounding tape tip."
+}
+]
+},
+"032da97c0cdb53a112fb414489d7b39fb5acef80b71f227199bda507fa23fdfa": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.5,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Torch reads as a flashlight; the fixer idea needs a beat to land.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 2.0,
+"rewind": 1.5,
+"in_character": 2.0,
+"clever": 2.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Better Call Saul swap works instantly, and call doubles as a bar call.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 1.5,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Dead on arrival is a decent threat, but it's a car joke, not a notoriety proof.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 1.5,
+"rewind": 0.0,
+"in_character": 1.5,
+"clever": 0.5,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Clear doorman menace, but 'put through the floor' is a stock phrase.",
+"reads": 2
+},
+{
+"n": 5,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.5,
+"forced": "cash for Wales",
+"forced_rate": 1.0,
+"note": "Scales as drug weights is a nice hit, but it's a flat list of places.",
+"reads": 2
+},
+{
+"n": 6,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "and then you buy",
+"forced_rate": 1.0,
+"note": "Prost is a good foreign touch, but who buys whom is unclear.",
+"reads": 2
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.5,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Hanoi bikes as getaway cars: clear, specific, and a proof of reach.",
+"reads": 2
+},
+{
+"n": 8,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Flat, on-brief people claim; calls back to the torch and doorman.",
+"reads": 2
+}
+],
+"18a84ba7a4e1521721e020bdf9685443c2498ad1166a54c3d0463247ad049157": [
+{
+"n": 1,
+"first_listen": 1.5,
+"rewind": 1.0,
+"in_character": 1.5,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Shopping-list rhyme; 'staples' pun on staple food lands half-heard.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 0.5,
+"rewind": 0.5,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "so check the label",
+"forced_rate": 1.0,
+"note": "'Check the label' is vague and the filler tag is padding.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 2.0,
+"rewind": 1.5,
+"in_character": 2.0,
+"clever": 1.5,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Cut-throat razor doubles as menace; 'cards on the table' is a sharp turn.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 0.5,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "Dead fatal",
+"forced_rate": 0.5,
+"note": "Boots in Bergen is a non-sequitur; 'dead fatal' is empty slang.",
+"reads": 2
+},
+{
+"n": 5,
+"first_listen": 1.0,
+"rewind": 0.5,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Pure travel location filler; no proof, no joke.",
+"reads": 2
+},
+{
+"n": 6,
+"first_listen": 2.0,
+"rewind": 0.5,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "dead cheeky",
+"forced_rate": 0.5,
+"note": "Cheap fags, cheeky price; 'dead cheeky' is rhyme-driven padding.",
+"reads": 2
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Forty a day hints at addiction while the guy sorts supply.",
+"reads": 2
+},
+{
+"n": 8,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "for a quick sneaky",
+"forced_rate": 1.0,
+"note": "Guy's guy escalation is funny but 'quick sneaky' is missing its noun.",
+"reads": 2
+}
+],
+"bc5008d86c7fa268b1b4e7c303972f9577fff5b46fce4ec9fea026cea8128c9a": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.5,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "'Tinnie' double-meaning (small boat and can of beer) is a nice Aussie touch.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 1.5,
+"rewind": 0.5,
+"in_character": 1.5,
+"clever": 0.5,
+"forced": "",
+"forced_rate": 0.0,
+"note": "K'gari needs a local to place; 'do or die' is a stock idiom.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 0.5,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "the top fried rice",
+"forced_rate": 1.0,
+"note": "Place list with no payoff; 'the top fried rice' is unnatural phrasing.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Sharks in the crossfire is a sly, cartoon-menace image with a gun-crossfire hint.",
+"reads": 2
+},
+{
+"n": 5,
+"first_listen": 0.5,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "You wouldn't believe",
+"forced_rate": 0.5,
+"note": "Vague non-sequitur; big boats and jets don't clearly connect to anything.",
+"reads": 2
+},
+{
+"n": 6,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "So pigs can fly",
+"forced_rate": 1.0,
+"note": "'When pigs fly' idiom lands; 'so pigs can fly' is bent to rhyme.",
+"reads": 2
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.5,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Clear, casual boast of reach and speed, but flat with no bite.",
+"reads": 2
+},
+{
+"n": 8,
+"first_listen": 2.0,
+"rewind": 0.5,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "'One call and it's mine' delivers the untouchable, unexplained menace well.",
+"reads": 2
+}
+],
+"6e04d99448b102003dd01ea02f0216e8a465e0a4f22648e9b9a0908702069d0c": [
+{
+"n": 1,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 2.0,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Clear flat past-tense report; setup only, no joke yet.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "Seedy? Seedy?",
+"forced_rate": 0.5,
+"note": "Deadpan mock-innocence works, but the repeated 'Seedy? Seedy?' is padding.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Plain setup; 'my guy' carries the network idea without adding proof.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 1.0,
+"rewind": 0.5,
+"in_character": 1.0,
+"clever": 0.5,
+"forced": "the deal's all sunny",
+"forced_rate": 1.0,
+"note": "Cash in envelopes is good bribery proof; 'all sunny' is rhyme padding.",
+"reads": 2
+},
+{
+"n": 5,
+"first_listen": 2.0,
+"rewind": 0.5,
+"in_character": 2.0,
+"clever": 0.5,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Menace is clear but bare; no specific proof or image.",
+"reads": 2
+},
+{
+"n": 6,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "front page",
+"forced_rate": 0.5,
+"note": "Boomtown wanted-poster callback lands; 'front page' is a weak tack-on.",
+"reads": 2
+},
+{
+"n": 7,
+"first_listen": 1.0,
+"rewind": 2.0,
+"in_character": 2.0,
+"clever": 2.0,
+"forced": "in the dock Old Bailey",
+"forced_rate": 0.5,
+"note": "Dock as court dock and harbour pun lands; 'Old Bailey' is clipped awkwardly.",
+"reads": 2
+},
+{
+"n": 8,
+"first_listen": 2.0,
+"rewind": 0.5,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "So",
+"forced_rate": 1.0,
+"note": "Pub-garden face-saving is plain; 'So' is a throat-clearing filler.",
+"reads": 2
+},
+{
+"n": 9,
+"first_listen": 1.0,
+"rewind": 1.5,
+"in_character": 2.0,
+"clever": 1.5,
+"forced": "It's your",
+"forced_rate": 0.5,
+"note": "'Ten days' grace' is a real debt term; the threat-to-reversal turn is sharp.",
+"reads": 2
+},
+{
+"n": 10,
+"first_listen": 1.0,
+"rewind": 2.0,
+"in_character": 2.0,
+"clever": 2.0,
+"forced": "it's fair game",
+"forced_rate": 0.5,
+"note": "Conkers as a childish threat is the best turn; 'it's fair game' is padding.",
+"reads": 2
+},
+{
+"n": 11,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Crown and top hat boast is clear; the king-of-Bristol image is cliché.",
+"reads": 2
+},
+{
+"n": 12,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Callback to 'I know a guy'; 'no names' is a neat deadpan close.",
+"reads": 2
+}
+],
+"5be51300db6f1ca1d81bfc8fb3851172eabe9361df34a267a275db25b518c58b": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.5,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Laxey is an obscure Manx place; the tab on credit undercuts the boast.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Clean, flat, huge boast. The elephant does the arithmetic.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.5,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Customs deferring to 'medical' is deadpan bureaucracy. Lands cleanly.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.5,
+"clever": 1.0,
+"forced": "Chemical",
+"forced_rate": 0.5,
+"note": "Gardaí question and one-word answer is dry, but 'Chemical' needs a beat.",
+"reads": 2
+},
+{
+"n": 5,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Blanket-smuggler claiming innocence; 'mate' sells the flat voice.",
+"reads": 2
+},
+{
+"n": 6,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.5,
+"clever": 0.5,
+"forced": "",
+"forced_rate": 0.0,
+"note": "'Canister' is vague: tear gas, pepper spray, or a gas bottle? Repeats bar 4's device.",
+"reads": 2
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 0.5,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Flat answer to 'where's the guy' lands fast; Canada as the dodge is funny.",
+"reads": 2
+},
+{
+"n": 8,
+"first_listen": 0.5,
+"rewind": 0.5,
+"in_character": 1.0,
+"clever": 0.5,
+"forced": "the whole marathon",
+"forced_rate": 0.5,
+"note": "Tape and marathon don't connect; 'the whole marathon' is padding for the rhyme.",
+"reads": 2
+}
+],
+"62bb2f216ab13ea7c1d671acbe59b5d0ba98d6dcad3ae2c19adba5e371f05764": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 0.5,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Generic gangster claim; 'my own code' has no proof or menace behind it.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Pure list of places, the reach claim with no petty proof attached.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "Solo now",
+"forced_rate": 0.5,
+"note": "'The face is on the East Coast' works as a wanted-poster callback, though clipped.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 1.0,
+"rewind": 0.5,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "and so",
+"forced_rate": 1.0,
+"note": "'And so' is a non-sequitur connector bolted on to land 'gold'.",
+"reads": 2
+},
+{
+"n": 5,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "in the nightlife",
+"forced_rate": 0.5,
+"note": "Stock nightlife boast; anyone could say it, no specific proof.",
+"reads": 2
+},
+{
+"n": 6,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "big boss the tough guy",
+"forced_rate": 1.0,
+"note": "'Big boss the tough guy' is ungrammatical filler to fit the beat.",
+"reads": 2
+},
+{
+"n": 7,
+"first_listen": 1.5,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Boxing idiom works: no ref, no bell, no mercy. Cornerman's call fits the menace.",
+"reads": 2
+},
+{
+"n": 8,
+"first_listen": 1.0,
+"rewind": 0.5,
+"in_character": 1.5,
+"clever": 0.5,
+"forced": "and the main lifeline",
+"forced_rate": 1.0,
+"note": "Fixer-as-lifeline is a good image, but 'and the main lifeline' is padded.",
+"reads": 2
+}
+],
+"ce06e3c5347c9b3028d0a3bf3b076ee7241df5d2109afe999bd6bb1335422227": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.5,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Dutch greeting lands, but 'so honest' is a flat stereotype with no bite yet.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 2.0,
+"rewind": 1.5,
+"in_character": 2.0,
+"clever": 1.5,
+"forced": "rock solid",
+"forced_rate": 1.0,
+"note": "Giant gnome as national symbol is the right petty proof. 'Rock solid' is filler.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 1.0,
+"rewind": 2.0,
+"in_character": 2.0,
+"clever": 1.5,
+"forced": "Cross my Noord",
+"forced_rate": 0.5,
+"note": "'Cross my Noord' twists 'cross my heart' into a pun; the theft lands on a second listen.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "for profit",
+"forced_rate": 1.0,
+"note": "Deadpan sales pitch works, but 'for profit' is redundant after 'flog'.",
+"reads": 2
+}
+],
+"f29fff2ae210d23af9c2488752f00ea97816ae91d2788806174ca792fd0700ab": [
+{
+"n": 1,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Clear toast, but it's a generic opener with no notoriety yet.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 2.0,
+"in_character": 1.5,
+"clever": 1.5,
+"forced": "I continue",
+"forced_rate": 1.0,
+"note": "'On the rocks' hits drink and stranding; 'I continue' is stiff, not how he talks.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.5,
+"clever": 0.5,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Pure place-name list; Bern is landlocked, so the cruise claim is absurd, not sly.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.5,
+"clever": 0.0,
+"forced": "a good few",
+"forced_rate": 1.0,
+"note": "Noun dropped: 'a good few' of what? Reads as unfinished, though 'people' is inferable.",
+"reads": 2
+}
+],
+"e2b15341f70a3807951e613744f18c0509cb51a42a0b61d0e3994581426bab1f": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 0.5,
+"in_character": 1.5,
+"clever": 0.5,
+"forced": "is larger",
+"forced_rate": 1.0,
+"note": "Vague boast; 'the rest is larger' is filler, not a clear claim.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 2.0,
+"in_character": 2.0,
+"clever": 2.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Honesty box paid in karma: petty proof, theft as a joke, unexplained.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Clear brand flex, but any rapper could say it. No twist.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 2.0,
+"rewind": 0.5,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "keeps",
+"forced_rate": 0.5,
+"note": "Clear, petty-grand proof of a people network. 'Keeps' is a little stiff.",
+"reads": 2
+},
+{
+"n": 5,
+"first_listen": 1.5,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.5,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Stab vest beside Barbour is good menace-as-gent, but a bare list.",
+"reads": 2
+},
+{
+"n": 6,
+"first_listen": 1.0,
+"rewind": 2.0,
+"in_character": 2.0,
+"clever": 2.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Clean hands, judge bribed with lager: petty corruption, lands on a second listen.",
+"reads": 2
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.5,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Generic threat with no specific proof. Anyone could say it.",
+"reads": 2
+},
+{
+"n": 8,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "and no drama",
+"forced_rate": 1.0,
+"note": "Grazie and the rail pass work; 'no drama' is a nice border nod.",
+"reads": 2
+}
+],
+"a7416bd8b7d7569eb4113e03744f5a4f0c3735fc12f2a1a44028f8721fd32522": [
+{
+"n": 1,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Clear, but a generic nostalgia opener with no hook or proof.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "we",
+"forced_rate": 1.0,
+"note": "Trailing 'we' dangles unfinished; the sentence never lands.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 2.0,
+"rewind": 0.5,
+"in_character": 1.0,
+"clever": 0.5,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Clear stage direction, but it's filler with no content.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 2.0,
+"rewind": 0.5,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Flat, past-tense report of an illicit win; 'scot free' is a stock idiom.",
+"reads": 2
+},
+{
+"n": 5,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.5,
+"forced": "goes round",
+"forced_rate": 1.0,
+"note": "'My face goes round' is vague; the athletes link is unclear.",
+"reads": 2
+},
+{
+"n": 6,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Sea view proof is decent, but 'living the dream' is a flat cliché.",
+"reads": 2
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Police list with his face on it is a strong, deadpan notoriety beat.",
+"reads": 2
+},
+{
+"n": 8,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.5,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "'Ring my main guy's guy' is a sharp network joke; 'discreet' lands on rewind.",
+"reads": 2
+}
+]
+}

@@ -57,3 +57,21 @@ Edit theme_words.txt to steer `families` toward the vocabulary you want (categor
 - `python toolkit/flow_par.py BAR "text" | --selftest [ORIG] | --build ORIG`: each bar no worse than the ORIGINAL'S SAME BAR (stress run, hard joins, closed-vowel run, mid-bar restart; numbers only in benchmark/flow_par.json). HARD in slotcheck. Joe's flow complaints live in tests/flow_flagged.txt and must all fail.
 - `python toolkit/naive_writer.py`: proves the gates are locked in. Swaps each flagged bar into tests/naive_carrier.md (frozen, NOT approved) and asserts slotcheck, `ww gate`, songcheck, the ratchet and draft_all.take all reject it, and that a switched-off gate prints GATE OFF. Run by calibrate.py.
 - `python toolkit/swagger.py FILE`: BOAST vs SHRUG (15 Oct 2026, after Joe: "reads like a diary not a rap song"). Song level: hook STAMPS (bars with a greeting, local word or place; the original 9/16) and verse SWAGGER (bars with an illicit/menace field, vice, a line at 'you', a warning, or a first-person superlative claim; the original 25/60). `--calibrate ORIGINAL_TXT` (counts only) asserts the original passes; `--negatives` asserts v5, v6 and the three 14 Oct premise hooks fail. A lexicon proxy: it says whether the song boasts, not whether the boast is good. Wired into calibrate.py and songcheck.
+
+## Quality and sense reads on Claude (15 Oct 2026; uses model tokens, no API key)
+
+Not offline: these call the logged-in `claude` CLI headless (`claude -p`, effort low, one call per section, cached by text).
+
+```
+python -m ww.write.qualityread writing/song_know_a_guy.md            # per bar: first listen, rewind, forced, in character, clever; character consistency
+python -m ww.write.qualityread writing/song_know_a_guy.md --cached   # cached reads only, no calls
+python -m ww.write.qualityread --negatives                           # Joe's complaint bars vs the original's par (hit rate, false alarms, AUC)
+python -m ww.write.qualityread writing/song_know_a_guy.md --labels   # writes writing/quality_labels.md for Joe's marks
+python -m ww.write.qualityread --agree                               # Joe's marks vs Claude's, per axis
+python -m ww.calib.quality_par                                       # the original's quality par (private, numbers only)
+python -m ww.calib.quality_par --sense                               # the sense gate's fail count on the original (positive control)
+python -m ww.write.sensecheck --calibrate                            # the sense gate's GOOD/BAD calibration
+```
+
+The quality marks are REPORT-ONLY (no axis separated Joe's rejected bars from the original's). The sense read is HARD per slot against
+the original's count (benchmark/sense_par_haiku.json). WW_QUALITY=0 / WW_SENSE=0 switch them off; WW_QUALITY_MODEL, WW_SENSE_MODEL pick the model.

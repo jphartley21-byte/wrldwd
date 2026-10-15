@@ -8,7 +8,7 @@ definition of done, the save hook (.claude/settings.json) and calibrate.py's nai
 Per section (a '== Slot' draft):
   ww/write/slotcheck.check, with the section's `#cash` lines: syllables (exact where the original was timed), end shape,
   the by-ear rhyme rules, stress before the rhyme, the per-bar flow par (toolkit/flow_par.py), weak runs, recount, the
-  retired-bar guard, names, suffix ends, narrator, cashed idioms, and the sense read when a model key exists.
+  retired-bar guard, names, suffix ends, narrator, cashed idioms, and the sense read (DeepSeek, else Claude via the CLI).
 On the whole file: toolkit/meaning_gate, phrase_audit and swagger, the character cap, and songcheck on a full song.
 Exit 0 only when every hard check passes. Notes are printed per section (fix them or list them to Joe). A gate that is
 switched off prints as "GATE OFF" at the top, never as a pass.
@@ -18,6 +18,7 @@ switched off prints as "GATE OFF" at the top, never as a pass.
 from __future__ import annotations
 
 import os
+import shutil
 import subprocess
 import sys
 
@@ -30,8 +31,8 @@ def gates_off() -> list[str]:
     off = []
     if os.environ.get("WW_SENSE", "1") == "0":
         off.append("sense read (WW_SENSE=0)")
-    elif not config.secret("DEEPSEEK_API_KEY"):
-        off.append("sense read (no DEEPSEEK_API_KEY: the model read cannot run)")
+    elif not config.secret("DEEPSEEK_API_KEY") and not shutil.which("claude") and not config.secret("ANTHROPIC_API_KEY"):
+        off.append("sense read (no DEEPSEEK_API_KEY, no ANTHROPIC_API_KEY and no `claude` CLI: the model read cannot run)")
     if os.environ.get("WW_RAPFIT_GATE", "1") == "0":
         off.append("stress-anchored rhyme rule (WW_RAPFIT_GATE=0)")
     if os.environ.get("WW_RECOUNT", "1") == "0":
@@ -81,9 +82,22 @@ def run(path: str) -> dict:
         out = _tool("songcheck", path)
         if "SONGCHECK: PASS" not in out:
             file_hard.append("songcheck: " + "; ".join(l.strip()[3:] for l in out.splitlines() if l.strip().startswith("XX"))[:400])
+    # QUALITY (15 Oct 2026, report-only): Claude's per-bar marks (first listen, rewind, clever, forced, in character) and the song's
+    # character read, from the cache; `python -m ww.write.qualityread FILE` fills it. No axis is hard: none separated Joe's rejected bars
+    # from the original's (benchmark/quality_par_<model>.json); an axis gates only once it agrees with Joe's marks (writing/quality_labels.md).
+    quality = {}
+    if os.environ.get("WW_QUALITY", "1") != "0":
+        try:
+            from . import qualityread
+            quality = qualityread.notes(qualityread.read_file(path, cached_only=True))
+            for s, lines in quality.items():
+                if s in secs:
+                    secs[s]["notes"] += lines
+        except Exception as e:  # noqa: BLE001 - report-only: never fails the gate
+            quality = {"_error": [str(e)[:80]]}
     n_hard = sum(len(v["hard"]) for v in secs.values()) + len(file_hard)
     return {"ok": n_hard == 0 and bool(secs), "off": gates_off(), "sections": secs, "file": file_hard, "hard": n_hard,
-            "notes": sum(len(v["notes"]) for v in secs.values())}
+            "notes": sum(len(v["notes"]) for v in secs.values()), "quality": quality}
 
 
 def report(r: dict, quiet: bool = False) -> str:
@@ -95,6 +109,11 @@ def report(r: dict, quiet: bool = False) -> str:
         if not quiet:
             L += [f"   ~ {n[:200]}" for n in v["notes"]]
     L += [f"FILE x {h}" for h in r["file"]]
+    q = r.get("quality", {})
+    if not quiet:
+        L += [f"SONG ~ {x}" for x in q.get("_song", [])]
+    if q.get("_unread"):
+        L.append(f"QUALITY not read for {q['_unread']}: run python -m ww.write.qualityread {'FILE'} (report-only)")
     if not r["sections"]:
         L.append("no '== Slot' sections found: nothing was checked")
     L.append(f"GATE: {'PASS' if r['ok'] else 'FAIL'} ({r['hard']} hard issues, {r['notes']} notes to fix or list to Joe)"

@@ -1,0 +1,637 @@
+{
+ "what": "the original's quality marks from ww/write/qualityread.py (Claude, same prompt and card as ours); numbers only",
+ "model": "haiku",
+ "prompt": "q1",
+ "runs": 2,
+ "slots": {
+  "Hook 1-4": {
+   "bars": [
+    {
+     "first_listen": 2.0,
+     "rewind": 0.0,
+     "in_character": 1.0,
+     "clever": 0.0,
+     "forced": 0.5
+    },
+    {
+     "first_listen": 1.5,
+     "rewind": 1.0,
+     "in_character": 1.5,
+     "clever": 0.5,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 2.0,
+     "rewind": 1.0,
+     "in_character": 2.0,
+     "clever": 1.0,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 2.0,
+     "rewind": 1.0,
+     "in_character": 2.0,
+     "clever": 1.5,
+     "forced": 1.0
+    }
+   ],
+   "first_listen": 1.88,
+   "rewind": 0.75,
+   "in_character": 1.62,
+   "clever": 0.75,
+   "forced": 0.38
+  },
+  "Hook 5-8": {
+   "bars": [
+    {
+     "first_listen": 0.5,
+     "rewind": 0.0,
+     "in_character": 1.0,
+     "clever": 0.0,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 1.0,
+     "rewind": 0.0,
+     "in_character": 1.0,
+     "clever": 0.0,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 0.5,
+     "rewind": 0.5,
+     "in_character": 0.5,
+     "clever": 0.5,
+     "forced": 0.5
+    },
+    {
+     "first_listen": 0.5,
+     "rewind": 1.0,
+     "in_character": 1.0,
+     "clever": 1.0,
+     "forced": 0.0
+    }
+   ],
+   "first_listen": 0.62,
+   "rewind": 0.38,
+   "in_character": 0.88,
+   "clever": 0.38,
+   "forced": 0.12
+  },
+  "Hook 9-16": {
+   "bars": [
+    {
+     "first_listen": 2.0,
+     "rewind": 0.0,
+     "in_character": 1.0,
+     "clever": 0.0,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 1.0,
+     "rewind": 1.0,
+     "in_character": 1.0,
+     "clever": 1.0,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 2.0,
+     "rewind": 1.0,
+     "in_character": 1.0,
+     "clever": 0.0,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 1.0,
+     "rewind": 1.5,
+     "in_character": 1.5,
+     "clever": 1.5,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 1.0,
+     "rewind": 0.5,
+     "in_character": 1.0,
+     "clever": 0.5,
+     "forced": 0.5
+    },
+    {
+     "first_listen": 1.0,
+     "rewind": 0.0,
+     "in_character": 1.0,
+     "clever": 0.0,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 1.0,
+     "rewind": 0.5,
+     "in_character": 1.0,
+     "clever": 0.5,
+     "forced": 1.0
+    },
+    {
+     "first_listen": 2.0,
+     "rewind": 0.0,
+     "in_character": 1.0,
+     "clever": 0.0,
+     "forced": 0.0
+    }
+   ],
+   "first_listen": 1.38,
+   "rewind": 0.56,
+   "in_character": 1.06,
+   "clever": 0.44,
+   "forced": 0.19
+  },
+  "V1 1-8": {
+   "bars": [
+    {
+     "first_listen": 2.0,
+     "rewind": 1.0,
+     "in_character": 1.5,
+     "clever": 1.0,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 2.0,
+     "rewind": 0.5,
+     "in_character": 1.0,
+     "clever": 0.0,
+     "forced": 1.0
+    },
+    {
+     "first_listen": 1.0,
+     "rewind": 0.0,
+     "in_character": 1.0,
+     "clever": 0.0,
+     "forced": 1.0
+    },
+    {
+     "first_listen": 0.5,
+     "rewind": 0.5,
+     "in_character": 0.5,
+     "clever": 0.5,
+     "forced": 1.0
+    },
+    {
+     "first_listen": 2.0,
+     "rewind": 0.5,
+     "in_character": 1.0,
+     "clever": 0.0,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 1.5,
+     "rewind": 1.0,
+     "in_character": 1.5,
+     "clever": 1.5,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 2.0,
+     "rewind": 0.0,
+     "in_character": 1.0,
+     "clever": 0.5,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 1.0,
+     "rewind": 1.0,
+     "in_character": 1.0,
+     "clever": 0.5,
+     "forced": 1.0
+    }
+   ],
+   "first_listen": 1.5,
+   "rewind": 0.56,
+   "in_character": 1.06,
+   "clever": 0.5,
+   "forced": 0.5
+  },
+  "V1 9-16": {
+   "bars": [
+    {
+     "first_listen": 1.0,
+     "rewind": 0.5,
+     "in_character": 1.0,
+     "clever": 0.5,
+     "forced": 1.0
+    },
+    {
+     "first_listen": 1.0,
+     "rewind": 0.0,
+     "in_character": 1.0,
+     "clever": 0.0,
+     "forced": 1.0
+    },
+    {
+     "first_listen": 2.0,
+     "rewind": 0.0,
+     "in_character": 1.0,
+     "clever": 0.0,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 1.0,
+     "rewind": 1.0,
+     "in_character": 2.0,
+     "clever": 1.0,
+     "forced": 1.0
+    },
+    {
+     "first_listen": 2.0,
+     "rewind": 1.0,
+     "in_character": 2.0,
+     "clever": 1.0,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 2.0,
+     "rewind": 0.0,
+     "in_character": 1.0,
+     "clever": 0.0,
+     "forced": 0.5
+    },
+    {
+     "first_listen": 2.0,
+     "rewind": 0.5,
+     "in_character": 2.0,
+     "clever": 1.0,
+     "forced": 1.0
+    },
+    {
+     "first_listen": 0.0,
+     "rewind": 0.0,
+     "in_character": 0.5,
+     "clever": 0.0,
+     "forced": 1.0
+    }
+   ],
+   "first_listen": 1.38,
+   "rewind": 0.38,
+   "in_character": 1.31,
+   "clever": 0.44,
+   "forced": 0.69
+  },
+  "V1 17-24": {
+   "bars": [
+    {
+     "first_listen": 2.0,
+     "rewind": 0.0,
+     "in_character": 1.5,
+     "clever": 0.0,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 1.0,
+     "rewind": 1.0,
+     "in_character": 1.0,
+     "clever": 0.5,
+     "forced": 0.5
+    },
+    {
+     "first_listen": 0.5,
+     "rewind": 0.5,
+     "in_character": 1.0,
+     "clever": 0.0,
+     "forced": 0.5
+    },
+    {
+     "first_listen": 2.0,
+     "rewind": 1.0,
+     "in_character": 2.0,
+     "clever": 1.0,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 1.0,
+     "rewind": 1.0,
+     "in_character": 2.0,
+     "clever": 1.0,
+     "forced": 1.0
+    },
+    {
+     "first_listen": 1.0,
+     "rewind": 2.0,
+     "in_character": 2.0,
+     "clever": 2.0,
+     "forced": 0.5
+    },
+    {
+     "first_listen": 2.0,
+     "rewind": 1.5,
+     "in_character": 2.0,
+     "clever": 1.0,
+     "forced": 1.0
+    },
+    {
+     "first_listen": 2.0,
+     "rewind": 2.0,
+     "in_character": 2.0,
+     "clever": 2.0,
+     "forced": 0.0
+    }
+   ],
+   "first_listen": 1.44,
+   "rewind": 1.12,
+   "in_character": 1.69,
+   "clever": 0.94,
+   "forced": 0.44
+  },
+  "V1 25-32": {
+   "bars": [
+    {
+     "first_listen": 0.0,
+     "rewind": 0.0,
+     "in_character": 0.5,
+     "clever": 0.0,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 0.5,
+     "rewind": 0.5,
+     "in_character": 1.0,
+     "clever": 0.5,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 1.0,
+     "rewind": 0.0,
+     "in_character": 0.5,
+     "clever": 0.5,
+     "forced": 0.5
+    },
+    {
+     "first_listen": 1.0,
+     "rewind": 0.5,
+     "in_character": 0.5,
+     "clever": 0.0,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 0.5,
+     "rewind": 0.5,
+     "in_character": 1.0,
+     "clever": 0.5,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 0.5,
+     "rewind": 0.0,
+     "in_character": 0.5,
+     "clever": 0.0,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 1.0,
+     "rewind": 0.5,
+     "in_character": 1.0,
+     "clever": 0.5,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 0.5,
+     "rewind": 0.5,
+     "in_character": 1.0,
+     "clever": 0.5,
+     "forced": 0.0
+    }
+   ],
+   "first_listen": 0.62,
+   "rewind": 0.31,
+   "in_character": 0.75,
+   "clever": 0.31,
+   "forced": 0.06
+  },
+  "V1 33-44": {
+   "bars": [
+    {
+     "first_listen": 2.0,
+     "rewind": 0.0,
+     "in_character": 2.0,
+     "clever": 0.0,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 2.0,
+     "rewind": 1.0,
+     "in_character": 2.0,
+     "clever": 1.0,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 1.5,
+     "rewind": 2.0,
+     "in_character": 2.0,
+     "clever": 2.0,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 1.0,
+     "rewind": 1.0,
+     "in_character": 1.5,
+     "clever": 1.0,
+     "forced": 1.0
+    },
+    {
+     "first_listen": 2.0,
+     "rewind": 0.5,
+     "in_character": 1.0,
+     "clever": 0.0,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 0.5,
+     "rewind": 1.0,
+     "in_character": 1.0,
+     "clever": 0.0,
+     "forced": 1.0
+    },
+    {
+     "first_listen": 2.0,
+     "rewind": 1.0,
+     "in_character": 2.0,
+     "clever": 1.0,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 2.0,
+     "rewind": 0.5,
+     "in_character": 2.0,
+     "clever": 1.0,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 1.0,
+     "rewind": 0.5,
+     "in_character": 1.5,
+     "clever": 0.5,
+     "forced": 1.0
+    },
+    {
+     "first_listen": 2.0,
+     "rewind": 0.0,
+     "in_character": 1.0,
+     "clever": 0.0,
+     "forced": 1.0
+    },
+    {
+     "first_listen": 2.0,
+     "rewind": 0.5,
+     "in_character": 2.0,
+     "clever": 0.5,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 1.0,
+     "rewind": 1.5,
+     "in_character": 2.0,
+     "clever": 2.0,
+     "forced": 0.0
+    }
+   ],
+   "first_listen": 1.58,
+   "rewind": 0.79,
+   "in_character": 1.67,
+   "clever": 0.75,
+   "forced": 0.33
+  },
+  "V2 1-8": {
+   "bars": [
+    {
+     "first_listen": 0.0,
+     "rewind": 0.0,
+     "in_character": 1.0,
+     "clever": 0.0,
+     "forced": 1.0
+    },
+    {
+     "first_listen": 1.5,
+     "rewind": 0.0,
+     "in_character": 1.0,
+     "clever": 0.0,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 1.5,
+     "rewind": 0.0,
+     "in_character": 1.0,
+     "clever": 0.5,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 2.0,
+     "rewind": 0.0,
+     "in_character": 1.0,
+     "clever": 0.0,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 1.0,
+     "rewind": 1.0,
+     "in_character": 2.0,
+     "clever": 1.0,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 2.0,
+     "rewind": 1.0,
+     "in_character": 2.0,
+     "clever": 1.0,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 1.0,
+     "rewind": 0.5,
+     "in_character": 1.0,
+     "clever": 0.5,
+     "forced": 1.0
+    },
+    {
+     "first_listen": 1.0,
+     "rewind": 1.5,
+     "in_character": 1.0,
+     "clever": 1.5,
+     "forced": 1.0
+    }
+   ],
+   "first_listen": 1.25,
+   "rewind": 0.5,
+   "in_character": 1.25,
+   "clever": 0.56,
+   "forced": 0.38
+  },
+  "V2 9-16": {
+   "bars": [
+    {
+     "first_listen": 2.0,
+     "rewind": 0.0,
+     "in_character": 1.5,
+     "clever": 0.0,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 2.0,
+     "rewind": 0.0,
+     "in_character": 1.0,
+     "clever": 0.0,
+     "forced": 1.0
+    },
+    {
+     "first_listen": 2.0,
+     "rewind": 1.0,
+     "in_character": 2.0,
+     "clever": 1.0,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 0.5,
+     "rewind": 1.0,
+     "in_character": 1.5,
+     "clever": 1.0,
+     "forced": 1.0
+    },
+    {
+     "first_listen": 1.0,
+     "rewind": 2.0,
+     "in_character": 1.5,
+     "clever": 1.5,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 2.0,
+     "rewind": 0.0,
+     "in_character": 1.0,
+     "clever": 0.5,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 1.5,
+     "rewind": 1.0,
+     "in_character": 1.0,
+     "clever": 0.5,
+     "forced": 0.0
+    },
+    {
+     "first_listen": 1.5,
+     "rewind": 1.0,
+     "in_character": 1.0,
+     "clever": 1.0,
+     "forced": 0.0
+    }
+   ],
+   "first_listen": 1.56,
+   "rewind": 0.75,
+   "in_character": 1.31,
+   "clever": 0.69,
+   "forced": 0.25
+  }
+ },
+ "song": {
+  "first_listen": 1.32,
+  "rewind": 0.61,
+  "in_character": 1.26,
+  "clever": 0.58,
+  "forced": 0.33
+ }
+}

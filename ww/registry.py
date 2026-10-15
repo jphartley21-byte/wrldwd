@@ -79,6 +79,16 @@ LEGACY = {
     "toolkit/flow_par fast_jam + cell + barline (16th-note stress jams; repeated cell + internal rhyme; end rhyme landed at the bar line)": ("joe_rule", "HARD in slotcheck via flow_par since 15 Oct 2026. barline: 35 of the original's 74 timed lines run past one musical bar; it lands a rhyme on its own end at the bar line in bars 13, 41, 42, 50, and ours must too. "
         "The original passes by construction. fast_jam (TOL 0) also catches 3 earlier flagged bars for the reason Joe gave for one of them ('stresses bunch "
         "up'); the cell rule applies only at the original's 5 repeated-cell bars (13, 24, 40, 48, 50). One labelled complaint; no independent good set"),
+    # 15 Oct 2026, Joe: "Do we have any gates that check quality? ... Scoring on cleverness?" and "I should be able to use claude too".
+    "ww/write/sensecheck.py on Claude (haiku via the claude CLI, no key)": ("joe_rule", "HARD per slot since 15 Oct 2026 (sense gate: Joe, 14 Oct). "
+        "Calibration (2 reads per block, a bar fails only if both fail it, pronoun rule): good bars failed 1/7, bad passed 1/7 on 3 of 3 fresh runs. "
+        "Positive control: per bar it fails 37/76 of the ORIGINAL's bars, so per bar it is a NOTE; HARD only when a slot fails more bars than the "
+        "original's same slot + 1 (benchmark/sense_par_haiku.json, counts only). Across-bars check: the original passes it in 10/10 slots, so it stays HARD"),
+    "ww/write/qualityread.py (first listen, rewind, forced, in character, clever; character consistency)": ("unvalidated", "REPORT-ONLY. "
+        "Joe's complaint bars vs the original's bars, AUC: haiku first_listen 0.46 rewind 0.49 clever 0.44 forced 0.56 (no separation; it scores "
+        "38/76 of the original <= 1 on first listen); sonnet first_listen 0.59 (nonsense set alone 0.85, 7/7 caught at 18% false alarm), rewind "
+        "0.42 clever 0.42 forced 0.52 (it calls 82% of the original's bars forced). Neither model hears what makes the original clever. An axis "
+        "may gate only at >= 75% agreement with Joe's marks on >= 20 bars (writing/quality_labels.md, --agree)"),
     "ww/judge/reader.py event/claim labels": ("unvalidated", "never run against the original; ww/judge/reader_validate.py is the test "
                                                              "(needs DEEPSEEK_API_KEY, absent in the 14 Oct cloud session)"),
 }

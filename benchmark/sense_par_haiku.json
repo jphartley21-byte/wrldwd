@@ -1,0 +1,135 @@
+{
+ "what": "bars of the original the sense gate fails, per slot (bar numbers within the slot; no text)",
+ "model": "haiku",
+ "reads": 2,
+ "slots": {
+  "Hook 1-4": {
+   "bars": 4,
+   "fail": 0,
+   "fail_bars": [],
+   "block_ok": true,
+   "coherent": 1,
+   "links_broken": 0
+  },
+  "Hook 5-8": {
+   "bars": 4,
+   "fail": 2,
+   "fail_bars": [
+    3,
+    4
+   ],
+   "block_ok": true,
+   "coherent": 1,
+   "links_broken": 1
+  },
+  "Hook 9-16": {
+   "bars": 8,
+   "fail": 7,
+   "fail_bars": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "block_ok": true,
+   "coherent": 1,
+   "links_broken": 2
+  },
+  "V1 1-8": {
+   "bars": 8,
+   "fail": 4,
+   "fail_bars": [
+    1,
+    2,
+    4,
+    8
+   ],
+   "block_ok": true,
+   "coherent": 2,
+   "links_broken": 0
+  },
+  "V1 9-16": {
+   "bars": 8,
+   "fail": 4,
+   "fail_bars": [
+    1,
+    2,
+    4,
+    8
+   ],
+   "block_ok": true,
+   "coherent": 1,
+   "links_broken": 1
+  },
+  "V1 17-24": {
+   "bars": 8,
+   "fail": 4,
+   "fail_bars": [
+    3,
+    4,
+    5,
+    6
+   ],
+   "block_ok": true,
+   "coherent": 1,
+   "links_broken": 1
+  },
+  "V1 25-32": {
+   "bars": 8,
+   "fail": 3,
+   "fail_bars": [
+    1,
+    2,
+    5
+   ],
+   "block_ok": true,
+   "coherent": 1,
+   "links_broken": 1
+  },
+  "V1 33-44": {
+   "bars": 12,
+   "fail": 2,
+   "fail_bars": [
+    6,
+    9
+   ],
+   "block_ok": true,
+   "coherent": 1,
+   "links_broken": 3
+  },
+  "V2 1-8": {
+   "bars": 8,
+   "fail": 6,
+   "fail_bars": [
+    1,
+    2,
+    3,
+    6,
+    7,
+    8
+   ],
+   "block_ok": true,
+   "coherent": 1,
+   "links_broken": 1
+  },
+  "V2 9-16": {
+   "bars": 8,
+   "fail": 5,
+   "fail_bars": [
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "block_ok": true,
+   "coherent": 2,
+   "links_broken": 0
+  }
+ },
+ "fail": 37,
+ "of": 76
+}

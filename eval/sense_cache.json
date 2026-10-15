@@ -19770,5 +19770,2943 @@
 "issue": "'that was the fall' unclear and shifts away from the bike story."
 }
 ]
+},
+"[haiku]\nHoi Rotterdam beg your pardon\nLook it fell off of a lorry\nTen feet of it guards my garden\nI'm wanted in every country I've been to\nMissed the headliner, bought a gnome, sorry\nTent flooded, then dust, then drought, I slept through all three\nHe's off the back of a lorry": [
+{
+"n": 1,
+"reading": "Hoi Rotterdam, I beg your pardon.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "Look, it fell off a lorry.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "Ten feet of it guards my garden.",
+"grammatical": true,
+"sense": 1,
+"issue": "'It' has no clear referent; the meaning depends on guessing what 'it' is."
+},
+{
+"n": 4,
+"reading": "I'm wanted in every country I've been to.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "I missed the headliner, bought a gnome, sorry.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "My tent flooded, then there was dust, then drought, and I slept through all three.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "He's off the back of a lorry.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nTwo glasses, cold lager, back road corners\nNo names just numbers on folders\nFound pink top hat, wear it like bread\nBreakfast had me orange like little\nQueue round the block for the film I'm buying in\nHammock bamboo snow on the Atlas dandy\nTin of direct-to-rust, no recap, paint town red": [
+{
+"n": 1,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 0,
+"issue": "Word list of nouns; no verb or clause connects them."
+},
+{
+"n": 2,
+"reading": "There are no names, just numbers, on the folders.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "I found a pink top hat and wear it like bread.",
+"grammatical": false,
+"sense": 1,
+"issue": "Dropped subject and article; the bread simile is strained."
+},
+{
+"n": 4,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 0,
+"issue": "'Orange like little' is not a meaningful clause or comparison."
+},
+{
+"n": 5,
+"reading": "There's a queue round the block for the film I'm buying in.",
+"grammatical": false,
+"sense": 1,
+"issue": "Dangling preposition: 'buying in' needs 'into' to work."
+},
+{
+"n": 6,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 0,
+"issue": "Word list of nouns and a phrase; no clause or verb."
+},
+{
+"n": 7,
+"reading": "There's a tin of direct-to-rust paint, no recap, and we paint the town red.",
+"grammatical": false,
+"sense": 1,
+"issue": "Missing article ('the town'); fragmentary list of clauses, meaning strained."
+}
+],
+"[haiku]\nBLOCK2\nHoi Rotterdam beg your pardon\nI've got your gnome proost I'm still not sorry\nLook it fell off of a lorry\nTen feet of it guards my garden": {
+"thread": "An unrepentant thief mock-apologises to Rotterdam for stealing a garden gnome, dismisses it as something that fell off a lorry, and boasts that his stolen one is now ten feet tall and guards his garden.",
+"coherent": 2,
+"issue": "Bar 4's \"ten feet of it\" is vague; a listener may not realise it means a giant gnome.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Gnome theft and 'not sorry' directly contrast with the apology in bar 1."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "The lorry excuse deflates the apology and the theft claim in bar 2."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Escalates the joke: the stolen gnome is now absurdly large and guarding his garden."
+}
+]
+},
+"[haiku]\nBLOCK2\nHey port and the road to Porto\nTwo glasses cold lager then cut corners\nLager chips and the last orders\nMight hit the road then the border": {
+"thread": "NO THREAD",
+"coherent": 1,
+"issue": "No claim about the speaker; it is a chronological pub-to-border sequence that argues nothing.",
+"links": [
+{
+"n": 2,
+"follows": false,
+"issue": "Drinking two lagers and cutting corners is just the next event after the road to Porto, not a point about it."
+},
+{
+"n": 3,
+"follows": false,
+"issue": "Lager, chips and last orders continue the pub scene in time order without adding a claim or contrast."
+},
+{
+"n": 4,
+"follows": false,
+"issue": "Hitting the road then the border is the next step in time, with no reversal or escalation of anything before."
+}
+]
+},
+"[haiku]\nBLOCK2\nStop one is Zurich and it's pricey\nFlorence next and David is a must\nThen Ljubljana's dragon bridge is green with rust\nThen Vienna where Freud's couch filled me with disgust": {
+"thread": "NO THREAD",
+"coherent": 1,
+"issue": "Each bar is just the next stop in time order; no claim is made.",
+"links": [
+{
+"n": 2,
+"follows": false,
+"issue": "Simply the next city in the itinerary, a time-order step with no link to bar 1's claim."
+},
+{
+"n": 3,
+"follows": false,
+"issue": "Another 'then' stop; the rust detail is a fresh place, not a point built on the previous bars."
+},
+{
+"n": 4,
+"follows": false,
+"issue": "Final stop in the sequence; the disgust reaction doesn't develop or contrast any earlier claim."
+}
+]
+},
+"[sonnet]\nHoi Rotterdam beg your pardon\nLook it fell off of a lorry\nTen feet of it guards my garden\nI'm wanted in every country I've been to\nMissed the headliner, bought a gnome, sorry\nTent flooded, then dust, then drought, I slept through all three\nHe's off the back of a lorry": [
+{
+"n": 1,
+"reading": "The speaker greets Rotterdam in Dutch and begs its pardon.",
+"grammatical": true,
+"sense": 1,
+"issue": "Greeting plus apology; what is being pardoned is unstated."
+},
+{
+"n": 2,
+"reading": "The speaker says to look, because it fell off a lorry.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "Ten feet of it guards the speaker's garden.",
+"grammatical": true,
+"sense": 1,
+"issue": "'It' is unclear; depends on previous bar's lorry item."
+},
+{
+"n": 4,
+"reading": "The speaker is wanted in every country they have been to.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "The speaker missed the headliner, bought a gnome, and says sorry.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "The tent flooded, then there was dust, then drought, and the speaker slept through all three.",
+"grammatical": true,
+"sense": 1,
+"issue": "Tent flooding then drought and dust is strained; mostly guessable."
+},
+{
+"n": 7,
+"reading": "He is off the back of a lorry.",
+"grammatical": true,
+"sense": 1,
+"issue": "Person called stolen goods; 'he' is unexplained and strained."
+}
+],
+"[sonnet]\nTwo glasses, cold lager, back road corners\nNo names just numbers on folders\nFound pink top hat, wear it like bread\nBreakfast had me orange like little\nQueue round the block for the film I'm buying in\nHammock bamboo snow on the Atlas dandy\nTin of direct-to-rust, no recap, paint town red": [
+{
+"n": 1,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 0,
+"issue": "Word list; no verb or clause connecting glasses, lager, corners."
+},
+{
+"n": 2,
+"reading": "There are no names, only numbers, on the folders.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "I found a pink top hat and wear it like bread.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Wear it like bread' is a strained, unexplained comparison."
+},
+{
+"n": 4,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 0,
+"issue": "'Orange like little' is incomplete; comparison has no object."
+},
+{
+"n": 5,
+"reading": "There is a queue round the block for the film I'm buying in.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Buying in' is dangling; unclear what is bought into."
+},
+{
+"n": 6,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 0,
+"issue": "Noun pile with no verb; 'dandy' dangles."
+},
+{
+"n": 7,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 0,
+"issue": "Tin of paint named, but 'no recap, paint town red' disjointed."
+}
+],
+"[sonnet]\nBLOCK2\nHoi Rotterdam beg your pardon\nI've got your gnome proost I'm still not sorry\nLook it fell off of a lorry\nTen feet of it guards my garden": {
+"thread": "The speaker, apparently a Brit who has taken a garden gnome from a Rotterdam person, unrepentantly claims it fell off a lorry and that he now has a huge amount of it guarding his garden.",
+"coherent": 1,
+"issue": "\"Gnome proost\", \"it\" and \"ten feet of it\" are unclear; the gnome/Rotterdam link is confusing.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Continues the address to Rotterdam: he has their item and isn't sorry, though 'gnome proost' is obscure."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "'It fell off a lorry' is a clear excuse for the theft, but 'it' is vague."
+},
+{
+"n": 4,
+"follows": false,
+"issue": "'Ten feet of it' doesn't fit a gnome; the object changes and the garden guard idea is abrupt."
+}
+]
+},
+"[sonnet]\nBLOCK2\nHey port and the road to Porto\nTwo glasses cold lager then cut corners\nLager chips and the last orders\nMight hit the road then the border": {
+"thread": "NO THREAD",
+"coherent": 0,
+"issue": "Sequence of drinking and travelling fragments with no claim; \"port\" is ambiguous and the border is unexplained.",
+"links": [
+{
+"n": 2,
+"follows": false,
+"issue": "Switches to lager and cutting corners with no link to Porto trip."
+},
+{
+"n": 3,
+"follows": false,
+"issue": "Repeats lager and adds last orders; just the next event, no point."
+},
+{
+"n": 4,
+"follows": false,
+"issue": "Road and border appear from nowhere; 'might' signals no connection to the drinking."
+}
+]
+},
+"[sonnet]\nBLOCK2\nStop one is Zurich and it's pricey\nFlorence next and David is a must\nThen Ljubljana's dragon bridge is green with rust\nThen Vienna where Freud's couch filled me with disgust": {
+"thread": "NO THREAD",
+"coherent": 0,
+"issue": "Just an itinerary of cities in order; no claim, rhymes carry it.",
+"links": [
+{
+"n": 2,
+"follows": false,
+"issue": "Merely next stop in time order; no claim connects it to Zurich."
+},
+{
+"n": 3,
+"follows": false,
+"issue": "Another stop in sequence; green-with-rust is filler for the rhyme."
+},
+{
+"n": 4,
+"follows": false,
+"issue": "Next city again; disgust at Freud's couch is unexplained and unconnected."
+}
+]
+},
+"[haiku]\nCheers to the venue\nLeft out on the rocks? I continue\nBern, Perth, Crete, Nantes, and it's a day's cruise\nIn each new port town there's a good few": [
+{
+"n": 1,
+"reading": "I raise a toast to the venue.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "Left out on the rocks, you ask? I carry on.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Left out' is unclear; 'on the rocks' is ambiguous; 'I continue' is vague."
+},
+{
+"n": 3,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "Place names form a list with no verb; Bern and Perth aren't cruise ports."
+},
+{
+"n": 4,
+"reading": "In each new port town there is a good number.",
+"grammatical": false,
+"sense": 1,
+"issue": "'A good few' has no head noun; the thing counted is missing."
+}
+],
+"[haiku]\nBLOCK2\nCheers to the venue\nLeft out on the rocks? I continue\nBern, Perth, Crete, Nantes, and it's a day's cruise\nIn each new port town there's a good few": {
+"thread": "The speaker is a drinker on a port-hopping cruise who claims every new port town has plenty of bars to toast in.",
+"coherent": 1,
+"issue": "Bern and Perth aren't ports, so the place list muddles the port-town premise, and bar 4 trails off unfinished.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": ""
+},
+{
+"n": 3,
+"follows": false,
+"issue": "A list of places in time order; Bern and Perth are not ports, so it doesn't build the claim."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Returns to the cruise and port towns, giving the bar-hopping point; it is unfinished ('a good few' of what?)."
+}
+]
+},
+"[haiku]\nHoi hoi to the Dutch so honest\nTheir gnome's as tall as a house, rock solid\nCross my Noord man it's your wallet\nWant one? I'll flog it for profit": [
+{
+"n": 1,
+"reading": "Hello to the Dutch, who are so honest.",
+"grammatical": true,
+"sense": 1,
+"issue": "Greeting then a bare adjective phrase; works as a spoken fragment but is strained."
+},
+{
+"n": 2,
+"reading": "Their gnome is as tall as a house and rock solid.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "UNCLEAR",
+"grammatical": true,
+"sense": 0,
+"issue": "Garbled idiom 'Cross my Noord man'; the claim and the referent of 'it' are unclear."
+},
+{
+"n": 4,
+"reading": "Do you want one? I'll sell it for profit.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nHoi hoi to the Dutch so honest\nTheir gnome's as tall as a house, rock solid\nCross my Noord man it's your wallet\nWant one? I'll flog it for profit": {
+"thread": "The speaker is a smooth-talking con man who flatters the Dutch for their honesty, then reveals he is picking their wallets and flogging them oversized garden gnomes for profit.",
+"coherent": 1,
+"issue": "Bar 3's \"it's your wallet\" is cryptic on one hearing, and \"one\" in bar 4 has no clear referent.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Gnome as tall as a house extends the Dutch-goods sales pitch from bar 1."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Pickpocket reveal deflates the honesty praise; the 'Cross my Noord' pun is opaque but the turn lands."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Sales offer and 'flog it for profit' escalates the con, though 'one' is ambiguous."
+}
+]
+},
+"[haiku]\nG'day there's a torch on call\nMy brief's a better call than Saul\nFour-wheeler? Dead on arrival\nMy doorman will put you through the floor\nCash for Spain and it's cash for scales and cash for Wales\nProst and then you buy\nHanoi bikes are getaway cars\nIf you're stuck I know a guy": [
+{
+"n": 1,
+"reading": "Hello, there is a torch on call.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Torch' and 'on call' are ambiguous, so the claim is strained."
+},
+{
+"n": 2,
+"reading": "My brief is a better call than Saul.",
+"grammatical": true,
+"sense": 1,
+"issue": "Pun on 'Better Call Saul' needs the reference; 'brief' is unclear alone."
+},
+{
+"n": 3,
+"reading": "The four-wheeler is dead on arrival.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "My doorman will put you through the floor.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Put through the floor' is an idiom whose meaning is unclear here."
+},
+{
+"n": 5,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 0,
+"issue": "'Cash for Spain' and 'cash for Wales' are fragments; the list has no clear meaning."
+},
+{
+"n": 6,
+"reading": "Cheers, and then you buy.",
+"grammatical": true,
+"sense": 1,
+"issue": "Toast-then-buy is a fragment; what is bought is unstated."
+},
+{
+"n": 7,
+"reading": "Hanoi bikes are getaway cars.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "If you're stuck, I know a guy.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nG'day there's a torch on call\nMy brief's a better call than Saul\nFour-wheeler? Dead on arrival\nMy doorman will put you through the floor\nCash for Spain and it's cash for scales and cash for Wales\nProst and then you buy\nHanoi bikes are getaway cars\nIf you're stuck I know a guy": {
+"thread": "The speaker is a fixer boasting that his network of lawyers, muscle, cash and getaway vehicles can solve any trouble you're in, so if you're stuck, he knows a guy.",
+"coherent": 1,
+"issue": "Bars 3, 5 and 6 are loose: the car line, the Spain/Wales place-list and \"Prost and then you buy\" don't tie to the fixer claim.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Lawyer boast against Saul sets up the fixer claim clearly."
+},
+{
+"n": 3,
+"follows": false,
+"issue": "The four-wheeler dead on arrival line is unclear and doesn't connect to the lawyer bar."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Doorman who puts you through the floor adds muscle to the fixer network."
+},
+{
+"n": 5,
+"follows": false,
+"issue": "Cash for Spain, scales and Wales reads as a list of places with no signal of what service is offered."
+},
+{
+"n": 6,
+"follows": false,
+"issue": "Prost and then you buy is a non sequitur; the toast doesn't support or deflate the claim."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Hanoi bikes as getaway cars escalates the service menu to escape transport."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "If you're stuck I know a guy closes the block by landing the fixer claim."
+}
+]
+},
+"[haiku]\nOne phone and a name, the rest is larger\nHonesty box? I pay it good karma\nIn my suit head to toe Prada\nMy guy keeps a boat out in Palma\nStab vest Barbour parka\nClean hands and the judge gets lager\nTry me and see what you get\nGrazie grazie four weeks on a pass and no drama": [
+{
+"n": 1,
+"reading": "I have one phone and a name, and the rest is larger.",
+"grammatical": true,
+"sense": 1,
+"issue": "Elliptical; 'the rest is larger' has no stated comparison or referent."
+},
+{
+"n": 2,
+"reading": "Honesty box? I pay the honesty box good karma.",
+"grammatical": false,
+"sense": 1,
+"issue": "'Pay it good karma' is not idiomatic; the double object is unclear."
+},
+{
+"n": 3,
+"reading": "I am wearing a suit, head to toe Prada.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "My friend keeps a boat out in Palma.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 0,
+"issue": "Noun list with no verb or clause; a word list."
+},
+{
+"n": 6,
+"reading": "Clean hands, and the judge gets lager.",
+"grammatical": true,
+"sense": 1,
+"issue": "Needs decoding: lager implies a bribe, and clean hands implies innocence."
+},
+{
+"n": 7,
+"reading": "Try me and see what you get.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "Grazie, grazie, four weeks on a pass and no drama.",
+"grammatical": false,
+"sense": 1,
+"issue": "Second clause lacks a verb; 'on a pass' is unclear without context."
+}
+],
+"[haiku]\nBLOCK2\nOne phone and a name, the rest is larger\nHonesty box? I pay it good karma\nIn my suit head to toe Prada\nMy guy keeps a boat out in Palma\nStab vest Barbour parka\nClean hands and the judge gets lager\nTry me and see what you get\nGrazie grazie four weeks on a pass and no drama": {
+"thread": "The speaker is a criminal who dresses and lives like money, claims the system is bought and his reputation protects him, and is so untouchable that he is out on a pass with no trouble.",
+"coherent": 1,
+"issue": "The final \"four weeks on a pass\" payoff is unclear on one hearing; the prison or custody context is never set up.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Honesty box joke deflates respectability and sets up the karma/immunity theme."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Prada suit escalates the flex of wealth."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Friend's boat in Palma extends the lifestyle flex, though it is a list-like accessory."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Stab vest with Barbour parka contrasts posh dress with violence."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Judge getting lager implies bought authority, supporting the untouchable claim."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Direct threat escalates from the bribery and status claims."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Four weeks on a pass with no drama pays off the untouchable claim, though 'pass' needs inferring."
+}
+]
+},
+"[haiku]\nBack then no one would know me\nBroke, kipped on the floor, we\nNow skip to the end\nBut the cops came round I walked out of it scot free\nNowadays my face goes round with all the athletes\nTop floor, a sea view, I'm living the dream\nPolice have got a list and they've got me: top thief\nI'm out so ring my main guy's guy he's discreet": [
+{
+"n": 1,
+"reading": "Back then, nobody would have recognised me.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "Dangling 'we'; 'kipped on the floor' has no clear subject or finished clause."
+},
+{
+"n": 3,
+"reading": "Now skip to the end.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "But when the police came round, I got away with it completely.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "Nowadays my face gets around with all the athletes.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Face goes round with athletes' is a strained metaphor; meaning must be guessed."
+},
+{
+"n": 6,
+"reading": "I'm living the dream, in a top-floor flat with a sea view.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "The police have a list, and they have me on it as the top thief.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "I'm out, so ring my main guy's guy, because he's discreet.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nBack then no one would know me\nBroke, kipped on the floor, we\nNow skip to the end\nBut the cops came round I walked out of it scot free\nNowadays my face goes round with all the athletes\nTop floor, a sea view, I'm living the dream\nPolice have got a list and they've got me: top thief\nI'm out so ring my main guy's guy he's discreet": {
+"thread": "The speaker is a former broke nobody who rose to celebrity and luxury through crime, and who keeps escaping police now hunting him as a top thief.",
+"coherent": 1,
+"issue": "\"Now skip to the end\" is a meta jump, and \"we\" and \"main guy's guy\" are unclear.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Broke, sleeping on the floor, contrasts well with being unknown; 'we' is unintroduced but readable."
+},
+{
+"n": 3,
+"follows": false,
+"issue": "'Now skip to the end' is a bare time jump that drops the poverty thread without a real link."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Police arriving and him walking free sets up the crime and escape theme."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Contrasts past obscurity with present celebrity, supporting the rise claim."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Luxury living supports the wealth claim and the rise story."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Police hunting him as a top thief escalates the crime angle and contrasts with 'scot free'."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Being out and calling a discreet contact continues the evasion theme, though the third party is vague."
+}
+]
+},
+"[haiku]\nLaxey and my bar tab's on credit\nMy crate fits an elephant\nCustoms won't open the crate it's medical\nGardaí come for the evidence? Chemical\nWrapped in a blanket, mate, just a passenger\nAnd the guards at the gate? A canister\nWhere's the guy? Lying low in Canada\nTape it, van to van, the whole marathon": [
+{
+"n": 1,
+"reading": "My bar tab is on credit, and this is in Laxey.",
+"grammatical": true,
+"sense": 1,
+"issue": "Place name and bar tab juxtaposed; the link between them is strained."
+},
+{
+"n": 2,
+"reading": "My crate is big enough to hold an elephant.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "Customs won't open the crate because it's medical.",
+"grammatical": true,
+"sense": 2,
+"issue": "Missing 'because' is a spoken elision, but the claim is clear."
+},
+{
+"n": 4,
+"reading": "Are the Gardaí coming for the evidence? It's chemical.",
+"grammatical": true,
+"sense": 1,
+"issue": "One-word answer; the evidence's nature is only guessable."
+},
+{
+"n": 5,
+"reading": "The one wrapped in a blanket, mate, is just a passenger.",
+"grammatical": false,
+"sense": 1,
+"issue": "Participle opener with no finite subject or verb; who is wrapped is unclear."
+},
+{
+"n": 6,
+"reading": "And what about the guards at the gate? A canister.",
+"grammatical": true,
+"sense": 1,
+"issue": "Fragment answer; what the canister means is only guessable."
+},
+{
+"n": 7,
+"reading": "Where's the guy? He's lying low in Canada.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "Tape the whole marathon, van to van.",
+"grammatical": false,
+"sense": 1,
+"issue": "'The whole marathon' is an object-like phrase with the tape action strained."
+}
+],
+"[haiku]\nBLOCK2\nLaxey and my bar tab's on credit\nMy crate fits an elephant\nCustoms won't open the crate it's medical\nGardaí come for the evidence? Chemical\nWrapped in a blanket, mate, just a passenger\nAnd the guards at the gate? A canister\nWhere's the guy? Lying low in Canada\nTape it, van to van, the whole marathon": {
+"thread": "The speaker is a courier whose oversized crate of contraband survives one official check after another on flimsy cover stories, while the man who organised it has fled abroad.",
+"coherent": 1,
+"issue": "Bar 1's bar tab is never tied to the smuggling, and bar 8's \"tape it\" has no clear referent.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Crate fitting an elephant escalates the oversized-cargo premise."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Customs refusing to open it, with a medical excuse, follows the crate and cover story."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Gardaí seeking evidence, answered with 'chemical', continues the inspection."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "A passenger cover story continues the pattern of deflections."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Guards at the gate and a canister escalate the stakes of the inspection."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Asking where the boss is, answered by fleeing to Canada, deflates the operation's leadership."
+},
+{
+"n": 8,
+"follows": false,
+"issue": "'Tape it, van to van, the whole marathon' is an unclear next action with no clear referent."
+}
+]
+},
+"[haiku]\nMozzarella? The staples? It's my guy in Naples\nMarrakesh when I'm able, my guy there, so check the label\nBarber's chair, cut-throat blade, on the house, cards on the table\nMy boots in Bergen? Dead fatal\nOn the ferry, flat calm, Thai mainland\nBut the fags are that cheap dead cheeky\nForty a day? My guy is sorting me\nNeed me? Gone to my guy's guy down the road for a quick sneaky": [
+{
+"n": 1,
+"reading": "The staples, such as mozzarella, come from my guy in Naples.",
+"grammatical": true,
+"sense": 1,
+"issue": "Opens with fragments; 'the staples' and 'it' need context to land."
+},
+{
+"n": 2,
+"reading": "I'll get it from my guy in Marrakesh when I'm able, so check the label.",
+"grammatical": true,
+"sense": 1,
+"issue": "Elliptical; 'check the label' has no clear referent."
+},
+{
+"n": 3,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "Noun-phrase list with no verb; only guessable idioms."
+},
+{
+"n": 4,
+"reading": "My boots are in Bergen, which is dead fatal.",
+"grammatical": true,
+"sense": 1,
+"issue": "Slang 'dead fatal' is strained; the claim is hard to pin down."
+},
+{
+"n": 5,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "Prepositional and noun phrases only; no verb or clause."
+},
+{
+"n": 6,
+"reading": "The cigarettes are that cheap, and dead cheeky.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "Forty a day? My guy is sorting me.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "If you need me, I've gone to my guy's guy down the road for something quick and sneaky.",
+"grammatical": false,
+"sense": 1,
+"issue": "Ends on 'a quick sneaky' with the noun missing."
+}
+],
+"[haiku]\nBLOCK2\nMozzarella? The staples? It's my guy in Naples\nMarrakesh when I'm able, my guy there, so check the label\nBarber's chair, cut-throat blade, on the house, cards on the table\nMy boots in Bergen? Dead fatal\nOn the ferry, flat calm, Thai mainland\nBut the fags are that cheap dead cheeky\nForty a day? My guy is sorting me\nNeed me? Gone to my guy's guy down the road for a quick sneaky": {
+"thread": "The speaker boasts that he has a \"my guy\" connection in every city he visits, so he is never short of anything, from cigarettes to a shave.",
+"coherent": 1,
+"issue": "Bars 4 and 5 (Bergen boots, ferry to Thai mainland) break the \"my guy\" pattern and their point is unclear.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Marrakesh contact extends the 'my guy in every city' claim."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Barber freebie is another favour, extending the claim to services."
+},
+{
+"n": 4,
+"follows": false,
+"issue": "Boots in Bergen with 'dead fatal' doesn't connect to the favour network."
+},
+{
+"n": 5,
+"follows": false,
+"issue": "Ferry and Thai mainland are just another location with no link to the claim."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "'But' contrasts cheap fags with the favour theme, so it reads as supply."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Forty a day being sorted by his guy directly supports the claim."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Guy's guy as a fallback deflates the idea of running short, escalating the network."
+}
+]
+},
+"[haiku]\nSure the Spanish caught me\nOfficer? Who me? Seedy? Seedy?\nThen my guy had the money\nCash in envelopes, the deal's all sunny\nMy guy made you pay\nWanted posters, all Boomtown, front page\nNever set foot in the dock Old Bailey\nSo in the beer garden I'm saving face\nOwe me? It's your ten days' grace\nYou owe? My crew will play conkers, it's fair game\nCrown on, top hat, I'm king of Bristol\nDealers know that I know a guy, no names": [
+{
+"n": 1,
+"reading": "Sure, the Spanish caught me.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "The speaker, startled, asks the officer whether he means him, and whether he is seedy.",
+"grammatical": true,
+"sense": 1,
+"issue": "Spoken fragments of disbelief; meaning is guessable but not stated."
+},
+{
+"n": 3,
+"reading": "Then my guy had the money.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "Cash came in envelopes, and the deal is all sunny.",
+"grammatical": true,
+"sense": 1,
+"issue": "'All sunny' is slang for things going well; strained but guessable."
+},
+{
+"n": 5,
+"reading": "My guy made you pay.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "Noun list with no verb; posters are never said to be anywhere or doing anything."
+},
+{
+"n": 7,
+"reading": "I never set foot in the dock at the Old Bailey.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "So in the beer garden I'm saving face.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 9,
+"reading": "You owe me? It's your ten days' grace.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Grace' as a payment grace period must be inferred, not stated."
+},
+{
+"n": 10,
+"reading": "You owe me? My crew will play conkers, which is fair game.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Play conkers' is an obscure idiom for a threat; needs inference."
+},
+{
+"n": 11,
+"reading": "I'm wearing a crown and a top hat, and I'm king of Bristol.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 12,
+"reading": "Dealers know that I know a guy, and I give no names.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nSure the Spanish caught me\nOfficer? Who me? Seedy? Seedy?\nThen my guy had the money\nCash in envelopes, the deal's all sunny\nMy guy made you pay\nWanted posters, all Boomtown, front page\nNever set foot in the dock Old Bailey\nSo in the beer garden I'm saving face\nOwe me? It's your ten days' grace\nYou owe? My crew will play conkers, it's fair game\nCrown on, top hat, I'm king of Bristol\nDealers know that I know a guy, no names": {
+"thread": "The speaker is a self-crowned Bristol underworld boss who brags that he dodges prosecution and stays untouchable through his fixer's money, threats and \"no names\" connections.",
+"coherent": 1,
+"issue": "Bar 8's \"So\" has no clear cause, and the Spanish and Old Bailey (London) references muddy the Bristol setting.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Police-deflection continues the opening arrest and sets up his denial."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Introduces the 'guy' with money, which the block returns to later."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Elaborates the money with cash in envelopes."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Shows the guy's power to make people pay."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Wanted posters escalate his notoriety despite his untouchable claim."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Claims he never faces trial, supporting the untouchable boast."
+},
+{
+"n": 8,
+"follows": false,
+"issue": "'So' links to nothing; the beer garden scene is a jump in time and place."
+},
+{
+"n": 9,
+"follows": true,
+"issue": "Debt-and-grace exchange carries the pub scene into a threat about money owed."
+},
+{
+"n": 10,
+"follows": true,
+"issue": "Crew threat escalates the debt dispute."
+},
+{
+"n": 11,
+"follows": true,
+"issue": "Crowning himself king of Bristol escalates the boast."
+},
+{
+"n": 12,
+"follows": true,
+"issue": "Ties back to 'my guy' and the no-names network from bar 3."
+}
+]
+},
+"[haiku]\nThe Whitsundays a tinnie? I've got a guy\nUp K'gari in the ute where you do or die\nBangkok, the roadside, and the top fried rice\nThe reef? I dived, the sharks were in the crossfire\nYou wouldn't believe big boats and jets at night\nYou want it for free from my guy? So pigs can fly\nI drive to the bay, dive in, I'm back by five\nName it, my mate: one call and it's mine": [
+{
+"n": 1,
+"reading": "Is the Whitsundays a tinnie? I've got a guy.",
+"grammatical": false,
+"sense": 1,
+"issue": "Elliptical question missing its verb; 'a tinnie' is strained"
+},
+{
+"n": 2,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "Prepositional fragment with no subject or verb"
+},
+{
+"n": 3,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 0,
+"issue": "Word list of nouns with no verb"
+},
+{
+"n": 4,
+"reading": "I dived on the reef, and the sharks were caught in the crossfire.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "You would not believe the big boats and jets at night.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "You want it for free from my guy? Pigs might fly first.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "I drive to the bay, dive in, and I'm back by five.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "Name it, mate: with one call, it's mine.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nThe Whitsundays a tinnie? I've got a guy\nUp K'gari in the ute where you do or die\nBangkok, the roadside, and the top fried rice\nThe reef? I dived, the sharks were in the crossfire\nYou wouldn't believe big boats and jets at night\nYou want it for free from my guy? So pigs can fly\nI drive to the bay, dive in, I'm back by five\nName it, my mate: one call and it's mine": {
+"thread": "The speaker boasts that through his connected \"guy\" he can get any boat, jet or favour anywhere, free or on one call, so he has access to everything.",
+"coherent": 1,
+"issue": "Bars 3, 4 and 7 are places and events with no link to the \"guy\" claim.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Ute trip up K'gari extends the boast about his reach across Australia."
+},
+{
+"n": 3,
+"follows": false,
+"issue": "Bangkok fried rice is a place dropped in with no tie to the guy."
+},
+{
+"n": 4,
+"follows": false,
+"issue": "Reef dive with sharks is an abrupt switch to a new event, unconnected to access or favours."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Big boats and jets at night returns to the boats-and-jets theme and escalates it."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Getting it free from the guy, so pigs can fly, deflates the boast and ties back to the guy."
+},
+{
+"n": 7,
+"follows": false,
+"issue": "Driving to the bay and back by five is a mundane itinerary, not a point about access."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "One call and it's mine is the payoff that restates the central claim."
+}
+]
+},
+"[haiku]\nWell I've got my own code\nChristchurch, Oslo, Scotland, Wales, and up to Snowdon\nSolo now the face is on the East Coast\nLone wolf now and proud and so I struck gold\nBig man top dog in the nightlife\nDon't need one 'cause I'm big boss the tough guy\nSeconds out, no ref, you get no bell\nEach time you're stuck, I'm the guy, and the main lifeline": [
+{
+"n": 1,
+"reading": "Well, I have my own code.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 0,
+"issue": "Just a list of place names with no verb or clause"
+},
+{
+"n": 3,
+"reading": "Now I'm solo, and the face is on the East Coast.",
+"grammatical": true,
+"sense": 1,
+"issue": "Grammatical, but 'the face is on the East Coast' is strained and obscure"
+},
+{
+"n": 4,
+"reading": "Now I'm a lone wolf and proud, so I struck gold.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "Noun phrase fragment with no verb; 'big man, top dog' doesn't form a clause"
+},
+{
+"n": 6,
+"reading": "I don't need one because I'm the big boss, the tough guy.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "Seconds out, there's no ref, and you get no bell.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "Each time you're stuck, I'm the guy and the main lifeline.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nWell I've got my own code\nChristchurch, Oslo, Scotland, Wales, and up to Snowdon\nSolo now the face is on the East Coast\nLone wolf now and proud and so I struck gold\nBig man top dog in the nightlife\nDon't need one 'cause I'm big boss the tough guy\nSeconds out, no ref, you get no bell\nEach time you're stuck, I'm the guy, and the main lifeline": {
+"thread": "The speaker is a self-made lone wolf who answers to no one, claims to be top dog in every scene, and says everyone else relies on him as their lifeline.",
+"coherent": 1,
+"issue": "Bar 2 is a travel list of places, unconnected to the solo, top-dog claim.",
+"links": [
+{
+"n": 2,
+"follows": false,
+"issue": "A list of places (Christchurch, Oslo, Scotland, Wales, Snowdon) with no link to being solo or top dog; reads as travel."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Solo and 'the face' on the East Coast supports the lone-figure claim."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Lone wolf and struck gold continue the solo theme and escalate it."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Top dog in the nightlife escalates the dominance claim."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Needing no one and calling himself big boss reinforces the lone, top-dog stance."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "No ref, no bell extends the boxing dominance image; it deflates any challenger."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Flips from self-sufficiency to being everyone's lifeline, a deliberate escalation that pays off the thread."
+}
+]
+},
+"[haiku]\nHoi Rotterdam beg your pardon\nStand in line for the retired bar test\nLook it fell off of a lorry\nTen feet of it guards my garden": [
+{
+"n": 1,
+"reading": "Hi Rotterdam, I beg your pardon.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "Stand in line for the retired bar test.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Retired bar test' is ambiguous: retired test, or a test for retirees?"
+},
+{
+"n": 3,
+"reading": "Look, it fell off a lorry.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "Ten feet of it guards my garden.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nHoi Rotterdam beg your pardon\nStand in line for the retired bar test\nLook it fell off of a lorry\nTen feet of it guards my garden": {
+"thread": "The speaker, apologising in Rotterdam, claims he guards his garden with ten feet of stolen metal bar that fell off a lorry, playing on the \"bar\" pun.",
+"coherent": 1,
+"issue": "Bar 2 jumps from Rotterdam to the bar exam with no link, and \"it\" in bar 3 has no clear antecedent.",
+"links": [
+{
+"n": 2,
+"follows": false,
+"issue": "Jumps from Rotterdam apology to the retired bar test with no signal; the pun only pays off later."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Deflates the bar-exam setup into stolen metal, though 'it' is only clear by inference."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Pays off the stolen-bar claim by saying the stolen length guards the garden."
+}
+]
+},
+"[haiku]\nHey Rotterdam I own the quarry\nCouncil want the gnome back, I am not sorry\nGnome off the back of a lorry\nMight lie low over in lorry": [
+{
+"n": 1,
+"reading": "Hey Rotterdam, I own the quarry.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "The council wants the gnome back, and I am not sorry.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "The gnome is off the back of a lorry.",
+"grammatical": false,
+"sense": 1,
+"issue": "No verb or clause; only a noun phrase and prepositional phrase."
+},
+{
+"n": 4,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "\"Over in lorry\" is not English; the place phrase is broken."
+}
+],
+"[haiku]\nBLOCK2\nHey Rotterdam I own the quarry\nCouncil want the gnome back, I am not sorry\nGnome off the back of a lorry\nMight lie low over in lorry": {
+"thread": "A defiant self-styled quarry owner boasts that he stole a garden gnome the council wants back, refuses to apologise, and is now lying low in a lorry.",
+"coherent": 2,
+"issue": "Bar 4 is clumsy: \"over in lorry\" repeats bar 3's \"lorry\" and reads awkwardly once heard.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Council wanting the gnome back sets up the defiant refusal, a clear contrast with the ownership boast."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Describes the gnome's removal, directly backing up the defiance in bar 2."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Escalates from the theft to hiding out, though the phrasing is muddled."
+}
+]
+},
+"[haiku]\nBunk with a bike\nBank replied\nKeith had a word\nKeith as guide\nPaint on the van\nGaz asks\nGaz runs\nKeith updates": [
+{
+"n": 1,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "No subject; 'bunk' could be a verb or a noun, so it is a fragment."
+},
+{
+"n": 2,
+"reading": "A bank replied.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "Keith had a word.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "No verb; 'Keith as guide' only works if a verb is supplied."
+},
+{
+"n": 5,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "Prepositional phrase with no verb; reads as a label, not a claim."
+},
+{
+"n": 6,
+"reading": "Gaz asks.",
+"grammatical": true,
+"sense": 1,
+"issue": "Intransitive and clipped; the thing Gaz asks is missing."
+},
+{
+"n": 7,
+"reading": "Gaz runs.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "'Updates' needs an object (updates what?); the claim is incomplete."
+}
+],
+"[haiku]\nBLOCK2\nBunk with a bike\nBank replied\nKeith had a word\nKeith as guide\nPaint on the van\nGaz asks\nGaz runs\nKeith updates": {
+"thread": "NO THREAD",
+"coherent": 0,
+"issue": "No claim about the speaker; just disconnected events linked by sound-alike names and shifting characters.",
+"links": [
+{
+"n": 2,
+"follows": false,
+"issue": "Bunk/Bank is a sound-alike link; bank reply has no connection to the bike bar."
+},
+{
+"n": 3,
+"follows": false,
+"issue": "Introduces Keith with no connection to the bank or bike images."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Elaborates on Keith from the previous bar, though it makes no claim."
+},
+{
+"n": 5,
+"follows": false,
+"issue": "Switches to paint on a van with no signal and no link to Keith."
+},
+{
+"n": 6,
+"follows": false,
+"issue": "Introduces Gaz out of nowhere, unconnected to the van."
+},
+{
+"n": 7,
+"follows": false,
+"issue": "Gaz runs is just the next event in time order, not a development of the claim."
+},
+{
+"n": 8,
+"follows": false,
+"issue": "Returns to Keith as another time-order event, with no point made."
+}
+]
+},
+"[haiku]\nKaixo I'm famous\nFront page in Bilbao: an invasion\nBern Perth Crete Cairns and I'm the main name\nMy rap sheet's two foot a real cold case": [
+{
+"n": 1,
+"reading": "Kaixo, I'm famous.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "There is an invasion on the front page in Bilbao.",
+"grammatical": false,
+"sense": 1,
+"issue": "Headline fragment with no verb; only works as a list."
+},
+{
+"n": 3,
+"reading": "I'm the main name in Bern, Perth, Crete and Cairns.",
+"grammatical": false,
+"sense": 1,
+"issue": "Place list has no verb; the clause is tacked on, strained meaning."
+},
+{
+"n": 4,
+"reading": "My criminal record is two feet long, a real cold case.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Two foot' is slang needing 'long'; 'cold case' hangs unattached."
+}
+],
+"[haiku]\nBLOCK2\nKaixo I'm famous\nFront page in Bilbao: an invasion\nBern Perth Crete Cairns and I'm the main name\nMy rap sheet's two foot a real cold case": {
+"thread": "The speaker claims he is globally famous, and that his fame is really notoriety, since his huge criminal rap sheet makes him a wanted celebrity.",
+"coherent": 2,
+"issue": "Bar 4's \"cold case\" image is vague, so the criminal punchline lands a little loosely.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Front page in Bilbao escalates the claim of fame into a concrete local example."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Listing Bern, Perth, Crete and Cairns escalates the fame to global reach."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "The rap sheet deflates the fame into criminal notoriety, which the listener can follow."
+}
+]
+},
+"[haiku]\nHoi Rotterdam beg your pardon\nI've got your gnome proost I'm still not sorry\nLook it fell off of a lorry\nTen foot of bronze in my garden": [
+{
+"n": 1,
+"reading": "Hi Rotterdam, I beg your pardon.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "I've got your gnome, cheers, and I'm still not sorry.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Proost' is an unexplained Dutch toast, so the meaning is strained."
+},
+{
+"n": 3,
+"reading": "Look, it fell off the back of a lorry.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "There is ten foot of bronze in my garden.",
+"grammatical": false,
+"sense": 1,
+"issue": "Noun phrase with no verb; reads as a fragment, not a clause."
+}
+],
+"[haiku]\nBLOCK2\nHoi Rotterdam beg your pardon\nI've got your gnome proost I'm still not sorry\nLook it fell off of a lorry\nTen foot of bronze in my garden": {
+"thread": "An unrepentant speaker admits to stealing a ten-foot bronze gnome from Rotterdam, then deadpans that it simply fell off a lorry and now sits in his garden.",
+"coherent": 2,
+"issue": "",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Apology in bar 1 is undercut by 'I'm still not sorry', a clear contrast with the same stolen gnome."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "The 'fell off a lorry' excuse deflates the theft claim in a way the listener can follow."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Ten-foot bronze in the garden escalates the absurdity and pays off the stolen-gnome setup."
+}
+]
+},
+"[haiku]\nI'm wanted for crimes at sea\nExcessive energy a five-day spree\nStand back Bristol he's performing\nOn Red Bull the lad is flying free\nShop him now and you win a pint a bag of crisps\nLong arm of the law\nCandy-pink my floppy top hat\nThen he's back to take the floor": [
+{
+"n": 1,
+"reading": "I am wanted for crimes committed at sea.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "There is excessive energy in a five-day spree.",
+"grammatical": false,
+"sense": 1,
+"issue": "Noun phrase with no verb; reads as a word list."
+},
+{
+"n": 3,
+"reading": "Stand back, Bristol; he is performing.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "The lad is flying free on Red Bull.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "Shop him now and you win a pint and a bag of crisps.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "The police have a long reach.",
+"grammatical": false,
+"sense": 1,
+"issue": "Idiom fragment with no verb; meaning only guessable."
+},
+{
+"n": 7,
+"reading": "My floppy top hat is candy-pink.",
+"grammatical": false,
+"sense": 1,
+"issue": "No verb; 'candy-pink' unclear as a verb or adjective."
+},
+{
+"n": 8,
+"reading": "Then he is back to take the floor.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nI'm wanted for crimes at sea\nExcessive energy a five-day spree\nStand back Bristol he's performing\nOn Red Bull the lad is flying free\nShop him now and you win a pint a bag of crisps\nLong arm of the law\nCandy-pink my floppy top hat\nThen he's back to take the floor": {
+"thread": "The speaker is a Bristol performer, fuelled by Red Bull and a five-day spree, who is wanted for crimes at sea yet treats the police hunt as part of his show.",
+"coherent": 1,
+"issue": "Top hat bar drops in with no link to the chase or performance, and the wanted-versus-performer tension is never clearly resolved.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Explains the wanted claim by giving the excess energy and spree behind it."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Pivots from crimes to performance, setting up the wanted-but-performing contrast."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Names Red Bull as the cause of the energy, escalating the spree claim."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Offers a reward for informing on him, which builds on the wanted premise."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Long arm of the law continues the pursuit thread from the reward bar."
+},
+{
+"n": 7,
+"follows": false,
+"issue": "Costume description arrives with no signal and no link to the police pursuit."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Returning to take the floor ties back to the performing claim in bar 3."
+}
+]
+},
+"[haiku]\nCop in whites, he's wrecked my picket\nI've got your gnome proost I'm still not sorry\nLook it fell off of a lorry\nTen foot of bronze in my garden": [
+{
+"n": 1,
+"reading": "A cop in whites has wrecked my picket.",
+"grammatical": true,
+"sense": 1,
+"issue": "Opening noun phrase is a fragment; 'picket' is ambiguous and strained."
+},
+{
+"n": 2,
+"reading": "I've got your gnome, cheers, and I'm still not sorry.",
+"grammatical": true,
+"sense": 1,
+"issue": "Run-on with 'proost' as a toast; meaning is guessable but strained."
+},
+{
+"n": 3,
+"reading": "Look, it fell off a lorry.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "Ten foot of bronze is in my garden.",
+"grammatical": false,
+"sense": 1,
+"issue": "Bare noun phrase with no verb; reads as a caption, not a claim."
+}
+],
+"[haiku]\nBLOCK2\nCop in whites, he's wrecked my picket\nI've got your gnome proost I'm still not sorry\nLook it fell off of a lorry\nTen foot of bronze in my garden": {
+"thread": "The speaker is a brazen, unrepentant man who has taken stolen garden ornaments, dismisses the police as a nuisance, and treats his haul as a joke that escalates to a ten-foot bronze statue.",
+"coherent": 1,
+"issue": "\"Your gnome\" is ambiguous: the listener can't tell whose gnome it is, or how the cop's picket connects to it.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Contrasts the cop's complaint with the speaker's unrepentant admission, though 'your gnome' muddies whose gnome it is."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Deflates the confession with the stock excuse that the goods fell off a lorry."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Escalates the joke from a gnome to a ten-foot bronze statue in his garden."
+}
+]
+},
+"[haiku]\nHoi Rotterdam beg your pardon\nGnome's in good nick, so he says I nicked it\nLook it fell off of a lorry\nTen foot of bronze in my garden": [
+{
+"n": 1,
+"reading": "Hi, Rotterdam, I beg your pardon.",
+"grammatical": true,
+"sense": 1,
+"issue": "Ordinary spoken greeting-and-apology, but the point of the apology is unclear."
+},
+{
+"n": 2,
+"reading": "The gnome is in good condition, so he says I stole it.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "Look, it fell off a lorry.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "There is ten foot of bronze in my garden.",
+"grammatical": false,
+"sense": 1,
+"issue": "No verb; a noun phrase only, with the clause missing."
+}
+],
+"[haiku]\nBLOCK2\nHoi Rotterdam beg your pardon\nGnome's in good nick, so he says I nicked it\nLook it fell off of a lorry\nTen foot of bronze in my garden": {
+"thread": "The speaker apologises to Rotterdam for having a ten-foot bronze statue in his garden, which he claims fell off a lorry rather than admitting he nicked it.",
+"coherent": 1,
+"issue": "\"He\" in bar 2 has no antecedent, and \"gnome\" clashes with the ten-foot bronze in bar 4.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Continues the apology's implied theft, but the unintroduced 'he' muddles who is accusing him."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Deflects the theft accusation with a feeble excuse, which builds on bar 2."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Reveals the stolen object's size, escalating the absurd lie and paying off the apology."
+}
+]
+},
+"[haiku]\nI'm wanted in Boomtown see\nExcessive energy a five-day spree\nStand back Bristol he's performing\nOn Red Bull the lad is flying free\nShop him now and you win a pint a bag of crisps\nLong arm of the law\nCandy-pink my floppy top hat\nThen he's back to take the floor": [
+{
+"n": 1,
+"reading": "I am wanted in Boomtown, see.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "Excessive energy is a five-day spree.",
+"grammatical": false,
+"sense": 1,
+"issue": "Noun phrase with no verb; reads as a list, not a claim."
+},
+{
+"n": 3,
+"reading": "Stand back, Bristol, because he is performing.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "On Red Bull, the lad is flying free.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "Shop him now and you win a pint, a bag of crisps.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "The law has a long arm.",
+"grammatical": false,
+"sense": 1,
+"issue": "Idiomatic fragment with no verb; meaning guessable but not a sentence."
+},
+{
+"n": 7,
+"reading": "My floppy top hat is candy-pink.",
+"grammatical": false,
+"sense": 1,
+"issue": "Missing verb; scrambled word order makes it a fragment."
+},
+{
+"n": 8,
+"reading": "Then he is back to take the floor.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nI'm wanted in Boomtown see\nExcessive energy a five-day spree\nStand back Bristol he's performing\nOn Red Bull the lad is flying free\nShop him now and you win a pint a bag of crisps\nLong arm of the law\nCandy-pink my floppy top hat\nThen he's back to take the floor": {
+"thread": "The speaker is a Red Bull-fuelled Boomtown raver whose festival spree has made him a wanted fugitive, yet the crowd still treats him as a performer and hero.",
+"coherent": 1,
+"issue": "Bar 7's costume detail breaks from the wanted-outlaw claim with no signal linking it.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Spree and excessive energy escalate the wanted claim from bar 1."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Crowd warning that he is performing extends the spree into public spectacle."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Red Bull explains the excessive energy named in bar 2."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "A bounty on him directly pays off being wanted and deflates his outlaw status."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Long arm of the law reacts to the bounty and police pursuit."
+},
+{
+"n": 7,
+"follows": false,
+"issue": "Candy-pink top hat is a costume detail with no link to the wanted or bounty claim."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Returning to the floor deflates the manhunt and restores him as performer."
+}
+]
+},
+"[haiku]\nI'm wanted for crimes at sea\nExcessive energy a five-day spree\nStand back Bristol he's performing\nRed Bull gives him wings he's running free\nShop him now and you win a pint a bag of crisps\nLong arm of the law\nCandy-pink my floppy top hat\nThen he's back to take the floor": [
+{
+"n": 1,
+"reading": "I am wanted for crimes committed at sea.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "No verb; noun phrases only, so the claim needs guessing."
+},
+{
+"n": 3,
+"reading": "Stand back, Bristol: he is performing.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "Red Bull gives him wings, and he is running free.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "Inform on him now and you win a pint and a bag of crisps.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "Idiom noun phrase with no verb; it does not form a claim."
+},
+{
+"n": 7,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "No verb; 'candy-pink' needs an unstated verb or 'is' to work."
+},
+{
+"n": 8,
+"reading": "Then he is back to take the floor.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nI'm wanted for crimes at sea\nExcessive energy a five-day spree\nStand back Bristol he's performing\nRed Bull gives him wings he's running free\nShop him now and you win a pint a bag of crisps\nLong arm of the law\nCandy-pink my floppy top hat\nThen he's back to take the floor": {
+"thread": "The speaker is a flamboyant wanted outlaw who treats his crimes and the manhunt as a performance, with the law and the public reduced to part of the show.",
+"coherent": 1,
+"issue": "Bar 7's candy-pink top hat jumps from the chase to costume with no link, and bar 6 is a cliché filler.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Escalates the wanted claim into excessive, spree-like behaviour."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Sets up the performance frame that the block's thread depends on."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Extends the excess and performance image with the Red Bull joke."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Deflates the manhunt by reducing the reward to a pint and crisps."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Returns to the pursuit, but as a stock phrase that adds nothing new."
+},
+{
+"n": 7,
+"follows": false,
+"issue": "Shifts to a costume detail with no signal from the law bar before it."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Returns to the performance image, pulling the block back to the stage."
+}
+]
+},
+"[haiku]\nKaixo I'm famous\nFront page in Bilbao: an invasion\nBern Perth Crete Cairns and it's the same game\nMy rap sheet's two foot a real cold case": [
+{
+"n": 1,
+"reading": "Hello, I'm famous.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "There is an invasion on the front page in Bilbao.",
+"grammatical": false,
+"sense": 1,
+"issue": "Headline noun phrase with no verb; only works as a fragment."
+},
+{
+"n": 3,
+"reading": "Bern, Perth, Crete and Cairns, and it's the same game.",
+"grammatical": false,
+"sense": 1,
+"issue": "Place-name list is never linked to 'same game'; the sense is strained."
+},
+{
+"n": 4,
+"reading": "My criminal record is two feet long, a real cold case.",
+"grammatical": false,
+"sense": 1,
+"issue": "'Two foot' lacks a predicate; 'two foot a real cold case' is mis-joined."
+}
+],
+"[haiku]\nBLOCK2\nKaixo I'm famous\nFront page in Bilbao: an invasion\nBern Perth Crete Cairns and it's the same game\nMy rap sheet's two foot a real cold case": {
+"thread": "The speaker is famous worldwide, but his fame is notoriety: a global criminal reputation with a rap sheet that makes him a cold-case suspect.",
+"coherent": 1,
+"issue": "Bar 3's list of cities and \"same game\" are vague, so the global-fame point is unclear.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Front page in Bilbao elaborates the fame claim with a concrete local image."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Listing cities across the globe extends the fame claim, though 'same game' is unclear."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Rap sheet and cold case turn fame into criminal notoriety, deflating the opening boast."
+}
+]
+},
+"[haiku]\nKaixo I'm famous\nFront page in Bilbao: an invasion\nBern Perth Crete Cairns and I'm the main name\nMy file's two foot thick a real cold case": [
+{
+"n": 1,
+"reading": "Hello, I am famous.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "There is an invasion on the front page in Bilbao.",
+"grammatical": false,
+"sense": 1,
+"issue": "Headline-style noun phrase with no verb; reads as a fragment."
+},
+{
+"n": 3,
+"reading": "Bern, Perth, Crete and Cairns, and I am the main name.",
+"grammatical": false,
+"sense": 1,
+"issue": "Bare place names are a list; their link to the clause is unexplained."
+},
+{
+"n": 4,
+"reading": "My file is two feet thick, a real cold case.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nKaixo I'm famous\nFront page in Bilbao: an invasion\nBern Perth Crete Cairns and I'm the main name\nMy file's two foot thick a real cold case": {
+"thread": "The speaker is a man whose fame has spread across the world, and the fame is really notoriety, since his police file is now a cold case.",
+"coherent": 1,
+"issue": "Bar 3 is a bare list of cities, and the cold-case twist in bar 4 is never signposted.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Front page in Bilbao supports the claim of being famous, with the invasion image adding scale."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Naming Bern, Perth, Crete and Cairns escalates the fame to global reach, though as a bare list."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "A thick police file as a cold case pivots fame into notoriety; abrupt, but a listener can follow it."
+}
+]
+},
+"[haiku]\nHoi Rotterdam beg your pardon\nI've got your gnome proost I'm still not sorry\nLook it fell off of a lorry\nTen feet of it guards my garden": [
+{
+"n": 1,
+"reading": "Hi Rotterdam, I beg your pardon.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "I've got your gnome, cheers, and I'm still not sorry.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Gnome proost' is unclear: a toast, or a noun phrase?"
+},
+{
+"n": 3,
+"reading": "Look, it fell off a lorry.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "Ten feet of it guards my garden.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Ten feet of it' is unclear; 'it' and its referent are vague."
+}
+],
+"[haiku]\nI'm wanted for crimes at sea\nExcessive energy Boomtown spree\nStand back Bristol he's performing\nOn Red Bull the lad is flying free\nShop him now and you win a pint a bag of crisps\nLong arm of the law\nCandy-pink my floppy top hat\nThen he's back to take the floor": [
+{
+"n": 1,
+"reading": "I am wanted for crimes committed at sea.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "No verb; a noun list. Restating needs an invented 'on a'."
+},
+{
+"n": 3,
+"reading": "Stand back, Bristol; he is performing.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "On Red Bull, the lad is flying free.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "Shop him now and you win a pint, a bag of crisps.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "Stock idiom with no clause; a noun phrase, not a sentence."
+},
+{
+"n": 7,
+"reading": "My floppy top hat is candy-pink.",
+"grammatical": false,
+"sense": 1,
+"issue": "No verb; 'is' must be supplied for the sense to work."
+},
+{
+"n": 8,
+"reading": "Then he is back to take the floor.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nI'm wanted for crimes at sea\nExcessive energy Boomtown spree\nStand back Bristol he's performing\nOn Red Bull the lad is flying free\nShop him now and you win a pint a bag of crisps\nLong arm of the law\nCandy-pink my floppy top hat\nThen he's back to take the floor": {
+"thread": "The speaker is a wanted outlaw who treats his manhunt as a hyped-up festival act, so the chase and the bounty become part of the show.",
+"coherent": 1,
+"issue": "Geography jumps from sea crimes to Boomtown to Bristol, and the top hat bar drifts from the chase.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Escalates the wanted claim into a festival spree, though the sea-to-festival shift is abrupt."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Continues the performing idea and names the city where he is hyping the crowd."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Supports the manic-energy claim with a Red Bull image."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Deflates the manhunt with a pint-and-crisps bounty, a clear comic contrast."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Returns to the manhunt, tying the police pursuit back to the outlaw framing."
+},
+{
+"n": 7,
+"follows": false,
+"issue": "Costume detail on a new subject; it does not advance or undercut the outlaw-performer claim."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Brings the outlaw back to performing, closing the performer-versus-wanted idea."
+}
+]
+},
+"[haiku]\nI'm wanted for crimes at sea\nExcessive energy a five-day spree\nStand back Bristol he's performing\nOn Red Bull the lad is flying free\nShop him now and you win a pint a bag of crisps\nLong arm of the law\nDressed in pink my floppy top hat\nThen he's back to take the floor": [
+{
+"n": 1,
+"reading": "I am wanted for crimes at sea.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "Excessive energy is a five-day spree.",
+"grammatical": false,
+"sense": 1,
+"issue": "Noun phrases with no verb; reads as a list, not a clause."
+},
+{
+"n": 3,
+"reading": "Stand back, Bristol, he is performing.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "On Red Bull, the lad is flying free.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "Shop him now and you win a pint, a bag of crisps.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "Idiomatic noun phrase with no clause or predicate."
+},
+{
+"n": 7,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "Participle phrase and noun object with no verb; hat cannot be dressed."
+},
+{
+"n": 8,
+"reading": "Then he is back to take the floor.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nI'm wanted for crimes at sea\nExcessive energy a five-day spree\nStand back Bristol he's performing\nOn Red Bull the lad is flying free\nShop him now and you win a pint a bag of crisps\nLong arm of the law\nDressed in pink my floppy top hat\nThen he's back to take the floor": {
+"thread": "The speaker is a self-mythologising, wanted party showman whose outlaw notoriety is really just Red Bull-fuelled excess and dancefloor performance, which the manhunt treats as a joke.",
+"coherent": 2,
+"issue": "The \"crimes at sea\" opening and the Bristol setting are never connected, and the pink floppy top hat image lands as a costume detail with no clear link to the chase.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Elaborates the crimes as excess over a five-day spree, supporting the excess reading."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Shifts to a public performance in Bristol, escalating the showman persona."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Red Bull explains the energy claimed in bar 2 and the flying-free performance."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Public tip-off reward deflates the manhunt into a cheap joke, contrasting with the outlaw framing."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Police pursuit line sets up the manhunt again, continuing the outlaw framing."
+},
+{
+"n": 7,
+"follows": false,
+"issue": "Pink outfit and top hat is a sudden costume image with no clear link to the crimes or the chase."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Return to the floor returns to the performance thread and resolves the outlaw-showman idea."
+}
+]
+},
+"[haiku]\nI'm wanted for crimes at sea\nExcessive energy a five-day spree\nStand back Bristol he's performing\nOn Red Bull the lad is flying free\nAmsterdam or Koh Tao or Spain or Cairns or Wales\nLong arm of the law\nCandy-pink my floppy top hat\nThen he's back to take the floor": [
+{
+"n": 1,
+"reading": "I am wanted for crimes committed at sea.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "Excessive energy was a five-day spree.",
+"grammatical": false,
+"sense": 1,
+"issue": "Noun phrases with no verb; only a list of nouns."
+},
+{
+"n": 3,
+"reading": "Stand back, Bristol; he is performing.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "On Red Bull, the lad is flying free.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 0,
+"issue": "Bare list of place names with no verb or clause."
+},
+{
+"n": 6,
+"reading": "The reach of the law is long.",
+"grammatical": false,
+"sense": 1,
+"issue": "Idiom as a bare noun phrase; no verb, no clause."
+},
+{
+"n": 7,
+"reading": "My floppy top hat is candy-pink.",
+"grammatical": false,
+"sense": 1,
+"issue": "Noun phrase with no verb; hat described without a clause."
+},
+{
+"n": 8,
+"reading": "Then he is back to take the floor.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nI'm wanted for crimes at sea\nExcessive energy a five-day spree\nStand back Bristol he's performing\nOn Red Bull the lad is flying free\nAmsterdam or Koh Tao or Spain or Cairns or Wales\nLong arm of the law\nCandy-pink my floppy top hat\nThen he's back to take the floor": {
+"thread": "The speaker is a wanted fugitive who treats his crimes as one long party, partying across the world while the law chases him and he keeps performing as the hyped-up lad.",
+"coherent": 1,
+"issue": "Bar 7's candy-pink top hat is a stray image, and the shifts between \"I\" and \"he\" are unsignalled.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Escalates the wanted-for-crimes claim into a reckless party spree."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Switches to third person and a performing hype cue; the I-to-he shift is abrupt but readable."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Deepens the reckless party image with Red Bull and flying free."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "A list of far-flung places that reads as fleeing across the world, though it is close to a travel list."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Names the pursuer directly, so the evasion thread is clear."
+},
+{
+"n": 7,
+"follows": false,
+"issue": "Costume detail about a pink top hat has no link to the law chase or the party."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Returns to the performing image from bar 3, closing the loop."
+}
+]
+},
+"[haiku]\nSo the good mozzarella? From the guy in Naples\nMarrakesh when I'm able, my guy there, so check the label\nBarber's chair, cut-throat blade, on the house, cards on the table\nMy boots in Bergen? Dead fatal\nOn the ferry, flat calm, Thai mainland\nBut the fags are that cheap dead cheeky\nForty a day? My guy is sorting me\nNeed me? Gone to my guy's guy down the road for a quick sneaky": [
+{
+"n": 1,
+"reading": "Is the good mozzarella from the guy in Naples?",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "When I'm able, I'll go to Marrakesh, where my guy is, so check the label.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Check the label' has no stated object; the label's subject is unclear."
+},
+{
+"n": 3,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 0,
+"issue": "Word list of nouns and idioms with no verb or clause."
+},
+{
+"n": 4,
+"reading": "Are my boots in Bergen? That's dead fatal.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Dead fatal' is slang with unclear meaning; the question is clear."
+},
+{
+"n": 5,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "Prepositional and adjectival fragments with no verb; the setting is guessable."
+},
+{
+"n": 6,
+"reading": "But the cigarettes are that cheap, which is really cheeky.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "Forty a day? My guy is sorting me out.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "'A quick sneaky' ends with an adjective and no noun; restating needs an invented word."
+}
+],
+"[haiku]\nBLOCK2\nSo the good mozzarella? From the guy in Naples\nMarrakesh when I'm able, my guy there, so check the label\nBarber's chair, cut-throat blade, on the house, cards on the table\nMy boots in Bergen? Dead fatal\nOn the ferry, flat calm, Thai mainland\nBut the fags are that cheap dead cheeky\nForty a day? My guy is sorting me\nNeed me? Gone to my guy's guy down the road for a quick sneaky": {
+"thread": "The speaker boasts that he has a \"guy\" in every city who sources him cheap or dodgy goods abroad, so he never has to pay full price or ask twice.",
+"coherent": 1,
+"issue": "Bars 3–5 drop the \"guy\" network for barbers, boots and a ferry, so the thread breaks mid-block.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Marrakesh contact with a label check extends the 'guy abroad' idea from bar 1."
+},
+{
+"n": 3,
+"follows": false,
+"issue": "Barber's chair and blade have no guy or source; it is a new category with no signal."
+},
+{
+"n": 4,
+"follows": false,
+"issue": "Boots in Bergen with 'dead fatal' is unclear and does not connect to the guy network."
+},
+{
+"n": 5,
+"follows": false,
+"issue": "Ferry and Thai mainland is a place-hop in time order with no link to the claim."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "'But the fags are that cheap' contrasts with the previous bars and returns to the cheap-goods point."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "'My guy is sorting me' explicitly returns to the contact-supplies-me idea."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "'My guy's guy' escalates the network to a second tier, closing the joke."
+}
+]
+},
+"[haiku]\nMozzarella? The staples? It's my guy in Naples\nMarrakesh, half the price, with my guy there, so check the label\nBarber's chair, cut-throat blade, on the house, cards on the table\nMy boots in Bergen? Dead fatal\nOn the ferry, flat calm, Thai mainland\nBut the fags are that cheap dead cheeky\nForty a day? My guy is sorting me\nNeed me? Gone to my guy's guy down the road for a quick sneaky": [
+{
+"n": 1,
+"reading": "Is it mozzarella, the staples? It's my guy in Naples.",
+"grammatical": true,
+"sense": 1,
+"issue": "\"The staples?\" is unclear; the cheese-and-staples link is strained."
+},
+{
+"n": 2,
+"reading": "In Marrakesh it costs half the price with my guy there, so check the label.",
+"grammatical": true,
+"sense": 1,
+"issue": "Ordinary spoken fragments, but \"check the label\" hints at fakes without saying so."
+},
+{
+"n": 3,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "Noun phrases with no verb; a list of fragments."
+},
+{
+"n": 4,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "\"My boots in Bergen\" has no verb; \"Dead fatal\" is an unattached slang fragment."
+},
+{
+"n": 5,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 0,
+"issue": "Only prepositional phrases and place names; no clause or verb."
+},
+{
+"n": 6,
+"reading": "But the cigarettes are so cheap that it's dead cheeky.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "Forty a day? My guy is sorting me out.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "Ends on \"a quick sneaky\" with no noun; the sentence is cut off."
+}
+],
+"[haiku]\nBLOCK2\nMozzarella? The staples? It's my guy in Naples\nMarrakesh, half the price, with my guy there, so check the label\nBarber's chair, cut-throat blade, on the house, cards on the table\nMy boots in Bergen? Dead fatal\nOn the ferry, flat calm, Thai mainland\nBut the fags are that cheap dead cheeky\nForty a day? My guy is sorting me\nNeed me? Gone to my guy's guy down the road for a quick sneaky": {
+"thread": "The speaker, a Brit abroad, claims he has a contact (\"my guy\") in every place he goes who gets him cheap or free goods, so he never pays full price.",
+"coherent": 1,
+"issue": "Bars 4 and 5 jump to Bergen boots and a Thai ferry with no guy or price link; they read as a place tour.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Marrakesh half price via a guy there escalates the guy-network claim."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Free barber chair is a weak but recognisable extension of the free-perks theme."
+},
+{
+"n": 4,
+"follows": false,
+"issue": "Bergen boots 'dead fatal' has no guy or price link to the previous bar."
+},
+{
+"n": 5,
+"follows": false,
+"issue": "Ferry and Thai mainland are a location shift with no link to Bergen or the claim."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "'But' sets fags being cheap against Bergen being expensive, which keeps the price contrast going."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Forty a day sorted by my guy returns directly to the contact claim."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "A guy's guy escalates the network joke, closing the block on the same claim."
+}
+]
+},
+"[haiku]\nMozzarella? A stranger? It's my guy in Naples\nMarrakesh when I'm able, my guy there, so check the label\nBarber's chair, cut-throat blade, on the house, cards on the table\nMy boots in Bergen? Dead fatal\nOn the ferry, flat calm, Thai mainland\nBut the fags are that cheap dead cheeky\nForty a day? My guy is sorting me\nNeed me? Gone to my guy's guy down the road for a quick sneaky": [
+{
+"n": 1,
+"reading": "Is it mozzarella from a stranger? It's from my guy in Naples.",
+"grammatical": true,
+"sense": 1,
+"issue": "Two elliptical questions and answers; the link between mozzarella and the stranger is strained."
+},
+{
+"n": 2,
+"reading": "I'll go to Marrakesh when I'm able, where my guy is, so check the label.",
+"grammatical": true,
+"sense": 1,
+"issue": "Elliptical; 'check the label' is never tied to anything clear."
+},
+{
+"n": 3,
+"reading": "I'm in a barber's chair with a cut-throat blade, the shave is free, and the cards are on the table.",
+"grammatical": false,
+"sense": 1,
+"issue": "Noun-phrase list with no verb; only a scene, no clear claim."
+},
+{
+"n": 4,
+"reading": "Are my boots in Bergen? That's dead fatal.",
+"grammatical": true,
+"sense": 1,
+"issue": "Fragment question; what the boots in Bergen mean is unclear."
+},
+{
+"n": 5,
+"reading": "On the ferry, the water is flat calm, near the Thai mainland.",
+"grammatical": false,
+"sense": 1,
+"issue": "No finite verb; prepositional and adjective fragments only."
+},
+{
+"n": 6,
+"reading": "But the cigarettes are that cheap, it's dead cheeky.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "Forty a day? My guy is sorting me out with forty a day.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "'For a quick sneaky' ends mid-phrase; missing noun, dangling preposition."
+}
+],
+"[haiku]\nBLOCK2\nMozzarella? A stranger? It's my guy in Naples\nMarrakesh when I'm able, my guy there, so check the label\nBarber's chair, cut-throat blade, on the house, cards on the table\nMy boots in Bergen? Dead fatal\nOn the ferry, flat calm, Thai mainland\nBut the fags are that cheap dead cheeky\nForty a day? My guy is sorting me\nNeed me? Gone to my guy's guy down the road for a quick sneaky": {
+"thread": "A British traveller claims he has a \"guy\" in every city he visits who sorts him out with whatever he needs, from food and haircuts to cheap cigarettes, and even a guy's guy when that fails.",
+"coherent": 1,
+"issue": "Bars 4 and 5 drop the \"my guy\" pattern and drift into travel locations (Bergen, ferry, Thailand) with no point.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Marrakesh contact continues the Naples 'my guy' claim."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Free barber work extends the guy-sorts-me idea, though 'cards on the table' is loose."
+},
+{
+"n": 4,
+"follows": false,
+"issue": "Boots in Bergen with no guy and no clear problem; a new place with no link."
+},
+{
+"n": 5,
+"follows": false,
+"issue": "Ferry and Thai mainland are pure location, with no link to the claim."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "'But' sets up cheap cigarettes as a contrast to the expensive places before."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Forty a day, sorted by his guy, returns to the main claim."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "The guy's guy escalates the network joke neatly."
+}
+]
+},
+"[haiku]\nHoi hoi to the Dutch my people\nTheir gnome's as tall as a house, rock solid\nCross my Noord man it's your wallet\nWant one? We knock up a sequel": [
+{
+"n": 1,
+"reading": "Hoi hoi, greetings to my Dutch people.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "Their gnome is as tall as a house, rock solid.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "'Cross my Noord man' is a garbled oath; the wallet claim is unclear."
+},
+{
+"n": 4,
+"reading": "Do you want one? We quickly make a sequel.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nHoi hoi to the Dutch my people\nTheir gnome's as tall as a house, rock solid\nCross my Noord man it's your wallet\nWant one? We knock up a sequel": {
+"thread": "The speaker is a Dutch con man who lures his countrymen with an oversized garden gnome, robs them of their wallets, and offers them a sequel.",
+"coherent": 1,
+"issue": "\"Cross my Noord\" and \"knock up\" are opaque, so the gnome-to-wallet scam is hard to follow once.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Gnome bait loosely follows the Dutch address, setting up the con, though 'their' is vague."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Pivot to the wallet reads as the scam's payoff, but 'Cross my Noord' is unclear."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Offering a sequel continues the con, though 'knock up' is ambiguous."
+}
+]
+},
+"[haiku]\nG'day there's a torch on call\nMy brief's a better call than Saul\nFour-wheel drive dead on arrival\nMy doorman will put you through the wall\nAmsterdam or Koh Tao or Spain or Cairns or Wales\nProst and then you buy\nHanoi bikes are getaway cars\nIf you're stuck I know a guy": [
+{
+"n": 1,
+"reading": "Hello, there is a torch on call.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Torch on call' is obscure; the meaning of 'torch' is strained."
+},
+{
+"n": 2,
+"reading": "My legal brief is a better call than Saul.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "The four-wheel drive was dead on arrival.",
+"grammatical": false,
+"sense": 1,
+"issue": "Noun phrase with idiom; no finite verb, so only a fragment."
+},
+{
+"n": 4,
+"reading": "My doorman will put you through the wall.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 0,
+"issue": "Just a list of place names with no verb or claim."
+},
+{
+"n": 6,
+"reading": "Cheers, and then you buy.",
+"grammatical": false,
+"sense": 1,
+"issue": "'Buy' has no object; the round being bought is left unstated."
+},
+{
+"n": 7,
+"reading": "Hanoi bikes are getaway cars.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "If you're stuck, I know a guy.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nG'day there's a torch on call\nMy brief's a better call than Saul\nFour-wheel drive dead on arrival\nMy doorman will put you through the wall\nAmsterdam or Koh Tao or Spain or Cairns or Wales\nProst and then you buy\nHanoi bikes are getaway cars\nIf you're stuck I know a guy": {
+"thread": "The speaker is a fixer with international reach who gets clients out of trouble, using muscle, a sharp brief and quick escapes, so you call him when you're stuck.",
+"coherent": 1,
+"issue": "Bar 5's list of places and bar 6's drinking toast break the fixer claim with no signal.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Compares his brief to Better Call Saul, reinforcing the fixer-for-hire claim."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Dead four-wheel drive loosely sets up the vehicle and escape theme."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Doorman who puts people through walls escalates the muscle side of the claim."
+},
+{
+"n": 5,
+"follows": false,
+"issue": "A bare list of countries with no link to the fixer claim; reads as a new subject."
+},
+{
+"n": 6,
+"follows": false,
+"issue": "Drinking toast after a list of places; no clear connection to fixing trouble."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Hanoi bikes as getaway cars ties back to escape and the fixer's services."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Being stuck and knowing a guy closes the claim cleanly."
+}
+]
+},
+"[haiku]\nHoi hoi to the Dutch my posse\nTheir gnome's as tall as a house, rock solid\nCross my Noord man it's your wallet\nWant one? I'll flog you a copy": [
+{
+"n": 1,
+"reading": "Hello, hello to the Dutch, my posse.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "Their gnome is as tall as a house, rock solid.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "'Cross' has no clear object or clause; 'it's your wallet' is a loose tag."
+},
+{
+"n": 4,
+"reading": "Do you want one? I'll sell you a copy.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nHoi hoi to the Dutch my posse\nTheir gnome's as tall as a house, rock solid\nCross my Noord man it's your wallet\nWant one? I'll flog you a copy": {
+"thread": "A smooth-talking hustler greets the Dutch with fake warmth, then robs them and tries to sell them back a copy of something.",
+"coherent": 1,
+"issue": "The gnome bar is a tangent, and 'copy' is never clarified as to what is being sold.",
+"links": [
+{
+"n": 2,
+"follows": false,
+"issue": "Gnome-as-tall-as-a-house comes out of nowhere after the greeting and adds no claim about the speaker or the robbery."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Turns the friendly greeting into a stick-up, deflating the posse warmth with a clear contrast."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "The 'want one?' sales pitch follows the robbery as a con, though 'copy' stays vague."
+}
+]
 }
 }

@@ -31,6 +31,12 @@ For EACH bar:
 - issue: what is wrong, in at most 12 words, or "" if sense is 2.
 You may read a bar as continuing the sentence of the bar before it only if the previous bar clearly leaves the sentence open (it ends mid-clause). Be harsh: a clever sound does not make a sentence. Return JSON only."""
 
+# Claude only (15 Oct 2026): fresh Haiku reads failed "Look it fell off of a lorry" and "He's off the back of a lorry" on every run
+# for a pronoun with no referent. In a song the pronoun points back to an earlier bar; the DeepSeek prompt is unchanged.
+CLAUDE_EXTRA = ("\nA pronoun (it, he, she, they, that) may point to something earlier in the song that you cannot see: never mark a bar "
+                "down for that alone. Judge whether the words around the pronoun make a sentence.")
+
+
 SCHEMA = {
     "type": "object",
     "properties": {"bars": {"type": "array", "items": {
@@ -42,11 +48,28 @@ SCHEMA = {
 }
 
 CACHE = config.EVAL_DIR / "sense_cache.json"
+CLAUDE_SENSE_MODEL = "haiku"   # set by --calibrate results (15 Oct 2026)
+CLAUDE_READS = 2               # a bar fails only when every read fails it
 PARTICLES = {"in", "on", "out", "up", "off", "down", "over", "through", "at", "to", "of", "for", "with", "by", "from", "into", "onto"}
 FUNCTION = set("""a an the and or but so then of in on at to for with by from as is was are were be been am i i'm i've i'd i'll you he she it we they me my your his her
 its our their this that these those there here not no do did does have has had will would can could just very too out up off down over""".split())
 
 _CACHE = None
+
+
+def model() -> str:
+    """ds-flash when DEEPSEEK_API_KEY is set (the calibrated judge, 14 Oct); otherwise Claude through the logged-in CLI (Joe, 15 Oct
+    2026: "I should be able to use claude too"). WW_SENSE_MODEL overrides. Claude verdicts are cached under their own key."""
+    m = os.environ.get("WW_SENSE_MODEL")
+    if m:
+        return m
+    if config.secret("DEEPSEEK_API_KEY"):
+        return "ds-flash"
+    return CLAUDE_SENSE_MODEL
+
+
+def _ckey(m: str, key: str) -> str:
+    return key if m == "ds-flash" else f"[{m}]\n{key}"   # ds-flash keys predate the switch and stay as they were
 
 
 def _load() -> dict:
@@ -60,8 +83,16 @@ def _load() -> dict:
 
 
 def _save() -> None:
+    """merge with what is on disk first, then replace atomically: two processes (calibrate and a draft) each wrote their own copy (15 Oct)."""
     if _CACHE is not None:
-        CACHE.write_text(json.dumps(_CACHE, ensure_ascii=False, indent=0), encoding="utf-8")
+        try:
+            disk = json.loads(CACHE.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            disk = {}
+        _CACHE.update({k: v for k, v in disk.items() if k not in _CACHE})
+        tmp = CACHE.with_suffix(f".{os.getpid()}.tmp")
+        tmp.write_text(json.dumps(_CACHE, ensure_ascii=False, indent=0), encoding="utf-8")
+        os.replace(tmp, CACHE)
 
 
 def _words(bar: str) -> list[str]:
@@ -74,7 +105,8 @@ def screen(bar: str) -> list[str]:
     out = []
     if not w:
         return out
-    if w[-1] in PARTICLES:
+    # "every country I've been to": the object is fronted, nothing dangles (15 Oct 2026: the screen failed this GOOD bar with any judge)
+    if w[-1] in PARTICLES and not (w[-1] == "to" and len(w) > 1 and w[-2] == "been"):
         out.append(f"ends on a dangling '{w[-1]}'")
     if sum(1 for x in w if x not in FUNCTION) < 2:
         out.append("fewer than two content words")
@@ -85,25 +117,41 @@ def _context_block(bars: list[str]) -> str:
     return "\n".join(f"{i + 1}. {b}" for i, b in enumerate(bars))
 
 
-def judge(bars: list[str], llm=None, model: str = "ds-flash") -> list[dict]:
-    """one row per bar: {n, reading, grammatical, sense, issue}. Cached per (block text); raises nothing on a network failure (rows are then marked unjudged)."""
+def _read(bars: list[str], llm, model: str) -> list[dict]:
+    from ..llm import Request
+    res = llm.complete(Request(model=model, system=SYSTEM + ("" if model == "ds-flash" else CLAUDE_EXTRA), messages=[{"role": "user", "content": "BARS (in order):\n" + _context_block(bars)}],
+                               schema=SCHEMA, max_tokens=max(1500, 160 * len(bars)), effort=None if model == "ds-flash" else "low", temperature=0.0, stage="sensecheck", scope="sense"), use_cache=False)
+    by = {}
+    for r in (res.parsed or {}).get("bars", []):
+        try:
+            by[int(r.get("n", 0))] = r
+        except (TypeError, ValueError):
+            continue
+    return [by.get(i + 1) or {"n": i + 1, "reading": "", "grammatical": True, "sense": 2, "issue": "", "unjudged": "missing"} for i in range(len(bars))]
+
+
+def judge(bars: list[str], llm=None, model: str = None) -> list[dict]:
+    """one row per bar: {n, reading, grammatical, sense, issue}. Cached per (block text); raises nothing on a network failure (rows are then marked unjudged).
+    Claude reads the block CLAUDE_READS times and a bar keeps its best read: it fails only when every read fails it (15 Oct 2026: one Haiku read
+    failed 1-3 of the 7 GOOD bars from run to run; ds-flash runs at temperature 0, the CLI cannot)."""
     cache = _load()
-    key = "\n".join(bars)
+    model = model or globals()["model"]()
+    key = _ckey(model, "\n".join(bars))
     if key in cache:
         return cache[key]
     try:
-        from ..llm import LLM, Ledger, Request
+        from ..llm import LLM, Ledger
         llm = llm or LLM(ledger=Ledger(run_id="sensecheck"))
-        res = llm.complete(Request(model=model, system=SYSTEM, messages=[{"role": "user", "content": "BARS (in order):\n" + _context_block(bars)}],
-                                   schema=SCHEMA, max_tokens=max(1500, 160 * len(bars)), effort=None, temperature=0.0, stage="sensecheck", scope="sense"), use_cache=False)
-        rows = (res.parsed or {}).get("bars", [])
+        reads = [_read(bars, llm, model) for _ in range(1 if model == "ds-flash" else CLAUDE_READS)]
     except Exception as e:  # noqa: BLE001 - offline must not fail a bar
         return [{"n": i + 1, "reading": "", "grammatical": True, "sense": 2, "issue": "", "unjudged": str(e)[:80]} for i in range(len(bars))]
-    by = {int(r.get("n", 0)): r for r in rows}
     out = []
     for i in range(len(bars)):
-        r = by.get(i + 1) or {"n": i + 1, "reading": "", "grammatical": True, "sense": 2, "issue": "", "unjudged": "missing"}
-        out.append(r)
+        per = [rd[i] for rd in reads if "unjudged" not in rd[i]]
+        if not per:
+            out.append(reads[0][i])
+            continue
+        out.append(max(per, key=lambda r: (int(r.get("sense", 0) or 0) >= 2 and bool(r.get("grammatical", True)), int(r.get("sense", 0) or 0))))
     if not any("unjudged" in r for r in out):
         cache[key] = out
         _save()
@@ -144,30 +192,57 @@ BLOCK_SCHEMA = {
 }
 
 
-def block_check(bars: list[str], llm=None, model: str = "ds-flash") -> dict:
+def _block_read(bars: list[str], llm, model: str) -> dict:
+    from ..llm import Request
+    res = llm.complete(Request(model=model, system=BLOCK_SYSTEM, messages=[{"role": "user", "content": "BARS (in order):\n" + _context_block(bars)}],
+                               schema=BLOCK_SCHEMA, max_tokens=1500, effort=None if model == "ds-flash" else "low", temperature=0.0, stage="sensecheck", scope="sense"), use_cache=False)
+    r = res.parsed or {}
+    if not r:
+        raise ValueError("empty")
+    return r
+
+
+def block_verdict(r: dict, n_bars: int) -> dict:
+    fails = [(int(l["n"]), l.get("issue", "does not follow")) for l in r.get("links", []) if not l.get("follows", True) and int(l.get("n", 0)) > 1]
+    # calibration (14 Oct 2026): the judge cannot separate Joe's approved block (coherent 1) from the known anti-example (coherent 1), so the bar for a hard
+    # fail is a real break: no thread, coherent 0, or more broken links than a normal rap's deliberate jumps (1 per 4 bars). Its notes are read by hand either way.
+    ok = r.get("coherent", 2) >= 1 and "NO THREAD" not in r.get("thread", "") and len(fails) <= max(1, n_bars // 4)
+    return {"ok": ok, "thread": r.get("thread", ""), "coherent": r.get("coherent", 2), "issue": r.get("issue", ""), "fails": fails}
+
+
+def block_check(bars: list[str], llm=None, model: str = None) -> dict:
     """ACROSS bars (Joe, 14 Oct 2026): one thread per block, every bar follows the one before it. Cached. Fails on coherent < 2 or any link that does not follow."""
     cache = _load()
-    key = "BLOCK2\n" + "\n".join(bars)   # BLOCK2 = the argument-thread prompt (14 Oct 2026); verdicts under the old "who does what, where" prompt are not reused
+    model = model or globals()["model"]()
+    key = _ckey(model, "BLOCK2\n" + "\n".join(bars))   # BLOCK2 = the argument-thread prompt (14 Oct 2026); verdicts under the old "who does what, where" prompt are not reused
     if key in cache:
         r = cache[key]
     else:
         try:
-            from ..llm import LLM, Ledger, Request
-            llm = llm or LLM(ledger=Ledger(run_id="sensecheck"))
-            res = llm.complete(Request(model=model, system=BLOCK_SYSTEM, messages=[{"role": "user", "content": "BARS (in order):\n" + _context_block(bars)}],
-                                       schema=BLOCK_SCHEMA, max_tokens=1500, effort=None, temperature=0.0, stage="sensecheck", scope="sense"), use_cache=False)
-            r = res.parsed or {}
-            if not r:
-                raise ValueError("empty")
+            from ..llm import LLM, Ledger
+            r = _block_read(bars, llm or LLM(ledger=Ledger(run_id="sensecheck")), model)
             cache[key] = r
             _save()
         except Exception as e:  # noqa: BLE001
             return {"ok": True, "unjudged": str(e)[:80], "thread": "", "fails": [], "coherent": 2}
-    fails = [(int(l["n"]), l.get("issue", "does not follow")) for l in r.get("links", []) if not l.get("follows", True) and int(l.get("n", 0)) > 1]
-    # calibration (14 Oct 2026): the judge cannot separate Joe's approved block (coherent 1) from the known anti-example (coherent 1), so the bar for a hard
-    # fail is a real break: no thread, coherent 0, or more broken links than a normal rap's deliberate jumps (1 per 4 bars). Its notes are read by hand either way.
-    ok = r.get("coherent", 2) >= 1 and "NO THREAD" not in r.get("thread", "") and len(fails) <= max(1, len(bars) // 4)
-    return {"ok": ok, "thread": r.get("thread", ""), "coherent": r.get("coherent", 2), "issue": r.get("issue", ""), "fails": fails}
+    return block_verdict(r, len(bars))
+
+
+# PAR (15 Oct 2026). The Claude sense read fails 37/76 of the ORIGINAL's bars (python -m ww.calib.quality_par --sense): rap is fragments, and a
+# per-bar hard rule fails the positive control. With a Claude judge the rule is per slot: ours may fail no more bars than the original's slot + 1.
+SENSE_SLACK = 1
+
+
+def slot_par(slot: str, model_name: str = None) -> "dict | None":
+    """{'fail': n, 'block_ok': bool} from benchmark/sense_par_<model>.json, or None (ds-flash: the old per-bar rule stands)."""
+    m = model_name or model()
+    if m == "ds-flash":
+        return None
+    try:
+        d = json.loads((config.ROOT / "benchmark" / f"sense_par_{m}.json").read_text(encoding="utf-8"))
+        return d["slots"].get(slot)
+    except (OSError, ValueError, KeyError):
+        return None
 
 
 # the calibration set: GOOD must pass, BAD must fail. GOOD = plain sentences a speaker could say; BAD = bars Joe or I rejected as
@@ -209,7 +284,8 @@ def calibrate_block(llm=None) -> tuple[bool, str]:
 def selftest() -> tuple[bool, str]:
     s = screen("Queue round the block for the film I'm buying in")
     t = screen("He's off the back of a lorry")
-    ok = any("dangling" in x for x in s) and not t
+    u = screen("I'm wanted in every country I've been to")
+    ok = any("dangling" in x for x in s) and not t and not u
     return ok, "sensecheck: dangling-particle screen fires on a dangling 'in' and stays quiet on a clean bar"
 
 
