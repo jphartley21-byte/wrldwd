@@ -1,7 +1,7 @@
 {
   "calibrate": {
-    "lines": 41,
-    "output_sha256": "77f47d55fdd9e41373f8897403ca50a2942b246004663ee0e81e221d138ace6e",
+    "lines": 50,
+    "output_sha256": "37cc2ef6e72a2bb76ecfba01918fb753c69edeccf34867846e528d2752d45337",
     "passed": true
   },
   "files": {
@@ -13,7 +13,7 @@
     "toolkit/attest.py": "3f1ace5902aac51b17588d3ccee1c351a0b476fa6e701eeb897020e54e74edc7",
     "toolkit/bank.py": "4358103806426d1082dc0e5f4152e7a58006c1c2db82b1cc9f63889a1911fdf2",
     "toolkit/blockcheck.py": "10e6a00c19711b1d778aac02c8a5846474031edb2bbe7014458189bd87a7d5d1",
-    "toolkit/calibrate.py": "99a9004ca8013b83dd702fbb72e56f69d2ec9fe34cddb6ab9e3e3d8b8172b153",
+    "toolkit/calibrate.py": "04e8acfe7de35de3204861b22865385a6041a2b87764223a06b43b648dd3ec32",
     "toolkit/carpet.py": "834082fb727c1aac6a0aeff9ba3d5e2ef78595041688d1e79b9b547b912fffd2",
     "toolkit/characters.py": "9b3d26324a8333e56bda3c0d3fe07703ff02d3eb09f6782b364e33557800abe7",
     "toolkit/check_all.py": "4cb5567bc6635784959160143bf42227f19abbd8ef6e243c480848f4e56ca0af",
@@ -21,10 +21,11 @@
     "toolkit/craft_scan.py": "25c07457a78287dc3c23b5f31fd2946663a5a9caa5c39536097253345c58692f",
     "toolkit/devices.py": "20c5433cb8c85acb6ca8bad487c44ab85ed4f51ced61d5d1dcc3431611e52f83",
     "toolkit/ear.py": "bf2330112a41aa622b7ccf031389307516cc424e39fca5555ac9ffa4bd19176f",
-    "toolkit/fitbar.py": "9fbdacad83dec704f2b61f160b0aaea1c1f340808facc3660bccb43894b42bc3",
+    "toolkit/fitbar.py": "8dfb976e2b64fac6b03308e52899877f49f6533ca73d50a44d892a99b26b2df5",
     "toolkit/flow_check.py": "1b407317a168538e0d572f6818eb86444bfeb78b2324373de0af33a3eb3d27e0",
     "toolkit/flow_fit.py": "f1e7f43b93131ba5cc6a52f07867a363fdd12992dd093f68bde93c2ab6fb3462",
     "toolkit/flow_map.py": "db23ff0057c8d71ce281579ba50f39f3d52e4933e0d7c133b96b40ec4b0bf76b",
+    "toolkit/flow_par.py": "675c6fccdc2ed6d9e568227ed5a31dab271d845855899da9068c48e099c50510",
     "toolkit/flow_syll.py": "9783f2f57ecd335fbd3a948cc72b4eebef1c0649d3c53690970903f513de118f",
     "toolkit/forge.py": "d5e59861086db444cfaaef4ce8b9ac6e82ffb4727f31867b3ed5f5a3f03113c1",
     "toolkit/funny.py": "e2b1e55184e587988940f91bc7a3cd834aa99c8033835b15ee2713b7bc395c75",
@@ -50,6 +51,8 @@
     "toolkit/songcheck.py": "c7e74b50ea3394f5d02d2e439b9f60c4cdd7a50ec539a45d1f58d12a4b5bde6b",
     "toolkit/swagger.py": "d27279f1437eefb38784cc62db015a7e2f81374e4e2b5749508b639970e704ca",
     "toolkit/tests/devices_positive.txt": "77510ca4b3eb00233a0a7a8820341b8831703e5b617b9bad64edce5d6241ecf8",
+    "toolkit/tests/flow_flagged.txt": "a6d1793f020cfa78ddf0daeda43d10d4d6c5a24f2ba82a92e4b2b63cf3b376c1",
+    "toolkit/tests/flow_ok.txt": "a6b3bbe2e3dbb2561cdf0b42bf7e21c9cfc40a3f14073380e20a6dcd52c851dc",
     "toolkit/tests/rejected_v10_iom.txt": "5b59b6ee740c20483d3bc183c86ade48d7f280fec21247ce735fb8e4c613a856",
     "toolkit/tests/rejected_v12_hook915.txt": "f03d9db103907f50683bd246913f36dd133a2bd93d1e65e29d10c4311a605e5b",
     "toolkit/tests/rejected_v12_snowdon.txt": "d321138ea2980b5c94d98e9a3c43854507261bc858b4b3ac62d95bfb529101a6",

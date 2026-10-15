@@ -44,6 +44,12 @@ good = not any(x is False for x in _ap) and _ff.approach(9, "I'm wanted in Boomt
 ok &= good
 print(("ok  " if good else "BAD ") + f"rhyme approach: original {sum(x is False for x in _ap)} fails of {sum(x is not None for x in _ap)}; "
       "both jammed bars Joe flagged fail")
+# FLOW PAR (15 Oct 2026): every bar in toolkit/tests/flow_flagged.txt (Joe's flow complaints) fails the per-bar par, and the
+# original passes it in all 76 bars. Every new flow complaint from Joe goes into that file first.
+import flow_par as _fpar  # noqa: E402
+good = _fpar.selftest(sys.argv[1])
+ok &= good
+print(("ok  " if good else "BAD ") + "flow par: Joe's flagged bars all fail, the original passes its own bars")
 # the meaning gate must catch known-bad stanzas and leave clean bars clean
 mg = run([os.path.join(HERE, "meaning_gate.py"), "--selftest"], "")
 good = "PASSED" in mg

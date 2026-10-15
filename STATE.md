@@ -1725,3 +1725,28 @@ Checks: CALIBRATION PASSED; ww selftest 34/35 (the missing private plan file, as
 - The new gate also fails scratch Hook 1-4 bar 2 ('invasion', the dictionary limit above) and Hook 5-8 bar 2 ('not' read weak).
   - full_draft_wanted_v1 fails it on 13 bars.
 - "I'm wanted in Zell am See" fitted the frame exactly but was dropped: material/place_sound_families.md says it is said "zell am zay", so it does not rhyme with spree/free.
+
+## 15 Oct 2026 (later 4) - Joe: "how did this bar get through the gates without being fixed already" (pipeline fix, not a bar fix)
+WHY "Red Bull gives him wings he's running free" (and the Boomtown bar, and the 14 Oct bars 5-6) passed:
+1. Hard joins were allowed per BLOCK (2 bars in 8), so a bad bar hid inside the allowance.
+2. Stress clashes fired only as NOTES, and the fitting loop stopped when the hard list was empty.
+3. Runs of short closed vowels and a sentence restarting mid-bar were not measured at all.
+4. Joe's flow complaints were never kept as test cases, so no gate had to keep catching them.
+
+FIXED:
+- toolkit/tests/flow_flagged.txt: Joe's 4 flow complaints. calibrate.py asserts every one fails.
+- toolkit/tests/flow_ok.txt: bars Joe confirms flow fine must pass. Empty until he confirms.
+- toolkit/flow_par.py: each bar must be no worse than the ORIGINAL'S SAME BAR on four measures.
+  - stress run, hard joins, closed-vowel run, mid-bar restart
+  - per-bar numbers only in benchmark/flow_par.json
+  - HARD in slotcheck; it replaces the per-block join allowance, which is now a note
+  - fails the bar in fitbar; registry status joe_rule
+- Tolerances: at 0 the gate failed 11 of the 15 hook-r3 bars Joe liked. The loosest setting that still catches all 4 flagged bars (stress +1, joins 0, closed +1, restart +1) fails 5 of 15. Fitted in-sample.
+- fitbar `song` prints every slotcheck NOTE per section. write.md and CLAUDE.md rule 10: notes are fixed or listed to Joe, never skipped; a flow complaint goes into flow_flagged.txt BEFORE the bar is fixed.
+
+RERUN (no bars rewritten):
+- hook r3: 8 hard issues.
+  - 6 from the new gate: bars 3, 4, 8, 10, 12, 15.
+  - 2 from the approach gate: bars 2, 6.
+- full_draft_wanted_v1: 69 hard issues; 26 bars fail the new gate.
+- The 5 liked bars that fail (3, 4, 8, 10, 15) are for Joe's ear. Each answer goes into flow_ok.txt or flow_flagged.txt.

@@ -368,6 +368,14 @@ def check(slot: str, bars: list[str], context: list[str] | None = None, tol: int
                    if ap_want == "w" else "(the rhyme needs a stressed syllable to push off)"))
             rows[i]["issues"].append(msg)
             hard.append(f"bar {i + 1}: {msg}")
+        # FLOW PAR, HARD (15 Oct 2026): no worse than the original's own bar on stress runs, hard joins, closed-vowel runs and
+        # mid-bar restarts (toolkit/flow_par.py; Joe's flagged bars in toolkit/tests/flow_flagged.txt are its test set)
+        import flow_par as _fp
+        pf = _fp.check(start + i + 1, bars[i])
+        if pf:
+            msg = "flow worse than the original's bar: " + _fp.describe(pf)
+            rows[i]["issues"].append(msg)
+            hard.append(f"bar {i + 1}: {msg}")
         rows[i]["beat_weak"] = br["beat_weak"]
     if tg and bw_bars:
         mean_bw = bw_total / bw_bars
@@ -470,8 +478,9 @@ def check(slot: str, bars: list[str], context: list[str] | None = None, tol: int
             extra["ear"] = ear
             hardj = [i + 1 for i, b in enumerate(bars[:n]) if any(j["score"] >= 2 for j in earcheck.word_joins(b))]
             extra["hard_join_bars"] = hardj
+            # 15 Oct 2026: the per-block allowance let a bad bar hide inside it; the per-bar par in flow_par is the gate now
             if len(hardj) > max(1, n // 4):
-                hard.append(f"hard mouth-shape transitions on bars {hardj} (the original has them in 18% of bars, allowed here: {max(1, n // 4)} per {n}): consonant clusters of three or more across a word join, a hiss into a different hiss or th, a breathy h straight after a cluster ('whites, he's'), spread lips through a hiss into r or w ('he's wrecked'). Say each bar aloud at speed; reword the join")
+                notes.append(f"hard mouth-shape transitions on bars {hardj} (the original has them in 18% of bars, allowed here: {max(1, n // 4)} per {n}): consonant clusters of three or more across a word join, a hiss into a different hiss or th, a breathy h straight after a cluster ('whites, he's'), spread lips through a hiss into r or w ('he's wrecked'). Say each bar aloud at speed; reword the join")
             runon = [i + 1 for i, b in enumerate(fb) if b.get("ends_on_function")]
             extra["run_on_bars"] = runon
             if n >= 8 and not runon:
@@ -611,6 +620,10 @@ def selftest() -> tuple[bool, str]:
         retired.RETIRED.discard(retired.digest(probe))
     if not any("retired bar" in h for h in r["hard"]):
         problems.append(f"a retired bar must fail the slot check: {r['hard']}")
+    # the flow par gate (15 Oct 2026): every bar Joe flagged for flow fails it
+    import flow_par as _fp
+    if _fp.par_table() and any(not _fp.check(b, line) for b, line, _ in _fp.flagged()):
+        problems.append("every bar in toolkit/tests/flow_flagged.txt must fail the flow par gate")
     # the rhyme-approach gate (15 Oct 2026): three stresses jammed before the rhyme fail; a weak push-off passes
     import flow_fit as _ff
     if _ff.approach(9, "I'm wanted in Boomtown see")[0] is not False or _ff.approach(9, "I'm wanted in Zell am See")[0] is not True:

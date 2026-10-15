@@ -63,6 +63,10 @@ LEGACY = {
     "toolkit/flow_fit.approach (stress before the rhyme)": ("joe_rule", "HARD in slotcheck on Joe's instruction. The original passes in all 74 templated bars "
                                                            "(by construction: the stress marks come from its own text); both bars Joe heard as jammed fail. No independent "
                                                            "good set exists, and the dictionary stress model reads some secondary stresses as strong (the 'in' of invasion)"),
+    "toolkit/flow_par.py (per-bar par: stress run, hard joins, closed-vowel run, restart)": ("joe_rule", "HARD in slotcheck since 15 Oct 2026. "
+        "Catches 4 of 4 bars Joe flagged for flow (toolkit/tests/flow_flagged.txt); the original passes by construction (each bar is its own par). "
+        "Tolerances (stress +1, joins 0, closed vowels +1, restart +1) fitted in-sample on those 4 and the 15 bars of hook r3 Joe liked; "
+        "5 of the 15 still fail and are listed to Joe. toolkit/tests/flow_ok.txt (bars Joe confirms) must all pass"),
     "ww/judge/reader.py event/claim labels": ("unvalidated", "never run against the original; ww/judge/reader_validate.py is the test "
                                                              "(needs DEEPSEEK_API_KEY, absent in the 14 Oct cloud session)"),
 }

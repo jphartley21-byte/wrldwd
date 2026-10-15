@@ -1,0 +1,8 @@
+# Joe's flow complaints, kept as labelled bars the flow gates must keep catching (15 Oct 2026).
+# Every flow complaint Joe makes is added here FIRST, before the bar is fixed: calibrate.py asserts that every line
+# below fails toolkit/flow_par.py (no worse than the original's own bar) and that the original passes it.
+# Format: song bar | the line | what Joe heard. Lyrics are ours; the original's text is never stored here.
+5 | Cop in whites, he's wrecked my picket | 14 Oct: "difficulty mouth shape transitions: whites, hes / he's wrecked"
+6 | Gnome's in good nick, so he says I nicked it | 14 Oct: "stresses bunch up in the middle so rhyme cant land on same beat as line 1"
+9 | I'm wanted in Boomtown see | 15 Oct: flows differently from the original's bar 9 (three stresses jammed before a filler rhyme)
+12 | Red Bull gives him wings he's running free | 15 Oct: "doesnt flow as well as" the original's bar 12, "I can't work out why"

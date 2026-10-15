@@ -1,0 +1,3 @@
+# Bars Joe has said flow FINE (15 Oct 2026). The positive half of the flow test set: calibrate.py asserts every line here
+# PASSES toolkit/flow_par.py, so a gate cannot be tightened past Joe's ear. Same format as flow_flagged.txt:
+# song bar | the line | what Joe said. Empty until Joe confirms bars one by one.

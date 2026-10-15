@@ -1,0 +1,193 @@
+"""flow_par: a bar's flow must be no worse than the ORIGINAL'S OWN BAR in the same position (15 Oct 2026).
+
+Why it exists. Joe: "how did this bar get through the gates without being fixed already". Four bars he heard as flowing
+badly (toolkit/tests/flow_flagged.txt) passed every gate, because:
+  - hard mouth-shape joins were allowed per BLOCK (2 bars in 8), so a bad bar hid inside the allowance;
+  - stress clashes fired only as notes;
+  - runs of short closed vowels and a clause restarting mid-bar were not measured at all.
+This gate compares each bar with the same bar of the original, measure by measure, using instruments the repo already has:
+  stress_run   longest run of stressed syllables (flow_fit.sylls, the template's own stress model)
+  hard_joins   word joins scoring >= 2 (ww/write/earcheck.word_joins: 3+ consonant clusters, h after a cluster, hiss into hiss)
+  closed_run   longest run of syllables on a short closed vowel (ɪ ʊ) (ww/write/rapfit._syl): the mouth never opens
+  restart      a subject pronoun straight after a content word, with no conjunction (spaCy): the sentence restarts mid-bar
+
+Honest status: the original passes by construction (each bar is its own par). The evidence that it measures what Joe
+hears is the four flagged bars, all caught. There is no independent set of bars Joe has called good, so a tolerance is
+loosened only when a measure fails a bar Joe calls good.
+
+The original's per-bar values are stored as NUMBERS ONLY in benchmark/flow_par.json (rule 4: no original text).
+  python toolkit/flow_par.py --build ORIG_LINES.txt     write benchmark/flow_par.json
+  python toolkit/flow_par.py BAR "text"                 profile one bar against the original's bar
+  python toolkit/flow_par.py --selftest                 the flagged bars fail; the stored par matches the measure
+"""
+import functools
+import json
+import os
+import re
+import sys
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(HERE)
+sys.path.insert(0, HERE)
+sys.path.insert(0, ROOT)
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
+import flow_fit as ff   # noqa: E402
+
+PAR = os.path.join(ROOT, "benchmark", "flow_par.json")
+FLAGGED = os.path.join(HERE, "tests", "flow_flagged.txt")
+OK = os.path.join(HERE, "tests", "flow_ok.txt")
+MEASURES = ("stress_run", "hard_joins", "closed_run", "restart")
+# Fitted 15 Oct 2026 on the only labels there are: the loosest tolerances that still catch all 4 flagged bars, which fail the
+# fewest bars of hook r3 (Joe: "I like this", bar 12 excepted): 5 of 15 still fail, and they are listed to Joe to judge. At 0/0/0/0 the
+# gate failed 11 of those 15. In-sample and tiny: every new verdict goes into flow_flagged.txt or flow_ok.txt and is re-checked here.
+TOL = {"stress_run": 1, "hard_joins": 0, "closed_run": 1, "restart": 1}
+CLOSED = {"ɪ", "ʊ"}
+JOINERS = {"and", "but", "so", "when", "while", "if", "because", "cause", "cos", "that", "who", "which", "then", "or", "till",
+           "until", "as", "where", "though", "once", "since", "before", "after", "nor", "like"}
+LABEL = {"stress_run": "stressed syllables in a row", "hard_joins": "hard mouth-shape joins",
+         "closed_run": "short closed vowels (ɪ ʊ) in a row", "restart": "sentence restarts mid-bar"}
+
+
+def _ww():
+    from ww import bridge
+    bridge._pron_ready()
+
+
+def stress_run(line):
+    best = run = 0
+    for weak in ff.sylls(line):
+        run = 0 if weak else run + 1
+        best = max(best, run)
+    return best
+
+
+def hard_joins(line):
+    _ww()
+    from ww.write import earcheck
+    return sum(1 for j in earcheck.word_joins(line) if j["score"] >= 2)
+
+
+def closed_run(line):
+    _ww()
+    from ww.write import rapfit
+    best = run = 0
+    for v, *_ in rapfit._syl(line):
+        run = run + 1 if v in CLOSED else 0
+        best = max(best, run)
+    return best
+
+
+@functools.lru_cache(maxsize=1)
+def _nlp():
+    import spacy
+    return spacy.load("en_core_web_sm")
+
+
+def restart(line):
+    """subject pronouns that start a new clause straight after a content word, with no joining word between."""
+    doc = _nlp()(line)
+    n = 0
+    for t in doc:
+        if t.dep_ in ("nsubj", "nsubjpass") and t.pos_ == "PRON" and t.i > 0:
+            prev = doc[t.i - 1]
+            if prev.text.lower() not in JOINERS and prev.pos_ in ("NOUN", "PROPN", "VERB", "ADJ", "ADV", "NUM") and not prev.is_punct:
+                n += 1
+    return n
+
+
+def profile(line):
+    return {"stress_run": stress_run(line), "hard_joins": hard_joins(line), "closed_run": closed_run(line), "restart": restart(line)}
+
+
+@functools.lru_cache(maxsize=1)
+def par_table():
+    try:
+        return json.load(open(PAR, encoding="utf-8"))["bars"]
+    except OSError:
+        return None
+
+
+def check(bar_no, line):
+    """[(measure, ours, original's bar)] for every measure where the bar is worse than the original's bar beyond TOL.
+    An empty list means the bar passes; None means there is no par for that bar (no table, or out of range)."""
+    tab = par_table()
+    if not tab or not (1 <= bar_no <= len(tab)):
+        return None
+    par = tab[bar_no - 1]
+    ours = profile(line)
+    return [(m, ours[m], par[m]) for m in MEASURES if ours[m] > par[m] + TOL[m]]
+
+
+def describe(fails):
+    return "; ".join(f"{LABEL[m]} {o} (the original's bar has {p})" for m, o, p in fails)
+
+
+def flagged(path=FLAGGED):
+    out = []
+    if not os.path.exists(path):
+        return out
+    for l in open(path, encoding="utf-8"):
+        if l.strip() and not l.startswith("#"):
+            b, line, why = [x.strip() for x in l.split("|", 2)]
+            out.append((int(b), line, why))
+    return out
+
+
+def build(orig_path):
+    L = [l.strip() for l in open(orig_path, encoding="utf8") if l.strip()][:76]
+    bars = [profile(l) for l in L]
+    json.dump({"_note": "Per-bar flow profile of the ORIGINAL (numbers only, rule 4), built by toolkit/flow_par.py --build. "
+                        "A draft bar may be no worse than the original's bar in the same position.", "measures": list(MEASURES), "bars": bars},
+              open(PAR, "w", encoding="utf-8"), indent=1)
+    par_table.cache_clear()
+    return bars
+
+
+def selftest(orig_path=None):
+    ok = True
+    if par_table() is None:
+        print("flow_par selftest: FAILED (no benchmark/flow_par.json; run --build ORIG)")
+        return False
+    if orig_path:
+        L = [l.strip() for l in open(orig_path, encoding="utf8") if l.strip()][:76]
+        bad = [i + 1 for i, l in enumerate(L) if check(i + 1, l)]
+        good = not bad
+        ok &= good
+        print(("ok  " if good else "BAD ") + f"the original passes its own par in all {len(L)} bars (by construction){'' if good else ': ' + str(bad)}")
+    caught = [(b, line, check(b, line)) for b, line, _ in flagged()]
+    miss = [(b, line) for b, line, f in caught if not f]
+    good = not miss
+    ok &= good
+    print(("ok  " if good else "BAD ") + f"Joe's flagged bars are caught: {len(caught) - len(miss)} of {len(caught)}" + (f"; missed {miss}" if miss else ""))
+    for b, line, f in caught:
+        print(f"     bar {b}: {describe(f) if f else 'NOT CAUGHT'}")
+    oks = [(b, line, check(b, line)) for b, line, _ in flagged(OK)]
+    wrong = [(b, line) for b, line, f in oks if f]
+    good = not wrong
+    ok &= good
+    print(("ok  " if good else "BAD ") + f"bars Joe said flow fine pass: {len(oks) - len(wrong)} of {len(oks)}" + (f"; failing {wrong}" if wrong else ""))
+    print("flow_par selftest:", "PASSED" if ok else "FAILED")
+    return ok
+
+
+def main():
+    a = sys.argv[1:]
+    if a and a[0] == "--build":
+        bars = build(a[1])
+        print(f"wrote {os.path.relpath(PAR, ROOT)} ({len(bars)} bars, numbers only)")
+        return 0
+    if not a or a[0] == "--selftest":
+        return 0 if selftest(a[1] if len(a) > 1 else os.environ.get("WW_PRIVATE_ORIGINAL")) else 1
+    b, line = int(a[0]), " ".join(a[1:])
+    ours, par = profile(line), (par_table() or [{}] * 76)[b - 1]
+    for m in MEASURES:
+        print(f"  {LABEL[m]:38s} ours {ours[m]}  original bar {b}: {par.get(m, '?')}")
+    f = check(b, line)
+    print("PASS" if not f else "FAIL: " + describe(f))
+    return 0 if not f else 1
+
+
+if __name__ == "__main__":
+    sys.exit(main())

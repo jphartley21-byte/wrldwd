@@ -99,6 +99,10 @@ def try_bar(bar, line):
     ap_ok, ap_k, ap_want = ff.approach(bar, line)
     if ap_ok is False:
         ok, why = False, "; ".join(x for x in [why, f"stress before the rhyme: syllable {ap_k} should be {ap_want}"] if x)
+    import flow_par as fp
+    pf = fp.check(bar, line)
+    if pf:
+        ok, why = False, "; ".join(x for x in [why, "PAR " + fp.describe(pf)] if x)
     if jtxt:
         why = "; ".join(x for x in [why, jtxt] if x)
     return (ok, len(w), len(t["steps"]), agree, ff.end_shape(line)[0], t["end_shape"], pattern(bar, line),
@@ -167,7 +171,10 @@ def song(path, quiet=False):
     hard = {s: rapfit.check_block(s, D[s])["hard"] for s in SLOTS if D.get(s)}
     hard = {s: h for s, h in hard.items() if h}
     rfails, rows, share = recount.run([(s, D[s]) for s in SLOTS if D.get(s)], overlap=False, quiet=True)
-    gate = {s: slotcheck.check(s, D[s], cash=C.get(s) or [])["hard"] for s in SLOTS if D.get(s)}
+    full = {s: slotcheck.check(s, D[s], cash=C.get(s) or []) for s in SLOTS if D.get(s)}
+    gate = {s: r["hard"] for s, r in full.items()}
+    notes = {s: [x for x in slotcheck.report(r).splitlines() if x.startswith(("FLOW bar", "EAR bar"))] + 
+                [x for x in r["notes"] if not x.startswith(("recount codes", "cadence"))] for s, r in full.items()}
     if not quiet:
         npass = sum(not h for h in gate.values())
         print(f"slotcheck (THE GATE): {npass}/{len(gate)} sections pass, {sum(len(h) for h in gate.values())} hard issues"
@@ -175,6 +182,11 @@ def song(path, quiet=False):
         for s, h in gate.items():
             for x in h:
                 print(f"   {s}: {x[:220]}")
+        nn = sum(len(v) for v in notes.values())
+        print(f"slotcheck NOTES (not gates; each must be fixed or listed to Joe with a reason): {nn}")
+        for s, v in notes.items():
+            for x in v:
+                print(f"   {s}: {x[:200]}")
         print(f"per-bar fit (flow_fit + weak runs; bar 10 on the profile count): {ok}/{tot} bars (the original scores 74/76 on flow_fit)")
         for f in fails:
             print("   FAIL", f)
@@ -225,6 +237,9 @@ def selftest():
     chk("a 9-syllable song bar 10 passes the count", "need" not in try_bar(10, "Wanted for too much energy, see")[8])
     chk("a run of 4+ weak syllables fails the bar", try_bar(7, "Picked it up off of a lorry")[0] is False)
     chk("three stresses jammed before the rhyme fail the bar (15 Oct 2026)", try_bar(9, "I'm wanted in Boomtown see")[0] is False)
+    import flow_par as fp
+    chk("every bar Joe flagged for flow fails the per-bar fit (toolkit/tests/flow_flagged.txt)",
+        all(try_bar(b, line)[0] is False for b, line, _ in fp.flagged()))
     print("fitbar selftest:", "PASSED" if good else "FAILED")
     return good
 

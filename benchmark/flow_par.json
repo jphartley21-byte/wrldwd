@@ -1,0 +1,467 @@
+{
+ "_note": "Per-bar flow profile of the ORIGINAL (numbers only, rule 4), built by toolkit/flow_par.py --build. A draft bar may be no worse than the original's bar in the same position.",
+ "measures": [
+  "stress_run",
+  "hard_joins",
+  "closed_run",
+  "restart"
+ ],
+ "bars": [
+  {
+   "stress_run": 2,
+   "hard_joins": 0,
+   "closed_run": 0,
+   "restart": 0
+  },
+  {
+   "stress_run": 2,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 4,
+   "hard_joins": 0,
+   "closed_run": 0,
+   "restart": 0
+  },
+  {
+   "stress_run": 4,
+   "hard_joins": 0,
+   "closed_run": 0,
+   "restart": 0
+  },
+  {
+   "stress_run": 2,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 3,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 3,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 2,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 1,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 2,
+   "hard_joins": 0,
+   "closed_run": 0,
+   "restart": 0
+  },
+  {
+   "stress_run": 3,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 2,
+   "hard_joins": 0,
+   "closed_run": 0,
+   "restart": 0
+  },
+  {
+   "stress_run": 1,
+   "hard_joins": 0,
+   "closed_run": 2,
+   "restart": 0
+  },
+  {
+   "stress_run": 1,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 2,
+   "hard_joins": 0,
+   "closed_run": 0,
+   "restart": 0
+  },
+  {
+   "stress_run": 1,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 3,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 2,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 2,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 2,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 2,
+   "hard_joins": 1,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 2,
+   "hard_joins": 0,
+   "closed_run": 0,
+   "restart": 0
+  },
+  {
+   "stress_run": 2,
+   "hard_joins": 0,
+   "closed_run": 2,
+   "restart": 0
+  },
+  {
+   "stress_run": 2,
+   "hard_joins": 0,
+   "closed_run": 0,
+   "restart": 0
+  },
+  {
+   "stress_run": 2,
+   "hard_joins": 0,
+   "closed_run": 0,
+   "restart": 0
+  },
+  {
+   "stress_run": 2,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 2,
+   "hard_joins": 0,
+   "closed_run": 2,
+   "restart": 0
+  },
+  {
+   "stress_run": 3,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 3,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 1
+  },
+  {
+   "stress_run": 2,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 2,
+   "hard_joins": 0,
+   "closed_run": 0,
+   "restart": 0
+  },
+  {
+   "stress_run": 3,
+   "hard_joins": 1,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 2,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 3,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 1,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 1,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 1
+  },
+  {
+   "stress_run": 1,
+   "hard_joins": 0,
+   "closed_run": 2,
+   "restart": 1
+  },
+  {
+   "stress_run": 2,
+   "hard_joins": 1,
+   "closed_run": 0,
+   "restart": 0
+  },
+  {
+   "stress_run": 1,
+   "hard_joins": 2,
+   "closed_run": 2,
+   "restart": 0
+  },
+  {
+   "stress_run": 4,
+   "hard_joins": 1,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 1,
+   "hard_joins": 1,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 3,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 3,
+   "hard_joins": 0,
+   "closed_run": 0,
+   "restart": 0
+  },
+  {
+   "stress_run": 2,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 1
+  },
+  {
+   "stress_run": 5,
+   "hard_joins": 1,
+   "closed_run": 0,
+   "restart": 0
+  },
+  {
+   "stress_run": 4,
+   "hard_joins": 1,
+   "closed_run": 0,
+   "restart": 0
+  },
+  {
+   "stress_run": 1,
+   "hard_joins": 0,
+   "closed_run": 2,
+   "restart": 0
+  },
+  {
+   "stress_run": 2,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 1,
+   "hard_joins": 0,
+   "closed_run": 0,
+   "restart": 0
+  },
+  {
+   "stress_run": 3,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 1,
+   "hard_joins": 1,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 3,
+   "hard_joins": 2,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 2,
+   "hard_joins": 1,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 5,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 3,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 2,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 3,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 2,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 2,
+   "hard_joins": 0,
+   "closed_run": 0,
+   "restart": 1
+  },
+  {
+   "stress_run": 5,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 2,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 1,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 3,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 1,
+   "hard_joins": 1,
+   "closed_run": 1,
+   "restart": 1
+  },
+  {
+   "stress_run": 3,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 2,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 3,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 3,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 2,
+   "hard_joins": 0,
+   "closed_run": 0,
+   "restart": 0
+  },
+  {
+   "stress_run": 1,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 2,
+   "hard_joins": 0,
+   "closed_run": 2,
+   "restart": 0
+  },
+  {
+   "stress_run": 3,
+   "hard_joins": 1,
+   "closed_run": 2,
+   "restart": 0
+  },
+  {
+   "stress_run": 4,
+   "hard_joins": 0,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 3,
+   "hard_joins": 1,
+   "closed_run": 1,
+   "restart": 0
+  },
+  {
+   "stress_run": 2,
+   "hard_joins": 0,
+   "closed_run": 0,
+   "restart": 0
+  },
+  {
+   "stress_run": 3,
+   "hard_joins": 0,
+   "closed_run": 0,
+   "restart": 0
+  }
+ ]
+}
