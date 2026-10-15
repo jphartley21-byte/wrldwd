@@ -1713,3 +1713,15 @@ REGISTRY: evidence that rested on these bars is withdrawn.
 CLAUDE.md rule 9 records the instruction.
 
 Checks: CALIBRATION PASSED; ww selftest 34/35 (the missing private plan file, as before); instruments re-frozen.
+
+## 15 Oct 2026 (later 3) - stress before the rhyme is a HARD gate (Joe)
+- toolkit/flow_fit.approach(): the syllable just before the rhyme syllable must be strong or weak as in the original's bar.
+  - HARD in slotcheck, fails the bar in fitbar, asserted in calibrate.
+  - The original fails 0 of its 74 templated bars, by construction. Both bars Joe heard as jammed fail it.
+  - Registry status: joe_rule.
+  - Limit: the dictionary reads some secondary stresses as strong, e.g. the 'in' of invasion.
+- Boomtown bar rewritten: Hook 9-16 bar 1 is now "I'm wanted for crimes at sea" (persona). Bar 2 is "Excessive energy Boomtown spree".
+  - Hook 9-16 passes slotcheck. Swagger stamps 8/16.
+- The new gate also fails scratch Hook 1-4 bar 2 ('invasion', the dictionary limit above) and Hook 5-8 bar 2 ('not' read weak).
+  - full_draft_wanted_v1 fails it on 13 bars.
+- "I'm wanted in Zell am See" fitted the frame exactly but was dropped: material/place_sound_families.md says it is said "zell am zay", so it does not rhyme with spree/free.

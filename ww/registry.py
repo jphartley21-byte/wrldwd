@@ -59,6 +59,10 @@ LEGACY = {
     # 15 Oct 2026: the original passes (hook stamps 9/16, verse swagger 25/60); v5, v6 and the three 14 Oct premise hooks fail.
     # A lexicon proxy: it says whether the song boasts at all, not whether a boast is good.
     "toolkit/swagger.py (hook stamps + verse menace)": ("validated", "original passes its own par; 5 of 5 drafts Joe rejected as diaries fail"),
+    # 15 Oct 2026, Joe: "make the stress check a hard gate". Narrow on purpose: one syllable, the one before the rhyme.
+    "toolkit/flow_fit.approach (stress before the rhyme)": ("joe_rule", "HARD in slotcheck on Joe's instruction. The original passes in all 74 templated bars "
+                                                           "(by construction: the stress marks come from its own text); both bars Joe heard as jammed fail. No independent "
+                                                           "good set exists, and the dictionary stress model reads some secondary stresses as strong (the 'in' of invasion)"),
     "ww/judge/reader.py event/claim labels": ("unvalidated", "never run against the original; ww/judge/reader_validate.py is the test "
                                                              "(needs DEEPSEEK_API_KEY, absent in the 14 Oct cloud session)"),
 }

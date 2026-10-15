@@ -147,6 +147,26 @@ def fit(bar_no, line):
     return not why, f"orig {o}{nl}    ours {u}" + ("" if not why else nl + "    FAIL: " + "; ".join(why))
 
 
+def approach(bar_no, line):
+    """RHYME APPROACH, a HARD gate in ww/write/slotcheck.py since 15 Oct 2026 (Joe: "make the stress check a hard gate").
+    The syllable just before the rhyme syllable must be strong or weak as it is in the original's bar: the original's
+    hook bar 9 lands its place name on the last beat after a weak syllable, and "I'm wanted in Boomtown see" put a strong
+    syllable there, so three stresses jammed and the rhyme went to a filler word.
+    Returns (ok, our 1-based syllable index, wanted 'w' or 'S'); ok is None where the bar has no audio template or no
+    syllable before its rhyme. Measured with the same text stress model as the template (cmudict + function words), so a
+    dictionary secondary stress (the 'in' of invasion) reads as strong: the gate inherits that limit."""
+    t = T[bar_no - 1]
+    ow, ri = t.get("weak"), t.get("rhyme_idx")
+    if not ow or ri is None or ri < 1 or not t.get("steps"):
+        return None, None, None
+    weak = sylls(line)
+    our_ri = max(0, len(weak) - tail_len(line))
+    if our_ri < 1 or our_ri > len(weak):
+        return None, None, None
+    want = ow[ri - 1]
+    return weak[our_ri - 1] == want, our_ri, ("w" if want else "S")
+
+
 def tail_len(line):
     """syllables in the end-rhyme tail (from the last stressed syllable), via match.spans"""
     from match import spans

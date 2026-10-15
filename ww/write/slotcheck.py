@@ -357,6 +357,17 @@ def check(slot: str, bars: list[str], context: list[str] | None = None, tol: int
             msg = f"{br['run']} weak syllables in a row (the original's longest run is 3): it mumbles"
             rows[i]["issues"].append(msg)
             hard.append(f"bar {i + 1}: {msg}")
+        # RHYME APPROACH, HARD (Joe, 15 Oct 2026): the syllable before the rhyme is strong/weak as in the original's bar
+        import flow_fit as _ff
+        ap_ok, ap_k, ap_want = _ff.approach(start + i + 1, bars[i])
+        if ap_ok is False:
+            wd = _word_of_syllables(bars[i])
+            w_ = wd[ap_k - 1] if ap_k - 1 < len(wd) else "?"
+            msg = (f"stress before the rhyme: syllable {ap_k} ('{w_}') is {'strong' if ap_want == 'w' else 'weak'}, the original's bar has a "
+                   f"{'weak' if ap_want == 'w' else 'strong'} syllable there " + ("(the rhyme must push off a weak syllable, not jam three stresses)"
+                   if ap_want == "w" else "(the rhyme needs a stressed syllable to push off)"))
+            rows[i]["issues"].append(msg)
+            hard.append(f"bar {i + 1}: {msg}")
         rows[i]["beat_weak"] = br["beat_weak"]
     if tg and bw_bars:
         mean_bw = bw_total / bw_bars
@@ -600,6 +611,10 @@ def selftest() -> tuple[bool, str]:
         retired.RETIRED.discard(retired.digest(probe))
     if not any("retired bar" in h for h in r["hard"]):
         problems.append(f"a retired bar must fail the slot check: {r['hard']}")
+    # the rhyme-approach gate (15 Oct 2026): three stresses jammed before the rhyme fail; a weak push-off passes
+    import flow_fit as _ff
+    if _ff.approach(9, "I'm wanted in Boomtown see")[0] is not False or _ff.approach(9, "I'm wanted in Zell am See")[0] is not True:
+        problems.append("the rhyme-approach rule must fail 'Boomtown see' and pass a weak syllable before the rhyme")
     # round-2 gates: a cash declaration must end on its payoff word; repeated end words and an absent narrator fail
     bars, cash = parse_cash("I sold the lot, worth a fortune, off the back of a lorry\n#cash 1 | off the back of a lorry | lorry\n#cash 1 | off the back | back\n")
     ok, bad = verify_cash(bars, cash)

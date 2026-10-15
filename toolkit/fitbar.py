@@ -96,6 +96,9 @@ def try_bar(bar, line):
     why = re.sub(r"strong/weak pattern \S+ vs original \S+ ", "pattern ", why)
     if run >= 4:
         ok, why = False, "; ".join(x for x in [why, f"{run} weak syllables in a row (the original's longest is 3)"] if x)
+    ap_ok, ap_k, ap_want = ff.approach(bar, line)
+    if ap_ok is False:
+        ok, why = False, "; ".join(x for x in [why, f"stress before the rhyme: syllable {ap_k} should be {ap_want}"] if x)
     if jtxt:
         why = "; ".join(x for x in [why, jtxt] if x)
     return (ok, len(w), len(t["steps"]), agree, ff.end_shape(line)[0], t["end_shape"], pattern(bar, line),
@@ -201,7 +204,11 @@ def selftest():
     v5 = os.path.join(ROOT, "writing", "detection_test", "travel_draft_v5.md")
     if os.path.exists(v5):
         r = song(v5, quiet=True)
-        chk(f"the v5 redraft stays on the frame (got {r['flow']})", r["flow"][0] >= 72)
+        # flow_fit alone (the frame this redraft was fitted to); the per-bar count now also applies the rhyme-approach gate
+        # (15 Oct 2026), which this rejected diary fails on 11 bars
+        D5 = read_draft(v5)
+        on = sum(bool(ff.fit(STARTS[s_] + i, b)[0]) for s_ in SLOTS for i, b in enumerate(D5.get(s_, [])))
+        chk(f"the v5 redraft stays on the flow_fit frame (got {on})", on >= 72)
         # rapfit alone (no old-grader OR since 15 Oct): it hears 90% of the original's own by-ear pairs at its floor (13 Oct)
         chk(f"the v5 redraft's scheme pairs are heard (got {r['pairs']})", r["pairs"][0] >= 0.9 * r["pairs"][1])
         chk("v5 is still a recount (the measure must see it)", r["recount_fails"] > 0)
@@ -217,6 +224,7 @@ def selftest():
     chk("a 12-syllable song bar 10 fails", try_bar(10, "Wanted for excessive energy guaranteed")[0] is False)
     chk("a 9-syllable song bar 10 passes the count", "need" not in try_bar(10, "Wanted for too much energy, see")[8])
     chk("a run of 4+ weak syllables fails the bar", try_bar(7, "Picked it up off of a lorry")[0] is False)
+    chk("three stresses jammed before the rhyme fail the bar (15 Oct 2026)", try_bar(9, "I'm wanted in Boomtown see")[0] is False)
     print("fitbar selftest:", "PASSED" if good else "FAILED")
     return good
 

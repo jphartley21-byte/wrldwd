@@ -35,6 +35,15 @@ for path in glob.glob(os.path.join(HERE, "tests", "rejected_*.txt")):
 good = retired.selftest()
 ok &= good
 print(("ok  " if good else "BAD ") + "retired bars: the never-approved Hook 1-4 lines are refused as bars (hashes only)")
+# the rhyme-approach gate (HARD in slotcheck since 15 Oct 2026, Joe): the original passes it in every templated bar
+# (by construction: the template's stress marks come from its own text), and the two bars Joe heard as jammed fail it
+import flow_fit as _ff  # noqa: E402
+_ap = [_ff.approach(b, orig[b - 1])[0] for b in range(1, len(orig) + 1)]
+good = not any(x is False for x in _ap) and _ff.approach(9, "I'm wanted in Boomtown see")[0] is False \
+    and _ff.approach(6, "Gnome's in good nick, so he says I nicked it")[0] is False
+ok &= good
+print(("ok  " if good else "BAD ") + f"rhyme approach: original {sum(x is False for x in _ap)} fails of {sum(x is not None for x in _ap)}; "
+      "both jammed bars Joe flagged fail")
 # the meaning gate must catch known-bad stanzas and leave clean bars clean
 mg = run([os.path.join(HERE, "meaning_gate.py"), "--selftest"], "")
 good = "PASSED" in mg
