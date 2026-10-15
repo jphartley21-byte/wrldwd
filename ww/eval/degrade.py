@@ -295,8 +295,8 @@ def variants(bars: list[str], seed: int = 0, pool: Optional[list[list[str]]] = N
 
 def selftest() -> tuple[bool, str]:
     problems: list[str] = []
-    bars = ["Said damn at the on-stage porno", "Paid the bloke fifty quid in Bristol", "Lost my bag at the airport in Spain",
-            "Then I boarded a plane out to Bordeaux"]
+    bars = ["Said cheers at the beer garden in Porto", "Paid the bloke fifty quid in Bristol", "Lost my bag at the airport in Spain",
+            "Then I caught a plane out to Bilbao"]
     pool = [["Cheers to the lads in Leeds tonight", "The bouncer changed his mind quite quickly", "My cousin in Cardiff brought that back for me",
              "Say I am out in Dundee"]]
     got = variants(bars, 1, pool)

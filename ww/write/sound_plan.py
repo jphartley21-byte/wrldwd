@@ -101,7 +101,7 @@ def carpet_check(end_words: list[str]) -> dict:
 def selftest() -> tuple[bool, str]:
     problems = []
     m = menu("Munich")
-    # Joe's accepted hook rhymes bonjourno/porno/though/Bordeaux; check the machinery on a plain case
+    # check the machinery on a plain case
     m2 = menu("traffic")
     if not is_trochee("wristband") or not is_trochee("flavour"):
         problems.append("wristband and flavour (British spelling) should be trochees")

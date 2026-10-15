@@ -7,7 +7,7 @@ and he"), bars with no content words at all ("And I am with them"), and device s
 
   python toolkit/meaning_gate.py FILE|-            per-bar findings + VERDICT
   python toolkit/meaning_gate.py --slot "V1 1-8" -  also checks place density for a verse slot
-  python toolkit/meaning_gate.py --selftest         must pass on Joe's locked bars and catch a known-bad stanza
+  python toolkit/meaning_gate.py --selftest         must catch known-bad stanzas and leave clean bars clean
 
 What it can decide (G1 partly, G3 mostly):
   * end word: the payoff word must sit in the rhyme slot. A determiner, preposition,
@@ -29,7 +29,6 @@ from collections import Counter
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-import fixtures  # noqa: E402
 import coherence_gate as cg  # noqa: E402
 from rhyme_tools import FUNC  # noqa: E402
 
@@ -256,15 +255,13 @@ def report(bars, slot=None):
 
 
 def selftest():
-    locked = fixtures.joe_bars()
     bad = ["Beep-beep for the ferry", "Nobody asked and it is all very", "Bar on the deck is getting merry",
            "And I am off with the lot and I am with them", "And I am off and he", "Hop-hop and I am with them",
            "I said they are as sweet as the"]
     ok = True
-    r1 = audit(locked, "Hook 1-4")
-    good = not r1["fails"]
-    ok &= good
-    print(("ok  " if good else "BAD ") + f"Joe's locked bars PASS the meaning gate: {r1['fails'] or 'clean'}")
+    # 15 Oct 2026: the positive control used to be the four Hook 1-4 bars once called "Joe's approved bars". Joe: they
+    # were never approved and must never be a bar or a gate again. The original is the positive control
+    # (meaning_gate --calibrate PATH, asserted in calibrate.py); the clean-bar check below stays.
     r2 = audit(bad, "V1 1-8")
     good = bool(r2["fails"])
     ok &= good
@@ -283,7 +280,7 @@ def selftest():
     # The 13 Oct 2026 tightening. Four more bars Joe rejected as saying nothing ("nothing verses")
     # used to walk through this rule: one qualifier ("long", "nine") disarmed it, and one participle
     # in the middle of a list ("packed") read as the bar's verb. Each of these must be caught; each
-    # of Joe's accepted bars above must stay clean (asserted by r1 and by the blocked list below).
+    # of the clean bars below must stay clean.
     stack = ["A packed bag a long rail a whole month a road going",
              "Nine countries four walks cash going",
              "Got a pass and a rail the road going",
@@ -295,13 +292,12 @@ def selftest():
     print(("ok  " if good else "BAD ") +
           f"the four claimless lists are caught too: {caught} of {len(stack)}")
     keep = ["Cash back on the bier in Zurich", "Stuck in the black van in all the traffic",
-            "Sitting back with a real panic", "Might pack the backpack in Munich",
-            "Front row on my phone, so bored, though", "So I boarded a plane out to Bordeaux"]
+            "Sitting back with a real panic", "Might pack the backpack in Munich"]
     r5 = audit(keep, "Hook 5-8")
     kf = [f for f in r5["fails"] if "inventory" in f]
     good = not kf
     ok &= good
-    print(("ok  " if good else "BAD ") + f"and Joe's own bars stay clean: {kf or 'no inventory flags'}")
+    print(("ok  " if good else "BAD ") + f"and clean bars stay clean: {kf or 'no inventory flags'}")
     return ok
 
 

@@ -54,13 +54,15 @@ def check_block(bars: list[str], spec: dict = HOOK_5_8, context: Optional[list[s
 
 def selftest() -> tuple[bool, str]:
     from .. import config  # noqa: F401
-    import fixtures
-    joe = fixtures.joe_bars()
-    ok = check_block(joe, {"sylls": None, "tol": 9, "shape": None, "carpet_min_pairs": 5})
+    # 15 Oct 2026: the positive block was the four Hook 1-4 bars once called "Joe's accepted hook" (Joe: never approved, never
+    # a bar or a gate again). A monorhyme block from this repo stands in.
+    good = ["Cash back on the bier in Zurich", "Stuck in the black van in all the traffic", "Sitting back with a real panic",
+            "Might pack the backpack in Munich"]
+    ok = check_block(good, {"sylls": None, "tol": 9, "shape": None, "carpet_min_pairs": 5})
     bad = check_block(["Paid packed gone the way", "Money in the wallet and forty", "Rest of it goes on the way", "Half of the lads and the whole worst team"], HOOK_5_8)
     problems = []
     if not ok["ok"]:
-        problems.append(f"Joe's accepted hook should pass the sound/grammar checks: {ok['hard']}")
+        problems.append(f"a clean monorhyme block should pass the sound/grammar checks: {ok['hard']}")
     if bad["ok"] or len(bad["hard"]) < 4:
         problems.append(f"v27 dead bars should fail several checks: {bad['hard']}")
-    return (not problems, "; ".join(problems) if problems else f"Joe's hook passes; dead v27 bars fail {len(bad['hard'])} checks")
+    return (not problems, "; ".join(problems) if problems else f"a clean block passes; dead v27 bars fail {len(bad['hard'])} checks")

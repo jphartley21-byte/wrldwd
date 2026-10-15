@@ -1,55 +1,4 @@
 {
-"Yo, bonjourno\nSaid damn at the on-stage porno\nFront row on my phone, so bored, though\nSo I boarded a plane out to Bordeaux\nMissed the headliner, bought a gnome, sorry\nTent flooded, then dust, then drought, I slept through all three\nHe's off the back of a lorry": [
-{
-"n": 1,
-"reading": "Hello, good day.",
-"grammatical": true,
-"sense": 2,
-"issue": ""
-},
-{
-"n": 2,
-"reading": "I said \"damn\" at the on-stage porno.",
-"grammatical": true,
-"sense": 2,
-"issue": ""
-},
-{
-"n": 3,
-"reading": "I was in the front row on my phone, so I was bored, though.",
-"grammatical": true,
-"sense": 2,
-"issue": ""
-},
-{
-"n": 4,
-"reading": "So I boarded a plane out to Bordeaux.",
-"grammatical": true,
-"sense": 2,
-"issue": ""
-},
-{
-"n": 5,
-"reading": "I missed the headliner, bought a gnome, sorry.",
-"grammatical": true,
-"sense": 2,
-"issue": ""
-},
-{
-"n": 6,
-"reading": "The tent flooded, then there was dust, then there was drought, and I slept through all three.",
-"grammatical": true,
-"sense": 2,
-"issue": ""
-},
-{
-"n": 7,
-"reading": "He is off the back of a lorry.",
-"grammatical": true,
-"sense": 2,
-"issue": ""
-}
-],
 "Two glasses, cold lager, back road corners\nNo names just numbers on folders\nFound pink top hat, wear it like bread\nBreakfast had me orange like little\nQueue round the block for the film I'm buying in\nHammock bamboo snow on the Atlas dandy\nTin of direct-to-rust, no recap, paint town red": [
 {
 "n": 1,
@@ -653,28 +602,6 @@
 "issue": "Fragment; missing verb for dawn scene"
 }
 ],
-"BLOCK\nYo, bonjourno\nSaid damn at the on-stage porno\nFront row on my phone, so bored, though\nSo I boarded a plane out to Bordeaux": {
-"thread": "A bored spectator at an on-stage porno leaves on a plane to Bordeaux.",
-"coherent": 1,
-"issue": "Bordeaux trip arrives with no clear link to the boredom.",
-"links": [
-{
-"n": 2,
-"follows": true,
-"issue": ""
-},
-{
-"n": 3,
-"follows": true,
-"issue": ""
-},
-{
-"n": 4,
-"follows": false,
-"issue": "Sudden unexplained location change to Bordeaux."
-}
-]
-},
 "BLOCK\nHey port and the road to Porto\nTwo glasses cold lager then cut corners\nLager chips and the last orders\nMight hit the road then the border": {
 "thread": "A drinker has a couple of lagers and considers hitting the road toward the border.",
 "coherent": 1,

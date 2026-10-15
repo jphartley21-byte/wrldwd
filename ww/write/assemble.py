@@ -3,15 +3,18 @@
   python -m ww.write.assemble OUT.md  RESULT.json [RESULT.json ...]
 
 Per section the FINAL block is used when the blind final judges score it at least as high as the incumbent (OLD); otherwise OLD stays.
-Hook 1-4 is Joe's. Writes the draft in project format ('== Slot' headers) with the scores in comments.
+Hook 1-4 is built like any other section (15 Oct 2026: the hard-coded "Joe's" hook was never approved and is retired).
+Writes the draft in project format ('== Slot' headers) with the scores in comments.
 """
 from __future__ import annotations
 
 import json
+import os
 import sys
 
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "toolkit"))
+
 ORDER = ["Hook 1-4", "Hook 5-8", "Hook 9-16", "V1 1-8", "V1 9-16", "V1 17-24", "V1 25-32", "V1 33-44", "V2 1-8", "V2 9-16"]
-JOE = ["Yo, bonjourno", "Said damn at the on-stage porno", "Front row on my phone, so bored, though", "So I boarded a plane out to Bordeaux"]
 
 
 def main(argv=None) -> int:
@@ -26,9 +29,7 @@ def main(argv=None) -> int:
              "# Project format: '== Slot' headers then that slot's bars. Scores: blind final judges, mean of 3 (original shown for scale).", ""]
     table = []
     for slot in ORDER:
-        if slot == "Hook 1-4":
-            bars, src = JOE, "Joe's, fixed"
-        elif slot in res and res[slot].get("final"):
+        if slot in res and res[slot].get("final"):
             r = res[slot]
             f = r["final"]["scores"]
             if f.get("FINAL") is not None and f.get("OLD") is not None and f["FINAL"] >= f["OLD"]:
@@ -38,6 +39,8 @@ def main(argv=None) -> int:
             table.append((slot, f.get("FINAL"), f.get("OLD"), r["final"]["ref"]))
         else:
             bars, src = inc.get(slot, []), "previous draft (not re-run)"
+        import retired
+        bars = retired.strip_retired(bars)
         lines.append(f"== {slot}")
         lines.append(f"# source: {src}")
         lines += bars

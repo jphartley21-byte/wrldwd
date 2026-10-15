@@ -275,6 +275,9 @@ def check(slot: str, bars: list[str], context: list[str] | None = None, tol: int
     legacy = os.environ.get("WW_LEGACY_FLOW", "0") == "1"      # 1 restores the old gates (beat grid, grader pair floor, carpet share) for comparison
     if len(bars) != s["n"]:
         hard.append(f"expected {s['n']} bars, got {len(bars)}")
+    import retired      # toolkit/retired.py (Joe, 15 Oct 2026): the never-approved Hook 1-4 lines are never a bar again
+    hard += [f"bar {i + 1}: a retired bar (never approved; Joe 15 Oct 2026: never a bar or a gate again)"
+             for i, b in enumerate(bars) if retired.is_retired(b)]
     n = min(len(bars), s["n"])
     gram = grammar.analyse_run(bars, context or [])
     mflags = {i: h for i, _, h in bridge.meaning_flags(bars)}
@@ -579,7 +582,7 @@ def main(argv=None) -> int:
 
 
 def selftest() -> tuple[bool, str]:
-    import fixtures
+    import retired
     problems = []
     s = spec("Hook 5-8")
     if s["n"] != 4 or s["scheme"] != "ABBA" or len(s["sylls"]) != 4:
@@ -587,10 +590,16 @@ def selftest() -> tuple[bool, str]:
     d = describe("Hook 9-16")
     if "AABACBDB" not in d or "bars 1 & 2" not in d:
         problems.append("describe() should state the Hook 9-16 by-ear scheme and its pairs")
-    r = check("Hook 1-4", fixtures.joe_bars())
-    # Joe's accepted bars have a different frame from the original's (documented): the scheme and sense checks must still hold
-    if any("scheme" in h or "sense" in h or "grammar" in h for h in r["hard"]):
-        problems.append(f"Joe's accepted bars should pass the scheme/sense/grammar checks: {r['hard']}")
+    # 15 Oct 2026: this used to require the four Hook 1-4 bars once called "Joe's accepted bars" to pass. Joe: never
+    # approved, never a bar or a gate again. Now: a retired bar is a hard failure (tested with a stand-in hash).
+    probe = "Stand in line for the retired bar test"
+    retired.RETIRED.add(retired.digest(probe))
+    try:
+        r = check("Hook 1-4", ["Hoi Rotterdam beg your pardon", probe, "Look it fell off of a lorry", "Ten feet of it guards my garden"])
+    finally:
+        retired.RETIRED.discard(retired.digest(probe))
+    if not any("retired bar" in h for h in r["hard"]):
+        problems.append(f"a retired bar must fail the slot check: {r['hard']}")
     # round-2 gates: a cash declaration must end on its payoff word; repeated end words and an absent narrator fail
     bars, cash = parse_cash("I sold the lot, worth a fortune, off the back of a lorry\n#cash 1 | off the back of a lorry | lorry\n#cash 1 | off the back | back\n")
     ok, bad = verify_cash(bars, cash)
@@ -603,7 +612,7 @@ def selftest() -> tuple[bool, str]:
     nn = check("V1 9-16", ["Bunk with a bike", "Bank replied", "Keith had a word", "Keith as guide", "Paint on the van", "Gaz asks", "Gaz runs", "Keith updates"])
     if not any("narrator present" in h for h in nn["hard"]):
         problems.append("a block with no I/my/me bars should fail the narrator gate")
-    return (not problems, "; ".join(problems) if problems else "specs read from the profile; Joe's accepted hook passes scheme/sense/grammar; cash/ends/narrator gates fire")
+    return (not problems, "; ".join(problems) if problems else "specs read from the profile; a retired bar fails; cash/ends/narrator gates fire")
 
 
 if __name__ == "__main__":

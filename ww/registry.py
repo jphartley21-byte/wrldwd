@@ -39,19 +39,19 @@ PREREG = {
 # what the audit and the labelled-set tests already established (STATE.md, 11-13 Oct 2026)
 LEGACY = {
     "toolkit/phon.best_end (rhyme grader)": ("validated", "refit 12 Oct on 14 by-ear pairs: 4/10 wrong -> 1/14 wrong; assonance at 0.80 still passes as rhyme"),
-    "toolkit/match.py (scheme/length vs original profile)": ("diagnostic", "similarity to the original's audio, not quality: fails Joe's own accepted bars on 3 of 4 sub-checks"),
-    "toolkit/flow_fit pattern % / beat grid": ("failed_validation", "ranked Joe's approved bars (50/50/50/33%) below a rejected bar (62%)"),
+    "toolkit/match.py (scheme/length vs original profile)": ("diagnostic", "similarity to the original's audio, not quality. The evidence that it 'fails Joe's own accepted bars' was withdrawn 15 Oct 2026: it rested on the four Hook 1-4 bars once called Joe's approved bars, which Joe says were never approved"),
+    "toolkit/flow_fit pattern % / beat grid": ("unvalidated", "the 12 Oct failed_validation verdict was withdrawn 15 Oct 2026: it rested on the four Hook 1-4 bars once called Joe's approved bars, which Joe says were never approved. Still not a gate: on 56 round-1 candidates its pattern % had rho 0.09 with the judges' flow scores (ww/write/slotcheck.py)"),
     "toolkit/flow_fit syllable count + end shape": ("accepted_exact_fact", "measured from the original's audio; hard facts, not quality"),
     "toolkit/meaning_gate inventory rule": ("diagnostic", "catches 6/11 known-dead bars, fires on 0/92 original lines; prefilter only"),
     "toolkit/coherence_gate": ("diagnostic", "calibrated on the original; gibberish passed it"),
     "toolkit/funny.py": ("failed_validation", "89% base rate"),
-    "toolkit/attest.py": ("failed_validation", "flags Joe's approved bars as hard as gibberish"),
+    "toolkit/attest.py": ("failed_validation", "flags good lines as hard as gibberish ('Paid him by the weight', 'Might take the ferry to Bergen'); the part of the evidence that used Joe's 'approved' bars was withdrawn 15 Oct 2026: it rested on the four Hook 1-4 bars once called Joe's approved bars, which Joe says were never approved"),
     "toolkit/ear.py device rate": ("diagnostic", "original 53% of quads; a 60% gate failed the benchmark"),
-    "toolkit/imagery.py chains": ("diagnostic", "Joe's approved bars have zero chains"),
-    "ml/judge.py (learned)": ("failed_validation", "trained on 1 positive block; 3 of 5 of Joe's rules inverted; word-level coefficients <= 0.014"),
+    "toolkit/imagery.py chains": ("diagnostic", "the original has a chain in 4 of 19 quads; the claim 'Joe's approved bars have zero chains' was withdrawn 15 Oct 2026: it rested on the four Hook 1-4 bars once called Joe's approved bars, which Joe says were never approved"),
+    "ml/judge.py (learned)": ("failed_validation", "its one positive block was the four never-approved Hook 1-4 bars; the saved model was deleted 15 Oct 2026; 3 of 5 of Joe's rules inverted; word-level coefficients <= 0.014"),
     "ml/meaning_judge.py (llama3 paraphrase)": ("unvalidated", "93% on 14 bars, half authored by the assistant; a sifter, not a gate"),
     "toolkit/forge.py / pipeline.py / tryforms.py": ("failed_validation", "recombine only; best score identical for 14 cycles; crowned a gibberish block"),
-    "toolkit/check_all.py as a quality gate": ("failed_validation", "fails Joe's own accepted bars; kept as a ranking readout"),
+    "toolkit/check_all.py as a quality gate": ("unvalidated", "kept as a ranking readout; the evidence that it 'fails Joe's own accepted bars' was withdrawn 15 Oct 2026: it rested on the four Hook 1-4 bars once called Joe's approved bars, which Joe says were never approved"),
     # 14 Oct 2026: the claim-share quota (PREREG exit floor) is measured by recount.py, deterministically. Calibrated on the original
     # (passes its own par: song recount share 0.20, longest verse chain 3, no itinerary bars) and catches all three named recounts
     # (v17 V1 33-44 itinerary, v17 V2 1-8 Hanoi diary, v5 V1 9-16 jeep). Song shares: original 0.20, v17 0.50, v5 0.66, pasted 0.78.

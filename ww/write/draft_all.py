@@ -30,8 +30,9 @@ def _chars():
 characters = _chars()
 
 DEFAULT_INCUMBENT = config.WRITING / "ww_full_draft_v6.md"
-JOE_HOOK = ["Yo, bonjourno", "Said damn at the on-stage porno", "Front row on my phone, so bored, though",
-            "So I boarded a plane out to Bordeaux"]
+# 15 Oct 2026: a hard-coded Hook 1-4 (the four bars once called "Joe's hook") used to be written into every draft that
+# did not build that slot. Joe: never approved, never a bar or a gate again. An unbuilt Hook 1-4 is now left empty and
+# any retired bar inherited from an incumbent is dropped (toolkit/retired.py).
 
 
 def _check_all_problems(slot: str, bars: list) -> int:
@@ -336,13 +337,15 @@ def assemble(res: dict, path) -> str:
                            for s, v in res["slots"].items()),
          ""]
     if "Hook 1-4" not in res["slots"]:
-        L += ["== Hook 1-4"] + JOE_HOOK + [""]
+        L += ["== Hook 1-4", "# not built in this run (no fixed hook: the never-approved bars are retired)", ""]
     inc = {} if (scratch or not res.get("incumbent")) else flowaudit.parse_draft(res["incumbent"])
     for slot in argue_stage.slots():
         v = res["slots"].get(slot)
         if not v:
             continue
         bars = v["candidate_bars"] if v["took"] else inc.get(slot, [])
+        import retired
+        bars = retired.strip_retired(bars)
         L += [f"== {slot}"] + bars + [""]
     text = "\n".join(L).rstrip() + "\n"
     if path:

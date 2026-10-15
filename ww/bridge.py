@@ -197,20 +197,20 @@ def selftest() -> tuple[bool, str]:
         if not cond:
             problems.append(msg)
 
-    # Joe's accepted hook 1-4 (own text, kept in toolkit/tests as the gates' positive control)
-    import fixtures
-    bars = fixtures.joe_bars()
-    check(len(bars) == 4, f"expected 4 positive-control bars, got {len(bars)}")
+    # 15 Oct 2026: this used the four Hook 1-4 bars once called "Joe's accepted hook" (Joe: never approved, never a bar
+    # or a gate again). A monorhyme block from this repo stands in for the bridge contract.
+    bars = ["Cash back on the bier in Zurich", "Stuck in the black van in all the traffic",
+            "Sitting back with a real panic", "Might pack the backpack in Munich"]
     c = carpet(bars)
-    check(c["pairs"] == 6 and c["min"] >= 0.99, f"positive-control carpet should be 6/6 at 1.00, got {c}")
-    check(syllable_count("Yo, bonjourno") >= 3, "syllable_count too low for 'Yo, bonjourno'")
+    check(c["pairs"] == 6, f"a four-bar block has 6 end pairs, got {c}")
+    check(syllable_count("Hoi Rotterdam") == 4, f"syllable_count of 'Hoi Rotterdam' should be 4, got {syllable_count('Hoi Rotterdam')}")
     check(end_shape(bars[1]).startswith("|"), f"end_shape of a rhyme-from-word-start bar: {end_shape(bars[1])}")
-    check(rhyme_score("Bordeaux", "porno") >= 0.78, "Bordeaux ~ porno should rhyme")
-    check(rhyme_score("Bordeaux", "plain") < 0.78, "Bordeaux ~ plain should not rhyme")
+    check(rhyme_score("lorry", "sorry") >= 0.78, "lorry ~ sorry should rhyme")
+    check(rhyme_score("lorry", "plain") < 0.78, "lorry ~ plain should not rhyme")
     check(oov_words("Zurich Porto Bordeaux Ljubljana") == [], f"place names must be pronounceable: {oov_words('Zurich Porto Bordeaux Ljubljana')}")
     # since 13 Oct the pron chain's g2p (no nltk) pronounces anything, so nonsense is caught as an INVENTED word (unknown to every dictionary AND to wordfreq)
     check(invented_words("a qzxqxzq boraded") == ["qzxqxzq", "boraded"], f"nonsense must be reported invented: {invented_words('a qzxqxzq boraded')}")
-    mf = meaning_flags(["Pass maps plans and the road the rail going", "So I boarded a plane out to Bordeaux"])
+    mf = meaning_flags(["Pass maps plans and the road the rail going", "Look it fell off of a lorry"])
     check(len(mf) == 1 and mf[0][0] == 1, f"meaning_flags should flag only the inventory bar: {mf}")
     # captured stdout: the import-time reconfigure bug (13 Oct) must stay dead
     buf = io.StringIO()
@@ -239,13 +239,13 @@ def selftest() -> tuple[bool, str]:
 
 def _child(args):  # top-level so it pickles under spawn
     from ww import bridge
-    return bridge.rhyme_score(*args), bridge.syllable_count("Yo, bonjourno")
+    return bridge.rhyme_score(*args), bridge.syllable_count("Hoi Rotterdam")
 
 
 def selftest_multiprocessing() -> tuple[bool, str]:
     """same pure functions inside spawned worker processes (Windows default start method)."""
     import multiprocessing as mp
     with mp.get_context("spawn").Pool(2) as pool:
-        out = pool.map(_child, [("Bordeaux", "porno"), ("Bordeaux", "plain")])
+        out = pool.map(_child, [("lorry", "sorry"), ("lorry", "plain")])
     ok = out[0][0] >= 0.78 and out[1][0] < 0.78 and out[0][1] == out[1][1]
     return ok, f"workers returned {out}"

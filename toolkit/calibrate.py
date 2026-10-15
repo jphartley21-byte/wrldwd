@@ -8,7 +8,7 @@ if hasattr(sys.stdout, "reconfigure"): sys.stdout.reconfigure(encoding="utf-8", 
 #                                                           # crash the harness instead of reporting it
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-import fixtures  # noqa: E402
+import retired  # noqa: E402
 SECS = [("Hook 1-4", 0, 4), ("Hook 5-8", 4, 8), ("Hook 9-16", 8, 16), ("V1 1-8", 16, 24), ("V1 9-16", 24, 32), ("V1 17-24", 32, 40), ("V1 25-32", 40, 48), ("V1 33-44", 48, 60), ("V2 1-8", 60, 68), ("V2 9-16", 68, 76)]
 run = lambda args, text: subprocess.run([sys.executable] + args, input=text, capture_output=True, text=True, encoding="utf8", errors="replace").stdout
 orig = [l.strip() for l in open(sys.argv[1], encoding="utf8") if l.strip()][:76]
@@ -30,18 +30,17 @@ for path in glob.glob(os.path.join(HERE, "tests", "rejected_*.txt")):
     caught = "NOT YET" in m or "NOT YET" in fl
     ok &= caught
     print(("ok  " if caught else "BAD ") + f"Joe-rejected {os.path.basename(path)} is caught: form {m[9:30]} / flow {fl[9:30]}")
-# Joe-approved bars must pass the by-ear scheme
-locked = fixtures.joe_bars()
-v = run([os.path.join(HERE, "match.py"), "--slot", "Hook 1-4", "-"], chr(10).join(locked))
-good = "original rhyme scheme AAAA (by ear): PASS" in v
+# 15 Oct 2026 (Joe): the four Hook 1-4 bars once called "Joe's approved bars" were never approved and must never be
+# a bar or a gate again. The positive control for every gate is the ORIGINAL (above); the retired lines are refused.
+good = retired.selftest()
 ok &= good
-print(("ok  " if good else "BAD ") + "Joe's locked bars 1-4 pass the by-ear scheme")
-# the meaning gate must pass Joe's locked bars and catch a known-bad stanza
+print(("ok  " if good else "BAD ") + "retired bars: the never-approved Hook 1-4 lines are refused as bars (hashes only)")
+# the meaning gate must catch known-bad stanzas and leave clean bars clean
 mg = run([os.path.join(HERE, "meaning_gate.py"), "--selftest"], "")
 good = "PASSED" in mg
 ok &= good
 print(("ok  " if good else "BAD ") + "meaning_gate selftest: " +
-      ("passes locked bars, catches a known-bad stanza" if good else mg.strip()[:110]))
+      ("catches known-bad stanzas, clean bars stay clean" if good else mg.strip()[:110]))
 # the rhyme verdicts measured by ear must still hold (12 cases, 1 documented metric limit)
 rp = run([os.path.join(HERE, "match.py"), "--selftest"], "")
 good = "PASSED" in rp

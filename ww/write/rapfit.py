@@ -7,7 +7,7 @@ that land on the beat; an unstressed tail echo is not heard as a rhyme. Reweight
 separate layer that never edits it.
 
 WHAT IT MEASURES (all from British phones through phon.syllables; no lyrics, no model):
-  anchor      the rime starts at the LAST STRESSED syllable (that is where the beat falls). A bar that ends on a full vowel after it (bonjourno / though,
+  anchor      the rime starts at the LAST STRESSED syllable (that is where the beat falls). A bar that ends on a full vowel after it (Porto / though,
               Tobago / home) also offers the FINAL syllable as a second anchor, at a small discount: the ear hears the closing diphthong.
   stressed    vowel match (phon.vsim: height/backness/rounding, closing diphthongs by their glide) and coda match (consonant classes, from the right).
               Assonance counts: the original's carpets are vowel-led (goose/cruise/suit/do/shoot/through) and rate well by design.
@@ -163,7 +163,7 @@ def selftest() -> tuple[bool, str]:
         problems.append(f"a bare unstressed -it must not rhyme: audit~biscuit {s('audit', 'biscuit')}, credit~orbit {s('credit', 'orbit')}")
     if "TAIL-ONLY" not in score("audit", "biscuit")["flags"]:
         problems.append("audit~biscuit should be flagged TAIL-ONLY (the grader says perfect)")
-    for a, b in (("favours", "flavours"), ("Lagos", "Vegas"), ("fox", "box"), ("debt", "vet"), ("global", "mogul"), ("goose", "cruise"), ("bonjourno", "though")):
+    for a, b in (("favours", "flavours"), ("Lagos", "Vegas"), ("fox", "box"), ("debt", "vet"), ("global", "mogul"), ("goose", "cruise"), ("Porto", "though")):
         if s(a, b) < FLOOR:
             problems.append(f"{a}~{b} should rhyme: {s(a, b)}")
     if s("ferry", "Mary") < FLOOR or s("gammon", "hammer") < FLOOR:
@@ -176,13 +176,16 @@ def selftest() -> tuple[bool, str]:
     c = chain_best(_syl("Dublin"), _syl("double it"))
     if c["depth"] < 2:
         problems.append(f"Dublin / double it share a syllabic-l rime and should reach depth 2: {c}")
-    cb = check_block("Hook 1-4", ["Yo, bonjourno", "Said damn at the on-stage porno", "Front row on my phone, so bored, though", "So I boarded a plane out to Bordeaux"])
+    # 15 Oct 2026: this used the four Hook 1-4 bars once called "Joe's accepted hook" (Joe: never approved, never a bar or a gate
+    # again). A Hook 1-4 that passes the slot checker stands in.
+    cb = check_block("Hook 1-4", ["Kaixo I'm famous", "Front page in Bilbao: an invasion", "Bern Perth Crete Cairns and it's the same game",
+                                  "My file's two foot thick a real cold case"])
     if cb["hard"]:
-        problems.append(f"Joe's accepted hook must pass the stress-anchor gate: {cb['hard']}")
+        problems.append(f"a Hook 1-4 that passes the slot checker must pass the stress-anchor gate: {cb['hard']}")
     bad = check_block("V1 17-24", ["Audit", "Biscuit", "Credit", "Orbit", "Limit", "Jacket", "Pocket", "Knit"])
     if not bad["hard"]:
         problems.append("a block of bare -it endings must fail the stress-anchor gate")
-    return (not problems, "; ".join(problems) if problems else "bare -it tails demoted and flagged; favours~flavours, Lagos~Vegas, fox~box, goose~cruise, bonjourno~though all rhyme; masculine~feminine costs a little")
+    return (not problems, "; ".join(problems) if problems else "bare -it tails demoted and flagged; favours~flavours, Lagos~Vegas, fox~box, goose~cruise, Porto~though all rhyme; masculine~feminine costs a little")
 
 
 # ------------------------------------------------------------------ evaluation against Joe's ear

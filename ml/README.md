@@ -56,8 +56,8 @@ Survivors go to `writing/generated_<slot>.md`. Every candidate and its verdict i
 `ml/data/generated.jsonl` - that is the flywheel: the model's failures become future training data.
 
 **Important, read before trusting a "0 survivors" result.** `check_all` is a *similarity-to-the-original's-audio*
-gate, not a quality gate - **Joe's own approved bars 1-4 fail it** (`8 syllables vs the original's 9`,
-plus stress-grid and end-shape misses). So `generate.py` uses it as a RANKING signal and reports
+gate, not a quality gate. (15 Oct 2026: the evidence once given here, that "Joe's approved bars 1-4" fail it, is withdrawn:
+Joe says those bars were never approved. The judge model trained on them as its only positive block was deleted.) So `generate.py` uses it as a RANKING signal and reports
 `form problems` per candidate; the VETO is the meaning gate plus the judge. Gating on exact form
 would reject bars Joe would approve.
 

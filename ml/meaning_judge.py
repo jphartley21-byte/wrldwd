@@ -107,16 +107,13 @@ def verdict(kind, plain):
     return True
 
 
-# The labelled set: bars whose verdict we already know, from Joe's own decisions. Positives are the
-# eight locked/passing hook bars of the section that passes every gate; negatives are the inventory
+# The labelled set: bars whose verdict we already know. Positives are the four bars of the Hook 5-8 section that
+# passed every gate (15 Oct 2026: the four Hook 1-4 bars once called "locked" were removed; Joe: never approved,
+# never a bar or a gate again; the 93% figure was measured with them in the set); negatives are the inventory
 # lines this session produced and the widened meaning gate now catches. Every label carries its
 # provenance, so the ground truth can be argued with rather than trusted. Nothing here is the
-# original's. n=14: one bar is worth 7% of the accuracy figure.
+# original's. n=10 now: one bar is worth 10% of the accuracy figure.
 LABELLED = [
-    ("pass", "Yo, bonjourno", "locked Hook 1-4 (phatic opener Joe wrote)"),
-    ("pass", "Said damn at the on-stage porno", "locked Hook 1-4"),
-    ("pass", "Front row on my phone, so bored, though", "locked Hook 1-4"),
-    ("pass", "So I boarded a plane out to Bordeaux", "locked Hook 1-4"),
     ("pass", "Cash back on the bier in Zurich", "Hook 5-8 v15, ALL PASS"),
     ("pass", "Stuck in the black van in all the traffic", "Hook 5-8 v15, ALL PASS"),
     ("pass", "Sitting back with a real panic", "Hook 5-8 v15, ALL PASS"),

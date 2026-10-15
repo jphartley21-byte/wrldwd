@@ -43,11 +43,16 @@ import forge                 # noqa: E402
 import meaning_gate as mg    # noqa: E402
 import vocab as v            # noqa: E402
 
-# Joe's locked bars 1-4 (writing/bars_1-4_v9.md) - our own text, the only positive block the
-# judge has. Used as the reference for the worst-bar attribution below.
-REFERENCE = ["Oh, bonjourno", "Front row at the on-stage porno",
-             "Damn good show but the dame look bored, though",
-             "So boarded a plane out to Bordeaux"]
+# The reference block for the worst-bar attribution below. Until 15 Oct 2026 it was the four Hook 1-4 bars once called
+# "Joe's locked bars"; Joe: never approved, never a bar or a gate again. It is now the ORIGINAL's Hook 1-4, read at run
+# time from the private file (WW_PRIVATE_ORIGINAL, outside the project; never printed). Without that file there is no
+# reference and the attribution is skipped.
+def _reference():
+    p = os.environ.get("WW_PRIVATE_ORIGINAL", os.path.expanduser("~/Documents/WORLDWIDE_PRIVATE/original_lines.txt"))
+    try:
+        return [l.strip() for l in open(p, encoding="utf8") if l.strip()][:4]
+    except OSError:
+        return []
 
 
 def _cache_path():
@@ -126,7 +131,10 @@ def worst_bar_drivers(model, bars, feats, bar_idx):
     """Which features push one bar toward reject, against the reference block."""
     import numpy as np
     import scipy.sparse as sp
-    ref = F.block_row(REFERENCE, "t", "t", "t")
+    reference = _reference()
+    if not reference:
+        return []
+    ref = F.block_row(reference, "t", "t", "t")
     ref_feats = [x["features"] for x in ref["bars"]]
 
     def design(bs, fs):
@@ -138,7 +146,7 @@ def worst_bar_drivers(model, bars, feats, bar_idx):
     coef = model.lr.coef_[0][:len(names)]
     n = len(names)
     zm = design(bars, feats)[bar_idx, :n].toarray().ravel()
-    za = design(REFERENCE, ref_feats)[:, :n].mean(axis=0).A1
+    za = design(reference, ref_feats)[:, :n].mean(axis=0).A1
     delta = coef * (zm - za)
     order = np.argsort(delta)[:5]
     return [(names[i], float(delta[i])) for i in order if abs(delta[i]) > 1e-9]

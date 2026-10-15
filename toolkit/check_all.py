@@ -93,7 +93,7 @@ if __name__ == "__main__":
         # "==" is the slot header this file writes for the project format; without it the header lines
         # were read as BARS, so every slot window was shifted by one and each slot was scored against
         # the wrong lines (it reported "== Hook 5-8" as a bar of 1 syllable and made bar 1 of Hook 5-8
-        # "So I boarded a plane out to Bordeaux", which belongs to Hook 1-4). Found 13 Oct 2026, the
+        # the last bar of Hook 1-4). Found 13 Oct 2026, the
         # same defect ratchet.py had.
         ours = [l.strip() for l in open(a[1], encoding="utf8") if l.strip() and not l.startswith(("[", "#", "(", "=="))]
         i, allok = 0, True

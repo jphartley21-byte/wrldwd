@@ -6,7 +6,7 @@ got there by dropping articles and commas to hit syllable counts.
 
 WHAT. A cached model read of every bar, one request per block (a few thousandths of a cent on ds-flash), at temperature 0 with no thinking:
 for each bar the judge must (1) restate it as ONE complete plain sentence using only the words in the bar, (2) say whether the bar is grammatical
-spoken English (fragments are fine if a speaker could really say them: "Yo, bonjourno", "Front row on my phone, so bored, though"), and (3) score
+spoken English (fragments are fine if a speaker could really say them: "Hoi Rotterdam", "Long arm of the law"), and (3) score
 sense 0 nonsense / 1 guessable / 2 a stranger gets it on one hearing. A bar FAILS when sense < 2 or it is not grammatical. A separate cheap
 deterministic screen flags bars that end on a dangling particle (in/on/out/up/off) with no object, and bars with fewer than two content words.
 
@@ -170,8 +170,10 @@ def block_check(bars: list[str], llm=None, model: str = "ds-flash") -> dict:
     return {"ok": ok, "thread": r.get("thread", ""), "coherent": r.get("coherent", 2), "issue": r.get("issue", ""), "fails": fails}
 
 
-# the calibration set: GOOD must pass, BAD must fail. GOOD = Joe's own approved bars + plain sentences; BAD = bars Joe or I rejected as nonsense.
-GOOD = ["Yo, bonjourno", "Said damn at the on-stage porno", "Front row on my phone, so bored, though", "So I boarded a plane out to Bordeaux",
+# the calibration set: GOOD must pass, BAD must fail. GOOD = plain sentences a speaker could say; BAD = bars Joe or I rejected as
+# nonsense. 15 Oct 2026: GOOD and BLOCK_GOOD held the four Hook 1-4 bars once called "Joe's own approved bars" (Joe: never approved,
+# never a bar or a gate again); they were replaced. NOT recalibrated yet: the model read needs DEEPSEEK_API_KEY.
+GOOD = ["Hoi Rotterdam beg your pardon", "Look it fell off of a lorry", "Ten feet of it guards my garden", "I'm wanted in every country I've been to",
         "Missed the headliner, bought a gnome, sorry", "Tent flooded, then dust, then drought, I slept through all three", "He's off the back of a lorry"]
 BAD = ["Two glasses, cold lager, back road corners", "No names just numbers on folders", "Found pink top hat, wear it like bread", "Breakfast had me orange like little",
        "Queue round the block for the film I'm buying in", "Hammock bamboo snow on the Atlas dandy", "Tin of direct-to-rust, no recap, paint town red"]
@@ -188,7 +190,7 @@ def calibrate(llm=None) -> tuple[bool, str]:
     return ok, f"sensecheck calibration: good bars failed {len(good_fail)}/{len(GOOD)} {good_fail}; bad bars passed {len(bad_pass)}/{len(BAD)} {bad_pass}"
 
 
-BLOCK_GOOD = ["Yo, bonjourno", "Said damn at the on-stage porno", "Front row on my phone, so bored, though", "So I boarded a plane out to Bordeaux"]
+BLOCK_GOOD = ["Hoi Rotterdam beg your pardon", "I've got your gnome proost I'm still not sorry", "Look it fell off of a lorry", "Ten feet of it guards my garden"]
 BLOCK_BAD = ["Hey port and the road to Porto", "Two glasses cold lager then cut corners", "Lager chips and the last orders", "Might hit the road then the border"]
 # the itinerary (v17 V1 33-44, 14 Oct 2026): under the old "who does what, where" thread it passed; it argues nothing, so it must fail now
 BLOCK_RECOUNT = ["Stop one is Zurich and it's pricey", "Florence next and David is a must", "Then Ljubljana's dragon bridge is green with rust",

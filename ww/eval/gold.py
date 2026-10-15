@@ -24,9 +24,9 @@ GOLD = config.EVAL_DIR / "gold.jsonl"
 DEV_SHARE = 60  # percent of clusters in dev
 
 
-# With only three Joe-positive blocks a hash split is a coin toss that can leave the sealed side with none. These are placed by
+# With only two Joe-positive blocks (three until 15 Oct 2026) a hash split is a coin toss that can leave the sealed side with none. These are placed by
 # hand BEFORE the pre-registration is locked: V-a is the Hook 5-8 rediscovery target, so it must never be seen while tuning.
-FORCED_SPLIT = {"joe_hook_5-8_V-a": "sealed", "joe_hook_1-4": "dev", "joe_majorca_v5": "dev"}
+FORCED_SPLIT = {"joe_hook_5-8_V-a": "sealed", "joe_majorca_v5": "dev"}   # joe_hook_1-4 removed 15 Oct 2026 (never approved)
 
 
 def split_of(cluster: str) -> str:

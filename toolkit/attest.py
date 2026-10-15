@@ -10,7 +10,7 @@ material, and it does not discriminate:
 
   * flags the gibberish: "None of the names on the quarters" 0 hits, "A page of the orders and the
     corners" 0 hits, "Hallo and the boat in Oslo" 0 hits
-  * flags good lines just as hard: Joe's approved "Front row at the on-stage porno" 0 hits (tail),
+  * flags good lines just as hard (15 Oct 2026: one of the examples here was a Hook 1-4 bar Joe says was never approved; that example is withdrawn),
     "Paid him by the weight" 0 hits, "Might take the ferry to Bergen" 0 hits
 
 Reason: the tail of a bar is usually a clause boundary, not an idiom, so a legitimate line scores

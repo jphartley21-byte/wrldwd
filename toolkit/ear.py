@@ -288,9 +288,8 @@ def selftest():
     ok &= bool(cr4)
     pv5, dr5, ec5, cr5 = report(FLAT_FIXTURE, "our flat bars (must be quiet)")
     ok &= not pv5 and not dr5 and not ec5 and not cr5
-    import fixtures
-    _, dr6, ec6, cr6 = report(list(fixtures.joe_bars()), "the positive-control bars (a device, no crutch)")
-    ok &= (bool(dr6) or bool(ec6)) and not cr6
+    # 15 Oct 2026: a positive control on the four Hook 1-4 bars once called "Joe's approved bars" was removed (Joe:
+    # never approved, never a bar or a gate again). The synthetic fixtures above carry the device checks.
     print("\nEAR SELFTEST:", "PASSED" if ok else "FAILED")
     return ok
 

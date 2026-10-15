@@ -37,7 +37,7 @@ for p in (HERE, os.path.join(ROOT, "ml")):
         sys.path.insert(0, p)
 
 import rhyme_tools as rt          # noqa: E402
-import fixtures                    # noqa: E402
+import retired                     # noqa: E402
 import craft_scan as cs           # noqa: E402
 import meaning_gate as mg         # noqa: E402
 import coherence_gate as cg       # noqa: E402
@@ -94,8 +94,8 @@ def _rows(path):
     """Read one file as a sequence of SINGLE bars, plus any tab-row blocks.
 
     This matters: the pool files store a whole quad on ONE tab-separated line, so a line-based miner
-    silently drops every quad the project has already built (including Joe's approved section, which
-    sits in a plain 4-line block)."""
+    silently drops every quad the project has already built. Retired bars (toolkit/retired.py) are dropped by
+    features.clean_bars."""
     single, blocks = [], []
     try:
         lines = open(path, encoding="utf8").read().splitlines()
@@ -246,9 +246,8 @@ def _scheme_ok(bars, fr):
 def cluster_families(bars, threshold=0.62):
     """Group bars by RHYME FAMILY using the repo's own tail_score, not an exact vowel+coda key.
 
-    An exact key is far stricter than the project's own notion of a family and would reject Joe's
-    approved bars: bonjourno / porno / bored / Bordeaux all sit on the same vowel (əʊ) with different
-    codas (n, rn, rd, rd), and the map calls that passage AAAA. Greedy clustering over tail_score is
+    An exact key is far stricter than the project's own notion of a family: a passage the map calls AAAA can
+    sit on one vowel (əʊ) with different codas (n, rn, rd, rd). Greedy clustering over tail_score is
     deterministic here because the corpus is sorted; each assembled quad is re-verified with
     craft_scan.families() anyway, so an imprecise cluster can only lose candidates, never admit a
     wrong rhyme.
@@ -407,29 +406,18 @@ def selftest_model():
 
 
 def selftest():
-    """The engine must REDISCOVER Joe's locked bars on Hook 1-4 - they are in the corpus, and if the
-    search cannot surface a section Joe approved then the objective is wrong.
-
-    It asserts the property that actually matters: the approved quad is ENUMERATED and the judge
-    RECOGNISES it (risk in the LAND band). Its RANK is printed but not asserted, because rank depends
-    on how many rivals clear the same gates, and removing the cash gate (11 Oct 2026) let many more
-    quads compete for the top - a rank assertion would fail for a reason that has nothing to do with
-    whether the engine can see good work.
-    """
-    locked = fixtures.joe_bars()
+    """15 Oct 2026: this used to assert that the search REDISCOVERS the four Hook 1-4 bars once called "Joe's
+    approved bars". Joe: they were never approved and must never be a bar or a gate again. What is asserted now:
+    the search still runs on Hook 1-4 and returns candidates, and no retired bar can appear in any of them (the
+    corpus still holds them in old drafts; features.clean_bars refuses them). forge.py is parked (registry:
+    failed_validation); this only keeps it from crashing or resurrecting the retired lines."""
     top, stats = run("Hook 1-4", cap=20, topk=100000, confirm_k=0, model=selftest_model())
-    hit = next((s for s in top if s["bars"] == locked), None)
-    found = next((i for i, s in enumerate(top, 1) if s["bars"] == locked), None)
-    risk = hit["risk"] if hit else None
-    present = found is not None
-    recognised = risk is not None and risk < 0.35
-    ok = present and recognised
+    leaked = [b for s in top for b in s["bars"] if retired.is_retired(b)]
+    mined = [d["text"] for d in mine_bars() if retired.is_retired(d["text"])]
+    ok = bool(top) and not leaked and not mined
     print(("ok  " if ok else "BAD ") +
-          f"the search finds Joe's locked bars on Hook 1-4: enumerated={present}, rank {found} of "
-          f"{len(top)}, judge risk {risk} (recognised as good: {recognised})")
-    print(f"     explored {stats['explored']}, {stats['meaning_pass']} passed the meaning gate; "
-          f"their form distance from the original's frame is 2 syllables (Joe's approved bars are "
-          f"+/-1 on two bars)")
+          f"the search runs on Hook 1-4 ({len(top)} candidates, {stats['explored']} explored) and no retired bar is "
+          f"mined ({len(mined)}) or proposed ({len(leaked)})")
     print("FORGE SELFTEST", "PASSED" if ok else "FAILED")
     return ok
 

@@ -1,7 +1,7 @@
 {
   "legacy": {
     "ml/judge.py (learned)": {
-      "evidence": "trained on 1 positive block; 3 of 5 of Joe's rules inverted; word-level coefficients <= 0.014",
+      "evidence": "its one positive block was the four never-approved Hook 1-4 bars; the saved model was deleted 15 Oct 2026; 3 of 5 of Joe's rules inverted; word-level coefficients <= 0.014",
       "status": "failed_validation"
     },
     "ml/meaning_judge.py (llama3 paraphrase)": {
@@ -9,12 +9,12 @@
       "status": "unvalidated"
     },
     "toolkit/attest.py": {
-      "evidence": "flags Joe's approved bars as hard as gibberish",
+      "evidence": "flags good lines as hard as gibberish ('Paid him by the weight', 'Might take the ferry to Bergen'); the part of the evidence that used Joe's 'approved' bars was withdrawn 15 Oct 2026: it rested on the four Hook 1-4 bars once called Joe's approved bars, which Joe says were never approved",
       "status": "failed_validation"
     },
     "toolkit/check_all.py as a quality gate": {
-      "evidence": "fails Joe's own accepted bars; kept as a ranking readout",
-      "status": "failed_validation"
+      "evidence": "kept as a ranking readout; the evidence that it 'fails Joe's own accepted bars' was withdrawn 15 Oct 2026: it rested on the four Hook 1-4 bars once called Joe's approved bars, which Joe says were never approved",
+      "status": "unvalidated"
     },
     "toolkit/coherence_gate": {
       "evidence": "calibrated on the original; gibberish passed it",
@@ -25,8 +25,8 @@
       "status": "diagnostic"
     },
     "toolkit/flow_fit pattern % / beat grid": {
-      "evidence": "ranked Joe's approved bars (50/50/50/33%) below a rejected bar (62%)",
-      "status": "failed_validation"
+      "evidence": "the 12 Oct failed_validation verdict was withdrawn 15 Oct 2026: it rested on the four Hook 1-4 bars once called Joe's approved bars, which Joe says were never approved. Still not a gate: on 56 round-1 candidates its pattern % had rho 0.09 with the judges' flow scores (ww/write/slotcheck.py)",
+      "status": "unvalidated"
     },
     "toolkit/flow_fit syllable count + end shape": {
       "evidence": "measured from the original's audio; hard facts, not quality",
@@ -41,11 +41,11 @@
       "status": "failed_validation"
     },
     "toolkit/imagery.py chains": {
-      "evidence": "Joe's approved bars have zero chains",
+      "evidence": "the original has a chain in 4 of 19 quads; the claim 'Joe's approved bars have zero chains' was withdrawn 15 Oct 2026: it rested on the four Hook 1-4 bars once called Joe's approved bars, which Joe says were never approved",
       "status": "diagnostic"
     },
     "toolkit/match.py (scheme/length vs original profile)": {
-      "evidence": "similarity to the original's audio, not quality: fails Joe's own accepted bars on 3 of 4 sub-checks",
+      "evidence": "similarity to the original's audio, not quality. The evidence that it 'fails Joe's own accepted bars' was withdrawn 15 Oct 2026: it rested on the four Hook 1-4 bars once called Joe's approved bars, which Joe says were never approved",
       "status": "diagnostic"
     },
     "toolkit/meaning_gate inventory rule": {
@@ -58,6 +58,10 @@
     },
     "toolkit/recount.py (claim-share quota)": {
       "evidence": "original passes its own par; 3 of 3 named recounts fail; deterministic",
+      "status": "validated"
+    },
+    "toolkit/swagger.py (hook stamps + verse menace)": {
+      "evidence": "original passes its own par; 5 of 5 drafts Joe rejected as diaries fail",
       "status": "validated"
     },
     "ww/judge/reader.py event/claim labels": {

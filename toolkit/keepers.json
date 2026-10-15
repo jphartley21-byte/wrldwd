@@ -1,11 +1,6 @@
 {
- "_note": "Things a fix may never silently delete. Joe edits this list; removing an item needs his OK. Phrases are matched case-insensitively.",
- "locked_lines": [
-  "Yo, bonjourno",
-  "Said damn at the on-stage porno",
-  "Front row on my phone, so bored, though",
-  "So I boarded a plane out to Bordeaux"
- ],
+ "_note": "Things a fix may never silently delete. Joe edits this list; removing an item needs his OK. Phrases are matched case-insensitively. 15 Oct 2026: locked_lines emptied on Joe's instruction (the four Hook 1-4 bars were never approved; never a bar or a gate again).",
+ "locked_lines": [],
  "phrases": [
   "Nordic bride",
   "gap year",

@@ -207,7 +207,7 @@ def selftest():
         ("a homophone is found for plane", homophone_of("plane") in ("plain",)),
         ("a homophone is not the word itself", homophone_of("plane") != "plane"),
         ("no false second reading for a plain word", second_reading("kettle") is None),
-        ("a known pun line reports a pair", score_bar("So boarded a plane out to Bordeaux")["pun"] is not None),
+        ("a known pun line reports a pair", score_bar("Caught a plane on the plain to Madrid")["pun"] is not None),
         ("an available second reading is found wherever it exists",
          score_bar("Might hit the road past the border")["pun"] is not None),
     ]
@@ -215,7 +215,7 @@ def selftest():
         if not good:
             ok = False
             print(f"  FAIL {name}")
-    s = score_bar("So boarded a plane out to Bordeaux")
+    s = score_bar("Caught a plane on the plain to Madrid")
     print(f"  pun: {s['pun']}")
     print("FUNNY SELFTEST", "PASSED" if ok else "FAILED")
     return 0 if ok else 1

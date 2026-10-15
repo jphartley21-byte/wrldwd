@@ -7,7 +7,7 @@ rewrite and why, never that a bar is good.
 
   python ml/judge.py FILE|-            per-bar risk + the drivers behind the score
   python ml/judge.py FILE|- --k 6      more drivers per bar
-  python ml/judge.py --selftest        must flag the rejected fixtures and pass Joe's locked bars
+  python ml/judge.py --selftest        must flag the rejected fixtures
 
 Risk near 1 = the shape of a bar Joe rejected. Risk near 0 = the shape of one he accepted or kept.
 The drivers are printed as feature -> contribution, so the reason is inspectable, not a black box.
@@ -26,7 +26,6 @@ for _p in (HERE, TOOLKIT):
     if _p not in sys.path:
         sys.path.insert(0, _p)
 
-import fixtures                      # noqa: E402
 import features as F                 # noqa: E402
 import train_judge as T              # noqa: E402
 
@@ -53,8 +52,10 @@ def blocks_from_text(text):
 
 def load_model():
     if not os.path.exists(MODEL):
-        sys.exit(f"no model at {os.path.relpath(MODEL, ROOT)} - run:\n"
-                 f"  python ml/build_dataset.py && python ml/train_judge.py")
+        # 15 Oct 2026: the saved model was deleted. Its only accept-tier block was the four Hook 1-4 bars once called "Joe's
+        # locked bars" (Joe: never approved, never a bar or a gate again), so it scored resemblance to them.
+        sys.exit(f"no model at {os.path.relpath(MODEL, ROOT)} - the old one was trained on retired bars and deleted (15 Oct 2026).\n"
+                 f"Retrain only on bars Joe has actually accepted:  python ml/build_dataset.py && python ml/train_judge.py")
     return T.JudgeModel.load(MODEL)
 
 
@@ -100,13 +101,10 @@ def render(model, blocks, k):
 
 
 def selftest(model):
-    """The minimum bar for trusting the model: Joe's rejections flag, his locked bars do not."""
+    """The minimum bar for trusting the model: Joe's rejections flag. 15 Oct 2026: the positive half of this test used
+    the four Hook 1-4 bars once called "Joe's locked bars"; Joe: never approved, never a bar or a gate again. The judge
+    (registry: failed_validation) has no positive control left until it is retrained on bars Joe actually accepts."""
     ok = True
-    locked = fixtures.joe_bars()
-    _t, _f, r = score_block(model, locked)
-    good = float(np.mean(r)) < 0.5
-    ok &= good
-    print(("ok  " if good else "BAD ") + f"Joe's locked bars score {np.mean(r):.2f} (< 0.5)")
     for path in sorted(glob.glob(os.path.join(ROOT, "toolkit", "tests", "rejected_*.txt"))):
         bars = blocks_from_text(open(path, encoding="utf8").read())
         if not bars:

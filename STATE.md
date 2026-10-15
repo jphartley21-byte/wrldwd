@@ -1684,3 +1684,32 @@ Joe: "what changes are needed ... to produce an actually good song that uses the
 - REFIT: writing/premises/hook_most_wanted_scratch.md r2 passes slotcheck 3/3 with 0 hard issues. It also passes recount (0), swagger (7/16), meaning, phrase_audit, characters, rhyme pairs 14/14 and per-bar fit 16/16.
 - Docs: CLAUDE.md, .claude/commands/write.md and toolkit/README.md now name slotcheck as the gate.
 - OPEN: Joe's ear on scratch r2. The full song's verses fail slotcheck (34 issues) and are not rewritten; Joe decides whether to build them from scratch.
+
+## 15 Oct 2026 (later 2) - the "approved" Hook 1-4 bars RETIRED (Joe: "these bars are not approved. They should be removed now and never used as a bar or gate again")
+The four Hook 1-4 bars the repo called "Joe's approved/locked bars" were the positive control for about 15 selftests and calibrate.py. They were also the ML judge's only accept-tier block, the reference block in trybars, and a hard-coded Hook 1-4 that ww/write/draft_all.py and assemble.py wrote into every draft. Joe had already said not to gauge anything by them; that instruction was never written into the repo.
+
+REMOVED:
+- toolkit/fixtures.py and toolkit/tests/joe_hook_1-4.txt
+- every selftest and calibration use; the original or a clean block stands in
+- the hard-coded hook in draft_all.py and assemble.py; an unbuilt Hook 1-4 is now left empty
+- ML training data: dataset.jsonl lost its accept row and 31 draft rows were stripped; dpo.jsonl 63 -> 51 rows; sft.jsonl 21 -> 17 rows
+- eval/gold.jsonl's joe_hook_1-4 row and the matching joe_verdicts entry
+- keepers.json locked_lines
+- 2 sense_cache entries
+- ml/models/judge.joblib, which was trained on them as its only positive block. Retrain on Joe's machine if wanted; sklearn is absent here.
+
+GUARD: toolkit/retired.py holds only SHA-1 hashes of the 9 spellings, not the text.
+- slotcheck hard-fails a retired bar.
+- features.clean_bars, used by the forge miner and the dataset builder, drops them.
+- The draft builders strip them from incumbents.
+- calibrate.py asserts the guard.
+
+The 62 old drafts and Suno prompts in writing/ and brief/ still hold them as history; they cannot come back as a bar.
+
+REGISTRY: evidence that rested on these bars is withdrawn.
+- flow_fit pattern % and check_all-as-quality-gate are now "unvalidated" (still not gates).
+- match.py, attest.py and imagery keep their status with the evidence corrected.
+
+CLAUDE.md rule 9 records the instruction.
+
+Checks: CALIBRATION PASSED; ww selftest 34/35 (the missing private plan file, as before); instruments re-frozen.

@@ -41,7 +41,7 @@ ADMIN = {
     "loads", "weight", "weights", "slate", "slates", "docket", "dockets", "item", "items", "stock",
 }
 GREET = {
-    "wagwan", "hasta", "luego", "bonjour", "bonjourno", "ola", "grazie", "hola", "ciao", "salut", "servus",
+    "wagwan", "hasta", "luego", "bonjour", "ola", "grazie", "hola", "ciao", "salut", "servus",
     "zdravo", "ahoj", "prost", "aloha", "shalom", "namaste", "voulez", "coucher", "avec", "moi", "ese",
     "chicas", "chica", "muy", "bueno", "gracias", "merci", "danke", "tack", "skol", "arigato",
 }
@@ -158,10 +158,14 @@ def report(bars, label, places, loans):
 
 
 def selftest():
-    import fixtures
     places, loans = load_supply()
     print(f"supply: {len(places)} place names, {len(loans)} loanwords\n")
-    gf = report(list(fixtures.joe_bars()), "the positive-control bars (must pass all three gates)", places, loans)
+    # 15 Oct 2026: the positive control was the four Hook 1-4 bars once called "Joe's approved bars"; Joe: never
+    # approved, never a bar or a gate again. The clean control is now a block written to pass (no admin word in a
+    # rhyme slot, a local word, no crutch); the ORIGINAL is the benchmark these gates were calibrated on.
+    clean = ["Hoi Rotterdam beg your pardon", "Proost to the lads in the beer garden",
+             "Ten feet of gnome on the lorry", "Might keep it and say I'm sorry"]
+    gf = report(clean, "a clean block (must pass all three gates)", places, loans)
     weak = ["Cold beer on the house in Porto", "Port in the glass and a page of totals",
             "Just numbers and dates in folders", "Might take the long way to Oslo"]
     wf = report(weak, "our 5-8 (should fail local + admin rhyme slot)", places, loans)
@@ -172,7 +176,7 @@ def selftest():
     nf = report(b916, "our 9-16 (should fail local + crutch repetition)", places, loans)
     ok = (not gf) and wf and nf
     print("\nDISCRIMINATION:", "PASSED" if ok else "FAILED -- do not use these as gates")
-    print("  approved bars 1-4 pass all three gates; both weak blocks fail at least one")
+    print("  the clean block passes all three gates; both weak blocks fail at least one")
     return ok
 
 

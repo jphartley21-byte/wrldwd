@@ -11,10 +11,8 @@ from __future__ import annotations
 # (id, label, bars, joe_quote, quote_exact, axes, source, strength)
 # label: accept | reject | contender ; axes subset of {sense, sound, flow, stance, unspecified, pun_licensed}
 VERDICTS = [
-    ("joe_hook_1-4", "accept",
-     ["Yo, bonjourno", "Said damn at the on-stage porno", "Front row on my phone, so bored, though",
-      "So I boarded a plane out to Bordeaux"],
-     "", False, ["pun_licensed"], "toolkit/tests/joe_hook_1-4.txt; STATE.md (Joe-authored)", "authored"),
+    # 15 Oct 2026: ("joe_hook_1-4", "accept", ...) removed. Joe: those four bars were never approved and must never be a bar
+    # or a gate again (toolkit/retired.py).
     ("joe_hook_5-8_V-a", "accept",
      ["Cold beer on the house in Porto", "A glass of port and he knows the waters", "Not the worst pint and last orders",
       "Might hit the road to Majorca"],

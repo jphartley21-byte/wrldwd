@@ -192,7 +192,7 @@ def _shared_field(prev, cur):
 
 def frame_of(bar):
     """A crude structural frame: the greeting+place shape, or the first two words."""
-    if re.search(r"\b(ola|ahoj|g'day|hei|ciao|kaixo|servus|bonjour|bonjourno|hasta|ese|wagwan|salam|zivjo)\b",
+    if re.search(r"\b(ola|ahoj|g'day|hei|ciao|kaixo|servus|bonjour|hasta|ese|wagwan|salam|zivjo)\b",
                  bar.lower()):
         return "greeting frame"
     ws = [w.lower() for w in words(bar)]

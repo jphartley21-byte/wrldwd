@@ -37,6 +37,7 @@ import rubric_score as rs         # noqa: E402
 import sense_checks as sc         # noqa: E402
 from flow_check import bar_profile  # noqa: E402
 import domain as dom              # noqa: E402
+import retired                    # noqa: E402
 
 WORD_RE = re.compile(r"[A-Za-z']+")
 BULLET_RE = re.compile(r"^\s*(?:#|[-*|>\[\]]|```)")   # incl. the repo's own "[Verse 1, Block A: ...]"
@@ -86,6 +87,8 @@ def clean_bars(lines):
         if re.search(r"\.\s+[A-Z]", s) or "=" in s or "`" in s:
             continue
         if s.count("(") != s.count(")"):        # a report's parenthetical, not a lyric
+            continue
+        if retired.is_retired(s):               # Joe, 15 Oct 2026: never a bar again (toolkit/retired.py)
             continue
         out.append(s)
     return out
@@ -273,7 +276,7 @@ def vector(row):
 
 
 if __name__ == "__main__":
-    demo = ["Front row at the on-stage porno", "Money's pouring in this quarter"]
+    demo = ["Hoi Rotterdam beg your pardon", "Money's pouring in this quarter"]
     br = block_row(demo, "demo", "accept", "hand-run")
     for r in br["bars"]:
         print(r["bar"], r["text"], "->", r["features"]["rule_prior"], "prior;",
