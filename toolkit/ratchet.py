@@ -29,6 +29,16 @@ def section_status(lines):
     return out
 
 
+def slot_hard(path):
+    """slotcheck hard issues per section (15 Oct 2026): the ratchet's "OK" now also needs no rise here, so a section cannot
+    count as not-worse while it fails more of the current flow and rhyme gates."""
+    import fitbar
+    fitbar.use_ww()
+    from ww.write import slotcheck
+    D, C = fitbar.read_draft(path, with_cash=True)
+    return {s: len(slotcheck.check(s, D[s], cash=C.get(s) or [])["hard"]) for s in fitbar.SLOTS if D.get(s)}
+
+
 def keepers_report(text, K):
     t = text.lower()
     return [p for p in K["phrases"] + K["places"] if p.lower() not in t]
@@ -46,6 +56,11 @@ if __name__ == "__main__":
             bad.append(f"{slot}: passed before, fails now")
         elif n_n > n_o:
             bad.append(f"{slot}: problems rose {n_o} -> {n_n}")
+    ho, hn = slot_hard(old), slot_hard(new)
+    print("slotcheck hard issues per section (old -> new):", ", ".join(f"{s} {ho.get(s, '-')}->{n}" for s, n in hn.items()))
+    for s, n in hn.items():
+        if n > ho.get(s, 0):
+            bad.append(f"{s}: slotcheck hard issues rose {ho.get(s, 0)} -> {n}")
     lost = [k for k in keepers_report(open(new, encoding="utf8").read(), K) if k not in keepers_report(open(old, encoding="utf8").read(), K)]
     if lost:
         bad.append("keepers lost: " + ", ".join(lost))

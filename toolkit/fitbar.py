@@ -81,12 +81,15 @@ def try_bar(bar, line):
     w = ff.sylls(line)
     run, joins = beat_rules(bar, line)
     jtxt = ("J: hard join " + ", ".join(f"{j['a']} {j['b']}" for j in joins)) if joins else ""
+    import flow_par as fp
+    pf = fp.check(bar, line)   # every bar, timed or not: the untimed branch once skipped it (15 Oct 2026: song bar 10 leaked)
     if "steps" not in t:   # no audio template (no vocal detected in the original, e.g. song bar 10): the profile's syllable count
         s, k = slot_of(bar)
         want = slotcheck.spec(s)["sylls"][k]
-        ok = abs(len(w) - want) <= 1 and run < 4
+        ok = abs(len(w) - want) <= 1 and run < 4 and not pf
         why = "; ".join(x for x in [f"{len(w)} syl, need {want}+-1" if abs(len(w) - want) > 1 else "",
-                                    f"{run} weak syllables in a row" if run >= 4 else "", jtxt] if x)
+                                    f"{run} weak syllables in a row" if run >= 4 else "",
+                                    "PAR " + fp.describe(pf) if pf else "", jtxt] if x)
         return (ok, len(w), want, 1.0, ff.end_shape(line)[0], "-", pattern(bar, line), "-", why)
     ow = t["weak"]
     m = min(len(w), len(ow))
@@ -99,8 +102,6 @@ def try_bar(bar, line):
     ap_ok, ap_k, ap_want = ff.approach(bar, line)
     if ap_ok is False:
         ok, why = False, "; ".join(x for x in [why, f"stress before the rhyme: syllable {ap_k} should be {ap_want}"] if x)
-    import flow_par as fp
-    pf = fp.check(bar, line)
     if pf:
         ok, why = False, "; ".join(x for x in [why, "PAR " + fp.describe(pf)] if x)
     if jtxt:

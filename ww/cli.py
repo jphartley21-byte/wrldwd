@@ -185,6 +185,11 @@ def cmd_check(args) -> int:
     return slotcheck.main(["--slot", args.slot, "--tol", str(args.tol), "--context", args.context, args.file])
 
 
+def cmd_gate(args) -> int:
+    from .write import gate
+    return gate.main([args.file] + (["--quiet"] if args.quiet else []))
+
+
 def cmd_slotspec(args) -> int:
     from .write import slotcheck
     print(slotcheck.describe(args.slot))
@@ -554,6 +559,10 @@ def main(argv=None) -> int:
     ck.add_argument("--context", default="")
     ck.add_argument("file", nargs="?", default="-")
     ck.set_defaults(fn=cmd_check)
+    gt = sub.add_parser("gate", help="ONE verdict for a draft: slotcheck per section (with #cash lines) + meaning, phrase audit, swagger, characters, songcheck; exit 0 only when everything passes; switched-off gates print as GATE OFF")
+    gt.add_argument("file")
+    gt.add_argument("--quiet", action="store_true")
+    gt.set_defaults(fn=cmd_gate)
     bk = sub.add_parser("bank")
     bk.add_argument("word", help="a seed word: lists the common perfect rhymes (hard/soft endings), places, local words and banked stock phrases in its family")
     bk.set_defaults(fn=cmd_bank)

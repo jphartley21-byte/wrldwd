@@ -1,0 +1,117 @@
+"""gate: ONE verdict for a draft, used everywhere (15 Oct 2026).
+
+Joe: "Are these gates locked in so a naive writer would produce the same flow?" They were not: the checks only ran when the
+writer chose to run them, the automated writer passed failing blocks on as best-effort results, "done" never required the slot
+checker, and a gate switched off by an environment flag left only a quiet note. This module is the single verdict the
+definition of done, the save hook (.claude/settings.json) and calibrate.py's naive-writer test all use.
+
+Per section (a '== Slot' draft):
+  ww/write/slotcheck.check, with the section's `#cash` lines: syllables (exact where the original was timed), end shape,
+  the by-ear rhyme rules, stress before the rhyme, the per-bar flow par (toolkit/flow_par.py), weak runs, recount, the
+  retired-bar guard, names, suffix ends, narrator, cashed idioms, and the sense read when a model key exists.
+On the whole file: toolkit/meaning_gate, phrase_audit and swagger, the character cap, and songcheck on a full song.
+Exit 0 only when every hard check passes. Notes are printed per section (fix them or list them to Joe). A gate that is
+switched off prints as "GATE OFF" at the top, never as a pass.
+
+  python -m ww.cli gate FILE [--quiet]
+"""
+from __future__ import annotations
+
+import os
+import subprocess
+import sys
+
+from .. import config
+
+TOOLKIT = config.ROOT / "toolkit"
+
+
+def gates_off() -> list[str]:
+    off = []
+    if os.environ.get("WW_SENSE", "1") == "0":
+        off.append("sense read (WW_SENSE=0)")
+    elif not config.secret("DEEPSEEK_API_KEY"):
+        off.append("sense read (no DEEPSEEK_API_KEY: the model read cannot run)")
+    if os.environ.get("WW_RAPFIT_GATE", "1") == "0":
+        off.append("stress-anchored rhyme rule (WW_RAPFIT_GATE=0)")
+    if os.environ.get("WW_RECOUNT", "1") == "0":
+        off.append("recount (WW_RECOUNT=0)")
+    if os.environ.get("WW_LEGACY_FLOW", "0") == "1":
+        off.append("current flow rules replaced by the legacy ones (WW_LEGACY_FLOW=1)")
+    return off
+
+
+def _tool(name: str, path: str) -> str:
+    r = subprocess.run([sys.executable, str(TOOLKIT / f"{name}.py"), path], capture_output=True, text=True,
+                       encoding="utf-8", errors="replace")
+    return r.stdout + r.stderr
+
+
+def run(path: str) -> dict:
+    """{"ok", "off", "sections": {slot: {"hard", "notes"}}, "file": [hard issues across the file], "notes": int}"""
+    sys.path.insert(0, str(TOOLKIT))
+    import fitbar
+    fitbar.use_ww()
+    from . import slotcheck
+    import characters
+    D, C = fitbar.read_draft(path, with_cash=True)
+    secs = {}
+    for s in fitbar.SLOTS:
+        if not D.get(s):
+            continue
+        r = slotcheck.check(s, D[s], cash=C.get(s) or [])
+        notes = [x for x in slotcheck.report(r).splitlines() if x.startswith(("FLOW bar", "EAR bar"))] + \
+                [x for x in r["notes"] if not x.startswith(("recount codes", "cadence"))]
+        secs[s] = {"hard": r["hard"], "notes": notes}
+    file_hard = []
+    out = _tool("meaning_gate", path)
+    if "MEANING GATE: PASS" not in out:
+        file_hard.append("meaning gate: " + next((l.strip() for l in out.splitlines() if "MEANING GATE" in l), "no verdict"))
+    out = _tool("phrase_audit", path)
+    if "PHRASE AUDIT: PASS" not in out:
+        file_hard.append("phrase audit: " + next((l.strip() for l in out.splitlines() if "PHRASE AUDIT" in l), "no verdict"))
+    out = _tool("swagger", path)
+    if "SWAGGER: PASS" not in out:
+        file_hard.append("swagger: " + "; ".join(l.strip() for l in out.splitlines() if l.strip().startswith("x "))[:300])
+    bars = [b for s in fitbar.SLOTS for b in D.get(s, [])]
+    over = characters.over_cap(bars)
+    if over:
+        file_hard.append("characters over the cap of 2: " + "; ".join(over))
+    if len(secs) >= 5:
+        out = _tool("songcheck", path)
+        if "SONGCHECK: PASS" not in out:
+            file_hard.append("songcheck: " + "; ".join(l.strip()[3:] for l in out.splitlines() if l.strip().startswith("XX"))[:400])
+    n_hard = sum(len(v["hard"]) for v in secs.values()) + len(file_hard)
+    return {"ok": n_hard == 0 and bool(secs), "off": gates_off(), "sections": secs, "file": file_hard, "hard": n_hard,
+            "notes": sum(len(v["notes"]) for v in secs.values())}
+
+
+def report(r: dict, quiet: bool = False) -> str:
+    L = [f"GATE OFF: {x}" for x in r["off"]]
+    for s, v in r["sections"].items():
+        n = len(v["hard"])
+        L.append(f"{s}: " + ("PASS" if not n else f"FAIL ({n} hard)"))
+        L += [f"   x {h[:220]}" for h in v["hard"]]
+        if not quiet:
+            L += [f"   ~ {n[:200]}" for n in v["notes"]]
+    L += [f"FILE x {h}" for h in r["file"]]
+    if not r["sections"]:
+        L.append("no '== Slot' sections found: nothing was checked")
+    L.append(f"GATE: {'PASS' if r['ok'] else 'FAIL'} ({r['hard']} hard issues, {r['notes']} notes to fix or list to Joe)"
+             + (f"; {len(r['off'])} gate(s) OFF" if r["off"] else ""))
+    return "\n".join(L)
+
+
+def main(argv=None) -> int:
+    import argparse
+    ap = argparse.ArgumentParser(prog="ww gate")
+    ap.add_argument("file")
+    ap.add_argument("--quiet", action="store_true", help="hard issues only, no notes")
+    a = ap.parse_args(argv)
+    r = run(a.file)
+    print(report(r, a.quiet))
+    return 0 if r["ok"] else 1
+
+
+if __name__ == "__main__":
+    sys.exit(main())

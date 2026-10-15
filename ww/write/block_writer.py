@@ -88,12 +88,15 @@ def _length_rule(sylls, examples=None) -> str:
 
 
 def build_request(seed: dict, fact: seed_stage.Fact, n: int, model: str, effort: Optional[str], temperature: Optional[float],
-                  sylls=(8, 10, 8, 8), jobs=JOBS_HOOK, scope: str = "write", negatives: str = "", examples=None) -> Request:
+                  sylls=(8, 10, 8, 8), jobs=JOBS_HOOK, scope: str = "write", negatives: str = "", examples=None,
+                  flow_rule: str = "") -> Request:
     menu = sound_plan.menu(seed["payoff_word"])
     frames = seed_stage.load_frames()["frames"]
     fr = frames.get(seed["frame_id"], {})
     nbars = len(list(sylls)) or 4
     system = SYSTEM.format(persona=seed_stage.PERSONA, jobs="\n".join(jobs), length_rule=_length_rule(sylls, examples))
+    if flow_rule:
+        system += "\n\n" + flow_rule
     if negatives:
         system += f"\n\nAVOID (measured rejections from earlier rounds, rule R10):\n{negatives}"
     lore = ""
@@ -123,9 +126,10 @@ def build_request(seed: dict, fact: seed_stage.Fact, n: int, model: str, effort:
 
 
 def run(llm: LLM, seed: dict, fact: seed_stage.Fact, n: int = 6, model: str = "ds-flash", effort: Optional[str] = "high",
-        temperature: Optional[float] = None, sylls=(8, 10, 8, 8), jobs=None, negatives: str = "", examples=None) -> list[dict]:
+        temperature: Optional[float] = None, sylls=(8, 10, 8, 8), jobs=None, negatives: str = "", examples=None,
+        flow_rule: str = "") -> list[dict]:
     res = llm.complete(build_request(seed, fact, n, model, effort, temperature, sylls=sylls, jobs=jobs, negatives=negatives,
-                                    examples=examples), use_cache=temperature is None)
+                                    examples=examples, flow_rule=flow_rule), use_cache=temperature is None)
     out = []
     for b in (res.parsed or {}).get("blocks", []):
         b["seed"] = {k: seed[k] for k in ("persona_claim", "mechanism", "frame_id", "payoff_word")}

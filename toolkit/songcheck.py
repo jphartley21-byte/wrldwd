@@ -311,7 +311,25 @@ def swagger_gates(sections, fails, notes):
     notes.append(f"swagger: hook stamps {hs}/{hn}, verse swagger {vs}/{vn} (original 9/16, 25/60)")
 
 
-def run(sections, title):
+def slot_gates(path, fails, notes):
+    """15 Oct 2026: a song passes only if every section passes ww/write/slotcheck (with its #cash lines). Not applied to the
+    ORIGINAL: it cannot declare cashed idioms or avoid copying itself, so the gate is for drafts only."""
+    try:
+        import fitbar
+        fitbar.use_ww()
+        from ww.write import slotcheck
+    except Exception as e:  # noqa: BLE001
+        fails.append(f"slotcheck could not run ({e.__class__.__name__}): the song cannot be called passing")
+        return
+    D, C = fitbar.read_draft(path, with_cash=True)
+    for s in fitbar.SLOTS:
+        if D.get(s):
+            h = slotcheck.check(s, D[s], cash=C.get(s) or [])["hard"]
+            if h:
+                fails.append(f"slotcheck {s}: {len(h)} hard issue(s), e.g. {h[0][:120]}")
+
+
+def run(sections, title, path=None):
     fails, notes = [], []
     for slot, bars in sections:
         if not bars:
@@ -324,6 +342,8 @@ def run(sections, title):
     device_gates(sections, fails, notes)
     imagery_gates(sections, fails, notes)
     song_gates(sections, title, fails, notes)
+    if path:
+        slot_gates(path, fails, notes)
     print(f"  {len(sections)} sections, {sum(len(b) for _, b in sections)} bars")
     for f in fails:
         print("  XX", f)
@@ -359,7 +379,8 @@ def main():
             sections = bars_of(text)
     title = sys.argv[sys.argv.index("--title") + 1] if "--title" in sys.argv else None
     print(f"songcheck (title={title!r}):")
-    sys.exit(0 if not run(sections, title) else 1)
+    draft = None if ("--original" in sys.argv or "--slot" in sys.argv or _positional() == "-") else _positional()
+    sys.exit(0 if not run(sections, title, draft) else 1)
 
 
 if __name__ == "__main__":

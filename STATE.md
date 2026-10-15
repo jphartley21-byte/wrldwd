@@ -1750,3 +1750,27 @@ RERUN (no bars rewritten):
   - 2 from the approach gate: bars 2, 6.
 - full_draft_wanted_v1: 69 hard issues; 26 bars fail the new gate.
 - The 5 liked bars that fail (3, 4, 8, 10, 15) are for Joe's ear. Each answer goes into flow_ok.txt or flow_flagged.txt.
+
+## 15 Oct 2026 (later 5) - Joe: "Are these gates locked in so a naive writer would produce the same flow?" NO; now locked (not "same flow")
+WHY NOT: the gates only worked for a writer who chose to run them.
+- argue_stage fell back to failing candidates; draft_all.take() let a section through with ONE MORE slotcheck hard issue; scratch builds took failing candidates.
+- The definition of done, the ratchet and songcheck never ran slotcheck.
+- Nothing ran automatically; the writer model was never told the flow targets; env switches turned gates off silently; syllables had a ±1 allowance whose only justification was the retired bars.
+
+FIXED:
+- `python -m ww.cli gate FILE` (ww/write/gate.py): ONE verdict. Slotcheck per section with `#cash`, meaning_gate, phrase_audit, swagger, the character cap, songcheck on a full song. Exit 0 only on pass. A switched-off gate prints GATE OFF. It is now the first clause of the definition of done.
+- Save hook: .claude/settings.json + .claude/hooks/gate_on_save.py run `ww gate` after every Write/Edit of a writing/**/*.md draft and feed the verdict back. Never blocks the save. Pipe-tested (6.5 s). Live from the NEXT session (the settings file did not exist when this one started).
+- Leaks closed: argue_stage writes nothing when nothing passes (failures listed as REJECTED, diagnosis only); take() needs no rise; scratch builds need frame_ok + plan_ok; ratchet and songcheck now count slotcheck hard issues.
+- The writer prompt gets per-bar targets (slotcheck.targets_text: exact syllables, end shape, strong/weak before the rhyme, par limits). Numbers only, never the original's words.
+- Syllables EXACT on every timed bar (par from benchmark/flow_par.json "syl").
+- toolkit/naive_writer.py (in calibrate.py): each flagged bar swapped into a frozen carrier (tests/naive_carrier.md, NOT approved) is rejected by fitbar's per-bar fit, slotcheck, ww gate, songcheck, the ratchet and take. 9 of 9.
+- Found while verifying: fitbar's per-bar fit skipped the par check on untimed bars, so it PASSED flagged bar 10 ("Boomtown spree") while slotcheck failed it. Fixed; fitbar is now one of the paths the test covers.
+
+STILL NOT LOCKED:
+- "Same flow": the gates bound the flow (no worse than the original's bar on each measure); they do not fix the stress pattern position by position (unvalidated, not gated). Two writers can pass with different flow.
+- The ratchet and take() compare COUNTS per section: swapping one failing bar for a different failing bar is not a "rise". Only `ww gate` = 0 catches it (bar 6 in the test).
+- The sense read is OFF here (no DEEPSEEK_API_KEY); the verdict says so.
+- Par tolerances are fitted on 9 flagged bars; flow_ok.txt is still empty.
+
+NOW: hook r4 `ww gate` FAIL, 2 hard (Hook 1-4 bar 2 'invasion' approach, probably a dictionary stress error; Hook 5-8 bar 2 'not' approach). full_draft_wanted_v1 FAIL, 75 hard.
+OPEN FOR JOE: ratchet r3 -> r4 says REVERT only because check_all Hook 9-16 rose 3 -> 4, while slotcheck hard fell in all three sections. check_all is unvalidated (registry) and take() already dropped it. Should the ratchet drop it too? Also his verdict on r4 bars 3, 4, 8, 10, 12, 15 (each goes into flow_ok.txt or flow_flagged.txt).

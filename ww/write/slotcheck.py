@@ -247,6 +247,47 @@ def spec(slot: str) -> dict:
             "bookends": prof["bookends"]}
 
 
+def flow_targets(slot: str) -> list[dict]:
+    """per bar, the numbers a bar must hit to pass the flow gates: exact syllables, end shape, strong/weak before the rhyme,
+    and the most stressed syllables in a row, hard joins, closed-vowel run and restarts the original's same bar allows
+    (plus toolkit/flow_par.TOL). Numbers only; the original's words never appear."""
+    import flow_fit as ff
+    import flow_par as fp
+    s = spec(slot)
+    a = next(s0 for nm0, s0, e0 in SECS if nm0 == slot)
+    tab = fp.par_table() or []
+    out = []
+    for i in range(s["n"]):
+        t = ff.T[a + i]
+        par = tab[a + i] if a + i < len(tab) else {}
+        timed = "steps" in t
+        ri = t.get("rhyme_idx")
+        pre = None
+        if timed and t.get("weak") and ri is not None and ri >= 1:
+            pre = "weak" if t["weak"][ri - 1] else "strong"
+        out.append({"bar": i + 1, "song_bar": a + i + 1, "syllables": (par.get("syl") if timed else None) or s["sylls"][i],
+                    "exact": timed, "end_shape": s["shapes"][i], "before_rhyme": pre,
+                    "max_stress_run": par.get("stress_run", 9) + fp.TOL["stress_run"] if par else None,
+                    "max_hard_joins": par.get("hard_joins", 9) + fp.TOL["hard_joins"] if par else None,
+                    "max_closed_run": par.get("closed_run", 9) + fp.TOL["closed_run"] if par else None,
+                    "max_restarts": par.get("restart", 9) + fp.TOL["restart"] if par else None})
+    return out
+
+
+def targets_text(slot: str) -> str:
+    """the flow targets as prompt text for a writer (15 Oct 2026: the writer used to be told syllables and rhyme only, so it
+    wrote blind and the gates could only reject)."""
+    L = [f"FLOW TARGETS, HARD, bar by bar (a machine rejects the block if any bar misses one):"]
+    for t in flow_targets(slot):
+        L.append(f"  bar {t['bar']}: {t['syllables']} syllables{' exactly' if t['exact'] else ' (+-1)'}; ends {t['end_shape']}"
+                 + (f"; the syllable just before the rhyme is {t['before_rhyme']}" if t["before_rhyme"] else "")
+                 + (f"; at most {t['max_stress_run']} stressed syllables in a row, {t['max_hard_joins']} hard word joins "
+                    f"(3+ consonants across a gap, an h straight after a cluster, a hiss into a hiss), {t['max_closed_run']} short "
+                    f"closed vowels (i as in 'him', u as in 'foot') in a row, {t['max_restarts']} sentence restarts mid-bar"
+                    if t["max_stress_run"] is not None else ""))
+    return "\n".join(L)
+
+
 def describe(slot: str) -> str:
     """the target in words, for a writer's brief (no lyrics, no vowel sounds: rhyme PATTERN and strength only)."""
     s = spec(slot)
@@ -281,6 +322,9 @@ def check(slot: str, bars: list[str], context: list[str] | None = None, tol: int
     n = min(len(bars), s["n"])
     gram = grammar.analyse_run(bars, context or [])
     mflags = {i: h for i, _, h in bridge.meaning_flags(bars)}
+    import flow_fit as _ffx
+    import flow_par as _fpx
+    _start = next(s0 for nm0, s0, e0 in SECS if nm0 == slot)
     for i in range(n):
         b = bars[i]
         syl = bridge.syllable_count(b)
@@ -291,8 +335,14 @@ def check(slot: str, bars: list[str], context: list[str] | None = None, tol: int
         if slot.startswith("V"):   # verse templates carry exotic shapes (|Sww, ~w, |SwS): compare HARD (ends on a strong syllable) vs SOFT (ends weak)
             ok_shape = shape.endswith("S") == want.endswith("S") or (not want.endswith("S") and shape == "|SS" and bridge.stress_pattern(last) == "12")
         issues = []
-        if abs(syl - s["sylls"][i]) > tol:
-            issues.append(f"{syl} syl (need {s['sylls'][i]}+-{tol})")
+        # EXACT on every bar the original's audio timed (15 Oct 2026): the +-1 allowance rested on the retired "approved" bars.
+        # Compared with the original's own TEXT count (same counter), so the original passes by construction. Bars with no
+        # audio template (song bars 10 and 60) keep +-tol against the profile.
+        timed = "steps" in _ffx.T[_start + i]
+        want_syl = (_fpx.par_syl(_start + i + 1) if timed else None) or s["sylls"][i]
+        t_ = 0 if timed else tol
+        if abs(syl - want_syl) > t_:
+            issues.append(f"{syl} syl (need {want_syl}" + (")" if t_ == 0 else f"+-{t_})"))
         if not ok_shape:
             issues.append(f"ends {shape} (need {want})")
         issues += [f"grammar {f}" for f in gram[i]["flags"] if f.split(":")[0] in ("verb_string", "transitive_without_object", "unresolved_pronoun")]

@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/gate_on_save.py",
+            "timeout": 120,
+            "statusMessage": "ww gate on the saved draft"
+          }
+        ]
+      }
+    ]
+  }
+}

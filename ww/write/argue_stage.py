@@ -593,7 +593,7 @@ def run(llm, slot: str, seeds: int = 6, blocks_per_seed: int = 2, model: str = "
             try:
                 cands += block_writer.run(llm, s, fact, n=n, model=model, effort=write_effort,
                                           sylls=syllables or plan_sylls(slot), jobs=plan_jobs(slot),
-                                          negatives=guidance(slot), examples=examples)
+                                          negatives=guidance(slot), examples=examples, flow_rule=slotcheck.targets_text(slot))
                 break
             except Exception as e:  # noqa: BLE001 - one failed seed must not sink the run
                 # A long answer can overrun the token cap and come back empty in JSON mode ("finish_reason=length");
@@ -629,7 +629,10 @@ def run(llm, slot: str, seeds: int = 6, blocks_per_seed: int = 2, model: str = "
     y["blocks"]["passed_both_gates"] = len(keep)
     # A run that yields nothing is useless, so the shortlist falls back to the best-effort pool with every fired flag
     # printed next to the line (the same rule the repo settled on for check_all: a ranking target, not a veto).
-    ranked_pool = keep or pool
+    # 15 Oct 2026: no best-effort fallback. A run where nothing passes returns NO blocks; the failures come back separately as
+    # "rejected" (for the bar loop to repair and for diagnosis), so a failing block can never be read as a result.
+    rejected = sorted([c for c in pool if not c["passed"]], key=lambda c: len(c["frame"]["hard"]) + len(c["plan"]["hard"]))
+    ranked_pool = keep
     y["blocks"]["ranked"] = len(ranked_pool)
     if rank and len(ranked_pool) > 1:
         from ..judge import rank as ranker
@@ -639,7 +642,7 @@ def run(llm, slot: str, seeds: int = 6, blocks_per_seed: int = 2, model: str = "
             c["rank"] = {"bt": round(out["bt"].get(str(i), -9.0), 3), "mean_rank": round(out["mean_rank"].get(str(i), 1.0), 3)}
         ranked_pool.sort(key=lambda c: -c["rank"]["bt"])
     y["final"] = len(ranked_pool)
-    return {"yield": y, "blocks": ranked_pool, "seeds_all": sd, "strict_pass": len(keep)}
+    return {"yield": y, "blocks": ranked_pool, "rejected": rejected, "seeds_all": sd, "strict_pass": len(keep)}
 
 
 def _plan_fact(slot: str):
@@ -656,8 +659,8 @@ def report(res: dict, path=None) -> str:
          f"seeds kept {y['seeds']['kept']} / dropped {y['seeds']['dropped']} | blocks generated {y['blocks']['generated']} | "
          f"passed the plan gate + the frame {y['blocks']['passed_both_gates']} | ranked {y['blocks'].get('ranked', y['final'])}", ""]
     if not y["blocks"]["passed_both_gates"]:
-        L += ["> No candidate passed both gates on this run, so the list below is RANKED BEST-EFFORT with every fired flag",
-              "> printed next to its line. The flags are the work list: they are what the next pass has to fix.", ""]
+        L += ["> No candidate passed both gates on this run. Nothing below may enter a draft: the REJECTED blocks at the end are",
+              "> shown for diagnosis only, with every fired flag. The flags are the work list for the next pass.", ""]
     if y.get("errors"):
         L += ["## stage errors (never swallowed)", ""] + [f"- {e}" for e in y["errors"]] + [""]
     seeds_all = (res.get("seeds_all") or {}).get("kept") or []
@@ -686,6 +689,11 @@ def report(res: dict, path=None) -> str:
         if c["frame"]["hard"]:
             L.append("- frame: " + "; ".join(c["frame"]["hard"])[:400])
         L.append("")
+    if not res["blocks"] and res.get("rejected"):
+        L += ["## REJECTED (diagnosis only: none of these may enter a draft)", ""]
+        for i, c in enumerate(res["rejected"][:3], 1):
+            L.append(f"### rejected {i}: " + "; ".join(c["frame"]["hard"] + c["plan"]["hard"])[:300])
+            L += [f"    {b['text']}" for b in c["bars"]] + [""]
     text = "\n".join(L)
     if path:
         config.WRITING.mkdir(parents=True, exist_ok=True)

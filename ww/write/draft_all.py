@@ -150,7 +150,8 @@ def take(cand: dict, inc: dict) -> bool:
         return False
     if not inc.get("usable"):
         return True
-    if cand["frame_hard"] > inc["frame_hard"] + 1:
+    # 15 Oct 2026: the +1 allowance let a candidate replace a section while carrying one MORE slotcheck hard issue
+    if cand["frame_hard"] > inc["frame_hard"]:
         return False
     # check_all's problem count is no longer a ratchet condition (registry: failed_validation as a quality gate; Joe 13 Oct 2026: the old flow map is not to be trusted)
     if cand["syl_miss"] > inc["syl_miss"]:
@@ -258,7 +259,9 @@ def run(llm, slots: Optional[list] = None, seeds: int = 4, blocks: int = 3, mode
         # acceptance, and a pass is kept only when the section does not get worse; a bar with no passing variant is left as
         # it was and said so.
         repairs_log, best_bars, best_score, best_claims, best_seed = [], None, None, None, None
-        for cand in (r["blocks"][:repairs] if repairs else []):
+        # passing blocks first, then the rejected ones: the bar loop exists to repair failures, and a repaired block still has to
+        # pass take() (15 Oct 2026: argue no longer returns failures as results)
+        for cand in ((r["blocks"] + r.get("rejected", []))[:repairs] if repairs else []):
             bars = [x["text"] for x in cand["bars"]]
             if len(bars) != len(spec_slot["sylls"]):
                 continue
@@ -284,7 +287,10 @@ def run(llm, slots: Optional[list] = None, seeds: int = 4, blocks: int = 3, mode
         take_it = take(s_cand, s_inc)
         gate_ok = take_it
         if scratch:
-            take_it = bool(cand_bars)          # a from-scratch section is the best candidate there is; gate_ok says whether it earned it
+            # 15 Oct 2026: a from-scratch section is taken only when it passes the slot checker; a failing best candidate used
+            # to be written into the draft anyway ("gate_ok says whether it earned it"), which is how failing bars reached Joe
+            take_it = bool(cand_bars) and bool(s_cand.get("frame_ok")) and bool(s_cand.get("plan_ok"))
+            gate_ok = take_it
         lore = None
         if best_seed and best_seed.get("entity") and cand_bars:
             from ..lex import cards

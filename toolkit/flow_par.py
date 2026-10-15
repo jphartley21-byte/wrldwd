@@ -135,9 +135,20 @@ def flagged(path=FLAGGED):
     return out
 
 
+def par_syl(bar_no):
+    """the original's syllable count for this bar, counted by the same counter slotcheck uses (bridge.syllable_count). The audio
+    template's count differs in one bar (64, "would've"), so the exact-count rule compares like with like."""
+    tab = par_table()
+    if not tab or not (1 <= bar_no <= len(tab)):
+        return None
+    return tab[bar_no - 1].get("syl")
+
+
 def build(orig_path):
     L = [l.strip() for l in open(orig_path, encoding="utf8") if l.strip()][:76]
-    bars = [profile(l) for l in L]
+    _ww()
+    from ww import bridge
+    bars = [dict(profile(l), syl=bridge.syllable_count(l)) for l in L]
     json.dump({"_note": "Per-bar flow profile of the ORIGINAL (numbers only, rule 4), built by toolkit/flow_par.py --build. "
                         "A draft bar may be no worse than the original's bar in the same position.", "measures": list(MEASURES), "bars": bars},
               open(PAR, "w", encoding="utf-8"), indent=1)

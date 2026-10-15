@@ -197,4 +197,12 @@ ok &= good
 print(("ok  " if good else "BAD ") + "swagger (boast vs shrug): " +
       ("the original clears its own par; v5, v6 and the three 14 Oct premise hooks fail" if good
        else (ss + scal + sneg).strip()[-160:]))
+# NAIVE WRITER (15 Oct 2026, Joe: "Are these gates locked in so a naive writer would produce the same flow?"): each flagged bar
+# swapped into a carrier draft is rejected by slotcheck, ww gate, songcheck, the ratchet and draft_all.take; a gate switched
+# off by an environment flag shows as GATE OFF.
+nw = run([os.path.join(HERE, "naive_writer.py")], "")
+good = "NAIVE WRITER: PASSED" in nw
+ok &= good
+print(("ok  " if good else "BAD ") + "naive writer: every flagged bar is rejected on every path to 'done'" +
+      ("" if good else ": " + "; ".join(l for l in nw.splitlines() if l.startswith("BAD"))[:200]))
 print("CALIBRATION", "PASSED" if ok else "FAILED: fix the tools before using them")
