@@ -454,8 +454,10 @@ def check(slot: str, bars: list[str], context: list[str] | None = None, tol: int
         if carpet and tg["carpet_total"] == carpet["total"]:
             need = int(0.85 * tg["carpet_pairs"])
             extra["carpet_need"] = need
-            if carpet["pairs"] < need:
-                (hard if legacy else notes).append(f"end-rhyme carpet {carpet['pairs']}/{carpet['total']} rhyme; the original holds {tg['carpet_pairs']}/{tg['carpet_total']} (need >= {need}): too many bars fall off the rhyme family")
+            # 15 Oct 2026: the carpet is HARD on rapfit (rapfit.quality_hard); this old-grader count only runs under WW_LEGACY_FLOW, because
+            # as a note it contradicted the gate (posse / solid / wallet / profit: rapfit 6/6, the old grader 3/6)
+            if carpet["pairs"] < need and legacy:
+                hard.append(f"end-rhyme carpet {carpet['pairs']}/{carpet['total']} rhyme; the original holds {tg['carpet_pairs']}/{tg['carpet_total']} (need >= {need}): too many bars fall off the rhyme family")
         fp = sum(_first_person(b) for b in bars[:n])
         need_fp = max(0, tg["first_person_bars"] - 1)
         extra["fp"], extra["fp_need"] = fp, need_fp

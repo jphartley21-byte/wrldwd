@@ -38,3 +38,22 @@
     by-ear letters (ABBA) mark closest partners, not families, and the carpet check had been a note since 13 Oct. I skipped that
     note when writing this song. Now HARD (carpet >= 85% of the original's), with toolkit/match.MANUAL_FAMILY.
 This draft fails the gate in 7 sections under the new rules; the rewrite follows.
+
+## Rewrite of the end rhymes (15 Oct 2026, same day): ww gate PASS again under the new rhyme rules
+Changed bars only (everything else as before). Each bar re-fitted with fitbar; fitbar 74/76 (bars 37, 39 as before).
+- Hook 5-8: posse / solid / wallet / copy: one family across all four bars (rapfit carpet 6/6; the old block was 2/6).
+- Hook 9-16 bar 4: through the floor (was the wall: call/Saul/wall were three identical rimes).
+- V1 1-8 bars 5-6: Barbour parka, the judge gets lager (four identical -arma rimes became one pair, karma/drama).
+- V1 9-16 bars 6-8: living the dream, top thief, he's discreet (six bare -ee rimes became three: me / we / free).
+- V1 33-44 bars 8-10, 12: saving face, ten days' grace, fair game, no names (pay/sway/day/play/okay became pay alone).
+- V2 1-8 bars 3, 8: top fried rice, it's mine (six bare -eye rimes became four: guy / die / high / fly).
+- V2 9-16 bars 1, 3, 4: my own code, the East Coast, struck gold (phone/known/home-grown were one common rime).
+Song-level fixes found on the way: songcheck still judges scheme pairs with the old grader (posse ~ profit 0.76, so bar 8 became
+"copy"); "weight" is on the admin-word list (bar 57 became "ten days' grace"); dropping "well known" lost the W-L drum in V2 9-16
+(bar 69 now opens "Well,") and the device rate fell to 37% until it was back (8 of 19 quads, 42%).
+HONEST READING: on cheap and identical rimes the song now sits AT the original's count or one over it in 7 sections, never better
+than the original except Hook 5-8 (0 identical vs 2). The rules bound it at "no worse than the original + 1"; they do not make
+the rhymes as good as the original's, and the original's rarer multi-syllable and mosaic endings are still not matched.
+NOTES LISTED TO JOE (rule 10; 121, all from the unvalidated beat-grid / ear diagnostics): 28 "two stresses jammed together",
+14 comma / pause placement, about 20 reduced syllables on a downbeat, 3 hard mouth-shape transitions (inside the par).
+Suffix check: it counts "seed" as an -ed ending by spelling (seating / keyring / seed tripped it); worked around, not fixed.
