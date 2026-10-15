@@ -105,3 +105,10 @@ Rewrite: 13 Cash for Cairns and it's cash for Wales and cash for Spain (Wales / 
     original's (rapfit pair score). Rewrite: 13 Cash for Spain and it's cash for scales and cash for Wales (scales / Wales 1.0);
     41 Mozzarella? The staples? It's my guy in Naples (staples / Naples 1.0); 42 Marrakesh when I'm able, my guy there, so check the label
     (able / label 1.0). ww gate PASS. The bar 41 "stranger" line is a flagged test case.
+17. Joe: "Bars that as forced or don't make sense?" The sense gate was OFF (no DeepSeek key). Back on via Claude (no key): per bar it fails
+    37/76 of the ORIGINAL's bars, so it gates per slot against the original's count + 1. Ours failed 5 sections (Hook 1-4 3 vs 0,
+    V1 25-32 6 vs 3, V1 33-44 5 vs 2; across bars in Hook 9-16 and V2 1-8). 12 bars rewritten into plain sentences or tied to the guy:
+    "Left out on the rocks? I continue" -> "You left me for dead? I continue"; "a good few" -> "a free brew" (the hook's cashed idiom is
+    now "bad news"); "My boots in Bergen? Dead fatal" -> "Beer's dear in Bergen? Near fatal"; "a quick sneaky" (no noun) -> "a quick
+    freebie"; "Bangkok, the roadside, and the top fried rice" -> "Bangkok? My guy's van does the top fried rice". ww gate PASS.
+    Still open (report-only character read): bar 58 "My crew will play conkers" vs bar 72 "Lone wolf"; Joe's call.

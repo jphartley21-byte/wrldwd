@@ -15,9 +15,9 @@ An axis becomes a HARD gate only if Claude agrees with your marks on at least 75
 | # | bar | first | rewind | forced | char | clever |
 |---|---|---|---|---|---|---|
 | 1 | Cheers to the venue |  |  |  |  |  |
-| 2 | Left out on the rocks? I continue |  |  |  |  |  |
-| 3 | Bern, Perth, Crete, Nantes, and it's a day's cruise |  |  |  |  |  |
-| 4 | In each new port town there's a good few |  |  |  |  |  |
+| 2 | You left me for dead? I continue |  |  |  |  |  |
+| 3 | Bern, Perth, Crete, Nantes, and I'm their bad news |  |  |  |  |  |
+| 4 | In each new port town there's a free brew |  |  |  |  |  |
 
 ## Hook 5-8
 
@@ -40,7 +40,7 @@ An axis becomes a HARD gate only if Claude agrees with your marks on at least 75
 | # | bar | first | rewind | forced | char | clever |
 |---|---|---|---|---|---|---|
 | 5 | Cash for Spain and it's cash for scales and cash for Wales |  |  |  |  |  |
-| 6 | Prost and then you buy |  |  |  |  |  |
+| 6 | Prost! My bar, you buy |  |  |  |  |  |
 | 7 | Hanoi bikes are getaway cars |  |  |  |  |  |
 | 8 | If you're stuck I know a guy |  |  |  |  |  |
 
@@ -98,15 +98,15 @@ An axis becomes a HARD gate only if Claude agrees with your marks on at least 75
 |---|---|---|---|---|---|---|
 | 1 | Mozzarella? The staples? It's my guy in Naples |  |  |  |  |  |
 | 2 | Marrakesh when I'm able, my guy there, so check the label |  |  |  |  |  |
-| 3 | Barber's chair, cut-throat blade, on the house, cards on the table |  |  |  |  |  |
-| 4 | My boots in Bergen? Dead fatal |  |  |  |  |  |
+| 3 | Barber's chair: cut-throat shave's on the house, cards on the table |  |  |  |  |  |
+| 4 | Beer's dear in Bergen? Near fatal |  |  |  |  |  |
 
 | # | bar | first | rewind | forced | char | clever |
 |---|---|---|---|---|---|---|
-| 5 | On the ferry, flat calm, Thai mainland |  |  |  |  |  |
+| 5 | And the ferry's flat calm, Thai mainland |  |  |  |  |  |
 | 6 | But the fags are that cheap dead cheeky |  |  |  |  |  |
 | 7 | Forty a day? My guy is sorting me |  |  |  |  |  |
-| 8 | Need me? Gone to my guy's guy down the road for a quick sneaky |  |  |  |  |  |
+| 8 | Need me? Gone to my guy's guy down the road for a quick freebie |  |  |  |  |  |
 
 ## V1 33-44
 
@@ -115,7 +115,7 @@ An axis becomes a HARD gate only if Claude agrees with your marks on at least 75
 | 1 | Sure the Spanish caught me |  |  |  |  |  |
 | 2 | Officer? Who me? Seedy? Seedy? |  |  |  |  |  |
 | 3 | Then my guy had the money |  |  |  |  |  |
-| 4 | Cash in envelopes, the deal's all sunny |  |  |  |  |  |
+| 4 | Cash in envelopes, no one gets funny |  |  |  |  |  |
 
 | # | bar | first | rewind | forced | char | clever |
 |---|---|---|---|---|---|---|
@@ -126,7 +126,7 @@ An axis becomes a HARD gate only if Claude agrees with your marks on at least 75
 
 | # | bar | first | rewind | forced | char | clever |
 |---|---|---|---|---|---|---|
-| 9 | Owe me? It's your ten days' grace |  |  |  |  |  |
+| 9 | Owe me? Then it's ten days' grace |  |  |  |  |  |
 | 10 | You owe? My crew will play conkers, it's fair game |  |  |  |  |  |
 | 11 | Crown on, top hat, I'm king of Bristol |  |  |  |  |  |
 | 12 | Dealers know that I know a guy, no names |  |  |  |  |  |
@@ -137,14 +137,14 @@ An axis becomes a HARD gate only if Claude agrees with your marks on at least 75
 |---|---|---|---|---|---|---|
 | 1 | The Whitsundays a tinnie? I've got a guy |  |  |  |  |  |
 | 2 | Up K'gari in the ute where you do or die |  |  |  |  |  |
-| 3 | Bangkok, the roadside, and the top fried rice |  |  |  |  |  |
+| 3 | Bangkok? My guy's van does the top fried rice |  |  |  |  |  |
 | 4 | The reef? I dived, the sharks were in the crossfire |  |  |  |  |  |
 
 | # | bar | first | rewind | forced | char | clever |
 |---|---|---|---|---|---|---|
 | 5 | You wouldn't believe big boats and jets at night |  |  |  |  |  |
 | 6 | You want it for free from my guy? So pigs can fly |  |  |  |  |  |
-| 7 | I drive to the bay, dive in, I'm back by five |  |  |  |  |  |
+| 7 | I drive to his bay, dive in, I'm back by five |  |  |  |  |  |
 | 8 | Name it, my mate: one call and it's mine |  |  |  |  |  |
 
 ## V2 9-16

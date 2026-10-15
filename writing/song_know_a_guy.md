@@ -1,23 +1,25 @@
 # I KNOW A GUY: a new song written from scratch (15 Oct 2026) as a naive writer: premise (brief/premises.json know_a_guy),
 # section argument, one rap move per bar, ingredients (material/ingredients.md), sentences, then fitted with toolkit/fitbar.py
 # and held to `python -m ww.cli gate` until it exited 0. Nothing carried over from any earlier draft. Assistant-authored.
-# RESULT: ww gate PASS (0 hard; sense read OFF, no model key). fitbar 73/76 (bars 11, 37, 39: see the notes file). Notes and
+# RESULT: ww gate PASS (0 hard; sense read ON via Claude since 15 Oct, per slot against the original's count). fitbar 73/76 (bars 11, 37, 39: see the notes file). Notes and
 # pipeline findings: writing/song_know_a_guy_notes.md.
 # REWRITE 15 Oct 2026 (end rhymes, after Joe: "originals end rhymes are better rn" and the Lagos/favours/flavours/Vegas carpet):
 # Hook 5-8 now rhymes all four bars on one ending (honest / solid / wallet / profit; Joe: "the original is AAAA"); cheap and identical rimes cut in 6 sections under the
 # new rapfit rules (carpet, cheap, identical). The old blocks are kept as test cases in toolkit/tests/rhyme_complaints.txt.
-# (persona) for Joe: every crime, bribe and luxury claim; the rocks; the Prada suit; the boat in Palma; the
+# SENSE REWRITE 15 Oct 2026 (the sense gate came back on, on Claude): 12 bars in Hook 1-4, Hook 9-16, V1 25-32, V1 33-44 and V2 1-8 made
+# plain sentences or tied to the guy (old bars in git history). Quality marks (report-only): python -m ww.write.qualityread.
+# (persona) for Joe: every crime, bribe and luxury claim; the Prada suit; the boat in Palma; the
 # Laxey bar tab; the crate, customs, Gardai and the trolley; the Barbour parka; the judge's lager; the top-thief list; the gold; the Spanish stop; the Whitsundays tinnie and the reef dive; the
 # ute on K'gari. Named but not visited: Old Bailey, Canada, Saul. The East Coast is Australia's (2017, true). True places: material/travel_history.md.
 
 == Hook 1-4
 # argument: wherever I land, I know a guy. moves: shout_out, brag, flex_list, punchline
-# one ending family on all four bars (venue / continue / cruise / few), as the original's Hook 1-4 shares one final vowel
+# one ending family on all four bars (venue / continue / news / brew), as the original's Hook 1-4 shares one final vowel
 Cheers to the venue
-Left out on the rocks? I continue
-Bern, Perth, Crete, Nantes, and it's a day's cruise
-In each new port town there's a good few
-#cash 4 | a good few | few
+You left me for dead? I continue
+Bern, Perth, Crete, Nantes, and I'm their bad news
+In each new port town there's a free brew
+#cash 3 | bad news | news
 
 == Hook 5-8
 # argument: my man in Rotterdam can get you a gnome by morning. moves: shout_out, brag, threat, punchline
@@ -34,7 +36,7 @@ My brief's a better call than Saul
 Four-wheeler? Dead on arrival
 My doorman will put you through the floor
 Cash for Spain and it's cash for scales and cash for Wales
-Prost and then you buy
+Prost! My bar, you buy
 Hanoi bikes are getaway cars
 If you're stuck I know a guy
 #cash 2 | better call Saul | Saul
@@ -87,12 +89,12 @@ Tape it, van to van, the whole marathon
 # argument: I've got a guy for every little luxury, in every country. moves: brag, brag, threat, shout_out, brag, brag, brag, punchline
 Mozzarella? The staples? It's my guy in Naples
 Marrakesh when I'm able, my guy there, so check the label
-Barber's chair, cut-throat blade, on the house, cards on the table
-My boots in Bergen? Dead fatal
-On the ferry, flat calm, Thai mainland
+Barber's chair: cut-throat shave's on the house, cards on the table
+Beer's dear in Bergen? Near fatal
+And the ferry's flat calm, Thai mainland
 But the fags are that cheap dead cheeky
 Forty a day? My guy is sorting me
-Need me? Gone to my guy's guy down the road for a quick sneaky
+Need me? Gone to my guy's guy down the road for a quick freebie
 #cash 3 | cards on the table | table
 #cash 6 | dead cheeky | cheeky
 
@@ -101,12 +103,12 @@ Need me? Gone to my guy's guy down the road for a quick sneaky
 Sure the Spanish caught me
 Officer? Who me? Seedy? Seedy?
 Then my guy had the money
-Cash in envelopes, the deal's all sunny
+Cash in envelopes, no one gets funny
 My guy made you pay
 Wanted posters, all Boomtown, front page
 Never set foot in the dock Old Bailey
 So in the beer garden I'm saving face
-Owe me? It's your ten days' grace
+Owe me? Then it's ten days' grace
 You owe? My crew will play conkers, it's fair game
 Crown on, top hat, I'm king of Bristol
 Dealers know that I know a guy, no names
@@ -119,11 +121,11 @@ Dealers know that I know a guy, no names
 # argument: the luxury life, all of it through a guy (monorhyme on the title's own vowel). moves: brag, brag, name_drop, brag, brag, threat, brag, punchline
 The Whitsundays a tinnie? I've got a guy
 Up K'gari in the ute where you do or die
-Bangkok, the roadside, and the top fried rice
+Bangkok? My guy's van does the top fried rice
 The reef? I dived, the sharks were in the crossfire
 You wouldn't believe big boats and jets at night
 You want it for free from my guy? So pigs can fly
-I drive to the bay, dive in, I'm back by five
+I drive to his bay, dive in, I'm back by five
 Name it, my mate: one call and it's mine
 #cash 2 | do or die | die
 #cash 6 | pigs can fly | fly
