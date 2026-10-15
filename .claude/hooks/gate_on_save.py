@@ -23,9 +23,11 @@ def main():
     with open(path, encoding="utf-8", errors="replace") as f:
         if not any(l.startswith("== ") for l in f):
             return 0          # not a '== Slot' draft: nothing for the gate to check
-    r = subprocess.run([sys.executable, "-m", "ww.cli", "gate", path, "--quiet"], cwd=ROOT, capture_output=True,
+    # NOT --quiet (15 Oct 2026): quiet counted the slotcheck notes and hid them, so "end-rhyme carpet 2/6, the original holds 6/6"
+    # reached nobody and people / solid / wallet / sequel shipped. Notes are fixed or listed to Joe (rule 10); the writer must see them.
+    r = subprocess.run([sys.executable, "-m", "ww.cli", "gate", path], cwd=ROOT, capture_output=True,
                        text=True, encoding="utf-8", errors="replace", timeout=110)
-    verdict = (r.stdout + r.stderr).strip()[-4000:]
+    verdict = (r.stdout + r.stderr).strip()[-12000:]
     rel = os.path.relpath(path, ROOT)
     print(json.dumps({"hookSpecificOutput": {"hookEventName": "PostToolUse",
                       "additionalContext": f"ww gate {rel} (auto, on save):\n{verdict}"}}))

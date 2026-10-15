@@ -14,9 +14,20 @@ WHAT IT MEASURES (all from British phones through phon.syllables; no lyrics, no 
   tail        the syllables after the anchor. Matching tails (favours/flavours, Lagos/Vegas) are a multisyllabic rhyme and earn a bonus; a tail on only one side
               (day / waiter) costs a little (masculine against feminine lands on a different beat).
   cap         if the stressed vowels do not match (< 0.55) the pair cannot exceed 0.30: a tail echo is not a rhyme.
-Flags are reported beside the number: IDENTICAL word, TAIL-ONLY (the grader says rhyme, this says no), CHEAP (the rime is among the most common in English).
+Flags are reported beside the number: IDENTICAL word, TAIL-ONLY (the grader says rhyme, this says no), CHEAP (both sides on a rime >= CHEAP_FAMILY
+dictionary words share).
 
-HONEST LIMITS: the only ear-labelled pairs in the repo are the original's by-ear scheme (positives: same letter; negatives: different letter) and the 12 pairs in
+THE PAIR SCORE ANSWERS "DO THESE RHYME?", NOT "IS THIS A GOOD RHYME" (15 Oct 2026). An identical, common rime scores 1.0, so a block of
+me / we / free / tea / three / fee outscored the original, and Joe heard the original's end rhymes as better. Quality is BLOCK-level
+(quality_of / quality_hard, HARD in check_block, numbers per slot in benchmark/rhyme_quality_targets.json, the original passes by
+construction):
+  carpet     end pairs heard >= 85% of the original's: its Hook 5-8 rhymes all four bars ACROSS its ABBA letters (Lagos / favours /
+             flavours / Vegas), and people / solid / wallet / sequel passed because only same-letter pairs were demanded
+  cheap      rhyming bars on a rime >= 150 dictionary words share, at most the original's count + 1
+  identical  identical-rime pairs inside a family (toolkit/match.MANUAL_FAMILY), at most the original's count + 1
+Joe's complaints are test cases: toolkit/tests/rhyme_complaints.txt (complaints_selftest).
+
+HONEST LIMITS: the only ear-labelled pairs in the repo are the original's by-ear rhyme FAMILIES (positives: same family; negatives: different family) and the 12 pairs in
 toolkit/tests/rhyme_pairs.txt. None of them is a "technically rhymes but sounds flat" pair, so the cap cannot be fitted, only checked for not breaking those
 labels. The pairs it demotes need Joe's ear: `python -m ww.cli rapfit --labels` writes the sheet.
 """
@@ -37,6 +48,13 @@ FLOOR = 0.50
 STRONG = 0.80
 GRADER_FLOOR = 0.78
 FINAL_ANCHOR_DISCOUNT = 0.92
+CLITIC_PRON = {"it", "him", "her", "them", "em", "'em", "us", "me", "you"}
+# BLOCK-LEVEL RHYME QUALITY (15 Oct 2026; Joe: "originals end rhymes are better rn", then the Lagos/favours/flavours/Vegas carpet).
+# The pair score says whether two endings rhyme; it scores an identical, common rime 1.0, so a block of me/we/free/tea/three/fee
+# outscored the original. These three are measured per slot against the original (benchmark/rhyme_quality_targets.json):
+CHEAP_FAMILY = 150      # a rime shared by >= 150 dictionary words is CHEAP: the 38 commonest of 45,529 rimes, 8% of the dictionary
+CARPET_SHARE = 0.85     # end pairs heard (score >= FLOOR) must reach 85% of the original's count for the slot (the 12 Oct carpet rule)
+QUALITY_SLACK = 1       # cheap bars and identical-rime pairs may exceed the original's count by one (the title's "guy" lands once)
 
 
 # words as they are SUNG on the original, where the dictionary says otherwise (Joe's ear: luego rhymes with Tobago, Mainz with Spain)
@@ -62,10 +80,14 @@ def _syl(text: str) -> tuple:
         out = []
         # per WORD, so each syllable can say whether another syllable of its word follows (4th field). The toolkit's syllables attach every consonant before the next
         # vowel to the PREVIOUS syllable ('por' = ɔː+n, 'Bor' = ɔː+d), but the ear hears por-no / bor-DOH as the same open /ɔː/ + a new onset.
-        for w in re.findall(r"[A-Za-z'å]+", text.replace("å", "a").replace("-", " ")):
+        # A clitic pronoun after another word is unstressed (15 Oct 2026): the dictionary stresses every monosyllable, so a tail such as
+        # <stressed ae syllable> + "him" anchored on "him" and the original's own three-syllable V1 17-24 rhymes scored 0.06 a pair.
+        # Destressed: by-ear AUC 0.932 -> 0.943, recall 90.5% -> 93.4%, non-rhymes accepted unchanged at 5.1%.
+        for wi, w in enumerate(re.findall(r"[A-Za-z'å]+", text.replace("å", "a").replace("-", " "))):
             sy = p.syllables(w)
+            weak = wi > 0 and w.lower() in CLITIC_PRON and len(sy) == 1
             for k, (v, st, c) in enumerate(sy):
-                out.append((v, bool(st), tuple(c), k < len(sy) - 1))
+                out.append((v, bool(st) and not weak, tuple(c), k < len(sy) - 1))
         return tuple(out)
     except Exception:    # noqa: BLE001 - unpronounceable text has no syllables
         return ()
@@ -129,6 +151,68 @@ def _core(a: tuple, b: tuple) -> tuple[float, bool]:
     return max(0.0, min(1.0, total)), False
 
 
+_FAMILY_INDEX: dict = {}
+
+
+def _rime_ph(ph: list) -> tuple:
+    """the dictionary rime from the last primary stress (else secondary, else the last vowel), British R-drop, an unstressed
+    ER read as schwa (British -er = -a), stress digits stripped."""
+    import rhyme_tools as rt
+    ph = rt.uk(ph)
+    idx = [i for i, x in enumerate(ph) if x.endswith("1")] or [i for i, x in enumerate(ph) if x.endswith("2")] or \
+        [i for i, x in enumerate(ph) if x[-1] in "012"]
+    if not idx:
+        return ()
+    t = ph[idx[-1]:]
+    return tuple("AH" if (x.startswith("ER") and x.endswith("0")) else rt.strip(x) for x in t)
+
+
+def _family_index() -> dict:
+    if not _FAMILY_INDEX:
+        _phon()
+        import rhyme_tools as rt
+        cnt: collections.Counter = collections.Counter()
+        for w, prons in rt.D.items():
+            if w.isalpha():
+                k = _rime_ph(list(prons[0]))
+                if k:
+                    cnt[k] += 1
+        _FAMILY_INDEX.update(cnt)
+    return _FAMILY_INDEX
+
+
+@lru_cache(maxsize=None)
+def rime_family(text: str):
+    """how many dictionary words share this ending's rime (from its last stressed syllable; a clitic pronoun after a word is
+    unstressed, so 'having him' keeps its rime on the stressed syllable and has a family of 0: a mosaic). None = unpronounceable."""
+    _phon()
+    import rhyme_tools as rt
+    ph = []
+    for k, w in enumerate(re.findall(r"[A-Za-z']+", text.replace("-", " "))):
+        p = rt.pron(w)
+        if not p:
+            return None
+        if k > 0 and w.lower() in CLITIC_PRON:
+            p = [x[:-1] + "0" if x[-1] in "12" else x for x in p]
+        ph += p
+    k = _rime_ph(ph)
+    return _family_index().get(k, 0) if k else None
+
+
+def rime_key(text: str):
+    """the heard rime (British syllables from the last stressed one: vowel + ending each); equal keys = an IDENTICAL rime."""
+    sy = _syl(text)
+    if not sy:
+        return None
+    i = _anchors(sy)[0][0]
+    return tuple((x[0], tuple(x[2])) for x in sy[i:])
+
+
+def cheap(text: str) -> bool:
+    f = rime_family(text)
+    return f is not None and f >= CHEAP_FAMILY
+
+
 def score(a: str, b: str) -> dict:
     """{'score', 'multi', 'flags'} for two bar-ending texts."""
     A, B = _syl(a), _syl(b)
@@ -151,6 +235,8 @@ def score(a: str, b: str) -> dict:
         base = 0.0
     if base >= GRADER_FLOOR and best < FLOOR:
         flags.append("TAIL-ONLY")
+    if best >= FLOOR and cheap(a) and cheap(b):
+        flags.append("CHEAP")
     return {"score": round(best, 2), "multi": multi, "flags": flags, "grader": round(base, 2)}
 
 
@@ -185,6 +271,12 @@ def selftest() -> tuple[bool, str]:
     bad = check_block("V1 17-24", ["Audit", "Biscuit", "Credit", "Orbit", "Limit", "Jacket", "Pocket", "Knit"])
     if not bad["hard"]:
         problems.append("a block of bare -it endings must fail the stress-anchor gate")
+    k = rime_key("packaged him")
+    if not k or k[0][0] != "æ" or (rime_family("packaged him") or 0) > 5:
+        problems.append(f"a clitic pronoun after a word is unstressed: 'packaged him' must rhyme from its stressed æ and be a rare (mosaic) rime: {k}")
+    if not cheap("free") or cheap("favours"):
+        problems.append("free (a rime hundreds of words share) is CHEAP and favours is not")
+    problems += complaints_selftest()
     return (not problems, "; ".join(problems) if problems else "bare -it tails demoted and flagged; favours~flavours, Lagos~Vegas, fox~box, goose~cruise, Porto~though all rhyme; masculine~feminine costs a little")
 
 
@@ -197,7 +289,9 @@ def ear_pairs() -> list[dict]:
     orig = rhymeview.load_original()
     out = []
     for slot, bars in orig.items():
-        scheme = slotcheck.spec(slot)["scheme"]
+        # labelled by rhyme FAMILY (toolkit/match.MANUAL_FAMILY), not the closest-partner letter: until 15 Oct 2026 Lagos~favours was
+        # a "does not rhyme" label although Joe hears the whole Hook 5-8 block as one rhyme
+        scheme = slotcheck.spec(slot)["family"]
         if len(scheme) != len(bars):
             continue
         tails = [rhymeview.tail_text(b.split()) for b in bars]
@@ -235,7 +329,7 @@ def evaluate(verbose: bool = True) -> dict:
     res["rap_false"] = [(p["slot"], p["a"].split()[-1], p["b"].split()[-1], p["rap"], p["base"]) for p in pairs if not p["y"] and p["rap"] >= FLOOR]
     res["base_false"] = [(p["slot"], p["a"].split()[-1], p["b"].split()[-1], p["rap"], p["base"]) for p in pairs if not p["y"] and p["base"] >= GRADER_FLOOR]
     if verbose:
-        print(f"BY-EAR LABELS from the original: {res['n']} pairs, {res['pos']} rhyme / {res['n'] - res['pos']} do not (Joe's scheme letters)")
+        print(f"BY-EAR LABELS from the original: {res['n']} pairs, {res['pos']} rhyme / {res['n'] - res['pos']} do not (Joe's rhyme families: toolkit/match.MANUAL_FAMILY)")
         for name, label in (("base", "grader (match.best_end, frozen)"), ("rap", "rapfit (new layer)")):
             r = res[name]
             print(f"  {label:34} AUC {r['auc']:.3f} | recall of true rhymes {r['recall']:.0%} | non-rhymes wrongly accepted {r['false_accept']:.0%}")
@@ -419,6 +513,94 @@ def write_depth_targets() -> dict:
     return out
 
 
+QUALITY_PATH = "rhyme_quality_targets.json"
+
+
+def quality_of(slot: str, bars: list[str]) -> dict:
+    """the block's end-rhyme CARPET (end pairs heard by score() >= FLOOR, all pairs), its CHEAP bars (rhyming bars whose rime >=
+    CHEAP_FAMILY dictionary words share) and its IDENTICAL-rime pairs (inside one rhyme family). Numbers and bar indices only."""
+    from . import rhymeview, slotcheck
+    fam = slotcheck.spec(slot)["family"]
+    n = min(len(bars), len(fam))
+    tails = [rhymeview.tail_text(b.split()) for b in bars[:n]]
+    heard = [(i, j) for i, j in itertools.combinations(range(n), 2) if score(tails[i], tails[j])["score"] >= FLOOR]
+    grouped = [i for i in range(n) if fam.count(fam[i]) >= 2]
+    cheap_bars = [i for i in grouped if cheap(tails[i])]
+    keys = [rime_key(t) for t in tails]
+    ident = [(i, j) for i, j in itertools.combinations(grouped, 2) if fam[i] == fam[j] and keys[i] and keys[i] == keys[j]]
+    return {"n": n, "pairs": n * (n - 1) // 2, "carpet": len(heard), "cheap": cheap_bars, "identical": ident, "tails": tails}
+
+
+def _quality_targets() -> dict:
+    import json as _j
+    from .. import config
+    p = config.BENCHMARK / QUALITY_PATH
+    return _j.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
+
+
+def write_quality_targets() -> dict:
+    """numbers only (rule 4): the ORIGINAL's carpet, cheap-bar count and identical-pair count per slot."""
+    import json as _j
+    from .. import config
+    from . import rhymeview
+    out = {}
+    for slot, bars in rhymeview.load_original().items():
+        q = quality_of(slot, bars)
+        out[slot] = {"n": q["n"], "pairs": q["pairs"], "carpet": q["carpet"], "cheap": len(q["cheap"]), "identical": len(q["identical"])}
+    p = config.BENCHMARK / QUALITY_PATH
+    p.write_text(_j.dumps({"_note": "the original's end rhymes per slot (rapfit.quality_of): carpet = end pairs heard, cheap = rhyming "
+                           f"bars on a rime >= {CHEAP_FAMILY} dictionary words share, identical = identical-rime pairs inside a "
+                           "family; numbers only", **out}, indent=1), encoding="utf-8")
+    return out
+
+
+def quality_hard(slot: str, bars: list[str]) -> list[str]:
+    """HARD (15 Oct 2026): a full block may not fall below the original's carpet nor exceed its cheap and identical counts."""
+    t = _quality_targets().get(slot)
+    if not t:
+        return []
+    q = quality_of(slot, bars)
+    if q["n"] != t["n"]:
+        return []
+    out = []
+    ends = [x.split()[-1] if x else "?" for x in q["tails"]]
+    need = int(CARPET_SHARE * t["carpet"])
+    if q["carpet"] < need:
+        out.append(f"carpet: {q['carpet']} of {q['pairs']} end pairs rhyme, the original's {slot} holds {t['carpet']} (need >= {need}): "
+                   "the block falls off one rhyme family; rhyme the bars ACROSS the scheme letters too (Lagos / favours / flavours / Vegas)")
+    cap = t["cheap"] + QUALITY_SLACK
+    if len(q["cheap"]) > cap:
+        out.append(f"cheap: {len(q['cheap'])} end rhymes on a rime hundreds of words share ({', '.join(ends[i] for i in q['cheap'])}); "
+                   f"the original has {t['cheap']} here (max {cap}): use a rarer or multi-syllable rime")
+    cap = t["identical"] + QUALITY_SLACK
+    if len(q["identical"]) > cap:
+        pairs = ", ".join(f"{ends[i]}/{ends[j]}" for i, j in q["identical"][:6])
+        out.append(f"identical: {len(q['identical'])} pairs end on the identical rime ({pairs}{' ...' if len(q['identical']) > 6 else ''}); "
+                   f"the original has {t['identical']} here (max {cap}): keep the vowel, vary what follows it")
+    return out
+
+
+def complaints_selftest() -> list[str]:
+    """Joe's rhyme complaints (toolkit/tests/rhyme_complaints.txt) must each fire their named rule, and the original must pass
+    every slot. Only counts are printed for the original."""
+    from .. import config
+    from . import rhymeview
+    problems = []
+    path = config.ROOT / "toolkit" / "tests" / "rhyme_complaints.txt"
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if not line.strip() or line.startswith("#"):
+            continue
+        slot, rules, text = line.split("\t")[:3]
+        hard = quality_hard(slot, [b.strip() for b in text.split(" / ")])
+        for r in rules.split(","):
+            if not any(h.startswith(r.strip() + ":") for h in hard):
+                problems.append(f"{slot}: Joe's complaint should fail the '{r.strip()}' rule and does not ({'; '.join(h[:40] for h in hard) or 'no rhyme issue'})")
+    for slot, bars in rhymeview.load_original().items():
+        if quality_hard(slot, bars):
+            problems.append(f"the original fails its own {slot} rhyme-quality targets")
+    return problems
+
+
 def check_block(slot: str, bars: list[str]) -> dict:
     """STRESS-ANCHOR GATE for the writing process.
     HARD: inside every by-ear scheme group of 2+ bars, each bar must have at least one partner it rhymes with THROUGH A PROMINENT SYLLABLE (rime depth >= 1).
@@ -463,6 +645,7 @@ def check_block(slot: str, bars: list[str]) -> dict:
                 soft.append(f"bars {k + 1}-{k + 4}: the rhyme sits at different depths ({sorted(vals)}); a block should repeat ONE template, the same stressed syllable the same distance from the end in at least 3 of 4 bars")
             if tg >= 3 and sum(1 for d in vals if d >= 3) < 3:
                 hard.append(f"bars {k + 1}-{k + 4}: {slot} is a 3-syllable slot (the original's bars 1-4 and 5-8 each end on one three-syllable rhyme in at least 3 of 4 bars); only {sum(1 for d in vals if d >= 3)} of these bars do")
+    hard += quality_hard(slot, bars[:n])
     return {"hard": hard, "soft": soft, "depths": depths, "target": tg}
 
 

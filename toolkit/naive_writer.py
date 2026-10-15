@@ -10,7 +10,8 @@ draft can take to "done" rejects it:
   songcheck       its slotcheck gate fails the song
   ratchet         slotcheck hard issues rise against the carrier -> REVERT (only where the carrier's bar was clean)
   draft_all.take  refuses the swapped section over the carrier (same frame_hard measure; plan, syllables and cashing held equal)
-and that a gate switched off by an environment flag is announced as GATE OFF, never a quiet pass.
+and that a gate switched off by an environment flag is announced as GATE OFF, never a quiet pass. Joe's block-level RHYME complaints
+(toolkit/tests/rhyme_complaints.txt) are swapped in as whole sections the same way.
 
 What it does NOT show: that a writer who passes every gate writes the original's flow. The gates bound the flow (no worse than
 the original's bar on each measure); they do not fix the stress pattern position by position.
@@ -49,6 +50,59 @@ def _swap(text, slot, k, line):
             i += 1
         out.append(l)
     return "\n".join(out) + "\n"
+
+
+def _swap_block(text, slot, bars):
+    """replace a whole section's bars and #cash lines with `bars` (a block-level rhyme complaint has no single bar to swap)."""
+    out, cur, done = [], None, False
+    for l in text.splitlines():
+        if l.startswith("=="):
+            cur = l[2:].strip()
+            out.append(l)
+            if cur == slot:
+                out += bars
+                done = True
+            continue
+        if cur == slot and l.strip() and not l.startswith(("[", "(")) and (not l.startswith("#") or l.startswith("#cash")):
+            continue
+        out.append(l)
+    assert done, slot
+    return "\n".join(out) + "\n"
+
+
+def block_cases(text, base, tmp):
+    """Joe's rhyme complaints (toolkit/tests/rhyme_complaints.txt) for the carrier's sections: the whole block swapped in must be
+    rejected by slotcheck with the named rhyme rule, by ww gate and by songcheck; by the ratchet and take() too where the carrier's
+    own section does not already fail that rule (they compare counts)."""
+    import fitbar
+    from ww.write import slotcheck, gate, draft_all
+    import songcheck
+    import ratchet
+    ok = True
+    rows = [l.split("\t") for l in open(os.path.join(HERE, "tests", "rhyme_complaints.txt"), encoding="utf-8").read().splitlines()
+            if l.strip() and not l.startswith("#")]
+    for slot, rules, bars in ((r[0], r[1], r[2]) for r in rows if r[0] in START):
+        p = os.path.join(tmp, f"block_{slot.replace(' ', '_')}.md")
+        open(p, "w", encoding="utf-8").write(_swap_block(text, slot, [b.strip() for b in bars.split(" / ")]))
+        D2, C2 = fitbar.read_draft(p, with_cash=True)
+        hard = slotcheck.check(slot, D2[slot], cash=C2.get(slot) or [])["hard"]
+        for rule in rules.split(","):
+            tag = f"rhyme: {rule.strip()}:"
+            g = gate.run(p)
+            fails = []
+            songcheck.slot_gates(p, fails, [])
+            paths = {"slotcheck": any(h.startswith(tag) for h in hard), "ww gate": not g["ok"], "songcheck": bool(fails)}
+            clean = not any(h.startswith(tag) for h in base[slot])
+            if clean:
+                paths["ratchet"] = ratchet.slot_hard(p)[slot] > len(base[slot])
+                inc = {"usable": True, "plan_ok": True, "frame_hard": len(base[slot]), "syl_miss": 0, "cashed": 1}
+                paths["take"] = not draft_all.take(dict(inc, frame_hard=len(hard)), inc)
+            good = all(paths.values())
+            ok &= good
+            print(("ok  " if good else "BAD ") + f"{slot} block (Joe's rhyme complaint, rule '{rule.strip()}') rejected by: " +
+                  ", ".join(n for n, v in paths.items() if v) + ("" if good else "; NOT by: " + ", ".join(n for n, v in paths.items() if not v)) +
+                  ("" if clean else " (the carrier's own block already fails this rule: only the gate verdict applies)"))
+    return ok
 
 
 def selftest():
@@ -93,6 +147,7 @@ def selftest():
               ("" if good else "; NOT by: " + ", ".join(n for n, v in paths.items() if not v)) +
               ("" if clean else " (carrier's bar already fails here: ratchet/take compare counts, so only the gate verdict applies)") +
               (f" | {named[0][:110]}" if named else ""))
+    ok &= block_cases(text, base, tmp)
     saved = os.environ.get("WW_RAPFIT_GATE")
     os.environ["WW_RAPFIT_GATE"] = "0"
     try:

@@ -165,6 +165,18 @@ MANUAL_SCHEME = {"Hook 1-4": "AAAA", "Hook 5-8": "ABBA", "Hook 9-16": "AABACBDB"
                  "V1 9-16": "AABAAAAA", "V1 17-24": "AAAABBBB", "V1 25-32": "AAABACCC", "V1 33-44": "AABBCCCCCCDC",
                  "V2 1-8": "AAAAAAAA", "V2 9-16": "AAAABBCB"}
 
+# RHYME FAMILIES (15 Oct 2026, Joe: "Lagos, flavours, favours and Vegas are all very close rhymes but somehow our draft ended up
+# with people, solid, wallet ... in the same places"). A scheme letter marks a bar's CLOSEST partner; a family marks which letters
+# rhyme WITH EACH OTHER. Hook 5-8 is ABBA by closest partner and one family by ear (eI + weak + s/z: rapfit hears all four cross
+# pairs at 0.70), so a block that rhymes only its same-letter pairs passed while two thirds of its sound was missing. Every slot not
+# listed is its own scheme. Cross-letter pairs rapfit also hears in V1 25-32 (bars 4~8) and V2 9-16 (bars 2~6, 4~7) are NOT
+# assumed: they wait for Joe's ear.
+MANUAL_FAMILY = {"Hook 5-8": "AAAA"}
+
+
+def family(slot):
+    return MANUAL_FAMILY.get(slot, MANUAL_SCHEME[slot])
+
 
 def stressed_sylls(line):
     import phon

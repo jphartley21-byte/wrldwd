@@ -30,3 +30,11 @@
 9. The stress model reads some words unexpectedly (gendarme SS, statue SS, speedy SS, radar SS, Rotterdam SwS, Hanoi Sw,
    Laos 2 syllables, "John o' Groats" SSS): a writer has to test every word, not every bar.
 10. The pronoun-ending cap grows with song length (2 per 38 bars, 4 at 76), so partial drafts fail a check the song passes.
+
+## Findings 11-12 (15 Oct 2026, after Joe: "originals end rhymes are better rn" and the Lagos/favours/flavours/Vegas carpet)
+11. The gate passed cheap, samey end rhymes: rapfit's pair score rewards an identical, common rime with 1.0, and nothing measured
+    rhyme quality. Now HARD (rapfit.quality_hard): cheap rimes and identical rimes per section, at most the original's count + 1.
+12. The gate passed Hook 5-8 with two separate rhymes (people/sequel, solid/wallet) where the original rhymes all four bars: the
+    by-ear letters (ABBA) mark closest partners, not families, and the carpet check had been a note since 13 Oct. I skipped that
+    note when writing this song. Now HARD (carpet >= 85% of the original's), with toolkit/match.MANUAL_FAMILY.
+This draft fails the gate in 7 sections under the new rules; the rewrite follows.

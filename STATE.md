@@ -1774,3 +1774,19 @@ STILL NOT LOCKED:
 
 NOW: hook r4 `ww gate` FAIL, 2 hard (Hook 1-4 bar 2 'invasion' approach, probably a dictionary stress error; Hook 5-8 bar 2 'not' approach). full_draft_wanted_v1 FAIL, 75 hard.
 OPEN FOR JOE: ratchet r3 -> r4 says REVERT only because check_all Hook 9-16 rose 3 -> 4, while slotcheck hard fell in all three sections. check_all is unvalidated (registry) and take() already dropped it. Should the ratchet drop it too? Also his verdict on r4 bars 3, 4, 8, 10, 12, 15 (each goes into flow_ok.txt or flow_flagged.txt).
+
+## 15 Oct 2026 (later 6) - the rhyme checker heard exactness, not quality (Joe: "originals end rhymes are better rn"; "Lagos, flavours, favours and Vegas are all very close rhymes but somehow our draft ended up with people, solid, wallet")
+WHY "I Know a Guy" passed with worse end rhymes:
+1. rapfit's pair score says whether two endings rhyme, and an identical, common rime scores 1.0. Its mean ranked our song ABOVE the original in 8 of 10 sections (me/we/free/tea/three/fee, guy/die/Thai/high/fly/try, pay/sway/day/play).
+2. The by-ear scheme letters mark a bar's CLOSEST partner. The original's Hook 5-8 is ABBA by letter and ONE rhyme family by ear (rapfit hears all four cross pairs). The gate asked only for same-letter pairs, so people/solid/wallet/sequel (cross pairs 0 of 4) passed.
+3. This was a regression: the 12 Oct carpet gate became a NOTE on 13 Oct when the old grader was retired, and was never rebuilt on rapfit. The note fired on our song ("2/6 rhyme; the original holds 6/6") and was skipped; `ww gate --quiet` (the save hook) counted notes but hid them.
+4. The by-ear AUC labels called every cross-letter pair a non-rhyme (Lagos~favours = "does not rhyme").
+5. A clitic pronoun at the end ("him", "it") carried dictionary stress and stole the anchor: the original's 3-syllable V1 17-24 pairs scored 0.06.
+
+FIXED:
+- toolkit/match.MANUAL_FAMILY (Hook 5-8 = AAAA, per Joe); slotcheck.spec carries "family"; rapfit.ear_pairs labels by family. Cross-letter pairs rapfit also hears in the original (V1 25-32 bars 4~8, V2 9-16 bars 2~6 and 4~7) wait for Joe's ear.
+- rapfit: clitic pronouns after a word are unstressed; rime_family (dictionary count sharing the rime, British -er = -a); the CHEAP flag; quality_of / quality_hard, HARD in check_block (so slotcheck, ww gate, the save hook, songcheck, ratchet and take all inherit it): carpet >= 85% of the original's, cheap rimes and identical rimes at most the original's count + 1. Targets: benchmark/rhyme_quality_targets.json (numbers only). Original passes every slot by construction.
+- By-ear AUC 0.932 -> 0.956, recall 94%, non-rhymes accepted 5.1% -> 2.3% (family labels + clitic fix; in-sample).
+- Test cases: toolkit/tests/rhyme_complaints.txt (rapfit selftest + naive_writer block cases). The save hook no longer passes --quiet.
+- writing/song_know_a_guy.md now FAILS ww gate in 7 sections (Hook 5-8 carpet; Hook 9-16, V1 1-8 identical; V1 9-16, V1 33-44, V2 1-8, V2 9-16 cheap + identical). V1 25-32 (2 identical vs the original's 1) is inside the slack.
+- The naive carrier (hook r4) also fails the new rules in Hook 5-8 (pardon/sorry/lorry/garden, 2 of 6) and Hook 9-16 (sea/spree/free).

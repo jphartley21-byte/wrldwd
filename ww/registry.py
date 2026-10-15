@@ -67,6 +67,14 @@ LEGACY = {
         "Catches 4 of 4 bars Joe flagged for flow (toolkit/tests/flow_flagged.txt); the original passes by construction (each bar is its own par). "
         "Tolerances (stress +1, joins 0, closed vowels +1, restart +1) fitted in-sample on those 4 and the 15 bars of hook r3 Joe liked; "
         "5 of the 15 still fail and are listed to Joe. toolkit/tests/flow_ok.txt (bars Joe confirms) must all pass"),
+    # 15 Oct 2026, Joe: "originals end rhymes are better rn" and the Lagos / favours / flavours / Vegas carpet.
+    "ww/write/rapfit.quality_hard (block rhyme: carpet, cheap rime, identical rime)": ("joe_rule", "HARD in slotcheck since 15 Oct 2026. "
+        "The original passes every slot by construction (its own counts, benchmark/rhyme_quality_targets.json, +1 slack on cheap and identical); "
+        "Joe's two complaints fail on 7 of 7 sections he heard as worse (toolkit/tests/rhyme_complaints.txt). Cheap threshold (150 words sharing "
+        "the rime) and the slack are chosen in-sample on one song; no independent good set exists"),
+    "ww/write/rapfit.score (pair: do these rhyme?)": ("unvalidated", "by-ear AUC 0.956 on 274 pairs of the original labelled by rhyme FAMILY "
+        "(toolkit/match.MANUAL_FAMILY), recall 94%, non-rhymes accepted 2%; in-sample, and V2 9-16 is still blind (AUC 0.50). It says whether a "
+        "pair rhymes, not how good the rhyme is: a common, identical rime scores 1.0"),
     "ww/judge/reader.py event/claim labels": ("unvalidated", "never run against the original; ww/judge/reader_validate.py is the test "
                                                              "(needs DEEPSEEK_API_KEY, absent in the 14 Oct cloud session)"),
 }
