@@ -8,26 +8,28 @@
 # r3 (15 Oct 2026, Joe: make the stress before the rhyme a hard gate, rewrite the Boomtown bar): bar 9 'I'm wanted in Boomtown
 # see' jammed three stresses before a filler rhyme; now 'I'm wanted for crimes at sea' (persona: the crimes are invented) lands
 # the rhyme after a weak 'at', the original's bar 9 shape. Boomtown moved to bar 10. Bars 2 and 6 fail the new gate (not yet fixed).
+# r4 (15 Oct 2026, Joe: bars 3, 4, 8, 10, 15 'below my quality bar'; bar 12 flagged for flow): six bars rewritten to pass
+# toolkit/flow_par.py (no worse than the original's same bar) and the per-bar fit. Old versions are in toolkit/tests/flow_flagged.txt.
 == Hook 1-4
 Kaixo I'm famous
 Front page in Bilbao: an invasion
-Bern Perth Crete Cairns and it's the same game
-My file's two foot thick a real cold case
+Bern Perth Crete Cairns and I'm the main name
+My rap sheet's two foot a real cold case
 #cash 4 | cold case | case
 == Hook 5-8
 Hoi Rotterdam beg your pardon
 I've got your gnome proost I'm still not sorry
 Look it fell off of a lorry
-Ten feet of it guards my garden
+Ten foot of bronze in my garden
 #cash 3 | fell off a lorry | lorry
 == Hook 9-16
 I'm wanted for crimes at sea
-Excessive energy Boomtown spree
+Excessive energy a five-day spree
 Stand back Bristol he's performing
-Red Bull gives him wings he's running free
+On Red Bull the lad is flying free
 Shop him now and you win a pint a bag of crisps
 Long arm of the law
-Dressed in pink my floppy top hat
+Candy-pink my floppy top hat
 Then he's back to take the floor
 #cash 6 | the long arm of the law | law
 #cash 8 | take the floor | floor
