@@ -1664,3 +1664,23 @@ Joe: "what changes are needed ... to produce an actually good song that uses the
 - RAP ARCHETYPES: ww/lex/banks/rap_archetypes.json + brief/rap_premises.md (Most Wanted, Empire, I Know a Guy, Passport, Started From Reading, Every City's a Rave; reference songs by title only). brief/premises.json rebuilt on the first three; premise.py's selftest now requires an archetype, first-person boasts, rap moves and deflate <= 1 in 8. argue_stage MOVES and block_writer STANCES are rap moves; brief/persona.md rewritten swagger-first; ingredients carry a `swagger` field.
 - WRITTEN: three rap hooks (writing/premises/hook_most_wanted.md, hook_empire.md, hook_know_a_guy.md): each 15/15 frame, 14/14 pairs, recount, swagger, meaning, characters PASS. Full song on Most Wanted: writing/full_draft_wanted_v1.md (Suno: writing/premises/song_most_wanted_suno.txt): 74/74 frame, 136/137 pairs, recount 9%, verse swagger 23/60, hook stamps 8/16, songcheck PASS, phrase_audit PASS, characters within cap; meaning gate 4 fails of the kind the original also fails ('-in' tails, pronoun endings 6 of cap 4). Comparison: writing/premises/ab_sheet.md.
 - OPEN: Joe's ear on the three hooks and the full song; V1 33-44 still reads most like a diary; persona inventions listed in the A/B sheet for Joe to veto.
+
+## 15 Oct 2026 (later) - Joe: "is this using the most up to date flow and rhyme detector?" NO; fixed
+- The hooks and the full Most Wanted song were checked with toolkit/fitbar.py. It ran flow_fit (its pattern % is failed_validation in the registry) and counted a rhyme pair if the old grader OR rapfit heard it. It treated song bar 10 as free. The newest gate is ww/write/slotcheck.py.
+- Under slotcheck, with the sense gate off (no key):
+
+  | file | sections passing | hard issues | reported before |
+  |---|---|---|---|
+  | edited hook | 0/3 | 8 | "all pass" |
+  | scratch hook | 0/3 | 10 | "all pass" |
+  | full_draft_wanted_v1 | 0/10 | 34 | "74/74, songcheck PASS" |
+
+- FIXED in toolkit/fitbar.py:
+  - `song` runs slotcheck.check per section and reads `#cash` lines.
+  - Rhyme pairs are heard by rapfit alone.
+  - Bar 10 is held to the profile's 9 syllables.
+  - The per-bar helper fails a run of 4+ weak syllables and flags hard joins (J).
+  - Selftest updated: Zurich~Munich, which the old grader passed at 1.00, is now unheard.
+- REFIT: writing/premises/hook_most_wanted_scratch.md r2 passes slotcheck 3/3 with 0 hard issues. It also passes recount (0), swagger (7/16), meaning, phrase_audit, characters, rhyme pairs 14/14 and per-bar fit 16/16.
+- Docs: CLAUDE.md, .claude/commands/write.md and toolkit/README.md now name slotcheck as the gate.
+- OPEN: Joe's ear on scratch r2. The full song's verses fail slotcheck (34 issues) and are not rewritten; Joe decides whether to build them from scratch.

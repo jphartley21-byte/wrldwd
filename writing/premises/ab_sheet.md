@@ -87,3 +87,47 @@ sentences first, with new rhyme families (eɪ / ɑː+ɒ / iː+ɔː) and nothing 
 
 The scratch hook trades stamps for a story device: bars 11-16 read out the wanted poster in the third person. It names fewer places
 than the original's roll-call hook, which is why it misses the stamp gate by one bar.
+
+## Correction (15 Oct 2026): the checker was not the newest one
+Joe asked whether these were checked with the most up-to-date flow and rhyme detector. They were not. Every number above came from
+toolkit/fitbar.py's older check (flow_fit + rhyme pairs heard by the old grader OR rapfit). The newest gate is ww/write/slotcheck.py.
+It also checks weak-syllable runs, mouth-shape joins, suffix-carried end words, declared cashed idioms and the narrator's presence, and
+it holds song bar 10 to 9 syllables (fitbar treated bar 10 as free). fitbar's `song` mode now runs slotcheck per section.
+Sense gate NOT run (no API key).
+
+| file | slotcheck sections passing | hard issues | old report |
+|---|---|---|---|
+| hook_most_wanted.md (edited) | 0/3 | 8 | "15/15, all pass" |
+| hook_most_wanted_scratch.md, r1 | 0/3 | 10 | "15/15, all pass" |
+| hook_most_wanted_scratch.md, r2 (refitted) | 3/3 | 0 | - |
+| full_draft_wanted_v1.md | 0/10 | 34 | "74/74, songcheck PASS" |
+
+What failed in the full song:
+- no declared cashed idioms (10 of the 34)
+- 7 of 8 V1 1-8 end words ending in -ing (5 in V1 25-32)
+- weak runs
+- hard joins
+- the narrator missing from V1 25-32
+- end words repeated in V1 17-24 ('in' x3)
+- a 15-syllable bar in V1 33-44
+
+Rhyme pairs heard by rapfit alone: 130/137 (V1 17-24's B group and V1 33-44 bars 1-2 do not rhyme by rapfit).
+
+Scratch hook r2 also passes:
+- recount: 0 event bars
+- swagger: hook stamps 7/16 (it needs 7)
+- meaning, phrase_audit, characters
+- rhyme pairs 14/14
+- per-bar fit 16/16
+
+What changed from r1:
+- bar 2 ends 'invasion' (Bilbao front page)
+- proost replaces 'big lad Dutch bronze'
+- the lorry idiom
+- 'I'm wanted in Boomtown'
+- 'a five-day spree'
+- Red Bull's wings
+- 'Shop him now'
+- 'Long arm of the law'
+- 'my floppy top hat'
+- 'take the floor'

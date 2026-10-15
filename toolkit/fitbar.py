@@ -2,10 +2,15 @@
 
 Promoted from the session scripts that took the flow-fitted redraft (writing/detection_test/travel_draft_v5.md) to 74/74 bars on the
 original's audio frame and 136/137 by-ear rhyme pairs. It only re-prints what the repo's own instruments say:
-  * toolkit/flow_fit.fit per bar (syllables +-1, strong/weak agreement, end shape, rhyme start step, weak-on-beat vs par)
-  * the by-ear scheme (match.MANUAL_SCHEME) pair by pair: heard if the grader (match.best_end >= 0.78) OR rapfit (>= 0.50) hears it
+  * toolkit/flow_fit.fit per bar (syllables +-1, strong/weak agreement, end shape, rhyme start step, weak-on-beat vs par), plus
+    slotcheck's per-bar beat rules: a run of 4+ weak syllables FAILS the bar, a hard mouth-shape join is flagged (J)
+  * the by-ear scheme (match.MANUAL_SCHEME) pair by pair: heard if rapfit (>= rapfit.FLOOR) hears it; the old grader is a note
   * rapfit.check_block (the stress-anchored rhyme rule and the three-syllable-tail rule of V1 17-24)
   * toolkit/recount.py per section (the claim-not-diary check), so a fit never hides a recount
+  * ww/write/slotcheck.check per section: THE GATE (15 Oct 2026). fitbar used to stop at flow_fit + pairs and reported hooks as
+    "15/15, all pass" that slotcheck failed on weak runs, mouth-shape joins, a 12-syllable bar 10 and suffix-carried end words.
+    `#cash <bar> | <idiom> | <payoff>` lines inside a '== Slot' section are read as that section's declared cashed idioms.
+Song bar 10 has no audio template; it is held to the profile's syllable count (slotcheck.spec), not treated as free.
 
 Use it to try candidates for ONE bar against its frame, then to verify a whole draft:
   python toolkit/fitbar.py bars < candidates.txt        lines "N | text" (N = song bar 1-76); prints the frame check per candidate
@@ -32,7 +37,7 @@ import match            # noqa: E402
 SLOTS = ["Hook 1-4", "Hook 5-8", "Hook 9-16", "V1 1-8", "V1 9-16", "V1 17-24", "V1 25-32", "V1 33-44", "V2 1-8", "V2 9-16"]
 SIZES = [4, 4, 8, 8, 8, 8, 8, 12, 8, 8]
 STARTS = dict(zip(SLOTS, [1 + sum(SIZES[:i]) for i in range(len(SIZES))]))
-GRADER_FLOOR, RAPFIT_FLOOR = 0.78, 0.50
+GRADER_FLOOR = 0.78   # the old grader: printed as a note only (it credits unstressed tails; registry, 13 Oct 2026)
 _WW = False
 
 
@@ -52,40 +57,72 @@ def pattern(bar, line):
     return "".join(("w" if w[k] else "S") + ("'" if k < len(st) and st[k] % 4 == 0 else "") for k in range(len(w)))
 
 
+def slot_of(bar):
+    """song bar 1-76 -> (slot, 0-based index inside the slot)."""
+    for s, n in zip(SLOTS, SIZES):
+        if STARTS[s] <= bar < STARTS[s] + n:
+            return s, bar - STARTS[s]
+    raise ValueError(bar)
+
+
+def beat_rules(bar, line):
+    """slotcheck's per-bar beat rules: (longest run of weak syllables, hard mouth-shape joins)."""
+    from ww.write import slotcheck, earcheck
+    s, k = slot_of(bar)
+    run = slotcheck.beat_report(s, k, line, STARTS[s] - 1)["run"] if "steps" in ff.T[bar - 1] else 0
+    joins = [j for j in earcheck.word_joins(line) if j["score"] >= 2]
+    return run, joins
+
+
 def try_bar(bar, line):
     """(ok, syllables, frame length, agreement 0-1, our end shape, frame end shape, our pattern, frame pattern, why)."""
+    from ww.write import slotcheck
     t = ff.T[bar - 1]
-    if "steps" not in t:   # a bar with no audio template (no vocal detected in the original, e.g. song bar 10): free
-        w = ff.sylls(line)
-        return (None, len(w), 0, 1.0, ff.end_shape(line)[0], "-", pattern(bar, line), "-", "")
-    ow = t["weak"]
     w = ff.sylls(line)
+    run, joins = beat_rules(bar, line)
+    jtxt = ("J: hard join " + ", ".join(f"{j['a']} {j['b']}" for j in joins)) if joins else ""
+    if "steps" not in t:   # no audio template (no vocal detected in the original, e.g. song bar 10): the profile's syllable count
+        s, k = slot_of(bar)
+        want = slotcheck.spec(s)["sylls"][k]
+        ok = abs(len(w) - want) <= 1 and run < 4
+        why = "; ".join(x for x in [f"{len(w)} syl, need {want}+-1" if abs(len(w) - want) > 1 else "",
+                                    f"{run} weak syllables in a row" if run >= 4 else "", jtxt] if x)
+        return (ok, len(w), want, 1.0, ff.end_shape(line)[0], "-", pattern(bar, line), "-", why)
+    ow = t["weak"]
     m = min(len(w), len(ow))
     agree = sum(w[i] == ow[i] for i in range(m)) / max(1, len(ow))
     ok, txt = ff.fit(bar, line)
     why = txt.split("FAIL: ")[-1] if "FAIL" in (txt or "") else ""
     why = re.sub(r"strong/weak pattern \S+ vs original \S+ ", "pattern ", why)
+    if run >= 4:
+        ok, why = False, "; ".join(x for x in [why, f"{run} weak syllables in a row (the original's longest is 3)"] if x)
+    if jtxt:
+        why = "; ".join(x for x in [why, jtxt] if x)
     return (ok, len(w), len(t["steps"]), agree, ff.end_shape(line)[0], t["end_shape"], pattern(bar, line),
             "".join("w" if x else "S" for x in ow), why)
 
 
 def print_try(bar, line):
     ok, n, nf, ag, es, fes, pat, tgt, why = try_bar(bar, line)
-    print(f"{bar:>2} {'PASS' if ok else ('free' if ok is None else 'fail')} {n:>2}/{nf:<2} {int(ag * 100):>3}% {es:5s}/{fes:5s} "
+    print(f"{bar:>2} {('PASS' if ok else 'fail') + ('J' if 'J: hard join' in why else ' ')} {n:>2}/{nf:<2} {int(ag * 100):>3}% {es:5s}/{fes:5s} "
           f"{pat:24s} tgt {tgt:16s} | {line}" + (f"\n      {why[:170]}" if why else ""))
     return ok
 
 
-def read_draft(path):
-    out, cur = {}, None
+def read_draft(path, with_cash=False):
+    """{slot: [bars]}; with_cash also returns {slot: [cash declarations]} from `#cash <bar> | <idiom> | <payoff>` lines."""
+    from ww.write import slotcheck
+    out, cash, cur = {}, {}, None
     for l in open(path, encoding="utf-8-sig"):
         l = l.strip()
         if l.startswith("=="):
             cur = l[2:].strip()
-            out[cur] = []
+            out[cur], cash[cur] = [], []
+        elif cur and l.lower().startswith("#cash"):
+            cash[cur] += slotcheck.parse_cash(l)[1]
         elif l and not l.startswith(("#", "[", "(")) and cur:
             out[cur].append(l)
-    return out
+    return (out, cash) if with_cash else out
 
 
 def scheme_pairs(slot, bars):
@@ -97,27 +134,25 @@ def scheme_pairs(slot, bars):
         if sch[i] == sch[j]:
             g = match.best_end(bars[i], bars[j])
             rp = rapfit.score(bars[i], bars[j])["score"]
-            out.append((i, j, sch[i], g, rp, g >= GRADER_FLOOR or rp >= RAPFIT_FLOOR))
+            out.append((i, j, sch[i], g, rp, rp >= rapfit.FLOOR))
     return out
 
 
 def song(path, quiet=False):
     """verify a whole draft. Returns a dict of the headline numbers."""
     use_ww()
-    from ww.write import rapfit
+    from ww.write import rapfit, slotcheck
     import recount
-    D = read_draft(path)
+    D, C = read_draft(path, with_cash=True)
     tot = ok = 0
     fails = []
     for s in SLOTS:
         for i, b in enumerate(D.get(s, [])):
-            r, txt = ff.fit(STARTS[s] + i, b)
-            if r is None:
-                continue
+            r, *_rest, why = try_bar(STARTS[s] + i, b)
             tot += 1
             ok += bool(r)
             if not r:
-                fails.append((STARTS[s] + i, b, (txt or "").split("FAIL: ")[-1][:140]))
+                fails.append((STARTS[s] + i, b, why[:140]))
     heard = total = 0
     misses = []
     for s in SLOTS:
@@ -125,15 +160,22 @@ def song(path, quiet=False):
             total += 1
             heard += h
             if not h:
-                misses.append(f"{s} {i + 1}-{j + 1} ({L}): grader {g:.2f} rapfit {rp:.2f}")
+                misses.append(f"{s} {i + 1}-{j + 1} ({L}): rapfit {rp:.2f} (old grader {g:.2f})")
     hard = {s: rapfit.check_block(s, D[s])["hard"] for s in SLOTS if D.get(s)}
     hard = {s: h for s, h in hard.items() if h}
     rfails, rows, share = recount.run([(s, D[s]) for s in SLOTS if D.get(s)], overlap=False, quiet=True)
+    gate = {s: slotcheck.check(s, D[s], cash=C.get(s) or [])["hard"] for s in SLOTS if D.get(s)}
     if not quiet:
-        print(f"flow_fit: {ok}/{tot} bars on the original's audio frame (the original scores 74/76 on its own)")
+        npass = sum(not h for h in gate.values())
+        print(f"slotcheck (THE GATE): {npass}/{len(gate)} sections pass, {sum(len(h) for h in gate.values())} hard issues"
+              + ("" if os.environ.get("WW_SENSE", "1") != "0" else "  [sense gate OFF: WW_SENSE=0]"))
+        for s, h in gate.items():
+            for x in h:
+                print(f"   {s}: {x[:220]}")
+        print(f"per-bar fit (flow_fit + weak runs; bar 10 on the profile count): {ok}/{tot} bars (the original scores 74/76 on flow_fit)")
         for f in fails:
             print("   FAIL", f)
-        print(f"by-ear scheme pairs heard by the grader or rapfit: {heard}/{total}")
+        print(f"by-ear scheme pairs heard by rapfit: {heard}/{total}")
         for m in misses:
             print("   unheard", m)
         for s, h in hard.items():
@@ -142,6 +184,7 @@ def song(path, quiet=False):
         for f in rfails:
             print("   recount", f)
     return {"flow": (ok, tot), "pairs": (heard, total), "rapfit_hard": sum(len(h) for h in hard.values()),
+            "gate_hard": sum(len(h) for h in gate.values()), "gate_pass": sum(not h for h in gate.values()),
             "recount_share": share, "recount_fails": len(rfails)}
 
 
@@ -159,12 +202,21 @@ def selftest():
     if os.path.exists(v5):
         r = song(v5, quiet=True)
         chk(f"the v5 redraft stays on the frame (got {r['flow']})", r["flow"][0] >= 72)
-        chk(f"the v5 redraft's scheme pairs are heard (got {r['pairs']})", r["pairs"][0] >= r["pairs"][1] - 2)
+        # rapfit alone (no old-grader OR since 15 Oct): it hears 90% of the original's own by-ear pairs at its floor (13 Oct)
+        chk(f"the v5 redraft's scheme pairs are heard (got {r['pairs']})", r["pairs"][0] >= 0.9 * r["pairs"][1])
         chk("v5 is still a recount (the measure must see it)", r["recount_fails"] > 0)
-    pairs = scheme_pairs("Hook 5-8", ["Cash back on the bier in Zurich", "Stuck in the black van in all the traffic",
-                                      "Sitting back with a real panic", "Might pack the backpack in Munich"])
-    chk("a perfect carpet is heard pair by pair", pairs and all(p[5] for p in pairs))
+    pairs = scheme_pairs("Hook 5-8", ["Hoi Rotterdam beg your pardon", "I've got your gnome and I'm not sorry",
+                                      "Fell off the back of a lorry", "Ten feet of it guards my garden"])
+    chk("an ABBA of true rhymes is heard pair by pair", pairs and all(p[5] for p in pairs))
+    # the old grader passed Zurich ~ Munich at 1.00; the stressed vowels differ, and rapfit (the gate) does not hear it
+    zm = scheme_pairs("Hook 5-8", ["Cash back on the bier in Zurich", "Stuck in the black van in all the traffic",
+                                   "Sitting back with a real panic", "Might pack the backpack in Munich"])
+    chk("a vowel-mismatched pair the old grader passed is not heard", not zm[0][5])
     chk("a candidate bar returns a verdict", try_bar(5, "Cash back on the bier in Zurich")[1] > 0)
+    # song bar 10 has no audio template: it is held to the profile's count, never waved through as free (15 Oct 2026)
+    chk("a 12-syllable song bar 10 fails", try_bar(10, "Wanted for excessive energy guaranteed")[0] is False)
+    chk("a 9-syllable song bar 10 passes the count", "need" not in try_bar(10, "Wanted for too much energy, see")[8])
+    chk("a run of 4+ weak syllables fails the bar", try_bar(7, "Picked it up off of a lorry")[0] is False)
     print("fitbar selftest:", "PASSED" if good else "FAILED")
     return good
 
