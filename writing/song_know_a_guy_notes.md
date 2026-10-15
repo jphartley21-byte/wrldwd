@@ -36,7 +36,7 @@
     rhyme quality. Now HARD (rapfit.quality_hard): cheap rimes and identical rimes per section, at most the original's count + 1.
 12. The gate passed Hook 5-8 with two separate rhymes (people/sequel, solid/wallet) where the original rhymes all four bars: the
     by-ear letters (ABBA) mark closest partners, not families, and the carpet check had been a note since 13 Oct. I skipped that
-    note when writing this song. Now HARD (carpet >= 85% of the original's), with toolkit/match.MANUAL_FAMILY.
+    note when writing this song. Now HARD (carpet >= 85% of the original's).
 This draft fails the gate in 7 sections under the new rules; the rewrite follows.
 
 ## Rewrite of the end rhymes (15 Oct 2026, same day): ww gate PASS again under the new rhyme rules
@@ -57,3 +57,17 @@ the rhymes as good as the original's, and the original's rarer multi-syllable an
 NOTES LISTED TO JOE (rule 10; 121, all from the unvalidated beat-grid / ear diagnostics): 28 "two stresses jammed together",
 14 comma / pause placement, about 20 reduced syllables on a downbeat, 3 hard mouth-shape transitions (inside the par).
 Suffix check: it counts "seed" as an -ed ending by spelling (seating / keyring / seed tripped it); worked around, not fixed.
+
+## Finding 13 and the second rewrite (15 Oct 2026, Joe: "Why is hook 5-8 still ABBA when the original is AAAA?")
+13. Two causes. The scheme letters still said ABBA (from the 9 Oct "A C C A" note, which marked closest partners), and the
+    carpet I had just added counted a pair when rapfit's pair score reached 0.50, which a shared stressed vowel alone does
+    (posse ~ solid 0.66). So posse / solid / wallet / copy passed as "6/6" while it was two pairs. Now: Hook 5-8 is AAAA in
+    toolkit/match.MANUAL_SCHEME, and the carpet counts a pair only when the endings chain syllable by syllable from the end
+    (the original's Hook 5-8: all six pairs two syllables deep). The same rule then failed Hook 1-4, V1 1-8, V1 9-16,
+    V1 25-32 and V2 1-8 (each had a bar sharing the stressed vowel but not the ending).
+Rewrite (bars changed): Hook 1-4 Cheers to the venue / Left out on the rocks? I continue / ... all on a day's cruise /
+... there's a good few (one ending: venue / continue / cruise / few). Hook 5-8 honest / solid / wallet / profit (all six
+pairs two syllables deep, as the original's). V1 1-8 bar 1 ... the rest is larger. V1 9-16 bar 5 ... with all the athletes.
+V1 25-32 bar 4 My boots in Bergen? Dead fatal. V2 1-8 bar 4 ... the sharks were in the crossfire; bar 5 ... jets at night.
+Pronoun endings held at the cap (4): "got it" and "than I" were tried and dropped for that reason.
+ww gate PASS (0 hard, sense read OFF); fitbar 74/76 (bars 37, 39 as before).

@@ -1,5 +1,5 @@
 {
- "_note": "the original's end rhymes per slot (rapfit.quality_of): carpet = end pairs heard, cheap = rhyming bars on a rime >= 150 dictionary words share, identical = identical-rime pairs inside a family; numbers only",
+ "_note": "the original's end rhymes per slot (rapfit.quality_of): carpet = end pairs whose endings chain from the end, cheap = rhyming bars on a rime >= 150 dictionary words share, identical = identical-rime pairs inside a family; numbers only",
  "Hook 1-4": {
   "n": 4,
   "pairs": 6,
@@ -17,7 +17,7 @@
  "Hook 9-16": {
   "n": 8,
   "pairs": 28,
-  "carpet": 6,
+  "carpet": 2,
   "cheap": 2,
   "identical": 1
  },
@@ -38,21 +38,21 @@
  "V1 17-24": {
   "n": 8,
   "pairs": 28,
-  "carpet": 12,
+  "carpet": 7,
   "cheap": 0,
   "identical": 0
  },
  "V1 25-32": {
   "n": 8,
   "pairs": 28,
-  "carpet": 8,
+  "carpet": 13,
   "cheap": 1,
   "identical": 1
  },
  "V1 33-44": {
   "n": 12,
   "pairs": 66,
-  "carpet": 22,
+  "carpet": 20,
   "cheap": 1,
   "identical": 1
  },
@@ -66,7 +66,7 @@
  "V2 9-16": {
   "n": 8,
   "pairs": 28,
-  "carpet": 5,
+  "carpet": 4,
   "cheap": 0,
   "identical": 0
  }

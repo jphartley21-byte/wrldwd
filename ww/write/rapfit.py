@@ -21,13 +21,14 @@ THE PAIR SCORE ANSWERS "DO THESE RHYME?", NOT "IS THIS A GOOD RHYME" (15 Oct 202
 me / we / free / tea / three / fee outscored the original, and Joe heard the original's end rhymes as better. Quality is BLOCK-level
 (quality_of / quality_hard, HARD in check_block, numbers per slot in benchmark/rhyme_quality_targets.json, the original passes by
 construction):
-  carpet     end pairs heard >= 85% of the original's: its Hook 5-8 rhymes all four bars ACROSS its ABBA letters (Lagos / favours /
-             flavours / Vegas), and people / solid / wallet / sequel passed because only same-letter pairs were demanded
+  carpet     end pairs whose ENDINGS match syllable by syllable from the end (chain_best depth >= 1) >= 85% of the original's: its
+             Hook 5-8 rhymes all four bars on one ending (Lagos / favours / flavours / Vegas); people / solid / wallet / sequel and then
+             posse / solid / wallet / copy passed while the scheme said ABBA and the pair score heard a shared vowel as a rhyme
   cheap      rhyming bars on a rime >= 150 dictionary words share, at most the original's count + 1
-  identical  identical-rime pairs inside a family (toolkit/match.MANUAL_FAMILY), at most the original's count + 1
+  identical  identical-rime pairs inside a family (toolkit/match.MANUAL_SCHEME), at most the original's count + 1
 Joe's complaints are test cases: toolkit/tests/rhyme_complaints.txt (complaints_selftest).
 
-HONEST LIMITS: the only ear-labelled pairs in the repo are the original's by-ear rhyme FAMILIES (positives: same family; negatives: different family) and the 12 pairs in
+HONEST LIMITS: the only ear-labelled pairs in the repo are the original's by-ear scheme (positives: same letter; negatives: different letter; Hook 5-8 is AAAA since 15 Oct 2026) and the 12 pairs in
 toolkit/tests/rhyme_pairs.txt. None of them is a "technically rhymes but sounds flat" pair, so the cap cannot be fitted, only checked for not breaking those
 labels. The pairs it demotes need Joe's ear: `python -m ww.cli rapfit --labels` writes the sheet.
 """
@@ -266,8 +267,11 @@ def selftest() -> tuple[bool, str]:
     # again). A Hook 1-4 that passes the slot checker stands in.
     cb = check_block("Hook 1-4", ["Kaixo I'm famous", "Front page in Bilbao: an invasion", "Bern Perth Crete Cairns and it's the same game",
                                   "My file's two foot thick a real cold case"])
-    if cb["hard"]:
-        problems.append(f"a Hook 1-4 that passes the slot checker must pass the stress-anchor gate: {cb['hard']}")
+    anchor_hard = [h for h in cb["hard"] if not h.startswith(("carpet:", "cheap:", "identical:"))]
+    if anchor_hard:
+        problems.append(f"a Hook 1-4 that passes the slot checker must pass the stress-anchor gate: {anchor_hard}")
+    if not any(h.startswith("carpet:") for h in cb["hard"]):
+        problems.append("famous / invasion / game / case share the stressed vowel but not the ending: the carpet must fail it")
     bad = check_block("V1 17-24", ["Audit", "Biscuit", "Credit", "Orbit", "Limit", "Jacket", "Pocket", "Knit"])
     if not bad["hard"]:
         problems.append("a block of bare -it endings must fail the stress-anchor gate")
@@ -289,9 +293,9 @@ def ear_pairs() -> list[dict]:
     orig = rhymeview.load_original()
     out = []
     for slot, bars in orig.items():
-        # labelled by rhyme FAMILY (toolkit/match.MANUAL_FAMILY), not the closest-partner letter: until 15 Oct 2026 Lagos~favours was
-        # a "does not rhyme" label although Joe hears the whole Hook 5-8 block as one rhyme
-        scheme = slotcheck.spec(slot)["family"]
+        # until 15 Oct 2026 Hook 5-8 was ABBA (closest partner), so Lagos~favours was a "does not rhyme" label although Joe hears the
+        # whole block as one rhyme; it is AAAA now (toolkit/match.MANUAL_SCHEME)
+        scheme = slotcheck.spec(slot)["scheme"]
         if len(scheme) != len(bars):
             continue
         tails = [rhymeview.tail_text(b.split()) for b in bars]
@@ -329,7 +333,7 @@ def evaluate(verbose: bool = True) -> dict:
     res["rap_false"] = [(p["slot"], p["a"].split()[-1], p["b"].split()[-1], p["rap"], p["base"]) for p in pairs if not p["y"] and p["rap"] >= FLOOR]
     res["base_false"] = [(p["slot"], p["a"].split()[-1], p["b"].split()[-1], p["rap"], p["base"]) for p in pairs if not p["y"] and p["base"] >= GRADER_FLOOR]
     if verbose:
-        print(f"BY-EAR LABELS from the original: {res['n']} pairs, {res['pos']} rhyme / {res['n'] - res['pos']} do not (Joe's rhyme families: toolkit/match.MANUAL_FAMILY)")
+        print(f"BY-EAR LABELS from the original: {res['n']} pairs, {res['pos']} rhyme / {res['n'] - res['pos']} do not (Joe's by-ear scheme: toolkit/match.MANUAL_SCHEME)")
         for name, label in (("base", "grader (match.best_end, frozen)"), ("rap", "rapfit (new layer)")):
             r = res[name]
             print(f"  {label:34} AUC {r['auc']:.3f} | recall of true rhymes {r['recall']:.0%} | non-rhymes wrongly accepted {r['false_accept']:.0%}")
@@ -517,13 +521,17 @@ QUALITY_PATH = "rhyme_quality_targets.json"
 
 
 def quality_of(slot: str, bars: list[str]) -> dict:
-    """the block's end-rhyme CARPET (end pairs heard by score() >= FLOOR, all pairs), its CHEAP bars (rhyming bars whose rime >=
+    """the block's end-rhyme CARPET (end pairs whose endings chain from the end, chain_best depth >= 1, all pairs), its CHEAP bars (rhyming bars whose rime >=
     CHEAP_FAMILY dictionary words share) and its IDENTICAL-rime pairs (inside one rhyme family). Numbers and bar indices only."""
     from . import rhymeview, slotcheck
-    fam = slotcheck.spec(slot)["family"]
+    fam = slotcheck.spec(slot)["scheme"]
     n = min(len(bars), len(fam))
     tails = [rhymeview.tail_text(b.split()) for b in bars[:n]]
-    heard = [(i, j) for i, j in itertools.combinations(range(n), 2) if score(tails[i], tails[j])["score"] >= FLOOR]
+    # a pair joins the carpet only when its ENDINGS match syllable by syllable from the end through a stressed or full syllable (the
+    # unit check_block uses). The pair score alone heard a shared stressed vowel as a rhyme: posse ~ solid 0.66 although -ossy and
+    # -olid end differently, so an ABBA block passed as AAAA (15 Oct 2026, Joe: "Why is hook 5-8 still ABBA when the original is AAAA?")
+    syls = [_syl(t) for t in tails]
+    heard = [(i, j) for i, j in itertools.combinations(range(n), 2) if chain_best(syls[i], syls[j])["depth"] >= 1]
     grouped = [i for i in range(n) if fam.count(fam[i]) >= 2]
     cheap_bars = [i for i in grouped if cheap(tails[i])]
     keys = [rime_key(t) for t in tails]
@@ -548,7 +556,7 @@ def write_quality_targets() -> dict:
         q = quality_of(slot, bars)
         out[slot] = {"n": q["n"], "pairs": q["pairs"], "carpet": q["carpet"], "cheap": len(q["cheap"]), "identical": len(q["identical"])}
     p = config.BENCHMARK / QUALITY_PATH
-    p.write_text(_j.dumps({"_note": "the original's end rhymes per slot (rapfit.quality_of): carpet = end pairs heard, cheap = rhyming "
+    p.write_text(_j.dumps({"_note": "the original's end rhymes per slot (rapfit.quality_of): carpet = end pairs whose endings chain from the end, cheap = rhyming "
                            f"bars on a rime >= {CHEAP_FAMILY} dictionary words share, identical = identical-rime pairs inside a "
                            "family; numbers only", **out}, indent=1), encoding="utf-8")
     return out
@@ -566,8 +574,9 @@ def quality_hard(slot: str, bars: list[str]) -> list[str]:
     ends = [x.split()[-1] if x else "?" for x in q["tails"]]
     need = int(CARPET_SHARE * t["carpet"])
     if q["carpet"] < need:
-        out.append(f"carpet: {q['carpet']} of {q['pairs']} end pairs rhyme, the original's {slot} holds {t['carpet']} (need >= {need}): "
-                   "the block falls off one rhyme family; rhyme the bars ACROSS the scheme letters too (Lagos / favours / flavours / Vegas)")
+        out.append(f"carpet: {q['carpet']} of {q['pairs']} end pairs share their ending (matched syllable by syllable from the end), the "
+                   f"original's {slot} holds {t['carpet']} (need >= {need}): a bar shares the stressed vowel but not the ending; give every bar "
+                   "of the family the same ending, as Lagos / favours / flavours / Vegas do")
     cap = t["cheap"] + QUALITY_SLACK
     if len(q["cheap"]) > cap:
         out.append(f"cheap: {len(q['cheap'])} end rhymes on a rime hundreds of words share ({', '.join(ends[i] for i in q['cheap'])}); "

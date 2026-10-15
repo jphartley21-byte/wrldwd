@@ -6,6 +6,9 @@
 #   (a rime hundreds of words share: me/tea/free, guy/fly/high, pay/day/play) and samey (the identical rime again and again).
 # 15 Oct 2026, Joe (2): "Lagos, flavours, favours and Vegas are all very close rhymes but somehow our draft ended up with people,
 #   solid, wallet ... in the same places" -- the original's Hook 5-8 is ONE rhyme family across all four bars (a carpet).
+# 15 Oct 2026, Joe (3): "Why is hook 5-8 still ABBA when the original is AAAA?" -- posse / solid / wallet / copy share the stressed
+#   vowel only: two pairs (posse/copy, solid/wallet), not one ending family. The carpet counts a pair only when the endings match
+#   syllable by syllable from the end (rapfit.chain_best), as all six of the original's Hook 5-8 pairs do.
 #
 # V1 25-32 is NOT listed: its identical pairs (label/table, cheeky/sneaky) are 2 against the original's 1, inside the +1 slack.
 # Format: slot <TAB> rules that must fire (carpet / cheap / identical, comma-separated) <TAB> bars separated by " / "
@@ -16,3 +19,4 @@ V1 9-16	cheap,identical	Back then no one would know me / Broke, kipped on the fl
 V1 33-44	cheap,identical	Sure the Spanish caught me / Officer? Who me? Never seedy / Then my guy had the money / Cash in a brown envelope all sunny / My guy made you pay / Wanted posters, all Boomtown, front page / Never set foot in the dock Old Bailey / So in the beer garden I'm holding sway / Owe me? It's your big pay day / You owe, you get a game of conkers, fair play / Crown on, top hat, I'm king of Bristol / Dealers know that I know a guy okay
 V2 1-8	cheap,identical	The Whitsundays a tinnie? I've got a guy / Up K'gari in the ute where you do or die / Bangkok, the roadside, and the top pad Thai / The reef? I dived it and the sharks were tiny / You wouldn't believe big boats and jets up high / You want it for free from my guy? So pigs can fly / I drive to the bay, dive in, I'm back by five / Anything, mate: one call, and I'll try
 V2 9-16	cheap,identical	'Cause I use a flip phone / Christchurch, Oslo, Scotland, Wales, and up to Snowdon / Solo now the face is just as well known / Lone wolf now and proud and it's all home-grown / Big man top dog in the nightlife / Don't need one, 'cause I'm big boss, the tough guy / Seconds out, no ref, you get no bell / Each time you're stuck, I'm the guy, and the main lifeline
+Hook 5-8	carpet	Hoi hoi to the Dutch my posse / Their gnome's as tall as a house, rock solid / Cross my Noord man it's your wallet / Want one? I'll flog you a copy

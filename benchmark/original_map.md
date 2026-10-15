@@ -89,7 +89,7 @@ scheme on the LAST STRESSED vowel `abcc` · **scheme on the two-syllable tail `A
 
 *greeting 2; business register; perfect pair flipping register; modal closer*
 
-scheme on the LAST STRESSED vowel `abbb` · **scheme on the two-syllable tail `ABBA`** (the strict reading) · by EAR `ABBA` (the human annotation) · loose reading `ABBA` (calibrated to it: 5 of 10 slots exact, 76% of pairs agree) · carpet 1.00 · soft endings 4/4 · internal matches 1 · multisyllabic 2 · cut-ups 2 · perfect pairs 12 · syllables 8-10
+scheme on the LAST STRESSED vowel `abbb` · **scheme on the two-syllable tail `ABBA`** (the strict reading) · by EAR `AAAA` (the human annotation; `ABBA` until 15 Oct 2026, Joe: all four bars share one ending) · loose reading `ABBA` (calibrated to it: 5 of 10 slots exact, 76% of pairs agree) · carpet 1.00 · soft endings 4/4 · internal matches 1 · multisyllabic 2 · cut-ups 2 · perfect pairs 12 · syllables 8-10
 
 ```
   L  syl  end sound  fam  sch  stresses   beats      shape  internal               allit  tags
@@ -290,7 +290,7 @@ scheme on the LAST STRESSED vowel `abacdecf` · **scheme on the two-syllable tai
 | slot | lines | scheme (strict tail) | scheme read by ear | longest identical-sound run | short breath lines |
 |---|---|---|---|---|---|
 | Hook 1-4 | 1-4 | `AAAA` | `AAAA` | 1 | 1 |
-| Hook 5-8 | 5-8 | `ABBA` | `ABBA` | 1 | 0 |
+| Hook 5-8 | 5-8 | `ABBA` | `AAAA` | 1 | 0 |
 | Hook 9-16 | 9-16 | `ABCDEFGF` | `ABBACDED` | 1 | 1 |
 | V1 1-8 | 17-24 | `AAAAAABA` | `AAAAAABA` | 1 | 1 |
 | V1 9-16 | 25-32 | `AABAACDD` | `AABAAAAA` | 1 | 1 |

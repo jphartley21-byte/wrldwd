@@ -4,27 +4,27 @@
 # RESULT: ww gate PASS (0 hard; sense read OFF, no model key). fitbar 74/76 (bars 37, 39: see the notes file). Notes and
 # pipeline findings: writing/song_know_a_guy_notes.md.
 # REWRITE 15 Oct 2026 (end rhymes, after Joe: "originals end rhymes are better rn" and the Lagos/favours/flavours/Vegas carpet):
-# Hook 5-8 now rhymes all four bars (posse / solid / wallet / copy); cheap and identical rimes cut in 6 sections under the
+# Hook 5-8 now rhymes all four bars on one ending (honest / solid / wallet / profit; Joe: "the original is AAAA"); cheap and identical rimes cut in 6 sections under the
 # new rapfit rules (carpet, cheap, identical). The old blocks are kept as test cases in toolkit/tests/rhyme_complaints.txt.
-# (persona) for Joe: every crime, bribe and luxury claim; the driver; "a day's ride"; the Prada suit; the boat in Palma; the
+# (persona) for Joe: every crime, bribe and luxury claim; the rocks; the Prada suit; the boat in Palma; the
 # Laxey bar tab; the crate, customs, Gardai and the trolley; the Barbour parka; the judge's lager; the top-thief list; the gold; the Spanish stop; the Whitsundays tinnie and the reef dive; the
 # ute on K'gari. Named but not visited: Old Bailey, Canada, Saul. The East Coast is Australia's (2017, true). True places: material/travel_history.md.
 
 == Hook 1-4
 # argument: wherever I land, I know a guy. moves: shout_out, brag, flex_list, punchline
-Cheers to my driver
-Left out in the sand a survivor
-Bern, Perth, Crete, Nantes, all in a day's ride
-In each new port town there's a wise guy
-#cash 3 | a day's ride | ride
-#cash 4 | wise guy | guy
+# one ending family on all four bars (venue / continue / cruise / few), as the original's Hook 1-4 shares one final vowel
+Cheers to the venue
+Left out on the rocks? I continue
+Bern, Perth, Crete, Nantes, all on a day's cruise
+In each new port town there's a good few
+#cash 4 | a good few | few
 
 == Hook 5-8
 # argument: my man in Rotterdam can get you a gnome by morning. moves: shout_out, brag, threat, punchline
-Hoi hoi to the Dutch my posse
+Hoi hoi to the Dutch so honest
 Their gnome's as tall as a house, rock solid
 Cross my Noord man it's your wallet
-Want one? I'll flog you a copy
+Want one? I'll flog it for profit
 #cash 2 | rock solid | solid
 
 == Hook 9-16
@@ -44,7 +44,7 @@ If you're stuck I know a guy
 
 == V1 1-8
 # argument: the network is the business: worldwide, deniable, comfortable. moves: brag, brag, brag, name_drop, brag, brag, threat, punchline
-One phone two names and the rest is nada
+One phone two names and the rest is larger
 Honesty box? I pay it good karma
 In my suit head to toe Prada
 My guy keeps a boat out in Palma
@@ -61,7 +61,7 @@ Back then no one would know me
 Broke, kipped on the floor, we
 Now skip to the end
 But the cops came round I walked out of there scot free
-Nowadays my face goes round it's on a keyring
+Nowadays my face goes round with all the athletes
 Top floor, a sea view, I'm living the dream
 Police have got a list and they've got me: top thief
 I'm out so ring my main guy's guy he's discreet
@@ -88,7 +88,7 @@ Tape it, label it, white-van marathon
 So the good mozzarella? From the guy in Naples
 Marrakesh, half the price, with my guy there, so check the label
 Barber's chair, cut-throat blade, on the house, cards on the table
-Shoes off, my missus' home, Bergen
+My boots in Bergen? Dead fatal
 On the ferry, flat calm, Thai mainland
 But the fags are that cheap dead cheeky
 Forty a day? My guy is sorting me
@@ -120,8 +120,8 @@ Dealers know that I know a guy, no names
 The Whitsundays a tinnie? I've got a guy
 Up K'gari in the ute where you do or die
 Bangkok, the roadside, and the top fried rice
-The reef? I dived it and the sharks were tiny
-You wouldn't believe big boats and jets up high
+The reef? I dived, the sharks were in the crossfire
+You wouldn't believe big boats and jets at night
 You want it for free from my guy? So pigs can fly
 I drive to the bay, dive in, I'm back by five
 Anything, mate: one call and it's mine

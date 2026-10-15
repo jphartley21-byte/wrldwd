@@ -225,9 +225,10 @@ def selftest():
         # rapfit alone (no old-grader OR since 15 Oct): it hears 90% of the original's own by-ear pairs at its floor (13 Oct)
         chk(f"the v5 redraft's scheme pairs are heard (got {r['pairs']})", r["pairs"][0] >= 0.9 * r["pairs"][1])
         chk("v5 is still a recount (the measure must see it)", r["recount_fails"] > 0)
-    pairs = scheme_pairs("Hook 5-8", ["Hoi Rotterdam beg your pardon", "I've got your gnome and I'm not sorry",
-                                      "Fell off the back of a lorry", "Ten feet of it guards my garden"])
-    chk("an ABBA of true rhymes is heard pair by pair", pairs and all(p[5] for p in pairs))
+    # Hook 5-8 is AAAA since 15 Oct 2026 (Joe): every pair of the block is a scheme pair, so the fixture rhymes all four bars
+    pairs = scheme_pairs("Hook 5-8", ["Hoi Rotterdam, I own the quarry", "I've got your gnome and I'm not sorry",
+                                      "Fell off the back of a lorry", "My mate drove it in from Corrie"])
+    chk("an AAAA of true rhymes is heard pair by pair", len(pairs) == 6 and all(p[5] for p in pairs))
     # the old grader passed Zurich ~ Munich at 1.00; the stressed vowels differ, and rapfit (the gate) does not hear it
     zm = scheme_pairs("Hook 5-8", ["Cash back on the bier in Zurich", "Stuck in the black van in all the traffic",
                                    "Sitting back with a real panic", "Might pack the backpack in Munich"])

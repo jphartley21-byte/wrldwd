@@ -243,7 +243,7 @@ def spec(slot: str) -> dict:
     sylls = [x.get("syl") or prof["bars"][i]["syl"] or len(x.get("steps") or []) for i, x in enumerate(bars)]
     shapes = [x.get("end_shape") or "|S" for x in bars]
     return {"slot": slot, "n": b - a, "sylls": sylls, "shapes": shapes,
-            "scheme": m.MANUAL_SCHEME[slot], "family": m.family(slot), "internal": prof["internal"], "quad": prof["quad"], "carpet": prof["carpet"],
+            "scheme": m.MANUAL_SCHEME[slot], "internal": prof["internal"], "quad": prof["quad"], "carpet": prof["carpet"],
             "bookends": prof["bookends"]}
 
 
@@ -657,7 +657,7 @@ def selftest() -> tuple[bool, str]:
     import retired
     problems = []
     s = spec("Hook 5-8")
-    if s["n"] != 4 or s["scheme"] != "ABBA" or len(s["sylls"]) != 4:
+    if s["n"] != 4 or s["scheme"] != "AAAA" or len(s["sylls"]) != 4:
         problems.append(f"Hook 5-8 spec wrong: {s}")
     d = describe("Hook 9-16")
     if "AABACBDB" not in d or "bars 1 & 2" not in d:
