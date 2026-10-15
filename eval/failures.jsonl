@@ -6317,3 +6317,4 @@
 {"ts": 1791915050.443, "kind": "gate", "text": "Tin of direct-to-rust, no recap, paint town red, run.", "detail": "ends |S, needs ~w; this bar must still land the planned payoff 'red'", "source": "barloop:V2 9-16"}
 {"ts": 1791915050.448, "kind": "gate", "text": "Tin of direct-to-rust, no recap, paint town red, one.", "detail": "ends |S, needs ~w; this bar must still land the planned payoff 'red'", "source": "barloop:V2 9-16"}
 {"ts": 1792050795.664, "kind": "oov", "text": "shroom", "detail": "no pronunciation in britfone, cmudict, OVR or the g2p chain", "source": "bridge.oov_words"}
+{"ts": 1792074479.339, "kind": "oov", "text": "palaver", "detail": "no pronunciation in britfone, cmudict, OVR or the g2p chain", "source": "bridge.oov_words"}
