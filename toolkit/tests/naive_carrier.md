@@ -24,3 +24,16 @@ Candy-pink my floppy top hat
 Then he's back to take the floor
 #cash 6 | the long arm of the law | law
 #cash 8 | take the floor | floor
+# V1 25-32 added 15 Oct 2026 (frozen copy of writing/song_know_a_guy.md's section, assistant-authored, NOT approved) so Joe's
+# bar-line rhyme complaint (song bars 41-42) has a section to be swapped into.
+== V1 25-32
+Mozzarella? A stranger? It's my guy in Naples
+Marrakesh, a fake trader, my guy there, so check the label
+Barber's chair, cut-throat blade, on the house, cards on the table
+My boots in Bergen? Dead fatal
+On the ferry, flat calm, Thai mainland
+But the fags are that cheap dead cheeky
+Forty a day? My guy is sorting me
+Need me? Gone to my guy's guy down the road for a quick sneaky
+#cash 3 | cards on the table | table
+#cash 6 | dead cheeky | cheeky

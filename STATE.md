@@ -1801,3 +1801,7 @@ FIXED:
 - The gates matched syllables, stress positions (11/12), end shape and rhyme position. They missed: two stressed syllables on back-to-back 16ths of the original's audio template ("Koh Tao"; the stress-run tolerance hid it), and the original's repeated cell with internal rhyme (ours was a list).
 - toolkit/flow_par.py: fast_jam (TOL 0, from the template's steps) and cell (at the original's 5 repeated-cell bars: a repeated content word or in-bar drum/echo, internal rhyme >= original - 1). benchmark/flow_par.json rebuilt (numbers only). Bar 13 added to toolkit/tests/flow_flagged.txt; fast_jam also catches flagged bars 4, 6 and 12 (bar 6 is Joe's "stresses bunch up"). Registry: joe_rule.
 - writing/song_know_a_guy.md: 12 bars rewritten (notes file, finding 14); ww gate PASS; fitbar 73/76. The two-bar sentence (bar 14 finishing bar 13) is not gated; noted.
+
+## 15 Oct 2026 (later 9) - end rhymes at the bar line inside long lines (Joe: "there are end rhymes in the middle, so it's actually delivered over 8 bars")
+- 35 of the original's 74 timed lines run past one musical bar. In bars 13, 41, 42 and 50 a word at the bar line rhymes (same vowels from its stress) with the line's own end. toolkit/flow_par.py barline (HARD): ours lands one within a syllable of the same position. Not re-segmented (it would re-index every template, scheme and par table). Old bars 41 and 42 added to toolkit/tests/flow_flagged.txt.
+- writing/song_know_a_guy.md bars 13, 41, 42, 50 rewritten; ww gate PASS.

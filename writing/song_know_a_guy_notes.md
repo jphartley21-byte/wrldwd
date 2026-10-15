@@ -88,3 +88,15 @@ rest is larger; 24 Grazie grazie four weeks on a pass and no drama; 28 ... walke
 whole marathon; 48 Need me? Gone to my guy's guy down the road for a quick sneaky; 50 Officer? Never never seedy; 52 Cash in
 envelopes, the deal's all sunny; 58 You owe? My crew will play conkers, it's fair game; 68 Name it, my mate: one call and it's mine.
 Six commas dropped to keep comma bars at 22 of 76 (30%). ww gate PASS (0 hard, sense read OFF); fitbar 73/76 (11, 37, 39).
+
+## Finding 15 (15 Oct 2026, Joe: "In the original lyrics these look like long bars but if you look closely there are end rhymes in the
+## middle, so it's actually delivered over 8 bars ... See how we have end rhymes that don't rhyme?")
+15. Measured on the audio template: 35 of the original's 74 timed lines run past one musical bar. In four of them (bars 13, 41, 42, 50) a
+    word landing at the bar line has the same vowels, from its stress to the end, as the line's end word: an end rhyme delivered in the
+    middle of the written line. Ours had none there (mozzarella / Naples, half the price / label). Now HARD (toolkit/flow_par.py
+    barline): ours must land one within a syllable of the original's position. Re-cutting the original into musical bars would re-index
+    every audio template, scheme letter and par table, so the rule works on the line as written. Old bars 41 and 42 are in
+    toolkit/tests/flow_flagged.txt.
+Rewrite: 13 Cash for Cairns and it's cash for Wales and cash for Spain (Wales / Spain); 41 Mozzarella? A stranger? It's my guy in Naples
+(stranger / Naples); 42 Marrakesh, a fake trader, my guy there, so check the label (trader / label); 50 Officer? Who me? Seedy? Seedy?
+(the repeat lands at the bar line, as the original's bar 50 does). ww gate PASS.

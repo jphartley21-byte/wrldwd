@@ -76,7 +76,7 @@ LEGACY = {
         "(toolkit/match.MANUAL_SCHEME; Hook 5-8 AAAA), recall 94%, non-rhymes accepted 2%; in-sample, and V2 9-16 is still blind (AUC 0.50). It says whether a "
         "pair rhymes, not how good the rhyme is: a common, identical rime scores 1.0"),
     # 15 Oct 2026, Joe on Hook 9-16 bars 13-14: "How is [ours] the same flow as" the original's. Both rules are per bar, against the original's same bar.
-    "toolkit/flow_par fast_jam + cell (16th-note stress jams; repeated cell + internal rhyme)": ("joe_rule", "HARD in slotcheck via flow_par since 15 Oct 2026. "
+    "toolkit/flow_par fast_jam + cell + barline (16th-note stress jams; repeated cell + internal rhyme; end rhyme landed at the bar line)": ("joe_rule", "HARD in slotcheck via flow_par since 15 Oct 2026. barline: 35 of the original's 74 timed lines run past one musical bar; it lands a rhyme on its own end at the bar line in bars 13, 41, 42, 50, and ours must too. "
         "The original passes by construction. fast_jam (TOL 0) also catches 3 earlier flagged bars for the reason Joe gave for one of them ('stresses bunch "
         "up'); the cell rule applies only at the original's 5 repeated-cell bars (13, 24, 40, 48, 50). One labelled complaint; no independent good set"),
     "ww/judge/reader.py event/claim labels": ("unvalidated", "never run against the original; ww/judge/reader_validate.py is the test "

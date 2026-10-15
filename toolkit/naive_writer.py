@@ -29,12 +29,13 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 CARRIER = os.path.join(HERE, "tests", "naive_carrier.md")
-START = {"Hook 1-4": 1, "Hook 5-8": 5, "Hook 9-16": 9}
+START = {"Hook 1-4": 1, "Hook 5-8": 5, "Hook 9-16": 9, "V1 25-32": 41}
+SIZE = {"Hook 1-4": 4, "Hook 5-8": 4, "Hook 9-16": 8, "V1 25-32": 8}
 
 
 def _slot_of(bar_no):
     for s, a in START.items():
-        if a <= bar_no < a + (4 if s != "Hook 9-16" else 8):
+        if a <= bar_no < a + SIZE[s]:
             return s, bar_no - a
     return None, None
 
