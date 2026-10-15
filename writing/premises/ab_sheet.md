@@ -52,3 +52,38 @@ mechanic; 'I nick a Honda Win' (it was hired); the bounty of half a crown; the o
 
 Weakest bars, my read: Hook 4 ('on the boat's prow' is a stretch for a ferry); V1 9-16 bar 3 ('flag down the next ute' is plain);
 V1 33-44 is still the most diary-like section (the shroom walk, the corner shop) even though it passes the gates.
+
+## Most Wanted hook: edited vs written from scratch (15 Oct 2026, later)
+
+Joe: "it's getting mangled by trying to edit existing diary verses into a new style". The scratch version was written as plain
+sentences first, with new rhyme families (eɪ / ɑː+ɒ / iː+ɔː) and nothing carried over from v5, then lightly fitted.
+
+| bar | edited (from v5's skeleton) | from scratch |
+|---|---|---|
+| 1 | Yeah, kaixo, outlaw | Kaixo, I'm famous |
+| 2 | Last call, it's me in the announcement | Front page in Spain says I'm amazing |
+| 3 | Spain, France, Bern, Perth: it's a manhunt now | Bern, Perth, Crete, Cairns, and it's the same game |
+| 4 | My face, six foot tall, on the boat's prow | My file's two foot thick, a real cold case |
+| 5 | Hoi Rotterdam, call the bobby | Hoi Rotterdam, beg your pardon |
+| 6 | The gnome? It's mine, ten foot, Dutch bronze, sorry | I've got your gnome, big lad, Dutch bronze, sorry |
+| 7 | Proost, mate, get it off the lorry | Picked it up off of a lorry |
+| 8 | Front door, the gnome guards my lobby | Ten feet of it guards my garden |
+| 9 | They've printed my face in red | My face is in Boomtown, see |
+| 10 | Wanted: excessive energy, the poster said | Wanted for excessive energy, guaranteed |
+| 11 | Hands high, flics, and I'm surrounded | Stand back, eyes down, he's performing |
+| 12 | My dance moves are mad, they want my head | He's had six Red Bulls, he's running free |
+| 13 | Five Boomtowns, in the rain and drought, I've done the lot | Call it in and you win a pint and crisps, my treat |
+| 14 | Posters round the town | Tell it to the law |
+| 15 | Spotted: Boomtown, floppy top hat | Dressed in pink, a floppy top hat |
+| 16 | And the bounty's half a crown | And he's still out on the floor |
+
+| measure | edited | from scratch |
+|---|---|---|
+| on the audio frame | 15/15 | 15/15 |
+| by-ear rhyme pairs heard | 14/14 | 14/14 |
+| recount bars (of 16) | 1 | 2 |
+| hook stamps (original 9/16, gate 7) | 8 | 6 (FAILS by one) |
+| meaning gate | PASS | PASS |
+
+The scratch hook trades stamps for a story device: bars 11-16 read out the wanted poster in the third person. It names fewer places
+than the original's roll-call hook, which is why it misses the stamp gate by one bar.
