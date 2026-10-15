@@ -71,3 +71,20 @@ pairs two syllables deep, as the original's). V1 1-8 bar 1 ... the rest is large
 V1 25-32 bar 4 My boots in Bergen? Dead fatal. V2 1-8 bar 4 ... the sharks were in the crossfire; bar 5 ... jets at night.
 Pronoun endings held at the cap (4): "got it" and "than I" were tried and dropped for that reason.
 ww gate PASS (0 hard, sense read OFF); fitbar 74/76 (bars 37, 39 as before).
+
+## Finding 14 and the third rewrite (15 Oct 2026, Joe: "How is: Amsterdam or Koh Tao or Spain or Cairns or Wales / Prost and then you
+## buy / The same flow as" the original's bars 13-14)
+14. The gates matched syllables (12, 5), stress positions (11 of 12, 5 of 5), end shape and rhyme position, and missed three things:
+    (a) "Koh Tao" put two stressed syllables on back-to-back 16ths of the original's audio where it runs weak syllables into a hit (the
+    stress-run tolerance +1 hid it); (b) the original's bar repeats one cell three times with an internal rhyme, ours was a list of
+    places joined by "or"; (c) the original's two bars are one sentence. Now HARD in toolkit/flow_par.py: fast_jam (no more stressed
+    pairs on adjacent 16ths than the original's same bar) and cell (at the original's 5 repeated-cell bars, ours needs a repeated cell
+    and internal rhyme >= the original's - 1). Bar 13 is in toolkit/tests/flow_flagged.txt. (c) is not gated: bar 14 passes every flow
+    measure; it is a sense point, listed here.
+Rewrite (bars changed): 3 ... and it's a day's cruise; 11 Four-wheeler? Dead on arrival (fitbar pattern 75%: the cash forces a stress
+the frame does not have; a note, not a gate); 13 Cash for Spain and it's cash for Cairns and cash for Wales (same device as the
+original's bar, a repeated cell, with different words and syntax; Joe to judge whether it is too close); 17 One phone and a name, the
+rest is larger; 24 Grazie grazie four weeks on a pass and no drama; 28 ... walked out of it scot free; 40 Tape it, van to van, the
+whole marathon; 48 Need me? Gone to my guy's guy down the road for a quick sneaky; 50 Officer? Never never seedy; 52 Cash in
+envelopes, the deal's all sunny; 58 You owe? My crew will play conkers, it's fair game; 68 Name it, my mate: one call and it's mine.
+Six commas dropped to keep comma bars at 22 of 76 (30%). ww gate PASS (0 hard, sense read OFF); fitbar 73/76 (11, 37, 39).

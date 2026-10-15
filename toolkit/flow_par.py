@@ -39,6 +39,14 @@ PAR = os.path.join(ROOT, "benchmark", "flow_par.json")
 FLAGGED = os.path.join(HERE, "tests", "flow_flagged.txt")
 OK = os.path.join(HERE, "tests", "flow_ok.txt")
 MEASURES = ("stress_run", "hard_joins", "closed_run", "restart")
+# BAR-BOUND measures (15 Oct 2026, Joe on Hook 9-16 bars 13-14: "How is [Amsterdam or Koh Tao or Spain or Cairns or Wales / Prost and
+# then you buy] the same flow as" the original's bars 13-14). The four measures above passed it; it differs in two ways they cannot see:
+#   fast_jam   stressed syllables back to back on adjacent 16th steps of the original's own audio template for this bar ("Koh Tao" lands on
+#              steps 7-8 where the original runs two weak syllables into a hit). The stress-run tolerance (+1) hid it, so TOL here is 0.
+#   cell       where the original's bar repeats one cell (a content word said again in the bar, or an in-bar drum / echo: toolkit/ear.py),
+#              ours must too, with internal rhyme (match.internal_density, single bar) no more than one below the original's bar. The
+#              original does this in 5 bars (13, 24, 40, 48, 50); everywhere else the rule is silent.
+BAR_MEASURES = ("fast_jam", "cell")
 # Fitted 15 Oct 2026 on the only labels there are: the loosest tolerances that still catch all 4 flagged bars, which fail the
 # fewest bars of hook r3 (Joe: "I like this", bar 12 excepted): 5 of 15 still fail, and they are listed to Joe to judge. At 0/0/0/0 the
 # gate failed 11 of those 15. In-sample and tiny: every new verdict goes into flow_flagged.txt or flow_ok.txt and is re-checked here.
@@ -47,7 +55,9 @@ CLOSED = {"ɪ", "ʊ"}
 JOINERS = {"and", "but", "so", "when", "while", "if", "because", "cause", "cos", "that", "who", "which", "then", "or", "till",
            "until", "as", "where", "though", "once", "since", "before", "after", "nor", "like"}
 LABEL = {"stress_run": "stressed syllables in a row", "hard_joins": "hard mouth-shape joins",
-         "closed_run": "short closed vowels (ɪ ʊ) in a row", "restart": "sentence restarts mid-bar"}
+         "closed_run": "short closed vowels (ɪ ʊ) in a row", "restart": "sentence restarts mid-bar",
+         "fast_jam": "stressed syllables jammed on back-to-back 16ths", "cell": "repeated cell + internal rhyme (needs a cell and internal rhyme >= the original's - 1)",
+         "internal": "internal rhyme in a repeated-cell bar"}
 
 
 def _ww():
@@ -97,6 +107,32 @@ def restart(line):
     return n
 
 
+def fast_jam(bar_no, line):
+    """stressed syllables on ADJACENT 16th steps of the original's audio template for this bar (None: no template or a different count)."""
+    t = ff.T[bar_no - 1] if 1 <= bar_no <= len(ff.T) else {}
+    steps = t.get("steps")
+    w = ff.sylls(line)
+    if not steps or len(steps) != len(w):
+        return None
+    return sum(1 for k in range(len(steps) - 1) if steps[k + 1] - steps[k] == 1 and not w[k] and not w[k + 1])
+
+
+def has_cell(line):
+    """a repeated cell inside the bar: a content word said twice or more, or an in-bar drum / echo (toolkit/ear.py)."""
+    import collections
+    import ear
+    from ww.write import rhymeview
+    ws = [rhymeview.core(w) for w in line.split()]
+    ws = [w for w in ws if w and w not in rhymeview.FUNC]
+    rep = max(collections.Counter(ws).values()) if ws else 0
+    return rep >= 2 or bool(ear.drums([line])) or bool(ear.echoes([line]))
+
+
+def internal(line):
+    import match
+    return match.internal_density([line])[0]
+
+
 def profile(line):
     return {"stress_run": stress_run(line), "hard_joins": hard_joins(line), "closed_run": closed_run(line), "restart": restart(line)}
 
@@ -117,7 +153,17 @@ def check(bar_no, line):
         return None
     par = tab[bar_no - 1]
     ours = profile(line)
-    return [(m, ours[m], par[m]) for m in MEASURES if ours[m] > par[m] + TOL[m]]
+    out = [(m, ours[m], par[m]) for m in MEASURES if ours[m] > par[m] + TOL[m]]
+    if "fast_jam" in par:
+        fj = fast_jam(bar_no, line)
+        if fj is not None and fj > par["fast_jam"]:
+            out.append(("fast_jam", fj, par["fast_jam"]))
+    if par.get("cell"):
+        if not has_cell(line):
+            out.append(("cell", 0, 1))
+        elif internal(line) < par.get("internal", 0) - 1:
+            out.append(("internal", internal(line), par.get("internal", 0)))
+    return out
 
 
 def describe(fails):
@@ -148,9 +194,10 @@ def build(orig_path):
     L = [l.strip() for l in open(orig_path, encoding="utf8") if l.strip()][:76]
     _ww()
     from ww import bridge
-    bars = [dict(profile(l), syl=bridge.syllable_count(l)) for l in L]
+    bars = [dict(profile(l), syl=bridge.syllable_count(l), fast_jam=fast_jam(i + 1, l) or 0, cell=int(has_cell(l)), internal=internal(l))
+            for i, l in enumerate(L)]
     json.dump({"_note": "Per-bar flow profile of the ORIGINAL (numbers only, rule 4), built by toolkit/flow_par.py --build. "
-                        "A draft bar may be no worse than the original's bar in the same position.", "measures": list(MEASURES), "bars": bars},
+                        "A draft bar may be no worse than the original's bar in the same position.", "measures": list(MEASURES) + list(BAR_MEASURES), "bars": bars},
               open(PAR, "w", encoding="utf-8"), indent=1)
     par_table.cache_clear()
     return bars
