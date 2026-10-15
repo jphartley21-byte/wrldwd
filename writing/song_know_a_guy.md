@@ -33,7 +33,7 @@ G'day there's a torch on call
 My brief's a better call than Saul
 Four-wheeler? Dead on arrival
 My doorman will put you through the floor
-Cash for Cairns and it's cash for Wales and cash for Spain
+Cash for Spain and it's cash for scales and cash for Wales
 Prost and then you buy
 Hanoi bikes are getaway cars
 If you're stuck I know a guy
@@ -85,8 +85,8 @@ Tape it, van to van, the whole marathon
 
 == V1 25-32
 # argument: I've got a guy for every little luxury, in every country. moves: brag, brag, threat, shout_out, brag, brag, brag, punchline
-Mozzarella? A stranger? It's my guy in Naples
-Marrakesh, a fake trader, my guy there, so check the label
+Mozzarella? The staples? It's my guy in Naples
+Marrakesh when I'm able, my guy there, so check the label
 Barber's chair, cut-throat blade, on the house, cards on the table
 My boots in Bergen? Dead fatal
 On the ferry, flat calm, Thai mainland

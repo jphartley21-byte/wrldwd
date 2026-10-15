@@ -27,8 +27,8 @@ Then he's back to take the floor
 # V1 25-32 added 15 Oct 2026 (frozen copy of writing/song_know_a_guy.md's section, assistant-authored, NOT approved) so Joe's
 # bar-line rhyme complaint (song bars 41-42) has a section to be swapped into.
 == V1 25-32
-Mozzarella? A stranger? It's my guy in Naples
-Marrakesh, a fake trader, my guy there, so check the label
+Mozzarella? The staples? It's my guy in Naples
+Marrakesh when I'm able, my guy there, so check the label
 Barber's chair, cut-throat blade, on the house, cards on the table
 My boots in Bergen? Dead fatal
 On the ferry, flat calm, Thai mainland

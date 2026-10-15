@@ -1805,3 +1805,4 @@ FIXED:
 ## 15 Oct 2026 (later 9) - end rhymes at the bar line inside long lines (Joe: "there are end rhymes in the middle, so it's actually delivered over 8 bars")
 - 35 of the original's 74 timed lines run past one musical bar. In bars 13, 41, 42 and 50 a word at the bar line rhymes (same vowels from its stress) with the line's own end. toolkit/flow_par.py barline (HARD): ours lands one within a syllable of the same position. Not re-segmented (it would re-index every template, scheme and par table). Old bars 41 and 42 added to toolkit/tests/flow_flagged.txt.
 - writing/song_know_a_guy.md bars 13, 41, 42, 50 rewritten; ww gate PASS.
+- (Joe: "Turkey and certi is same closeness as stranger and Naples?") The bar-line rule matched vowels only; it now also needs the rapfit pair score within 0.10 of the original's (bars 13, 41, 42, 50: 1.0, 0.81, 0.95, 1.0). Bars 13, 41, 42 rewritten to 1.0 rhymes (scales / Wales, staples / Naples, able / label); ww gate PASS.

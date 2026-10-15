@@ -100,3 +100,8 @@ Six commas dropped to keep comma bars at 22 of 76 (30%). ww gate PASS (0 hard, s
 Rewrite: 13 Cash for Cairns and it's cash for Wales and cash for Spain (Wales / Spain); 41 Mozzarella? A stranger? It's my guy in Naples
 (stranger / Naples); 42 Marrakesh, a fake trader, my guy there, so check the label (trader / label); 50 Officer? Who me? Seedy? Seedy?
 (the repeat lands at the bar line, as the original's bar 50 does). ww gate PASS.
+16. Joe: "Turkey and certi is same closeness as stranger and Naples?" No: the bar-line rule matched vowels only (stranger / Naples 0.69,
+    trader / label 0.66, Wales / Spain 0.67 against the original's 0.81, 0.95, 1.0). Now the bar-line rhyme must score within 0.10 of the
+    original's (rapfit pair score). Rewrite: 13 Cash for Spain and it's cash for scales and cash for Wales (scales / Wales 1.0);
+    41 Mozzarella? The staples? It's my guy in Naples (staples / Naples 1.0); 42 Marrakesh when I'm able, my guy there, so check the label
+    (able / label 1.0). ww gate PASS. The bar 41 "stranger" line is a flagged test case.

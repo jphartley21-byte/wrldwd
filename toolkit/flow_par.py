@@ -52,7 +52,10 @@ MEASURES = ("stress_run", "hard_joins", "closed_run", "restart")
 #              (a content word whose stressed syllable sits on steps 11-20, with the same vowels from the stress to the end as the line's
 #              end word: bars 41, 42, 50), ours must land one within a syllable of the same position. A line re-cut into two bars would
 #              re-index every audio template, scheme letter and par table, so the bar-line rhyme is gated in place instead.
+#              It must also be as CLOSE as the original's (Joe: "Turkey and certi is same closeness as stranger and Naples?"): vowels alone
+#              let stranger / Naples (rapfit 0.69) stand in for Turkey / certi (0.81). Ours needs rapfit.score >= the original's - BAR_SLACK.
 BAR_MEASURES = ("fast_jam", "cell", "barline")
+BAR_SLACK = 0.10
 # Fitted 15 Oct 2026 on the only labels there are: the loosest tolerances that still catch all 4 flagged bars, which fail the
 # fewest bars of hook r3 (Joe: "I like this", bar 12 excepted): 5 of 15 still fail, and they are listed to Joe to judge. At 0/0/0/0 the
 # gate failed 11 of those 15. In-sample and tiny: every new verdict goes into flow_flagged.txt or flow_ok.txt and is re-checked here.
@@ -64,7 +67,8 @@ LABEL = {"stress_run": "stressed syllables in a row", "hard_joins": "hard mouth-
          "closed_run": "short closed vowels (ɪ ʊ) in a row", "restart": "sentence restarts mid-bar",
          "fast_jam": "stressed syllables jammed on back-to-back 16ths", "cell": "repeated cell + internal rhyme (needs a cell and internal rhyme >= the original's - 1)",
          "internal": "internal rhyme in a repeated-cell bar",
-         "barline": "rhyme at the bar line (needs a word at the original's syllable, +-1, with the same vowels as the line's end word; ours has none)"}
+         "barline": "rhyme at the bar line (needs a word at the original's syllable, +-1, with the same vowels as the line's end word; ours has none)",
+         "barline_close": "bar-line rhyme too loose (rapfit pair score with the line's end; must be within 0.10 of the original's)"}
 
 
 def _ww():
@@ -140,13 +144,14 @@ def _vowels(sy):
     return tuple(x[0] for x in sy[rapfit._anchors(sy)[0][0]:])
 
 
-def barline_hits(line):
+def barline_hits(line, scored=False):
     """[(syllable index of the stress, 1-based)] for content words before the end tail whose vowels, from the stressed syllable to the end,
-    are the line's end word's (an end rhyme landed inside the line)."""
+    are the line's end word's (an end rhyme landed inside the line). scored=True gives [(index, rapfit pair score with the end)]."""
     from ww.write import rapfit, rhymeview
     ws = line.split()
     ts = rhymeview.tail_start(ws)
-    E = rapfit._syl(rhymeview.tail_text(ws))
+    end = rhymeview.tail_text(ws)
+    E = rapfit._syl(end)
     if not E:
         return []
     out, i = [], 0
@@ -158,7 +163,7 @@ def barline_hits(line):
             if sy:
                 a = rapfit._anchors(sy)[0][0]
                 if rapfit.prominent(sy[a]) and _vowels(sy) == _vowels(E):
-                    out.append(i + a + 1)
+                    out.append((i + a + 1, rapfit.score(c, end)["score"]) if scored else i + a + 1)
         i += n
     return out
 
@@ -168,9 +173,9 @@ def barline_par(bar_no, line):
     t = ff.T[bar_no - 1] if 1 <= bar_no <= len(ff.T) else {}
     st = t.get("steps")
     if not st:
-        return 0
-    hits = [k for k in barline_hits(line) if k <= len(st) and 11 <= st[k - 1] <= 20 and k < len(st) - 1]
-    return hits[0] if hits else 0
+        return (0, 0.0)
+    hits = [(k, sc) for k, sc in barline_hits(line, scored=True) if k <= len(st) and 11 <= st[k - 1] <= 20 and k < len(st) - 1]
+    return hits[0] if hits else (0, 0.0)
 
 
 def internal(line):
@@ -204,9 +209,12 @@ def check(bar_no, line):
         if fj is not None and fj > par["fast_jam"]:
             out.append(("fast_jam", fj, par["fast_jam"]))
     if par.get("barline"):
-        k = par["barline"]
-        if not any(abs(h - k) <= 1 for h in barline_hits(line)):
+        k, need = par["barline"], par.get("barline_score", 0.0) - BAR_SLACK
+        near = [sc for h, sc in barline_hits(line, scored=True) if abs(h - k) <= 1]
+        if not near:
             out.append(("barline", 0, k))
+        elif max(near) < need:
+            out.append(("barline_close", max(near), round(par.get("barline_score", 0.0), 2)))
     if par.get("cell"):
         if not has_cell(line):
             out.append(("cell", 0, 1))
@@ -244,7 +252,7 @@ def build(orig_path):
     _ww()
     from ww import bridge
     bars = [dict(profile(l), syl=bridge.syllable_count(l), fast_jam=fast_jam(i + 1, l) or 0, cell=int(has_cell(l)), internal=internal(l),
-                 barline=barline_par(i + 1, l)) for i, l in enumerate(L)]
+                 barline=barline_par(i + 1, l)[0], barline_score=barline_par(i + 1, l)[1]) for i, l in enumerate(L)]
     json.dump({"_note": "Per-bar flow profile of the ORIGINAL (numbers only, rule 4), built by toolkit/flow_par.py --build. "
                         "A draft bar may be no worse than the original's bar in the same position.", "measures": list(MEASURES) + list(BAR_MEASURES), "bars": bars},
               open(PAR, "w", encoding="utf-8"), indent=1)
