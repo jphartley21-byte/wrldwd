@@ -25,6 +25,7 @@ on at least 75% of bars. Until then `ww gate` prints the marks as notes.
   python -m ww.write.qualityread --negatives     Joe's complaints swapped into the song: do they score below par?
   python -m ww.write.qualityread FILE --labels   write writing/quality_labels.md (Joe's sheet)
   python -m ww.write.qualityread --agree         Joe's filled sheet vs Claude, per axis (HARD needs >= 75% on >= 20 bars)
+  python -m ww.write.qualityread FILE --targets  "match the original" per section + character 2/2 (report-only; exit 1 on a miss)
 """
 from __future__ import annotations
 
@@ -318,9 +319,43 @@ def notes(r: dict) -> dict:
         out["_song"] = [f"CHARACTER consistent {c['consistent']}/2"] + \
             [f"CHARACTER bars {x['a']} vs {x['b']}: {x['why'][:100]}" for x in c.get("contradictions", [])] + \
             [f"CHARACTER bar {x['bar']} off card: {x['why'][:100]}" for x in c.get("off_card", [])]
+    P_ok = {s: section_targets(rows, P.get(s)) for s, rows in r["sections"].items() if isinstance(rows, list)}
+    if P_ok:
+        cs = c.get("consistent", "?") if isinstance(c, dict) else "?"
+        out.setdefault("_song", []).insert(0, f"TARGETS (match the original): {sum(1 for v in P_ok.values() if not v)}/{len(P_ok)} sections, "
+                                               f"character {cs}/2 (python -m ww.write.qualityread FILE --targets)")
     if r.get("unread"):
         out["_unread"] = r["unread"]
     return out
+
+
+TARGET_AXES = ("first_listen", "rewind", "clever")
+
+
+def section_targets(rows: list[dict], p: Optional[dict]) -> list[str]:
+    """what a section misses against "match the original" (Joe, 15 Oct 2026, for draft v2): first_listen / rewind / clever means at or
+    above the original's slot means, forced rate at or below the original's, and no bar at first_listen 0 or in_character 0.
+    [] = met. Without a par only the per-bar floors apply. REPORT-ONLY: these marks did not separate Joe's rejected bars."""
+    m = section_means(rows)
+    miss = []
+    if p:
+        miss += [f"{a} {m[a]:.2f} < {p[a]:.2f}" for a in TARGET_AXES if m[a] < p[a] - 1e-9]
+        if m["forced"] > p["forced"] + 1e-9:
+            miss.append(f"forced {m['forced']:.0%} > {p['forced']:.0%}")
+    miss += [f"bar {i + 1} first_listen 0" for i, r in enumerate(rows) if r["first_listen"] == 0]
+    miss += [f"bar {i + 1} in_character 0" for i, r in enumerate(rows) if r["in_character"] == 0]
+    return miss
+
+
+def targets(path: str, cached_only: bool = False) -> dict:
+    """{'sections': {slot: [misses]}, 'character': read, 'character_ok', 'met', 'ok'}; character_ok = consistent 2/2, no contradictions."""
+    r = read_file(path, cached_only=cached_only)
+    P = par()
+    secs = {s: (section_targets(rows, P.get(s)) if isinstance(rows, list) else ["not read"]) for s, rows in r["sections"].items()}
+    c = r.get("character")
+    char_ok = isinstance(c, dict) and c.get("consistent") == 2 and not c.get("contradictions")
+    return {"sections": secs, "character": c, "character_ok": char_ok, "met": sum(1 for v in secs.values() if not v),
+            "ok": bool(secs) and all(not v for v in secs.values()) and char_ok}
 
 
 # ---- negatives: Joe's complaints, swapped into the current song, must score below par ------------------------------------------
@@ -491,10 +526,15 @@ def selftest() -> tuple[bool, str]:
                        {"first_listen": 1, "rewind": 1, "in_character": 1, "clever": 0, "forced": "okay"}])
     if m != {"first_listen": 1.5, "rewind": 0.5, "in_character": 1.5, "clever": 0.5, "forced": 0.5}:
         problems.append(f"section_means: {m}")
+    rows = [{"first_listen": 2, "rewind": 1, "in_character": 2, "clever": 1, "forced": ""},
+            {"first_listen": 0, "rewind": 0, "in_character": 1, "clever": 0, "forced": "x", "forced_rate": 1.0}]
+    miss = section_targets(rows, {"first_listen": 1.0, "rewind": 0.5, "clever": 0.75, "forced": 0.25})
+    if miss != ["clever 0.50 < 0.75", "forced 50% > 25%", "bar 2 first_listen 0"]:
+        problems.append(f"section_targets: {miss}")
     s, i = _slot_of(42)
     if (s, i) != ("V1 25-32", 1):
         problems.append(f"bar 42 maps to {s} {i}")
-    return (not problems, "; ".join(problems) if problems else "card strips authorship, means, bar->slot mapping")
+    return (not problems, "; ".join(problems) if problems else "card strips authorship, means, targets, bar->slot mapping")
 
 
 def main(argv=None) -> int:
@@ -510,7 +550,17 @@ def main(argv=None) -> int:
     ap.add_argument("--negatives", action="store_true")
     ap.add_argument("--labels", action="store_true", help="write writing/quality_labels.md for Joe from FILE")
     ap.add_argument("--agree", action="store_true", help="Joe's filled sheet vs Claude's reads of the sheet's own bars, per axis")
+    ap.add_argument("--targets", action="store_true", help="FILE against 'match the original' per section + character 2/2; exit 1 on a miss")
     a = ap.parse_args(argv)
+    if a.targets:
+        t = targets(a.file, cached_only=a.cached)
+        for s, miss in t["sections"].items():
+            print(f"{s:10s} {'PASS' if not miss else 'MISS: ' + '; '.join(miss)}")
+        c = t["character"]
+        print(f"CHARACTER  {'PASS' if t['character_ok'] else 'MISS'}: consistent {c.get('consistent') if isinstance(c, dict) else '?'}/2"
+              + "".join(f"; bars {x['a']} vs {x['b']}" for x in (c or {}).get("contradictions", [])))
+        print(f"TARGETS: {t['met']}/{len(t['sections'])} sections" + (" + character: PASS" if t["ok"] else ": not all met"))
+        return 0 if t["ok"] else 1
     if a.labels:
         print(f"wrote {write_labels(a.file).relative_to(config.ROOT)}")
         return 0

@@ -83,7 +83,7 @@ OVR = {
     "g'day": "G AH0 D EY1", "ahoj": "AH0 HH OY1", "zivjo": "ZH IY1 V Y OW0",
     # UK slang and everyday British words absent from cmudict. Without a pronunciation here the
     # toolkit cannot count syllables, place stress or rhyme the word, so these were unusable.
-    "skint": "S K IH1 N T", "knackered": "N AE1 K ER0 D", "chuffed": "CH AH1 F T", "dodgy": "D AO1 JH IY0", "minging": "M IH1 NG IH0 NG", "bevvy": "B EH1 V IY0",
+    "conker": "K AA1 NG K ER0", "skint": "S K IH1 N T", "knackered": "N AE1 K ER0 D", "chuffed": "CH AH1 F T", "dodgy": "D AO1 JH IY0", "minging": "M IH1 NG IH0 NG", "bevvy": "B EH1 V IY0",
     "bevvies": "B EH1 V IY0 Z", "bevvied": "B EH1 V IY0 D", "sarnie": "S AA1 N IY0", "butty": "B AH1 T IY0", "scran": "S K R AE1 N", "trollied": "T R AO1 L IY0 D",
     "wazzock": "W AE1 Z AH0 K", "skive": "S K AY1 V", "skiving": "S K AY1 V IH0 NG", "faff": "F AE1 F", "faffing": "F AE1 F IH0 NG", "kipping": "K IH1 P IH0 NG",
     "nicking": "N IH1 K IH0 NG", "scarper": "S K AA1 P ER0", "scarpered": "S K AA1 P ER0 D", "rozzer": "R AA1 Z ER0", "numpty": "N AH1 M P T IY0", "div": "D IH1 V",

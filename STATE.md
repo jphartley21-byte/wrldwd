@@ -1816,3 +1816,10 @@ FIXED:
 - Character read (Haiku): consistent 1/2; bar 58 ("my crew") vs bar 72 ("lone wolf"); bars 27 and 49 off card (ordered account, long past-tense report).
 - Song rewritten for the sense gate (12 bars: Hook 1-4 bars 2-4, Hook 9-16 bar 6, V1 25-32 bars 3/4/5/8, V1 33-44 bars 4/9, V2 1-8 bars 3/7); ww gate PASS with the sense read ON. writing/song_know_a_guy_suno.txt and writing/quality_labels.md regenerated. Open: the character read's crew (bar 58) vs lone wolf (bar 72).
 - Repo: the session's checkout reads from GitHub again (fetch works; 22+ commits ahead of main). Push still refused: attaching write access was denied by the session's permission check.
+
+## 15 Oct 2026 (later 11) - v2 written to the quality targets (Joe: "Write a new version that passes all gates plus these new gates so I can see the difference")
+- ww/write/qualityread.py `--targets` (section_targets / targets): "match the original" per section (first listen, rewind, clever >= the original's Haiku par; forced <= par; no bar at first listen 0 or in character 0) + character 2/2. Report-only; one summary line in ww gate.
+- writing/song_know_a_guy_v2.md (32 bars changed): ww gate PASS; targets 6/10 + character 2/2 vs the current draft's 2/10 + 1/2. writing/song_know_a_guy_v1_vs_v2.md (side by side + scores), writing/song_know_a_guy_v2_suno.txt.
+- Misses: Hook 1-4 (the hook's place/swagger gates need a place list; Haiku marks it low), V1 25-32 (forced 44% vs 6%: bar-line rhymes and cashed idioms read as padding), V1 33-44 (inside the noise), V2 9-16 (forced). Re-reads move unchanged bars by 0.5: near-par results are noise.
+- toolkit/rhyme_tools.py OVR: "conker" added. The hook place counter (regression.is_place) does not know Perth or Hanoi.
+- OPEN: Joe's ear on v1 vs v2 - that is the test of whether the quality reader should ever gate.

@@ -112,3 +112,10 @@ Rewrite: 13 Cash for Cairns and it's cash for Wales and cash for Spain (Wales / 
     now "bad news"); "My boots in Bergen? Dead fatal" -> "Beer's dear in Bergen? Near fatal"; "a quick sneaky" (no noun) -> "a quick
     freebie"; "Bangkok, the roadside, and the top fried rice" -> "Bangkok? My guy's van does the top fried rice". ww gate PASS.
     Still open (report-only character read): bar 58 "My crew will play conkers" vs bar 72 "Lone wolf"; Joe's call.
+18. Joe: "Write a new version that passes all gates plus these new gates so I can see the difference". writing/song_know_a_guy_v2.md: 32 bars
+    rewritten against the quality targets ("match the original", Joe's choice). ww gate PASS; targets 6/10 sections + character 2/2 (the current
+    draft: 2/10, 1/2). Side by side with scores: writing/song_know_a_guy_v1_vs_v2.md. Findings: (a) Haiku's "forced" flag fires on most rhymed
+    endings, and the bar-line rhymes and cashed idioms are exactly what it flags, so V1 25-32 (par 6%) stayed at 31-50%; (b) the song-level place
+    and swagger gates force a place list into the hook, which Haiku marks low on first listen, so Hook 1-4 met the quality targets only when it
+    failed those gates; (c) re-reading one changed section moves unchanged bars by 0.5, so near-par passes are noise. The place counter does not
+    know Perth or Hanoi (only Greek, Bern, Dutch and Spain count in the hook).
