@@ -1,43 +1,38 @@
 {
- "_note": "Song-level PREMISES (plan step 3, 14 Oct 2026). Assistant-authored in the main thread from brief/persona.md and material/ingredients.md; flagged (persona), NOT approved by Joe. Joe did not want to choose up front, so all three are built to a full hook (writing/premise_hooks.md) and he picks by ear. Each section has an ARGUMENT (a claim about the narrator), the MOVES its bars make, and the INGREDIENTS (ids in material/ingredients.md) it may draw on in any order. `python -m ww.write.premise --plan ID` turns one into a plan file argue_stage reads.",
+ "_note": "Song-level PREMISES, rebuilt 15 Oct 2026 from rap-song archetypes (ww/lex/banks/rap_archetypes.json) after Joe rejected the 14 Oct set ('the premises should be like actual rap song premises'). Assistant-authored, flagged (persona) where they go beyond the material. Each section: an ARGUMENT (a first-person boast), the rap MOVES its bars make (deflate at most one bar in eight), and the INGREDIENTS (material/ingredients.md ids) it may draw on in any order. Most Wanted is planned for the whole song; Empire and I Know a Guy are planned to a full hook so Joe can choose by ear.",
  "premises": [
   {
-   "id": "shoestring",
-   "title": "Mr Worldwide on a shoestring",
-   "one_line": "He is a global high-roller whose fortune is a million in the wrong currency: every luxury he claims is priced, and the price is tiny.",
-   "trait_families": ["rich in the wrong currency (price over value)", "buys tat and crowns himself with it"],
+   "id": "most_wanted", "archetype": "most_wanted", "title": "Most Wanted",
+   "one_line": "I'm wanted all over the world, and the rap sheet is a wanted poster for excessive energy, a gnome off a lorry and a bike in a hedge.",
    "sections": {
-    "Hook 1-4": {"argument": "I'm a millionaire abroad and skint at home: the money only works where it's worthless.", "moves": ["aside", "flex", "deflate", "cash"], "ingredients": ["song:pool", "fact:naples_stag"]},
-    "Hook 5-8": {"argument": "My luxuries are real; they just cost less than a meal deal.", "moves": ["aside", "flex", "deflate", "cash"], "ingredients": ["fact:naples_stag", "fact:ams_cola", "fact:marrakesh_souk"]},
-    "Hook 9-16": {"argument": "My crown is a pink top hat and my estate is a garden gnome, and I'd do it all again for the price.", "moves": ["flex", "claim", "deflate", "aside", "flex", "claim", "callback", "cash"], "ingredients": ["song:tophat", "song:gnome", "fact:rot_gnome"]},
-    "V1 9-16": {"argument": "I don't get stranded, I get a free night under the stars with a mechanic thrown in.", "moves": ["claim", "flex", "deflate", "aside", "claim", "flex", "deflate", "cash"], "ingredients": ["song:jeep", "fact:k_gari"]},
-    "V2 1-8": {"argument": "I travel light: I leave the bike, the key and the helmet wherever they stop being useful.", "moves": ["claim", "flex", "deflate", "aside", "claim", "callback", "deflate", "cash"], "ingredients": ["song:hanoi", "song:floor"]}
+    "Hook 1-4": {"argument": "I'm wanted in every country I've set foot in.", "moves": ["shout_out", "brag", "flex_list", "punchline"], "ingredients": ["fact:bilbao_end", "fact:moto_ferry", "song:pool"]},
+    "Hook 5-8": {"argument": "Rotterdam wants its gnome back and I'm not giving it.", "moves": ["shout_out", "brag", "threat", "punchline"], "ingredients": ["song:gnome", "fact:rot_gnome"]},
+    "Hook 9-16": {"argument": "They printed my face on a poster: wanted for excessive energy.", "moves": ["brag", "flex_list", "brag", "threat", "flex_list", "punchline", "brag", "punchline"], "ingredients": ["fact:boom_guillotine", "song:tophat", "fact:boomtown_all"]},
+    "V1 1-8": {"argument": "My crew walks in anywhere, dripping, and nobody stops us.", "moves": ["brag", "brag", "flex_list", "name_drop", "brag", "threat", "deflate", "punchline"], "ingredients": ["song:tubing"]},
+    "V1 9-16": {"argument": "Leave me for dead in the desert and I'm back in Perth by ten.", "moves": ["brag", "threat", "brag", "flex_list", "brag", "name_drop", "brag", "punchline"], "ingredients": ["song:jeep", "fact:k_gari"]},
+    "V1 17-24": {"argument": "I'm banned from the biggest premiere of the decade.", "moves": ["shout_out", "brag", "flex_list", "brag", "threat", "name_drop", "brag", "punchline"], "ingredients": ["song:endgame", "fact:kings_day"]},
+    "V1 25-32": {"argument": "My lads move a million at a time, and the police take their cut.", "moves": ["brag", "threat", "flex_list", "brag", "hater", "brag", "deflate", "punchline"], "ingredients": ["song:pool", "song:bribe"]},
+    "V1 33-44": {"argument": "No fixed abode: I sleep where I like and the insects pay rent.", "moves": ["brag", "flex_list", "brag", "threat", "name_drop", "brag", "callback", "brag", "hater", "brag", "deflate", "punchline"], "ingredients": ["song:floor"]},
+    "V2 1-8": {"argument": "Every bike I hire is a getaway vehicle.", "moves": ["brag", "flex_list", "brag", "threat", "brag", "callback", "deflate", "punchline"], "ingredients": ["song:hanoi"]},
+    "V2 9-16": {"argument": "I don't break the rules, I read them, and I still get in.", "moves": ["brag", "threat", "brag", "flex_list", "title_drop", "brag", "callback", "punchline"], "ingredients": ["song:wasteland", "song:tophat"]}
    }
   },
   {
-   "id": "missed_it",
-   "title": "Been everywhere, seen nothing",
-   "one_line": "He has been to every main event on earth and can tell you nothing about any of them, because he was asleep, at the bar, or buying a gnome.",
-   "trait_families": ["sleeps through / misses the main event", "buys tat and crowns himself with it"],
+   "id": "empire", "archetype": "empire", "title": "Empire",
+   "one_line": "My empire runs on every continent, and it runs on a rail pass, a hostel bunk and two panniers.",
    "sections": {
-    "Hook 1-4": {"argument": "I've been to every big show going and I can't tell you how one of them ended.", "moves": ["aside", "flex", "deflate", "cash"], "ingredients": ["fact:kings_day", "fact:rl_rotterdam"]},
-    "Hook 5-8": {"argument": "The headliner was on, so I bought the gnome instead.", "moves": ["aside", "claim", "deflate", "cash"], "ingredients": ["song:gnome", "fact:rot_gnome", "fact:rl_rotterdam"]},
-    "Hook 9-16": {"argument": "Ask me about the waterfalls and I'll tell you about my boot; ask me about the film and I'll tell you about the carpet.", "moves": ["claim", "flex", "deflate", "aside", "claim", "flex", "callback", "cash"], "ingredients": ["fact:lauterbrunnen", "song:endgame", "song:tophat"]},
-    "V1 9-16": {"argument": "Being left behind is my best view of anywhere.", "moves": ["claim", "flex", "deflate", "aside", "claim", "flex", "deflate", "cash"], "ingredients": ["song:jeep", "fact:k_gari"]},
-    "V2 1-8": {"argument": "I did the whole of Vietnam; I just didn't do it on the bike I started on.", "moves": ["claim", "flex", "deflate", "aside", "claim", "callback", "deflate", "cash"], "ingredients": ["song:hanoi"]}
+    "Hook 1-4": {"argument": "I run an operation on every continent.", "moves": ["shout_out", "brag", "flex_list", "punchline"], "ingredients": ["fact:moto_ferry", "fact:bilbao_end"]},
+    "Hook 5-8": {"argument": "My statue stands in a square in Rotterdam.", "moves": ["shout_out", "brag", "name_drop", "punchline"], "ingredients": ["fact:rot_gnome", "song:gnome"]},
+    "Hook 9-16": {"argument": "My jet is a rail pass, my safe house a hostel, and my stash rides in the panniers.", "moves": ["brag", "flex_list", "brag", "threat", "flex_list", "punchline", "brag", "punchline"], "ingredients": ["fact:interrail_pass", "fact:moto_ferry", "song:pool"]}
    }
   },
   {
-   "id": "errand",
-   "title": "The world as an errand",
-   "one_line": "He does the world the way other people do the big shop: a list, a queue, a receipt, and nothing on earth worth raising his voice for.",
-   "trait_families": ["files the epic as an errand", "obeys the rules to the letter and wins"],
+   "id": "know_a_guy", "archetype": "know_a_guy", "title": "I Know a Guy",
+   "one_line": "I've got people in every city: a bloke with a torch in the desert, a bouncer in Amsterdam, a bike shop in Hanoi.",
    "sections": {
-    "Hook 1-4": {"argument": "Three countries on a bike is just my round; the hard bit is the ferry check-in.", "moves": ["aside", "claim", "deflate", "cash"], "ingredients": ["fact:moto_ferry", "fact:bilbao_end"]},
-    "Hook 5-8": {"argument": "A bribe is a parking fine if you keep the receipt.", "moves": ["aside", "flex", "deflate", "cash"], "ingredients": ["song:bribe", "fact:boom_guillotine"]},
-    "Hook 9-16": {"argument": "Every border is a counter and I always have my number ready.", "moves": ["claim", "flex", "deflate", "aside", "claim", "flex", "callback", "cash"], "ingredients": ["fact:interrail_pass", "song:wasteland", "fact:bf_honesty"]},
-    "V1 9-16": {"argument": "A breakdown in the desert is a booking with a late check-in.", "moves": ["claim", "flex", "deflate", "aside", "claim", "flex", "deflate", "cash"], "ingredients": ["song:jeep", "fact:k_gari"]},
-    "V2 1-8": {"argument": "I returned the bike to Vietnam, just not to the shop.", "moves": ["claim", "flex", "deflate", "aside", "claim", "callback", "deflate", "cash"], "ingredients": ["song:hanoi"]}
+    "Hook 1-4": {"argument": "Wherever I land, I know a guy.", "moves": ["shout_out", "brag", "flex_list", "punchline"], "ingredients": ["fact:bilbao_end", "song:jeep"]},
+    "Hook 5-8": {"argument": "My man in Rotterdam can get you a gnome by morning.", "moves": ["shout_out", "brag", "threat", "punchline"], "ingredients": ["song:gnome", "fact:rot_gnome"]},
+    "Hook 9-16": {"argument": "My people: the bloke with the torch, the bouncer, the shop that never asks.", "moves": ["brag", "name_drop", "brag", "threat", "flex_list", "punchline", "brag", "punchline"], "ingredients": ["song:jeep", "song:wasteland", "song:hanoi", "song:bribe"]}
    }
   }
  ]

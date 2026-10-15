@@ -50,9 +50,10 @@ def to_plan(pid: str) -> dict:
         moves = []
         for k, mv in enumerate(sec["moves"]):
             moves.append({"bars": _bars_label(slot, k), "move": mv,
-                          "transform": {"flex": "exaggerate", "deflate": "understate", "claim": "as routine", "callback": "invert"}.get(mv, "none"),
+                          "transform": {"brag": "boast", "flex_list": "exaggerate", "threat": "boast", "deflate": "understate",
+                                        "callback": "invert", "name_drop": "boast", "hater": "boast"}.get(mv, "none"),
                           "source": "any ingredient below, in any order"})
-        secs.append({"slot": slot, "argument": sec["argument"], "mechanisms": ["1 CASHED IDIOM", "9 BATHOS CLOSER"], "moves": moves,
+        secs.append({"slot": slot, "argument": sec["argument"], "mechanisms": ["1 CASHED IDIOM"], "moves": moves,
                      "facts_used": [ingredients.as_prompt([r]) for r in recs], "concepts": [],
                      "callbacks_in": "", "callbacks_out": "", "closer": "the last bar deflates: the smallest word lands on the rhyme",
                      "premise": f"{p['title']}: {p['one_line']}"})
@@ -81,12 +82,29 @@ def request(n: int = 3, model: str = "ds-flash"):
                    temperature=0.9, stage="premise", scope="write")
 
 
+ARCHETYPES = config.ROOT / "ww" / "lex" / "banks" / "rap_archetypes.json"
+FIRST_PERSON = ("i ", "i'm", "i've", "my ", "me ", "i'd", "i'll")
+
+
+def archetypes() -> dict:
+    return {a["id"]: a for a in json.load(open(ARCHETYPES, encoding="utf-8"))["archetypes"]}
+
+
 def selftest() -> tuple[bool, str]:
+    """a premise must be a rap premise: it names an archetype from the bank, its premise line and every section argument are
+    first-person boasts, its moves are rap moves, and deflate stays at or under one bar in eight (song_bible revision 2)."""
+    import math
     problems = []
     from . import ingredients
+    from .argue_stage import MOVES, DEFLATE_PER_BARS
     known = {r["id"] for r in ingredients.records()}
+    arch = archetypes()
     from .slotcheck import spec
     for p in load():
+        if p.get("archetype") not in arch:
+            problems.append(f"{p['id']}: archetype {p.get('archetype')!r} is not in the rap archetype bank")
+        if not any(f in (" " + p["one_line"].lower() + " ") for f in (" " + x for x in FIRST_PERSON)):
+            problems.append(f"{p['id']}: the premise line is not a first-person boast")
         for slot, sec in p["sections"].items():
             n = spec(slot)["n"]
             if len(sec["moves"]) != n:
@@ -94,14 +112,22 @@ def selftest() -> tuple[bool, str]:
             bad = [i for i in sec["ingredients"] if i not in known]
             if bad:
                 problems.append(f"{p['id']} {slot}: unknown ingredients {bad}")
-            if sec["moves"][-1] not in ("cash", "deflate"):
-                problems.append(f"{p['id']} {slot}: the last move should land (cash or deflate)")
+            if sec["moves"][-1] not in ("punchline", "title_drop", "threat"):
+                problems.append(f"{p['id']} {slot}: the last move should land (punchline)")
+            bad_mv = [m for m in sec["moves"] if m not in MOVES]
+            if bad_mv:
+                problems.append(f"{p['id']} {slot}: not rap moves {bad_mv}")
+            if sec["moves"].count("deflate") > math.ceil(n / DEFLATE_PER_BARS):
+                problems.append(f"{p['id']} {slot}: {sec['moves'].count('deflate')} deflates in {n} bars (cap: one in {DEFLATE_PER_BARS})")
+            if not any(f in (" " + sec["argument"].lower() + " ") for f in (" " + x for x in FIRST_PERSON)):
+                problems.append(f"{p['id']} {slot}: the argument is not a first-person boast")
         plan = to_plan(p["id"])
         if not plan["plan"]["sections"] or "moves" not in plan["plan"]["sections"][0]:
             problems.append(f"{p['id']}: plan has no moves")
     if len(load()) < 3:
         problems.append("fewer than three premises")
-    return (not problems, "; ".join(problems) if problems else f"{len(load())} premises, every section's moves match its frame, every ingredient known")
+    return (not problems, "; ".join(problems) if problems else
+            f"{len(load())} rap premises (archetypes from the bank), first-person boasts, rap moves, deflate capped, ingredients known")
 
 
 def main(argv=None) -> int:

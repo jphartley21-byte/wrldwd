@@ -79,8 +79,8 @@ def _moves_selftest():
                      {"bars": "bar 4", "job": "The exit", "content": "the ferry"}]}
     mv = argue_stage.beats_to_moves(sec)
     got = [m["move"] for m in mv]
-    ok = got[0] == "aside" and got[-1] == "deflate" and all(m["move"] in argue_stage.MOVES for m in mv) and mv[1]["transform"] == "re-file as admin"
-    return ok, f"an itinerary's beats become moves {got} with the source kept as the ingredient"
+    ok = got[0] == "shout_out" and got[-1] == "punchline" and got.count("deflate") <= 1 and all(m["move"] in argue_stage.MOVES for m in mv)
+    return ok, f"an itinerary's beats become rap moves {got} with the source kept as the ingredient"
 
 
 def cmd_selftest(_args) -> int:

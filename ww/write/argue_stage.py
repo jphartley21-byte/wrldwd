@@ -178,33 +178,40 @@ def plan_jobs(slot: str) -> list[str]:
 # writer was handed the trip in time order and wrote it back in time order, which toolkit/recount.py now measures (the original's song
 # recount share is 0.20; every draft built from beats measured 0.50-0.78). A move is what a bar DOES to the listener; a true fact is an
 # INGREDIENT the move transforms, never a step in a timeline.
-MOVES = {
-    "claim": "state something about the narrator or the world as plain fact, present tense, no time order",
-    "flex": "a boast: something big or illicit said flatly in an everyday register",
-    "deflate": "drop the big thing to a small, domestic or admin detail",
-    "aside": "a one-bar stamp: a place, a local word, a brand or a greeting, said in passing",
-    "callback": "return to an earlier prop or claim with a new verb",
-    "cash": "a stock phrase cashed literally, the payoff word in the rhyme slot",
-}
+# RAP MOVES (15 Oct 2026). The first move list (claim, flex, deflate, aside, callback, cash) gave deflation equal weight, and the
+# premises built on it were self-deprecating sketches Joe rejected ("reads like a diary not a rap song"). The moves are now the ones
+# rap songs are built from (ww/lex/banks/rap_archetypes.json); the boast leads and deflate is capped at one bar in eight
+# (brief/song_bible.md revision 2). The old names are kept as aliases so a migrated plan still reads.
+def _rap_moves() -> dict:
+    try:
+        return json.load(io.open(config.ROOT / "ww" / "lex" / "banks" / "rap_archetypes.json", encoding="utf-8"))["moves"]
+    except Exception:  # noqa: BLE001
+        return {"brag": "a first-person status claim", "punchline": "a stock phrase cashed in the rhyme slot",
+                "deflate": "the big thing drops to a small British detail"}
+
+
+MOVES = _rap_moves()
+MOVE_ALIASES = {"claim": "brag", "flex": "brag", "aside": "shout_out", "cash": "punchline"}
 TRANSFORMS = ["exaggerate", "invert", "understate", "re-file as admin", "hypothetical", "boast", "as routine", "none"]
-_MOVE_KEYS = [("cash", r"idiom|cash|stock phrase|pun|double"), ("aside", r"greet|hello|stamp|place|local word|brand|name"),
-              ("callback", r"callback|return|again"), ("deflate", r"clos|exit|small|petty|bathos|deflat|modal|might|admin|detail"),
-              ("flex", r"boast|brag|flex|illicit|big|menace|extraordinary")]
+DEFLATE_PER_BARS = 8
+_MOVE_KEYS = [("punchline", r"idiom|cash|stock phrase|pun|double"), ("shout_out", r"greet|hello|stamp|local word"),
+              ("callback", r"callback|return|again"), ("threat", r"threat|warn|menace|or else"),
+              ("flex_list", r"list|three|countries|stamps|currenc"), ("name_drop", r"brand|name|famous|celebrit"),
+              ("hater", r"\byou\b|doubter|hater"), ("deflate", r"petty|bathos|deflat|small detail")]
 
 
 def beats_to_moves(section: dict) -> list[dict]:
-    """migrate a plan section's itinerary `beats` to `moves` (deterministic, keyword-based; the source text is kept as the ingredient).
-    The last bar of a block defaults to deflate (the original's runs end on a closer that drops from big to small)."""
+    """migrate a plan section's itinerary `beats` to rap `moves` (deterministic, keyword-based; the source text is kept as the
+    ingredient). A bar with no other cue is a BRAG; the last bar of a block is the PUNCHLINE; deflate only where the beat asks for it."""
     beats = section.get("beats") or []
     out = []
     for k, b in enumerate(beats):
         text = f"{b.get('job', '')} {b.get('content', '')}".lower()
         move = next((m for m, pat in _MOVE_KEYS if re.search(pat, text)), None)
         if move is None:
-            move = "deflate" if k == len(beats) - 1 and len(beats) > 1 else "claim"
-        transform = {"flex": "exaggerate", "deflate": "understate", "cash": "none", "aside": "none", "callback": "invert"}.get(move)
-        if transform is None:
-            transform = "re-file as admin" if re.search(r"report|chore|delivery|round|admin|errand", text) else "as routine"
+            move = "punchline" if k == len(beats) - 1 and len(beats) > 1 else "brag"
+        transform = {"brag": "boast", "flex_list": "exaggerate", "threat": "boast", "deflate": "understate", "punchline": "none",
+                     "shout_out": "none", "callback": "invert", "name_drop": "boast", "hater": "boast"}.get(move, "boast")
         out.append({"bars": b.get("bars") or b.get("bar") or "", "move": move, "transform": transform,
                     "source": b.get("content", ""), "was_job": b.get("job", "")})
     return out
@@ -237,7 +244,7 @@ def _beat_rows(slot: str) -> list[dict]:
         rng = m.group(1).strip() if m else ""
         syl = re.search(r"(\d+)\s*(?:syl|,)", label)
         shapes = re.findall(r"\|S+[wS]*|~[wS]+", label)
-        mv = b.get("move", "claim")
+        mv = MOVE_ALIASES.get(b.get("move", "brag"), b.get("move", "brag"))
         tf = b.get("transform", "none")
         job = f"MOVE {mv} ({MOVES.get(mv, mv)})" + (f"; transform the ingredient: {tf}" if tf and tf != "none" else "")
         src = b.get("source", "")
@@ -339,10 +346,11 @@ def family_lock(slot: str) -> list[str]:
 
 SEED_SCHEMA_ARGS = seed_stage.SEED_SCHEMA
 
-ANTI_RECOUNT = ("NOT A DIARY. The section argues something; it does not tell the trip. Never chain past-tense events ('we left... we rode... "
-                "we lost...') and never sequence places ('stop one... then... next...'): the original's longest run of past-tense event bars is "
-                "three, and it never lists places in time order (toolkit/recount.py fails a block that does). A true fact may be moved anywhere, "
-                "exaggerated, inverted, understated or re-filed as admin; a flagged embellishment (persona) is allowed.")
+ANTI_RECOUNT = ("A RAP SONG, NOT A DIARY. The section BOASTS: status, reach, notoriety, menace, said flat. It does not tell the trip. "
+                "Never chain past-tense events ('we left... we rode... we lost...') and never sequence places ('stop one... then... next...'): the "
+                "original's longest run of past-tense event bars is three, and it never lists places in time order (toolkit/recount.py). The "
+                "comedown is at most one bar in eight (toolkit/swagger.py measures the boast). A true fact may be moved anywhere, exaggerated "
+                "or re-filed as an operation; a flagged embellishment (persona) is allowed.")
 
 
 def seed_request(slot: str, n: int = 6, model: str = "ds-flash", effort: str = "high",

@@ -14,7 +14,7 @@ from . import seed_stage, sound_plan
 
 # the attitude each bar takes (14 Oct 2026). A bar that only reports the next thing that happened takes no stance; the recount gate
 # (toolkit/recount.py) fails blocks made of them, so the writer is asked to name each bar's stance up front.
-STANCES = ["claim", "boast", "deadpan_report", "deflate", "menace_in_bland", "aside", "callback"]
+STANCES = ["brag", "flex_list", "shout_out", "threat", "name_drop", "hater", "punchline", "title_drop", "callback", "deflate"]
 
 
 def block_schema(nbars: int) -> dict:
@@ -56,9 +56,9 @@ GRAMMAR: introduce every person and thing before you refer to it. A bar may not 
 JOBS:
 {jobs}
 
-NOT A DIARY: the bars are CLAIMS by a character, not a list of what happened in order. Never chain past-tense events ("we left... we rode... then...") and never sequence places ("stop one... then... next..."). A true event is an ingredient: turn it into a present-tense claim, a boast, a routine, or a flat aside. At most two bars in a row may report a past event.
+A RAP SONG, NOT A DIARY: the bars are BOASTS by a character (status, reach, menace, notoriety), said flat; the comedown is at most one bar in eight. Never chain past-tense events ("we left... we rode... then...") and never sequence places ("stop one... then... next..."). A true event is an ingredient: turn it into a present-tense claim, a boast, a routine, or a flat aside. At most two bars in a row may report a past event.
 
-For each bar also give: claim (what it says in at most 15 words), stance (the attitude the bar takes: claim, boast, deadpan_report, deflate, menace_in_bland, aside or callback) and plain (the same thing said in ordinary speech with no rhyme constraint). Return JSON only."""
+For each bar also give: claim (what it says in at most 15 words), stance (the rap move the bar makes: brag, flex_list, shout_out, threat, name_drop, hater, punchline, title_drop, callback or deflate; at most one deflate in eight bars) and plain (the same thing said in ordinary speech with no rhyme constraint). Return JSON only."""
 
 
 def _length_rule(sylls, examples=None) -> str:

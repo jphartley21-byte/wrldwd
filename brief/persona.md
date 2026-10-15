@@ -1,50 +1,56 @@
 # Persona bible: the narrator (one page)
 
-Built 14 Oct 2026 from the trait families in `material/ingredients.md` (`python -m ww.write.ingredients`). It is the through-line
-that replaces chronology: a section holds together because the same man is talking, not because one event follows another.
-Assistant-authored from Joe's material and his own pasted song. Everything here is **(persona)** under rule 5: Joe vetoes.
+Rewritten 15 Oct 2026, swagger first. The 14 Oct version listed what he gets wrong: sleeps through things, skint, left behind.
+Joe heard the result as "a diary not a rap song". The song bible's revision 2 already said it: the boast leads, and the comedown
+is about one bar in eight.
+
+He is a RAPPER. The joke is the evidence. Assistant-authored from Joe's material and his own pasted song. Anything beyond the
+material is **(persona)** under rule 5, and Joe vetoes it.
 
 ## Who he is
-Joe's narrator: early thirties, Reading-raised, lives in Bristol. Has been everywhere and is impressed by none of it. Talks about a
-world tour the way other people talk about a trip to the tip. Never raises his voice, never explains, never reacts. The big thing is
-said flat; the small thing is said as if it mattered.
+- Joe's narrator, early thirties, Reading-raised, Bristol-based.
+- He talks like the most notorious man in every country he has passed through.
+- Gruff, flat, never loud, never explains.
+- The boast is huge and said as if it were obvious. The proof is small, specific and true.
 
-## The five things he does (from the trait families, most evidence first)
-1. **Sleeps through the main event.** Misses the headliner, the film's ending, the waterfalls, the wanted poster. Reports the miss as
-   a result. (6 ingredients: King's Day aisle, Rolling Loud phones, the gnome over the show, Lauterbrunnen boot, Boomtown poster.)
-2. **Is rich in the wrong currency.** Brags in numbers, not value: a million that is thirty quid, three-euro cocktails, the special
-   price, a room he paid for and slept outside. (5: the pool hustle, Naples, Marrakesh, the cola menu, the hostel floor.)
-3. **Files the epic as an errand.** A three-country motorbike tour is a delivery round; a bribe is a parking fine; Europe is a paper
-   round with a form to fill in. (5: the ferry, the Interrail pass, Bilbao, the coppers, the in-laws' doormat.)
-4. **Buys tat and crowns himself with it.** The gnome, the pink top hat, the wristband. Props, not souvenirs. (3)
-5. **Gets left behind and calls it a plan.** The second jeep, the ditched Honda, the tide. (3)
-Supporting: obeys the rules to the letter and wins (Wasteland: jeans refused, admitted in less; the honesty box). Narrates his mate's
-nerve rather than his own (the tube in the bar) -- the mate is a character: two mentions maximum (rule 6).
+## What he claims (the swagger, from material/ingredients.md's `swagger` field)
+1. **Notoriety.** He is wanted everywhere.
+   - On a poster at Boomtown (WANTED FOR EXCESSIVE ENERGY)
+   - Thrown out of the Avengers premiere
+   - Turned away for his jeans and back in without them
+   - The gnome off a lorry
+   - A bike left in a Vietnamese hedge
+2. **Reach.** Three countries on a bike before the ferry. Twelve stops on one rail pass. Every continent in his passport.
+3. **Money.** The lads clear a million at a time (dong). The police take their cut. Three-euro cocktails by the tray.
+4. **Untouchable.** Left for dead in the desert and back in Perth by ten. Rain, tide, bouncers and borders don't stop him.
+5. **People.** He knows a guy everywhere: the bloke with the torch, the bouncer, the shop that never asks.
 
-## What he brags about
-Mileage, countries, currencies, quantities (twelve stops, seventy-two waterfalls, one mil), the price he paid, the prop he kept.
-Never the view, never the feeling, never the lesson.
-
-## How he deflates
-Big -> small inside two to four bars: the sight becomes a queue, the danger becomes a form, the million becomes thirty quid, the
-festival becomes a gnome. The closer lands the smallest word on the rhyme. A modal shrug ("might") at most once per song.
+## How the evidence lands (the comedy, at most one bar in eight)
+- **The proof is petty.** A million in dong is thirty quid; the empire's statue is a garden gnome.
+- **The register is everyday British admin.** Ready for collection, terms and conditions, next customer please.
+- **It is never explained.** The listener does the arithmetic.
 
 ## Register
-Everyday British admin and shop talk: ready for collection, terms and conditions, next customer please, unexpected item, quote the
-order number, items held for seven days. Present tense for claims ("I'm the only..."; "my hat's been..."). Past tense only for a
-flat two-bar report of something big or illicit, then back to a claim.
+- Present tense for claims ("I'm wanted in...", "my people...").
+- Past tense only for a flat two-bar report of something big or illicit, then back to the boast.
+- Cartoon menace, never instructional.
+- Swearing and vulgar slang allowed (rule 5).
 
-## Recurring props (callbacks: a prop returns with a new verb, never the same frame)
-- the gnome (Rotterdam) -- bought, then insured, then declared at customs
-- the pink top hat (Boomtown, Wasteland) -- found, then worn like a crown, then the only thing he was wearing
-- the wristband -- the one bit of paperwork he keeps
-- the million (in dong) -- the bank balance he quotes
+## Recurring props (callbacks: a prop returns with a new verb)
+- the WANTED poster
+- the gnome
+- the pink top hat
+- the million in dong
+- the rail pass
 
-## Flagged embellishments (persona) -- names allowed in bars, Joe to confirm
-These are inventions or extensions on true places. A capitalised word listed here passes evolve.check_free like a true place.
+## Flagged embellishments (persona), names allowed in bars, Joe to confirm
+A capitalised word listed here passes evolve.check_free like a true place.
 - Gnome Depot (invented: the gnome's "supplier")
 - Corrie (TV, Coronation Street: a reference, not a place)
 
 ## Never
-A list of what happened in order. "Stop one / then / next". "We left... we rode... we lost...". A moral. An explained joke. The
-original's own frames (rule 5).
+- A list of what happened in order.
+- Self-pity.
+- A moral.
+- An explained joke.
+- The original's own frames (rule 5).

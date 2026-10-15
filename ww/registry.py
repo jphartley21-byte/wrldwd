@@ -56,6 +56,9 @@ LEGACY = {
     # (passes its own par: song recount share 0.20, longest verse chain 3, no itinerary bars) and catches all three named recounts
     # (v17 V1 33-44 itinerary, v17 V2 1-8 Hanoi diary, v5 V1 9-16 jeep). Song shares: original 0.20, v17 0.50, v5 0.66, pasted 0.78.
     "toolkit/recount.py (claim-share quota)": ("validated", "original passes its own par; 3 of 3 named recounts fail; deterministic"),
+    # 15 Oct 2026: the original passes (hook stamps 9/16, verse swagger 25/60); v5, v6 and the three 14 Oct premise hooks fail.
+    # A lexicon proxy: it says whether the song boasts at all, not whether a boast is good.
+    "toolkit/swagger.py (hook stamps + verse menace)": ("validated", "original passes its own par; 5 of 5 drafts Joe rejected as diaries fail"),
     "ww/judge/reader.py event/claim labels": ("unvalidated", "never run against the original; ww/judge/reader_validate.py is the test "
                                                              "(needs DEEPSEEK_API_KEY, absent in the 14 Oct cloud session)"),
 }

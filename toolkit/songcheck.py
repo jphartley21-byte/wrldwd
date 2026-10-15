@@ -293,6 +293,24 @@ def recount_gates(sections, fails, notes):
     notes.append(f"recount share {song:.0%} (the original 20%)")
 
 
+def swagger_gates(sections, fails, notes):
+    """Song level: hook stamps and verse menace at the original's par (toolkit/swagger.py, 15 Oct 2026). Judged only on a full
+    song (hook + verses), because the original's own sections vary from 0 to 6 of 8."""
+    try:
+        import swagger
+    except Exception as e:  # noqa: BLE001
+        notes.append(f"swagger not measured ({e.__class__.__name__})")
+        return
+    named = [(s, b) for s, b in sections if s and b]
+    if len(named) < 5:
+        return
+    m = swagger.measure(named)
+    fails.extend("swagger: " + f for f in swagger.fails_of(m))
+    hs, hn = m["hook_stamps"]
+    vs, vn = m["verse_menace"]
+    notes.append(f"swagger: hook stamps {hs}/{hn}, verse swagger {vs}/{vn} (original 9/16, 25/60)")
+
+
 def run(sections, title):
     fails, notes = [], []
     for slot, bars in sections:
@@ -302,6 +320,7 @@ def run(sections, title):
         scheme_gate(slot, bars, fails, notes)
     verse_gate(sections, fails, notes)
     recount_gates(sections, fails, notes)
+    swagger_gates(sections, fails, notes)
     device_gates(sections, fails, notes)
     imagery_gates(sections, fails, notes)
     song_gates(sections, title, fails, notes)

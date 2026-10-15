@@ -173,4 +173,14 @@ ok &= good
 print(("ok  " if good else "BAD ") + "recount (claims vs diary): " +
       ("the original clears its own par, the itinerary / diary / jeep recounts all fail" if good
        else (rs + rcal + rneg).strip()[-160:]))
+# SWAGGER (15 Oct 2026): does the song boast like a rap song or shrug like a diary? Hook stamps and verse menace at the
+# original's own par; the drafts Joe rejected as diaries / non-rap premises must fail.
+ss = run([os.path.join(HERE, "swagger.py"), "--selftest"], "")
+scal = run([os.path.join(HERE, "swagger.py"), "--calibrate", sys.argv[1]], "")
+sneg = run([os.path.join(HERE, "swagger.py"), "--negatives"], "")
+good = "PASSED" in ss and "CALIBRATION: PASSED" in scal and "NEGATIVES: PASSED" in sneg
+ok &= good
+print(("ok  " if good else "BAD ") + "swagger (boast vs shrug): " +
+      ("the original clears its own par; v5, v6 and the three 14 Oct premise hooks fail" if good
+       else (ss + scal + sneg).strip()[-160:]))
 print("CALIBRATION", "PASSED" if ok else "FAILED: fix the tools before using them")
