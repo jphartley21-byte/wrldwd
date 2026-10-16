@@ -573,6 +573,8 @@ def check(slot: str, bars: list[str], context: list[str] | None = None, tol: int
         try:
             from . import sensecheck
             sc_ = sensecheck.check(bars)
+            if sc_.get("unjudged"):   # 16 Oct 2026: a read that did not run is not a pass (ww/write/gate.py reports it as GATE OFF)
+                notes.append("sense read unavailable: " + next((str(r_["unjudged"]) for r_ in sc_["rows"] if r_.get("unjudged")), "")[:60])
             par_ = sensecheck.slot_par(slot)   # Claude judge: per-slot par from the original (it fails 37/76 of the original's bars per bar)
             for n_, why_ in sc_["fails"]:
                 (hard if par_ is None else notes).append(f"sense: bar {n_}: {why_}")

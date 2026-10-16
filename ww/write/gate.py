@@ -31,8 +31,8 @@ def gates_off() -> list[str]:
     off = []
     if os.environ.get("WW_SENSE", "1") == "0":
         off.append("sense read (WW_SENSE=0)")
-    elif not config.secret("DEEPSEEK_API_KEY") and not shutil.which("claude") and not config.secret("ANTHROPIC_API_KEY"):
-        off.append("sense read (no DEEPSEEK_API_KEY, no ANTHROPIC_API_KEY and no `claude` CLI: the model read cannot run)")
+    elif _sense_unrunnable():
+        off.append(f"sense read ({_sense_unrunnable()})")
     if os.environ.get("WW_RAPFIT_GATE", "1") == "0":
         off.append("stress-anchored rhyme rule (WW_RAPFIT_GATE=0)")
     if os.environ.get("WW_TEXTURE", "1") == "0":
@@ -44,6 +44,24 @@ def gates_off() -> list[str]:
     if os.environ.get("WW_LEGACY_FLOW", "0") == "1":
         off.append("current flow rules replaced by the legacy ones (WW_LEGACY_FLOW=1)")
     return off
+
+
+def _sense_unrunnable():
+    """why the SELECTED sense reader cannot run, or None. 16 Oct 2026: with WW_SENSE_MODEL=haiku, no `claude` CLI on PATH and a
+    DeepSeek key set, every bar came back unjudged and the verdict said PASS with no GATE OFF line (the old test asked whether ANY
+    reader could run, not the one chosen)."""
+    try:
+        from . import sensecheck
+        from ..llm import pricing
+        m = sensecheck.model()
+        prov = pricing.provider(m)
+    except Exception as e:  # noqa: BLE001
+        return f"the sense model could not be resolved: {str(e)[:60]}"
+    if prov == "anthropic" and not shutil.which("claude") and not config.secret("ANTHROPIC_API_KEY"):
+        return f"{m}: no `claude` CLI on PATH and no ANTHROPIC_API_KEY, the model read cannot run"
+    if prov == "deepseek" and not config.secret("DEEPSEEK_API_KEY"):
+        return f"{m}: no DEEPSEEK_API_KEY, the model read cannot run"
+    return None
 
 
 def _tool(name: str, path: str) -> str:
@@ -126,7 +144,14 @@ def run(path: str) -> dict:
         except Exception as e:  # noqa: BLE001 - report-only
             point_unread = [f"error: {str(e)[:60]}"]
     n_hard = sum(len(v["hard"]) for v in secs.values()) + len(file_hard)
-    return {"ok": n_hard == 0 and bool(secs), "off": gates_off(), "sections": secs, "file": file_hard, "hard": n_hard,
+    off = gates_off()
+    # a model read that was chosen but did not run (CLI not logged in, network) is a gate OFF, not a pass (16 Oct 2026)
+    for kind, label in (("sense read unavailable", "sense read"), ("US slang read unavailable", "US-only slang read")):
+        miss = [s for s, v in secs.items() if any(n.startswith(kind) for n in v["notes"])]
+        if miss and not any(x.startswith(label) for x in off):
+            why = next(n for n in secs[miss[0]]["notes"] if n.startswith(kind)).split(":", 1)[-1].strip()
+            off.append(f"{label} did not run in {len(miss)} section(s) ({why[:60]})")
+    return {"ok": n_hard == 0 and bool(secs), "off": off, "sections": secs, "file": file_hard, "hard": n_hard,
             "notes": sum(len(v["notes"]) for v in secs.values()), "quality": quality, "point_unread": point_unread}
 
 
