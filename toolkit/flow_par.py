@@ -88,6 +88,8 @@ LABEL = {"stress_run": "stressed syllables in a row", "hard_joins": "hard mouth-
          "barline": "rhyme at the bar line (needs a word at the original's syllable, +-1, with the same vowels as the line's end word; ours has none)",
          "run_breaks": "stops inside a 16th-note run (a ? : , or ! where the next syllable comes straight after)",
          "same_step": "stressed syllables crammed onto ONE 16th (where the original's bar puts a weak syllable in that slot)",
+         "cell_echo": "sound-alike cell: the original's bar sets two DIFFERENT words on one sound frame and vowel; ours has only",
+         "cell_at": "sound-alike cell position: the two echo words must start within a syllable of the original's; ours start at",
          "pause": "pause position (the original pauses after syllable(s) {p}; ours does not break there)",
          "stops": "mid-bar stops (a ? : , . or ! inside the bar; at most one more than the original's bar)",
          "barline_close": "bar-line rhyme too loose (rapfit pair score with the line's end; must be within 0.10 of the original's)"}
@@ -259,15 +261,45 @@ def run_breaks(bar_no, line):
     return sum(1 for k in breaks(line) if k < len(steps) and 0 <= steps[k] - steps[k - 1] <= 1)
 
 
-def has_cell(line):
-    """a repeated cell inside the bar: a content word said twice or more (acronyms spelled out), or an in-bar drum / echo (toolkit/ear.py)."""
+def cell_kinds(line):
+    """{'repeat', 'drum', 'echo'}: the kinds of repeated cell inside the bar. repeat = a content word said twice or more (acronyms
+    spelled out); drum / echo = DIFFERENT words on one sound frame (toolkit/ear.py)."""
     import collections
     import ear
     from ww.write import rhymeview
-    ws = [rhymeview.core(w) for w in spell(line).split()]
+    ws = [ear._stem(rhymeview.core(w)) for w in spell(line).split()]
     ws = [w for w in ws if w and w not in rhymeview.FUNC]
-    rep = max(collections.Counter(ws).values()) if ws else 0
-    return rep >= 2 or bool(ear.drums([line])) or bool(ear.echoes([line]))
+    out = set()
+    if ws and max(collections.Counter(ws).values()) >= 2:
+        out.add("repeat")
+    if ear.drums([line]):
+        out.add("drum")
+    if ear.echoes([line]):
+        out.add("echo")
+    return out
+
+
+def has_cell(line):
+    """a repeated cell inside the bar: a content word said twice or more, or an in-bar drum / echo (toolkit/ear.py)."""
+    return bool(cell_kinds(line))
+
+
+def echo_at(line):
+    """[(syllable where word 1 starts, where word 2 starts)] for each pair of DIFFERENT words on one sound frame and vowel
+    (ear.echoes) in the bar, 1-based flow_fit syllables."""
+    import ear
+    toks, starts, i = line.split(), [], 1
+    for t in toks:
+        w = re.sub(r"[^a-z']", "", t.lower().replace("\u2019", "'"))
+        starts.append((w, i))
+        i += len(ff.sylls(t))
+    out = []
+    for _, ws in ear.echoes([line]):
+        names = [w for _, w, _ in ws]
+        pos = [p for w, p in starts if w in names]
+        if len(pos) >= 2:
+            out.append((pos[0], pos[1]))
+    return out
 
 
 def _vowels(sy):
@@ -393,8 +425,14 @@ def check(bar_no, line):
         if miss:
             out.append(("pause", have, par["pause"]))
     if par.get("cell"):
-        if not has_cell(line):
+        kinds = cell_kinds(line)
+        if not kinds:
             out.append(("cell", 0, 1))
+        elif par.get("cell_kind") == "echo" and not (kinds & {"echo", "drum"}):
+            out.append(("cell_echo", sorted(kinds), "echo"))
+        elif par.get("cell_at") and not any(abs(a - par["cell_at"][0]) <= 1 and abs(b - par["cell_at"][1]) <= 1
+                                            for a, b in echo_at(line)):
+            out.append(("cell_at", [list(x) for x in echo_at(line)], par["cell_at"]))
         elif internal(line) < par.get("internal", 0) - 1:
             out.append(("internal", internal(line), par.get("internal", 0)))
     return out
@@ -425,6 +463,18 @@ def par_syl(bar_no):
     return tab[bar_no - 1].get("syl")
 
 
+def _cell_par(line):
+    """where the bar's cell is two DIFFERENT words on one sound frame (16 Oct 2026, Joe on bar 48: "the rhythm of" its sound-alike
+    pair), the kind and where the two words start; a cell met by repeating a word needs only a cell."""
+    k = cell_kinds(line)
+    if not k:
+        return {}
+    if k & {"echo", "drum"}:
+        at = echo_at(line)
+        return {"cell_kind": "echo", **({"cell_at": list(at[0])} if at else {})}
+    return {"cell_kind": "repeat"}
+
+
 def build(orig_path):
     L = [l.strip() for l in open(orig_path, encoding="utf8") if l.strip()][:76]
     _ww()
@@ -432,6 +482,7 @@ def build(orig_path):
     bars = [dict(profile(l), syl=bridge.syllable_count(l), fast_jam=fast_jam(i + 1, l) or 0, cell=int(has_cell(l)), internal=internal(l),
                  barline=barline_par(i + 1, l)[0], barline_score=barline_par(i + 1, l)[1], pause=breaks(l),
                  same_step=same_step(i + 1, l) or 0, run_breaks=run_breaks(i + 1, l) or 0,
+                 **_cell_par(l),
                  carry=int(i + 1 < len(L) and carry(l, L[i + 1])[0])) for i, l in enumerate(L)]
     json.dump({"_note": "Per-bar flow profile of the ORIGINAL (numbers only, rule 4), built by toolkit/flow_par.py --build. "
                         "A draft bar may be no worse than the original's bar in the same position.", "measures": list(MEASURES) + list(BAR_MEASURES), "bars": bars},

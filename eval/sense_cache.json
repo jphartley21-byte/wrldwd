@@ -45984,5 +45984,744 @@
 "[haiku]\nUSSLANG2\nMozzarella? The staples? It's my guy in Naples\nMarrakesh when I'm able, my guy there, so check the label\nBarber's chair, cut-throat blade, on the house, cards on the table\nMy boots in Bergen? Dead fatal\nOn the ferry, flat calm, Thai mainland\nBut the fags are that cheap dead cheeky\nForty a day? My guy is sorting me\nWhere am I? Gone to my guy's guy, he's local, for more freebies": [
 [],
 []
+],
+"[haiku]\nCARRY1\nMozzarella? The staples? It's my guy in Naples\nMarrakesh when I'm able, my guy there, so check the label\nBarber's chair, cut-throat blade, on the house, cards on the table\nMy boots in Bergen? Dead fatal / On the ferry, flat calm, Thai mainland\nBut the fags are that cheap dead cheeky\nForty a day? My guy is sorting me\nBack at the gaff of my guy's guy who's local, for more freebies": [
+{
+"n": 1,
+"reading": "Is it mozzarella or the staples? It's my contact in Naples.",
+"grammatical": true,
+"sense": 1,
+"issue": "Question fragments are speakable, but 'the staples' is unclear."
+},
+{
+"n": 2,
+"reading": "When I'm able, I'll go to Marrakesh, where my guy is, so check the label.",
+"grammatical": true,
+"sense": 1,
+"issue": "Elliptical 'when I'm able' and the label instruction are strained."
+},
+{
+"n": 3,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 0,
+"issue": "Noun-phrase list: barber's chair, blade, house, cards; no verb or clause."
+},
+{
+"n": 4,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 0,
+"issue": "Fragments: 'Dead fatal', 'flat calm, Thai mainland'; no complete clause.",
+"sentence": [
+4,
+5
+]
+},
+{
+"n": 5,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 0,
+"issue": "Fragments: 'Dead fatal', 'flat calm, Thai mainland'; no complete clause.",
+"sentence": [
+4,
+5
+]
+},
+{
+"n": 6,
+"reading": "But the cigarettes are that cheap, which is dead cheeky.",
+"grammatical": true,
+"sense": 1,
+"issue": "Clause is speakable; 'dead cheeky' is strained slang."
+},
+{
+"n": 7,
+"reading": "My guy is sorting me out for forty a day.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Forty a day?' is a bare question fragment; quantity unclear."
+},
+{
+"n": 8,
+"reading": "I am back at the house of my guy's local guy, for more freebies.",
+"grammatical": false,
+"sense": 1,
+"issue": "No verb: 'Back at the gaff... for more freebies' is a fragment."
+}
+],
+"[haiku]\nBLOCK2C\nMozzarella? The staples? It's my guy in Naples\nMarrakesh when I'm able, my guy there, so check the label\nBarber's chair, cut-throat blade, on the house, cards on the table\nMy boots in Bergen? Dead fatal / On the ferry, flat calm, Thai mainland\nBut the fags are that cheap dead cheeky\nForty a day? My guy is sorting me\nBack at the gaff of my guy's guy who's local, for more freebies": {
+"thread": "The speaker claims that wherever he goes he has a \"guy\" who sorts him out with cheap or free goods and services, a network that keeps getting bigger.",
+"coherent": 1,
+"issue": "Bar 4 jumps from Bergen boots to a Thai ferry with no link to the contact claim.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Marrakesh contact repeats the Naples pattern, so it builds the claim."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Free barber service escalates the freebies theme."
+},
+{
+"n": 4,
+"follows": false,
+"issue": "Boots in Bergen and a Thai ferry are unrelated places and events, with no contact or freebie."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Cheap cigarettes support the cheap-goods claim, though the bar is brief."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Forty a day being sorted by a guy directly continues the claim."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "A guy's guy escalates the network and returns to the freebies."
+}
+]
+},
+"[haiku]\nUSSLANG2\nMozzarella? The staples? It's my guy in Naples\nMarrakesh when I'm able, my guy there, so check the label\nBarber's chair, cut-throat blade, on the house, cards on the table\nMy boots in Bergen? Dead fatal\nOn the ferry, flat calm, Thai mainland\nBut the fags are that cheap dead cheeky\nForty a day? My guy is sorting me\nBack at the gaff of my guy's guy who's local, for more freebies": [
+[],
+[]
+],
+"[haiku]\nOne black book and the numbers? I'll charge ya\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy guy's cruiser? Moored out in Palma\nStab vests? Nah I charm 'em\nFat cheques? I bung the judge lager\nCross me? Just you wait and see\nGrazie grazie tram drivers! A rum and no drama": [
+{
+"n": 1,
+"reading": "Would you like one black book and the numbers? I'll charge you for them.",
+"grammatical": true,
+"sense": 1,
+"issue": "Slang 'the numbers' and 'black book' are strained without context; the offer is guessable."
+},
+{
+"n": 2,
+"reading": "Me, at the honesty box? I've paid in full, and it's karma.",
+"grammatical": false,
+"sense": 1,
+"issue": "'Paid in full: karma' has no clear clause; karma is a bare noun."
+},
+{
+"n": 3,
+"reading": "Is that in my suit? Man, it's good Prada.",
+"grammatical": true,
+"sense": 1,
+"issue": "Question about 'in my suit' is elliptical; the claim is only guessable."
+},
+{
+"n": 4,
+"reading": "My guy's cruiser is moored out in Palma.",
+"grammatical": false,
+"sense": 1,
+"issue": "'Moored out in Palma' is a participle phrase with no finite verb."
+},
+{
+"n": 5,
+"reading": "Stab vests? No, I charm them.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Charm 'em' has an unclear object; meaning is strained."
+},
+{
+"n": 6,
+"reading": "Fat cheques? I bribe the judge with lager.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Bung' and 'lager' as bribe are slang; the ditransitive reads oddly."
+},
+{
+"n": 7,
+"reading": "If you cross me, just wait and see.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "Thank you, thank you, tram drivers! A rum, and no drama.",
+"grammatical": true,
+"sense": 1,
+"issue": "Exclamation works, but 'a rum and no drama' is a bare wish-fragment; meaning strained."
+}
+],
+"[haiku]\nBLOCK2\nOne black book and the numbers? I'll charge ya\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy guy's cruiser? Moored out in Palma\nStab vests? Nah I charm 'em\nFat cheques? I bung the judge lager\nCross me? Just you wait and see\nGrazie grazie tram drivers! A rum and no drama": {
+"thread": "The speaker is a smooth-talking hustler who charms, bribes and flaunts his way out of every accusation and threat, and expects to get away with it.",
+"coherent": 1,
+"issue": "Accusations behind each question are never stated; tram drivers bar floats unexplained.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Honesty box denial with 'karma' deflects a hustle with a wry innocence claim."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Suit and Prada flaunt ill-gotten style; the accusation is implied, not stated."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Borrowed yacht in Palma escalates the luxury-flaunting theme, though it is a new person."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Charming stab-vest wearers escalates from money to physical threats."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Bribing a judge with lager escalates the corruption theme clearly."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Menacing warning to anyone who crosses him fits the untouchable claim."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Thanks to tram drivers is unexplained, though 'no drama' closes the untouchable theme."
+}
+],
+"thread_check": "x"
+},
+"[haiku]\nUSSLANG2\nOne black book and the numbers? I'll charge ya\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy guy's cruiser? Moored out in Palma\nStab vests? Nah I charm 'em\nFat cheques? I bung the judge lager\nCross me? Just you wait and see\nGrazie grazie tram drivers! A rum and no drama": [
+[],
+[]
+],
+"[haiku]\nDublin's mine: my bar tab's in credit\nMy man pays for negligence\nCustoms won't open the crate it's medical\nChemist wiped it of all of the evidence\nWho is that, lying down? Just a passenger\nAnd the guards at the border? Flatter ya\nWhere's the guy? Lying low in Canada\nDrove the man in vans, a real Marathon": [
+{
+"n": 1,
+"reading": "Dublin is mine, and my bar tab is in credit.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "My man pays for negligence.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "Customs won't open the crate because it's medical.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "The chemist wiped the evidence off it completely.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "Who is that lying down? Just a passenger.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "'Flatter ya' has no subject; guards flattering you is only guessable."
+},
+{
+"n": 7,
+"reading": "Where's the guy? He's lying low in Canada.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "I drove the man in vans, a real marathon.",
+"grammatical": false,
+"sense": 1,
+"issue": "Missing subject; 'a real Marathon' is an unclear appositive."
+}
+],
+"[haiku]\nBLOCK2\nDublin's mine: my bar tab's in credit\nMy man pays for negligence\nCustoms won't open the crate it's medical\nChemist wiped it of all of the evidence\nWho is that, lying down? Just a passenger\nAnd the guards at the border? Flatter ya\nWhere's the guy? Lying low in Canada\nDrove the man in vans, a real Marathon": {
+"thread": "The speaker is a Dublin fixer who claims his money and contacts (paid-off chemists, customs, border guards) bury a crime, a dead passenger and a fugitive, with him as the driver.",
+"coherent": 1,
+"issue": "Who is dead and who is \"the guy\" are never established; \"flatter ya\" and \"lying down\" are opaque.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Paying off a man for negligence supports the bribery-and-cover-up claim."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Customs refusing to open the crate extends the corrupt-officials theme."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "A chemist wiping evidence escalates the cover-up."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "A body passed off as a passenger escalates the stakes, though 'lying down' is a loose pun."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Border guards being bought continues the theme, but 'flatter ya' is unclear."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "The fugitive lying low in Canada escalates the story, though 'the guy' is unintroduced."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "The speaker as getaway driver ties him to the operation; 'Marathon' is a weak pun."
+}
+]
+},
+"[haiku]\nUSSLANG2\nDublin's mine: my bar tab's in credit\nMy man pays for negligence\nCustoms won't open the crate it's medical\nChemist wiped it of all of the evidence\nWho is that, lying down? Just a passenger\nAnd the guards at the border? Flatter ya\nWhere's the guy? Lying low in Canada\nDrove the man in vans, a real Marathon": [
+[],
+[]
+],
+"[haiku]\nMozzarella that's pricey? My guy does it nicely\nIn Marrakesh it's dicey? My guy's Rolexes are icy\nBarber's cut-throat shave? Free: so I live the life of Riley\nThese days I drive a hard bargain\nNow the man I use has met Kylie\nNow the man I use is dead cheeky\nFifty quid? Now don't say my guy cheats me\nBack on a train up to Bern, ring the burner, for more freebies": [
+{
+"n": 1,
+"reading": "My guy handles the pricey mozzarella nicely.",
+"grammatical": true,
+"sense": 1,
+"issue": "Opening question is a fragment; 'does it nicely' leaves the action vague."
+},
+{
+"n": 2,
+"reading": "It's risky in Marrakesh, though my guy's Rolexes are cold.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Icy' Rolexes is strained slang; the link to the risk is unclear."
+},
+{
+"n": 3,
+"reading": "I get a free cut-throat shave from the barber, so I live the life of Riley.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "These days I drive a hard bargain.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "Now the man I use has met Kylie.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "Now the man I use is dead cheeky.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "Don't say my guy cheats me at fifty quid.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "Back on a train up to Bern, ring the burner for more freebies.",
+"grammatical": true,
+"sense": 1,
+"issue": "Opening is a bare fragment; who rings whom, and why, is unclear."
+}
+],
+"[haiku]\nBLOCK2\nMozzarella that's pricey? My guy does it nicely\nIn Marrakesh it's dicey? My guy's Rolexes are icy\nBarber's cut-throat shave? Free: so I live the life of Riley\nThese days I drive a hard bargain\nNow the man I use has met Kylie\nNow the man I use is dead cheeky\nFifty quid? Now don't say my guy cheats me\nBack on a train up to Bern, ring the burner, for more freebies": {
+"thread": "A cheeky, scheming Brit boasts that his connection, \"my guy\", gets him luxury goods and freebies for next to nothing, so he lives like a king.",
+"coherent": 1,
+"issue": "Unclear who 'my guy' is; bar 7's cheating undercuts the bargain swagger.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Marrakesh and Rolexes extend the fixer-supplies-luxury idea."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Free shave continues the freebies theme and the good life."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Hard bargain follows from the free and cheap goods."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Name-dropping Kylie escalates the guy's status, though it is a thin link."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Restates the guy with a new quality; 'dead cheeky' is vague but on theme."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Contrasts the bargain claim by hinting the guy cheats him, a deflation."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Train and burner phone are a new scene, but freebies ties it back to the guy."
+}
+]
+},
+"[haiku]\nUSSLANG2\nMozzarella that's pricey? My guy does it nicely\nIn Marrakesh it's dicey? My guy's Rolexes are icy\nBarber's cut-throat shave? Free: so I live the life of Riley\nThese days I drive a hard bargain\nNow the man I use has met Kylie\nNow the man I use is dead cheeky\nFifty quid? Now don't say my guy cheats me\nBack on a train up to Bern, ring the burner, for more freebies": [
+[],
+[]
+],
+"[haiku]\nOne black book and the numbers? I'll charge ya\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy guy's cruiser? Moors up in Palma\nStab vests? Nah I charm 'em\nFat cheques? I bung the judge lager\nCross me? Just you wait and see\nGrazie grazie tram drivers! With rum there's no drama": [
+{
+"n": 1,
+"reading": "One black book and the numbers? I'll charge you.",
+"grammatical": true,
+"sense": 1,
+"issue": "Opening is a bare noun fragment; 'black book and the numbers' needs guessing."
+},
+{
+"n": 2,
+"reading": "Honesty box? Me? I'm paid in full, in karma.",
+"grammatical": false,
+"sense": 1,
+"issue": "'Paid in full: karma' is a clauseless fragment, closer to a word list."
+},
+{
+"n": 3,
+"reading": "I'm in my suit, and it's good Prada.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "My guy's cruiser moors up in Palma.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "Stab vests? No, I charm them.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Charm 'em' has an unclear object; charming stab vests makes no sense."
+},
+{
+"n": 6,
+"reading": "I bung the judge lager.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "Cross me? Just you wait and see.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "Grazie, grazie, tram drivers! With rum there's no drama.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nOne black book and the numbers? I'll charge ya\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy guy's cruiser? Moors up in Palma\nStab vests? Nah I charm 'em\nFat cheques? I bung the judge lager\nCross me? Just you wait and see\nGrazie grazie tram drivers! With rum there's no drama": {
+"thread": "The speaker is a flashy, charming fixer who buys, bribes or charms his way out of every threat and consequence, and the world he lives in is one where money and charisma beat the law.",
+"coherent": 2,
+"issue": "Bar 8's tram drivers are an unexplained aside before the rum punchline, so the bribery pattern briefly gets lost.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Honesty-box theft deflated with 'karma' fits the con-artist claim."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Designer suit reinforces the flashy, moneyed persona."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "A friend's boat moored in Palma extends the wealth claim."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Charming armed men escalates from money to personal charisma."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Bribing a judge with beer escalates the corruption theme."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "A threat that he meets with confidence, consistent with untouchability."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Tram drivers are odd, but 'with rum there's no drama' returns to bribery by gift."
+}
+]
+},
+"[haiku]\nUSSLANG2\nOne black book and the numbers? I'll charge ya\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy guy's cruiser? Moors up in Palma\nStab vests? Nah I charm 'em\nFat cheques? I bung the judge lager\nCross me? Just you wait and see\nGrazie grazie tram drivers! With rum there's no drama": [
+[
+{
+"n": 1,
+"word": "the numbers",
+"sense": "an illegal lottery/numbers racket run as organised gambling",
+"uk": "a British listener would hear 'the numbers' as just figures or digits, so the gambling reference would be missed"
+}
+],
+[]
+],
+"[haiku]\nOne black book and the numbers? I'll charge ya\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy guy's cruiser? Sits out in Palma\nStab vests? Nah I charm 'em\nFat cheques? I bung the judge lager\nCross me? Just you wait and see\nGrazie grazie tram drivers! With rum there's no drama": [
+{
+"n": 1,
+"reading": "Do you want one black book and the numbers? I'll charge you.",
+"grammatical": true,
+"sense": 1,
+"issue": "Fragmentary question; 'black book' and 'numbers' are unclear without context."
+},
+{
+"n": 2,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "'Paid in full: karma' is a participle with no clause; the payment claim is strained."
+},
+{
+"n": 3,
+"reading": "Is that in my suit? It's good Prada.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "My mate's cruiser? It sits out in Palma.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "Stab vests? No, I charm them.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Charm 'em' is strained: charm them into what, or out of what?"
+},
+{
+"n": 6,
+"reading": "I bribe the judge with lager.",
+"grammatical": false,
+"sense": 1,
+"issue": "'Bung the judge lager' lacks 'a' or 'with'; the double object is ungrammatical."
+},
+{
+"n": 7,
+"reading": "Cross me? Just wait and see.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "Thank you, tram drivers! With rum, there's no drama.",
+"grammatical": true,
+"sense": 1,
+"issue": "Thanking tram drivers and linking rum to no drama is unclear."
+}
+],
+"[haiku]\nBLOCK2\nOne black book and the numbers? I'll charge ya\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy guy's cruiser? Sits out in Palma\nStab vests? Nah I charm 'em\nFat cheques? I bung the judge lager\nCross me? Just you wait and see\nGrazie grazie tram drivers! With rum there's no drama": {
+"thread": "The speaker is a charming, flashy fixer who claims he is untouchable because he bribes judges, charms or threatens anyone who might come after him, and treats the consequences as a joke.",
+"coherent": 1,
+"issue": "The closing tram-drivers shout-out comes from nowhere and undercuts the menace without setup.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Honesty box and karma joke supports the 'I don't pay, I'm untouchable' claim."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Prada suit adds to the flashy, untouchable persona."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "A friend's cruiser in Palma extends the wealthy, untouchable lifestyle."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Charming the stab-vest wearers escalates the 'I talk my way out' theme."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Bribing the judge with lager is the clearest statement of the untouchable claim."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "A veiled threat escalates the menace behind the charm."
+},
+{
+"n": 8,
+"follows": false,
+"issue": "Thanking tram drivers is a sudden shift with no link to the bribery and threats before it."
+}
+]
+},
+"[haiku]\nUSSLANG2\nOne black book and the numbers? I'll charge ya\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy guy's cruiser? Sits out in Palma\nStab vests? Nah I charm 'em\nFat cheques? I bung the judge lager\nCross me? Just you wait and see\nGrazie grazie tram drivers! With rum there's no drama": [
+[],
+[]
+],
+"[haiku]\nMozzarella that's pricey? My guy does it nicely\nIn Marrakesh it's dicey? My guy's Rolexes are icy\nBarber's cut-throat shave? Free: so I live the life of Riley\nThese days I drive a hard bargain\nNow the man I use has met Kylie\nNow the man I use is dead cheeky\nFifty quid? Now don't say my guy cheats me\nBack on the train to Bern, I ring his burner, for more freebies": [
+{
+"n": 1,
+"reading": "Is the mozzarella pricey? My guy does it nicely.",
+"grammatical": true,
+"sense": 1,
+"issue": "Elliptical question; 'does it nicely' has no clear object, so the claim is strained."
+},
+{
+"n": 2,
+"reading": "Is it dicey in Marrakesh? My guy's Rolexes are icy.",
+"grammatical": true,
+"sense": 1,
+"issue": "Elliptical question; 'icy' as slang for Rolexes is strained and unclear."
+},
+{
+"n": 3,
+"reading": "Is a barber's cut-throat shave free, so that I live the life of Riley?",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "These days I drive a hard bargain.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "Now the man I use has met Kylie.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "Now the man I use is dead cheeky.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "Fifty quid? Now don't say my guy cheats me.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "Back on the train to Bern, I ring his burner, for more freebies.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nMozzarella that's pricey? My guy does it nicely\nIn Marrakesh it's dicey? My guy's Rolexes are icy\nBarber's cut-throat shave? Free: so I live the life of Riley\nThese days I drive a hard bargain\nNow the man I use has met Kylie\nNow the man I use is dead cheeky\nFifty quid? Now don't say my guy cheats me\nBack on the train to Bern, I ring his burner, for more freebies": {
+"thread": "The speaker boasts that his dodgy fixer gets him luxuries (Rolexes, free shaves, celebrity connections, freebies) for nothing or next to nothing, so he lives large on shady dealings.",
+"coherent": 1,
+"issue": "Bars 5–6 pad the same point, and the Kylie and Bern jumps are unsignposted.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Escalates the fixer's reach abroad with dodgy Rolexes, supporting the claim."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Adds another free perk, continuing the freebies theme."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Shifts to the speaker's own bargaining, linking to the cheap-deal claim."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Escalates the fixer's clout by name-dropping a celebrity, though it is abrupt."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Calls the fixer brazen, but only restates bar 5's frame with a new adjective."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Shows the fixer cheating, which directly backs up the dodgy-dealings claim."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Jumps to Bern by train, but the burner phone and freebies tie it back to the claim."
+}
+]
+},
+"[haiku]\nUSSLANG2\nMozzarella that's pricey? My guy does it nicely\nIn Marrakesh it's dicey? My guy's Rolexes are icy\nBarber's cut-throat shave? Free: so I live the life of Riley\nThese days I drive a hard bargain\nNow the man I use has met Kylie\nNow the man I use is dead cheeky\nFifty quid? Now don't say my guy cheats me\nBack on the train to Bern, I ring his burner, for more freebies": [
+[],
+[]
 ]
 }

@@ -31,9 +31,20 @@ sys.path.insert(0, HERE)
 import rhyme_tools as rt             # noqa: E402
 import flow_fit as ff                # noqa: E402
 
-VOW = set("AA AE AH AO AW AY EH ER EY IH IY OW OY UH UW".split())
-STOP_C = set("P T K B D G".split())
-PLURAL = {"Z", "S"}
+import helpers                       # noqa: E402
+ARPA_VOW = set("AA AE AH AO AW AY EH ER EY IH IY OW OY UH UW".split())
+IPA_VOW = helpers.VOWELS + "\u0250"     # + ɐ: Britfone writes the vowel of "one", "but" with it, and helpers.VOWELS lacks it
+
+
+class _Vowels:
+    """a phone is a vowel if it is an ARPAbet vowel (the US fallback) or an IPA vowel (helpers.uk_phones, the British reading)."""
+    def __contains__(self, ph):
+        return ph in ARPA_VOW or any(c in IPA_VOW for c in ph)
+
+
+VOW = _Vowels()
+STOP_C = set("P T K B D G p t k b d g".split())
+PLURAL = {"Z", "S", "z", "s"}
 WINDOW = 4                            # bars: a quad, or a couplet that reaches across a bar line
 _CACHE = {}
 
@@ -54,7 +65,14 @@ def content(bar):
 
 
 def phones(word):
-    return [re.sub(r"\d", "", p) for p in (rt.pron(word.lower()) or [])]
+    """British phones (helpers.uk_phones: Britfone, else CMU + OVR in IPA), stress marks dropped; the US dictionary only when
+    neither knows the word. 16 Oct 2026: the US reading gave 'Marathon' the vowel of 'merry' and 'bottle' the vowel of 'Bali',
+    so a British ear's echoes were missed and false ones counted."""
+    w = word.lower()
+    uk = helpers.uk_phones(w) or (helpers.uk_phones(w.replace("'", "")) if "'" in w else None)
+    if uk:
+        return [x.replace("\u02c8", "").replace("\u02cc", "") for x in uk]
+    return [re.sub(r"\d", "", p) for p in (rt.pron(w) or [])]
 
 
 def sylls_of(word):
@@ -147,6 +165,12 @@ def pivots(bars):
 
 
 def _stem(w):
+    # a possessive is the same word (16 Oct 2026: "guy's guy" read as two words echoing, so one word said twice
+    # passed as a sound-alike pair)
+    w = w.replace("\u2019", "'")
+    for s in ("'s", "s'"):
+        if w.endswith(s) and len(w) > len(s):
+            w = w[:-len(s)]
     return w[:-1] if len(w) > 3 and w.endswith("s") else w
 
 
@@ -277,7 +301,7 @@ def selftest():
     ok &= len(pv) == 1 and pv[0][2] == "halo" and not cr
     print("   pivot on 'halo':", bool(pv) and pv[0][2] == "halo")
     pv2, dr2, ec2, cr2 = report(DRUM_FIXTURE, "synthetic drum: one syllable frame, four moving vowels")
-    t_l = [d for d in dr2 if d[0] == ("T", "L")]
+    t_l = [d for d in dr2 if tuple(x.lower() for x in d[0]) == ("t", "l")]
     print(f"   T_L drum: {bool(t_l)}; occurrences {len(t_l[0][1]) if t_l else 0}; "
           f"crosses bars: {t_l[0][2][1] > t_l[0][2][0] if t_l else False}")
     ok &= bool(t_l) and len(t_l[0][1]) >= 4 and t_l[0][2][1] > t_l[0][2][0]

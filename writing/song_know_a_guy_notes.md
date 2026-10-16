@@ -179,3 +179,8 @@ Rewrite: 13 Cash for Cairns and it's cash for Wales and cash for Spain (Wales / 
     where the original stops, never that it did not stop elsewhere. Now HARD: at most one stop more than the original's same bar. The
     original stops 26 times in the whole song; v4 stopped 63 times. Eight bars said through; bar 48 is "Back at the gaff of my guy's guy
     who's local, for more freebies".
+31. Joe (16 Oct), still on bar 48: the original "sounds so good because of the rhythm of" its three two-syllable words. Measured: two
+    DIFFERENT words on one consonant frame and vowel, starting at syllables 6 and 10, then the end word. Ours met the "repeated cell"
+    rule by saying one word twice ("guy's guy"), and a possessive bug let that pass as an echo. Now the echo must be two different
+    words at the original's positions; the echo detector also hears British vowels now. Bar 48 is "Back on the train to Bern, I ring
+    his burner, for more freebies" (Bern ~ burner at 6 and 10); bars 40 and 24 fixed the same way.

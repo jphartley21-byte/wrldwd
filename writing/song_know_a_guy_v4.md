@@ -34,6 +34,11 @@
 # through; bar 48 now has the original's shape (one long phrase, one stop, a tag). A loanword bug ('yes' counted as a local word) hid
 # a verse shortfall: bars 61 ('a slab', was 'a yacht') and 63 ('a baht fried rice') now carry real local words. Bar 2 'Served ten years
 # in Crete' is persona (Crete is true). ww gate: every section PASS (sense ON); FAIL only on the hook's local words (3 of 4), open.
+# SOUND-ALIKE CELLS, same day (Joe: bar 48 'still not sure ... the original sounds so good because of the rhythm of' its sound-alike
+# words): where the original's bar repeats a cell with two different words on one sound frame, ours must too, at the same syllables
+# (toolkit/flow_par.py, HARD); 'guy's guy' no longer counts. Bar 48 'Back on the train to Bern, I ring his burner, for more freebies'
+# (Bern ~ burner, syllables 6 and 10), bar 40 'Drove the man in vans, a real Marathon', bar 24 'Grazie grazie tram drivers! With rum
+# there's no drama' (tram / rum / drama drum; trams invented), bar 20 'Sits out in Palma'. ww gate: every section PASS (sense ON).
 # V3 (16 Oct 2026, Joe: "Go for all 3, add the gates, verify them, then write the new draft to pass all gates and print it"): v2 rewritten to
 # the new rhyme-texture gate (toolkit/texture.py: internal rhyme amount + strength, frame / link sandwiches, multisyllabic runs across
 # words, each per section against the original's same section). v2 failed it in 8 of 10 sections; v3 passes all 10. ww gate PASS
@@ -96,11 +101,11 @@ Hanoi bikes are getaway cars
 One black book and the numbers? I'll charge ya
 Honesty box? Me? Paid in full: karma
 In my suit? Man! It's good Prada
-My guy's cruiser? Moored out in Palma
+My guy's cruiser? Sits out in Palma
 Stab vests? Nah I charm 'em
 Fat cheques? I bung the judge lager
 Cross me? Just you wait and see
-Grazie grazie train drivers! A month and no drama
+Grazie grazie tram drivers! With rum there's no drama
 #cash 7 | wait and see | see
 #cash 8 | no drama | drama
 
@@ -128,7 +133,7 @@ Chemist wiped it of all of the evidence
 Who is that, lying down? Just a passenger
 And the guards at the border? Flatter ya
 Where's the guy? Lying low in Canada
-Rode in van to van, a real Marathon
+Drove the man in vans, a real Marathon
 #cash 1 | on credit | credit
 #cash 5 | just a passenger | passenger
 
@@ -141,7 +146,7 @@ These days I drive a hard bargain
 Now the man I use has met Kylie
 Now the man I use is dead cheeky
 Fifty quid? Now don't say my guy cheats me
-Back at the gaff of my guy's guy who's local, for more freebies
+Back on the train to Bern, I ring his burner, for more freebies
 #cash 3 | the life of Riley | Riley
 #cash 4 | drive a hard bargain | bargain
 #cash 6 | dead cheeky | cheeky

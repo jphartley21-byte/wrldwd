@@ -10,7 +10,8 @@
   "barline",
   "pause",
   "same_step",
-  "run_breaks"
+  "run_breaks",
+  "stops"
  ],
  "bars": [
   {
@@ -221,6 +222,7 @@
    "pause": [],
    "same_step": 0,
    "run_breaks": 0,
+   "cell_kind": "repeat",
    "carry": 1
   },
   {
@@ -408,6 +410,7 @@
    ],
    "same_step": 0,
    "run_breaks": 1,
+   "cell_kind": "echo",
    "carry": 0
   },
   {
@@ -673,6 +676,11 @@
    "pause": [],
    "same_step": 0,
    "run_breaks": 0,
+   "cell_kind": "echo",
+   "cell_at": [
+    3,
+    8
+   ],
    "carry": 0
   },
   {
@@ -809,6 +817,11 @@
    ],
    "same_step": 0,
    "run_breaks": 0,
+   "cell_kind": "echo",
+   "cell_at": [
+    6,
+    10
+   ],
    "carry": 0
   },
   {
@@ -844,6 +857,7 @@
    ],
    "same_step": 0,
    "run_breaks": 0,
+   "cell_kind": "repeat",
    "carry": 0
   },
   {
@@ -1275,6 +1289,7 @@
    ],
    "same_step": 0,
    "run_breaks": 0,
+   "cell_kind": "repeat",
    "carry": 0
   }
  ]

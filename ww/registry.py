@@ -102,6 +102,11 @@ LEGACY = {
         "HARD in slotcheck via flow_par since 16 Oct 2026, TOL 0 against the original's same bar. The original passes by construction (it has "
         "run breaks in 6 bars, so those bars keep their allowance); flagged bar 46 fails both and all 15 flagged bars still fail. run_breaks failed "
         "25 of v4's bars, including Q&A bars Joe had not flagged; v4 was refit to it. One labelled complaint; no independent good set"),
+    # 16 Oct 2026, Joe on bar 48 again: the original "sounds so good because of the rhythm of" its sound-alike words
+    "toolkit/flow_par cell_kind / cell_at (a sound-alike cell of two DIFFERENT words where the original has one, at its syllables)": ("joe_rule",
+        "HARD in slotcheck via flow_par since 16 Oct 2026. The original passes by construction (echo cells at bars 40 and 48, a drum at 24); "
+        "the 16 Oct bar 48 (a repeated word) fails it and all 17 flagged bars still fail. Position tolerance +-1 syllable is a judgement, not "
+        "fitted. toolkit/ear.py hears British vowels since the same day; on the original only one quad changed (a false luego ~ leg echo)"),
     # 16 Oct 2026, Joe on v4 bar 48: "those flows feel very different and ours significantly worse"
     "toolkit/flow_par stops (mid-bar punctuation stops <= the original's same bar + 1)": ("joe_rule",
         "HARD in slotcheck via flow_par since 16 Oct 2026. The original passes by construction (26 stops in 76 bars, never 3 in a bar); "
