@@ -148,3 +148,6 @@ Rewrite: 13 Cash for Cairns and it's cash for Wales and cash for Spain (Wales / 
     here" on bars 67-68 (the original runs through the middle of a word there). No gate looked across a bar line for syntax. Now HARD
     (flow_par.carry): where the original's bar cannot end without the next (6 bar lines), ours must not end a sentence either. Four bars
     changed (14, 16, 32, 68). The cost: the per-bar sense read cannot see enjambment and marks every run-on half as a fragment.
+24. Joe (16 Oct): "The sense check should take into account when sentences cross over a line." It now reads a sentence over the bar line
+    as one item and counts failing sentences, not bars. Read whole, three of v4's run-on sentences still fail on their own faults
+    (bars 25-27, 31-32, 13-14); the Hanoi pair passes. All slots stay within the original's par.

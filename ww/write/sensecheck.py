@@ -29,7 +29,9 @@ For EACH bar:
 - grammatical: true if a speaker could really say the bar aloud as English: complete sentences, or ordinary spoken fragments (greetings, exclamations, "Front row on my phone, so bored, though"). false if words are missing so it only works as a list of words, a participle with no clause, a dangling preposition, or an object with nothing done to it.
 - sense: 2 = a stranger understands what is being claimed on one hearing; 1 = you can guess but it is a fragment or the meaning is strained; 0 = nonsense or a word list.
 - issue: what is wrong, in at most 12 words, or "" if sense is 2.
-You may read a bar as continuing the sentence of the bar before it only if the previous bar clearly leaves the sentence open (it ends mid-clause). Be harsh: a clever sound does not make a sentence. Return JSON only."""
+You may read a bar as continuing the sentence of the bar before it only if the previous bar clearly leaves the sentence open (it ends mid-clause).
+Some items hold ONE sentence that runs over two or more bars, written "bar / bar": judge that whole sentence as one item. It is not a fragment because it starts or ends in another bar.
+Be harsh: a clever sound does not make a sentence. Return JSON only."""
 
 # Claude only (15 Oct 2026): fresh Haiku reads failed "Look it fell off of a lorry" and "He's off the back of a lorry" on every run
 # for a pronoun with no referent. In a song the pronoun points back to an earlier bar; the DeepSeek prompt is unchanged.
@@ -130,37 +132,85 @@ def _read(bars: list[str], llm, model: str) -> list[dict]:
     return [by.get(i + 1) or {"n": i + 1, "reading": "", "grammatical": True, "sense": 2, "issue": "", "unjudged": "missing"} for i in range(len(bars))]
 
 
-def judge(bars: list[str], llm=None, model: str = None) -> list[dict]:
-    """one row per bar: {n, reading, grammatical, sense, issue}. Cached per (block text); raises nothing on a network failure (rows are then marked unjudged).
-    Claude reads the block CLAUDE_READS times and a bar keeps its best read: it fails only when every read fails it (15 Oct 2026: one Haiku read
-    failed 1-3 of the 7 GOOD bars from run to run; ds-flash runs at temperature 0, the CLI cannot)."""
-    cache = _load()
-    model = model or globals()["model"]()
-    key = _ckey(model, "\n".join(bars))
-    if key in cache:
-        return cache[key]
-    try:
-        from ..llm import LLM, Ledger
-        llm = llm or LLM(ledger=Ledger(run_id="sensecheck"))
-        reads = [_read(bars, llm, model) for _ in range(1 if model == "ds-flash" else CLAUDE_READS)]
-    except Exception as e:  # noqa: BLE001 - offline must not fail a bar
-        return [{"n": i + 1, "reading": "", "grammatical": True, "sense": 2, "issue": "", "unjudged": str(e)[:80]} for i in range(len(bars))]
-    out = []
-    for i in range(len(bars)):
-        per = [rd[i] for rd in reads if "unjudged" not in rd[i]]
-        if not per:
-            out.append(reads[0][i])
-            continue
-        out.append(max(per, key=lambda r: (int(r.get("sense", 0) or 0) >= 2 and bool(r.get("grammatical", True)), int(r.get("sense", 0) or 0))))
-    if not any("unjudged" in r for r in out):
-        cache[key] = out
-        _save()
+# SENTENCES OVER THE BAR LINE (16 Oct 2026, Joe: "The sense check should take into account when sentences cross over a line"). Read bar by bar,
+# the judge failed the second half of every run-on sentence as a fragment ("no main clause", "'we' has no verb"), in our draft and in the
+# original alike. Bars joined by toolkit/flow_par.carry (the reading the carry gate uses: a split word, a hanging subject, a bar that is only
+# a dependent clause or a verbless phrase) are now read as ONE sentence, shown to the judge as "bar / bar", and every bar of that sentence
+# takes its verdict: a run-on half is no longer failed for where it starts, and a sentence that fails costs each bar it spans. Blocks with
+# no carried bar line read exactly as before (same cache key). Test cases: toolkit/tests/sense_carry.txt.
+CARRY_CASES = config.ROOT / "toolkit" / "tests" / "sense_carry.txt"
+
+
+def _flow_par():
+    import sys
+    tk = str(config.ROOT / "toolkit")
+    if tk not in sys.path:
+        sys.path.insert(0, tk)
+    import flow_par
+    return flow_par
+
+
+def units(bars: list[str], carry: bool = True) -> list[list[int]]:
+    """0-based bar indices grouped into sentences: consecutive bars joined where flow_par.carry says the sentence runs on."""
+    if not bars:
+        return []
+    out = [[0]]
+    for i in range(1, len(bars)):
+        joined = False
+        if carry:
+            try:
+                joined = _flow_par().carry(bars[i - 1], bars[i])[0]
+            except Exception:  # noqa: BLE001 - no spaCy: read bar by bar, as before
+                joined = False
+        if joined:
+            out[-1].append(i)
+        else:
+            out.append([i])
     return out
 
 
-def check(bars: list[str], llm=None) -> dict:
-    """{'ok', 'fails': [(bar n, why)], 'rows'}. A bar fails on sense < 2, not grammatical, or a deterministic screen hit."""
-    rows = judge(bars, llm=llm)
+def unit_texts(bars: list[str], U: list[list[int]]) -> list[str]:
+    return [" / ".join(bars[i] for i in u) for u in U]
+
+
+def _best(per: list[dict]) -> dict:
+    return max(per, key=lambda r: (int(r.get("sense", 0) or 0) >= 2 and bool(r.get("grammatical", True)), int(r.get("sense", 0) or 0)))
+
+
+def _expand(rows: list[dict], U: list[list[int]]) -> list[dict]:
+    """per-unit rows -> per-bar rows; a bar inside a run-on sentence carries 'sentence': [its bar numbers]."""
+    out = [None] * sum(len(u) for u in U)
+    for k, u in enumerate(U):
+        for i in u:
+            r = dict(rows[k])
+            r["n"] = i + 1
+            if len(u) > 1:
+                r["sentence"] = [j + 1 for j in u]
+            out[i] = r
+    return out
+
+
+def read_units(bars: list[str], llm, model: str, reads: int = None, carry: bool = True) -> list[dict]:
+    """UNCACHED per-bar rows from reading sentence units (the original's par uses this: its text must never reach eval/)."""
+    U = units(bars, carry)
+    texts = unit_texts(bars, U)
+    reads = reads or (1 if model == "ds-flash" else CLAUDE_READS)
+    rd = [_read(texts, llm, model) for _ in range(reads)]
+    merged = []
+    for k in range(len(texts)):
+        per = [r[k] for r in rd if "unjudged" not in r[k]]
+        merged.append(_best(per) if per else rd[0][k])
+    return _expand(merged, U)
+
+
+def fails_of(bars: list[str], rows: list[dict], carry: bool = True) -> list[tuple[int, str]]:
+    """[(bar n, why)]: sense < 2, not grammatical, or the deterministic screen on the bar's whole sentence."""
+    U = units(bars, carry)
+    scr = {}
+    for u in U:
+        hits = screen(" ".join(bars[i] for i in u))
+        for i in u:
+            scr[i] = hits
     fails = []
     for i, (b, r) in enumerate(zip(bars, rows)):
         why = []
@@ -169,10 +219,49 @@ def check(bars: list[str], llm=None) -> dict:
                 why.append(f"sense {r.get('sense')}: {r.get('issue') or r.get('reading', '')[:60]}")
             if not r.get("grammatical", True) and r.get("sense", 2) >= 2:
                 why.append(f"not grammatical: {r.get('issue') or r.get('reading', '')[:60]}")
-        why += screen(b)
+        why += scr.get(i, [])
         if why:
             fails.append((i + 1, "; ".join(why)))
-    return {"ok": not fails, "fails": fails, "rows": rows,
+    return fails
+
+
+def fail_units(bars: list[str], fails: list[tuple[int, str]], carry: bool = True) -> int:
+    """the count the per-slot par compares: SENTENCES that fail, not bars. A run-on sentence is one judgement, so it counts once whether it
+    spans one bar or three (counting each bar multiplied the judge's noise: the original's V1 9-16 went 4 -> 7 that way, 16 Oct 2026)."""
+    bad = {n for n, _ in fails}
+    return sum(1 for u in units(bars, carry) if any(i + 1 in bad for i in u))
+
+
+def judge(bars: list[str], llm=None, model: str = None, carry: bool = True) -> list[dict]:
+    """one row per bar: {n, reading, grammatical, sense, issue}. Cached per (block text); raises nothing on a network failure (rows are then marked unjudged).
+    Claude reads the block CLAUDE_READS times and a bar keeps its best read: it fails only when every read fails it (15 Oct 2026: one Haiku read
+    failed 1-3 of the 7 GOOD bars from run to run; ds-flash runs at temperature 0, the CLI cannot)."""
+    cache = _load()
+    model = model or globals()["model"]()
+    U = units(bars, carry)
+    joined = any(len(u) > 1 for u in U)
+    # a block with a run-on sentence is a different read: its own key ("CARRY1"); a block without one keeps the key it always had
+    key = _ckey(model, ("CARRY1\n" + "\n".join(unit_texts(bars, U))) if joined else "\n".join(bars))
+    if key in cache:
+        return cache[key]
+    try:
+        from ..llm import LLM, Ledger
+        llm = llm or LLM(ledger=Ledger(run_id="sensecheck"))
+        out = read_units(bars, llm, model, carry=carry)
+    except Exception as e:  # noqa: BLE001 - offline must not fail a bar
+        return [{"n": i + 1, "reading": "", "grammatical": True, "sense": 2, "issue": "", "unjudged": str(e)[:80]} for i in range(len(bars))]
+    if not any("unjudged" in r for r in out):
+        cache[key] = out
+        _save()
+    return out
+
+
+def check(bars: list[str], llm=None, carry: bool = True) -> dict:
+    """{'ok', 'fails': [(bar n, why)], 'rows'}. A bar fails on sense < 2, not grammatical, or a deterministic screen hit, each judged on the
+    whole sentence the bar belongs to (a sentence may run over the bar line). carry=False reads bar by bar (unrelated calibration bars)."""
+    rows = judge(bars, llm=llm, carry=carry)
+    fails = fails_of(bars, rows, carry)
+    return {"ok": not fails, "fails": fails, "rows": rows, "fail_units": fail_units(bars, fails, carry),
             "unjudged": any("unjudged" in r for r in rows)}
 
 
@@ -210,22 +299,34 @@ def block_verdict(r: dict, n_bars: int) -> dict:
     return {"ok": ok, "thread": r.get("thread", ""), "coherent": r.get("coherent", 2), "issue": r.get("issue", ""), "fails": fails}
 
 
-def block_check(bars: list[str], llm=None, model: str = None) -> dict:
-    """ACROSS bars (Joe, 14 Oct 2026): one thread per block, every bar follows the one before it. Cached. Fails on coherent < 2 or any link that does not follow."""
+def block_units(bars: list[str], r: dict, U: list[list[int]]) -> dict:
+    """block verdict on sentence units, mapped back to bars: a sentence that does not follow is reported at its first bar."""
+    v = block_verdict(r, len(bars))
+    v["fails"] = [(U[n - 1][0] + 1 if 1 <= n <= len(U) else n, why) for n, why in v["fails"]]
+    return v
+
+
+def block_check(bars: list[str], llm=None, model: str = None, carry: bool = True) -> dict:
+    """ACROSS bars (Joe, 14 Oct 2026): one thread per block, every bar follows the one before it. Cached. Fails on coherent < 2 or any link that
+    does not follow. A sentence over the bar line is shown as one item (16 Oct 2026), so its second half is not judged as a new step."""
     cache = _load()
     model = model or globals()["model"]()
-    key = _ckey(model, "BLOCK2\n" + "\n".join(bars))   # BLOCK2 = the argument-thread prompt (14 Oct 2026); verdicts under the old "who does what, where" prompt are not reused
+    U = units(bars, carry)
+    joined = any(len(u) > 1 for u in U)
+    texts = unit_texts(bars, U)
+    # BLOCK2 = the argument-thread prompt (14 Oct 2026); BLOCK2C = the same over sentence units (only when a sentence runs over a bar line)
+    key = _ckey(model, ("BLOCK2C\n" + "\n".join(texts)) if joined else "BLOCK2\n" + "\n".join(bars))
     if key in cache:
         r = cache[key]
     else:
         try:
             from ..llm import LLM, Ledger
-            r = _block_read(bars, llm or LLM(ledger=Ledger(run_id="sensecheck")), model)
+            r = _block_read(texts, llm or LLM(ledger=Ledger(run_id="sensecheck")), model)
             cache[key] = r
             _save()
         except Exception as e:  # noqa: BLE001
             return {"ok": True, "unjudged": str(e)[:80], "thread": "", "fails": [], "coherent": 2}
-    return block_verdict(r, len(bars))
+    return block_units(bars, r, U)
 
 
 # PAR (15 Oct 2026). The Claude sense read fails 37/76 of the ORIGINAL's bars (python -m ww.calib.quality_par --sense): rap is fragments, and a
@@ -255,8 +356,8 @@ BAD = ["Two glasses, cold lager, back road corners", "No names just numbers on f
 
 
 def calibrate(llm=None) -> tuple[bool, str]:
-    g = check(GOOD, llm=llm)
-    b = check(BAD, llm=llm)
+    g = check(GOOD, llm=llm, carry=False)   # unrelated bars: never one sentence
+    b = check(BAD, llm=llm, carry=False)
     if g["unjudged"] or b["unjudged"]:
         return True, "sensecheck: calibration skipped (model unreachable)"
     good_fail = [n for n, _ in g["fails"]]
@@ -281,12 +382,43 @@ def calibrate_block(llm=None) -> tuple[bool, str]:
                                      f"ok={b['ok']} (NOT separated: the block judge is a sift, read its notes)")
 
 
+def carry_cases() -> list[tuple[str, list[str], str]]:
+    out = []
+    if CARRY_CASES.exists():
+        for ln in CARRY_CASES.read_text(encoding="utf-8").splitlines():
+            if ln.strip() and not ln.startswith("#"):
+                parts = [x.strip() for x in ln.split(" | ")]
+                out.append((parts[0], parts[1:-1], parts[-1]))
+    return out
+
+
+def carry_test(llm=None) -> tuple[bool, str]:
+    """with the model: each row is read as one sentence and its verdict printed (a report: the rows are our lines, not known-good ones)."""
+    lines = []
+    for _, bars, _ in carry_cases():
+        r = check(bars, llm=llm)
+        if r["unjudged"]:
+            return True, "sensecheck carry test: skipped (model unreachable)"
+        one = len({tuple(x.get("sentence", [x["n"]])) for x in r["rows"]}) == 1
+        lines.append(f"  {'one read' if one else 'SPLIT'} {'pass' if not r['fails'] else 'fail'}: {' / '.join(bars)[:90]}"
+                     + ("" if not r["fails"] else f" -> {r['fails'][0][1][:110]}"))
+    ok = all(l.startswith("  one read") for l in lines)
+    return ok, "sensecheck carry test (one sentence over the bar line; verdicts are a report):\n" + "\n".join(lines)
+
+
 def selftest() -> tuple[bool, str]:
     s = screen("Queue round the block for the film I'm buying in")
     t = screen("He's off the back of a lorry")
     u = screen("I'm wanted in every country I've been to")
     ok = any("dangling" in x for x in s) and not t and not u
-    return ok, "sensecheck: dangling-particle screen fires on a dangling 'in' and stays quiet on a clean bar"
+    # sentences over the bar line: every test row is read as ONE unit; unrelated bars stay apart; carry=False reads bar by bar
+    rows = carry_cases()
+    joined = all(units(bars) == [list(range(len(bars)))] for _, bars, _ in rows)
+    apart = units(["I pay the guards in Leeds", "When you owe me I know your name"]) == [[0], [1]]
+    flat = units([b for _, bars, _ in rows[:1] for b in bars], carry=False) == [[0], [1], [2]]
+    ok &= bool(rows) and joined and apart and flat
+    return ok, (f"sensecheck: dangling-particle screen fires on a dangling 'in' and stays quiet on a clean bar; {len(rows)} run-on sentences read "
+                f"as one unit {'ok' if joined else 'NO'}; unrelated bars apart {'ok' if apart else 'NO'}")
 
 
 def main(argv=None) -> int:
@@ -300,7 +432,12 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("file", nargs="?")
     ap.add_argument("--calibrate", action="store_true")
+    ap.add_argument("--carry-test", action="store_true", help="read toolkit/tests/sense_carry.txt with the model")
     a = ap.parse_args(argv)
+    if a.carry_test:
+        ok, msg = carry_test()
+        print(msg)
+        return 0 if ok else 1
     if a.calibrate:
         ok, msg = calibrate()
         ok2, msg2 = calibrate_block()

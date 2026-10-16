@@ -108,13 +108,16 @@ LEGACY = {
         "a conjunction or 'to', or bar N+1 is only a dependent piece (a subordinate clause or to-clause with no main clause, a verbless "
         "prepositional phrase); a stop, an interjection or a question ends the sentence; 'And / But / So' openers do not count. It marks exactly "
         "the 6 bar lines judged by hand in the original (13, 15, 25, 26, 31, 67) and none of its other 69. Joe's two pairs fail it "
-        "(toolkit/tests/carry_flagged.txt); 10 text fixtures. The per-bar sense read still marks a run-on half as a fragment (it does the "
-        "same to the original's), which the per-slot par absorbs. Two labelled complaints; no independent good set"),
+        "(toolkit/tests/carry_flagged.txt); 10 text fixtures. The sense read uses the same reading to judge a run-on sentence as one (16 Oct). "
+        "Two labelled complaints; no independent good set"),
     # 15 Oct 2026, Joe: "Do we have any gates that check quality? ... Scoring on cleverness?" and "I should be able to use claude too".
     "ww/write/sensecheck.py on Claude (haiku via the claude CLI, no key)": ("joe_rule", "HARD per slot since 15 Oct 2026 (sense gate: Joe, 14 Oct). "
         "Calibration (2 reads per block, a bar fails only if both fail it, pronoun rule): good bars failed 1/7, bad passed 1/7 on 3 of 3 fresh runs. "
         "Positive control: per bar it fails 37/76 of the ORIGINAL's bars, so per bar it is a NOTE; HARD only when a slot fails more bars than the "
-        "original's same slot + 1 (benchmark/sense_par_haiku.json, counts only). Across-bars check: the original passes it in 10/10 slots, so it stays HARD"),
+        "original's same slot + 1 (benchmark/sense_par_haiku.json, counts only). Across-bars check: the original passes it in 10/10 slots, so it stays HARD. "
+        "16 Oct 2026 (Joe: 'The sense check should take into account when sentences cross over a line'): bars joined by flow_par.carry are read "
+        "as ONE sentence and the per-slot count is in failing SENTENCES; the original's par was re-read only for the 3 slots holding a run-on "
+        "sentence (Hook 9-16 7 -> 4, V1 9-16 4 -> 4, V2 1-8 6 -> 5; counted per bar the re-read gave 6, 7, 6). Blocks without one keep their reads"),
     "ww/write/qualityread.py (first listen, rewind, forced, in character, clever; character consistency)": ("unvalidated", "REPORT-ONLY. "
         "Joe's complaint bars vs the original's bars, AUC: haiku first_listen 0.46 rewind 0.49 clever 0.44 forced 0.56 (no separation; it scores "
         "38/76 of the original <= 1 on first listen); sonnet first_listen 0.59 (nonsense set alone 0.85, 7/7 caught at 18% false alarm), rewind "

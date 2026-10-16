@@ -1,0 +1,11 @@
+# Joe (16 Oct 2026): "The sense check should take into account when sentences cross over a line." Added FIRST (rule 10).
+# Each row is ONE sentence that runs over the bar line, as v4 has it: bars separated by " | ", then the note. The per-bar sense read failed
+# every second half below as a fragment ("no main clause", "'we' has no verb") because it judged each bar alone.
+# Asserted offline (ww/write/sensecheck.selftest): each row is read as ONE sentence unit. With the model (python -m ww.write.sensecheck
+# --carry-test) the verdict on each whole sentence is printed, not asserted: joining the bars fixes how the read is done, not whether the
+# sentence is good. First run (16 Oct 2026, Haiku): the Hanoi row passes; the other three fail as whole sentences ('kipped on the floor we'
+# has no verb for 'we'; the colon leaves 'to be sprung' dangling; the cash-to-pie link is implied), which are faults of the lines.
+ROW | Back then my bird was poor, she | Broke, kipped on the floor we | Skip on to the end | 16 Oct: failed "clause left open" and "'we' has no verb"
+ROW | Police have got a list and they got me: top thief | To be sprung by my main guy's guy who's discreet | 16 Oct: failed "infinitive 'to be sprung' has no main clause"
+ROW | Hanoi bikes are getaway cars | 'Cause by night I know a guy | 16 Oct: failed "no standalone main clause"
+ROW | Cash for Spain and it's cash for trains and cash for planes | For a servo pie | 16 Oct: failed "prepositional phrase with no verb" and read as a non sequitur

@@ -43,9 +43,10 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--runs", type=int, default=2)
     ap.add_argument("--sense", action="store_true", help="the sense gate's fail count on the original instead")
+    ap.add_argument("--carried-only", action="store_true", help="with --sense: re-read only slots with a sentence over the bar line")
     a = ap.parse_args(argv)
     if a.sense:
-        r = sense_par()
+        r = sense_par(only_carried=a.carried_only)
         for n, v in r["slots"].items():
             print(f"{n:10s} sense fails {v['fail']}/{v['bars']} {v['fail_bars']}  block ok {v['block_ok']} coherent {v['coherent']} broken links {v['links_broken']}")
         print(f"ORIGINAL: the sense gate ({r['model']}) fails {r['fail']}/{r['of']} of the original's bars")
@@ -59,31 +60,42 @@ def main(argv=None) -> int:
 
 
 
-def sense_par(reads: int = 2) -> dict:
+def sense_par(reads: int = 2, only_carried: bool = False) -> dict:
     """the sense gate (ww/write/sensecheck.py, Claude) run on the original: per slot, how many bars it would fail. The original is the
-    positive control (rule 9): a per-bar HARD sense rule is only right if the original passes it. Numbers only; nothing cached."""
+    positive control (rule 9): a per-bar HARD sense rule is only right if the original passes it. Numbers only; nothing cached.
+    16 Oct 2026: read the way the gate now reads a draft, a sentence that runs over the bar line as ONE item (sensecheck.units).
+    only_carried=True re-reads only the slots holding such a sentence and keeps the stored numbers for the rest (a fresh read of an
+    unchanged slot would only re-roll the judge's noise)."""
     from ..write import sensecheck as sc
     lines = _lines()
     llm = private_llm("sense-par")
     model = sc.model()
+    path = config.ROOT / "benchmark" / f"sense_par_{model}.json"
+    old = {}
+    if only_carried:
+        try:
+            old = json.loads(path.read_text(encoding="utf-8")).get("slots", {})
+        except (OSError, ValueError):
+            old = {}
 
     def one(job):
         name, bars = job
-        rd = [sc._read(bars, llm, model) for _ in range(1 if model == "ds-flash" else reads)]
-        fails = []
-        for i, b in enumerate(bars):
-            ok_any = any(int(r[i].get("sense", 0) or 0) >= 2 and r[i].get("grammatical", True) for r in rd if "unjudged" not in r[i])
-            if not ok_any or sc.screen(b):
-                fails.append(i + 1)
-        bv = sc.block_verdict(sc._block_read(bars, llm, model), len(bars))
-        return name, {"bars": len(bars), "fail": len(fails), "fail_bars": fails, "block_ok": bv["ok"], "coherent": bv["coherent"],
-                      "links_broken": len(bv["fails"])}
+        U = sc.units(bars)
+        if only_carried and name in old and all(len(u) == 1 for u in U):
+            return name, old[name]
+        rows = sc.read_units(bars, llm, model, reads=1 if model == "ds-flash" else reads)
+        fl = sc.fails_of(bars, rows)
+        fails = [n for n, _ in fl]
+        bv = sc.block_units(bars, sc._block_read(sc.unit_texts(bars, U), llm, model), U)
+        # "fail" = failing SENTENCES (the gate compares sensecheck.fail_units); in a slot with no run-on sentence that is the bar count
+        return name, {"bars": len(bars), "fail": sc.fail_units(bars, fl), "fail_bars": fails, "block_ok": bv["ok"], "coherent": bv["coherent"],
+                      "links_broken": len(bv["fails"]), "sentences_over_bar_line": [[i + 1 for i in u] for u in U if len(u) > 1]}
     with ThreadPoolExecutor(max_workers=5) as ex:
         out = dict(ex.map(one, [(n, lines[s:e]) for n, s, e in SECTIONS]))
     tot = sum(v["fail"] for v in out.values())
     res = {"what": "bars of the original the sense gate fails, per slot (bar numbers within the slot; no text)", "model": model,
            "reads": reads, "slots": out, "fail": tot, "of": sum(v["bars"] for v in out.values())}
-    (config.ROOT / "benchmark" / f"sense_par_{model}.json").write_text(json.dumps(res, indent=1), encoding="utf-8")
+    path.write_text(json.dumps(res, indent=1), encoding="utf-8")
     return res
 
 

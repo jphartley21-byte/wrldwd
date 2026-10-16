@@ -577,8 +577,10 @@ def check(slot: str, bars: list[str], context: list[str] | None = None, tol: int
             for n_, why_ in sc_["fails"]:
                 (hard if par_ is None else notes).append(f"sense: bar {n_}: {why_}")
                 rows[n_ - 1]["issues"].append(f"sense: {why_}") if n_ - 1 < len(rows) else None
-            if par_ is not None and len(sc_["fails"]) > par_["fail"] + sensecheck.SENSE_SLACK:
-                hard.append(f"sense: {len(sc_['fails'])} bars fail the sense read {[n for n, _ in sc_['fails']]}; the original's {slot} fails "
+            # counted in SENTENCES (16 Oct 2026): a sentence that runs over the bar line is one judgement (sensecheck.fail_units)
+            nf_ = sc_.get("fail_units", len(sc_["fails"]))
+            if par_ is not None and nf_ > par_["fail"] + sensecheck.SENSE_SLACK:
+                hard.append(f"sense: {nf_} sentences fail the sense read (bars {[n for n, _ in sc_['fails']]}); the original's {slot} fails "
                             f"{par_['fail']} (+{sensecheck.SENSE_SLACK} slack): make the worst ones plain sentences")
             if len(bars) >= 3:
                 bc_ = sensecheck.block_check(bars)

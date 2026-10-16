@@ -1,5 +1,5 @@
 {
- "what": "bars of the original the sense gate fails, per slot (bar numbers within the slot; no text)",
+ "what": "SENTENCES of the original the sense gate fails, per slot (a sentence over the bar line counts once; fail_bars = bar numbers within the slot; no text)",
  "model": "haiku",
  "reads": 2,
  "slots": {
@@ -24,9 +24,8 @@
   },
   "Hook 9-16": {
    "bars": 8,
-   "fail": 7,
+   "fail": 4,
    "fail_bars": [
-    2,
     3,
     4,
     5,
@@ -36,7 +35,17 @@
    ],
    "block_ok": true,
    "coherent": 1,
-   "links_broken": 2
+   "links_broken": 1,
+   "sentences_over_bar_line": [
+    [
+     5,
+     6
+    ],
+    [
+     7,
+     8
+    ]
+   ]
   },
   "V1 1-8": {
    "bars": 8,
@@ -57,12 +66,26 @@
    "fail_bars": [
     1,
     2,
+    3,
     4,
+    5,
+    7,
     8
    ],
    "block_ok": true,
    "coherent": 1,
-   "links_broken": 1
+   "links_broken": 0,
+   "sentences_over_bar_line": [
+    [
+     1,
+     2,
+     3
+    ],
+    [
+     7,
+     8
+    ]
+   ]
   },
   "V1 17-24": {
    "bars": 8,
@@ -102,7 +125,7 @@
   },
   "V2 1-8": {
    "bars": 8,
-   "fail": 6,
+   "fail": 5,
    "fail_bars": [
     1,
     2,
@@ -113,7 +136,13 @@
    ],
    "block_ok": true,
    "coherent": 1,
-   "links_broken": 1
+   "links_broken": 1,
+   "sentences_over_bar_line": [
+    [
+     7,
+     8
+    ]
+   ]
   },
   "V2 9-16": {
    "bars": 8,
@@ -130,6 +159,6 @@
    "links_broken": 0
   }
  },
- "fail": 37,
+ "fail": 33,
  "of": 76
 }
