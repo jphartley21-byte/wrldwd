@@ -89,7 +89,7 @@ LABEL = {"stress_run": "stressed syllables in a row", "hard_joins": "hard mouth-
          "run_breaks": "stops inside a 16th-note run (a ? : , or ! where the next syllable comes straight after)",
          "same_step": "stressed syllables crammed onto ONE 16th (where the original's bar puts a weak syllable in that slot)",
          "cell_echo": "sound-alike cell: the original's bar sets two DIFFERENT words on one sound frame and vowel; ours has only",
-         "cell_at": "sound-alike cell position: the two echo words must start within a syllable of the original's; ours start at",
+         "cell_at": "cell position: the cell's two copies (a repeated word, or two sound-alike words) must start within a syllable of the original's; ours start at",
          "pause": "pause position (the original pauses after syllable(s) {p}; ours does not break there)",
          "stops": "mid-bar stops (a ? : , . or ! inside the bar; at most one more than the original's bar)",
          "barline_close": "bar-line rhyme too loose (rapfit pair score with the line's end; must be within 0.10 of the original's)"}
@@ -302,6 +302,23 @@ def echo_at(line):
     return out
 
 
+def repeat_at(line):
+    """[(syllable where a repeated content word starts, where it starts next)] for each word said twice or more in the bar (acronyms
+    spelled out), 1-based flow_fit syllables: where the bar's repeated cell sits. 17 Oct 2026, Joe on the last line of Toast of the
+    Town ("doesn't flow as well as the original which uses WWE"): the original repeats its cell back to back straight after the
+    pause; ours repeated across the pause, and the run after it was separate words."""
+    import collections
+    import ear
+    from ww.write import rhymeview
+    seen, i = collections.defaultdict(list), 1
+    for t in spell(line).split():
+        w = ear._stem(rhymeview.core(t))
+        if w and w not in rhymeview.FUNC:
+            seen[w].append(i)
+        i += len(ff.sylls(t))
+    return [(p[k], p[k + 1]) for p in seen.values() if len(p) >= 2 for k in range(len(p) - 1)]
+
+
 def _vowels(sy):
     from ww.write import rapfit
     return tuple(x[0] for x in sy[rapfit._anchors(sy)[0][0]:])
@@ -426,13 +443,14 @@ def check(bar_no, line):
             out.append(("pause", have, par["pause"]))
     if par.get("cell"):
         kinds = cell_kinds(line)
+        # where the original's cell is a repeated word, a sound-alike pair at the same place counts too; an echo cell needs its echo
+        at = (echo_at(line) if par.get("cell_kind") == "echo" else repeat_at(line) + echo_at(line)) if par.get("cell_at") else []
         if not kinds:
             out.append(("cell", 0, 1))
         elif par.get("cell_kind") == "echo" and not (kinds & {"echo", "drum"}):
             out.append(("cell_echo", sorted(kinds), "echo"))
-        elif par.get("cell_at") and not any(abs(a - par["cell_at"][0]) <= 1 and abs(b - par["cell_at"][1]) <= 1
-                                            for a, b in echo_at(line)):
-            out.append(("cell_at", [list(x) for x in echo_at(line)], par["cell_at"]))
+        elif par.get("cell_at") and not any(abs(a - par["cell_at"][0]) <= 1 and abs(b - par["cell_at"][1]) <= 1 for a, b in at):
+            out.append(("cell_at", [list(x) for x in at], par["cell_at"]))
         elif internal(line) < par.get("internal", 0) - 1:
             out.append(("internal", internal(line), par.get("internal", 0)))
     return out
@@ -464,15 +482,16 @@ def par_syl(bar_no):
 
 
 def _cell_par(line):
-    """where the bar's cell is two DIFFERENT words on one sound frame (16 Oct 2026, Joe on bar 48: "the rhythm of" its sound-alike
-    pair), the kind and where the two words start; a cell met by repeating a word needs only a cell."""
+    """the cell's kind and where its two copies start: two DIFFERENT words on one sound frame (16 Oct 2026, Joe on bar 48: "the rhythm
+    of" its sound-alike pair), or one word said twice (17 Oct 2026, Joe on bar 76: the cell sits back to back straight after the pause)."""
     k = cell_kinds(line)
     if not k:
         return {}
     if k & {"echo", "drum"}:
         at = echo_at(line)
         return {"cell_kind": "echo", **({"cell_at": list(at[0])} if at else {})}
-    return {"cell_kind": "repeat"}
+    at = repeat_at(line)
+    return {"cell_kind": "repeat", **({"cell_at": list(at[0])} if at else {})}
 
 
 def build(orig_path):

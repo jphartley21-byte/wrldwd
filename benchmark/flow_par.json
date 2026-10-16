@@ -223,6 +223,10 @@
    "same_step": 0,
    "run_breaks": 0,
    "cell_kind": "repeat",
+   "cell_at": [
+    1,
+    6
+   ],
    "carry": 1
   },
   {
@@ -858,6 +862,10 @@
    "same_step": 0,
    "run_breaks": 0,
    "cell_kind": "repeat",
+   "cell_at": [
+    6,
+    8
+   ],
    "carry": 0
   },
   {
@@ -1290,6 +1298,10 @@
    "same_step": 0,
    "run_breaks": 0,
    "cell_kind": "repeat",
+   "cell_at": [
+    4,
+    7
+   ],
    "carry": 0
   }
  ]

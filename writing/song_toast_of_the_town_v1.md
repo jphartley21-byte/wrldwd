@@ -3,7 +3,7 @@
 # PREMISE: wherever I land I'm the toast of the town. I buy the round, the bar raises a glass, the trip goes sideways and I'm still
 # the one they toast. A first-person boast told flat, built from Joe's real trips (material/); persona and invented bits flagged below.
 # TITLE: Toast of the Town, said once, in V1 9-16 bar 4; bar 8 of that verse turns it round ("the bank ... says that I'm toast").
-# GATE (16 Oct 2026): every deterministic check passes (WW_SENSE_MODEL=haiku python -m ww.cli gate THIS FILE: 0 hard issues). The two model
+# GATE (16 Oct 2026; re-run 17 Oct after the Chang swap and the new last line): every deterministic check passes (WW_SENSE_MODEL=haiku python -m ww.cli gate THIS FILE: 0 hard issues). The two model
 #   reads did NOT run: the only `claude` binary on this machine is the desktop app's, it is not on PATH and reports "Not logged in", so the
 #   sense read and the US-slang read are GATE OFF. Not done until they run (log the CLI in, then re-run the gate).
 #
@@ -13,8 +13,8 @@
 # ASSUMED (place_assumptions / nightlife_assumptions, not verified): blue smoke and coffee shops in the Dam, bia hoi in Hanoi, Bondi.
 # PERSONA: every boast about buying rounds, tabs, crowds, ladies, fights on the plane, "call me Pope", "no brake", "for a bia".
 # INVENTED: the Camden night itself (tequila, scooter, boozer, coppers, bum out at Buckingham); "the cops count a thousand"; "the bare ground";
-#   the ten pints at Gatwick and North Sydney; "the bank phones home"; the ice the Full Moon bars hunt for (Joe, 16 Oct 2026:
-#   "we were never looking for gum"; ice chosen because it rhymes best of five tried, on the section's own aɪ vowel).
+#   the ten pints at Gatwick and North Sydney; "the bank phones home"; the Chang (Thai beer) the Full Moon bars hunt for (Joe, 16 Oct 2026:
+#   "we were never looking for gum"; then "swap it for chang" over ice, which also reads as meth slang).
 #
 
 == Hook 1-4
@@ -103,15 +103,15 @@ Everyone on that flight wanted to fight me, I'm well tipsy
 On the sand, that hit me
 Mushroom shake for us, giddy, giddy
 Wasted we start a journey
-Searching for ages for ice dead thirsty
+Searching for ages for Chang dead thirsty
 Up ahead a sign
 A Seven-Eleven, in plain sight
 Me and the lads buzzing all high-flying
-King of the night and the ice on my mind
+King of the night and the Chang's on my mind
 Striding up the sand wide eyes
 All the girls in the bar and I'm the cash prize
 Closer up? It's Seven Elephant
-Ice? We never found it, what a night
+Chang? We never found it, what a night
 #cash 6 | in plain sight | sight
 #cash 8 | on my mind | mind
 #cash 10 | cash prize | prize
@@ -139,7 +139,7 @@ Bung the Thai cops some baht, that's the big shout
 Out the nick we're back on the piss
 I'll buy all the beers for a whole ten years
 Cheers to that boys, we don't feel no shame
-Round's on me, round's on me beer for the bar, three cheers
+Round's on me, beer for you beer for you lot, three cheers
 #cash 5 | on the piss | piss
 #cash 7 | no shame | shame
 #cash 8 | three cheers | cheers
