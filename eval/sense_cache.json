@@ -43704,5 +43704,525 @@
 "lands": true
 }
 ]
+],
+"[haiku]\nMozzarella that's pricey? My guy does it nicely\nIn Marrakesh it's dicey? My guy's Rolexes are icy\nBarber's cut-throat shave? Free: on the house, the life of Riley\nThese days I drive a hard bargain\nNow the man I use has met Kylie\nNow the man I use is dead cheeky\nFifty quid? Now don't say my guy cheats me\nWhere am I? Gone to my guy's guy, he's local, for more freebies": [
+{
+"n": 1,
+"reading": "Is the mozzarella pricey, and my guy does it nicely?",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "Is it dicey in Marrakesh, and are my guy's Rolexes icy?",
+"grammatical": true,
+"sense": 1,
+"issue": "'Icy' is unclear slang; the claim is strained."
+},
+{
+"n": 3,
+"reading": "Is the barber's cut-throat shave free, on the house, the life of Riley?",
+"grammatical": true,
+"sense": 1,
+"issue": "Strung-together noun fragments; 'the life of Riley' is idiom-dependent."
+},
+{
+"n": 4,
+"reading": "These days I drive a hard bargain.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "The man I use has met Kylie now.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "The man I use is now dead cheeky.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "Fifty quid, and now don't say my guy cheats me.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "Where am I? Gone to my guy's guy, who is local, for more freebies.",
+"grammatical": false,
+"sense": 1,
+"issue": "'Gone to' is a participle with no clause; needs 'I've'."
+}
+],
+"[haiku]\nBLOCK2\nMozzarella that's pricey? My guy does it nicely\nIn Marrakesh it's dicey? My guy's Rolexes are icy\nBarber's cut-throat shave? Free: on the house, the life of Riley\nThese days I drive a hard bargain\nNow the man I use has met Kylie\nNow the man I use is dead cheeky\nFifty quid? Now don't say my guy cheats me\nWhere am I? Gone to my guy's guy, he's local, for more freebies": {
+"thread": "The speaker boasts that his fixer \"guy\" gets him free goods, cheap deals and celebrity-level access, and that this network reaches further down through his guy's guy.",
+"coherent": 2,
+"issue": "Bar 8's \"Where am I?\" is disorienting, and bars 5 and 6 repeat the same point.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Marrakesh and Rolexes extend the fixer's access to luxury goods."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Free shave via the connection continues the freebies theme."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Shifts to the speaker's own bargaining, still within the deals theme."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Escalates the fixer's status with a celebrity connection."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Restates bar 5 with 'cheeky', a near-repeat rather than new information."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Ties the fifty-quid price back to the guy's deals."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Opening 'Where am I?' is jarring, though it escalates to the guy's guy and more freebies."
+}
+]
+},
+"[haiku]\nUSSLANG2\nMozzarella that's pricey? My guy does it nicely\nIn Marrakesh it's dicey? My guy's Rolexes are icy\nBarber's cut-throat shave? Free: on the house, the life of Riley\nThese days I drive a hard bargain\nNow the man I use has met Kylie\nNow the man I use is dead cheeky\nFifty quid? Now don't say my guy cheats me\nWhere am I? Gone to my guy's guy, he's local, for more freebies": [
+[],
+[]
+],
+"[haiku]\nHoi hoi to the Dutch, they're honest\nTheir gnome's as tall as a house, rock solid\nCross my man and it's your wallet\nGot one off my hands: I flogged it": [
+{
+"n": 1,
+"reading": "Hi to the Dutch, because they are honest.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "Their gnome is as tall as a house, and it is rock solid.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "If you cross my man, it is your wallet that is at stake.",
+"grammatical": true,
+"sense": 1,
+"issue": "Elliptical threat; what happens to the wallet is strained and unclear."
+},
+{
+"n": 4,
+"reading": "I got one off my hands: I sold it.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nHoi hoi to the Dutch, they're honest\nTheir gnome's as tall as a house, rock solid\nCross my man and it's your wallet\nGot one off my hands: I flogged it": {
+"thread": "The speaker is a gnome-flogging hustler who exploits the Dutch for their honesty, selling them oversized gnomes and warning that crossing him costs you your wallet.",
+"coherent": 1,
+"issue": "Bar 3's wallet threat jumps from the gnome-and-Dutch thread, and \"one\" and \"it\" in bar 4 have unclear referents.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Gnome as tall as a house, rock solid, builds the honest-Dutch sales pitch from bar 1."
+},
+{
+"n": 3,
+"follows": false,
+"issue": "Threat about wallets and 'my man' arrives with no link to the Dutch or the gnomes."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Flogging 'one' completes the gnome-sale thread, though 'one' is vague without the gnome named."
+}
+]
+},
+"[haiku]\nUSSLANG2\nHoi hoi to the Dutch, they're honest\nTheir gnome's as tall as a house, rock solid\nCross my man and it's your wallet\nGot one off my hands: I flogged it": [
+[],
+[]
+],
+"[haiku]\nOne black book and the numbers? I'll charge ya\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy guy's cruiser? Moored out in Palma\nStab vest? Nah a parka\nCash? Yes! I bung the judge lager\nCross me? Just you wait and see\nGrazie grazie train drivers! A month and no drama": [
+{
+"n": 1,
+"reading": "I'll charge you for one black book and the numbers?",
+"grammatical": true,
+"sense": 1,
+"issue": "Question fragment; 'black book and the numbers' is a strained, unexplained reference."
+},
+{
+"n": 2,
+"reading": "Is it an honesty box? Me? It's paid in full: karma.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Paid in full: karma' is a nominal fragment; the payment claim is strained."
+},
+{
+"n": 3,
+"reading": "I'm in my suit? Man! It's good Prada.",
+"grammatical": true,
+"sense": 1,
+"issue": "'In my suit?' is a fragment; 'good Prada' is an odd, clipped claim."
+},
+{
+"n": 4,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "'Moored out in Palma' is a bare participle phrase with no finite verb."
+},
+{
+"n": 5,
+"reading": "Is it a stab vest? No, it's a parka.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "Cash? Yes! I bribe the judge with lager.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "If you cross me, just you wait and see.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "Thank you, train drivers, for a month with no drama.",
+"grammatical": true,
+"sense": 1,
+"issue": "'A month and no drama' is a fragment; the thanks is clipped but readable."
+}
+],
+"[haiku]\nBLOCK2\nOne black book and the numbers? I'll charge ya\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy guy's cruiser? Moored out in Palma\nStab vest? Nah a parka\nCash? Yes! I bung the judge lager\nCross me? Just you wait and see\nGrazie grazie train drivers! A month and no drama": {
+"thread": "The speaker is a flashy, untouchable fixer who lives large on dodgy money, bribes officials like judges, and dares anyone to cross him.",
+"coherent": 2,
+"issue": "Bar 8's train-driver thanks is obscure, so the evasion point is hard to catch on one hearing.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Honesty-box joke ironically contrasts with the fixer's dishonesty and claims karma as payment."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Flaunting a Prada suit escalates the image of ill-gotten luxury."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "A friend's cruiser moored in Palma continues the flashy, borrowed-wealth picture."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "A parka instead of a stab vest deadpans his fearlessness, contrasting with danger."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Bribing a judge with lager escalates from fearlessness to corrupting the law."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "The threat 'just you wait and see' follows from having bought his way out."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Thanking train drivers for a month of no drama deflates the menace as a dodger's punchline, though it is oblique."
+}
+]
+},
+"[haiku]\nUSSLANG2\nOne black book and the numbers? I'll charge ya\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy guy's cruiser? Moored out in Palma\nStab vest? Nah a parka\nCash? Yes! I bung the judge lager\nCross me? Just you wait and see\nGrazie grazie train drivers! A month and no drama": [
+[],
+[]
+],
+"[haiku]\nDublin's mine: my bar tab's in credit\nMy man pays for negligence\nCustoms won't open the crate it's medical\nChemist wiped it of all of the evidence\nWho is that, lying down? Just a passenger\nAnd the guards at the border? Flatter ya\nWhere's the guy? Lying low in Canada\nRode in van to van, a real Marathon": [
+{
+"n": 1,
+"reading": "Dublin is mine, and my bar tab is in credit.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "My man pays for negligence.",
+"grammatical": true,
+"sense": 1,
+"issue": "Meaning of 'pays for negligence' is strained and unclear."
+},
+{
+"n": 3,
+"reading": "Customs won't open the crate, because it's medical.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "The chemist wiped all the evidence off it.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "Who is that lying down? Just a passenger.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "The guards at the border flatter you.",
+"grammatical": false,
+"sense": 1,
+"issue": "'Flatter ya' is a clause-less imperative; the subject and link are unclear."
+},
+{
+"n": 7,
+"reading": "Where's the guy? Lying low in Canada.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "I rode from van to van, which is a real marathon.",
+"grammatical": true,
+"sense": 1,
+"issue": "'A real Marathon' is a strained, unclear comparison."
+}
+],
+"[haiku]\nBLOCK2\nDublin's mine: my bar tab's in credit\nMy man pays for negligence\nCustoms won't open the crate it's medical\nChemist wiped it of all of the evidence\nWho is that, lying down? Just a passenger\nAnd the guards at the border? Flatter ya\nWhere's the guy? Lying low in Canada\nRode in van to van, a real Marathon": {
+"thread": "The speaker is a cross-border smuggler who buys off customs guards, fakes medical cover stories and pays for cleanups to move contraband, and has now fled to Canada to lie low.",
+"coherent": 1,
+"issue": "Bar 5 and bar 7 have unclear referents: who the passenger is, and who \"the guy\" is, are never settled.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Paying for someone else's negligence fits the speaker's money-and-control theme."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Customs never opening the crate, on a medical cover story, continues the smuggling scheme."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "The chemist wiping evidence escalates the cover-up."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "A person lying hidden in the vehicle continues the concealment, though 'passenger' is vague."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Flattering the border guards gives the bribery element that gets the load through."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "The run ends with the speaker fleeing abroad, though 'the guy' is loosely introduced."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Van-to-van transit describes the long, evasive journey, though it is thin as a point."
+}
+]
+},
+"[haiku]\nUSSLANG2\nDublin's mine: my bar tab's in credit\nMy man pays for negligence\nCustoms won't open the crate it's medical\nChemist wiped it of all of the evidence\nWho is that, lying down? Just a passenger\nAnd the guards at the border? Flatter ya\nWhere's the guy? Lying low in Canada\nRode in van to van, a real Marathon": [
+[],
+[]
+],
+"[haiku]\nSure the cops were speedy\nOfficer who? Me? Seedy? Seedy?\nThen my guy came to fund me\nCash in envelopes keeps the cops chummy\nMy guy said you pay\nWanted poster's ten grand! Full front page\nI never once came to the Old Bailey\nSo the brass at the Met were saving face\nOwe me and you've ten days' grace\nWhen you owe me I know: your head is fair game\nTop of town: I'm the boss of Bristol\nWho do I know? A guy. So I won't name names": [
+{
+"n": 1,
+"reading": "Sure, the cops were speedy.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "The officer asks, \"Who, me? Seedy? Seedy?\"",
+"grammatical": true,
+"sense": 1,
+"issue": "Run of fragmentary questions; meaning only guessable"
+},
+{
+"n": 3,
+"reading": "Then my guy came to fund me.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "Cash in envelopes keeps the cops chummy.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "My guy said you pay.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "'Full front page' has no verb; fragments only"
+},
+{
+"n": 7,
+"reading": "I never once came to the Old Bailey.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "So the brass at the Met were saving face.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 9,
+"reading": "Owe me and you've ten days' grace.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 10,
+"reading": "When you owe me I know: your head is fair game.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 11,
+"reading": "Top of town: I'm the boss of Bristol.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 12,
+"reading": "Who do I know? A guy. So I won't name names.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nSure the cops were speedy\nOfficer who? Me? Seedy? Seedy?\nThen my guy came to fund me\nCash in envelopes keeps the cops chummy\nMy guy said you pay\nWanted poster's ten grand! Full front page\nI never once came to the Old Bailey\nSo the brass at the Met were saving face\nOwe me and you've ten days' grace\nWhen you owe me I know: your head is fair game\nTop of town: I'm the boss of Bristol\nWho do I know? A guy. So I won't name names": {
+"thread": "A Bristol crime boss boasts that he bribes the cops, dodges court and the wanted poster, and enforces debts with threats, so he considers himself untouchable.",
+"coherent": 1,
+"issue": "Bar 9 jumps from police bribery to debt threats with no bridge; \"my guy\" is unclear.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Deflects the cop label, reinforcing the seedy, compromised image."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Introduces the fixer who funds him, leading into the bribery claim."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "States the bribery mechanism directly, supporting the thread."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Ties back to the guy and the payment, though 'my guy' is vague."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Raises the stakes with a reward, setting up his evasion of the law."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Shows he never faced court, supporting his untouchable status."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Causal 'So' links his court evasion to the Met protecting him."
+},
+{
+"n": 9,
+"follows": false,
+"issue": "Abrupt switch to debt and ten days' grace with no signal."
+},
+{
+"n": 10,
+"follows": true,
+"issue": "Escalates the debt threat into a violent consequence."
+},
+{
+"n": 11,
+"follows": true,
+"issue": "Concludes that he is the city's boss, capping the claim."
+},
+{
+"n": 12,
+"follows": true,
+"issue": "Pays off the untouchable theme by protecting his contacts."
+}
+]
+},
+"[haiku]\nUSSLANG2\nSure the cops were speedy\nOfficer who? Me? Seedy? Seedy?\nThen my guy came to fund me\nCash in envelopes keeps the cops chummy\nMy guy said you pay\nWanted poster's ten grand! Full front page\nI never once came to the Old Bailey\nSo the brass at the Met were saving face\nOwe me and you've ten days' grace\nWhen you owe me I know: your head is fair game\nTop of town: I'm the boss of Bristol\nWho do I know? A guy. So I won't name names": [
+[],
+[]
 ]
 }

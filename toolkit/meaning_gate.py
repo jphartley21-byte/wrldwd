@@ -37,7 +37,7 @@ END_DEAD = set("""a an the of to in on at for and or but so if as by with from u
 that this these those there then than is was are am be been being do does did not no too just all out off over
 my your his her our their its""".split())
 # Deliberate enjambment: the original ends lines on pronouns (and British speech tags on nothing).
-END_ENJ = set("""i me him her us you them it we they he she""".split())
+END_ENJ = set("""i me him her us you them it we they he she ya yer em 'em""".split())   # ya / yer / em added 16 Oct 2026 (a pronoun-ending cap they escaped)
 END_TAG = set("""though mate like nah right mind anyway innit yeah then""".split())
 # Subject, object and possessive pronouns: a bar carrying one of these has someone in it, so it is
 # not an inventory even when the rest of it is a noun list (see the INVENTORY rule in audit()).
@@ -190,7 +190,9 @@ def audit(bars, slot=None):
         res["bars"].append((i, b, hard, issues))
     ends = [words(b)[-1].lower() for b in bars if words(b)]
     n_enj = sum(1 for w in ends if w in END_ENJ)
-    cap_enj = max(2, n // 19)
+    # 16 Oct 2026: the cap was n // 19 (4 in 76 bars) and the ORIGINAL ends 8 of its 76 bars on a pronoun, most of them its two-word rhymes
+    # ('for me', a word + 'him'). It is now the original's rate, so it still stops 'X me' being stacked but no longer forbids what it does.
+    cap_enj = max(2, round(n * 8 / 76))
     if n_enj > cap_enj:
         res["fails"].append(f"{n_enj} bars end on a pronoun (cap {cap_enj}): enjambment is a technique, not a habit")
     openers = Counter(w.lower() for w in (words(b)[0] for b in bars if words(b)))

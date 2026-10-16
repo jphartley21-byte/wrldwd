@@ -164,3 +164,9 @@ Rewrite: 13 Cash for Cairns and it's cash for Wales and cash for Spain (Wales / 
     the rhyme flips on that word. Ours rhymed the break bar with the first three (five bars of one rhyme, then a jump to a new rhyme), and
     its bars 5-6 were two unrelated lines. The gate only checked that bars with the same scheme letter rhyme, never that a lone letter
     does not, and nothing measured the repeated line. Both are HARD now; bars 44-47 rewritten.
+28. Joe (16 Oct): "mainland" does not rhyme with Naples / label, and our end rhymes rarely span words where the original's do ("for me").
+    Both measured true: the rhyme chain counted a vowel-only match on two syllables as a 2-deep rhyme (now 1 deep at most), and the
+    original ends 7 of its 69 rhyming bars on a two-word rhyme against our 0. V1 25-32 rebuilt on one closing 'ee' like the original's
+    section; a song-level minimum of real two-word rhymes added (Joe: song level, no max, no cheap ones). Five written so far; each extra
+    candidate (miss you, drive ya, start her, damage ya, charm 'em, fly ya) broke a flow, shape or rhyme rule or read as forced.
+

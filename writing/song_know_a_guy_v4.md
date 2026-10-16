@@ -22,6 +22,10 @@
 # ours rhymed bar 44 with 41-43 (five bars of one rhyme) and made 45-46 two unrelated lines. Both are HARD now (rapfit.check_block).
 # Bars 44-47 rewritten: a break bar ('hard bargain'), the twin 'Now the man I use buys Spain's mainland / ... is dead cheeky', and
 # 'Fifty quid' (was 'Forty', the original's own word there). ww gate: every section PASS; the two hook quotas above are still open.
+# ONE ENDING AND MULTI-WORD RHYMES, same day (Joe: 'mainland' does not rhyme with Naples / label; our rhymes rarely span words
+# where the original's do: 'for me'). V1 25-32 rebuilt so both rhyme families close on 'ee' like the original's (pricey / nicely / icy /
+# Riley / Kylie, then cheeky / cheats me / freebies). New song-level gate: >= 0.8 x the original's 7 real two-word rhymes; five here
+# (cheats me, fund me, charge ya, flogged it, flatter ya). Every section PASS (sense ON); the song is one two-word rhyme short.
 # V3 (16 Oct 2026, Joe: "Go for all 3, add the gates, verify them, then write the new draft to pass all gates and print it"): v2 rewritten to
 # the new rhyme-texture gate (toolkit/texture.py: internal rhyme amount + strength, frame / link sandwiches, multisyllabic runs across
 # words, each per section against the original's same section). v2 failed it in 8 of 10 sections; v3 passes all 10. ww gate PASS
@@ -61,7 +65,7 @@ In Bern, Zell, Melbourne, Perth I'm bad news
 Hoi hoi to the Dutch, they're honest
 Their gnome's as tall as a house, rock solid
 Cross my man and it's your wallet
-Got one off my hands: a profit
+Got one off my hands: I flogged it
 #cash 2 | rock solid | solid
 
 == Hook 9-16
@@ -81,7 +85,7 @@ Hanoi bikes are getaway cars
 
 == V1 1-8
 # argument: the network is the business: worldwide, deniable, comfortable. moves: brag, brag, brag, name_drop, brag, brag, threat, punchline
-One black book and the numbers? A charter
+One black book and the numbers? I'll charge ya
 Honesty box? Me? Paid in full: karma
 In my suit? Man! It's good Prada
 My guy's cruiser? Moored out in Palma
@@ -114,7 +118,7 @@ My man pays for negligence
 Customs won't open the crate it's medical
 Chemist wiped it of all of the evidence
 Who is that, lying down? Just a passenger
-And the guards at the border? Scavengers
+And the guards at the border? Flatter ya
 Where's the guy? Lying low in Canada
 Rode in van to van, a real Marathon
 #cash 1 | on credit | credit
@@ -122,15 +126,15 @@ Rode in van to van, a real Marathon
 
 == V1 25-32
 # argument: I've got a guy for every little luxury, in every country. moves: brag, brag, threat, shout_out, brag, brag, brag, punchline
-Mozzarella and capers? It's my guy in Naples
-Marrakesh when I'm able, my guy there will sew a label
-Barber's cut-throat shave? Free: on the house, cards on the table
+Mozzarella that's pricey? My guy does it nicely
+In Marrakesh it's dicey? My guy's Rolexes are icy
+Barber's cut-throat shave? Free: on the house, the life of Riley
 These days I drive a hard bargain
-Now the man I use buys Spain's mainland
+Now the man I use has met Kylie
 Now the man I use is dead cheeky
-Fifty quid? Now don't call my guy greedy
+Fifty quid? Now don't say my guy cheats me
 Where am I? Gone to my guy's guy, he's local, for more freebies
-#cash 3 | cards on the table | table
+#cash 3 | the life of Riley | Riley
 #cash 4 | drive a hard bargain | bargain
 #cash 6 | dead cheeky | cheeky
 
@@ -138,7 +142,7 @@ Where am I? Gone to my guy's guy, he's local, for more freebies
 # argument: police, court, debt: nothing sticks, because my guy sorts it. moves: brag, deflate, brag, brag, threat, brag, brag, brag, threat, threat, brag, punchline
 Sure the cops were speedy
 Officer who? Me? Seedy? Seedy?
-Then my guy sent the money
+Then my guy came to fund me
 Cash in envelopes keeps the cops chummy
 My guy said you pay
 Wanted poster's ten grand! Full front page

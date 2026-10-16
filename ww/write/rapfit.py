@@ -66,6 +66,14 @@ QUALITY_SLACK = 1       # cheap bars and identical-rime pairs may exceed the ori
 # A TWIN is two neighbouring bars that say the same line with the end word changed, the rhyme flipping on that word: the original has one
 # (V1 25-32 bars 5-6, 0.71 alike by word sequence; the next most alike pair in the song is 0.36). Where it twins, ours must.
 TWIN_RATIO = 0.6
+# MULTI-WORD RHYMES (16 Oct 2026, Joe: "our rhymes rarely use multiple words ... the original uses forty then for me then shortly"; then
+# "Gate at the whole song level to give the writer more freedom, a minimum amount of multi-word rhymes, no max, but guard against this
+# leading to cheating/gaming the system with cheap rhymes"). The original ends 7 of its 69 rhyming bars on a rhyme spread over two words
+# (a word + 'him' / 'me' in 6 of them); v4 ended 0. Song-level minimum = MULTI_SHARE x the original's count; no maximum. A bar counts only
+# if its rhyme is REAL and crosses the word boundary: >= 2 deep with a group mate (so it holds a syllable matched with its consonants, see
+# chain), deeper than its last word alone, on a rime that is not cheap, and not the same ending as a bar already counted. Pronoun endings
+# stay capped song-wide by toolkit/meaning_gate.py (at the original's rate), so 'X me' cannot be stacked.
+MULTI_SHARE = 0.8
 
 
 # words as they are SUNG on the original, where the dictionary says otherwise (Joe's ear: luego rhymes with Tobago, Mainz with Spain)
@@ -610,11 +618,75 @@ def write_bar_targets() -> dict:
         if tw:
             twins[s] = tw
     out = {"_note": "the ORIGINAL's per-bar end-rhyme depth with its by-ear group, its rhymes across section breaks, the deepest rhyme each "
-                    "BREAK bar (a lone scheme letter) makes, and its TWIN bars (rapfit, numbers only)",
-           "bars": bars, "boundary": bnd, "breaks": breaks, "twins": twins}
+                    "BREAK bar (a lone scheme letter) makes, its TWIN bars, and its count of real MULTI-WORD rhymes (rapfit, numbers only)",
+           "bars": bars, "boundary": bnd, "breaks": breaks, "twins": twins, "multiword": sum(m["ok"] for m in multiword(orig))}
     (config.BENCHMARK / BAR_TARGETS).write_text(_j.dumps(out, indent=1), encoding="utf-8")
     _bar_targets.cache_clear()
     return out
+
+
+def multiword(sections: dict) -> list[dict]:
+    """bars whose end-rhyme tail spans two or more words: {'slot','bar','tail','depth','ok','why'} (ok = counts toward the minimum)."""
+    from . import rhymeview, slotcheck
+    out, seen = [], set()
+    for s, bars in sections.items():
+        try:
+            sch = slotcheck.spec(s)["scheme"]
+        except Exception:    # noqa: BLE001 - unknown slot
+            continue
+        n = min(len(bars), len(sch))
+        tails = [rhymeview.tail_text(b.split()) for b in bars[:n]]
+        sy = [_syl(t) for t in tails]
+        for i in range(n):
+            ws = tails[i].split()
+            mates = [j for j in range(n) if j != i and sch[j] == sch[i]]
+            if len(ws) < 2 or not mates:
+                continue
+            d = max(chain_best(sy[i], sy[j])["depth"] for j in mates)
+            key = " ".join(re.findall(r"[a-z']+", tails[i].lower()))
+            why = None
+            if d < 2 or d <= len(_syl(ws[-1])):
+                why = f"rhymes {d} deep, not past its last word"
+            elif cheap(tails[i]):
+                why = "a cheap rime (hundreds of words share it)"
+            elif key in seen:
+                why = "the same ending as a bar already counted"
+            out.append({"slot": s, "bar": i + 1, "tail": tails[i], "depth": d, "ok": why is None, "why": why})
+            if why is None:
+                seen.add(key)
+    return out
+
+
+def multiword_hard(sections: dict) -> list[str]:
+    """HARD (song level, 16 Oct 2026): at least MULTI_SHARE x the original's count of real multi-word rhymes; no maximum."""
+    par = _bar_targets().get("multiword")
+    if not par:
+        return []
+    ms = multiword(sections)
+    got = [m for m in ms if m["ok"]]
+    need = MULTI_SHARE * par
+    if len(got) >= need:
+        return []
+    rej = "; ".join(f"{m['slot']} bar {m['bar']} '{m['tail']}' {m['why']}" for m in ms if not m["ok"])
+    return [f"multi-word rhymes: {len(got)} bars end on a rhyme spread over two words (a word + a pronoun, as 'for me' rhymes with a "
+            f"two-syllable ending); the original has {par} (need >= {need:.1f}, no maximum). The rhyme must reach past the last word, "
+            f"not be a cheap rime, and not repeat an ending" + (f" (not counted: {rej})" if rej else "")]
+
+
+def multiword_selftest() -> list[str]:
+    """fixtures (our text): a real two-word rhyme counts; a cheap one, a shallow one and a repeat do not."""
+    problems = []
+    real = {"V1 25-32": ["a", "b", "c", "d", "e", "Now the man I use is dead cheeky", "Fifty quid? Don't say my guy cheats me", "x"]}
+    m = [x for x in multiword(real) if x["ok"]]
+    if [x["bar"] for x in m] != [7]:
+        problems.append(f"'cheats me' ~ 'cheeky' is a two-word rhyme crossing the word boundary: {multiword(real)}")
+    cheap_ = {"V1 25-32": ["a", "b", "c", "d", "e", "I said it was free", "They came round to see me", "x"]}
+    if any(x["ok"] for x in multiword(cheap_)):
+        problems.append(f"'see me' ~ 'free' is a cheap or one-deep rhyme and must not count: {multiword(cheap_)}")
+    rep = {"V1 25-32": ["a", "b", "c", "d", "e", "Now the man I use is dead cheeky", "Don't say my guy cheats me", "He never cheats me"]}
+    if sum(x["ok"] for x in multiword(rep)) != 1:
+        problems.append(f"a repeated two-word ending counts once: {multiword(rep)}")
+    return problems
 
 
 def boundary_hard(sections: dict) -> list[str]:
@@ -732,6 +804,9 @@ def complaints_selftest() -> list[str]:
             problems.append(f"the original fails its own {slot} rhyme block rules (tail / depth)")
     if boundary_hard(orig):
         problems.append("the original fails its own rhymes across section breaks")
+    if multiword_hard(orig):
+        problems.append("the original fails its own multi-word rhyme minimum")
+    problems += multiword_selftest()
     # Joe (4), 16 Oct 2026: our V1 25-32 -> V1 33-44 blocks must also fail the rhyme across the section break
     rows = {l.split("\t")[0]: [b.strip() for b in l.split("\t")[2].split(" / ")] for l in path.read_text(encoding="utf-8").splitlines()
             if l.strip() and not l.startswith("#") and "\ttail\t" in l}

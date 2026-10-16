@@ -127,6 +127,15 @@ LEGACY = {
         "must agree, and a bar about America may use American slang (as the original's bars 67-68 do). The original flags nothing; 4 of 4 US-only "
         "fixtures caught, 0 of 4 UK-slang fixtures flagged (toolkit/tests/us_slang.txt, mine bar Joe's 'torch'); the prompt was tightened once "
         "against the original's false flags (cockney, drill), so the original's pass is partly in-sample"),
+    # 16 Oct 2026, Joe: "our rhymes rarely use multiple words" and "Gate at the whole song level ... a minimum amount of multi-word rhymes,
+    # no max, but guard against this leading to cheating/gaming the system with cheap rhymes"
+    "rapfit.multiword_hard (a song-level minimum of real two-word rhymes)": ("joe_rule", "HARD in ww gate since 16 Oct 2026: >= 0.8 x the "
+        "original's 7 (6 of them a word + 'him' / 'me'); no maximum. Counted only when the rhyme is >= 2 deep with a group mate (so it holds a "
+        "syllable matched with its consonants), deeper than its last word, not a cheap rime, and not an ending already counted; pronoun endings "
+        "stay capped by meaning_gate (now at the original's rate, 8 in 76, with ya / em counted). The original passes (7); fixtures in "
+        "rapfit.multiword_selftest. The 0.8 share is the repo's texture margin, not fitted"),
+    "rapfit.chain vowel-only cap (a run of vowel-only matches counts 1 deep)": ("joe_rule", "16 Oct 2026, Joe: 'mainland' does not rhyme with "
+        "Naples / label. None of the original's targets changed; test row in toolkit/tests/rhyme_complaints.txt"),
     # 16 Oct 2026, Joe on V1 25-32: "Am I mistaken or have the lines and rhyme schemes got mixed up somehow?"
     "rapfit.check_block break / twin (a lone scheme letter rhymes with nothing; the original's twin bars stay twins)": ("joe_rule", "HARD in "
         "slotcheck since 16 Oct 2026. BREAK: the original's 7 break bars rhyme at most 1 syllable deep with any bar of their section (6 at 0), so "
