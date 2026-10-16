@@ -142,6 +142,7 @@ def cmd_selftest(_args) -> int:
         ("quality reader (Claude, report-only)", _lazy("qualityread")),
         ("sense screen", _lazy("sensecheck")),
         ("point read (offline parts)", _lazy("pointcheck")),
+        ("US-only slang (offline parts)", _lazy("slangcheck")),
         ("rhyme texture (internal, sandwich, multis)", _texture_selftest),
         ("beats -> moves migration", _moves_selftest),
     ]

@@ -113,3 +113,6 @@ straya | Australian English | Australia | slang | Australia
 kaixo | Basque | Bilbao 2023 | greeting | hello (the Basque Country's own word; Joe's hook opens on it)
 hoi | Dutch | Rotterdam 2023 (Rolling Loud) | greeting | hi
 proost | Dutch | Rotterdam 2023, Amsterdam 2013-2023 | cheers | cheers
+# --- Ireland and everyday loans (16 Oct 2026, Joe: local words must be ones UK people know and fit the bar)
+slainte | Irish | Dublin, Donegal | cheers | cheers (the Irish toast)
+pronto | Spanish | Spain | slang | quickly (everyday UK English)

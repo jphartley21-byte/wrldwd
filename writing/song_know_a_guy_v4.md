@@ -14,6 +14,9 @@
 # 26, 31, 67), ours must too (toolkit/flow_par.carry, HARD). Bars 25-26 already did; bars 14, 16, 32 and 68 now finish the bar before:
 # "For a servo pie", "'Cause by night I know a guy", "To be sprung by my main guy's guy who's discreet", "'Cause a call to my guy makes
 # it mine". ww gate PASS (sense ON).
+# JOE'S SEVEN, same day ("The other five flagged ones I agree should be flagged and fixed"; "The torch bar and servo pie bar have nothing to do
+# with Australia"; "US specific slang should be flagged, but not UK"): bars 8, 9, 14, 17, 22, 34, 56 rewritten (toolkit/localfit.py, ww/write/
+# slangcheck.py). ww gate: every section PASS; the hook is 1 short on two quotas (3 of 4 local words that fit, 6 of 7 stamps), open for Joe.
 # V3 (16 Oct 2026, Joe: "Go for all 3, add the gates, verify them, then write the new draft to pass all gates and print it"): v2 rewritten to
 # the new rhyme-texture gate (toolkit/texture.py: internal rhyme amount + strength, frame / link sandwiches, multisyllabic runs across
 # words, each per section against the original's same section). v2 failed it in 8 of 10 sections; v3 passes all 10. ww gate PASS
@@ -36,7 +39,7 @@
 # SENSE REWRITE 15 Oct 2026 (the sense gate came back on, on Claude): 12 bars in Hook 1-4, Hook 9-16, V1 25-32, V1 33-44 and V2 1-8 made
 # plain sentences or tied to the guy (old bars in git history). Quality marks (report-only): python -m ww.write.qualityread.
 # (persona) for Joe: every crime, bribe and luxury claim; the Prada suit; the boat in Palma; the
-# Laxey bar tab; the crate, customs, the chemist and the trolley; the Barbour parka; the judge's lager; the top-thief list; the gold; the Spanish stop; the Whitsundays yacht and the reef dive; the
+# Laxey bar tab; the crate, customs, the chemist, the ferry crews and the trolley; the Barbour parka; the judge's lager; the top-thief list; the gold; the Spanish stop; the Whitsundays yacht and the reef dive; the
 # ute on K'gari. Named but not visited: Old Bailey, Canada, Saul. The East Coast is Australia's (2017, true). True places: material/travel_history.md.
 
 == Hook 1-4
@@ -53,17 +56,17 @@ In Bern, Zell, Melbourne, Perth I'm bad news
 Hoi hoi to the Dutch, they're honest
 Their gnome's as tall as a house, rock solid
 Cross my man and it's your wallet
-Want one? Off my hands: a profit
+Got one off my hands: a profit
 #cash 2 | rock solid | solid
 
 == Hook 9-16
 # argument: my people: the bloke with the torch, the brief, the doorman, the bike shop. moves: brag, name_drop, brag, threat, flex_list, punchline, brag, punchline
-G'day there's a torch on call
+The law up in Bergen? Skal
 My brief's a better call than Saul
 Four-wheeler's dead on arrival
 My doorman will put you through the floor
 Cash for Spain and it's cash for trains and cash for planes
-For a servo pie
+Like a private eye
 Hanoi bikes are getaway cars
 'Cause by night I know a guy
 #cash 2 | better call Saul | Saul
@@ -73,12 +76,12 @@ Hanoi bikes are getaway cars
 
 == V1 1-8
 # argument: the network is the business: worldwide, deniable, comfortable. moves: brag, brag, brag, name_drop, brag, brag, threat, punchline
-One black book and as for reach? It's larger
+One black book and the numbers? A charter
 Honesty box? Me? Paid in full: karma
 In my suit? Man! It's good Prada
 My guy's cruiser? Moored out in Palma
 Stab vest? Nah a parka
-Cash? Yes! And the judge gets lager
+Cash? Yes! I bung the judge lager
 Cross me? Just you wait and see
 Grazie grazie train drivers! A month and no drama
 #cash 7 | wait and see | see
@@ -102,7 +105,7 @@ To be sprung by my main guy's guy who's discreet
 # bars 5 and 7 end stressed-weak-weak, not the template's weak-only ending: only "him" makes that shape with a three-syllable
 # rhyme, the original repeats it on both bars, and the draft rules forbid a repeated end word (listed to Joe).
 Dublin's mine: my bar tab's in credit
-No one sees my elephant
+My man pays for negligence
 Customs won't open the crate it's medical
 Chemist wiped it of all of the evidence
 Who is that, lying down? Just a passenger
@@ -134,7 +137,7 @@ Cash in envelopes keeps the cops chummy
 My guy said you pay
 Wanted poster's ten grand! Full front page
 I never once came to the Old Bailey
-In the bar as a star I'm saving face
+So the brass at the Met were saving face
 Owe me and you've ten days' grace
 When you owe me I know: your head is fair game
 Top of town: I'm the boss of Bristol

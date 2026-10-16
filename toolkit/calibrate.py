@@ -50,6 +50,12 @@ import flow_par as _fpar  # noqa: E402
 good = _fpar.selftest(sys.argv[1])
 ok &= good
 print(("ok  " if good else "BAD ") + "flow par: Joe's flagged bars all fail, the original passes its own bars")
+# LOCAL WORDS FIT THEIR BAR (16 Oct 2026, Joe: "The torch bar and servo pie bar have nothing to do with Australia"): the original's place-tied
+# local words all stand by their place; Joe's two rows are caught.
+import localfit as _lfit  # noqa: E402
+good = _lfit.selftest(sys.argv[1])
+ok &= good
+print(("ok  " if good else "BAD ") + "local words: the original's fit their bars; Joe's misplaced ones are caught")
 # RHYME TEXTURE (16 Oct 2026): internal rhyme, sandwiches and multis across words, per section; the original passes its own par and
 # the fixtures (a cross-word multi, a frame and a link sandwich, a repeat that is not a rhyme) fire.
 import texture as _tex  # noqa: E402

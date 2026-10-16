@@ -1,0 +1,10 @@
+# US-only slang (must be flagged) and UK slang (must not), 16 Oct 2026 (Joe: "US specific slang should be flagged, but not UK").
+# Format: US|UK | bar. The first US row is Joe's bar; the rest are fixtures written for the test.
+US | G'day there's a torch on call
+US | Grabbed a hoagie and a forty from the packie
+US | The bum on the stoop wants a buck for the bodega
+US | My fanny pack's full and I'm heading to the restroom
+UK | Plod caught me skint with a bag of gear
+UK | He's proper peng and the lads are buzzing
+UK | Got the guap in a carrier bag from Spoons
+UK | Knackered, I'm off for a cheeky Nando's

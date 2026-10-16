@@ -9,3 +9,7 @@
 22 | Cash? Yes! And the judge gets lager | 16 Oct: PASSED the read (sense 2): restated word for word, never asked why the judge gets lager
 34 | No one sees my elephant | 16 Oct: flagged ('elephant' unexplained), absorbed by V1 17-24's allowance (5 of 8 may fail)
 56 | In the bar as a star I'm saving face | 16 Oct: PASSED the read (sense 2): restated word for word; a star 'saving face' contradicts itself
+# 16 Oct 2026, Joe's verdict on the seven: "The other five flagged ones I agree should be flagged and fixed" (bars 8, 17, 22, 34, 56).
+# Bars 9 and 14 fail for a different reason: "The torch bar and servo pie bar have nothing to do with Australia" (an Australian word in a
+# bar that is not about Australia: toolkit/tests/local_flagged.txt) and "US specific slang should be flagged, but not UK" ("torch" for an
+# arsonist is US-only slang).

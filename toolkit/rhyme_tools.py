@@ -44,7 +44,7 @@ OVR = {
     "malin": "M AE1 L IH0 N", "maughold": "M AO1 K AH0 L D",
     "panniers": "P AE1 N Y ER0 Z", "wetherspoons": "W EH1 DH ER0 S P UW2 N Z", "spoons": "S P UW1 N Z",
     "guten": "G UW1 T AH0 N", "morgen": "M AO1 R G AH0 N", "freiburg": "F R AY1 B UH0 R G",
-    "horfield": "HH AO1 F IY0 L D", "rotterdam": "R AA1 T ER0 D AE2 M", "donegal": "D AA1 N AH0 G AO2 L",
+    "horfield": "HH AO1 F IY0 L D", "slainte": "S L AA1 N CH AH0", "rotterdam": "R AA1 T ER0 D AE2 M", "donegal": "D AA1 N AH0 G AO2 L",
     "cairns": "K AE1 N Z", "noosa": "N UW1 S AH0", "whitsundays": "W IH1 T S AH0 N D EY2 Z",
     "kettle": "K EH1 T AH0 L", "pyjamas": "P AH0 JH AA1 M AH0 Z", "tarn": "T AA1 N", "scree": "S K R IY1",
     "cairn": "K EH1 N", "fell": "F EH1 L", "gorse": "G AO1 S", "loch": "L AA1 K", "lough": "L AA1 K",

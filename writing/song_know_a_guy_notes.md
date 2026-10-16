@@ -155,3 +155,7 @@ Rewrite: 13 Cash for Cairns and it's cash for Wales and cash for Spain (Wales / 
     because the read only asked whether a bar can be restated. A new read (pointcheck: "did you have to work it out?") ranks bad bars above
     the original's (AUC 0.89) but cannot be cut into a gate. The web-lookup run (0.84) is void: Wiktionary refused most lookups and a bug
     saved the refusals as "no meaning". It now lists 20 v4 bars to Joe.
+26. Joe (16 Oct): local words must be ones UK people know and must fit the bar (the torch and servo bars had nothing to do with Australia);
+    US-only slang is flagged, UK slang is not; the five bars he agreed with get fixed; "Hoi hoi to the Dutch" is fine. New hard checks:
+    toolkit/localfit.py and ww/write/slangcheck.py (the original passes both). Seven bars rewritten. The hook now falls one short on the
+    local-word and stamp quotas the Australian words had been filling.

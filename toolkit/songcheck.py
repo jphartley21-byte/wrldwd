@@ -160,19 +160,29 @@ def song_gates(sections, title, fails, notes):
         hp = [i + 1 for i, b in enumerate(hooks) if rg.is_place(b, places)]
         if len(hp) < MIN_HOOK_PLACES:
             fails.append(f"SONG: the hook names a place in {len(hp)} of {len(hooks)} bars, need >= {MIN_HOOK_PLACES}")
-        loc = {w for b in hooks for w in rg.words(b) if w in loans or w in rg.GREET}
+        # only local words that FIT their bar count (16 Oct 2026, Joe: the original's foreign words are ones "most UK people know and they
+        # fit the bar"; ours met this count with an Australian greeting and shop word in bars about nothing Australian): toolkit/localfit.py
+        import localfit as _lf
+        _bad = {(w, b) for i, w, _, _ in _lf.misplaced(bars) for b in [bars[i]]}
+        loc = {w for b in hooks for w in rg.words(b) if (w in loans or w in rg.GREET) and (w, b) not in _bad}
         if len(loc) < (len(hooks) + 3) // 4:
             fails.append(f"SONG: the hook has {len(loc)} local/foreign words; it is the level that code-switches most")
     # Verses code-switch too, at a lower rate: measured, five local words across the original's 60 verse bars,
     # and one whole verse has none -- so this is a SONG-level rate, not a per-verse one.
     verses = [b for s, bs in sections if level_of(s) == "verse" for b in bs]
     if verses:
-        vloc = {w for b in verses for w in rg.words(b) if w in loans}
+        import localfit as _lf
+        _bad = {(w, b) for i, w, _, _ in _lf.misplaced(bars) for b in [bars[i]]}
+        vloc = {w for b in verses for w in rg.words(b) if w in loans and (w, b) not in _bad}
         need = max(1, len(verses) // 12)
         if len(vloc) < need:
             fails.append(f"SONG: {len(vloc)} local words across {len(verses)} verse bars, need >= {need}")
         else:
             notes.append(f"SONG: verse local words {sorted(vloc)} ({len(vloc)} in {len(verses)} bars)")
+    import localfit as _lf
+    for i, w, lang, why in _lf.misplaced(bars):
+        fails.append(f"SONG: bar {i + 1} uses '{w}' ({lang}) with no {lang.replace(' English', '')} place in it or beside it ({why}); "
+                     "the original's local words are ones UK listeners know, and they fit the bar")
     cw = [w for b in bars for w in rg.words(b) if w not in rg.STOP]
     ttr = len(set(cw)) / max(1, len(cw))
     if ttr < MIN_TTR_SONG:

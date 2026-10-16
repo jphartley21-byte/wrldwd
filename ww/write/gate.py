@@ -37,6 +37,8 @@ def gates_off() -> list[str]:
         off.append("stress-anchored rhyme rule (WW_RAPFIT_GATE=0)")
     if os.environ.get("WW_TEXTURE", "1") == "0":
         off.append("rhyme texture: internal, sandwich, multis (WW_TEXTURE=0)")
+    if os.environ.get("WW_USSLANG", "1") == "0":
+        off.append("US-only slang read (WW_USSLANG=0)")
     if os.environ.get("WW_RECOUNT", "1") == "0":
         off.append("recount (WW_RECOUNT=0)")
     if os.environ.get("WW_LEGACY_FLOW", "0") == "1":

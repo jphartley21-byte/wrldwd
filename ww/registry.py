@@ -117,6 +117,16 @@ LEGACY = {
         "(>= 4 flags 18/76 of the original, catches 15/17), Sonnet x1 0.86. The glossary run (0.84) is VOID: Wiktionary refused most lookups and "
         "a bug saved the refusals as 'no sense' (fixed); the lookup idea is untested. Test-retest: 12 bars read twice moved 1.2 points on average; the flag flipped on 6. Listed to Joe in ww gate "
         "notes from the cache; never fails the gate. benchmark/point_validation_<model>_p<prompt>.json"),
+    # 16 Oct 2026, Joe: "The original uses words and phrases most UK people know and they fit the bar. The torch bar and servo pie bar have
+    # nothing to do with Australia." and "US specific slang should be flagged, but not UK"
+    "toolkit/localfit.py (a place-tied local word stands by its place, unless UK listeners know it on its own)": ("joe_rule", "HARD in songcheck "
+        "since 16 Oct 2026; only fitting words count toward the hook and verse local-word quotas. The original passes (0 misplaced): its greetings "
+        "sit with their places, 'prego' after 'Italian', 'ouzo' on its own. Joe's two rows fail (toolkit/tests/local_flagged.txt). UK_KNOWN and "
+        "UK_HOME are hand lists, not measurements (word frequency puts 'wagwan' below 'servo'); Joe corrects them"),
+    "ww/write/slangcheck.py (US-only slang senses)": ("joe_rule", "HARD in slotcheck since 16 Oct 2026: two cached Haiku reads per section that "
+        "must agree, and a bar about America may use American slang (as the original's bars 67-68 do). The original flags nothing; 4 of 4 US-only "
+        "fixtures caught, 0 of 4 UK-slang fixtures flagged (toolkit/tests/us_slang.txt, mine bar Joe's 'torch'); the prompt was tightened once "
+        "against the original's false flags (cockney, drill), so the original's pass is partly in-sample"),
     # 15 Oct 2026, Joe: "Do we have any gates that check quality? ... Scoring on cleverness?" and "I should be able to use claude too".
     "ww/write/sensecheck.py on Claude (haiku via the claude CLI, no key)": ("joe_rule", "HARD per slot since 15 Oct 2026 (sense gate: Joe, 14 Oct). "
         "Calibration (2 reads per block, a bar fails only if both fail it, pronoun rule): good bars failed 1/7, bad passed 1/7 on 3 of 3 fresh runs. "

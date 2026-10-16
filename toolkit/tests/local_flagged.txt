@@ -1,0 +1,5 @@
+# Joe (16 Oct 2026): "The original uses words and phrases most UK people know and they fit the bar. The torch bar and servo pie bar have
+# nothing to do with Australia." Added FIRST (rule 10). Each row is a section as v4 had it, with the bar that misuses a local word.
+# Format: bar | word | the section's bars separated by " / ". toolkit/localfit.py must flag each word here and nothing in the original.
+1 | g'day | G'day there's a torch on call / My brief's a better call than Saul / Four-wheeler's dead on arrival / My doorman will put you through the floor / Cash for Spain and it's cash for trains and cash for planes / For a servo pie / Hanoi bikes are getaway cars / 'Cause by night I know a guy
+6 | servo | G'day there's a torch on call / My brief's a better call than Saul / Four-wheeler's dead on arrival / My doorman will put you through the floor / Cash for Spain and it's cash for trains and cash for planes / For a servo pie / Hanoi bikes are getaway cars / 'Cause by night I know a guy

@@ -588,6 +588,18 @@ def check(slot: str, bars: list[str], context: list[str] | None = None, tol: int
                     hard.append(f"sense ACROSS bars: {bc_.get('issue') or bc_.get('thread', '')[:80]} (bars that do not follow: {[n for n, _ in bc_['fails']]})")
         except Exception as e:  # noqa: BLE001
             notes.append(f"sense gate unavailable: {str(e)[:60]}")
+    # US-ONLY SLANG, HARD (16 Oct 2026, Joe: "US specific slang should be flagged, but not UK"): ww/write/slangcheck.py, two cached reads per
+    # section that must agree; the original flags nothing (benchmark/us_slang_validation.json). WW_USSLANG=0 switches it off (announced).
+    if os.environ.get("WW_USSLANG", "1") != "0" and os.environ.get("WW_SENSE", "1") != "0":
+        try:
+            from . import slangcheck
+            r_ = slangcheck.check(bars)
+            for n_, w_, s_ in r_["flags"]:
+                hard.append(f"US-only slang: bar {n_} uses '{w_}' as {s_}; a British listener hears something else (use the UK word)")
+            if r_.get("unjudged"):
+                notes.append(f"US slang read unavailable: {r_['unjudged']}")
+        except Exception as e:  # noqa: BLE001
+            notes.append(f"US slang read unavailable: {str(e)[:60]}")
     # RECOUNT (14 Oct 2026): a block that tells what happened in time order (past-tense event runs, "stop one / then / next" place lists)
     # instead of claiming something. HARD, par from the original (toolkit/recount.py; registry: validated). WW_RECOUNT=0 switches it off.
     if os.environ.get("WW_RECOUNT", "1") != "0":
