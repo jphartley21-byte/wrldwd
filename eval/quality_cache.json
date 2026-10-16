@@ -10646,5 +10646,571 @@
 "why": "Continues the past-tense sequence (caught, then money) instead of returning to the boast."
 }
 ]
+},
+"e62f6652e35e255959321feb5c76368b4c85d3127e7081b437cf76225d53a962": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Generic toast with no notoriety or hook. Nothing tells us what happened at the venue.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "I continue",
+"forced_rate": 0.5,
+"note": "Deadpan reply to 'left for dead' is the right flat, unbothered voice. 'I continue' is a clean callback to the desert claim.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 1.0,
+"rewind": 1.5,
+"in_character": 1.5,
+"clever": 1.0,
+"forced": "Greek cruise",
+"forced_rate": 0.5,
+"note": "Cops-bail-judge-jail reads as a loop, and the cruise stops are the joke. Simile lands only after a beat.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.5,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Place-name list with no proof or punchline. 'Bad news' is a stock phrase, and the bar just lists towns.",
+"reads": 2
 }
+],
+"2bd34f538cfb6d59c490ee2484440cf0f4f39b97897cdcdd69699b138636a1a7": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 0.5,
+"forced": "It's larger",
+"forced_rate": 0.5,
+"note": "Black book is a double meaning, but 'It's larger' is a limp payoff.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Honesty box refused, paid in karma. Good deadpan swerve, clearly stated.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Plain brand-name boast. Nothing beyond the surface.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Yacht in Palma is a small, specific proof. 'Cruiser' is a faint pun.",
+"reads": 2
+},
+{
+"n": 5,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 2.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Stab vest swapped for a parka: petty, British, lands at once.",
+"reads": 2
+},
+{
+"n": 6,
+"first_listen": 1.0,
+"rewind": 1.5,
+"in_character": 2.0,
+"clever": 2.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Clean hands plus lager for the judge: bribery hidden in admin-speak. Strong.",
+"reads": 2
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 0.5,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Kids'-playground rule as a threat. Flat menace suits the narrator.",
+"reads": 2
+},
+{
+"n": 8,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Thanking train drivers for a drama-free month: nice, but why them?",
+"reads": 2
+}
+],
+"752cb55b9f05b86f3428b440da8a350d37bbb2ca0a9572926a6b06483bee9829": [
+{
+"n": 1,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Clear 'my guy' network claim; the food list is just setup.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "when I'm able",
+"forced_rate": 1.0,
+"note": "'Sews a label' lands as counterfeit only after a beat. 'When I'm able' is padding.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 1.5,
+"rewind": 1.5,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "cards on the table",
+"forced_rate": 1.0,
+"note": "Free cut-throat shave works. 'Cards on the table' is a filler tag to rhyme.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 0.5,
+"forced": "Near fatal",
+"forced_rate": 0.5,
+"note": "Dear beer 'near fatal' is the price joke; lands after a beat.",
+"reads": 2
+},
+{
+"n": 5,
+"first_listen": 0.0,
+"rewind": 0.0,
+"in_character": 1.5,
+"clever": 0.0,
+"forced": "Thai mainland",
+"forced_rate": 1.0,
+"note": "'Own the whole fleet, Thai mainland' is unclear and does not land.",
+"reads": 2
+},
+{
+"n": 6,
+"first_listen": 2.0,
+"rewind": 0.5,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Cheap fags 'dead cheeky' is a clean British deflation.",
+"reads": 2
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Forty a day and 'my guy is sorting me' is clear and deadpan.",
+"reads": 2
+},
+{
+"n": 8,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "Where am I?",
+"forced_rate": 1.0,
+"note": "'Where am I?' is a nice lost-in-his-network double; 'he's local' is filler.",
+"reads": 2
+}
+],
+"0e30af065651c2fb370bbae926caaf00ca106d76f9acf17d235095369f5f2759": [
+{
+"n": 1,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Boast and petty proof land fast; 'in credit' gives a second bank-account reading.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Elephant as hidden contraband is clear only after a beat; 'elephant in the room' is a faint extra.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Customs deferring to a 'medical' label is deadpan admin; the cover story is the joke.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.5,
+"forced": "",
+"forced_rate": 0.0,
+"note": "'Chemical' as the flat answer to 'evidence?' is a tight, quotable deadpan punchline.",
+"reads": 2
+},
+{
+"n": 5,
+"first_listen": 2.0,
+"rewind": 2.0,
+"in_character": 2.0,
+"clever": 2.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "'Just a passenger' lying down: the lie is literal, and it sets up the lying chain.",
+"reads": 2
+},
+{
+"n": 6,
+"first_listen": 1.5,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.5,
+"forced": "",
+"forced_rate": 0.0,
+"note": "'Salary' says the guards are bought; it copies bar 4's question-one-word shape.",
+"reads": 2
+},
+{
+"n": 7,
+"first_listen": 2.0,
+"rewind": 2.0,
+"in_character": 2.0,
+"clever": 1.5,
+"forced": "",
+"forced_rate": 0.0,
+"note": "'Lying low' calls back bar 5's 'lying down', a clean fugitive-hiding callback.",
+"reads": 2
+},
+{
+"n": 8,
+"first_listen": 1.0,
+"rewind": 1.5,
+"in_character": 1.0,
+"clever": 1.5,
+"forced": "a real",
+"forced_rate": 1.0,
+"note": "Marathon as chocolate bar and as relay distance is a strong double; 'a real' is padding.",
+"reads": 2
+}
+],
+"6dc6ec4847a1e021cc68a84e855423ab9f536eb985d62b3b8e9e73d18ed4af32": [
+{
+"n": 1,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.5,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Clear past-tense report of arrest; flat, but 'Sure' is filler.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 1.5,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Mock-innocent denial works; the doubled 'Seedy' lands as deadpan.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.5,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Clear bribery setup, but 'Then' is a dead transition.",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.5,
+"clever": 1.0,
+"forced": "no one gets funny",
+"forced_rate": 1.0,
+"note": "'Gets funny' is idiomatic; the rhyme with 'money' drives it.",
+"reads": 2
+},
+{
+"n": 5,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.5,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Menace is clear but the line is flat and generic.",
+"reads": 2
+},
+{
+"n": 6,
+"first_listen": 2.0,
+"rewind": 0.5,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "Full",
+"forced_rate": 0.5,
+"note": "Bounty plus front page: petty proof of notoriety, well judged.",
+"reads": 2
+},
+{
+"n": 7,
+"first_listen": 1.0,
+"rewind": 2.0,
+"in_character": 2.0,
+"clever": 2.0,
+"forced": "Old Bailey",
+"forced_rate": 0.5,
+"note": "'Dock' pun: courtroom box and harbour. Quotable and deadpan.",
+"reads": 2
+},
+{
+"n": 8,
+"first_listen": 1.0,
+"rewind": 0.5,
+"in_character": 1.0,
+"clever": 0.5,
+"forced": "I'm saving face",
+"forced_rate": 0.5,
+"note": "Saving face is understood, but the beer garden image is limp.",
+"reads": 2
+},
+{
+"n": 9,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.5,
+"forced": "",
+"forced_rate": 0.0,
+"note": "'Ten days' grace' is admin-register debt menace, plainly delivered.",
+"reads": 2
+},
+{
+"n": 10,
+"first_listen": 1.5,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 2.0,
+"forced": "Fair game",
+"forced_rate": 0.5,
+"note": "Conker image is vivid and British; the 'Fair game' tag is sharp.",
+"reads": 2
+},
+{
+"n": 11,
+"first_listen": 1.5,
+"rewind": 1.5,
+"in_character": 2.0,
+"clever": 1.5,
+"forced": "Crown on top",
+"forced_rate": 1.0,
+"note": "Boast lands; 'crown on top' is awkward, though it hints at a bottle cap.",
+"reads": 2
+},
+{
+"n": 12,
+"first_listen": 2.0,
+"rewind": 1.5,
+"in_character": 2.0,
+"clever": 1.5,
+"forced": "",
+"forced_rate": 0.0,
+"note": "'A guy. No names' calls back 'my guy' and closes the section deadpan.",
+"reads": 2
+}
+],
+"28a7d0c2fba7e1d911d15016950b92b2bdcb8405863d0ba28b136191ea4c2f64": {
+"consistent": 2,
+"contradictions": [],
+"off_card": [
+{
+"bar": 25,
+"why": "Four-bar past-tense backstory; card allows only brief past reports."
+},
+{
+"bar": 26,
+"why": "Past-tense 'broke, kipped on floor' is not big or illicit."
+},
+{
+"bar": 49,
+"why": "Past-tense arrest narrative beyond the allowed two-bar report."
+},
+{
+"bar": 51,
+"why": "Continues the past-tense sequence instead of returning to boast."
+},
+{
+"bar": 18,
+"why": "'Karma' delivers a moral, which the card forbids."
+}
+]
+},
+"9424887150f0f16787638c2d890815208122f56a199929ee3fc96399d8ff83c3": [
+{
+"n": 1,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 1.5,
+"clever": 0.5,
+"forced": "",
+"forced_rate": 0.0,
+"note": "'A guy?' is an unclear question; the own-boat flex only lands after a beat.",
+"reads": 2
+},
+{
+"n": 2,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Bare list of places; the photo is the only proof and it's vague.",
+"reads": 2
+},
+{
+"n": 3,
+"first_listen": 1.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "",
+"forced_rate": 0.0,
+"note": "Wanted-poster notoriety lands, but East Coast is ambiguous (US or UK rail).",
+"reads": 2
+},
+{
+"n": 4,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 1.5,
+"clever": 1.0,
+"forced": "Hustled well",
+"forced_rate": 0.5,
+"note": "Hustle-and-gold reads fast; 'struck gold' is a stock idiom that the hustle half-earns.",
+"reads": 2
+},
+{
+"n": 5,
+"first_listen": 2.0,
+"rewind": 0.0,
+"in_character": 1.0,
+"clever": 0.0,
+"forced": "walk in to the limelight",
+"forced_rate": 0.5,
+"note": "Clear queue-skipping flex, but 'limelight' is a tired cliché with no twist.",
+"reads": 2
+},
+{
+"n": 6,
+"first_listen": 2.0,
+"rewind": 1.0,
+"in_character": 2.0,
+"clever": 1.0,
+"forced": "Don't need one",
+"forced_rate": 0.5,
+"note": "Reversing the bribe—he takes them now—is a neat, deadpan power flip.",
+"reads": 2
+},
+{
+"n": 7,
+"first_listen": 1.0,
+"rewind": 1.5,
+"in_character": 1.0,
+"clever": 1.0,
+"forced": "you get",
+"forced_rate": 1.0,
+"note": "Boxing no-ref, no-bell idea is good but 'you get' is padding for the beat.",
+"reads": 2
+},
+{
+"n": 8,
+"first_listen": 1.5,
+"rewind": 1.5,
+"in_character": 2.0,
+"clever": 1.5,
+"forced": "last lifeline",
+"forced_rate": 0.5,
+"note": "Call-on-me nod and lifeline pun land; 'last lifeline' is clunky padding.",
+"reads": 2
+}
+]
 }

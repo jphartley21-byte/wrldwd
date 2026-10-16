@@ -15,3 +15,4 @@
 41 | So the good mozzarella? From the guy in Naples | 15 Oct: the original's long lines land an end rhyme at the bar line ("there are end rhymes in the middle, so it's actually delivered over 8 bars"); ours has "end rhymes that don't rhyme" (mozzarella / Naples)
 42 | Marrakesh, half the price, with my guy there, so check the label | 15 Oct: same complaint (half the price / label: no rhyme at the bar line where the original lands one)
 41 | Mozzarella? A stranger? It's my guy in Naples | 15 Oct: "Turkey and certi is same closeness as stranger and Naples?" (the bar-line rhyme matched vowels only: rapfit 0.69 vs the original's 0.81)
+76 | Each time you're stuck, I'm the guy and your last lifeline | 16 Oct: "Flows very differently" from the original's bar 76 (the pause falls one syllable later than the original's; five separate words on the 16th run where the original repeats one spelled-out cell)

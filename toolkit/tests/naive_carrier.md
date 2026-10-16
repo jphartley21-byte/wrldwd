@@ -37,3 +37,16 @@ Forty a day? My guy is sorting me
 Need me? Gone to my guy's guy down the road for a quick sneaky
 #cash 3 | cards on the table | table
 #cash 6 | dead cheeky | cheeky
+# V2 9-16 added 16 Oct 2026 (frozen copy of writing/song_know_a_guy_v2.md's section after the pause refit, assistant-authored,
+# NOT approved) so Joe's bar-76 complaint (pause position, spelled-out cell) has a section to be swapped into.
+== V2 9-16
+A guy? Well, my own boat
+Christchurch Oslo Scotland Wales I'm in the photo
+Famous? Me? My face is on the East Coast
+Pool hall? Hustled well and then I struck gold
+Skip queues, walk in to the limelight
+Don't need one 'cause I'm big now I take bribes
+Seconds out no ref you get no bell
+Stuck? Need me? Call on me, call on me: last lifeline
+#cash 4 | struck gold | gold
+#cash 5 | in the limelight | limelight

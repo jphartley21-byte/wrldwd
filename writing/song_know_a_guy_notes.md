@@ -119,3 +119,9 @@ Rewrite: 13 Cash for Cairns and it's cash for Wales and cash for Spain (Wales / 
     and swagger gates force a place list into the hook, which Haiku marks low on first listen, so Hook 1-4 met the quality targets only when it
     failed those gates; (c) re-reading one changed section moves unchanged bars by 0.5, so near-par passes are noise. The place counter does not
     know Perth or Hanoi (only Greek, Bern, Dutch and Spain count in the hook).
+19. Joe (16 Oct) asked whether flow matching hears mouth shapes, transitions, pauses and syllable lengths, comparing v2 bar 76 with the
+    original's. Stress, syllable counts, mouth-shape joins, closed-vowel runs and 16th jams were gated; pause position and a cell hidden
+    inside one spelled-out word were not, and syllable length (weight) is still not measured (a crude heavy-syllable count did not separate
+    the two lines). Now HARD in toolkit/flow_par.py: `pause` (break after the original's syllable) and spelled-out cells. v2 refit: 21 bars,
+    e.g. 76 "Stuck? Need me? Call on me, call on me: last lifeline" (pause after 3, the repeated cell on the 16th run), 69 "A guy? Well, my
+    own boat", 58 "Your head's a conker now. You owe me? Fair game". ww gate PASS; targets 7/10 + character 2/2.

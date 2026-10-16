@@ -2,6 +2,9 @@
 # rewritten to the Claude quality targets (match the original: first listen, rewind, clever >= the original's Haiku par; forced <= par;
 # no bar at first listen 0; character 2/2). 32 bars changed. ww gate PASS (sense ON); targets 6/10 sections + character 2/2 (current
 # draft 2/10, 1/2). Misses and why: writing/song_know_a_guy_v1_vs_v2.md. 'My crew' and 'Lone wolf / Solo' are gone. Assistant-authored.
+# PAUSE REFIT 16 Oct 2026 (Joe on bar 76: "Flows very differently" from the original's): toolkit/flow_par.py now makes a bar pause
+# after the same syllable as the original's bar (22 of 76 bars) and hears spelled-out acronyms as a repeated cell. 18 bars failed it;
+# 21 bars changed (3 more for the cashed idiom, the sense read and a lost drum). ww gate PASS (sense ON); targets 7/10 + character 2/2.
 # I KNOW A GUY: a new song written from scratch (15 Oct 2026) as a naive writer: premise (brief/premises.json know_a_guy),
 # section argument, one rap move per bar, ingredients (material/ingredients.md), sentences, then fitted with toolkit/fitbar.py
 # and held to `python -m ww.cli gate` until it exited 0. Nothing carried over from any earlier draft. Assistant-authored.
@@ -19,7 +22,7 @@
 == Hook 1-4
 # argument: wherever I land, I know a guy. moves: shout_out, brag, flex_list, punchline
 # one ending family on all four bars (venue / continue / cruise / news), as the original's Hook 1-4 shares one final vowel
-Cheers to the venue
+Cheers! To the venue
 You left me for dead? I continue
 Cops, bail, judge, jail, it's like a Greek cruise
 In Bern, Zell, Crete, Nantes, I'm the bad news
@@ -50,15 +53,15 @@ If you're stuck I know a guy
 
 == V1 1-8
 # argument: the network is the business: worldwide, deniable, comfortable. moves: brag, brag, brag, name_drop, brag, brag, threat, punchline
-One phone and a name, my reach is larger
-Honesty box? I pay with good karma
-In my suit head to toe Prada
-My guy keeps a boat out in Palma
+One black book and as for reach? It's larger
+Honesty box? Me? Paid in full: karma
+In my best suit: it's all Prada
+My guy's cruiser? Moored out in Palma
 Stab vest? Nah, a parka
 Clean hands and the judge gets lager
-Try me and see what you get
-Grazie grazie four weeks on the trains and no drama
-#cash 2 | good karma | karma
+Cross me? You get what you get
+Grazie grazie, train drivers! A month and no drama
+#cash 7 | you get what you get | get
 #cash 8 | no drama | drama
 
 == V1 9-16
@@ -78,12 +81,12 @@ I'm out so ring my main guy's guy he's discreet
 # argument: my guy moves anything, anywhere, no questions (courier register). moves: brag, brag, brag, punchline, threat, threat, punchline, brag
 # bars 5 and 7 end stressed-weak-weak, not the template's weak-only ending: only "him" makes that shape with a three-syllable
 # rhyme, the original repeats it on both bars, and the draft rules forbid a repeated end word (listed to Joe).
-Dublin, and my bar tab's in credit
+Dublin's mine: my bar tab's in credit
 No one sees my elephant
 Customs won't open the crate it's medical
 Gardaí come for the evidence? Chemical
-Wrapped in a blanket, mate, just a passenger
-And the guards at the gate? On salary
+Who is that, lying down? Just a passenger
+And the guards at the border? Salary
 Where's the guy? Lying low in Canada
 Pass it van to van, a real Marathon
 #cash 1 | on credit | credit
@@ -93,12 +96,12 @@ Pass it van to van, a real Marathon
 # argument: I've got a guy for every little luxury, in every country. moves: brag, brag, threat, shout_out, brag, brag, brag, punchline
 Mozzarella and capers? It's my guy in Naples
 Marrakesh when I'm able, my guy there, he sews a label
-Barber's chair: cut-throat shave's on the house, cards on the table
+Barber's cut-throat shave? Free: on the house, cards on the table
 Beer's dear in Bergen? Near fatal
 And I own the whole fleet, Thai mainland
-But the fags? That cheap it's dead cheeky
+But the fags? So cheap it's dead cheeky
 Forty a day? My guy is sorting me
-Need me? Gone to my guy's guy down the road for a quick freebie
+Where am I? Gone to my guy's guy, he's local, for more freebies
 #cash 3 | cards on the table | table
 #cash 6 | dead cheeky | cheeky
 
@@ -109,13 +112,13 @@ Officer? Who me? Seedy? Seedy?
 Then my guy had the money
 Cash in envelopes no one gets funny
 My guy made you pay
-Wanted posters, all Boomtown, front page
+Wanted posters? Ten grand! Full front page
 Never set foot in the dock Old Bailey
 Back in the beer garden I'm saving face
 Owe me? Then you've ten days' grace
-You owe? Your head's a conker and that's fair game
-Crown on top hat I'm king of Bristol
-Dealers know that I know a guy, no names
+Your head's a conker now. You owe me? Fair game
+Crown on top: I'm the king of Bristol
+Dealers know who I know: a guy. No names
 #cash 5 | made you pay | pay
 #cash 8 | saving face | face
 #cash 9 | days' grace | grace
@@ -136,13 +139,13 @@ Name it, my mate: one call and it's mine
 
 == V2 9-16
 # argument: I don't need a guy any more: I am the guy (the knockout turns the hook's own line round). moves: brag, flex_list, brag, brag, brag, threat, threat, punchline
-Well I've got my own boat
+A guy? Well, my own boat
 Christchurch Oslo Scotland Wales I'm in the photo
-Famous now my face is on the East Coast
+Famous? Me? My face is on the East Coast
 Pool hall? Hustled well and then I struck gold
 Skip queues, walk in to the limelight
 Don't need one 'cause I'm big now I take bribes
 Seconds out no ref you get no bell
-Each time you're stuck, I'm the guy and your last lifeline
+Stuck? Need me? Call on me, call on me: last lifeline
 #cash 4 | struck gold | gold
 #cash 5 | in the limelight | limelight

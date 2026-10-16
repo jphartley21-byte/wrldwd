@@ -54,7 +54,14 @@ MEASURES = ("stress_run", "hard_joins", "closed_run", "restart")
 #              re-index every audio template, scheme letter and par table, so the bar-line rhyme is gated in place instead.
 #              It must also be as CLOSE as the original's (Joe: "Turkey and certi is same closeness as stranger and Naples?"): vowels alone
 #              let stranger / Naples (rapfit 0.69) stand in for Turkey / certi (0.81). Ours needs rapfit.score >= the original's - BAR_SLACK.
-BAR_MEASURES = ("fast_jam", "cell", "barline")
+#   pause      (16 Oct 2026, Joe on bar 76: "Flows very differently" from the original's bar, and asked whether the gate hears "pauses"):
+#              where the original breaks mid-bar (a punctuation mark after a word: 22 of its 76 bars, numbers only), ours must break after
+#              the SAME syllable (flow_fit.sylls per word, the template's own count; the exact-count rule makes the indices comparable).
+#              Ours may break with punctuation, or where a new clause starts (a joining word, or a subject pronoun straight after a
+#              content word), since the comma cap (ww/write/phrase_audit) would otherwise force a comma at every one.
+#   cell       also hears a SPELLED-OUT acronym (16 Oct 2026, the same bar): letters said as names repeat a cell inside one word ("W"
+#              is "double-u"), which a word-level repeat count missed.
+BAR_MEASURES = ("fast_jam", "cell", "barline", "pause")
 BAR_SLACK = 0.10
 # Fitted 15 Oct 2026 on the only labels there are: the loosest tolerances that still catch all 4 flagged bars, which fail the
 # fewest bars of hook r3 (Joe: "I like this", bar 12 excepted): 5 of 15 still fail, and they are listed to Joe to judge. At 0/0/0/0 the
@@ -68,6 +75,7 @@ LABEL = {"stress_run": "stressed syllables in a row", "hard_joins": "hard mouth-
          "fast_jam": "stressed syllables jammed on back-to-back 16ths", "cell": "repeated cell + internal rhyme (needs a cell and internal rhyme >= the original's - 1)",
          "internal": "internal rhyme in a repeated-cell bar",
          "barline": "rhyme at the bar line (needs a word at the original's syllable, +-1, with the same vowels as the line's end word; ours has none)",
+         "pause": "pause position (the original pauses after syllable(s) {p}; ours does not break there)",
          "barline_close": "bar-line rhyme too loose (rapfit pair score with the line's end; must be within 0.10 of the original's)"}
 
 
@@ -128,12 +136,22 @@ def fast_jam(bar_no, line):
     return sum(1 for k in range(len(steps) - 1) if steps[k + 1] - steps[k] == 1 and not w[k] and not w[k + 1])
 
 
+LETTER = {"W": "double you", "A": "ay", "B": "bee", "C": "see", "D": "dee", "E": "ee", "F": "eff", "G": "gee", "H": "aitch", "I": "eye",
+          "J": "jay", "K": "kay", "L": "el", "M": "em", "N": "en", "O": "oh", "P": "pee", "Q": "queue", "R": "ar", "S": "ess", "T": "tee",
+          "U": "you", "V": "vee", "X": "ex", "Y": "why", "Z": "zed"}
+
+
+def spell(line):
+    """all-caps acronyms (2+ letters) said as letter names: what the ear hears, not the spelling."""
+    return re.sub(r"\b[A-Z]{2,}\b", lambda m: " ".join(LETTER[c] for c in m.group()), line)
+
+
 def has_cell(line):
-    """a repeated cell inside the bar: a content word said twice or more, or an in-bar drum / echo (toolkit/ear.py)."""
+    """a repeated cell inside the bar: a content word said twice or more (acronyms spelled out), or an in-bar drum / echo (toolkit/ear.py)."""
     import collections
     import ear
     from ww.write import rhymeview
-    ws = [rhymeview.core(w) for w in line.split()]
+    ws = [rhymeview.core(w) for w in spell(line).split()]
     ws = [w for w in ws if w and w not in rhymeview.FUNC]
     rep = max(collections.Counter(ws).values()) if ws else 0
     return rep >= 2 or bool(ear.drums([line])) or bool(ear.echoes([line]))
@@ -178,6 +196,35 @@ def barline_par(bar_no, line):
     return hits[0] if hits else (0, 0.0)
 
 
+PUNCT = re.compile(r"[,.;:?!\u2026\u2014\u2013]['\"\u2019\u201d)]*$")
+OPENERS = {"and", "but", "so", "cause", "cos", "then", "or", "when", "if", "while", "till", "until", "because", "though", "once", "since"}
+
+
+def breaks(line, clauses=False):
+    """syllable indices (1-based: the syllable a pause FOLLOWS) where the line breaks mid-bar: a punctuation mark after a word.
+    clauses=True also counts a new clause starting with no mark (a joining word, or a subject pronoun straight after a content word)."""
+    toks = line.split()
+    out, i, ends = [], 0, []
+    for j, t in enumerate(toks):
+        i += len(ff.sylls(t))
+        ends.append(i)
+        if j < len(toks) - 1 and PUNCT.search(t):
+            out.append(i)
+    if clauses:
+        for j in range(1, len(toks)):
+            w = re.sub(r"[^a-z']", "", toks[j].lower().replace("\u2019", "'"))
+            if w in OPENERS:
+                out.append(ends[j - 1])
+        doc = _nlp()(line)
+        for t in doc:
+            # a MAIN clause only: "the guy I know" (a relative clause with no "that") is said through, not paused
+            if t.dep_ in ("nsubj", "nsubjpass") and t.pos_ == "PRON" and t.i > 0 and t.head.dep_ in ("ROOT", "conj", "parataxis"):
+                prev = doc[t.i - 1]
+                if prev.pos_ in ("NOUN", "PROPN", "VERB", "ADJ", "ADV", "NUM") and prev.text.lower() not in JOINERS:
+                    out.append(len(ff.sylls(doc[:t.i].text)))
+    return sorted(set(k for k in out if k))
+
+
 def internal(line):
     import match
     return match.internal_density([line])[0]
@@ -215,6 +262,11 @@ def check(bar_no, line):
             out.append(("barline", 0, k))
         elif max(near) < need:
             out.append(("barline_close", max(near), round(par.get("barline_score", 0.0), 2)))
+    if par.get("pause"):
+        have = breaks(line, clauses=True)
+        miss = [k for k in par["pause"] if k not in have]
+        if miss:
+            out.append(("pause", have, par["pause"]))
     if par.get("cell"):
         if not has_cell(line):
             out.append(("cell", 0, 1))
@@ -224,7 +276,8 @@ def check(bar_no, line):
 
 
 def describe(fails):
-    return "; ".join(f"{LABEL[m]} {o} (the original's bar has {p})" for m, o, p in fails)
+    return "; ".join(LABEL[m].format(p=", ".join(map(str, p))) + f" (ours breaks after {', '.join(map(str, o)) or 'none'})" if m == "pause"
+                     else f"{LABEL[m]} {o} (the original's bar has {p})" for m, o, p in fails)
 
 
 def flagged(path=FLAGGED):
@@ -252,7 +305,7 @@ def build(orig_path):
     _ww()
     from ww import bridge
     bars = [dict(profile(l), syl=bridge.syllable_count(l), fast_jam=fast_jam(i + 1, l) or 0, cell=int(has_cell(l)), internal=internal(l),
-                 barline=barline_par(i + 1, l)[0], barline_score=barline_par(i + 1, l)[1]) for i, l in enumerate(L)]
+                 barline=barline_par(i + 1, l)[0], barline_score=barline_par(i + 1, l)[1], pause=breaks(l)) for i, l in enumerate(L)]
     json.dump({"_note": "Per-bar flow profile of the ORIGINAL (numbers only, rule 4), built by toolkit/flow_par.py --build. "
                         "A draft bar may be no worse than the original's bar in the same position.", "measures": list(MEASURES) + list(BAR_MEASURES), "bars": bars},
               open(PAR, "w", encoding="utf-8"), indent=1)
