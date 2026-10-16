@@ -107,6 +107,52 @@ ching | CH IH1 NG | cocaine | drugs
 sniff |  | cocaine | drugs
 pills |  | ecstasy | drugs
 packs |  | weed | drugs
+charlie |  | cocaine | drugs
+gear |  | drugs, usually cocaine or heroin | drugs
+beak |  | cocaine (old slang: also a magistrate) | drugs
+bugle |  | cocaine | drugs
+chang | CH AE1 NG | cocaine | drugs
+gak | G AE1 K | cocaine | drugs
+toot |  | cocaine; a line of it | drugs
+wrap |  | a paper wrap of cocaine | drugs
+baggie | B AE1 G IY0 | a small bag of drugs | drugs
+line |  | a line of cocaine | drugs
+white |  | cocaine or crack | drugs
+brick |  | a kilo block | drugs
+key |  | a kilo | drugs
+ket | K EH1 T | ketamine | drugs
+mandy | M AE1 N D IY0 | MDMA powder | drugs
+pingers | P IH1 NG ER0 Z | ecstasy pills | drugs
+pinging | P IH1 NG IH0 NG | high on ecstasy | drugs
+mitsis | M IH1 T S IY0 Z | ecstasy pills (Mitsubishi stamp) | drugs
+eckies | EH1 K IY0 Z | ecstasy pills | drugs
+beans |  | pills | drugs
+gurning | G ER1 N IH0 NG | jaw going on MDMA | drugs
+rolling |  | high on ecstasy | drugs
+nangs | N AE1 NG Z | nitrous canisters | drugs
+noz | N AA1 Z | nitrous | drugs
+balloons |  | nitrous | drugs
+draw |  | weed | drugs
+skunk |  | strong weed | drugs
+green |  | weed | drugs
+bud |  | weed | drugs
+sensi | S EH1 N S IY0 | weed | drugs
+ganja | G AE1 N JH AH0 | weed | drugs
+henry |  | an eighth of weed (Henry the Eighth) | drugs
+skins |  | rolling papers | drugs
+rizla | R IH1 Z L AH0 | rolling papers | drugs
+bifta | B IH1 F T AH0 | a joint | drugs
+bifter | B IH1 F T ER0 | a joint | drugs
+blaze |  | smoke weed | drugs
+rocks |  | crack | drugs
+brown |  | heroin | drugs
+shrooms | SH R UW1 M Z | magic mushrooms | drugs
+mushies | M AH1 SH IY0 Z | magic mushrooms | drugs
+tabs |  | LSD | drugs
+poppers |  | amyl nitrite | drugs
+sesh | S EH1 SH | a session (drink and drugs) | drugs
+monged | M AH1 NG D | out of it | drugs
+runner |  | a dealer's courier | drugs
 # police
 feds | F EH1 D Z | police | police
 boydem | B OY1 D EH2 M | police | police
