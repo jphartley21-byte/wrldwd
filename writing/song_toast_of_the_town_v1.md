@@ -13,7 +13,8 @@
 # ASSUMED (place_assumptions / nightlife_assumptions, not verified): blue smoke and coffee shops in the Dam, bia hoi in Hanoi, Bondi.
 # PERSONA: every boast about buying rounds, tabs, crowds, ladies, fights on the plane, "call me Pope", "no brake", "for a bia".
 # INVENTED: the Camden night itself (tequila, scooter, boozer, coppers, bum out at Buckingham); "the cops count a thousand"; "the bare ground";
-#   the ten pints at Gatwick and North Sydney; "the bank phones home".
+#   the ten pints at Gatwick and North Sydney; "the bank phones home"; the ice the Full Moon bars hunt for (Joe, 16 Oct 2026:
+#   "we were never looking for gum"; ice chosen because it rhymes best of five tried, on the section's own aɪ vowel).
 #
 
 == Hook 1-4
@@ -102,15 +103,15 @@ Everyone on that flight wanted to fight me, I'm well tipsy
 On the sand, that hit me
 Mushroom shake for us, giddy, giddy
 Wasted we start a journey
-Searching for ages for gum dead thirsty
+Searching for ages for ice dead thirsty
 Up ahead a sign
 A Seven-Eleven, in plain sight
 Me and the lads buzzing all high-flying
-King of the night and the gum's on my mind
+King of the night and the ice on my mind
 Striding up the sand wide eyes
 All the girls in the bar and I'm the cash prize
 Closer up? It's Seven Elephant
-Gum? We never found it, what a night
+Ice? We never found it, what a night
 #cash 6 | in plain sight | sight
 #cash 8 | on my mind | mind
 #cash 10 | cash prize | prize
