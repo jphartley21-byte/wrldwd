@@ -4,7 +4,7 @@
 # draft 2/10, 1/2). Misses and why: writing/song_know_a_guy_v1_vs_v2.md. 'My crew' and 'Lone wolf / Solo' are gone. Assistant-authored.
 # PAUSE REFIT 16 Oct 2026 (Joe on bar 76: "Flows very differently" from the original's): toolkit/flow_par.py now makes a bar pause
 # after the same syllable as the original's bar (22 of 76 bars) and hears spelled-out acronyms as a repeated cell. 18 bars failed it;
-# 21 bars changed (3 more for the cashed idiom, the sense read and a lost drum). ww gate PASS (sense ON); targets 7/10 + character 2/2.
+# 20 bars changed (2 more for the cashed idiom and the sense read). ww gate PASS (sense ON); targets 7/10 + character 2/2.
 # I KNOW A GUY: a new song written from scratch (15 Oct 2026) as a naive writer: premise (brief/premises.json know_a_guy),
 # section argument, one rap move per bar, ingredients (material/ingredients.md), sentences, then fitted with toolkit/fitbar.py
 # and held to `python -m ww.cli gate` until it exited 0. Nothing carried over from any earlier draft. Assistant-authored.
