@@ -39,6 +39,10 @@
 # (toolkit/flow_par.py, HARD); 'guy's guy' no longer counts. Bar 48 'Back on the train to Bern, I ring his burner, for more freebies'
 # (Bern ~ burner, syllables 6 and 10), bar 40 'Drove the man in vans, a real Marathon', bar 24 'Grazie grazie tram drivers! With rum
 # there's no drama' (tram / rum / drama drum; trams invented), bar 20 'Sits out in Palma'. ww gate: every section PASS (sense ON).
+# SANDWICHES AND ECHOES, same day (Joe: 'how come we lost the sandwich rhymes here?'; 'lots of echoes in the following quad'): sandwiches
+# must rhyme as deep as the original's, and echoes of the end rhyme inside a bar count (toolkit/texture.py). Bars 35-38: 'Specimens
+# Customs will class as medical' / 'Chemical's what I pour on the evidence' / 'Who is that, lying back?...' / 'And the guards try to grab
+# ya? Flatter ya'; also 4 'Bern, Zell or Munich', 17 'clock ya then charge ya', 28 'breezed', 29 'my snap'. ww gate: every section PASS.
 # V3 (16 Oct 2026, Joe: "Go for all 3, add the gates, verify them, then write the new draft to pass all gates and print it"): v2 rewritten to
 # the new rhyme-texture gate (toolkit/texture.py: internal rhyme amount + strength, frame / link sandwiches, multisyllabic runs across
 # words, each per section against the original's same section). v2 failed it in 8 of 10 sections; v3 passes all 10. ww gate PASS
@@ -70,7 +74,7 @@
 Cheers! Any issue?
 Served ten years in Crete? I continue
 Third spell in jail is just a Greek cruise
-In Bern, Zell and Melbourne I'm bad news
+In Bern, Zell or Munich I'm bad news
 #cash 4 | bad news | news
 
 == Hook 5-8
@@ -98,7 +102,7 @@ Hanoi bikes are getaway cars
 
 == V1 1-8
 # argument: the network is the business: worldwide, deniable, comfortable. moves: brag, brag, brag, name_drop, brag, brag, threat, punchline
-One black book and the numbers? I'll charge ya
+One black book and I'll clock ya then charge ya
 Honesty box? Me? Paid in full: karma
 In my suit? Man! It's good Prada
 My guy's cruiser? Sits out in Palma
@@ -114,8 +118,8 @@ Grazie grazie tram drivers! With rum there's no drama
 Back then my bird was poor, she
 Broke, kipped on the floor we
 Skip on to the end
-But the cops came round I walked out of it scot free
-Nowadays my face goes round with all the athletes
+But the cops came round I breezed out of it scot free
+Nowadays my snap goes round with all the athletes
 Top floor's a mad scene I'm living the dream
 Police have got a list and they got me: top thief
 To be sprung by my main guy's guy who's discreet
@@ -128,10 +132,10 @@ To be sprung by my main guy's guy who's discreet
 # rhyme, the original repeats it on both bars, and the draft rules forbid a repeated end word (listed to Joe).
 Dublin's mine: my bar tab's in credit
 My man pays for negligence
-Customs won't open the crate it's medical
-Chemist wiped it of all of the evidence
-Who is that, lying down? Just a passenger
-And the guards at the border? Flatter ya
+Specimens Customs will class as medical
+Chemical's what I pour on the evidence
+Who is that, lying back? Just a passenger
+And the guards try to grab ya? Flatter ya
 Where's the guy? Lying low in Canada
 Drove the man in vans, a real Marathon
 #cash 1 | on credit | credit

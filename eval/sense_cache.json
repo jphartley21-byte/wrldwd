@@ -46723,5 +46723,589 @@
 "[haiku]\nUSSLANG2\nMozzarella that's pricey? My guy does it nicely\nIn Marrakesh it's dicey? My guy's Rolexes are icy\nBarber's cut-throat shave? Free: so I live the life of Riley\nThese days I drive a hard bargain\nNow the man I use has met Kylie\nNow the man I use is dead cheeky\nFifty quid? Now don't say my guy cheats me\nBack on the train to Bern, I ring his burner, for more freebies": [
 [],
 []
+],
+"[haiku]\nDublin's mine: my bar tab's in credit\nMy man pays for negligence\nCustoms won't open the crate it's medical\nChemical's what I pour on the evidence\nWho is that, lying down? Just a passenger\nAnd the guards at the border? Flatter ya\nWhere's the guy? Lying low in Canada\nDrove the man in vans, a real Marathon": [
+{
+"n": 1,
+"reading": "Dublin is mine, and my bar tab is in credit.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "My associate pays the price for someone else's carelessness.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Pays for negligence' is odd; whose negligence and who pays is strained."
+},
+{
+"n": 3,
+"reading": "Customs won't open the crate because it's medical.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "Chemicals are what I pour on the evidence.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "Who is that lying down? That's just a passenger.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "'Flatter ya' is a bare verb with no subject; only a guess that guards flatter you."
+},
+{
+"n": 7,
+"reading": "Where's the guy? He's lying low in Canada.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "I drove the man around in vans, which was a real marathon.",
+"grammatical": false,
+"sense": 1,
+"issue": "Dropped subject; 'Drove the man in vans' is a bare clause, meaning strained."
+}
+],
+"[haiku]\nBLOCK2\nDublin's mine: my bar tab's in credit\nMy man pays for negligence\nCustoms won't open the crate it's medical\nChemical's what I pour on the evidence\nWho is that, lying down? Just a passenger\nAnd the guards at the border? Flatter ya\nWhere's the guy? Lying low in Canada\nDrove the man in vans, a real Marathon": {
+"thread": "The speaker is a Dublin-based smuggler who claims his network is untouchable, bribing customs and border guards and destroying evidence while the man who did the driving lies low abroad.",
+"coherent": 1,
+"issue": "Opening bar is a loose setup, and \"the guy/the man/the passenger\" are never clearly the same person.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Man paying for negligence supports the untouchable-operation claim."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Customs refusing to open the crate escalates the claim that authorities are compromised."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Pouring chemicals on evidence shows active destruction of proof."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "A cover story for the hidden person, deflecting questions from authorities."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Guards being flattered continues the bribery and evasion theme."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Lying low in Canada picks up the 'lying down' wordplay and shows the fugitive."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Driving the man in vans explains his role, though 'the man' is loosely tied to earlier bars."
+}
+]
+},
+"[haiku]\nUSSLANG2\nDublin's mine: my bar tab's in credit\nMy man pays for negligence\nCustoms won't open the crate it's medical\nChemical's what I pour on the evidence\nWho is that, lying down? Just a passenger\nAnd the guards at the border? Flatter ya\nWhere's the guy? Lying low in Canada\nDrove the man in vans, a real Marathon": [
+[],
+[]
+],
+"[haiku]\nDublin's mine: my bar tab's in credit\nMy man pays for negligence\nSpecimens Customs will class as medical\nChemical's what I pour on the evidence\nWho is that, lying down? Just a passenger\nAnd the guards at the border? Flatter ya\nWhere's the guy? Lying low in Canada\nDrove the man in vans, a real Marathon": [
+{
+"n": 1,
+"reading": "Dublin is mine: my bar tab is in credit.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "My man pays for negligence.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "Customs will class specimens as medical.",
+"grammatical": false,
+"sense": 1,
+"issue": "Noun phrase with no main verb; works only as a relative clause."
+},
+{
+"n": 4,
+"reading": "Chemical is what I pour on the evidence.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "Who is that, lying down? That is just a passenger.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "The guards at the border flatter ya.",
+"grammatical": false,
+"sense": 1,
+"issue": "'Flatter ya' has no clear subject; imperative or fragment reading is unclear."
+},
+{
+"n": 7,
+"reading": "Where's the guy? He is lying low in Canada.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "Dropped subject; 'a real Marathon' is loosely attached and needs invented words."
+}
+],
+"[haiku]\nBLOCK2\nDublin's mine: my bar tab's in credit\nMy man pays for negligence\nSpecimens Customs will class as medical\nChemical's what I pour on the evidence\nWho is that, lying down? Just a passenger\nAnd the guards at the border? Flatter ya\nWhere's the guy? Lying low in Canada\nDrove the man in vans, a real Marathon": {
+"thread": "The speaker is a Dublin bar owner who runs a smuggling operation, bribes officials and destroys evidence, then flees to Canada to dodge the law.",
+"coherent": 1,
+"issue": "Bar 5's lying-down figure is never explained, so \"the guy\" and \"the man\" in bars 7-8 are unclear.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Bribing a man for negligence fits a crook buying his way out, following the bar-tab money in bar 1."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Disguising smuggled goods as medical specimens escalates the criminal scheme."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Pouring chemicals on evidence continues the cover-up started by the bribes and fake paperwork."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "A person lying down passed off as a passenger extends the cover-up, though who they are is unclear."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Flattering border guards shows him evading checks, consistent with the hidden passenger."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Fleeing to Canada is the natural escalation of getting past the border guards."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Driving the man in vans links back to the hidden passenger, but 'the man' is never clearly introduced."
+}
+]
+},
+"[haiku]\nUSSLANG2\nDublin's mine: my bar tab's in credit\nMy man pays for negligence\nSpecimens Customs will class as medical\nChemical's what I pour on the evidence\nWho is that, lying down? Just a passenger\nAnd the guards at the border? Flatter ya\nWhere's the guy? Lying low in Canada\nDrove the man in vans, a real Marathon": [
+[],
+[]
+],
+"[haiku]\nCheers! Any issue?\nServed ten years in Crete? I continue\nThird spell in jail is just a Greek cruise\nIn Bern, Zell or Munich I'm bad news": [
+{
+"n": 1,
+"reading": "Cheers, is there any issue?",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "Having served ten years in Crete, I continue.",
+"grammatical": true,
+"sense": 1,
+"issue": "Elliptical question; 'I continue' is vague about what carries on."
+},
+{
+"n": 3,
+"reading": "A third spell in jail is just a Greek cruise.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "In Bern, Zell or Munich, I'm bad news.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nCheers! Any issue?\nServed ten years in Crete? I continue\nThird spell in jail is just a Greek cruise\nIn Bern, Zell or Munich I'm bad news": {
+"thread": "The speaker is a hardened repeat offender who treats prison as routine, jokes that his third jail stint is a holiday, and claims he is feared across several European cities.",
+"coherent": 2,
+"issue": "Bar 2's \"I continue\" is unclear and reads as a stray phrase, though the block still holds together.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Ten years in Crete answers the bar-room challenge with a record of hard time, which supports the claim."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Calling a third jail spell a Greek cruise deflates prison and escalates the repeat-offender picture."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Naming Bern, Zell and Munich widens the menace from one place to a whole European reputation."
+}
+]
+},
+"[haiku]\nUSSLANG2\nCheers! Any issue?\nServed ten years in Crete? I continue\nThird spell in jail is just a Greek cruise\nIn Bern, Zell or Munich I'm bad news": [
+[],
+[]
+],
+"[haiku]\nOne black book and I'll clock ya then charge ya\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy guy's cruiser? Sits out in Palma\nStab vests? Nah I charm 'em\nFat cheques? I bung the judge lager\nCross me? Just you wait and see\nGrazie grazie tram drivers! With rum there's no drama": [
+{
+"n": 1,
+"reading": "If you get one black book, I'll clock you and then charge you.",
+"grammatical": true,
+"sense": 1,
+"issue": "Elliptical conditional; 'black book' meaning is unclear to a stranger."
+},
+{
+"n": 2,
+"reading": "Me, an honesty box? I'm paid in full, and that's karma.",
+"grammatical": false,
+"sense": 1,
+"issue": "Fragments with no verb; 'Paid in full: karma' is a list, not a clause."
+},
+{
+"n": 3,
+"reading": "Man, I'm in my suit, and it's good Prada.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "My guy's cruiser sits out in Palma.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "Stab vests? No, I charm them.",
+"grammatical": true,
+"sense": 1,
+"issue": "Charming stab vests is strained; unclear whether it means the wearers."
+},
+{
+"n": 6,
+"reading": "Fat cheques? I bribe the judge with lager.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "If you cross me, just wait and see what happens.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "Thank you, tram drivers! With rum, there's no drama.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nOne black book and I'll clock ya then charge ya\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy guy's cruiser? Sits out in Palma\nStab vests? Nah I charm 'em\nFat cheques? I bung the judge lager\nCross me? Just you wait and see\nGrazie grazie tram drivers! With rum there's no drama": {
+"thread": "The speaker is a flashy, well-connected operator who claims he is untouchable, buying off judges and officials or charming away danger instead of facing consequences.",
+"coherent": 1,
+"issue": "Final bar's tram drivers come from nowhere, so the bribery thread is muddied at the close.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Honesty box joke continues the paying-off and untouchable theme."
+},
+{
+"n": 3,
+"follows": true,
+"issue": ""
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Associate's car parked openly signals his connections and immunity."
+},
+{
+"n": 5,
+"follows": true,
+"issue": ""
+},
+{
+"n": 6,
+"follows": true,
+"issue": ""
+},
+{
+"n": 7,
+"follows": true,
+"issue": ""
+},
+{
+"n": 8,
+"follows": false,
+"issue": "Tram drivers are introduced without setup; rum bribe is only implied."
+}
+]
+},
+"[haiku]\nUSSLANG2\nOne black book and I'll clock ya then charge ya\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy guy's cruiser? Sits out in Palma\nStab vests? Nah I charm 'em\nFat cheques? I bung the judge lager\nCross me? Just you wait and see\nGrazie grazie tram drivers! With rum there's no drama": [
+[],
+[]
+],
+"[haiku]\nCARRY1\nBack then my bird was poor, she / Broke, kipped on the floor we / Skip on to the end\nBut the cops came round I breezed out of it scot free\nNowadays my snap goes round with all the athletes\nTop floor's a mad scene I'm living the dream\nPolice have got a list and they got me: top thief / To be sprung by my main guy's guy who's discreet": [
+{
+"n": 1,
+"reading": "Back then my girl was broke, she kipped on the floor, and we skip on to the end.",
+"grammatical": true,
+"sense": 1,
+"issue": "Run-on clauses; 'we skip on to the end' is strained and vague.",
+"sentence": [
+1,
+2,
+3
+]
+},
+{
+"n": 2,
+"reading": "Back then my girl was broke, she kipped on the floor, and we skip on to the end.",
+"grammatical": true,
+"sense": 1,
+"issue": "Run-on clauses; 'we skip on to the end' is strained and vague.",
+"sentence": [
+1,
+2,
+3
+]
+},
+{
+"n": 3,
+"reading": "Back then my girl was broke, she kipped on the floor, and we skip on to the end.",
+"grammatical": true,
+"sense": 1,
+"issue": "Run-on clauses; 'we skip on to the end' is strained and vague.",
+"sentence": [
+1,
+2,
+3
+]
+},
+{
+"n": 4,
+"reading": "The cops came round, but I breezed out of it scot free.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "Nowadays my snap goes round with all the athletes.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Snap' is unclear slang; the meaning is strained."
+},
+{
+"n": 6,
+"reading": "The top floor is a mad scene, and I'm living the dream.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "Police have a list and they have me as top thief, to be sprung by my main guy's guy, who's discreet.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Sprung' is slang for bailed out; 'main guy's guy' is convoluted.",
+"sentence": [
+7,
+8
+]
+},
+{
+"n": 8,
+"reading": "Police have a list and they have me as top thief, to be sprung by my main guy's guy, who's discreet.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Sprung' is slang for bailed out; 'main guy's guy' is convoluted.",
+"sentence": [
+7,
+8
+]
+}
+],
+"[haiku]\nBLOCK2C\nBack then my bird was poor, she / Broke, kipped on the floor we / Skip on to the end\nBut the cops came round I breezed out of it scot free\nNowadays my snap goes round with all the athletes\nTop floor's a mad scene I'm living the dream\nPolice have got a list and they got me: top thief / To be sprung by my main guy's guy who's discreet": {
+"thread": "A broke hustler who once walked free from the police now flaunts his wealth among athletes, but is wanted as a top thief and expects his crew to spring him.",
+"coherent": 1,
+"issue": "Bar 1 ends on filler (\"Skip on to the end\") and bar 5's \"sprung by my main guy's guy\" is hard to parse on one hearing.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Contrasts with the broke past: the cops arrive and he escapes, setting up the escape theme."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Contrasts poverty with new wealth, with a clear 'nowadays' signal."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Deflates or supports the rise: the luxury lifestyle is the 'dream' he has reached."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Escalates: the police who let him go now have a list and he is named as top thief."
+}
+]
+},
+"[haiku]\nUSSLANG2\nBack then my bird was poor, she\nBroke, kipped on the floor we\nSkip on to the end\nBut the cops came round I breezed out of it scot free\nNowadays my snap goes round with all the athletes\nTop floor's a mad scene I'm living the dream\nPolice have got a list and they got me: top thief\nTo be sprung by my main guy's guy who's discreet": [
+[],
+[]
+],
+"[haiku]\nDublin's mine: my bar tab's in credit\nMy man pays for negligence\nSpecimens Customs will class as medical\nChemical's what I pour on the evidence\nWho is that, lying back? Just a passenger\nAnd the guards try to grab ya? Flatter ya\nWhere's the guy? Lying low in Canada\nDrove the man in vans, a real Marathon": [
+{
+"n": 1,
+"reading": "Dublin is mine, and my bar tab is in credit.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "My man pays for negligence.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "Customs will class specimens as medical.",
+"grammatical": false,
+"sense": 1,
+"issue": "No main verb; reads as a noun phrase needing a predicate"
+},
+{
+"n": 4,
+"reading": "Chemical is what I pour on the evidence.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "Who is that, lying back? Just a passenger.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "The guards try to grab you, and flatter you.",
+"grammatical": false,
+"sense": 1,
+"issue": "'Flatter ya' has no clear subject; unclear who flatters whom"
+},
+{
+"n": 7,
+"reading": "Where is the guy? Lying low in Canada.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "I drove the man in vans, which was a real marathon.",
+"grammatical": true,
+"sense": 1,
+"issue": "Subject dropped; 'a real Marathon' as a drive is strained"
+}
+],
+"[haiku]\nBLOCK2\nDublin's mine: my bar tab's in credit\nMy man pays for negligence\nSpecimens Customs will class as medical\nChemical's what I pour on the evidence\nWho is that, lying back? Just a passenger\nAnd the guards try to grab ya? Flatter ya\nWhere's the guy? Lying low in Canada\nDrove the man in vans, a real Marathon": {
+"thread": "The speaker is a Dublin operator who claims money, bribes and destroyed evidence keep him beyond the law, while his getaway associate hides out in Canada.",
+"coherent": 1,
+"issue": "Bar 5 jumps to an unexplained passenger, and \"the guy\" in bar 7 is unclear about who he is.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Money paying off a man's negligence supports the untouchable-by-credit claim."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Disguising smuggled specimens as medical escalates the cover-up."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Pouring chemicals on evidence escalates from disguise to destruction."
+},
+{
+"n": 5,
+"follows": false,
+"issue": "A new scene with an unexplained passenger lying back, with no signal of who is asking."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Guards flattering rather than arresting contrasts with the speaker's untouchable image."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Hiding abroad in Canada continues the fugitive and escape theme."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Driving the vans as a long getaway explains the associate's role in the escape."
+}
+]
+},
+"[haiku]\nUSSLANG2\nDublin's mine: my bar tab's in credit\nMy man pays for negligence\nSpecimens Customs will class as medical\nChemical's what I pour on the evidence\nWho is that, lying back? Just a passenger\nAnd the guards try to grab ya? Flatter ya\nWhere's the guy? Lying low in Canada\nDrove the man in vans, a real Marathon": [
+[],
+[]
 ]
 }

@@ -10,7 +10,11 @@
    "frame": 0,
    "link": 0,
    "multi": 3,
-   "multi_cross": 2
+   "multi_cross": 2,
+   "frame_depths": [],
+   "link_depths": [],
+   "end_echo": 1,
+   "unit_echo": 0
   },
   "Hook 5-8": {
    "amount": 2,
@@ -20,7 +24,11 @@
    "frame": 0,
    "link": 0,
    "multi": 1,
-   "multi_cross": 1
+   "multi_cross": 1,
+   "frame_depths": [],
+   "link_depths": [],
+   "end_echo": 1,
+   "unit_echo": 0
   },
   "Hook 9-16": {
    "amount": 9,
@@ -30,7 +38,11 @@
    "frame": 0,
    "link": 0,
    "multi": 1,
-   "multi_cross": 1
+   "multi_cross": 1,
+   "frame_depths": [],
+   "link_depths": [],
+   "end_echo": 2,
+   "unit_echo": 0
   },
   "V1 1-8": {
    "amount": 13,
@@ -40,7 +52,11 @@
    "frame": 0,
    "link": 0,
    "multi": 3,
-   "multi_cross": 3
+   "multi_cross": 3,
+   "frame_depths": [],
+   "link_depths": [],
+   "end_echo": 2,
+   "unit_echo": 0
   },
   "V1 9-16": {
    "amount": 9,
@@ -50,17 +66,31 @@
    "frame": 0,
    "link": 0,
    "multi": 3,
-   "multi_cross": 3
+   "multi_cross": 3,
+   "frame_depths": [],
+   "link_depths": [],
+   "end_echo": 4,
+   "unit_echo": 0
   },
   "V1 17-24": {
    "amount": 5,
-   "strength": 2.5,
+   "strength": 3.0,
    "within": 2,
    "neighbour": 3,
-   "frame": 1,
-   "link": 1,
+   "frame": 2,
+   "link": 2,
    "multi": 1,
-   "multi_cross": 1
+   "multi_cross": 1,
+   "frame_depths": [
+    3,
+    3
+   ],
+   "link_depths": [
+    3,
+    3
+   ],
+   "end_echo": 7,
+   "unit_echo": 2
   },
   "V1 25-32": {
    "amount": 20,
@@ -70,7 +100,11 @@
    "frame": 0,
    "link": 0,
    "multi": 0,
-   "multi_cross": 0
+   "multi_cross": 0,
+   "frame_depths": [],
+   "link_depths": [],
+   "end_echo": 5,
+   "unit_echo": 0
   },
   "V1 33-44": {
    "amount": 17,
@@ -80,7 +114,11 @@
    "frame": 0,
    "link": 0,
    "multi": 3,
-   "multi_cross": 3
+   "multi_cross": 3,
+   "frame_depths": [],
+   "link_depths": [],
+   "end_echo": 0,
+   "unit_echo": 0
   },
   "V2 1-8": {
    "amount": 17,
@@ -90,7 +128,11 @@
    "frame": 0,
    "link": 0,
    "multi": 2,
-   "multi_cross": 2
+   "multi_cross": 2,
+   "frame_depths": [],
+   "link_depths": [],
+   "end_echo": 0,
+   "unit_echo": 0
   },
   "V2 9-16": {
    "amount": 14,
@@ -100,7 +142,13 @@
    "frame": 0,
    "link": 1,
    "multi": 1,
-   "multi_cross": 1
+   "multi_cross": 1,
+   "frame_depths": [],
+   "link_depths": [
+    1
+   ],
+   "end_echo": 5,
+   "unit_echo": 0
   }
  }
 }

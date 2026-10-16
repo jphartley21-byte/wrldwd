@@ -44,7 +44,11 @@ SANDWICH_HEAD = 3      # the first content word must be among a bar's first thre
 LABEL = {"amount": "internal rhyme pairs", "strength": "internal rhyme strength (rhyme 1.0, assonance 0.5)",
          "frame": "frame sandwiches (a bar's first content word rhymes with its own end)",
          "link": "link sandwiches (a bar's end rhymes with the next bar's first content word)",
-         "multi": "multisyllabic runs (2+ full syllables in order, across words)"}
+         "multi": "multisyllabic runs (2+ full syllables in order, across words)",
+         "end_echo": "echoes of the bar's own end rhyme inside the bar (a stressed word on the end rhyme's vowel)",
+         "unit_echo": "word + pronoun units echoing an end that closes on the same pronoun ('boxed him ... packaged him')",
+         "frame_depth": "frame sandwich depth in syllables, deepest first (the original's section rhymes them deeper)",
+         "link_depth": "link sandwich depth in syllables, deepest first (the original's section rhymes them deeper)"}
 
 
 def _ww():
@@ -146,6 +150,18 @@ def _rhymes(a, b):
     return c["depth"] >= 2 or rapfit.score(a, b)["score"] >= STRONG
 
 
+def _depth(a, b):
+    from ww.write import rapfit
+    return rapfit.chain_best(rapfit._syl(a), rapfit._syl(b))["depth"]
+
+
+def sandwich_depths(bars):
+    """{'frame': [depths], 'link': [depths]}, deepest first: how many syllables each sandwich rhymes (rapfit chain, the unit _rhymes uses)."""
+    sw, H, E = sandwiches(bars), [head(b) for b in bars], [end_text(b) for b in bars]
+    return {"frame": sorted((_depth(H[i][1], E[i]) for i in sw["frame"]), reverse=True),
+            "link": sorted((_depth(E[i], H[i + 1][1]) for i in sw["link"]), reverse=True)}
+
+
 def sandwiches(bars):
     """{'frame': [bar indices], 'link': [bar index i where bar i's end rhymes with bar i+1's head]} (0-based)."""
     H = [head(b) for b in bars]
@@ -216,10 +232,36 @@ def multis(bars):
     return {"n": len(found), "cross": sum(1 for f in found if f[2]["cross"]), "runs": found}
 
 
+CLITIC = {"him", "her", "it", "me", "them", "em", "'em", "ya", "you", "us"}
+
+
+def end_echoes(bars):
+    """(vowel, unit): echoes of each bar's own END rhyme inside the bar (16 Oct 2026, Joe on the original's bars 37-40: "there's lots of
+    echoes"). vowel = stressed content syllables before the end tail with the tail's stressed vowel (internal() skips the tail, so a word
+    pre-echoing the rhyme counted nowhere); unit = where the tail closes on a pronoun ('... packaged him'), a content word + that same
+    pronoun earlier in the bar ('boxed him')."""
+    from ww.write import rapfit
+    nv = nu = 0
+    for b in bars:
+        ts, t0 = toks(b), tail_at(b)
+        tail = [t[0] for t in ts[t0:]]
+        es = rapfit._syl(" ".join(tail))
+        if not es:
+            continue
+        ev = next((s[0] for s in es if s[1]), es[0][0])
+        nv += sum(1 for _, c, a in _stressed(b) if a[0] == ev and c not in tail)
+        if tail[-1] in CLITIC:
+            nu += sum(1 for i in range(1, t0) if ts[i][0] == tail[-1] and ts[i - 1][2])
+    return nv, nu
+
+
 def profile(bars):
     it, sw, mu = internal(bars), sandwiches(bars), multis(bars)
+    ev, eu = end_echoes(bars)
+    dp = sandwich_depths(bars)
     return {"amount": it["amount"], "strength": it["strength"], "within": it["within"], "neighbour": it["neighbour"],
-            "frame": len(sw["frame"]), "link": len(sw["link"]), "multi": mu["n"], "multi_cross": mu["cross"]}
+            "frame": len(sw["frame"]), "link": len(sw["link"]), "multi": mu["n"], "multi_cross": mu["cross"],
+            "frame_depths": dp["frame"], "link_depths": dp["link"], "end_echo": ev, "unit_echo": eu}
 
 
 @functools.lru_cache(maxsize=1)
@@ -237,18 +279,37 @@ def check(slot, bars, par=None):
         return None
     p = profile(bars)
     out = []
-    for m in ("amount", "strength", "multi"):
+    for m in ("amount", "strength", "multi", "end_echo"):
+        if m not in par:
+            continue
         need = round(SLACK * par[m], 1)
         if p[m] < need:
             out.append((m, p[m], need))
     for m in ("frame", "link"):
         if p[m] < par[m]:
             out.append((m, p[m], par[m]))
+        # DEPTH (16 Oct 2026, Joe: "how come we lost the sandwich rhymes here?"): a sandwich must rhyme as many syllables deep as the
+        # original's own in this section; a refit swapped a three-syllable medical / Chemical link for a two-deep medical / Chemist one
+        # and the count still passed. Deepest of ours is matched against deepest of the original's, and so on.
+        need, have = par.get(m + "_depths") or [], p[m + "_depths"]
+        if p[m] >= par[m] and any(k >= len(have) or have[k] < d for k, d in enumerate(need)):
+            out.append((m + "_depth", have, need))
     return out
 
 
+def unit_echo_hard(sections):
+    """song level (16 Oct 2026; Joe on two-word rhymes: gate at the whole song level to give the writer freedom): word + pronoun units
+    echoing an end that closes on the same pronoun ('boxed him ... packaged him'), >= SLACK x the original's song total."""
+    par = par_table() or {}
+    need = round(SLACK * sum(v.get("unit_echo", 0) for v in par.values()), 1)
+    have = sum(end_echoes(b)[1] for b in sections.values() if b)
+    return [] if have >= need else [f"texture: {have} word + pronoun units echo their end (as 'boxed him ... packaged him'), need >= {need} "
+                                    f"(the original's song x {SLACK})"]
+
+
 def describe(fails):
-    return "; ".join(f"{LABEL[m]} {o}, need >= {n} (the original's section x {SLACK if m in ('amount', 'strength', 'multi') else 1})" for m, o, n in fails)
+    return "; ".join(f"{LABEL[m]}: ours {o}, the original's {n}" if m.endswith("_depth") else
+                     f"{LABEL[m]} {o}, need >= {n} (the original's section x {SLACK if m in ('amount', 'strength', 'multi', 'end_echo') else 1})" for m, o, n in fails)
 
 
 def build(orig_path):
@@ -282,6 +343,14 @@ def selftest(orig_path=None):
     chk("a multisyllabic run across words is found (broke a leg ~ smoke a keg)", m["cross"] >= 1, str(m["runs"]))
     chk("a frame sandwich is found (cable ... stable)", sandwiches(FIXTURES["frame"][0])["frame"] == [0], str(sandwiches(FIXTURES["frame"][0])))
     chk("a link sandwich is found (fee / free)", sandwiches(FIXTURES["link"][0])["link"] == [0], str(sandwiches(FIXTURES["link"][0])))
+    # Joe's texture complaints (toolkit/tests/texture_complaints.txt) must keep failing
+    cp = os.path.join(HERE, "tests", "texture_complaints.txt")
+    if os.path.exists(cp) and par_table() is not None:
+        for ln in open(cp, encoding="utf-8"):
+            if ln.strip() and not ln.startswith("#"):
+                slot, block, why = [x.strip() for x in ln.split("|", 2)]
+                f = check(slot, [b.strip() for b in block.split(" / ")])
+                chk(f"Joe's complaint fails the texture par ({slot}: {why[:50]}...)", bool(f), str(f))
     f = profile(FIXTURES["flat"][0])
     chk("flat bars carry no sandwich and no multi", f["frame"] == f["link"] == f["multi"] == 0, str(f))
     chk("a repeated word is a repeat, not an internal rhyme", internal(["Cash for cash and cash for cash today"])["amount"] == 0)
@@ -292,6 +361,8 @@ def selftest(orig_path=None):
         L = [l.strip() for l in open(orig_path, encoding="utf8") if l.strip()][:76]
         bad = [name for name, s, e in slotcheck.SECS if check(name, L[s:e])]
         chk("the original passes its own texture par in every section", not bad, str(bad))
+        u = unit_echo_hard({name: L[s:e] for name, s, e in slotcheck.SECS})
+        chk("the original passes the song-level word + pronoun unit echo", not u, str(u))
     print("texture selftest:", "PASSED" if ok else "FAILED")
     return ok
 

@@ -102,6 +102,12 @@ LEGACY = {
         "HARD in slotcheck via flow_par since 16 Oct 2026, TOL 0 against the original's same bar. The original passes by construction (it has "
         "run breaks in 6 bars, so those bars keep their allowance); flagged bar 46 fails both and all 15 flagged bars still fail. run_breaks failed "
         "25 of v4's bars, including Q&A bars Joe had not flagged; v4 was refit to it. One labelled complaint; no independent good set"),
+    # 16 Oct 2026, Joe: "how come we lost the sandwich rhymes here?" and "there's lots of echoes in the following quad"
+    "toolkit/texture sandwich depth + end_echo (section) + unit_echo (song); rapfit rapped syllables (-le + ing, -in')": ("joe_rule",
+        "HARD since 16 Oct 2026 (texture via slotcheck; unit_echo in ww gate). The original passes by construction; both complaint blocks "
+        "(toolkit/tests/texture_complaints.txt) fail. The rapped-syllable change left every end-rhyme target and the by-ear AUC (0.971) "
+        "unchanged; only V1 17-24's sandwich par rose (2 frames, 2 links, 3 deep). Slack 0.8 is the texture margin, not fitted. "
+        "Joe's dub-uh-lin reading of the original is recorded, deliberately not applied"),
     # 16 Oct 2026, Joe on bar 48 again: the original "sounds so good because of the rhythm of" its sound-alike words
     "toolkit/flow_par cell_kind / cell_at (a sound-alike cell of two DIFFERENT words where the original has one, at its syllables)": ("joe_rule",
         "HARD in slotcheck via flow_par since 16 Oct 2026. The original passes by construction (echo cells at bars 40 and 48, a drum at 24); "

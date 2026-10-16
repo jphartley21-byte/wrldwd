@@ -77,6 +77,8 @@ def run(path: str) -> dict:
         # MULTI-WORD RHYMES (16 Oct 2026, Joe): a song-level minimum, no maximum, cheap / shallow / repeated ones not counted
         if all(D.get(s) for s in fitbar.SLOTS):
             file_hard += rapfit.multiword_hard({s: D[s] for s in fitbar.SLOTS})
+            import texture as _tx
+            file_hard += _tx.unit_echo_hard({s: D.get(s) for s in fitbar.SLOTS})
     out = _tool("meaning_gate", path)
     if "MEANING GATE: PASS" not in out:
         file_hard.append("meaning gate: " + next((l.strip() for l in out.splitlines() if "MEANING GATE" in l), "no verdict"))

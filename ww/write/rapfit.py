@@ -92,6 +92,30 @@ def _phon():
     return phon
 
 
+# Recorded, NOT applied (Joe, 16 Oct 2026): the original sings 'Dublin' as dub-uh-lin, so its bars 33-36 rhyme three syllables on one
+# family; 'Come on then' loosely frames it too. A performance stretch, "not standard so shouldn't be a hard rule": applying it here
+# would raise the original's depth targets and force our bars to stretch words to match.
+def _rap_syllables(lw: str, sy) -> list:
+    """the syllables as rapped (16 Oct 2026, Joe on the original's V1 17-20: the sandwiches run through 'Smuggling ... covered in'):
+    1. a word made from a '-le' word keeps that '-le' as a syllable: 'smuggling' is smug-guh-lin like 'bubbling' (Britfone gives
+       bubbling three syllables and smuggling two, so the two never matched);
+    2. an unstressed closing '-ing' is said '-in'' and rhymes with '-in' ('smugglin'' ~ 'covered in')."""
+    sy = [(v, st, tuple(c)) for v, st, c in sy]
+    if len(sy) >= 2 and lw.endswith("ling") and len(lw) > 5 and lw[-5] not in "aeiouyl":
+        v, st, c = sy[-2]
+        if len(c) >= 2 and c[-1] == "l":
+            try:
+                import helpers
+                is_le = bool(helpers.uk_phones(lw[:-3] + "e"))
+            except Exception:    # noqa: BLE001
+                is_le = False
+            if is_le:
+                sy = sy[:-2] + [(v, st, c[:-1]), ("ə", False, ("l",)), sy[-1]]
+    if len(sy) >= 2 and lw.endswith("ing") and not sy[-1][1] and sy[-1][0] == "ɪ" and sy[-1][2] == ("ŋ",):
+        sy[-1] = (sy[-1][0], sy[-1][1], ("n",))
+    return sy
+
+
 @lru_cache(maxsize=None)
 def _syl(text: str) -> tuple:
     try:
@@ -108,8 +132,8 @@ def _syl(text: str) -> tuple:
         # the original's word + 'me' endings rhyme with its own 'forty' / 'naughty' bars.
         ws = re.findall(r"[A-Za-z'å]+", text.replace("å", "a").replace("-", " "))
         for wi, w in enumerate(ws):
-            sy = p.syllables(w)
             lw = w.lower()
+            sy = _rap_syllables(lw, p.syllables(w))
             weak = wi > 0 and lw in CLITIC_PRON and len(sy) == 1
             strong = (lw in STRONG_FORM and len(sy) == 1 and wi + 1 < len(ws) and ws[wi + 1].lower() in CLITIC_PRON
                       and wi + 1 == len(ws) - 1)

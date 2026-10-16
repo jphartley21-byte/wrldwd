@@ -184,3 +184,9 @@ Rewrite: 13 Cash for Cairns and it's cash for Wales and cash for Spain (Wales / 
     rule by saying one word twice ("guy's guy"), and a possessive bug let that pass as an echo. Now the echo must be two different
     words at the original's positions; the echo detector also hears British vowels now. Bar 48 is "Back on the train to Bern, I ring
     his burner, for more freebies" (Bern ~ burner at 6 and 10); bars 40 and 24 fixed the same way.
+32. Joe (16 Oct): "how come we lost the sandwich rhymes" in bars 33-36, then: the original's four bars carry more than one, Dublin is
+    sung dub-uh-lin, and "there's lots of echoes" in its bars 37-40. Measured: a refit had swapped "Chemical" (three syllables, exact)
+    for "Chemist" (two) and the gate only counted sandwiches; the tools also heard "smuggling" as two syllables and "-ing" as never
+    rhyming with "-in", so they missed the original's own sandwiches; and the echo of the end rhyme inside a bar counted nowhere. All
+    three are measured now. Bars 35-38 rebuilt on the original's pattern (two frames, two links, three deep, plus a "grab ya ...
+    Flatter ya" pronoun echo); bars 4, 17, 28 and 29 carry the echoes their sections were short of.
