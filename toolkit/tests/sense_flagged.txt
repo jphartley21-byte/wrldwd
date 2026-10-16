@@ -1,0 +1,10 @@
+# Joe's sense complaints (16 Oct 2026: "How did these pass the sense/quality gates?"), added FIRST (rule 10), before the gate is changed
+# or the bars refit. Format: song bar | line | note. The gate that replaces the per-section allowance must fail every line below in its
+# v4 section while the original keeps passing.
+8 | Want one? Off my hands: a profit | 16 Oct: flagged by the sense read (no verb), absorbed by Hook 5-8's allowance (3 of 4 may fail)
+9 | G'day there's a torch on call | 16 Oct: flagged ('torch' unclear), absorbed by Hook 9-16's allowance (5 of 6 sentences may fail)
+14 | For a servo pie | 16 Oct: flagged (no verb, link implied), absorbed by Hook 9-16's allowance
+17 | One black book and as for reach? It's larger | 16 Oct: flagged ('larger' than what), absorbed by V1 1-8's allowance (5 of 8 may fail)
+22 | Cash? Yes! And the judge gets lager | 16 Oct: PASSED the read (sense 2): restated word for word, never asked why the judge gets lager
+34 | No one sees my elephant | 16 Oct: flagged ('elephant' unexplained), absorbed by V1 17-24's allowance (5 of 8 may fail)
+56 | In the bar as a star I'm saving face | 16 Oct: PASSED the read (sense 2): restated word for word; a star 'saving face' contradicts itself
