@@ -56,7 +56,7 @@ regningen | Norwegian | Bergen, Oslo | bill | the bill
 politi | Norwegian | Bergen, Oslo | police | the police
 sawasdee | Thai | Koh Tao 2015 | greeting | hello
 khop | Thai | Koh Tao 2015 | thanks | thank you (as in khop khun)
-bhat | Thai | Koh Tao 2015 | money | the currency
+baht | Thai | Koh Tao 2015 | money | the currency (was misspelt bhat until 16 Oct 2026)
 farang | Thai | Koh Tao 2015 | foreigner | a foreigner
 xin | Vietnamese | Vietnam 2015 | greeting | hello (as in xin chao)
 bia | Vietnamese | Vietnam 2015 | drink | beer

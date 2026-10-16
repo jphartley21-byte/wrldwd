@@ -174,3 +174,8 @@ Rewrite: 13 Cash for Cairns and it's cash for Wales and cash for Spain (Wales / 
     English. Built a UK rap lexicon (189 words with UK senses) and a rhyme search that always includes it. It found the sixth two-word
     rhyme. Two tool bugs surfaced on the way: "'em" was read as the stressed letter M (fixed; the original measures the same).
 
+30. Joe (16 Oct) on bar 48: "those flows feel very different and ours significantly worse." Ours stopped three times mid-bar (four
+    short phrases); the original's bar runs one long phrase and stops once before a short tag. The gate only checked that ours stopped
+    where the original stops, never that it did not stop elsewhere. Now HARD: at most one stop more than the original's same bar. The
+    original stops 26 times in the whole song; v4 stopped 63 times. Eight bars said through; bar 48 is "Back at the gaff of my guy's guy
+    who's local, for more freebies".

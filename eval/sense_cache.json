@@ -45399,5 +45399,590 @@
 "lands": true
 }
 ]
+],
+"[haiku]\nCheers! Any issue?\nServed ten years in Crete? I continue\nThird spell in jail is just a Greek cruise\nIn Bern, Zell and Melbourne I'm bad news": [
+{
+"n": 1,
+"reading": "Cheers! Is there any issue?",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "Have I served ten years in Crete? I continue.",
+"grammatical": true,
+"sense": 1,
+"issue": "'I continue' is strained: continue what is unclear, though the clause is complete."
+},
+{
+"n": 3,
+"reading": "A third spell in jail is just a Greek cruise.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "I am bad news in Bern, Zell and Melbourne.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nCheers! Any issue?\nServed ten years in Crete? I continue\nThird spell in jail is just a Greek cruise\nIn Bern, Zell and Melbourne I'm bad news": {
+"thread": "The speaker is a repeat offender who treats prison as a casual holiday and boasts that he is bad news in cities across Europe and Australia.",
+"coherent": 1,
+"issue": "Bar 2's \"I continue\" is unclear; bar 4 abandons the Greek thread.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Ten years in Crete picks up the jail theme from bar 1 and sets up the Greek callback."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Third jail spell as a Greek cruise escalates the Crete prison boast into a deadpan punchline."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Being bad news in several cities extends the repeat-offender reputation, though the Greek setting is dropped."
+}
+]
+},
+"[haiku]\nUSSLANG2\nCheers! Any issue?\nServed ten years in Crete? I continue\nThird spell in jail is just a Greek cruise\nIn Bern, Zell and Melbourne I'm bad news": [
+[],
+[]
+],
+"[haiku]\nOne black book and the numbers? I'll charge ya\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy guy's cruiser? Moored out in Palma\nStab vests? Nah I charm 'em\nFat cheques? I bung the judge lager\nCross me? Just you wait and see\nGrazie grazie train drivers! A month and no drama": [
+{
+"n": 1,
+"reading": "I'll charge you for one black book and the numbers.",
+"grammatical": true,
+"sense": 1,
+"issue": "Opening question is an elliptical fragment; meaning needs guessing."
+},
+{
+"n": 2,
+"reading": "Me? I'm paid in full, with karma.",
+"grammatical": false,
+"sense": 1,
+"issue": "'Paid in full: karma' is a colon fragment with no clear clause."
+},
+{
+"n": 3,
+"reading": "It's good Prada, in my suit.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "My mate's cruiser is moored out in Palma.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "No, I charm them, the stab vests.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Charm 'em' pointing at vests is strained; unclear who or what is charmed."
+},
+{
+"n": 6,
+"reading": "I give the judge lager as a bribe for fat cheques.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "Cross me? Just wait and see.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "Thank you, train drivers, for a month with no drama.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nOne black book and the numbers? I'll charge ya\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy guy's cruiser? Moored out in Palma\nStab vests? Nah I charm 'em\nFat cheques? I bung the judge lager\nCross me? Just you wait and see\nGrazie grazie train drivers! A month and no drama": {
+"thread": "The speaker is a smooth, untouchable fixer who uses money, bribes and charm to dodge every threat and consequence, and flaunts the wealth that buys him that immunity.",
+"coherent": 1,
+"issue": "The final bar about train drivers and a drama-free month breaks the untouchable-fixer claim and reads as a random tag.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Honesty box joke deflates the image of a thief, sustaining the ironic untouchability claim."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Flaunting expensive suit supports the wealth-as-immunity theme."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Friend's boat moored in Palma extends the display of wealth and connections."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Charming stab-vest threats escalates the untouchable claim with a clear contrast."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Bribing the judge with lager escalates from charm to corruption, following logically."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Threatening back ('just you wait') matches the untouchable persona set up earlier."
+},
+{
+"n": 8,
+"follows": false,
+"issue": "Thanks to train drivers and a month without drama is a sudden subject change with no signal linking it to the fixer theme."
+}
+]
+},
+"[haiku]\nUSSLANG2\nOne black book and the numbers? I'll charge ya\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy guy's cruiser? Moored out in Palma\nStab vests? Nah I charm 'em\nFat cheques? I bung the judge lager\nCross me? Just you wait and see\nGrazie grazie train drivers! A month and no drama": [
+[],
+[]
+],
+"[haiku]\nMozzarella that's pricey? My guy does it nicely\nIn Marrakesh it's dicey? My guy's Rolexes are icy\nBarber's cut-throat shave? Free: so I live the life of Riley\nThese days I drive a hard bargain\nNow the man I use has met Kylie\nNow the man I use is dead cheeky\nFifty quid? Now don't say my guy cheats me\nBack at the gaff of my guy's guy who's local, for more freebies": [
+{
+"n": 1,
+"reading": "Mozzarella's pricey, but my guy does it nicely.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "In Marrakesh it's dicey, but my guy's Rolexes are icy.",
+"grammatical": true,
+"sense": 1,
+"issue": "Slang 'dicey' and 'icy' strain the meaning; the link is unclear."
+},
+{
+"n": 3,
+"reading": "The barber's cut-throat shave is free, so I live the life of Riley.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "These days I drive a hard bargain.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "The man I use has met Kylie.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "The man I use is now very cheeky.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "Don't say my guy cheats me, even though it costs fifty quid.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "No finite verb; 'back at' and 'for more freebies' hang as a word stack."
+}
+],
+"[haiku]\nBLOCK2\nMozzarella that's pricey? My guy does it nicely\nIn Marrakesh it's dicey? My guy's Rolexes are icy\nBarber's cut-throat shave? Free: so I live the life of Riley\nThese days I drive a hard bargain\nNow the man I use has met Kylie\nNow the man I use is dead cheeky\nFifty quid? Now don't say my guy cheats me\nBack at the gaff of my guy's guy who's local, for more freebies": {
+"thread": "The speaker is a cheeky operator who boasts that his shady \"guy\" (and that guy's own contact) keeps him supplied with cut-price and free luxuries, so he lives the high life.",
+"coherent": 1,
+"issue": "Bar 5's Kylie name-drop and bar 7's \"don't say he cheats me\" muddy the bargain-and-freebies point.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Dicey Marrakesh and the guy's Rolexes support the fixer-supplies-goods claim."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Free shave continues the freebies claim and the living-large boast."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Hard bargain restates the cheap-deals theme."
+},
+{
+"n": 5,
+"follows": false,
+"issue": "Meeting Kylie is a status brag with no link to the bargains or freebies."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Calling the man dead cheeky characterises the fixer, returning to the thread."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Fifty quid twist contrasts price with the claim he is not cheated, a clear turn."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "The guy's guy extends the chain of contacts and freebies, escalating the claim."
+}
+]
+},
+"[haiku]\nUSSLANG2\nMozzarella that's pricey? My guy does it nicely\nIn Marrakesh it's dicey? My guy's Rolexes are icy\nBarber's cut-throat shave? Free: so I live the life of Riley\nThese days I drive a hard bargain\nNow the man I use has met Kylie\nNow the man I use is dead cheeky\nFifty quid? Now don't say my guy cheats me\nBack at the gaff of my guy's guy who's local, for more freebies": [
+[],
+[]
+],
+"[haiku]\nCARRY1\nOn Whitsundays a yacht? Yeah I've got a guy\nUp K'gari in the ute where you do or die\nMy guy's Bangkok van does the top fried rice\nI dived the reef, the sharks were in the crossfire\nYou wouldn't believe big boats and jets at night\nYou get it for free from my guy if pigs can fly\nI drive to his bay, dive and I'm back by five / 'Cause a call to my guy makes it mine": [
+{
+"n": 1,
+"reading": "On the Whitsundays, a yacht? Yes, I've got a guy.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "Up K'gari, in the ute, is where you do or die.",
+"grammatical": false,
+"sense": 1,
+"issue": "No main verb; a prepositional phrase with no clause."
+},
+{
+"n": 3,
+"reading": "My guy's Bangkok van does the top fried rice.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Does the top fried rice' is odd slang; meaning strained."
+},
+{
+"n": 4,
+"reading": "I dived the reef, and the sharks were in the crossfire.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Sharks in the crossfire' is strained; unclear what is being claimed."
+},
+{
+"n": 5,
+"reading": "You wouldn't believe the big boats and jets at night.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "You get it for free from my guy if pigs can fly.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "I drive to his bay, dive, and I'm back by five, because a call to my guy makes it mine.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Makes it mine' has unclear referent for 'it'; strained.",
+"sentence": [
+7,
+8
+]
+},
+{
+"n": 8,
+"reading": "I drive to his bay, dive, and I'm back by five, because a call to my guy makes it mine.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Makes it mine' has unclear referent for 'it'; strained.",
+"sentence": [
+7,
+8
+]
+}
+],
+"[haiku]\nBLOCK2C\nOn Whitsundays a yacht? Yeah I've got a guy\nUp K'gari in the ute where you do or die\nMy guy's Bangkok van does the top fried rice\nI dived the reef, the sharks were in the crossfire\nYou wouldn't believe big boats and jets at night\nYou get it for free from my guy if pigs can fly\nI drive to his bay, dive and I'm back by five / 'Cause a call to my guy makes it mine": {
+"thread": "The speaker, a bragging middleman, claims his \"guy\" can supply anything (yachts, vehicles, food, trips, free goods), so whatever he wants is one phone call away.",
+"coherent": 1,
+"issue": "Bar 4 (reef dive, sharks in crossfire) is a standalone event that never ties back to the guy.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Ute trip to K'gari escalates the access-and-danger theme, though it doesn't say the guy provided it."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Bangkok van is back on the guy's services, extending the list of what he supplies."
+},
+{
+"n": 4,
+"follows": false,
+"issue": "Reef dive with sharks in crossfire is a new event with no link to the guy or the claim."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Big boats and jets at night suggest the same lavish access, escalating the claim."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Free goods from the guy, with a 'pigs can fly' deflation, directly restates the thesis."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Driving to the guy's bay and the closing line make the one-call claim explicit."
+}
+]
+},
+"[haiku]\nUSSLANG2\nOn Whitsundays a yacht? Yeah I've got a guy\nUp K'gari in the ute where you do or die\nMy guy's Bangkok van does the top fried rice\nI dived the reef, the sharks were in the crossfire\nYou wouldn't believe big boats and jets at night\nYou get it for free from my guy if pigs can fly\nI drive to his bay, dive and I'm back by five\n'Cause a call to my guy makes it mine": [
+[],
+[]
+],
+"[haiku]\nCARRY1\nOn Whitsundays a slab? Yeah I've got a guy\nUp K'gari in the ute where you do or die\nMy guy's Bangkok van does a baht fried rice\nI dived the reef, the sharks were in the crossfire\nYou wouldn't believe big boats and jets at night\nYou get it for free from my guy if pigs can fly\nI drive to his bay, dive and I'm back by five / 'Cause a call to my guy makes it mine": [
+{
+"n": 1,
+"reading": "Is there a slab on the Whitsundays? Yeah, I've got a guy.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "Driving up K'gari in the ute is a do-or-die situation.",
+"grammatical": false,
+"sense": 1,
+"issue": "No main verb; relative clause hangs without a finite clause"
+},
+{
+"n": 3,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 0,
+"issue": "'Does a baht fried rice' is not English; the price phrase is broken"
+},
+{
+"n": 4,
+"reading": "I dived the reef, and the sharks were caught in the crossfire.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "You wouldn't believe the big boats and jets at night.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "You get it for free from my guy, if pigs can fly.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "I drive to his bay, dive, and I'm back by five, because a call to my guy makes it mine.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Makes it mine' has unclear referent; 'it' is strained",
+"sentence": [
+7,
+8
+]
+},
+{
+"n": 8,
+"reading": "I drive to his bay, dive, and I'm back by five, because a call to my guy makes it mine.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Makes it mine' has unclear referent; 'it' is strained",
+"sentence": [
+7,
+8
+]
+}
+],
+"[haiku]\nBLOCK2C\nOn Whitsundays a slab? Yeah I've got a guy\nUp K'gari in the ute where you do or die\nMy guy's Bangkok van does a baht fried rice\nI dived the reef, the sharks were in the crossfire\nYou wouldn't believe big boats and jets at night\nYou get it for free from my guy if pigs can fly\nI drive to his bay, dive and I'm back by five / 'Cause a call to my guy makes it mine": {
+"thread": "The speaker boasts that his access to everything, from Whitsundays slabs to Bangkok rice to reef runs, comes through \"my guy\", a connection whose reach makes the speaker's world his.",
+"coherent": 1,
+"issue": "Bar 4's reef dive is an unexplained shift away from the guy's supply.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Extends the guy's territory to K'gari, a place he operates."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Jumps to Bangkok, but escalates the supplier's reach across countries."
+},
+{
+"n": 4,
+"follows": false,
+"issue": "Speaker's own dive with sharks is a new event; link to the guy is unclear."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Boats and jets at night show the operation's scale, supporting the reach claim."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Returns to the guy's supply and deflates the idea of it being free."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Driving and diving is sequence, but the closing line ties back to the guy's control."
+}
+]
+},
+"[haiku]\nUSSLANG2\nOn Whitsundays a slab? Yeah I've got a guy\nUp K'gari in the ute where you do or die\nMy guy's Bangkok van does a baht fried rice\nI dived the reef, the sharks were in the crossfire\nYou wouldn't believe big boats and jets at night\nYou get it for free from my guy if pigs can fly\nI drive to his bay, dive and I'm back by five\n'Cause a call to my guy makes it mine": [
+[],
+[]
+],
+"[haiku]\nCARRY1\nMozzarella? The staples? It's my guy in Naples\nMarrakesh when I'm able, my guy there, so check the label\nBarber's chair, cut-throat blade, on the house, cards on the table\nMy boots in Bergen? Dead fatal / On the ferry, flat calm, Thai mainland\nBut the fags are that cheap dead cheeky\nForty a day? My guy is sorting me\nWhere am I? Gone to my guy's guy, he's local, for more freebies": [
+{
+"n": 1,
+"reading": "It's my guy in Naples who supplies the mozzarella and the staples.",
+"grammatical": true,
+"sense": 1,
+"issue": "Opens as fragments; 'the staples' is vague, so the claim is strained."
+},
+{
+"n": 2,
+"reading": "When I'm able, I'll go to Marrakesh, where my guy is, so check the label.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Marrakesh when I'm able' is elliptical; 'check the label' has no clear referent."
+},
+{
+"n": 3,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 0,
+"issue": "Noun phrases only with no verb; a word list, not a sentence."
+},
+{
+"n": 4,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 0,
+"issue": "Fragments and slang ('dead fatal', 'flat calm') with no clause linking them.",
+"sentence": [
+4,
+5
+]
+},
+{
+"n": 5,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 0,
+"issue": "Fragments and slang ('dead fatal', 'flat calm') with no clause linking them.",
+"sentence": [
+4,
+5
+]
+},
+{
+"n": 6,
+"reading": "The cigarettes are that cheap, and very cheeky.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Dead cheeky' is tacked on; unclear what it describes. 'Fags' may confuse listeners."
+},
+{
+"n": 7,
+"reading": "My guy is sorting me out with forty a day.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Forty a day?' is a bare fragment; 'sorting me' is vague."
+},
+{
+"n": 8,
+"reading": "I've gone to my guy's guy, who's local, for more freebies.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Where am I?' is a fragment; 'gone to' needs an elided 'I've' to work."
+}
+],
+"[haiku]\nBLOCK2C\nMozzarella? The staples? It's my guy in Naples\nMarrakesh when I'm able, my guy there, so check the label\nBarber's chair, cut-throat blade, on the house, cards on the table\nMy boots in Bergen? Dead fatal / On the ferry, flat calm, Thai mainland\nBut the fags are that cheap dead cheeky\nForty a day? My guy is sorting me\nWhere am I? Gone to my guy's guy, he's local, for more freebies": {
+"thread": "The speaker claims he has a \"guy\" in every city he visits who gets him goods and services for free or cheap, so he never pays for anything.",
+"coherent": 1,
+"issue": "Bar 4 abandons the \"my guy\" network for unexplained boots, ferry and Thailand.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Repeats the 'my guy in each city' network claim, supporting bar 1."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Free barber haircut ('on the house') supports the freebies claim."
+},
+{
+"n": 4,
+"follows": false,
+"issue": "Switches to Bergen, a ferry and Thailand with no guy or freebie link, and 'boots' and 'dead fatal' are unclear."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "'But' contrasts cheap cigarettes with the free-stuff claim, deflating it a little."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "'My guy is sorting me' returns to the network claim and escalates it to forty a day."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "'Gone to my guy's guy' escalates the network joke, and 'Where am I?' is a deflating punchline."
+}
+]
+},
+"[haiku]\nUSSLANG2\nMozzarella? The staples? It's my guy in Naples\nMarrakesh when I'm able, my guy there, so check the label\nBarber's chair, cut-throat blade, on the house, cards on the table\nMy boots in Bergen? Dead fatal\nOn the ferry, flat calm, Thai mainland\nBut the fags are that cheap dead cheeky\nForty a day? My guy is sorting me\nWhere am I? Gone to my guy's guy, he's local, for more freebies": [
+[],
+[]
 ]
 }

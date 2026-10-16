@@ -75,6 +75,23 @@ def _raw(bar):
     return re.findall(r"[A-Za-z']+", bar)
 
 
+PLAIN = {"yes", "police", "god", "route", "sea", "zero", "part"}
+
+
+def _plain_english(word, gloss):
+    """a harvested 'loanword' that is just English (16 Oct 2026): the Wiktionary harvest listed yes (Norway), police (France), god,
+    route, sea, zero and part, so 'Cash? Yes!' counted as a local word and v4 met the verse quota (5) with 3 real ones. The original
+    uses none of them. Dropped when the word is its own gloss, is listed above, or is very common English (wordfreq zipf >= 4.5);
+    the hand-built local_words.txt is never filtered."""
+    if word == gloss or word in PLAIN:
+        return True
+    try:
+        from wordfreq import zipf_frequency
+        return zipf_frequency(word, "en") >= 4.5
+    except Exception:          # noqa: BLE001
+        return False
+
+
 def load_supply():
     """Three sources, because one is not enough (all three gaps were measured):
       loanwords.txt   the Wiktionary harvest by country -- misses the transactional words the original uses
@@ -87,7 +104,10 @@ def load_supply():
         if os.path.exists(path):
             for line in open(path, encoding="utf8"):
                 if line.strip() and not line.startswith("#"):
-                    loans.add(line.split(sep)[0].strip().lower())
+                    w = line.split(sep)[0].strip().lower()
+                    if path.endswith("loanwords.txt") and _plain_english(w, line.split(sep)[-1].strip().lower()):
+                        continue
+                    loans.add(w)
     places = set()
     ent = os.path.join(HERE, "entities.txt")
     if os.path.exists(ent):

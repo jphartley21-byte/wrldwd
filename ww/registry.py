@@ -102,6 +102,11 @@ LEGACY = {
         "HARD in slotcheck via flow_par since 16 Oct 2026, TOL 0 against the original's same bar. The original passes by construction (it has "
         "run breaks in 6 bars, so those bars keep their allowance); flagged bar 46 fails both and all 15 flagged bars still fail. run_breaks failed "
         "25 of v4's bars, including Q&A bars Joe had not flagged; v4 was refit to it. One labelled complaint; no independent good set"),
+    # 16 Oct 2026, Joe on v4 bar 48: "those flows feel very different and ours significantly worse"
+    "toolkit/flow_par stops (mid-bar punctuation stops <= the original's same bar + 1)": ("joe_rule",
+        "HARD in slotcheck via flow_par since 16 Oct 2026. The original passes by construction (26 stops in 76 bars, never 3 in a bar); "
+        "flagged bar 48 (3 stops vs 1) fails it and all 17 flagged bars still fail. It failed 8 of v4's bars; v4 was refit. TOL 1 is a "
+        "judgement (one labelled complaint, 3 vs 1), not fitted; no independent good set (flow_ok.txt empty)"),
     # 16 Oct 2026, Joe on bars 13-14: the original "works because it's a sentence over 2 lines"; ours "it's two sentences which messes up the flow"
     "toolkit/flow_par carry (one sentence over the bar line where the original runs one)": ("joe_rule",
         "HARD in slotcheck since 16 Oct 2026. A strict text reading (spaCy): bar N ends on a split word, a hanging subject pronoun, a determiner, "

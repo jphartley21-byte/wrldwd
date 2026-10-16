@@ -5,7 +5,7 @@ Exclude: singing, melodic hook, autotune, choir, female vocals
 Controls: model v6, vocal gender male, Variety 0, Style Influence ~70, Weirdness ~30. Leave the key out. The original measures
 140.00 BPM; also test "70 BPM" (half-time) in place of "140 BPM half-time" as a second round. Change one thing per round and judge
 at least two Creates per change (brief/suno_rap_rules.md section 4).
-Lyrics: paste writing/song_know_a_guy_v4_suno.txt as is (3,663 characters, under the 5,000 limit).
+Lyrics: paste writing/song_know_a_guy_v4_suno.txt as is (under the 5,000-character limit).
 Section cues (optional, per the rules sheet): replace the bare tags with
   [Chorus: rapped, gruff, flat deadpan]
   [Verse 1: rapped, gruff, flat deadpan]

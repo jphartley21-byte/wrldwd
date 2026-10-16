@@ -66,7 +66,13 @@ MEASURES = ("stress_run", "hard_joins", "closed_run", "restart")
 #              counted ADJACENT 16ths, so the same-16th cram was invisible. TOL 0 against the original's same bar.
 #   run_breaks (16 Oct 2026, same complaint; Joe: "Yes hard gate those too") a stop where the next syllable falls on the same or next 16th:
 #              there is no room to stop, so the bar reads choppy. TOL 0 against the original's same bar (it does this in 6 bars).
-BAR_MEASURES = ("fast_jam", "cell", "barline", "pause", "same_step", "run_breaks")
+#   stops      (16 Oct 2026, Joe on bar 48: "those flows feel very different and ours significantly worse") the pause rule only asked ours
+#              to break WHERE the original breaks, so extra stops were free: ours stopped 3 times (four short phrases) where the original
+#              runs one long phrase and stops once before a short tag. Suno reads every mark as a pause. The original never stops more than
+#              twice in a bar (54 bars 0, 18 bars 1, 4 bars 2; 26 in all); v4 had 63. Ours may stop at most STOPS_TOL more times than the
+#              original's same bar (punctuation marks only, flow_fit syllables; read from the stored "pause" list, so no rebuild).
+BAR_MEASURES = ("fast_jam", "cell", "barline", "pause", "same_step", "run_breaks", "stops")
+STOPS_TOL = 1
 BAR_SLACK = 0.10
 # Fitted 15 Oct 2026 on the only labels there are: the loosest tolerances that still catch all 4 flagged bars, which fail the
 # fewest bars of hook r3 (Joe: "I like this", bar 12 excepted): 5 of 15 still fail, and they are listed to Joe to judge. At 0/0/0/0 the
@@ -83,6 +89,7 @@ LABEL = {"stress_run": "stressed syllables in a row", "hard_joins": "hard mouth-
          "run_breaks": "stops inside a 16th-note run (a ? : , or ! where the next syllable comes straight after)",
          "same_step": "stressed syllables crammed onto ONE 16th (where the original's bar puts a weak syllable in that slot)",
          "pause": "pause position (the original pauses after syllable(s) {p}; ours does not break there)",
+         "stops": "mid-bar stops (a ? : , . or ! inside the bar; at most one more than the original's bar)",
          "barline_close": "bar-line rhyme too loose (rapfit pair score with the line's end; must be within 0.10 of the original's)"}
 
 
@@ -376,6 +383,10 @@ def check(bar_no, line):
             out.append(("barline", 0, k))
         elif max(near) < need:
             out.append(("barline_close", max(near), round(par.get("barline_score", 0.0), 2)))
+    if "pause" in par:
+        n = len(breaks(line))
+        if n > len(par["pause"]) + STOPS_TOL:
+            out.append(("stops", n, len(par["pause"])))
     if par.get("pause"):
         have = breaks(line, clauses=True)
         miss = [k for k in par["pause"] if k not in have]

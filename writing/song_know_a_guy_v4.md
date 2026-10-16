@@ -29,6 +29,11 @@
 # UK RAP LEXICON, same day (Joe: 'build it'): toolkit/ukrap.py found the sixth two-word rhyme: bar 21 'Stab vests? Nah I charm 'em'
 # (was 'Stab vest? Nah a parka'). ww gate: every section PASS (sense ON); the song-level two-word minimum passes (6); FAIL only on the two
 # open hook quotas.
+# STOPS, same day (Joe on bar 48: "those flows feel very different and ours significantly worse"): a bar may stop (? : , . !) at most
+# once more than the original's same bar (toolkit/flow_par.py stops, HARD). 8 bars refit (2, 3, 4, 22, 43, 48, 64, 67) to be said
+# through; bar 48 now has the original's shape (one long phrase, one stop, a tag). A loanword bug ('yes' counted as a local word) hid
+# a verse shortfall: bars 61 ('a slab', was 'a yacht') and 63 ('a baht fried rice') now carry real local words. Bar 2 'Served ten years
+# in Crete' is persona (Crete is true). ww gate: every section PASS (sense ON); FAIL only on the hook's local words (3 of 4), open.
 # V3 (16 Oct 2026, Joe: "Go for all 3, add the gates, verify them, then write the new draft to pass all gates and print it"): v2 rewritten to
 # the new rhyme-texture gate (toolkit/texture.py: internal rhyme amount + strength, frame / link sandwiches, multisyllabic runs across
 # words, each per section against the original's same section). v2 failed it in 8 of 10 sections; v3 passes all 10. ww gate PASS
@@ -58,9 +63,9 @@
 # argument: wherever I land, I know a guy. moves: shout_out, brag, flex_list, punchline
 # one ending family on all four bars (venue / continue / cruise / news), as the original's Hook 1-4 shares one final vowel
 Cheers! Any issue?
-Got framed? Left for dead? I continue
-Cops, bail, dock? Jail is just a Greek cruise
-In Bern, Zell, Melbourne, Perth I'm bad news
+Served ten years in Crete? I continue
+Third spell in jail is just a Greek cruise
+In Bern, Zell and Melbourne I'm bad news
 #cash 4 | bad news | news
 
 == Hook 5-8
@@ -93,7 +98,7 @@ Honesty box? Me? Paid in full: karma
 In my suit? Man! It's good Prada
 My guy's cruiser? Moored out in Palma
 Stab vests? Nah I charm 'em
-Cash? Yes! I bung the judge lager
+Fat cheques? I bung the judge lager
 Cross me? Just you wait and see
 Grazie grazie train drivers! A month and no drama
 #cash 7 | wait and see | see
@@ -131,12 +136,12 @@ Rode in van to van, a real Marathon
 # argument: I've got a guy for every little luxury, in every country. moves: brag, brag, threat, shout_out, brag, brag, brag, punchline
 Mozzarella that's pricey? My guy does it nicely
 In Marrakesh it's dicey? My guy's Rolexes are icy
-Barber's cut-throat shave? Free: on the house, the life of Riley
+Barber's cut-throat shave? Free: so I live the life of Riley
 These days I drive a hard bargain
 Now the man I use has met Kylie
 Now the man I use is dead cheeky
 Fifty quid? Now don't say my guy cheats me
-Where am I? Gone to my guy's guy, he's local, for more freebies
+Back at the gaff of my guy's guy who's local, for more freebies
 #cash 3 | the life of Riley | Riley
 #cash 4 | drive a hard bargain | bargain
 #cash 6 | dead cheeky | cheeky
@@ -162,13 +167,13 @@ Who do I know? A guy. So I won't name names
 
 == V2 1-8
 # argument: the luxury life, all of it through a guy (monorhyme on the title's own vowel). moves: brag, brag, name_drop, brag, brag, threat, brag, punchline
-On Whitsundays a yacht? Yeah I've got a guy
+On Whitsundays a slab? Yeah I've got a guy
 Up K'gari in the ute where you do or die
-My guy's Bangkok van does the top fried rice
-The reef? I dived, the sharks were in the crossfire
+My guy's Bangkok van does a baht fried rice
+I dived the reef, the sharks were in the crossfire
 You wouldn't believe big boats and jets at night
 You get it for free from my guy if pigs can fly
-I drive to his bay, dive, and I'm back by five
+I drive to his bay, dive and I'm back by five
 'Cause a call to my guy makes it mine
 #cash 2 | do or die | die
 #cash 6 | pigs can fly | fly
