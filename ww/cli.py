@@ -57,6 +57,18 @@ def _lazy(mod: str):
     return run
 
 
+def _texture_selftest():
+    import io
+    import contextlib
+    import sys
+    from . import config
+    sys.path.insert(0, str(config.ROOT / "toolkit"))
+    import texture
+    with contextlib.redirect_stdout(io.StringIO()) as buf:
+        ok = texture.selftest()
+    return ok, "fixtures fire; par table present" if ok else buf.getvalue().strip()[-200:]
+
+
 def _recount_selftest():
     import io
     import contextlib
@@ -129,6 +141,7 @@ def cmd_selftest(_args) -> int:
         ("premises", _lazy("premise")),
         ("quality reader (Claude, report-only)", _lazy("qualityread")),
         ("sense screen", _lazy("sensecheck")),
+        ("rhyme texture (internal, sandwich, multis)", _texture_selftest),
         ("beats -> moves migration", _moves_selftest),
     ]
     ok = True

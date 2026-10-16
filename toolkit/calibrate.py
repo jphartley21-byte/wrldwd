@@ -50,6 +50,12 @@ import flow_par as _fpar  # noqa: E402
 good = _fpar.selftest(sys.argv[1])
 ok &= good
 print(("ok  " if good else "BAD ") + "flow par: Joe's flagged bars all fail, the original passes its own bars")
+# RHYME TEXTURE (16 Oct 2026): internal rhyme, sandwiches and multis across words, per section; the original passes its own par and
+# the fixtures (a cross-word multi, a frame and a link sandwich, a repeat that is not a rhyme) fire.
+import texture as _tex  # noqa: E402
+good = _tex.selftest(sys.argv[1])
+ok &= good
+print(("ok  " if good else "BAD ") + "rhyme texture: the original passes its own section par; the fixtures fire")
 # the meaning gate must catch known-bad stanzas and leave clean bars clean
 mg = run([os.path.join(HERE, "meaning_gate.py"), "--selftest"], "")
 good = "PASSED" in mg

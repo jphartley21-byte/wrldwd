@@ -1,0 +1,106 @@
+{
+ "_note": "Per-section rhyme texture of the ORIGINAL (counts only, rule 4), built by toolkit/texture.py --build.",
+ "slack": 0.8,
+ "sections": {
+  "Hook 1-4": {
+   "amount": 2,
+   "strength": 1.5,
+   "within": 0,
+   "neighbour": 2,
+   "frame": 0,
+   "link": 0,
+   "multi": 3,
+   "multi_cross": 2
+  },
+  "Hook 5-8": {
+   "amount": 2,
+   "strength": 1.5,
+   "within": 0,
+   "neighbour": 2,
+   "frame": 0,
+   "link": 0,
+   "multi": 1,
+   "multi_cross": 1
+  },
+  "Hook 9-16": {
+   "amount": 9,
+   "strength": 5.0,
+   "within": 4,
+   "neighbour": 5,
+   "frame": 0,
+   "link": 0,
+   "multi": 1,
+   "multi_cross": 1
+  },
+  "V1 1-8": {
+   "amount": 13,
+   "strength": 7.0,
+   "within": 4,
+   "neighbour": 9,
+   "frame": 0,
+   "link": 0,
+   "multi": 3,
+   "multi_cross": 3
+  },
+  "V1 9-16": {
+   "amount": 9,
+   "strength": 5.5,
+   "within": 1,
+   "neighbour": 8,
+   "frame": 0,
+   "link": 0,
+   "multi": 3,
+   "multi_cross": 3
+  },
+  "V1 17-24": {
+   "amount": 5,
+   "strength": 2.5,
+   "within": 2,
+   "neighbour": 3,
+   "frame": 1,
+   "link": 1,
+   "multi": 1,
+   "multi_cross": 1
+  },
+  "V1 25-32": {
+   "amount": 20,
+   "strength": 10.5,
+   "within": 6,
+   "neighbour": 14,
+   "frame": 0,
+   "link": 0,
+   "multi": 0,
+   "multi_cross": 0
+  },
+  "V1 33-44": {
+   "amount": 18,
+   "strength": 11.5,
+   "within": 5,
+   "neighbour": 13,
+   "frame": 0,
+   "link": 0,
+   "multi": 3,
+   "multi_cross": 3
+  },
+  "V2 1-8": {
+   "amount": 17,
+   "strength": 9.0,
+   "within": 2,
+   "neighbour": 15,
+   "frame": 0,
+   "link": 0,
+   "multi": 2,
+   "multi_cross": 2
+  },
+  "V2 9-16": {
+   "amount": 14,
+   "strength": 8.0,
+   "within": 4,
+   "neighbour": 10,
+   "frame": 0,
+   "link": 1,
+   "multi": 1,
+   "multi_cross": 1
+  }
+ }
+}

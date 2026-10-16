@@ -125,3 +125,10 @@ Rewrite: 13 Cash for Cairns and it's cash for Wales and cash for Spain (Wales / 
     the two lines). Now HARD in toolkit/flow_par.py: `pause` (break after the original's syllable) and spelled-out cells. v2 refit: 20 bars,
     e.g. 76 "Stuck? Need me? Call on me, call on me: last lifeline" (pause after 3, the repeated cell on the 16th run), 69 "A guy? Well, my
     own boat", 58 "Your head's a conker now. You owe me? Fair game". ww gate PASS; targets 7/10 + character 2/2.
+20. Joe (16 Oct): gates for internal rhyme (amount, similarity between neighbours), sandwich rhymes, multis across words. Built as one
+    section-level gate (toolkit/texture.py) against the original's same section. v2 failed it in 8 of 10 sections (thin multis in the hook
+    and V1 1-8, too little internal rhyme in V1 1-8 and V1 33-44, no sandwich where the original has them in V1 17-24 and V2 9-16). v3 passes:
+    e.g. "Got framed? Left for dead?" ~ "Cops, bail, dock, jail" (multis across words), "...it's medical / Chemical? Gardaí come for the
+    evidence" (a link and a frame sandwich), "Pool hall? Hustled well and then I struck gold / Bold: I skip queues..." (link). Finding: the
+    sense read and dense internal rhyme pull against each other; V1 33-44 needed plain sentences that still carry rhyme ("When you owe me
+    I know: your head is fair game", "Who do I know? A guy. So I won't name names").

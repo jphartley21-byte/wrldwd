@@ -545,6 +545,14 @@ def check(slot: str, bars: list[str], context: list[str] | None = None, tol: int
     hard += cash_issues
     if n and len(cash_ok) < need_cash:
         hard.append(f"cashed idioms: {len(cash_ok)} verified, need >= {need_cash}. Declare each as a line `#cash <bar> | <idiom> | <payoff word>` with the payoff word LAST in its bar")
+    # RHYME TEXTURE, HARD (16 Oct 2026, Joe: "Do we have gates for internal rhymes (amount and similarity between neighbours) and sandwich
+    # rhymes ... and can multisyllabic rhymes be detected across words?"): toolkit/texture.py, a full section against the original's same section.
+    if n == s["n"] and os.environ.get("WW_TEXTURE", "1") != "0":
+        import texture as _tx
+        tf = _tx.check(slot, bars[:n])
+        extra["texture"] = _tx.profile(bars[:n])
+        if tf:
+            hard.append("rhyme texture below the original's section: " + _tx.describe(tf))
     fr = frames.scan({"s": bars})
     if fr["banned"] or fr["section"]:
         hard.append(f"filler frames {[p for v in fr['banned'].values() for p, _ in v]}")

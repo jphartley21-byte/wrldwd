@@ -79,6 +79,13 @@ LEGACY = {
     "toolkit/flow_par fast_jam + cell + barline (16th-note stress jams; repeated cell + internal rhyme; end rhyme landed at the bar line)": ("joe_rule", "HARD in slotcheck via flow_par since 15 Oct 2026. barline: 35 of the original's 74 timed lines run past one musical bar; it lands a rhyme on its own end at the bar line in bars 13, 41, 42, 50, and ours must too. "
         "The original passes by construction. fast_jam (TOL 0) also catches 3 earlier flagged bars for the reason Joe gave for one of them ('stresses bunch "
         "up'); the cell rule applies only at the original's 5 repeated-cell bars (13, 24, 40, 48, 50). One labelled complaint; no independent good set"),
+    # 16 Oct 2026, Joe: "Do we have gates for internal rhymes (amount and similarity between neighbours) and sandwich rhymes ... and can
+    # multisyllabic rhymes be detected across words?" then "Go for all 3, add the gates, verify them"
+    "toolkit/texture.py (internal rhyme amount + strength, frame / link sandwiches, multisyllabic runs across words; per section)": ("joe_rule",
+        "HARD in slotcheck since 16 Oct 2026 (WW_TEXTURE=0 announces GATE OFF). Per section against the original's same section: amount, strength "
+        "and multis >= 0.8 x the original's; frame and link sandwiches >= the original's count. The original passes by construction; fixtures "
+        "(a cross-word multi, a frame, a link, a repeat that is not a rhyme) fire. The sandwich rule was fitted on the original's own candidates "
+        "(rhyming ones stand apart). No labelled set from Joe yet: every texture complaint goes into a test file first (rule 10)"),
     # 16 Oct 2026, Joe on v2 bar 76: "Flows very differently" (and: does flow matching hear "pauses"?)
     "toolkit/flow_par pause + spelled-out cell (break after the original's syllable; acronyms said as letter names repeat a cell)": ("joe_rule",
         "HARD in slotcheck via flow_par since 16 Oct 2026. pause: 22 of the original's 76 bars break mid-bar (punctuation); ours must break after the "
