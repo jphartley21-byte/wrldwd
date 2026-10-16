@@ -446,7 +446,14 @@ def chain(A: tuple, B: tuple) -> dict:
             break
         states.append(m)
     prom = any(prominent(A[-1 - k]) or prominent(B[-1 - k]) for k in range(len(states)))
-    return {"states": states, "depth": len(states) if prom else 0, "echo": 0 if prom else len(states)}
+    depth = len(states) if prom else 0
+    # 16 Oct 2026 (Joe: the original's bar 45 rhymes with its group, "whereas we use mainland, which does not rhyme with Naples / able /
+    # label"): mainland ~ Naples matched the vowels of both syllables and nothing else (states [1, 1]) and counted 2 deep. A run of
+    # vowel-only matches is assonance: past one syllable a rhyme needs at least one syllable matched with its consonants too. None of the
+    # original's 2+ deep bars changes (each holds an exact syllable); its one-syllable assonance stays depth 1.
+    if depth >= 2 and 2 not in states:
+        depth = 1
+    return {"states": states, "depth": depth, "echo": 0 if prom else len(states)}
 
 
 def depth_selftest() -> list[str]:
@@ -470,6 +477,9 @@ def depth_selftest() -> list[str]:
     r = c("Lagos", "favours")
     if r["depth"] != 2:
         problems.append(f"Lagos / favours are a two-syllable rhyme: {r}")
+    r = c("mainland", "Naples")
+    if r["depth"] > 1:
+        problems.append(f"mainland / Naples share only vowels (Joe, 16 Oct 2026: not a rhyme past assonance): {r}")
     if syl_match(_syl("eye")[0], _syl("plain")[0]) == 2:
         problems.append("eye (aɪ) and plain (eɪ) share a glide but are not an exact rime")
     if syl_match(_syl("plain")[0], _syl("plane")[0]) != 2:
