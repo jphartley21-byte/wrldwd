@@ -26,6 +26,9 @@
 # where the original's do: 'for me'). V1 25-32 rebuilt so both rhyme families close on 'ee' like the original's (pricey / nicely / icy /
 # Riley / Kylie, then cheeky / cheats me / freebies). New song-level gate: >= 0.8 x the original's 7 real two-word rhymes; five here
 # (cheats me, fund me, charge ya, flogged it, flatter ya). Every section PASS (sense ON); the song is one two-word rhyme short.
+# UK RAP LEXICON, same day (Joe: 'build it'): toolkit/ukrap.py found the sixth two-word rhyme: bar 21 'Stab vests? Nah I charm 'em'
+# (was 'Stab vest? Nah a parka'). ww gate: every section PASS (sense ON); the song-level two-word minimum passes (6); FAIL only on the two
+# open hook quotas.
 # V3 (16 Oct 2026, Joe: "Go for all 3, add the gates, verify them, then write the new draft to pass all gates and print it"): v2 rewritten to
 # the new rhyme-texture gate (toolkit/texture.py: internal rhyme amount + strength, frame / link sandwiches, multisyllabic runs across
 # words, each per section against the original's same section). v2 failed it in 8 of 10 sections; v3 passes all 10. ww gate PASS
@@ -89,7 +92,7 @@ One black book and the numbers? I'll charge ya
 Honesty box? Me? Paid in full: karma
 In my suit? Man! It's good Prada
 My guy's cruiser? Moored out in Palma
-Stab vest? Nah a parka
+Stab vests? Nah I charm 'em
 Cash? Yes! I bung the judge lager
 Cross me? Just you wait and see
 Grazie grazie train drivers! A month and no drama

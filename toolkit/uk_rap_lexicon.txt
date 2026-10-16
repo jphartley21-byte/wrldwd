@@ -1,0 +1,209 @@
+# UK rap lexicon (16 Oct 2026, Joe: "Is the writers vocabulary limited ... words that UK rappers would typically use or have access to?"
+# then "build it"). Measured first: of 117 UK rap / road / everyday British words, 30 had no pronunciation at all (invisible to every
+# rhyme, syllable and flow check) and 21 more were dropped by the US-weighted word-frequency filter the rhyme searches used.
+#
+# Format: word | ARPAbet (blank = the dictionary already has it) | sense as UK rappers use it | register
+# Registers: road (London / MLE / grime), drill, money, drugs, weapon, police, everyday (British), cockney (rhyming slang head),
+# patois (Jamaican English used in UK rap), vulgar, praise, insult.
+# A pronunciation here only FILLS A GAP: it never overrides cmudict or rhyme_tools.OVR, so nothing already measured changes
+# (toolkit/ukrap.py --selftest checks the original's bars are measured exactly as before).
+# Senses are the assistant's own knowledge of UK usage (source: hand), not looked up; Joe corrects them.
+#
+# road / MLE / grime
+mandem | M AE1 N D EH2 M | my lot, the lads | road
+gyaldem | G Y AA1 L D EH2 M | the girls | road
+galdem | G AE1 L D EH2 M | the girls | road
+bruv | B R AH1 V | mate (brother) | road
+blud | B L AH1 D | mate (blood) | road
+fam | F AE1 M | close mate (family) | road
+bredrin | B R EH1 D R IH0 N | close friend | road
+bredren | B R EH1 D R EH0 N | close friends | road
+bredda | B R EH1 D AH0 | mate (brother) | road
+cuz | K AH1 Z | mate (cousin) | road
+cuzzy | K AH1 Z IY0 | mate (cousin) | road
+wagwan | W AA1 G W AA0 N | what's going on, hello | road
+wasteman | W EY1 S T M AE2 N | useless person | insult
+roadman | R OW1 D M AE2 N | street-smart lad from the ends | road
+yute | Y UW1 T | young person | road
+yutes | Y UW1 T S | young people | road
+ting | T IH1 NG | thing; an attractive girl; a gun | road
+peng | P EH1 NG | attractive, very good | praise
+leng | L EH1 NG | attractive | praise
+peak |  | bad luck, unfair ("that's peak") | road
+bare |  | very, a lot of ("bare money") | road
+long |  | a hassle, takes ages ("that's long") | road
+dench | D EH1 N CH | great, solid | praise
+gassed |  | overexcited, hyped up | road
+vexed |  | angry | road
+bait |  | obvious, too visible | road
+moist |  | weak, soft, uncool | insult
+wavey | W EY1 V IY0 | drunk or high | road
+cotch | K AA1 CH | chill, hang about | road
+chirpse | CH ER1 P S | chat up | road
+linkup | L IH1 NG K AH2 P | a meet-up, a hook-up | road
+link |  | meet up; a contact | road
+beef |  | a feud | road
+ends |  | home area, the estate | road
+endz | EH1 N D Z | home area, the estate | road
+creps | K R EH1 P S | trainers | road
+garms | G AA1 R M Z | clothes | road
+drip |  | stylish clothes | praise
+whip |  | car | road
+bossman | B AA1 S M AE2 N | the shopkeeper, the man behind the counter | road
+mazza | M AE1 Z AH0 | amazing; mad | praise
+madting | M AE1 D T IH2 NG | something crazy | road
+nang | N AE1 NG | great | praise
+butters | B AH1 T ER0 Z | ugly | insult
+chung | CH AH1 NG | attractive | praise
+gyal | G Y AA1 L | girl | road
+wifey | W AY1 F IY0 | girlfriend | road
+merk | M ER1 K | beat, destroy, kill | road
+merked | M ER1 K T | beaten, destroyed, killed | road
+clapped |  | ugly; shot | road
+rinsed |  | overused; beaten | road
+pree | P R IY1 | stare at, watch | road
+preeing | P R IY1 IH0 NG | staring at, watching | road
+nuff | N AH1 F | a lot of | road
+likkle | L IH1 K AH0 L | little | road
+shubz | SH UH1 B Z | a party | road
+allow |  | leave it, forget it ("allow it") | road
+swerve |  | avoid | road
+bun |  | forget it, to hell with | road
+banger |  | a great tune | praise
+tune |  | a great track | praise
+safe |  | thanks; all good | road
+bless |  | thanks; bye | road
+sket | S K EH1 T | promiscuous woman (derogatory) | vulgar
+# drill
+opp | AA1 P | an enemy | drill
+opps | AA1 P S | enemies | drill
+bando | B AE1 N D OW0 | an abandoned house used to deal from | drill
+trap |  | dealing operation | drill
+plug |  | supplier | drill
+shotter | SH AA1 T ER0 | street dealer | drill
+nitty | N IH1 T IY0 | addict | drill
+food |  | drugs to sell | drill
+slide |  | go into rival territory | drill
+spin |  | ride round on a rival | drill
+duppy | D AH1 P IY0 | ghost; to kill | drill
+duppied | D AH1 P IY0 D | killed | drill
+bodied |  | beaten badly, killed | drill
+# weapons
+skeng | S K EH1 NG | knife or gun | weapon
+nank | N AE1 NG K | knife | weapon
+shank |  | knife; to stab | weapon
+splash |  | stab | weapon
+dip |  | stab | weapon
+wet |  | stab ("wet him") | weapon
+strap |  | gun | weapon
+mash |  | gun | weapon
+burner |  | gun | weapon
+wap | W AA1 P | gun | weapon
+# drugs
+zoot | Z UW1 T | a joint | drugs
+spliff | S P L IH1 F | a joint | drugs
+piff | P IH1 F | good weed | drugs
+ching | CH IH1 NG | cocaine | drugs
+sniff |  | cocaine | drugs
+pills |  | ecstasy | drugs
+packs |  | weed | drugs
+# police
+feds | F EH1 D Z | police | police
+boydem | B OY1 D EH2 M | police | police
+jakes | JH EY1 K S | police | police
+bizzies | B IH1 Z IY0 Z | police (Scouse) | police
+rozzers | R AA1 Z ER0 Z | police | police
+plod |  | police | police
+pigs |  | police | police
+nick |  | prison; arrest; steal | police
+pen |  | prison | police
+bird |  | prison time ("doing bird") | police
+grass |  | informer; to inform | police
+snitch |  | informer | police
+# money
+guap | G W AA1 P | money | money
+gwop | G W AA1 P | money | money
+bags |  | thousands of pounds | money
+racks |  | thousands | money
+bands |  | thousands | money
+bread |  | money | money
+dough |  | money | money
+wonga | W AA1 NG G AH0 | money | money
+dosh | D AA1 SH | money | money
+wedge |  | a wad of money | money
+score |  | twenty quid | money
+pony |  | twenty-five quid | money
+ton |  | a hundred quid | money
+oner | W AH1 N ER0 | a hundred quid | money
+monkey |  | five hundred quid | money
+grand |  | a thousand quid | money
+nugget |  | a pound coin | money
+quid |  | pound | money
+fiver | F AY1 V ER0 | five-pound note | money
+tenner | T EH1 N ER0 | ten-pound note | money
+skint |  | broke | money
+minted |  | rich | money
+loaded |  | rich | money
+# everyday British
+gutted |  | devastated | everyday
+grafting |  | working hard | everyday
+buzzing |  | excited, happy | everyday
+chuffed |  | pleased | everyday
+knackered |  | exhausted | everyday
+bladdered | B L AE1 D ER0 D | very drunk | everyday
+munted | M AH1 N T IH0 D | wrecked, very drunk or high | everyday
+mashed |  | very drunk or high | everyday
+steaming |  | very drunk | everyday
+wrecked |  | very drunk; ruined | everyday
+gaff |  | house, home | everyday
+manor |  | home patch | everyday
+boozer | B UW1 Z ER0 | pub | everyday
+offie | AA1 F IY0 | off-licence | everyday
+chippy | CH IH1 P IY0 | chip shop | everyday
+cuppa | K AH1 P AH0 | cup of tea | everyday
+brew |  | cup of tea | everyday
+scran |  | food | everyday
+mardy | M AA1 R D IY0 | sulky | everyday
+minging | M IH1 NG IH0 NG | disgusting | insult
+minger | M IH1 NG ER0 | ugly person | insult
+gobby | G AA1 B IY0 | mouthy | everyday
+lairy | L EH1 R IY0 | rowdy, aggressive | everyday
+naff |  | tacky | everyday
+dodgy |  | suspect | everyday
+iffy | IH1 F IY0 | suspect | everyday
+pukka | P AH1 K AH0 | genuine, great | praise
+mint |  | great | praise
+boss |  | great (north) | praise
+sound |  | fine, decent | praise
+cracking |  | great | praise
+proper |  | very; real | everyday
+dead |  | very ("dead cheeky") | everyday
+bants | B AE1 N T S | banter | everyday
+geezer | G IY1 Z ER0 | bloke | everyday
+bloke |  | man | everyday
+lads |  | mates | everyday
+missus |  | wife, girlfriend | everyday
+# cockney rhyming slang (the head word stands for the rhyme)
+barnet |  | hair (Barnet Fair) | cockney
+porkies | P AO1 R K IY0 Z | lies (pork pies) | cockney
+butcher's |  | a look (butcher's hook) | cockney
+china | CH AY1 N AH0 | mate (china plate) | cockney
+loaf |  | head (loaf of bread) | cockney
+titfer | T IH1 T F ER0 | hat (tit for tat) | cockney
+whistle |  | suit (whistle and flute) | cockney
+brahms | B R AA1 M Z | drunk (Brahms and Liszt) | cockney
+ruby | R UW1 B IY0 | curry (Ruby Murray) | cockney
+scooby | S K UW1 B IY0 | a clue (Scooby Doo) | cockney
+plates |  | feet (plates of meat) | cockney
+apples |  | stairs (apples and pears) | cockney
+dog |  | phone (dog and bone) | cockney
+bubble |  | Greek (bubble and squeak) | cockney
+boat |  | face (boat race) | cockney
+trouble |  | wife (trouble and strife) | cockney
+# patois heard in UK rap
+dutty | D AH1 T IY0 | dirty | patois
+irie | AY1 R IY0 | all good, at ease | patois
+yardie | Y AA1 R D IY0 | Jamaican gangster | patois
+bumbaclart | B AH1 M B AH0 K L AA2 T | swear word | vulgar
+bloodclart | B L AH1 D K L AA2 T | swear word | vulgar
+rassclart | R AA1 S K L AA2 T | swear word | vulgar

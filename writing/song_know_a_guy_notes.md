@@ -169,4 +169,8 @@ Rewrite: 13 Cash for Cairns and it's cash for Wales and cash for Spain (Wales / 
     original ends 7 of its 69 rhyming bars on a two-word rhyme against our 0. V1 25-32 rebuilt on one closing 'ee' like the original's
     section; a song-level minimum of real two-word rhymes added (Joe: song level, no max, no cheap ones). Five written so far; each extra
     candidate (miss you, drive ya, start her, damage ya, charm 'em, fly ya) broke a flow, shape or rhyme rule or read as forced.
+29. Joe (16 Oct): is the vocabulary limiting the rhymes? Partly yes: of 117 UK rap / road / everyday British words, 30 had no
+    pronunciation and 21 more were filtered out as "rare" by a US-weighted word list, so the end-word searches drew on standard
+    English. Built a UK rap lexicon (189 words with UK senses) and a rhyme search that always includes it. It found the sixth two-word
+    rhyme. Two tool bugs surfaced on the way: "'em" was read as the stressed letter M (fixed; the original measures the same).
 

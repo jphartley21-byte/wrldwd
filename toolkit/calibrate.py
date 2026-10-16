@@ -56,6 +56,12 @@ import localfit as _lfit  # noqa: E402
 good = _lfit.selftest(sys.argv[1])
 ok &= good
 print(("ok  " if good else "BAD ") + "local words: the original's fit their bars; Joe's misplaced ones are caught")
+# UK RAP LEXICON (16 Oct 2026, Joe: "build it"): every entry is pronounceable, it fills no word of the original (so the original is
+# measured as before), a UK word the frequency filter would drop is found as a rhyme, and two-word rhymes are offered.
+import ukrap as _ukr  # noqa: E402
+good = _ukr.selftest(sys.argv[1])
+ok &= good
+print(("ok  " if good else "BAD ") + "UK rap lexicon: pronounceable, leaves the original's measurements alone, searchable by rhyme")
 # RHYME TEXTURE (16 Oct 2026): internal rhyme, sandwiches and multis across words, per section; the original passes its own par and
 # the fixtures (a cross-word multi, a frame and a link sandwich, a repeat that is not a rhyme) fire.
 import texture as _tex  # noqa: E402

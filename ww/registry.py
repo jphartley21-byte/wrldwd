@@ -127,6 +127,11 @@ LEGACY = {
         "must agree, and a bar about America may use American slang (as the original's bars 67-68 do). The original flags nothing; 4 of 4 US-only "
         "fixtures caught, 0 of 4 UK-slang fixtures flagged (toolkit/tests/us_slang.txt, mine bar Joe's 'torch'); the prompt was tightened once "
         "against the original's false flags (cockney, drill), so the original's pass is partly in-sample"),
+    # 16 Oct 2026, Joe: "Is the writers vocabulary limited ... words that UK rappers would typically use", then "build it"
+    "toolkit/ukrap.py + uk_rap_lexicon.txt (UK rap word supply, searched by rhyme)": ("unvalidated", "a SUPPLY, not a gate: 189 words "
+        "with UK senses written from the assistant's knowledge (Joe corrects them). Pronunciations only fill gaps (the original is "
+        "measured as before; asserted in calibrate). Found the sixth two-word rhyme ('charm 'em'). The sense read still marks some UK "
+        "slang as obscure ('creps', 'wet' misread as shoot): a glossary for it is open"),
     # 16 Oct 2026, Joe: "our rhymes rarely use multiple words" and "Gate at the whole song level ... a minimum amount of multi-word rhymes,
     # no max, but guard against this leading to cheating/gaming the system with cheap rhymes"
     "rapfit.multiword_hard (a song-level minimum of real two-word rhymes)": ("joe_rule", "HARD in ww gate since 16 Oct 2026: >= 0.8 x the "

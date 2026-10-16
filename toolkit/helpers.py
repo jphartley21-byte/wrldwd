@@ -104,6 +104,10 @@ def uk_phones(word):
     """British phones for SCORING: the Britfone dictionary, else the CMU dictionary plus the project's OVR
     table (see _ovr_phones for why the fallback is needed)."""
     w = word.lower().strip("'")
+    # 16 Oct 2026: "'em" (them) lost its apostrophe here and Britfone read it as the letter M, stressed (/ˈɛm/), so a bar ending
+    # "park 'em" put its rhyme on "'em". It is the weak form of "them", as rhyme_tools.OVR already says.
+    if w == "em":
+        return ["ə", "m"]
     return britfone().get(w) or _ovr_phones(w)
 
 

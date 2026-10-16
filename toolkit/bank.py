@@ -55,6 +55,7 @@ moody hooky nicked nicking grassed rozzer plod nick bent graft grafting earner e
 fortnight pavement crisps biscuit courgette aubergine nappy plaster trainers jumper hoover biro
 sellotape lolly takeaway fizzy roundabout motorway caravan chipolata bap sarnie bangers mash
 weatherspoons wetherspoons bish bosh sorted mate lads bird sarnie""".split())
+UK_EVERYDAY |= set(rt.UKLEX)    # 16 Oct 2026: the UK rap lexicon (toolkit/uk_rap_lexicon.txt) is exempt from the US-weighted filter too
 
 
 _PHRASE_CACHE = None

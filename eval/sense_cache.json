@@ -44224,5 +44224,1180 @@
 "[haiku]\nUSSLANG2\nSure the cops were speedy\nOfficer who? Me? Seedy? Seedy?\nThen my guy came to fund me\nCash in envelopes keeps the cops chummy\nMy guy said you pay\nWanted poster's ten grand! Full front page\nI never once came to the Old Bailey\nSo the brass at the Met were saving face\nOwe me and you've ten days' grace\nWhen you owe me I know: your head is fair game\nTop of town: I'm the boss of Bristol\nWho do I know? A guy. So I won't name names": [
 [],
 []
+],
+"[haiku]\nIn Marrakesh it's dicey? My guy's Rolexes are icy\nFifty quid? Now don't say my guy cheats me\nCash in envelopes keeps the cops chummy\nMy guy said you pay": [
+{
+"n": 1,
+"reading": "Is it dicey in Marrakesh? My guy's Rolexes are icy.",
+"grammatical": true,
+"sense": 1,
+"issue": "\"Icy\" is unclear slang for flashy; the claim needs a stranger to guess."
+},
+{
+"n": 2,
+"reading": "Fifty quid? Now don't say my guy cheats me.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "Cash in envelopes keeps the police friendly.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "My guy said you pay.",
+"grammatical": true,
+"sense": 1,
+"issue": "Clipped; the payment being demanded (bribe) is only implied."
+}
+],
+"[haiku]\nUSSLANG2\nIn Marrakesh it's dicey? My guy's Rolexes are icy\nFifty quid? Now don't say my guy cheats me\nCash in envelopes keeps the cops chummy\nMy guy said you pay": [
+[],
+[]
+],
+"[haiku]\nIn Marrakesh it's dicey? The mandem's creps are icy\nFifty bags? Now don't say my guy cheats me\nCash in envelopes keeps the feds chummy\nMy guy said you pay or the bredrin wet you": [
+{
+"n": 1,
+"reading": "Is it dicey in Marrakesh, and are the crew's sneakers icy?",
+"grammatical": true,
+"sense": 1,
+"issue": "Slang 'creps' and 'icy' are obscure; two loose sentences joined by juxtaposition."
+},
+{
+"n": 2,
+"reading": "Don't say my guy cheats me, fifty bags or not.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Fifty bags' is a bare fragment; the link to the claim is unclear."
+},
+{
+"n": 3,
+"reading": "Cash in envelopes keeps the police friendly.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "My guy said you pay, or the bredrin wets you.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Wet' meaning shoot is slang a stranger may not know."
+}
+],
+"[haiku]\nUSSLANG2\nIn Marrakesh it's dicey? The mandem's creps are icy\nFifty bags? Now don't say my guy cheats me\nCash in envelopes keeps the feds chummy\nMy guy said you pay or the bredrin wet you": [
+[],
+[]
+],
+"[haiku]\nOne black book and the numbers? I'll charge ya\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy guy's cruisers? I drive and park 'em\nStab vest? Nah a parka\nCash? Yes! I bung the judge lager\nCross me? Just you wait and see\nGrazie grazie train drivers! A month and no drama": [
+{
+"n": 1,
+"reading": "I will charge you for one black book and the numbers.",
+"grammatical": true,
+"sense": 1,
+"issue": "Opening noun phrase is a fragment; 'the numbers' is unclear without context."
+},
+{
+"n": 2,
+"reading": "I paid in full, with karma.",
+"grammatical": true,
+"sense": 1,
+"issue": "Elliptical 'Paid in full: karma' is strained; the payment method is ambiguous."
+},
+{
+"n": 3,
+"reading": "It's good Prada in my suit.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "I drive and park my guy's cruisers.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "No, it's a parka, not a stab vest.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "Yes, I bung the judge a lager.",
+"grammatical": false,
+"sense": 1,
+"issue": "Double object lacks 'a'; 'bung' bribe-slang is obscure to a stranger."
+},
+{
+"n": 7,
+"reading": "If you cross me, just wait and see.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "Thank you, train drivers: a month with no drama.",
+"grammatical": true,
+"sense": 1,
+"issue": "Elliptical 'A month and no drama' is strained; the thanks is unclear in scope."
+}
+],
+"[haiku]\nBLOCK2\nOne black book and the numbers? I'll charge ya\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy guy's cruisers? I drive and park 'em\nStab vest? Nah a parka\nCash? Yes! I bung the judge lager\nCross me? Just you wait and see\nGrazie grazie train drivers! A month and no drama": {
+"thread": "The speaker is a smooth criminal fixer who insists he is untouchable, mocking every accusation with deadpan denials while admitting to bribing a judge.",
+"coherent": 1,
+"issue": "Bar 8's train-driver thanks comes out of nowhere and never clearly ties back to his untouchability.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Honesty-box denial contrasts with the charging of bar 1, keeping the crook-who-denies pattern."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Claiming the suit is real Prada answers the implied stolen-goods accusation."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Driving and parking his guy's cruisers implies getaway or car theft, escalating the criminal claim."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Denying a stab vest with a parka deflects a violence accusation in the same deadpan way."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Admitting to bunging the judge escalates from denials to outright corruption."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "A threat, 'just you wait and see', fits a man who believes he cannot be caught."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "'A month and no drama' deflates the threat by claiming he has stayed untouched, though the train drivers are unexplained."
+}
+]
+},
+"[haiku]\nUSSLANG2\nOne black book and the numbers? I'll charge ya\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy guy's cruisers? I drive and park 'em\nStab vest? Nah a parka\nCash? Yes! I bung the judge lager\nCross me? Just you wait and see\nGrazie grazie train drivers! A month and no drama": [
+[
+{
+"n": 4,
+"word": "cruisers",
+"sense": "cars or rides (American slang, also police cars)",
+"uk": "cruiser bikes, or just nothing in particular; British listeners would not hear them as cars"
+}
+],
+[
+{
+"n": 4,
+"word": "cruisers",
+"sense": "cars (American street slang for a car, especially a police or large car)",
+"uk": "a British listener would hear 'cruisers' as bicycles or boats, or be unsure what is meant, rather than cars"
+}
+]
+],
+"[haiku]\nOne black book and the numbers? I'll charge ya\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy guy's motors? I drive and park 'em\nStab vest? Nah a parka\nCash? Yes! I bung the judge lager\nCross me? Just you wait and see\nGrazie grazie train drivers! A month and no drama": [
+{
+"n": 1,
+"reading": "Do I have one black book with the numbers in it? I'll charge you for them.",
+"grammatical": true,
+"sense": 1,
+"issue": "Elliptical question; the book and numbers are only loosely tied to the charge."
+},
+{
+"n": 2,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "'Paid in full: karma' is a participle and noun phrase with no clause; the payer is unclear."
+},
+{
+"n": 3,
+"reading": "Am I in a suit? Man! It's good Prada.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "Are my guy's cars mine? I drive and park them.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "Is it a stab vest? No, it's a parka.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "Cash? Yes! I bung the judge a lager.",
+"grammatical": false,
+"sense": 1,
+"issue": "Missing 'a' before 'lager'; 'bung the judge lager' is not English as written."
+},
+{
+"n": 7,
+"reading": "Would you cross me? Just you wait and see.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "Thank you, train drivers! A month with no drama.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nOne black book and the numbers? I'll charge ya\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy guy's motors? I drive and park 'em\nStab vest? Nah a parka\nCash? Yes! I bung the judge lager\nCross me? Just you wait and see\nGrazie grazie train drivers! A month and no drama": {
+"thread": "The speaker is a sardonic, well-dressed fixer who answers every accusation of crime with a deadpan denial that his own bribes, borrowed cars and veiled threats immediately undercut.",
+"coherent": 1,
+"issue": "The closing bar about train drivers and \"no drama\" is an unexplained jump that breaks the accusation-and-denial pattern.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Denies charging, but 'paid in full: karma' deflates bar 1's claim that he charges."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Flashy Prada suit extends the theme of conspicuous, dubious wealth."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Driving and parking his guy's cars continues the crooked-fixer picture."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Denying a stab vest deflates the violence implied by the previous bars."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Admitting to bribing the judge contrasts with the earlier denials and escalates."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "The threat 'just you wait and see' escalates from admitted bribery to menace."
+},
+{
+"n": 8,
+"follows": false,
+"issue": "Thanking train drivers for a month without drama is a subject change with no signal linking it to the threat."
+}
+]
+},
+"[haiku]\nUSSLANG2\nOne black book and the numbers? I'll charge ya\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy guy's motors? I drive and park 'em\nStab vest? Nah a parka\nCash? Yes! I bung the judge lager\nCross me? Just you wait and see\nGrazie grazie train drivers! A month and no drama": [
+[],
+[
+{
+"n": 1,
+"word": "the numbers",
+"sense": "an illegal lottery/numbers racket (American street gambling)",
+"uk": "literal numbers or digits, like phone numbers or figures"
+}
+]
+],
+"[haiku]\nOne black book and the numbers? I'll charge ya\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy man's motors? I drive and park 'em\nStab vest? Nah a parka\nCash? Yes! I bung the judge lager\nCross me? Just you wait and see\nGrazie grazie train drivers! A month and no drama": [
+{
+"n": 1,
+"reading": "You want one black book and the numbers? I'll charge you.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "Honesty box? Me? I'm paid in full, with karma.",
+"grammatical": true,
+"sense": 1,
+"issue": "Elliptical reply; 'paid in full: karma' is strained as an honesty-box answer."
+},
+{
+"n": 3,
+"reading": "Are you asking about my suit? Man, it's good Prada.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "Are you asking about my man's cars? I drive and park them.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "Stab vest? No, it's a parka.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "Cash? Yes! I bribe the judge with lager.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "Would you cross me? Just you wait and see.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "Thank you, thank you, train drivers! A month and no drama.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nOne black book and the numbers? I'll charge ya\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy man's motors? I drive and park 'em\nStab vest? Nah a parka\nCash? Yes! I bung the judge lager\nCross me? Just you wait and see\nGrazie grazie train drivers! A month and no drama": {
+"thread": "The speaker is a flashy, bent fixer who claims to be honest while charging for favours, bribing a judge, threatening people and dodging any consequences.",
+"coherent": 1,
+"issue": "The closing bar's thanks to train drivers is unexplained and breaks the crooked-fixer persona.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Honesty box with 'paid in full: karma' deflates the honest-man claim, so it works."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Expensive suit flaunts the ill-gotten money the fixer has been making."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Driving and parking his man's cars suggests a getaway or fixer role; a little loose but followable."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Deadpan swap from stab vest to parka deflates the threat of violence."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Bunging the judge escalates from small favours to outright corruption of the law."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Threat 'just you wait and see' follows from the fixer's menace built up so far."
+},
+{
+"n": 8,
+"follows": false,
+"issue": "Thanking train drivers for a month without drama is a sudden shift with no signal, so it reads as a non sequitur."
+}
+]
+},
+"[haiku]\nUSSLANG2\nOne black book and the numbers? I'll charge ya\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy man's motors? I drive and park 'em\nStab vest? Nah a parka\nCash? Yes! I bung the judge lager\nCross me? Just you wait and see\nGrazie grazie train drivers! A month and no drama": [
+[],
+[]
+],
+"[haiku]\nOne black book and the numbers? I'll charge ya\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy guy's cruiser? Moored out in Palma\nStab vests? Nah I charm 'em\nCash? Yes! I bung the judge lager\nCross me? Just you wait and see\nGrazie grazie train drivers! A month and no drama": [
+{
+"n": 1,
+"reading": "I'll charge you for one black book and the numbers.",
+"grammatical": true,
+"sense": 1,
+"issue": "Opening question is a fragment; 'the numbers' and 'black book' are slangy and vague."
+},
+{
+"n": 2,
+"reading": "An honesty box? Me? It's paid in full, with karma.",
+"grammatical": false,
+"sense": 1,
+"issue": "'Paid in full: karma' is a participle with no clause; colon makes it a list."
+},
+{
+"n": 3,
+"reading": "The suit I'm wearing is good Prada.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "My guy's cruiser is moored out in Palma.",
+"grammatical": false,
+"sense": 1,
+"issue": "'Moored out in Palma' is a participle phrase with no finite verb."
+},
+{
+"n": 5,
+"reading": "No, I charm them, so I don't need stab vests.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "Yes, I bribe the judge by giving him lager.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Bung' is British slang for bribe; a stranger may not get it."
+},
+{
+"n": 7,
+"reading": "If you cross me, just wait and see what happens.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "Thank you, train drivers, for a month with no drama.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nOne black book and the numbers? I'll charge ya\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy guy's cruiser? Moored out in Palma\nStab vests? Nah I charm 'em\nCash? Yes! I bung the judge lager\nCross me? Just you wait and see\nGrazie grazie train drivers! A month and no drama": {
+"thread": "The speaker is a charming, untouchable hustler who talks his way out of fraud, bribery and threats while flaunting luxury he has no right to.",
+"coherent": 1,
+"issue": "The crime he is getting away with is never named, and bars 4 and 8 have unclear referents.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Honesty-box joke deflates the claim with petty fraud, in the same vein as bar 1."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Flashy suit escalates the image of a hustler living well off dodgy money."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Moored yacht in Palma extends the ill-gotten luxury, though 'my guy' is unexplained."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Charming off stab-vest security escalates the untouchable claim."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Bribing a judge with lager escalates from charm to outright corruption."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Threat shifts tone to menace but still backs up the untouchable claim."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Thanks to train drivers and 'no drama' pays off the untouchable claim, though the referent is vague."
+}
+]
+},
+"[haiku]\nUSSLANG2\nOne black book and the numbers? I'll charge ya\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy guy's cruiser? Moored out in Palma\nStab vests? Nah I charm 'em\nCash? Yes! I bung the judge lager\nCross me? Just you wait and see\nGrazie grazie train drivers! A month and no drama": [
+[],
+[]
+],
+"[haiku]\nPOINT2\nHoi hoi to the Dutch, they're honest\nTheir gnome's as tall as a house, rock solid\nCross my man and it's your wallet\nGot one off my hands: I flogged it": [
+[
+{
+"n": 1,
+"point": "A shout-out greeting to the Dutch, with a claim that they're honest people.",
+"worked_out": true,
+"how": "'Hoi' is a Dutch greeting, which the listener has to recognise. The link from Dutch people to honesty is not given in the words; it is supplied or left as a rhyme-driven aside.",
+"natural": false,
+"lands": true
+},
+{
+"n": 2,
+"point": "Their garden gnome is enormous, as tall as a house, and solid, so it's a big, sturdy thing (possibly a joke about the Dutch or a stash).",
+"worked_out": true,
+"how": "'Their gnome' has no stated referent, and the speaker's point is not clear. The listener has to guess whether this is a literal garden ornament, a joke about the Dutch, or slang for something else.",
+"natural": true,
+"lands": false
+},
+{
+"n": 3,
+"point": "Threat: cross my man and you'll end up losing your wallet, meaning you'll be robbed or made to pay.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 4,
+"point": "Boast about getting rid of a batch of something by selling it, so the speaker is off-loading stock for cash.",
+"worked_out": true,
+"how": "'One' has no stated referent. The listener has to supply what was sold (drugs, a gun, goods) from the slang context.",
+"natural": true,
+"lands": true
+}
+],
+[
+{
+"n": 1,
+"point": "A shout-out to the Dutch with a 'hoi' greeting, saying they're honest people.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 2,
+"point": "Mocking or boasting about someone's garden gnome being enormous and solid, as tall as a house.",
+"worked_out": true,
+"how": "'Gnome' has to be read as a garden ornament used as a joke or dig, and 'their' has no clear referent; the point of the gnome image isn't spelled out.",
+"natural": true,
+"lands": false
+},
+{
+"n": 3,
+"point": "A threat: cross my mate and you'll pay for it, with your wallet as the thing that gets hit (robbed or made to pay).",
+"worked_out": true,
+"how": "'It's your wallet' isn't a set idiom; I had to take it as a pattern on 'it's your funeral' meaning you'll lose money or get robbed.",
+"natural": false,
+"lands": true
+},
+{
+"n": 4,
+"point": "He got rid of one item by selling it.",
+"worked_out": true,
+"how": "'Flogged' is established British slang for sold, but 'one' has no stated referent, so I had to supply an item (probably a gun or drugs) for it.",
+"natural": true,
+"lands": true
+}
+]
+],
+"[haiku]\nPOINT2\nOne black book and the numbers? I'll charge ya\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy guy's cruiser? Moored out in Palma\nStab vests? Nah I charm 'em\nCash? Yes! I bung the judge lager\nCross me? Just you wait and see\nGrazie grazie train drivers! A month and no drama": [
+[
+{
+"n": 1,
+"point": "He's a dealer or fixer with a little black book of contacts. He offers the numbers in it, but only for a fee.",
+"worked_out": true,
+"how": "Supplied that 'black book' means a contacts or client list, and that 'the numbers' are the phone numbers in it.",
+"natural": true,
+"lands": true
+},
+{
+"n": 2,
+"point": "Mocking the idea of an honesty box: he's never going to pay, because karma has already settled his account.",
+"worked_out": true,
+"how": "Had to read 'paid in full: karma' as a joke that karma counts as payment, which is why he doesn't pay the box.",
+"natural": true,
+"lands": true
+},
+{
+"n": 3,
+"point": "Bragging that his suit is genuine Prada, not a fake.",
+"worked_out": true,
+"how": "Supplied the referent: the question is about whether the suit is fake, and 'good Prada' means the real thing.",
+"natural": false,
+"lands": true
+},
+{
+"n": 4,
+"point": "Showing off: his mate's motor cruiser is moored in Palma (Mallorca).",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 5,
+"point": "Claims he doesn't need stab vests because he charms people (rivals, police, whoever) out of wanting to hurt him.",
+"worked_out": true,
+"how": "Had to supply 'them' as the people who would attack him, since the line gives only 'charm 'em'.",
+"natural": false,
+"lands": true
+},
+{
+"n": 6,
+"point": "Says he bribed the judge with cheap lager, so the cash isn't needed.",
+"worked_out": true,
+"how": "Read 'bung' as bribe (established slang) and supplied that the judge is the court judge and the bribe is a drink, which is the joke.",
+"natural": false,
+"lands": true
+},
+{
+"n": 7,
+"point": "A threat: anyone who crosses him will find out what happens.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 8,
+"point": "Sarcastic thanks to train drivers: a month with no strikes or cancellations, which is a rare treat.",
+"worked_out": true,
+"how": "Had to supply the link that 'no drama' means no strike action or disruption by the drivers.",
+"natural": true,
+"lands": true
+}
+],
+[
+{
+"n": 1,
+"point": "Offers the listener a black book (a contacts or client ledger) plus 'the numbers', and says he'll charge for it.",
+"worked_out": true,
+"how": "'Black book' is read as a ledger of clients or contacts and 'the numbers' as phone numbers or illegal betting. Neither is stated outright.",
+"natural": true,
+"lands": true
+},
+{
+"n": 2,
+"point": "Asked if he's going to pay at the honesty box, he dismisses it: he's paid in full, by karma.",
+"worked_out": true,
+"how": "Supplies the joke that he won't pay and that karma covers his debt. 'Paid in full' is idiomatic, but swapping in 'karma' is the bent part.",
+"natural": true,
+"lands": true
+},
+{
+"n": 3,
+"point": "Asked if he has something in his suit, he tells them it's good Prada, a boast about the suit, and implies the answer is no.",
+"worked_out": true,
+"how": "'In my suit' has to be read as a concealed weapon or stash. The question is not spelled out, and the Prada line only lands if that is understood.",
+"natural": false,
+"lands": false
+},
+{
+"n": 4,
+"point": "Boasts that his mate's motor cruiser is moored in Palma, Mallorca.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 5,
+"point": "Says he doesn't need stab vests because he charms the people who might stab him.",
+"worked_out": true,
+"how": "'Charm 'em' has to be read as charming the would-be attackers out of violence, not charming the vests.",
+"natural": true,
+"lands": true
+},
+{
+"n": 6,
+"point": "Asked about cash, he says yes and that he bribed the judge with a lager.",
+"worked_out": true,
+"how": "'Bung' is established slang for bribe. Treating the lager as the bribe, a joke on buying a judge a drink, is an inference.",
+"natural": true,
+"lands": true
+},
+{
+"n": 7,
+"point": "Threatens anyone who crosses him: they'll find out what happens.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 8,
+"point": "Sarcastically thanks the train drivers (likely for a strike) for giving him a month with no drama.",
+"worked_out": true,
+"how": "The referent of the thanks, a train-driver strike that kept him out of trouble, is supplied. The words alone don't state it.",
+"natural": true,
+"lands": false
+}
+]
+],
+"[haiku]\nPOINT2\nDublin's mine: my bar tab's in credit\nMy man pays for negligence\nCustoms won't open the crate it's medical\nChemist wiped it of all of the evidence\nWho is that, lying down? Just a passenger\nAnd the guards at the border? Flatter ya\nWhere's the guy? Lying low in Canada\nRode in van to van, a real Marathon": [
+[
+{
+"n": 1,
+"point": "He owns Dublin and is flush, with his bar tab sitting in credit.",
+"worked_out": true,
+"how": "'Dublin's mine' is a figurative claim of control over the city. The link to the bar tab (he's rich enough to be in credit) is supplied.",
+"natural": true,
+"lands": true
+},
+{
+"n": 2,
+"point": "His associate takes the fall and pays the penalty for careless mistakes.",
+"worked_out": true,
+"how": "Supplies who pays and what for: the associate covers the costs of someone else's carelessness, a mistake that gets paid for.",
+"natural": true,
+"lands": true
+},
+{
+"n": 3,
+"point": "Customs won't open the crate because it's been declared medical, a cover for contraband.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 4,
+"point": "A chemist cleaned up every trace of evidence, likely a drug cook or a pharmacist covering a crime.",
+"worked_out": true,
+"how": "'Chemist' is ambiguous (pharmacist or drug cook), and the act of wiping evidence is supplied as a drugs-lab cleanup.",
+"natural": false,
+"lands": false
+},
+{
+"n": 5,
+"point": "Someone is lying down hidden in the vehicle, and he's passing them off as just a passenger to police.",
+"worked_out": true,
+"how": "Supplies that the person lying down is concealed (a stowaway or smuggled person) and that 'just a passenger' is a cover story.",
+"natural": true,
+"lands": true
+},
+{
+"n": 6,
+"point": "The border guards are sweet-talked or charmed into going easy on him.",
+"worked_out": true,
+"how": "'Flatter ya' is not a set phrase, so the meaning (flattered or bribed into leniency) is inferred from context.",
+"natural": false,
+"lands": false
+},
+{
+"n": 7,
+"point": "The man in question is hiding out in Canada.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 8,
+"point": "He moved the goods van to van, a long, gruelling journey; 'Marathon' is a long slog.",
+"worked_out": true,
+"how": "'Van to van' implies transferring goods between vehicles, and 'Marathon' is read as a long haul or a chocolate-bar reference, with the journey supplied.",
+"natural": true,
+"lands": true
+}
+],
+[
+{
+"n": 1,
+"point": "Boasts that he owns Dublin and his bar tab is paid up, so he has money to spare.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 2,
+"point": "His associate takes the fall for a careless mistake and pays the price for it.",
+"worked_out": true,
+"how": "'Negligence' is used as a euphemism for a costly error by the associate; the link that it is a criminal mistake and the associate is the one paying has to be supplied.",
+"natural": false,
+"lands": false
+},
+{
+"n": 3,
+"point": "Customs refuses to open the crate because the cargo is claimed to be medicine, a cover story for drugs.",
+"worked_out": true,
+"how": "'Medical' is a cover claim; the fan has to infer the crate actually holds drugs and that the 'medical' label is a lie.",
+"natural": true,
+"lands": true
+},
+{
+"n": 4,
+"point": "A chemist (likely a drug-cooking lab or a corrupt pharmacist) cleaned up all the forensic traces of the product.",
+"worked_out": true,
+"how": "'Chemist' is given a criminal sense (lab cook or corrupt pharmacist), and 'it' has to be read as the drugs or lab, with 'wiped' meaning removing forensic traces.",
+"natural": true,
+"lands": false
+},
+{
+"n": 5,
+"point": "Someone is lying down out of sight in the car, and if asked he's just a passenger, so he's being hidden, or is a body.",
+"worked_out": true,
+"how": "The fan has to supply that the person lying down is hidden, possibly a body, and that 'just a passenger' is the cover story.",
+"natural": true,
+"lands": true
+},
+{
+"n": 6,
+"point": "The border guards are charmed or sweet-talked into letting him through.",
+"worked_out": true,
+"how": "'Flatter ya' is an unusual construction; the fan must read 'flatter' as sweet-talk or bribery to get past the guards.",
+"natural": false,
+"lands": false
+},
+{
+"n": 7,
+"point": "Asked where the man is, the answer is that he's hiding out abroad in Canada, a fugitive keeping a low profile.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 8,
+"point": "He switched vans over and over to shake off pursuers, and the whole run was an exhausting, long slog.",
+"worked_out": true,
+"how": "'Van to van' has to be read as swapping vehicles to evade a tail; 'marathon' is used for a long, grinding run.",
+"natural": true,
+"lands": true
+}
+]
+],
+"[haiku]\nPOINT2\nMozzarella that's pricey? My guy does it nicely\nIn Marrakesh it's dicey? My guy's Rolexes are icy\nBarber's cut-throat shave? Free: on the house, the life of Riley\nThese days I drive a hard bargain\nNow the man I use has met Kylie\nNow the man I use is dead cheeky\nFifty quid? Now don't say my guy cheats me\nWhere am I? Gone to my guy's guy, he's local, for more freebies": [
+[
+{
+"n": 1,
+"point": "Is the cheese (heroin) expensive? No, my dealer sells it cheap and does it well.",
+"worked_out": true,
+"how": "'Mozzarella' stands in for 'cheese', the UK slang for heroin; the rhyme is doing the work, so the drug reading has to be supplied.",
+"natural": false,
+"lands": false
+},
+{
+"n": 2,
+"point": "Is it risky buying in Marrakesh? No, my dealer's connections are flash and sorted.",
+"worked_out": true,
+"how": "Marrakesh is read as the hash source abroad, and 'Rolexes are icy' is taken to mean the dealer is flashy and well connected; that link is supplied, not stated.",
+"natural": false,
+"lands": false
+},
+{
+"n": 3,
+"point": "A cut-throat shave from the barber? It's free, on the house, living the life of Riley.",
+"worked_out": true,
+"how": "Read as a double meaning: 'cut-throat' hints at cutting or freebie drugs, not just a barber's razor shave. The drug link is supplied.",
+"natural": true,
+"lands": true
+},
+{
+"n": 4,
+"point": "These days I'm the one who negotiates hard.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 5,
+"point": "The dealer I use has met Kylie, so he's connected to a celebrity.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 6,
+"point": "The dealer I buy from is very cheeky.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 7,
+"point": "Fifty quid? Don't say my guy cheats me; the price is fair.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 8,
+"point": "Where am I going? To my dealer's dealer, who is local, for more freebies.",
+"worked_out": true,
+"how": "'My guy's guy' is read as the supplier's supplier, a higher-up dealer; that referent is supplied, not stated.",
+"natural": true,
+"lands": false
+}
+],
+[
+{
+"n": 1,
+"point": "Asks if mozzarella is pricey and says his guy does it nicely, so it's cheap or good.",
+"worked_out": true,
+"how": "'Mozzarella' is read as a drug euphemism (a cheese code word); the words alone don't say what it stands for.",
+"natural": false,
+"lands": false
+},
+{
+"n": 2,
+"point": "Asks if Marrakesh is risky, then says his guy's Rolexes are icy, meaning flashy and dodgy-sourced.",
+"worked_out": true,
+"how": "Marrakesh is taken as a source of contraband (Moroccan hash/weed) and 'icy' as flashy bling; the link is supplied, not stated.",
+"natural": true,
+"lands": true
+},
+{
+"n": 3,
+"point": "Asks about a cut-throat shave from the barber and says it's free, on the house, the easy life.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 4,
+"point": "Says he drives a hard bargain these days, a deadpan contrast with getting everything free.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 5,
+"point": "Boasts that the man he uses has met Kylie, a celebrity-connection brag.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 6,
+"point": "Says the man he uses is dead cheeky, i.e. gives him brazen freebies or favours.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 7,
+"point": "Says fifty quid is the price and tells us not to say his guy cheats him, so the deal is fair.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 8,
+"point": "Asks where he is, then answers that he's gone to his guy's guy, a local middleman, for more freebies.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+}
+]
+],
+"[haiku]\nPOINT2\nSure the cops were speedy\nOfficer who? Me? Seedy? Seedy?\nThen my guy came to fund me\nCash in envelopes keeps the cops chummy\nMy guy said you pay\nWanted poster's ten grand! Full front page\nI never once came to the Old Bailey\nSo the brass at the Met were saving face\nOwe me and you've ten days' grace\nWhen you owe me I know: your head is fair game\nTop of town: I'm the boss of Bristol\nWho do I know? A guy. So I won't name names": [
+[
+{
+"n": 1,
+"point": "Sarcastically claims the cops were quick off the mark, probably to pounce on him.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 2,
+"point": "Mocks a copper calling him 'officer': who, him? Shady? He plays the innocent and rejects the 'seedy' label.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 3,
+"point": "His connection came and paid to get him out of custody.",
+"worked_out": true,
+"how": "'Fund me' is not a normal way to say bail someone out; I had to read it as paying his bail or bankrolling his release.",
+"natural": false,
+"lands": true
+},
+{
+"n": 4,
+"point": "Bribing police with envelopes of cash keeps them friendly and on side.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 5,
+"point": "The boss's instruction: the debt or the price has to be paid, no argument.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 6,
+"point": "A wanted poster offers a ten-grand reward and he is splashed across the front page.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 7,
+"point": "He has never actually been tried or convicted, never stood in the dock at the Old Bailey.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 8,
+"point": "Senior officers at the Met protected their own reputation, so they quietly let him slide.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 9,
+"point": "If you owe him, he gives you a ten-day window before he comes for you.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 10,
+"point": "Once you owe him, he considers your head fair game for a beating.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 11,
+"point": "Boasts he is the top man in Bristol.",
+"worked_out": false,
+"how": "",
+"natural": false,
+"lands": true
+},
+{
+"n": 12,
+"point": "Claims he has useful contacts but refuses to name anyone.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+}
+],
+[
+{
+"n": 1,
+"point": "Sarcastically says the cops were quick off the mark, probably in getting to him or in being quick to take a bribe.",
+"worked_out": true,
+"how": "The 'speedy' line is ironic, so I had to supply the sarcastic reading and the referent for what the cops were fast at.",
+"natural": false,
+"lands": false
+},
+{
+"n": 2,
+"point": "Mock-indignant reply to being called an officer or a seedy character: 'Officer? Who, me? Seedy?'",
+"worked_out": true,
+"how": "Nothing says who called him what, so I supplied that the cops or someone labelled him, and that he is denying it with mock outrage.",
+"natural": false,
+"lands": false
+},
+{
+"n": 3,
+"point": "His fixer came over to pay for his bail or defence.",
+"worked_out": true,
+"how": "'Fund me' is not a normal phrase for bailing someone out; I read it as paying his bail or legal costs.",
+"natural": false,
+"lands": true
+},
+{
+"n": 4,
+"point": "Bribes in cash envelopes keep the police friendly and on side.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 5,
+"point": "The fixer says the speaker has to pay for this service.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 6,
+"point": "A wanted poster offering a ten grand reward, splashed across the front page of the paper.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 7,
+"point": "He has never once been to the Old Bailey, meaning he has never been convicted in court there.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 8,
+"point": "Senior Met officers protected their own image, so they covered things up rather than pursue him.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 9,
+"point": "Threat: if you owe him, he gives you ten days' grace before he comes for you.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 10,
+"point": "Threat: anyone who owes him is fair game for violence to the head.",
+"worked_out": false,
+"how": "",
+"natural": false,
+"lands": true
+},
+{
+"n": 11,
+"point": "Boast that he is the top man in Bristol.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 12,
+"point": "Deflection: asked who he knows, he says just a guy, and refuses to name anyone.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+}
+]
 ]
 }

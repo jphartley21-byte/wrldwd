@@ -23,7 +23,7 @@ D = cmudict.dict()
 # Custom pronunciations (ARPAbet, stress digits). Extend freely. British-ish where it matters for rhyme.
 OVR = {
     "ya": "Y AH0", "gon'": "G AH0 N", "pavos": "P AE1 V OW0 S", "dhal": "D AA1 L", "lah": "L AA1",
-    "he's": "HH IY1 Z", "she's": "SH IY1 Z", "they'll": "DH EY1 L", "we've": "W IY1 V", "gaz": "G AE1 Z", "gaz'll": "G AE1 Z AH0 L", "'em": "AH0 M", "i've": "AY1 V", "you're": "Y AO1 R",
+    "he's": "HH IY1 Z", "she's": "SH IY1 Z", "they'll": "DH EY1 L", "we've": "W IY1 V", "gaz": "G AE1 Z", "gaz'll": "G AE1 Z AH0 L", "'em": "AH0 M", "em": "AH0 M", "i've": "AY1 V", "you're": "Y AO1 R",
     "tao": "T AW1", "koh": "K OW1", "bilbao": "B IH0 L B AW1", "ljubljana": "L UW0 B L Y AA1 N AH0",
     "bratislava": "B R AE2 T IH0 S L AA1 V AH0", "lauterbrunnen": "L AW1 T ER0 B R UH2 N AH0 N",
     "zay": "Z EY1", "zell": "Z EH1 L", "hervey": "HH AA1 V IY0", "pompeii": "P AA0 M P EY1",
@@ -115,9 +115,32 @@ OVR = {
     "wwe": "D AH1 B AH0 L Y UW0 D AH1 B AH0 L Y UW0 IY1", "smackdown": "S M AE1 K D AW2 N",
     "shirty": "SH ER1 T IY0", "proost": "P R OW1 S T",   # UK: annoyed, in a mood (absent from cmudict like the 47 everyday British words above)
 }
+# UK RAP LEXICON (16 Oct 2026, Joe: "Is the writers vocabulary limited ... words UK rappers would typically use"): toolkit/
+# uk_rap_lexicon.txt holds road / drill / money / police / everyday British / cockney / patois words with their UK sense. A pronunciation
+# there only FILLS A GAP (a word in neither cmudict nor OVR), so nothing already measured changes; WW_NO_UKLEX=1 switches it off.
+def _load_uklex():
+    path = os.path.join(HERE, "uk_rap_lexicon.txt")
+    out = {}
+    if os.environ.get("WW_NO_UKLEX") == "1" or not os.path.exists(path):
+        return out
+    for ln in open(path, encoding="utf-8"):
+        if ln.strip() and not ln.startswith("#"):
+            parts = [x.strip() for x in ln.split("|")]
+            if len(parts) >= 4 and parts[0]:
+                out[parts[0].lower()] = {"pron": parts[1], "sense": parts[2], "register": parts[3]}
+    return out
+
+
+UKLEX = _load_uklex()
+UKLEX_FILLED = set()       # words pronounceable only because of the lexicon (ukrap.selftest: none of them may be in the original)
+for _w, _e in UKLEX.items():
+    if _e["pron"] and _w not in OVR and _w not in D:
+        OVR[_w] = _e["pron"]
+        UKLEX_FILLED.add(_w)
+
 FUNC = set("""ya this a an the of to in on at for and or but so if as i my me we you he she it is was are am be been by
 with from up that this his her our your they them their its im ill ive dont cant wont isnt wasnt then than do did
-does not no too just all out off over into onto upon via per""".split())
+does not no too just all out off over into onto upon via per em 'em""".split())   # em / 'em added 16 Oct 2026 (the weak form of them)
 BANNED = set("""journey fairytale vibes legend king throne neon shadows shadow echoes echo tapestry whisper whispers
 grind destiny dreams dream""".split())
 CLASSES = {"P": "S", "B": "S", "T": "S", "D": "S", "K": "S", "G": "S",   # stops
