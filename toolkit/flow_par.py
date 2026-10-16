@@ -64,7 +64,9 @@ MEASURES = ("stress_run", "hard_joins", "closed_run", "restart")
 #   same_step  (16 Oct 2026, Joe on bar 46: the original's opener "is smoother than 'Fags? Cheap packs'") the audio puts two syllables on
 #              one 16th in some bars and the original makes one of them weak; ours put two stresses there ("Cheap packs"). fast_jam only
 #              counted ADJACENT 16ths, so the same-16th cram was invisible. TOL 0 against the original's same bar.
-BAR_MEASURES = ("fast_jam", "cell", "barline", "pause", "same_step")
+#   run_breaks (16 Oct 2026, same complaint; Joe: "Yes hard gate those too") a stop where the next syllable falls on the same or next 16th:
+#              there is no room to stop, so the bar reads choppy. TOL 0 against the original's same bar (it does this in 6 bars).
+BAR_MEASURES = ("fast_jam", "cell", "barline", "pause", "same_step", "run_breaks")
 BAR_SLACK = 0.10
 # Fitted 15 Oct 2026 on the only labels there are: the loosest tolerances that still catch all 4 flagged bars, which fail the
 # fewest bars of hook r3 (Joe: "I like this", bar 12 excepted): 5 of 15 still fail, and they are listed to Joe to judge. At 0/0/0/0 the
@@ -78,6 +80,7 @@ LABEL = {"stress_run": "stressed syllables in a row", "hard_joins": "hard mouth-
          "fast_jam": "stressed syllables jammed on back-to-back 16ths", "cell": "repeated cell + internal rhyme (needs a cell and internal rhyme >= the original's - 1)",
          "internal": "internal rhyme in a repeated-cell bar",
          "barline": "rhyme at the bar line (needs a word at the original's syllable, +-1, with the same vowels as the line's end word; ours has none)",
+         "run_breaks": "stops inside a 16th-note run (a ? : , or ! where the next syllable comes straight after)",
          "same_step": "stressed syllables crammed onto ONE 16th (where the original's bar puts a weak syllable in that slot)",
          "pause": "pause position (the original pauses after syllable(s) {p}; ours does not break there)",
          "barline_close": "bar-line rhyme too loose (rapfit pair score with the line's end; must be within 0.10 of the original's)"}
@@ -163,7 +166,7 @@ def same_step(bar_no, line):
 
 def run_breaks(bar_no, line):
     """mid-bar stops (punctuation) where the next syllable falls on the same or the next 16th of the original's template: a stop with no
-    room to stop. A NOTE, not a gate (16 Oct 2026): it fails 26 of v4's bars, so it waits for Joe's ear."""
+    room to stop. HARD since 16 Oct 2026 (Joe: "Yes hard gate those too"), TOL 0 against the original's same bar."""
     t = ff.T[bar_no - 1] if 1 <= bar_no <= len(ff.T) else {}
     steps = t.get("steps")
     if not steps or len(steps) != len(ff.sylls(line)):
@@ -284,6 +287,10 @@ def check(bar_no, line):
         ss = same_step(bar_no, line)
         if ss is not None and ss > par["same_step"]:
             out.append(("same_step", ss, par["same_step"]))
+    if "run_breaks" in par:
+        rb = run_breaks(bar_no, line)
+        if rb is not None and rb > par["run_breaks"]:
+            out.append(("run_breaks", rb, par["run_breaks"]))
     if par.get("barline"):
         k, need = par["barline"], par.get("barline_score", 0.0) - BAR_SLACK
         near = [sc for h, sc in barline_hits(line, scored=True) if abs(h - k) <= 1]

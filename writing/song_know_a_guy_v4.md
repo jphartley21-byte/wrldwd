@@ -6,6 +6,9 @@
 # ww gate PASS (sense ON). Quality targets (report-only) 3/10; character read 1/2 (past-tense runs at bars 25-28, 49-51).
 # Later the same day (Joe: the original's bar 46 opener "is smoother than 'Fags? Cheap packs'"): bar 46 -> "But the baccy price is
 # dead cheeky" and bar 31 -> "they got me" (both had two stresses on one 16th of the audio template; now a HARD flow measure).
+# RUN-BREAK REFIT, same day (Joe: "Yes hard gate those too and refit"): a stop (? : , !) where the original's next syllable comes on the
+# very next 16th is now HARD (toolkit/flow_par.py run_breaks, the original's same bar as par). 25 bars changed: mostly stops removed or moved
+# to a real gap; bars 36, 47, 61 and 66 reworded; bars 21, 44 and 47 keep the internal rhymes the section needs. ww gate PASS (sense ON).
 # V3 (16 Oct 2026, Joe: "Go for all 3, add the gates, verify them, then write the new draft to pass all gates and print it"): v2 rewritten to
 # the new rhyme-texture gate (toolkit/texture.py: internal rhyme amount + strength, frame / link sandwiches, multisyllabic runs across
 # words, each per section against the original's same section). v2 failed it in 8 of 10 sections; v3 passes all 10. ww gate PASS
@@ -28,7 +31,7 @@
 # SENSE REWRITE 15 Oct 2026 (the sense gate came back on, on Claude): 12 bars in Hook 1-4, Hook 9-16, V1 25-32, V1 33-44 and V2 1-8 made
 # plain sentences or tied to the guy (old bars in git history). Quality marks (report-only): python -m ww.write.qualityread.
 # (persona) for Joe: every crime, bribe and luxury claim; the Prada suit; the boat in Palma; the
-# Laxey bar tab; the crate, customs, Gardai and the trolley; the Barbour parka; the judge's lager; the top-thief list; the gold; the Spanish stop; the Whitsundays tinnie and the reef dive; the
+# Laxey bar tab; the crate, customs, the chemist and the trolley; the Barbour parka; the judge's lager; the top-thief list; the gold; the Spanish stop; the Whitsundays yacht and the reef dive; the
 # ute on K'gari. Named but not visited: Old Bailey, Canada, Saul. The East Coast is Australia's (2017, true). True places: material/travel_history.md.
 
 == Hook 1-4
@@ -36,8 +39,8 @@
 # one ending family on all four bars (venue / continue / cruise / news), as the original's Hook 1-4 shares one final vowel
 Cheers! Any issue?
 Got framed? Left for dead? I continue
-Cops, bail, dock, jail, it's like a Greek cruise
-In Bern, Zell, Perth, Melbourne, I'm bad news
+Cops, bail, dock? Jail is just a Greek cruise
+In Bern, Zell, Melbourne, Perth I'm bad news
 #cash 4 | bad news | news
 
 == Hook 5-8
@@ -52,7 +55,7 @@ Want one? Off my hands: a profit
 # argument: my people: the bloke with the torch, the brief, the doorman, the bike shop. moves: brag, name_drop, brag, threat, flex_list, punchline, brag, punchline
 G'day there's a torch on call
 My brief's a better call than Saul
-Four-wheeler? Dead on arrival
+Four-wheeler's dead on arrival
 My doorman will put you through the floor
 Cash for Spain and it's cash for trains and cash for planes
 Prost, and I don't buy
@@ -69,21 +72,21 @@ One black book and as for reach? It's larger
 Honesty box? Me? Paid in full: karma
 In my suit? Man! It's good Prada
 My guy's cruiser? Moored out in Palma
-Stab vest? Nah, a parka
+Stab vest? Nah a parka
 Cash? Yes! And the judge gets lager
 Cross me? Just you wait and see
-Grazie grazie, train drivers! A month and no drama
+Grazie grazie train drivers! A month and no drama
 #cash 7 | wait and see | see
 #cash 8 | no drama | drama
 
 == V1 9-16
 # argument: I came from nothing and nobody; now I'm untouchable and too busy, so ring my guy. moves: brag, brag, deflate, brag, brag, brag, brag, punchline
 Back then my bird was poor, she
-Broke, kipped on the floor, we
+Broke, kipped on the floor we
 Skip on to the end
 But the cops came round I walked out of it scot free
 Nowadays my face goes round with all the athletes
-Top floor, a mad scene, I'm living the dream
+Top floor's a mad scene I'm living the dream
 Police have got a list and they got me: top thief
 I'm out so ring my main guy's guy he's discreet
 #cash 4 | scot free | free
@@ -96,38 +99,38 @@ I'm out so ring my main guy's guy he's discreet
 Dublin's mine: my bar tab's in credit
 No one sees my elephant
 Customs won't open the crate it's medical
-Chemical? Gardaí come for the evidence
+Chemist wiped it of all of the evidence
 Who is that, lying down? Just a passenger
 And the guards at the border? Scavengers
 Where's the guy? Lying low in Canada
-Rode in, van to van, a real Marathon
+Rode in van to van, a real Marathon
 #cash 1 | on credit | credit
 #cash 5 | just a passenger | passenger
 
 == V1 25-32
 # argument: I've got a guy for every little luxury, in every country. moves: brag, brag, threat, shout_out, brag, brag, brag, punchline
 Mozzarella and capers? It's my guy in Naples
-Marrakesh when I'm able, my guy there, he sews a label
+Marrakesh when I'm able, my guy there will sew a label
 Barber's cut-throat shave? Free: on the house, cards on the table
-Beer's dear in Bergen? Near fatal
-And I own the whole fleet, Thai mainland
+Beer's dear? In Bergen near fatal
+And I own the fleet on Thai mainland
 But the baccy price is dead cheeky
-Forty a day? Don't call my guy greedy
+Forty quid? Now don't call my guy greedy
 Where am I? Gone to my guy's guy, he's local, for more freebies
 #cash 3 | cards on the table | table
 #cash 6 | dead cheeky | cheeky
 
 == V1 33-44
 # argument: police, court, debt: nothing sticks, because my guy sorts it. moves: brag, deflate, brag, brag, threat, brag, brag, brag, threat, threat, brag, punchline
-Sure, the cops were speedy
-Officer? Who me? Seedy? Seedy?
+Sure the cops were speedy
+Officer who? Me? Seedy? Seedy?
 Then my guy sent the money
 Cash in envelopes keeps the cops chummy
 My guy said you pay
-Wanted posters? Ten grand! Full front page
+Wanted poster's ten grand! Full front page
 I never once came to the Old Bailey
-In the bar I'm a star: I'm saving face
-Owe me? Then you've ten days' grace
+In the bar as a star I'm saving face
+Owe me and you've ten days' grace
 When you owe me I know: your head is fair game
 Top of town: I'm the boss of Bristol
 Who do I know? A guy. So I won't name names
@@ -138,14 +141,14 @@ Who do I know? A guy. So I won't name names
 
 == V2 1-8
 # argument: the luxury life, all of it through a guy (monorhyme on the title's own vowel). moves: brag, brag, name_drop, brag, brag, threat, brag, punchline
-The Whitsundays a tinnie? I've got a guy
+On Whitsundays a yacht? Yeah I've got a guy
 Up K'gari in the ute where you do or die
-Bangkok? My guy's van does the top fried rice
+My guy's Bangkok van does the top fried rice
 The reef? I dived, the sharks were in the crossfire
 You wouldn't believe big boats and jets at night
-You want it for free from my guy? So pigs can fly
-I drive to his bay, dive in, I'm back by five
-Name it, my mate: one call and it's mine
+You get it for free from my guy if pigs can fly
+I drive to his bay, dive, and I'm back by five
+Name your price and one call makes it mine
 #cash 2 | do or die | die
 #cash 6 | pigs can fly | fly
 
@@ -154,10 +157,10 @@ Name it, my mate: one call and it's mine
 A guy? Well, my own boat
 Christchurch Oslo Scotland Wales I'm in the photo
 Famous? Me? My face is on the East Coast
-Pool hall? Hustled well and then I struck gold
+At pool I hustled well and then struck gold
 Bold: I skip queues to the limelight
 Don't need one 'cause I'm big now I take bribes
 Seconds out no ref you get no bell
-Stuck? Need me? Call on me, call on me: last lifeline
+Stuck? Need me? Call on me call on me last lifeline
 #cash 4 | struck gold | gold
 #cash 5 | in the limelight | limelight

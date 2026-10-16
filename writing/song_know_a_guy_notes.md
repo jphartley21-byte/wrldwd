@@ -139,3 +139,8 @@ Rewrite: 13 Cash for Cairns and it's cash for Wales and cash for Spain (Wales / 
     money / chummy. Other bars the new rules caught: Hook 1-4 venue / continue (1 syllable where the original's pair is 2: now issue /
     continue), V1 17-24 'Salary' (no rhyme with its group where the original's bar is 3 deep: now Scavengers), V1 1-8 bar 7 (now 'wait
     and see', carried across the break into V1 9-16).
+22. Joe (16 Oct) on v4 bar 46: the original's opener "is smoother than 'Fags? Cheap packs'". Two causes, both now HARD in flow_par
+    against the original's same bar: two stresses on ONE 16th of the audio template (same_step), and a stop where the next syllable
+    comes on the same or next 16th (run_breaks; Joe: "Yes hard gate those too"). run_breaks failed 25 of v4's bars, mostly the
+    "Question? Answer" bars; 25 bars changed. The cost: the Q&A punctuation was one of the draft's few character tics, and some bars
+    now read as run-ons on the page ("Officer who? Me? Seedy?" kept its stops only where the audio leaves room).

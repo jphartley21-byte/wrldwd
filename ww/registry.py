@@ -97,6 +97,11 @@ LEGACY = {
         "HARD in slotcheck via flow_par since 16 Oct 2026. pause: 22 of the original's 76 bars break mid-bar (punctuation); ours must break after the "
         "same syllable (punctuation or a new clause). Exact, because the complaint was a one-syllable miss. Spelled-out acronyms make bar 76 a cell bar. "
         "The original passes by construction; bar 76 (flow_flagged.txt) fails both. One labelled complaint; no independent good set (flow_ok.txt empty)"),
+    # 16 Oct 2026, Joe on v4 bar 46: the original's opener "is smoother than 'Fags? Cheap packs'", then "Yes hard gate those too and refit"
+    "toolkit/flow_par same_step + run_breaks (two stresses on one 16th; a stop where the next syllable comes on the same or next 16th)": ("joe_rule",
+        "HARD in slotcheck via flow_par since 16 Oct 2026, TOL 0 against the original's same bar. The original passes by construction (it has "
+        "run breaks in 6 bars, so those bars keep their allowance); flagged bar 46 fails both and all 15 flagged bars still fail. run_breaks failed "
+        "25 of v4's bars, including Q&A bars Joe had not flagged; v4 was refit to it. One labelled complaint; no independent good set"),
     # 15 Oct 2026, Joe: "Do we have any gates that check quality? ... Scoring on cleverness?" and "I should be able to use claude too".
     "ww/write/sensecheck.py on Claude (haiku via the claude CLI, no key)": ("joe_rule", "HARD per slot since 15 Oct 2026 (sense gate: Joe, 14 Oct). "
         "Calibration (2 reads per block, a bar fails only if both fail it, pronoun rule): good bars failed 1/7, bad passed 1/7 on 3 of 3 fresh runs. "
