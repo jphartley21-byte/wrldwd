@@ -153,4 +153,5 @@ Rewrite: 13 Cash for Cairns and it's cash for Wales and cash for Spain (Wales / 
     (bars 25-27, 31-32, 13-14); the Hanoi pair passes. All slots stay within the original's par.
 25. Joe (16 Oct) on seven v4 bars that "passed the sense/quality gates": five were flagged and absorbed by the per-slot allowance; two passed
     because the read only asked whether a bar can be restated. A new read (pointcheck: "did you have to work it out?") ranks bad bars above
-    the original's (AUC 0.89) but cannot be cut into a gate, and web lookups of slang made it worse (0.84). It now lists 20 v4 bars to Joe.
+    the original's (AUC 0.89) but cannot be cut into a gate. The web-lookup run (0.84) is void: Wiktionary refused most lookups and a bug
+    saved the refusals as "no meaning". It now lists 20 v4 bars to Joe.

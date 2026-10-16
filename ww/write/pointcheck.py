@@ -28,8 +28,9 @@ RESULT (16 Oct 2026; benchmark/point_validation_<model>_p<prompt>.json). AUC of 
   prompt 1 (charitable, "explain it to a mate")       0.59  it rescues every bar by inventing a meaning (a gnome as a stash)
   prompt 2 (worked out? natural? lands?), Haiku x2     0.89  >= 4 flags 18/76 of the original, catches 15/17
   prompt 2, Sonnet x1                                  0.86  >= 2 flags 21/76, catches 15/17
-  prompt 3 (prompt 2 + looked-up glossary), Haiku x2   0.84  the lookups rescued our bars as often as the original's ("torch" IS
-                                                             listed slang for an arsonist; "dead on arrival" for a nonstarter)
+  prompt 3 (prompt 2 + looked-up glossary), Haiku x2   0.84  VOID: Wiktionary refused most requests (429) and a bug saved each
+                                                             refusal as "no sense found" (47 of 99 words empty, "torch" got only the
+                                                             flaming stick). The lookup idea is untested; the bug is fixed.
   No cut meets the adoption bar (original >= 90% pass AND >= 85% of bad bars caught), and the score is noisy: the same 12 bars read in
   two runs moved 1.2 points on average and the >= 4 flag flipped on 6 of them. So it is a REPORT that ranks; Joe's ear decides.
 """
@@ -176,6 +177,8 @@ def lookup(term: str) -> str:
     cache = _lookup_cache()
     if term in cache:
         return cache[term]
+    # ok = Wiktionary itself answered. A refused request (429) must never be saved as "no sense": the first glossary run did that for 47 of
+    # 99 words (elephant and servo among them) and its result was void (16 Oct 2026).
     senses, ok = [], False
     try:
         d = _get("https://en.wiktionary.org/w/api.php?" + urllib.parse.urlencode(
@@ -195,7 +198,6 @@ def lookup(term: str) -> str:
     if not senses:
         try:
             d = _get("https://en.wikipedia.org/api/rest_v1/page/summary/" + urllib.parse.quote(term.replace(" ", "_")))
-            ok = True
             if d.get("type") != "disambiguation" and (d.get("description") or d.get("extract")):
                 senses.append("wikipedia: " + ((d.get("description") or "") + ": " + (d.get("extract") or ""))[:180])
         except Exception:  # noqa: BLE001
