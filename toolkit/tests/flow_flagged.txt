@@ -16,3 +16,4 @@
 42 | Marrakesh, half the price, with my guy there, so check the label | 15 Oct: same complaint (half the price / label: no rhyme at the bar line where the original lands one)
 41 | Mozzarella? A stranger? It's my guy in Naples | 15 Oct: "Turkey and certi is same closeness as stranger and Naples?" (the bar-line rhyme matched vowels only: rapfit 0.69 vs the original's 0.81)
 76 | Each time you're stuck, I'm the guy and your last lifeline | 16 Oct: "Flows very differently" from the original's bar 76 (the pause falls one syllable later than the original's; five separate words on the 16th run where the original repeats one spelled-out cell)
+46 | But the fags? Cheap packs: it's dead cheeky | 16 Oct: the original's bar 46 opener "is smoother than 'Fags? Cheap packs'" (ours stops after 'fags' and again after 'packs', with three heavy stressed syllables in a row; the original's opening runs through a two-syllable word with no stop)

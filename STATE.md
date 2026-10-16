@@ -1850,3 +1850,9 @@ FIXED:
 - CALIBRATION PASSED; ww selftest passes apart from the known missing eval/_plan_v3.json.
 - writing/song_know_a_guy_v4.md (+ _v4_suno.txt): 6 bars changed from v3 (bars 1, 23, 25, 38, 47, 49); bars 46-50 now hold one ending across the break (cheeky / greedy / freebies / speedy / Seedy), then money / chummy. ww gate PASS (sense ON). Quality targets 3/10 (report-only); the character read fell to 1/2 on past-tense runs (bars 25-28, 49-51), report-only.
 - OPEN: v3 and every earlier draft now fail these rules; bars ending in a weak subject pronoun (bar 25 "she", bar 26 "we") follow the original's own enjambed-pronoun endings at that spot, but Joe's ear has not judged them.
+
+## 16 Oct 2026 (later 3) - two stresses on one 16th is HARD (Joe: the original's bar 46 opener "is smoother than 'Fags? Cheap packs'")
+- Rule 10: v4 bar 46 is in toolkit/tests/flow_flagged.txt (15 flagged bars).
+- Measured: the original's audio for bar 46 puts syllables 3-9 on back-to-back 16ths and two syllables on ONE 16th at positions 4-5; the original makes one of those weak and runs through with no stop. Ours put two stresses there ("Cheap packs") and stopped twice inside the run. flow_par.fast_jam only counted ADJACENT 16ths (step difference 1), so a same-16th cram (difference 0) was invisible.
+- toolkit/flow_par.py `same_step` (HARD via slotcheck, TOL 0 against the original's same bar; the original has such a pair in 2 bars, so it passes by construction; catches flagged bar 46). `run_breaks` (a stop where the next syllable is on the same or next 16th) is a NOTE only: it fails 25 of v4's bars (incl. Q&A bars Joe has not flagged), so it waits for his ear. benchmark/flow_par.json rebuilt (numbers only). CALIBRATION PASSED.
+- v4: bar 46 -> "But the baccy price is dead cheeky", bar 31 -> "Police have got a list and they got me: top thief" (it crammed "they've got" onto one 16th). ww gate PASS (sense ON).

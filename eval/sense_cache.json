@@ -31869,5 +31869,305 @@
 "issue": "Shows him evading police through a contact, sustaining the wanted-thief claim."
 }
 ]
+},
+"[haiku]\nBack then my bird was poor, she\nBroke, kipped on the floor, we\nSkip on to the end\nBut the cops came round I walked out of it scot free\nNowadays my face goes round with all the athletes\nTop floor, a mad scene, I'm living the dream\nPolice have got a list and they got me: top thief\nI'm out so ring my main guy's guy he's discreet": [
+{
+"n": 1,
+"reading": "Back then my bird was poor.",
+"grammatical": false,
+"sense": 1,
+"issue": "Trailing 'she' has no verb; the clause only completes in bar 2."
+},
+{
+"n": 2,
+"reading": "We were broke and slept on the floor.",
+"grammatical": false,
+"sense": 1,
+"issue": "'we' dangles at the end with no verb; 'kipped' is slang."
+},
+{
+"n": 3,
+"reading": "Skip ahead to the end.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "But the cops came round, and I walked out of it scot free.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "Nowadays my face goes round with all the athletes.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Face goes round with athletes' is figurative and strained; meaning unclear."
+},
+{
+"n": 6,
+"reading": "I'm living the dream on the top floor, a mad scene.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "Police have got a list and they've got me down as top thief.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "I'm out, so ring my main guy's guy; he's discreet.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Main guy's guy' is an intermediary; meaning needs guessing."
+}
+],
+"[haiku]\nBLOCK2\nBack then my bird was poor, she\nBroke, kipped on the floor, we\nSkip on to the end\nBut the cops came round I walked out of it scot free\nNowadays my face goes round with all the athletes\nTop floor, a mad scene, I'm living the dream\nPolice have got a list and they got me: top thief\nI'm out so ring my main guy's guy he's discreet": {
+"thread": "The speaker claims he went from being broke as a kid to a famous top thief who keeps escaping the police and now lives lavishly while staying hidden.",
+"coherent": 1,
+"issue": "Bar 3 \"Skip on to the end\" is filler that breaks the narrative; \"he's discreet\" in bar 8 is slightly unclear.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Continues the broke backstory from bar 1."
+},
+{
+"n": 3,
+"follows": false,
+"issue": "'Skip on to the end' is meta filler, not a claim about the speaker or his world."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Cops arriving and him escaping supports the thief-who-evades-police claim."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Contrasts poverty with celebrity status, escalating the rags-to-riches claim."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Top floor and living the dream extends the lavish-life claim."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Police now have a list naming him, escalating the heat from bar 4."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Going out and relying on a discreet contact follows from being hunted by police."
+}
+]
+},
+"[haiku]\nMozzarella and capers? It's my guy in Naples\nMarrakesh when I'm able, my guy there, he sews a label\nBarber's cut-throat shave? Free: on the house, cards on the table\nBeer's dear in Bergen? Near fatal\nAnd I own the whole fleet, Thai mainland\nBut the baccy price is dead cheeky\nForty a day? Don't call my guy greedy\nWhere am I? Gone to my guy's guy, he's local, for more freebies": [
+{
+"n": 1,
+"reading": "Are these mozzarella and capers? They come from my guy in Naples.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "When I'm able, I'll go to Marrakesh, where my guy sews a label.",
+"grammatical": true,
+"sense": 1,
+"issue": "Opening is a fragment; what the label-sewing means is strained"
+},
+{
+"n": 3,
+"reading": "Is the barber's cut-throat shave free? It's on the house, cards on the table.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "Is beer expensive in Bergen? It's nearly fatal.",
+"grammatical": true,
+"sense": 1,
+"issue": "Elliptical; 'near fatal' is a bare fragment, price meaning inferred"
+},
+{
+"n": 5,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "Clause 'I own the whole fleet' is complete, but 'Thai mainland' dangles unlinked"
+},
+{
+"n": 6,
+"reading": "But the tobacco price is very cheeky.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "Forty a day? Don't call my guy greedy.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Forty a day' is unexplained; the thing counted is only implied"
+},
+{
+"n": 8,
+"reading": "Where am I? I've gone to my guy's guy, who is local, for more freebies.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nMozzarella and capers? It's my guy in Naples\nMarrakesh when I'm able, my guy there, he sews a label\nBarber's cut-throat shave? Free: on the house, cards on the table\nBeer's dear in Bergen? Near fatal\nAnd I own the whole fleet, Thai mainland\nBut the baccy price is dead cheeky\nForty a day? Don't call my guy greedy\nWhere am I? Gone to my guy's guy, he's local, for more freebies": {
+"thread": "The speaker boasts that he has a fixer in every city who gets him free or cheap goods, so he never pays full price abroad.",
+"coherent": 1,
+"issue": "Bar 5's sudden \"I own the whole fleet\" claim is unexplained and breaks the guy-network thread.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Marrakesh contact continues the fixer-in-every-city pattern from bar 1."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Free shave extends the freebies theme established by the contacts."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Expensive beer in Bergen contrasts with the free goods, deflating the boast."
+},
+{
+"n": 5,
+"follows": false,
+"issue": "Owning a fleet in Thai mainland appears from nowhere with no link to the contacts or prices."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Cheap tobacco price returns to the cheap-goods claim, after the fleet detour."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Forty a day and the defence of 'my guy' keep the tobacco and contact thread."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "The guy's guy escalates the network claim to a final punchline about more freebies."
+}
+]
+},
+"[haiku]\nMozzarella? The staples? It's my guy in Naples\nMarrakesh when I'm able, my guy there, so check the label\nBarber's chair, cut-throat blade, on the house, cards on the table\nMy boots in Bergen? Dead fatal\nOn the ferry, flat calm, Thai mainland\nBut the fags? Cheap packs: it's dead cheeky\nForty a day? My guy is sorting me\nNeed me? Gone to my guy's guy down the road for a quick sneaky": [
+{
+"n": 1,
+"reading": "Is it mozzarella, or the staples? It's my guy in Naples.",
+"grammatical": true,
+"sense": 1,
+"issue": "\"The staples\" is vague; a stranger may not know what it means."
+},
+{
+"n": 2,
+"reading": "When I'm able, I'll go to Marrakesh; my guy is there, so check the label.",
+"grammatical": true,
+"sense": 1,
+"issue": "\"Check the label\" is unexplained; the link to Marrakesh is strained."
+},
+{
+"n": 3,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "Noun list with no verb; idioms guessable but no clause."
+},
+{
+"n": 4,
+"reading": "Are my boots in Bergen? That is dead fatal.",
+"grammatical": false,
+"sense": 1,
+"issue": "\"Dead fatal\" is a bare slang fragment with no clear subject or claim."
+},
+{
+"n": 5,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "Verbless fragment; setting guessable, but no predicate for the ferry."
+},
+{
+"n": 6,
+"reading": "The fags are cheap packs, and it's dead cheeky.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "Forty a day? My guy is sorting me.",
+"grammatical": true,
+"sense": 1,
+"issue": "\"Sorting me\" needs \"out\"; \"forty a day\" is an elliptical fragment."
+},
+{
+"n": 8,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "Ends mid-phrase: \"quick sneaky\" lacks a noun; the clause has no subject."
+}
+],
+"[haiku]\nBLOCK2\nMozzarella? The staples? It's my guy in Naples\nMarrakesh when I'm able, my guy there, so check the label\nBarber's chair, cut-throat blade, on the house, cards on the table\nMy boots in Bergen? Dead fatal\nOn the ferry, flat calm, Thai mainland\nBut the fags? Cheap packs: it's dead cheeky\nForty a day? My guy is sorting me\nNeed me? Gone to my guy's guy down the road for a quick sneaky": {
+"thread": "The speaker is a British wide-boy who claims he has a \"guy\" in every city he visits, a fixer who sorts him out with food, haircuts, cigarettes and anything else, so he never goes without and even has a guy's guy as backup.",
+"coherent": 1,
+"issue": "Bars 4 and 5 list Bergen and the Thai ferry with no fixer link, so they read as travelogue.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Marrakesh contact extends the 'my guy in every city' claim."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Free barber service on the house is another favour from a contact."
+},
+{
+"n": 4,
+"follows": false,
+"issue": "Boots in Bergen with 'dead fatal' has no guy or favour link; it is a new place."
+},
+{
+"n": 5,
+"follows": false,
+"issue": "Ferry and Thai mainland is a location jump with no connection to the fixer idea."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "'But the fags?' pivots back to the favour theme with cheap contraband cigarettes."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Forty a day with 'my guy is sorting me' directly supports the fixer claim."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Guy's guy escalates the claim and gives a strong punchline ending."
+}
+]
 }
 }

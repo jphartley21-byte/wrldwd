@@ -426,6 +426,12 @@ def check(slot: str, bars: list[str], context: list[str] | None = None, tol: int
             msg = "flow worse than the original's bar: " + _fp.describe(pf)
             rows[i]["issues"].append(msg)
             hard.append(f"bar {i + 1}: {msg}")
+        # NOTE (16 Oct 2026, from Joe's bar-46 complaint): a stop where the next syllable falls on the same or next 16th. Not hard: it fails
+        # 26 of v4's bars, including Q&A bars Joe has not flagged, so it is listed for his ear.
+        _rb, _tab = _fp.run_breaks(start + i + 1, bars[i]), (_fp.par_table() or [])
+        if _rb and start + i < len(_tab) and _rb > _tab[start + i].get("run_breaks", 0):
+            notes.append(f"FLOW bar {i + 1}: {_rb} stop(s) inside a 16th-note run (the original's bar has {_tab[start + i].get('run_breaks', 0)}): "
+                         "a '?' ':' or ',' where the next syllable comes straight after; it reads choppy")
         rows[i]["beat_weak"] = br["beat_weak"]
     if tg and bw_bars:
         mean_bw = bw_total / bw_bars

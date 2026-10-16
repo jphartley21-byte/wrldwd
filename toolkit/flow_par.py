@@ -61,7 +61,10 @@ MEASURES = ("stress_run", "hard_joins", "closed_run", "restart")
 #              content word), since the comma cap (ww/write/phrase_audit) would otherwise force a comma at every one.
 #   cell       also hears a SPELLED-OUT acronym (16 Oct 2026, the same bar): letters said as names repeat a cell inside one word ("W"
 #              is "double-u"), which a word-level repeat count missed.
-BAR_MEASURES = ("fast_jam", "cell", "barline", "pause")
+#   same_step  (16 Oct 2026, Joe on bar 46: the original's opener "is smoother than 'Fags? Cheap packs'") the audio puts two syllables on
+#              one 16th in some bars and the original makes one of them weak; ours put two stresses there ("Cheap packs"). fast_jam only
+#              counted ADJACENT 16ths, so the same-16th cram was invisible. TOL 0 against the original's same bar.
+BAR_MEASURES = ("fast_jam", "cell", "barline", "pause", "same_step")
 BAR_SLACK = 0.10
 # Fitted 15 Oct 2026 on the only labels there are: the loosest tolerances that still catch all 4 flagged bars, which fail the
 # fewest bars of hook r3 (Joe: "I like this", bar 12 excepted): 5 of 15 still fail, and they are listed to Joe to judge. At 0/0/0/0 the
@@ -75,6 +78,7 @@ LABEL = {"stress_run": "stressed syllables in a row", "hard_joins": "hard mouth-
          "fast_jam": "stressed syllables jammed on back-to-back 16ths", "cell": "repeated cell + internal rhyme (needs a cell and internal rhyme >= the original's - 1)",
          "internal": "internal rhyme in a repeated-cell bar",
          "barline": "rhyme at the bar line (needs a word at the original's syllable, +-1, with the same vowels as the line's end word; ours has none)",
+         "same_step": "stressed syllables crammed onto ONE 16th (where the original's bar puts a weak syllable in that slot)",
          "pause": "pause position (the original pauses after syllable(s) {p}; ours does not break there)",
          "barline_close": "bar-line rhyme too loose (rapfit pair score with the line's end; must be within 0.10 of the original's)"}
 
@@ -144,6 +148,27 @@ LETTER = {"W": "double you", "A": "ay", "B": "bee", "C": "see", "D": "dee", "E":
 def spell(line):
     """all-caps acronyms (2+ letters) said as letter names: what the ear hears, not the spelling."""
     return re.sub(r"\b[A-Z]{2,}\b", lambda m: " ".join(LETTER[c] for c in m.group()), line)
+
+
+def same_step(bar_no, line):
+    """stressed syllable pairs that share ONE 16th step of the original's audio template (two syllables on one 16th: the original puts a
+    weak syllable in that slot). None where there is no template or the syllable count differs."""
+    t = ff.T[bar_no - 1] if 1 <= bar_no <= len(ff.T) else {}
+    steps = t.get("steps")
+    w = ff.sylls(line)
+    if not steps or len(steps) != len(w):
+        return None
+    return sum(1 for k in range(len(steps) - 1) if steps[k + 1] == steps[k] and not w[k] and not w[k + 1])
+
+
+def run_breaks(bar_no, line):
+    """mid-bar stops (punctuation) where the next syllable falls on the same or the next 16th of the original's template: a stop with no
+    room to stop. A NOTE, not a gate (16 Oct 2026): it fails 26 of v4's bars, so it waits for Joe's ear."""
+    t = ff.T[bar_no - 1] if 1 <= bar_no <= len(ff.T) else {}
+    steps = t.get("steps")
+    if not steps or len(steps) != len(ff.sylls(line)):
+        return None
+    return sum(1 for k in breaks(line) if k < len(steps) and 0 <= steps[k] - steps[k - 1] <= 1)
 
 
 def has_cell(line):
@@ -255,6 +280,10 @@ def check(bar_no, line):
         fj = fast_jam(bar_no, line)
         if fj is not None and fj > par["fast_jam"]:
             out.append(("fast_jam", fj, par["fast_jam"]))
+    if "same_step" in par:
+        ss = same_step(bar_no, line)
+        if ss is not None and ss > par["same_step"]:
+            out.append(("same_step", ss, par["same_step"]))
     if par.get("barline"):
         k, need = par["barline"], par.get("barline_score", 0.0) - BAR_SLACK
         near = [sc for h, sc in barline_hits(line, scored=True) if abs(h - k) <= 1]
@@ -305,7 +334,8 @@ def build(orig_path):
     _ww()
     from ww import bridge
     bars = [dict(profile(l), syl=bridge.syllable_count(l), fast_jam=fast_jam(i + 1, l) or 0, cell=int(has_cell(l)), internal=internal(l),
-                 barline=barline_par(i + 1, l)[0], barline_score=barline_par(i + 1, l)[1], pause=breaks(l)) for i, l in enumerate(L)]
+                 barline=barline_par(i + 1, l)[0], barline_score=barline_par(i + 1, l)[1], pause=breaks(l),
+                 same_step=same_step(i + 1, l) or 0, run_breaks=run_breaks(i + 1, l) or 0) for i, l in enumerate(L)]
     json.dump({"_note": "Per-bar flow profile of the ORIGINAL (numbers only, rule 4), built by toolkit/flow_par.py --build. "
                         "A draft bar may be no worse than the original's bar in the same position.", "measures": list(MEASURES) + list(BAR_MEASURES), "bars": bars},
               open(PAR, "w", encoding="utf-8"), indent=1)

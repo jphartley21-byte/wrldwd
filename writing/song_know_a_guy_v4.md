@@ -4,6 +4,8 @@
 # 6 bars changed from v3; bars 46-50 now hold one ending (stressed 'ee' + weak 'ee': cheeky / greedy / freebies / speedy / Seedy)
 # across the V1 25-32 / V1 33-44 break, then money / chummy, as the original holds one for five bars then moves once.
 # ww gate PASS (sense ON). Quality targets (report-only) 3/10; character read 1/2 (past-tense runs at bars 25-28, 49-51).
+# Later the same day (Joe: the original's bar 46 opener "is smoother than 'Fags? Cheap packs'"): bar 46 -> "But the baccy price is
+# dead cheeky" and bar 31 -> "they got me" (both had two stresses on one 16th of the audio template; now a HARD flow measure).
 # V3 (16 Oct 2026, Joe: "Go for all 3, add the gates, verify them, then write the new draft to pass all gates and print it"): v2 rewritten to
 # the new rhyme-texture gate (toolkit/texture.py: internal rhyme amount + strength, frame / link sandwiches, multisyllabic runs across
 # words, each per section against the original's same section). v2 failed it in 8 of 10 sections; v3 passes all 10. ww gate PASS
@@ -82,7 +84,7 @@ Skip on to the end
 But the cops came round I walked out of it scot free
 Nowadays my face goes round with all the athletes
 Top floor, a mad scene, I'm living the dream
-Police have got a list and they've got me: top thief
+Police have got a list and they got me: top thief
 I'm out so ring my main guy's guy he's discreet
 #cash 4 | scot free | free
 #cash 6 | living the dream | dream
@@ -109,7 +111,7 @@ Marrakesh when I'm able, my guy there, he sews a label
 Barber's cut-throat shave? Free: on the house, cards on the table
 Beer's dear in Bergen? Near fatal
 And I own the whole fleet, Thai mainland
-But the fags? Cheap packs: it's dead cheeky
+But the baccy price is dead cheeky
 Forty a day? Don't call my guy greedy
 Where am I? Gone to my guy's guy, he's local, for more freebies
 #cash 3 | cards on the table | table

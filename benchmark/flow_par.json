@@ -8,7 +8,8 @@
   "fast_jam",
   "cell",
   "barline",
-  "pause"
+  "pause",
+  "same_step"
  ],
  "bars": [
   {
@@ -24,7 +25,9 @@
    "barline_score": 0.0,
    "pause": [
     1
-   ]
+   ],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 2,
@@ -37,7 +40,9 @@
    "internal": 0,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 4,
@@ -50,7 +55,9 @@
    "internal": 0,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 4,
@@ -63,7 +70,9 @@
    "internal": 0,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 2,
@@ -76,7 +85,9 @@
    "internal": 0,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 3,
@@ -89,7 +100,9 @@
    "internal": 0,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 3,
@@ -102,7 +115,9 @@
    "internal": 0,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 2,
@@ -115,7 +130,9 @@
    "internal": 0,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 1,
@@ -128,7 +145,9 @@
    "internal": 0,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 2,
@@ -141,7 +160,9 @@
    "internal": 1,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 3,
@@ -154,7 +175,9 @@
    "internal": 1,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 2,
@@ -167,7 +190,9 @@
    "internal": 3,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 1,
+   "run_breaks": 0
   },
   {
    "stress_run": 1,
@@ -180,7 +205,9 @@
    "internal": 4,
    "barline": 8,
    "barline_score": 1.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 1,
@@ -193,7 +220,9 @@
    "internal": 0,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 2,
@@ -206,7 +235,9 @@
    "internal": 2,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 1,
@@ -219,7 +250,9 @@
    "internal": 0,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 3,
@@ -234,7 +267,9 @@
    "barline_score": 0.0,
    "pause": [
     7
-   ]
+   ],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 2,
@@ -250,7 +285,9 @@
    "pause": [
     5,
     8
-   ]
+   ],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 2,
@@ -265,7 +302,9 @@
    "barline_score": 0.0,
    "pause": [
     4
-   ]
+   ],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 2,
@@ -280,7 +319,9 @@
    "barline_score": 0.0,
    "pause": [
     4
-   ]
+   ],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 2,
@@ -293,7 +334,9 @@
    "internal": 0,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 2,
@@ -306,7 +349,9 @@
    "internal": 1,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 2,
@@ -319,7 +364,9 @@
    "internal": 0,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 2,
@@ -334,7 +381,9 @@
    "barline_score": 0.0,
    "pause": [
     7
-   ]
+   ],
+   "same_step": 0,
+   "run_breaks": 1
   },
   {
    "stress_run": 2,
@@ -347,7 +396,9 @@
    "internal": 0,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 2,
@@ -360,7 +411,9 @@
    "internal": 0,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 2,
@@ -373,7 +426,9 @@
    "internal": 0,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 3,
@@ -386,7 +441,9 @@
    "internal": 1,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 3,
@@ -399,7 +456,9 @@
    "internal": 1,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 2,
@@ -412,7 +471,9 @@
    "internal": 0,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 2,
@@ -427,7 +488,9 @@
    "barline_score": 0.0,
    "pause": [
     6
-   ]
+   ],
+   "same_step": 0,
+   "run_breaks": 1
   },
   {
    "stress_run": 3,
@@ -440,7 +503,9 @@
    "internal": 2,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 1,
+   "run_breaks": 0
   },
   {
    "stress_run": 2,
@@ -455,7 +520,9 @@
    "barline_score": 0.0,
    "pause": [
     3
-   ]
+   ],
+   "same_step": 0,
+   "run_breaks": 1
   },
   {
    "stress_run": 3,
@@ -468,7 +535,9 @@
    "internal": 2,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 1,
@@ -481,7 +550,9 @@
    "internal": 0,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 1,
@@ -494,7 +565,9 @@
    "internal": 0,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 1,
@@ -510,7 +583,9 @@
    "pause": [
     3,
     6
-   ]
+   ],
+   "same_step": 0,
+   "run_breaks": 1
   },
   {
    "stress_run": 2,
@@ -525,7 +600,9 @@
    "barline_score": 0.0,
    "pause": [
     7
-   ]
+   ],
+   "same_step": 0,
+   "run_breaks": 1
   },
   {
    "stress_run": 1,
@@ -538,7 +615,9 @@
    "internal": 1,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 4,
@@ -551,7 +630,9 @@
    "internal": 0,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 1,
@@ -566,7 +647,9 @@
    "barline_score": 0.81,
    "pause": [
     7
-   ]
+   ],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 3,
@@ -581,7 +664,9 @@
    "barline_score": 0.95,
    "pause": [
     7
-   ]
+   ],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 3,
@@ -596,7 +681,9 @@
    "barline_score": 0.0,
    "pause": [
     6
-   ]
+   ],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 2,
@@ -609,7 +696,9 @@
    "internal": 1,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 5,
@@ -622,7 +711,9 @@
    "internal": 2,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 4,
@@ -635,7 +726,9 @@
    "internal": 1,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 1,
@@ -648,7 +741,9 @@
    "internal": 1,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 2,
@@ -663,7 +758,9 @@
    "barline_score": 0.0,
    "pause": [
     11
-   ]
+   ],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 1,
@@ -676,7 +773,9 @@
    "internal": 0,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 3,
@@ -692,7 +791,9 @@
    "pause": [
     5,
     7
-   ]
+   ],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 1,
@@ -705,7 +806,9 @@
    "internal": 0,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 3,
@@ -718,7 +821,9 @@
    "internal": 1,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 2,
@@ -731,7 +836,9 @@
    "internal": 0,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 5,
@@ -746,7 +853,9 @@
    "barline_score": 0.0,
    "pause": [
     6
-   ]
+   ],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 3,
@@ -759,7 +868,9 @@
    "internal": 1,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 2,
@@ -772,7 +883,9 @@
    "internal": 0,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 3,
@@ -785,7 +898,9 @@
    "internal": 0,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 2,
@@ -800,7 +915,9 @@
    "barline_score": 0.0,
    "pause": [
     6
-   ]
+   ],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 2,
@@ -815,7 +932,9 @@
    "barline_score": 0.0,
    "pause": [
     3
-   ]
+   ],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 5,
@@ -830,7 +949,9 @@
    "barline_score": 0.0,
    "pause": [
     6
-   ]
+   ],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 2,
@@ -843,7 +964,9 @@
    "internal": 1,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 1,
@@ -856,7 +979,9 @@
    "internal": 0,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 3,
@@ -869,7 +994,9 @@
    "internal": 1,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 1,
@@ -882,7 +1009,9 @@
    "internal": 1,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 3,
@@ -895,7 +1024,9 @@
    "internal": 4,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 2,
@@ -908,7 +1039,9 @@
    "internal": 4,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 3,
@@ -921,7 +1054,9 @@
    "internal": 4,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 3,
@@ -934,7 +1069,9 @@
    "internal": 0,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 2,
@@ -949,7 +1086,9 @@
    "barline_score": 0.0,
    "pause": [
     3
-   ]
+   ],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 1,
@@ -962,7 +1101,9 @@
    "internal": 3,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 2,
@@ -978,7 +1119,9 @@
    "pause": [
     2,
     3
-   ]
+   ],
+   "same_step": 0,
+   "run_breaks": 2
   },
   {
    "stress_run": 3,
@@ -991,7 +1134,9 @@
    "internal": 3,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 4,
@@ -1004,7 +1149,9 @@
    "internal": 0,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 3,
@@ -1017,7 +1164,9 @@
    "internal": 1,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 2,
@@ -1030,7 +1179,9 @@
    "internal": 1,
    "barline": 0,
    "barline_score": 0.0,
-   "pause": []
+   "pause": [],
+   "same_step": 0,
+   "run_breaks": 0
   },
   {
    "stress_run": 3,
@@ -1045,7 +1196,9 @@
    "barline_score": 0.0,
    "pause": [
     3
-   ]
+   ],
+   "same_step": 0,
+   "run_breaks": 0
   }
  ]
 }
