@@ -132,3 +132,10 @@ Rewrite: 13 Cash for Cairns and it's cash for Wales and cash for Spain (Wales / 
     evidence" (a link and a frame sandwich), "Pool hall? Hustled well and then I struck gold / Bold: I skip queues..." (link). Finding: the
     sense read and dense internal rhyme pull against each other; V1 33-44 needed plain sentences that still carry rhyme ("When you owe me
     I know: your head is fair game", "Who do I know? A guy. So I won't name names").
+21. Joe (16 Oct) pasted the original's bars 46-52 against ours: the original holds one two-syllable ending (stressed 'or' + weak 'ee') for
+    five bars across the V1 25-32 / V1 33-44 break, then moves once; ours shared only the weak 'ee'. The tools heard 'caught me' as
+    rhyming on 'me' alone. Fixed (closing pronoun joins the tail in its weak form; depth no shallower than the original's same bar;
+    rhymes across section breaks where the original has them). v4 bars 46-50: cheeky / greedy / freebies / speedy / Seedy, then
+    money / chummy. Other bars the new rules caught: Hook 1-4 venue / continue (1 syllable where the original's pair is 2: now issue /
+    continue), V1 17-24 'Salary' (no rhyme with its group where the original's bar is 3 deep: now Scavengers), V1 1-8 bar 7 (now 'wait
+    and see', carried across the break into V1 9-16).

@@ -31269,5 +31269,605 @@
 "issue": "Refusing to name names is a deadpan punchline reinforcing his untouchability."
 }
 ]
+},
+"[haiku]\nCheers! Any issue?\nGot framed? Left for dead? I continue\nCops, bail, dock, jail, it's like a Greek cruise\nIn Bern, Zell, Perth, Melbourne, I'm bad news": [
+{
+"n": 1,
+"reading": "Cheers! Is there any issue?",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "Was I framed and left for dead? I carry on.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "Cops, bail, dock and jail: it's like a Greek cruise.",
+"grammatical": true,
+"sense": 1,
+"issue": "Cruise comparison is strained; the list's point is unclear."
+},
+{
+"n": 4,
+"reading": "In Bern, Zell, Perth and Melbourne, I am bad news.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nCheers! Any issue?\nGot framed? Left for dead? I continue\nCops, bail, dock, jail, it's like a Greek cruise\nIn Bern, Zell, Perth, Melbourne, I'm bad news": {
+"thread": "The speaker claims that frame-ups, arrests and court cases are routine for him, that he shrugs them off like a holiday tour, and that he is notorious in cities across the world.",
+"coherent": 1,
+"issue": "\"Greek cruise\" and \"Zell\" are obscure, so the tour-of-trouble image is hard to follow on one hearing.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Answers the 'Any issue?' challenge by saying he has been framed and left for dead, and carries on."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Escalates to a list of legal trouble and treats it as a joke, though the 'Greek cruise' comparison is unclear."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Turns the trouble into a world tour of cities and ends on 'bad news', though 'Zell' is hard to place."
+}
+]
+},
+"[haiku]\nOne black book and as for reach? It's larger\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy guy's cruiser? Moored out in Palma\nStab vest? Nah, a parka\nCash? Yes! And the judge gets lager\nCross me? Just you wait and see\nGrazie grazie, train drivers! A month and no drama": [
+{
+"n": 1,
+"reading": "One black book, and as for reach, it's larger.",
+"grammatical": true,
+"sense": 1,
+"issue": "Opening noun phrase is loose; 'reach' and 'larger' have no clear comparison."
+},
+{
+"n": 2,
+"reading": "Me, an honesty box? Paid in full, with karma.",
+"grammatical": false,
+"sense": 1,
+"issue": "'Paid in full: karma' is a noun phrase with no finite clause."
+},
+{
+"n": 3,
+"reading": "In my suit? Man! It's good Prada.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "My guy's cruiser is moored out in Palma.",
+"grammatical": false,
+"sense": 1,
+"issue": "'Moored out in Palma' is a participle phrase with no finite verb."
+},
+{
+"n": 5,
+"reading": "No stab vest; it's a parka.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "Cash? Yes! And the judge gets lager.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "If you cross me, just wait and see.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "Thank you, train drivers, and a month with no drama.",
+"grammatical": true,
+"sense": 1,
+"issue": "Trailing 'a month and no drama' is elliptical; link to train drivers unclear."
+}
+],
+"[haiku]\nBLOCK2\nOne black book and as for reach? It's larger\nHonesty box? Me? Paid in full: karma\nIn my suit? Man! It's good Prada\nMy guy's cruiser? Moored out in Palma\nStab vest? Nah, a parka\nCash? Yes! And the judge gets lager\nCross me? Just you wait and see\nGrazie grazie, train drivers! A month and no drama": {
+"thread": "The speaker is a wealthy, well-connected man who claims he is untouchable: he flaunts his status, bribes officials, and answers threats with menace.",
+"coherent": 1,
+"issue": "The final bar's thanks to train drivers breaks the untouchable-menace claim with no signal, so the ending reads as a non sequitur.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Honesty box and paid in full continue the theme of settled debts and untouchable status, though 'Me?' is slightly unclear."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Designer suit is a status flex that supports the claim of wealth."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "A friend's cruiser moored in Palma escalates the wealth flex."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Refusing a stab vest for a parka implies he fears nothing, which supports the untouchable claim."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Cash and a judge bribed with lager directly show he buys off authority."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "A direct threat to anyone who crosses him fits the menace of the claim."
+},
+{
+"n": 8,
+"follows": false,
+"issue": "Thanking train drivers for a month with no drama is a sudden subject change with no signal and no clear link to the menace."
+}
+]
+},
+"[haiku]\nDublin's mine: my bar tab's in credit\nNo one sees my elephant\nCustoms won't open the crate it's medical\nChemical? Gardaí come for the evidence\nWho is that, lying down? Just a passenger\nAnd the guards at the border? Scavengers\nWhere's the guy? Lying low in Canada\nRode in, van to van, a real Marathon": [
+{
+"n": 1,
+"reading": "Dublin is mine, and my bar tab is in credit.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "No one sees my elephant.",
+"grammatical": true,
+"sense": 1,
+"issue": "Elephant as hidden secret is a strained metaphor."
+},
+{
+"n": 3,
+"reading": "Customs won't open the crate; it is medical.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "Gardaí come for the evidence, asking whether it is chemical.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Chemical?' is a loose fragment; its link to the evidence is unclear."
+},
+{
+"n": 5,
+"reading": "The person lying down is just a passenger.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "The guards at the border are scavengers.",
+"grammatical": false,
+"sense": 1,
+"issue": "'Scavengers' is a bare noun with no predicate; meaning is guessed."
+},
+{
+"n": 7,
+"reading": "Where's the guy? Lying low in Canada.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "I rode in, going van to van, and it was a real marathon.",
+"grammatical": false,
+"sense": 1,
+"issue": "Ends on a bare noun phrase, 'a real Marathon', with no verb."
+}
+],
+"[haiku]\nBLOCK2\nDublin's mine: my bar tab's in credit\nNo one sees my elephant\nCustoms won't open the crate it's medical\nChemical? Gardaí come for the evidence\nWho is that, lying down? Just a passenger\nAnd the guards at the border? Scavengers\nWhere's the guy? Lying low in Canada\nRode in, van to van, a real Marathon": {
+"thread": "The speaker is a smuggler who hides contraband and a hidden passenger on the run from Dublin to Canada, mocking the customs officers and border guards who fail to catch him.",
+"coherent": 2,
+"issue": "\"The guy\" in bar 7 is vague; its link to the passenger in bar 5 is unclear.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Hidden 'elephant' extends the contraband concealment idea from bar 1."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Medical cover story for the crate escalates the concealment bluff."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Gardaí arriving over the 'chemical' keeps the bust-versus-bluff tension going."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "A person lying down, called a passenger, adds a hidden human cargo."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Calling border guards scavengers deflates the authorities who failed to stop him."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "'Lying low' echoes the passenger lying down, though 'the guy' is loosely introduced."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Van-to-van transfer details the route, supporting the smuggling claim, if loosely."
+}
+]
+},
+"[haiku]\nMozzarella and capers? It's my guy in Naples\nMarrakesh when I'm able, my guy there, he sews a label\nBarber's cut-throat shave? Free: on the house, cards on the table\nBeer's dear in Bergen? Near fatal\nAnd I own the whole fleet, Thai mainland\nBut the fags? Cheap packs: it's dead cheeky\nForty a day? Don't call my guy greedy\nWhere am I? Gone to my guy's guy, he's local, for more freebies": [
+{
+"n": 1,
+"reading": "The mozzarella and capers come from my guy in Naples.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "I'll visit Marrakesh when I'm able, where my guy there sews a label.",
+"grammatical": true,
+"sense": 1,
+"issue": "Why he sews labels is unclear; the claim is strained."
+},
+{
+"n": 3,
+"reading": "The barber's cut-throat shave is free, on the house, with the cards on the table.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "Beer is expensive in Bergen, and the cost is nearly fatal.",
+"grammatical": false,
+"sense": 1,
+"issue": "'Near fatal' is a bare adjective phrase with no subject or verb."
+},
+{
+"n": 5,
+"reading": "I own the whole fleet on the Thai mainland.",
+"grammatical": false,
+"sense": 1,
+"issue": "'Thai mainland' lacks a preposition, so the location dangles."
+},
+{
+"n": 6,
+"reading": "The cigarettes come in cheap packs, and that is really cheeky.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "Forty a day? Don't call my guy greedy.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "I've gone to my guy's local guy for more freebies, so where am I?",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nMozzarella and capers? It's my guy in Naples\nMarrakesh when I'm able, my guy there, he sews a label\nBarber's cut-throat shave? Free: on the house, cards on the table\nBeer's dear in Bergen? Near fatal\nAnd I own the whole fleet, Thai mainland\nBut the fags? Cheap packs: it's dead cheeky\nForty a day? Don't call my guy greedy\nWhere am I? Gone to my guy's guy, he's local, for more freebies": {
+"thread": "The speaker has a contact (\"my guy\") in every city who gets him cheap or free goods, so high prices abroad never touch him.",
+"coherent": 1,
+"issue": "Bar 5's \"whole fleet, Thai mainland\" jumps to an unconnected boast; \"sews a label\" in bar 2 is opaque.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Another overseas contact supplying him, extending the guy-in-every-city pattern."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "A free barber's shave is another freebie from the same network."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Expensive beer in Bergen contrasts with the cheap or free deals, setting up the pattern."
+},
+{
+"n": 5,
+"follows": false,
+"issue": "A fleet and Thai mainland ownership boast has no visible link to the guy network."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Cheap cigarettes contrast with Bergen's dear beer and fit the bargain theme."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Smoking forty a day is tied to the cheap-supply guy, who is defended as not greedy."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Disorientation about location escalates the chain to a guy's guy for more freebies."
+}
+]
+},
+"[haiku]\nSure, the cops were speedy\nOfficer? Who me? Seedy? Seedy?\nThen my guy sent the money\nCash in envelopes keeps the cops chummy\nMy guy said you pay\nWanted posters? Ten grand! Full front page\nI never once came to the Old Bailey\nIn the bar I'm a star: I'm saving face\nOwe me? Then you've ten days' grace\nWhen you owe me I know: your head is fair game\nTop of town: I'm the boss of Bristol\nWho do I know? A guy. So I won't name names": [
+{
+"n": 1,
+"reading": "Sure, the cops were speedy.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "UNCLEAR",
+"grammatical": true,
+"sense": 1,
+"issue": "Spoken protest fragments; who is seedy is only guessable."
+},
+{
+"n": 3,
+"reading": "Then my guy sent the money.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "Cash in envelopes keeps the cops chummy.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "My guy said you pay.",
+"grammatical": true,
+"sense": 1,
+"issue": "Unclear what you pay for; object is missing."
+},
+{
+"n": 6,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "Run of headline fragments with no verb linking them."
+},
+{
+"n": 7,
+"reading": "I never once came to the Old Bailey.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "In the bar I'm a star: I'm saving face.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 9,
+"reading": "If you owe me, you have ten days' grace.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 10,
+"reading": "When you owe me, I know your head is fair game.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 11,
+"reading": "I'm the top of town and the boss of Bristol.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 12,
+"reading": "Who do I know? A guy, so I won't name names.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nSure, the cops were speedy\nOfficer? Who me? Seedy? Seedy?\nThen my guy sent the money\nCash in envelopes keeps the cops chummy\nMy guy said you pay\nWanted posters? Ten grand! Full front page\nI never once came to the Old Bailey\nIn the bar I'm a star: I'm saving face\nOwe me? Then you've ten days' grace\nWhen you owe me I know: your head is fair game\nTop of town: I'm the boss of Bristol\nWho do I know? A guy. So I won't name names": {
+"thread": "The speaker is a Bristol crime boss who bribes the police through a middleman, dodges the courts, and enforces his debts with threats.",
+"coherent": 1,
+"issue": "Bar 5's \"you pay\" has no clear referent, and bars 6 and 8 jump topic.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Continues the bought-cops theme with a sly denial that deepens his shadiness."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Explains how the cops were bought, through a guy sending money."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Escalates bar 3 with the envelope detail showing the cops are on his payroll."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Reads as the middleman's instruction to pay, but 'you' is vague and loose."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Wanted posters signal police heat, though the jump from bribery to publicity is abrupt."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Dodging the Old Bailey follows from the police protection and wanted posters."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Status in the bar and saving face contrasts with being wanted, though the turn is abrupt."
+},
+{
+"n": 9,
+"follows": true,
+"issue": "Introduces debt enforcement, a new strand the listener can still follow as a threat."
+},
+{
+"n": 10,
+"follows": true,
+"issue": "Spells out the threat from bar 9 with a menacing consequence for debtors."
+},
+{
+"n": 11,
+"follows": true,
+"issue": "Claims the power that the threats and bribes have built up."
+},
+{
+"n": 12,
+"follows": true,
+"issue": "Ties back to 'my guy' from bars 3 and 5 and keeps the middleman hidden."
+}
+]
+},
+"[haiku]\nBack then my bird was poor, she\nBroke, kipped on the floor, we\nSkip on to the end\nBut the cops came round I walked out of it scot free\nNowadays my face goes round with all the athletes\nTop floor, a mad scene, I'm living the dream\nPolice have got a list and they've got me: top thief\nI'm out so ring my main guy's guy he's discreet": [
+{
+"n": 1,
+"reading": "Back then my bird was poor.",
+"grammatical": false,
+"sense": 1,
+"issue": "Dangling 'she' with no clause after it; sentence is unfinished."
+},
+{
+"n": 2,
+"reading": "We were broke and kipped on the floor.",
+"grammatical": false,
+"sense": 1,
+"issue": "Trailing 'we' after inverted clause; word order is not spoken English."
+},
+{
+"n": 3,
+"reading": "Skip on to the end.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "But the cops came round, and I walked out of it scot free.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "Nowadays my face goes round with all the athletes.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "I'm living the dream on the top floor, a mad scene.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "Police have got a list and they've got me: top thief.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "I'm out, so call my main guy's guy; he's discreet.",
+"grammatical": true,
+"sense": 1,
+"issue": "Compressed slang 'main guy's guy' is strained; meaning needs guessing."
+}
+],
+"[haiku]\nBLOCK2\nBack then my bird was poor, she\nBroke, kipped on the floor, we\nSkip on to the end\nBut the cops came round I walked out of it scot free\nNowadays my face goes round with all the athletes\nTop floor, a mad scene, I'm living the dream\nPolice have got a list and they've got me: top thief\nI'm out so ring my main guy's guy he's discreet": {
+"thread": "The speaker went from broke and sleeping on floors with his girl to celebrity living, but he is a wanted thief who keeps escaping the police through his contacts.",
+"coherent": 1,
+"issue": "Bar 3 \"Skip on to the end\" is a meta filler line that adds no claim and breaks the flow.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Continues the past-poverty picture from bar 1."
+},
+{
+"n": 3,
+"follows": false,
+"issue": "Meta signpost with no claim; reads as filler, not part of the story."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Narrative turn: police arrive, but he escapes, which sets up the thief theme."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Contrasts past poverty with present celebrity status."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Escalates the success claim and echoes 'floor' from bar 2 as 'top floor'."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Deflates the success: police are hunting him as a top thief."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Shows him evading police through a contact, sustaining the wanted-thief claim."
+}
+]
 }
 }

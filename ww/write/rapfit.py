@@ -723,7 +723,7 @@ def check_block(slot: str, bars: list[str]) -> dict:
         d = max(c["depth"] for c in cs)
         e = max(c["echo"] for c in cs)
         depths.append(d)
-        end = tails[i].split()[-1] if tails[i] else "?"
+        end = tails[i] if tails[i] else "?"
         if d == 0:
             if e:
                 hard.append(f"tail: bar {i + 1} ('{end}'): rhymes with its group only on an unstressed tail ({e} syllable), the stressed syllables do not rhyme; a rhyme must start on a stressed syllable")

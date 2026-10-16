@@ -2191,9 +2191,9 @@ true
 3,
 4
 ],
-"rhyme_idx": 9,
+"rhyme_idx": 8,
 "head_idx": 0,
-"end_shape": "|w"
+"end_shape": "|ww"
 },
 {
 "bar": 48,
@@ -2299,9 +2299,9 @@ true
 55
 ],
 "triplets": [],
-"rhyme_idx": 5,
+"rhyme_idx": 4,
 "head_idx": 2,
-"end_shape": "|w"
+"end_shape": "|Sw"
 },
 {
 "bar": 50,

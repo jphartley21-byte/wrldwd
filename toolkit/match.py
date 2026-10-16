@@ -136,6 +136,14 @@ def spans(line):
     if not sy:
         return None, None
     st = [i for i, x in enumerate(sy) if x[1]]
+    # 16 Oct 2026: a closing object pronoun ('caught me', 'for me') is unstressed and part of the tail, as in ww/write/rhymeview.tail_start;
+    # the dictionary stresses it, which put the original's own word + 'me' endings' rhyme on 'me' (Joe on the original's bars 46-52)
+    ws = re.findall(r"[a-z']+", line.lower())
+    if ws and ws[-1] in ("me", "you", "ya") and len(st) > 1 and st[-1] == len(sy) - 1:
+        st = st[:-1]
+        # a one-syllable function word straight before it takes the stress ('for me' = /fɔː mi/), as in ww/write/rapfit.STRONG_FORM
+        if len(ws) > 1 and ws[-2] in ("for", "to", "at", "from", "of", "on", "with", "and", "as", "than") and len(sy) > 1:
+            st = [i for i in st if i < len(sy) - 2] + [len(sy) - 2]
     end = sy[st[-1]:] if st else sy[-2:]
     head = sy[st[0]:st[0] + 3] if st else None
     return head, end
