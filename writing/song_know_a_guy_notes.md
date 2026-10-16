@@ -159,3 +159,8 @@ Rewrite: 13 Cash for Cairns and it's cash for Wales and cash for Spain (Wales / 
     US-only slang is flagged, UK slang is not; the five bars he agreed with get fixed; "Hoi hoi to the Dutch" is fine. New hard checks:
     toolkit/localfit.py and ww/write/slangcheck.py (the original passes both). Seven bars rewritten. The hook now falls one short on the
     local-word and stamp quotas the Australian words had been filling.
+27. Joe (16 Oct, V1 25-32 against the original's bars 41-48): "have the lines and rhyme schemes got mixed up somehow?" Yes. The original
+    runs one rhyme for three bars, breaks for one bar that rhymes with nothing, then says one line twice with the end word changed, and
+    the rhyme flips on that word. Ours rhymed the break bar with the first three (five bars of one rhyme, then a jump to a new rhyme), and
+    its bars 5-6 were two unrelated lines. The gate only checked that bars with the same scheme letter rhyme, never that a lone letter
+    does not, and nothing measured the repeated line. Both are HARD now; bars 44-47 rewritten.

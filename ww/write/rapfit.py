@@ -59,6 +59,13 @@ STRONG_FORM = {"for": "ɔː", "to": "uː", "at": "æ", "from": "ɒ", "of": "ɒ",
 CHEAP_FAMILY = 150      # a rime shared by >= 150 dictionary words is CHEAP: the 38 commonest of 45,529 rimes, 8% of the dictionary
 CARPET_SHARE = 0.85     # end pairs heard (score >= FLOOR) must reach 85% of the original's count for the slot (the 12 Oct carpet rule)
 QUALITY_SLACK = 1       # cheap bars and identical-rime pairs may exceed the original's count by one (the title's "guy" lands once)
+# BREAK and TWIN (16 Oct 2026, Joe on V1 25-32: "Am I mistaken or have the lines and rhyme schemes got mixed up somehow?"). A lone letter in
+# the by-ear scheme is a BREAK bar: the original's 7 break bars rhyme with no other bar of their section (depth 0), bar 7 of V2 9-16 at most
+# on its stressed vowel (depth 1), so a break bar may rhyme no deeper than that (the cap is read from rhyme_bar_targets.json "breaks"). Ours
+# rhymed bar 4 two deep with bars 1-3, so the section ran one rhyme for five bars where the original runs three, breaks, and comes back.
+# A TWIN is two neighbouring bars that say the same line with the end word changed, the rhyme flipping on that word: the original has one
+# (V1 25-32 bars 5-6, 0.71 alike by word sequence; the next most alike pair in the song is 0.36). Where it twins, ours must.
+TWIN_RATIO = 0.6
 
 
 # words as they are SUNG on the original, where the dictionary says otherwise (Joe's ear: luego rhymes with Tobago, Mainz with Spain)
@@ -535,6 +542,16 @@ def write_depth_targets() -> dict:
 BAR_TARGETS = "rhyme_bar_targets.json"
 
 
+def _words_of(bar: str) -> list[str]:
+    return re.findall(r"[a-z0-9']+", bar.lower())
+
+
+def twin(a: str, b: str) -> float:
+    """how alike two bars are as word sequences (difflib ratio over words): 1.0 = the same line; the original's one twin pair is 0.71."""
+    import difflib
+    return difflib.SequenceMatcher(None, _words_of(a), _words_of(b)).ratio()
+
+
 def _tail_depth(a: str, b: str) -> int:
     from . import rhymeview
     return chain_best(_syl(rhymeview.tail_text(a.split())), _syl(rhymeview.tail_text(b.split())))["depth"]
@@ -569,8 +586,22 @@ def write_bar_targets() -> dict:
                 d = _tail_depth(A[i], B[j])
                 if d:
                     bnd.append({"a": a, "i": i, "b": b, "j": j, "depth": d})
-    out = {"_note": "the ORIGINAL's per-bar end-rhyme depth with its by-ear group, and its rhymes across section breaks (rapfit, numbers only)",
-           "bars": bars, "boundary": bnd}
+    # BREAK bars (a lone letter in the by-ear scheme): the deepest rhyme each makes with any other bar of its section; TWINS: bar indices i
+    # where bars i and i+1 are the same line with the end word changed (16 Oct 2026)
+    breaks, twins = {}, {}
+    for s, b in orig.items():
+        sch = slotcheck.spec(s)["scheme"]
+        if len(sch) == len(b):
+            sy = [_syl(rhymeview.tail_text(x.split())) for x in b]
+            lone = {str(i): max(chain_best(sy[i], sy[j])["depth"] for j in range(len(b)) if j != i) for i in range(len(b)) if sch.count(sch[i]) == 1}
+            if lone:
+                breaks[s] = lone
+        tw = [i for i in range(len(b) - 1) if twin(b[i], b[i + 1]) >= TWIN_RATIO]
+        if tw:
+            twins[s] = tw
+    out = {"_note": "the ORIGINAL's per-bar end-rhyme depth with its by-ear group, its rhymes across section breaks, the deepest rhyme each "
+                    "BREAK bar (a lone scheme letter) makes, and its TWIN bars (rapfit, numbers only)",
+           "bars": bars, "boundary": bnd, "breaks": breaks, "twins": twins}
     (config.BENCHMARK / BAR_TARGETS).write_text(_j.dumps(out, indent=1), encoding="utf-8")
     _bar_targets.cache_clear()
     return out
@@ -749,6 +780,26 @@ def check_block(slot: str, bars: list[str]) -> dict:
                 soft.append(f"bars {k + 1}-{k + 4}: the rhyme sits at different depths ({sorted(vals)}); a block should repeat ONE template, the same stressed syllable the same distance from the end in at least 3 of 4 bars")
             if tg >= 3 and sum(1 for d in vals if d >= 3) < 3:
                 hard.append(f"bars {k + 1}-{k + 4}: {slot} is a 3-syllable slot (the original's bars 1-4 and 5-8 each end on one three-syllable rhyme in at least 3 of 4 bars); only {sum(1 for d in vals if d >= 3)} of these bars do")
+    # BREAK (HARD, 16 Oct 2026): a lone letter in the by-ear scheme rhymes with no other bar, as the original's do (see TWIN_RATIO above)
+    brk = _bar_targets().get("breaks") or {}
+    cap = max((d for v in brk.values() for d in v.values()), default=None)
+    if cap is not None and n == len(scheme):
+        for i in range(n):
+            if scheme.count(scheme[i]) != 1:
+                continue
+            d, j = max((chain_best(syls[i], syls[j])["depth"], j) for j in range(n) if j != i)
+            if d > cap:
+                hard.append(f"break: bar {i + 1} ('{tails[i] or '?'}') rhymes {d} syllable(s) deep with bar {j + 1} ('{tails[j] or '?'}'); the "
+                            f"original's bar here is a BREAK that rhymes with no other bar (its breaks rhyme at most {cap} deep), so the rhyme "
+                            "runs on where the original stops it: end this bar on a sound no other bar in the section ends on")
+    # TWIN (HARD, 16 Oct 2026): where the original says the same line twice with the end word changed, ours must too
+    for i in (_bar_targets().get("twins") or {}).get(slot, []):
+        if i + 1 < len(bars):
+            r = twin(bars[i], bars[i + 1])
+            if r < TWIN_RATIO:
+                hard.append(f"twin: bars {i + 1}-{i + 2} are {r:.2f} alike; the original says the same line twice here with the end word "
+                            f"changed (its rhyme flips on that word, so the repeat carries the ear from one rhyme to the next): repeat bar "
+                            f"{i + 1} in bar {i + 2} and change only the end word, and at most the first (need >= {TWIN_RATIO} alike)")
     hard += quality_hard(slot, bars[:n])
     return {"hard": hard, "soft": soft, "depths": depths, "target": tg}
 

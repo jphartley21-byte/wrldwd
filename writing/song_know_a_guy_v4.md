@@ -17,6 +17,11 @@
 # JOE'S SEVEN, same day ("The other five flagged ones I agree should be flagged and fixed"; "The torch bar and servo pie bar have nothing to do
 # with Australia"; "US specific slang should be flagged, but not UK"): bars 8, 9, 14, 17, 22, 34, 56 rewritten (toolkit/localfit.py, ww/write/
 # slangcheck.py). ww gate: every section PASS; the hook is 1 short on two quotas (3 of 4 local words that fit, 6 of 7 stamps), open for Joe.
+# BREAK AND TWIN, same day (Joe on V1 25-32: "have the lines and rhyme schemes got mixed up somehow?"): the original's bar 44 is a
+# break that rhymes with nothing and its bars 45-46 are one line said twice with the end word changed, the rhyme flipping on that word;
+# ours rhymed bar 44 with 41-43 (five bars of one rhyme) and made 45-46 two unrelated lines. Both are HARD now (rapfit.check_block).
+# Bars 44-47 rewritten: a break bar ('hard bargain'), the twin 'Now the man I use buys Spain's mainland / ... is dead cheeky', and
+# 'Fifty quid' (was 'Forty', the original's own word there). ww gate: every section PASS; the two hook quotas above are still open.
 # V3 (16 Oct 2026, Joe: "Go for all 3, add the gates, verify them, then write the new draft to pass all gates and print it"): v2 rewritten to
 # the new rhyme-texture gate (toolkit/texture.py: internal rhyme amount + strength, frame / link sandwiches, multisyllabic runs across
 # words, each per section against the original's same section). v2 failed it in 8 of 10 sections; v3 passes all 10. ww gate PASS
@@ -120,12 +125,13 @@ Rode in van to van, a real Marathon
 Mozzarella and capers? It's my guy in Naples
 Marrakesh when I'm able, my guy there will sew a label
 Barber's cut-throat shave? Free: on the house, cards on the table
-Beer's dear? In Bergen near fatal
-And I own the fleet on Thai mainland
-But the baccy price is dead cheeky
-Forty quid? Now don't call my guy greedy
+These days I drive a hard bargain
+Now the man I use buys Spain's mainland
+Now the man I use is dead cheeky
+Fifty quid? Now don't call my guy greedy
 Where am I? Gone to my guy's guy, he's local, for more freebies
 #cash 3 | cards on the table | table
+#cash 4 | drive a hard bargain | bargain
 #cash 6 | dead cheeky | cheeky
 
 == V1 33-44

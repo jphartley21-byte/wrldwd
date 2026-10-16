@@ -127,6 +127,13 @@ LEGACY = {
         "must agree, and a bar about America may use American slang (as the original's bars 67-68 do). The original flags nothing; 4 of 4 US-only "
         "fixtures caught, 0 of 4 UK-slang fixtures flagged (toolkit/tests/us_slang.txt, mine bar Joe's 'torch'); the prompt was tightened once "
         "against the original's false flags (cockney, drill), so the original's pass is partly in-sample"),
+    # 16 Oct 2026, Joe on V1 25-32: "Am I mistaken or have the lines and rhyme schemes got mixed up somehow?"
+    "rapfit.check_block break / twin (a lone scheme letter rhymes with nothing; the original's twin bars stay twins)": ("joe_rule", "HARD in "
+        "slotcheck since 16 Oct 2026. BREAK: the original's 7 break bars rhyme at most 1 syllable deep with any bar of their section (6 at 0), so "
+        "a break bar may not rhyme deeper; TWIN: the original's only pair of neighbouring bars said twice with the end word changed (V1 25-32 bars "
+        "5-6, 0.71 alike by word sequence; the next most alike pair in the song is 0.36) must be >= 0.6 alike in ours. Pars in "
+        "benchmark/rhyme_bar_targets.json (numbers only). The original passes both by construction; Joe's v4 block fails both "
+        "(toolkit/tests/rhyme_complaints.txt). One case each; no bar Joe has called good tests them for false alarms"),
     # 15 Oct 2026, Joe: "Do we have any gates that check quality? ... Scoring on cleverness?" and "I should be able to use claude too".
     "ww/write/sensecheck.py on Claude (haiku via the claude CLI, no key)": ("joe_rule", "HARD per slot since 15 Oct 2026 (sense gate: Joe, 14 Oct). "
         "Calibration (2 reads per block, a bar fails only if both fail it, pronoun rule): good bars failed 1/7, bad passed 1/7 on 3 of 3 fresh runs. "

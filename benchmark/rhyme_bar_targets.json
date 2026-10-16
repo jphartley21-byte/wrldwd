@@ -1,5 +1,5 @@
 {
- "_note": "the ORIGINAL's per-bar end-rhyme depth with its by-ear group, and its rhymes across section breaks (rapfit, numbers only)",
+ "_note": "the ORIGINAL's per-bar end-rhyme depth with its by-ear group, its rhymes across section breaks, the deepest rhyme each BREAK bar (a lone scheme letter) makes, and its TWIN bars (rapfit, numbers only)",
  "bars": {
   "Hook 1-4": [
    2,
@@ -155,5 +155,31 @@
    "j": 1,
    "depth": 1
   }
- ]
+ ],
+ "breaks": {
+  "Hook 9-16": {
+   "4": 0,
+   "6": 0
+  },
+  "V1 1-8": {
+   "6": 0
+  },
+  "V1 9-16": {
+   "2": 0
+  },
+  "V1 25-32": {
+   "3": 0
+  },
+  "V1 33-44": {
+   "10": 0
+  },
+  "V2 9-16": {
+   "6": 1
+  }
+ },
+ "twins": {
+  "V1 25-32": [
+   4
+  ]
+ }
 }

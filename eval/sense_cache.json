@@ -43154,5 +43154,555 @@
 "[haiku]\nUSSLANG2\nMozzarella and capers? It's my guy in Naples\nMarrakesh when I'm able, my guy there, he sews a label\nBarber's cut-throat shave? Free: on the house, cards on the table\nBeer's dear in Bergen? Near fatal\nAnd I own the whole fleet, Thai mainland\nBut the fags? Cheap packs: it's dead cheeky\nForty a day? My guy is sorting me\nWhere am I? Gone to my guy's guy, he's local, for more freebies": [
 [],
 []
+],
+"[haiku]\nMozzarella and capers? It's my guy in Naples\nMarrakesh when I'm able, my guy there will sew a label\nBarber's cut-throat shave? Free: on the house, cards on the table\nOut east? I drive a hard bargain\nAnd the guy I know runs Thai mainland\nAnd the guy I know runs bars cheaply\nFifty baht? Now don't call my guy greedy\nWhere am I? Gone to my guy's guy, he's local, for more freebies": [
+{
+"n": 1,
+"reading": "Is it mozzarella and capers? It's from my guy in Naples.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "When I am able, my guy in Marrakesh will sew a label on it.",
+"grammatical": true,
+"sense": 1,
+"issue": "Opening fragment is clipped; 'sew a label' meaning is unclear."
+},
+{
+"n": 3,
+"reading": "Is it a barber's cut-throat shave? It's free, on the house, with the cards on the table.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Cards on the table' is an idiom with no clear link to the shave."
+},
+{
+"n": 4,
+"reading": "Is it out east? I drive a hard bargain.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Out east?' is an unclear fragment; the claim is only half-linked."
+},
+{
+"n": 5,
+"reading": "The guy I know runs the Thai mainland.",
+"grammatical": true,
+"sense": 0,
+"issue": "'Runs Thai mainland' is not an idiom; the object has no clear meaning."
+},
+{
+"n": 6,
+"reading": "The guy I know runs bars cheaply.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Runs bars cheaply' is strained; reads as cheap-priced or badly run."
+},
+{
+"n": 7,
+"reading": "Is it fifty baht? Now don't call my guy greedy.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "Where am I? I've gone to my guy's guy, who is local, for more freebies.",
+"grammatical": true,
+"sense": 1,
+"issue": "Subject dropped in 'Gone to'; 'for more freebies' is strained."
+}
+],
+"[haiku]\nBLOCK2\nMozzarella and capers? It's my guy in Naples\nMarrakesh when I'm able, my guy there will sew a label\nBarber's cut-throat shave? Free: on the house, cards on the table\nOut east? I drive a hard bargain\nAnd the guy I know runs Thai mainland\nAnd the guy I know runs bars cheaply\nFifty baht? Now don't call my guy greedy\nWhere am I? Gone to my guy's guy, he's local, for more freebies": {
+"thread": "The speaker boasts that his contacts in cities around the world get him free or cheap goods and services, and that the favours chain through \"my guy's guy.\"",
+"coherent": 1,
+"issue": "Bars 5–6 repeat the formula; 'Thai mainland' and 'runs bars cheaply' are unclear.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Repeats the 'my guy in a city' pattern with a new place and a concrete favour."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Continues the freebies theme with a barber, escalating to 'on the house'."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Contrasts the speaker's own hard bargaining with his contacts' freebies; the shift is signalled by the question."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Adds another contact, but 'runs Thai mainland' is unclear to a listener."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Near-identical to bar 5 in structure; adds little beyond 'cheaply'."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Deflates the cheapness claim by pricing it in baht and defending the guy's greed."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "'Where am I?' jolts the listener, but 'guy's guy' and 'freebies' pick the thread back up."
+}
+]
+},
+"[haiku]\nUSSLANG2\nMozzarella and capers? It's my guy in Naples\nMarrakesh when I'm able, my guy there will sew a label\nBarber's cut-throat shave? Free: on the house, cards on the table\nOut east? I drive a hard bargain\nAnd the guy I know runs Thai mainland\nAnd the guy I know runs bars cheaply\nFifty baht? Now don't call my guy greedy\nWhere am I? Gone to my guy's guy, he's local, for more freebies": [
+[],
+[]
+],
+"[haiku]\nMozzarella and capers? It's my guy in Naples\nMarrakesh when I'm able, my guy there will sew a label\nBarber's cut-throat shave? Free: on the house, cards on the table\nAway, I drive a hard bargain\nAnd the guy I use buys Spain's mainland\nAnd the guy I use is dead cheeky\nFifty quid? Now don't call my guy greedy\nWhere am I? Gone to my guy's guy, he's local, for more freebies": [
+{
+"n": 1,
+"reading": "Is it mozzarella and capers, for my guy in Naples?",
+"grammatical": true,
+"sense": 1,
+"issue": "Opening question is a bare noun list; the claim is only guessable."
+},
+{
+"n": 2,
+"reading": "When I'm able, my guy in Marrakesh will sew a label.",
+"grammatical": true,
+"sense": 1,
+"issue": "Elliptical opener; a label on what is unstated."
+},
+{
+"n": 3,
+"reading": "The barber's cut-throat shave is free, on the house, with cards on the table.",
+"grammatical": true,
+"sense": 1,
+"issue": "Idiom stack with no real verb; meaning strained."
+},
+{
+"n": 4,
+"reading": "Away, I drive a hard bargain.",
+"grammatical": false,
+"sense": 1,
+"issue": "\"Away\" has no clear role; the clause after it is fine."
+},
+{
+"n": 5,
+"reading": "The guy I use buys Spain's mainland.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "The guy I use is very cheeky.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "Fifty quid, so don't call my guy greedy.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "\"Gone to my guy's guy\" is a participle with no clause; \"for more freebies\" dangles."
+}
+],
+"[haiku]\nBLOCK2\nMozzarella and capers? It's my guy in Naples\nMarrakesh when I'm able, my guy there will sew a label\nBarber's cut-throat shave? Free: on the house, cards on the table\nAway, I drive a hard bargain\nAnd the guy I use buys Spain's mainland\nAnd the guy I use is dead cheeky\nFifty quid? Now don't call my guy greedy\nWhere am I? Gone to my guy's guy, he's local, for more freebies": {
+"thread": "The speaker boasts that he has a contact for everything, each one dodgy, cheeky and cheap or free, so he never pays full price.",
+"coherent": 2,
+"issue": "Bar 4's \"Away\" and bar 8's \"Where am I?\" are muddled, though the thread is clear.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Another overseas contact, extending the 'guy for everything' pattern."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "A free barber's shave continues the freebies-from-contacts theme."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Shifts to the speaker's own bargaining, though 'Away' is unclear."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Absurd escalation: the contact buys Spain's mainland."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Describes the contact's cheek, supporting the dodgy-contacts claim."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Defends the contact against 'greedy', reinforcing the cheap-deal theme."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Escalates to a guy's guy, though 'Where am I?' is disorienting."
+}
+]
+},
+"[haiku]\nUSSLANG2\nMozzarella and capers? It's my guy in Naples\nMarrakesh when I'm able, my guy there will sew a label\nBarber's cut-throat shave? Free: on the house, cards on the table\nAway, I drive a hard bargain\nAnd the guy I use buys Spain's mainland\nAnd the guy I use is dead cheeky\nFifty quid? Now don't call my guy greedy\nWhere am I? Gone to my guy's guy, he's local, for more freebies": [
+[],
+[]
+],
+"[haiku]\nMozzarella and capers? It's my guy in Naples\nMarrakesh when I'm able, my guy there will sew a label\nBarber's cut-throat shave? Free: on the house, cards on the table\nThese days I drive a hard bargain\nAnd the guy I use buys Spain's mainland\nAnd the guy I use is dead cheeky\nFifty quid? Now don't call my guy greedy\nWhere am I? Gone to my guy's guy, he's local, for more freebies": [
+{
+"n": 1,
+"reading": "The mozzarella and capers come from my guy in Naples.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "When I'm able, my guy in Marrakesh will sew a label.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 3,
+"reading": "A barber's cut-throat shave is free, on the house, with cards on the table.",
+"grammatical": true,
+"sense": 1,
+"issue": "Elliptical fragments; 'cards on the table' has no clear link to the shave."
+},
+{
+"n": 4,
+"reading": "These days I drive a hard bargain.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "The guy I use buys Spain's mainland.",
+"grammatical": true,
+"sense": 1,
+"issue": "Grammatical, but the literal claim is absurd and the joke is unclear."
+},
+{
+"n": 6,
+"reading": "The guy I use is very cheeky.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "Fifty quid? Don't call my guy greedy.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "I've gone to my guy's guy, who is local, for more freebies.",
+"grammatical": false,
+"sense": 1,
+"issue": "'Gone' has no subject; 'I've' is dropped, leaving a participle with no clause."
+}
+],
+"[haiku]\nBLOCK2\nMozzarella and capers? It's my guy in Naples\nMarrakesh when I'm able, my guy there will sew a label\nBarber's cut-throat shave? Free: on the house, cards on the table\nThese days I drive a hard bargain\nAnd the guy I use buys Spain's mainland\nAnd the guy I use is dead cheeky\nFifty quid? Now don't call my guy greedy\nWhere am I? Gone to my guy's guy, he's local, for more freebies": {
+"thread": "The speaker is a cheeky middleman boasting that an ever-widening chain of \"my guy\" contacts gets him goods and favours cheaply or free, and that he drives hard bargains on their behalf.",
+"coherent": 1,
+"issue": "Bars 4 and 7 blur whether he is the buyer or the fixer, muddying the claim.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Another contact in Marrakesh extends the network joke."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Free barber shave continues the freebies theme."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Pivots to his own bargaining, a loose but traceable shift."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Escalates the contacts' power absurdly, buying Spain's mainland."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Continues the characterisation of the guy as cheeky."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Price talk continues the bargaining theme, though whose price is unclear."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Chains to the guy's guy for more freebies, a deliberate punchline."
+}
+]
+},
+"[haiku]\nUSSLANG2\nMozzarella and capers? It's my guy in Naples\nMarrakesh when I'm able, my guy there will sew a label\nBarber's cut-throat shave? Free: on the house, cards on the table\nThese days I drive a hard bargain\nAnd the guy I use buys Spain's mainland\nAnd the guy I use is dead cheeky\nFifty quid? Now don't call my guy greedy\nWhere am I? Gone to my guy's guy, he's local, for more freebies": [
+[],
+[]
+],
+"[haiku]\nMozzarella and capers? It's my guy in Naples\nMarrakesh when I'm able, my guy there will sew a label\nBarber's cut-throat shave? Free: on the house, cards on the table\nThese days I drive a hard bargain\nNow the man I use buys Spain's mainland\nNow the man I use is dead cheeky\nFifty quid? Now don't call my guy greedy\nWhere am I? Gone to my guy's guy, he's local, for more freebies": [
+{
+"n": 1,
+"reading": "Is the mozzarella and capers thing a question? It's from my guy in Naples.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "When I'm able, my guy in Marrakesh will sew a label on.",
+"grammatical": true,
+"sense": 1,
+"issue": "Label's purpose and what it is sewn onto are unclear."
+},
+{
+"n": 3,
+"reading": "A barber's cut-throat shave is offered free, on the house, with the cards on the table.",
+"grammatical": true,
+"sense": 1,
+"issue": "Stacked phrases with no verb; 'cards on the table' is strained."
+},
+{
+"n": 4,
+"reading": "These days I drive a hard bargain.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "Now the man I use buys mainland Spain.",
+"grammatical": true,
+"sense": 1,
+"issue": "Buying a country's mainland is absurd; reads as strained hyperbole."
+},
+{
+"n": 6,
+"reading": "Now the man I use is very cheeky.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "The speaker asks about fifty quid and tells listeners not to call his guy greedy.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "The speaker has gone to his guy's guy, who is local, for more freebies.",
+"grammatical": false,
+"sense": 1,
+"issue": "'Gone to' lacks a subject and verb; reads as a participle fragment."
+}
+],
+"[haiku]\nBLOCK2\nMozzarella and capers? It's my guy in Naples\nMarrakesh when I'm able, my guy there will sew a label\nBarber's cut-throat shave? Free: on the house, cards on the table\nThese days I drive a hard bargain\nNow the man I use buys Spain's mainland\nNow the man I use is dead cheeky\nFifty quid? Now don't call my guy greedy\nWhere am I? Gone to my guy's guy, he's local, for more freebies": {
+"thread": "The speaker is a well-connected operator who gets goods, services and bargains for free or cheap through an escalating chain of \"guys\" in cities around the world.",
+"coherent": 2,
+"issue": "Bar 5's \"buys Spain's mainland\" is unclear as a punchline and its point about the connection is hard to catch.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Marrakesh label-sewing contact extends the Naples guy pattern of foreign favours."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Free barber shave continues the freebies theme from the contacts."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Hard bargain contrasts with the freebies, a deflating shift that still fits the network idea."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Escalates the man-I-use network to buying a country's mainland."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Picks up 'the man I use' and characterises him as cheeky, keeping the same referent."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Defends the guy's pricing, tying back to the bargain and cheeky lines."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Guy's guy extends the chain to more freebies, closing the escalation."
+}
+]
+},
+"[haiku]\nUSSLANG2\nMozzarella and capers? It's my guy in Naples\nMarrakesh when I'm able, my guy there will sew a label\nBarber's cut-throat shave? Free: on the house, cards on the table\nThese days I drive a hard bargain\nNow the man I use buys Spain's mainland\nNow the man I use is dead cheeky\nFifty quid? Now don't call my guy greedy\nWhere am I? Gone to my guy's guy, he's local, for more freebies": [
+[],
+[]
+],
+"[haiku]\nPOINT2\nMozzarella and capers? It's my guy in Naples\nMarrakesh when I'm able, my guy there will sew a label\nBarber's cut-throat shave? Free: on the house, cards on the table\nThese days I drive a hard bargain\nNow the man I use buys Spain's mainland\nNow the man I use is dead cheeky\nFifty quid? Now don't call my guy greedy\nWhere am I? Gone to my guy's guy, he's local, for more freebies": [
+[
+{
+"n": 1,
+"point": "Asks rhetorically whether the mozzarella and capers are from somewhere, then answers that they come from his contact in Naples.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 2,
+"point": "Once he gets to Marrakesh, his contact there will sew a label on (fake designer goods).",
+"worked_out": true,
+"how": "'Sew a label' is not stated as counterfeiting; the fan has to infer that it means putting a fake brand label on goods.",
+"natural": true,
+"lands": true
+},
+{
+"n": 3,
+"point": "Asks whether he gets a cut-throat shave, then says it is free from the barber, who is a contact handing out favours; he is being open about it.",
+"worked_out": true,
+"how": "The barber is not said to be a contact; the fan has to supply that the free shave is a favour from a source, and read 'cards on the table' as 'being upfront'.",
+"natural": false,
+"lands": false
+},
+{
+"n": 4,
+"point": "He is now a tough negotiator, driving a hard bargain with buyers or sellers.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 5,
+"point": "His supplier buys up mainland Spain, a joke boast about how big the supplier's buying power is.",
+"worked_out": true,
+"how": "'Buys Spain's mainland' is not a real phrase; the fan must read it as a hyperbolic boast that the supplier buys whole territories, possibly punning on the mainland versus the islands.",
+"natural": false,
+"lands": false
+},
+{
+"n": 6,
+"point": "His supplier is very brazen and cheeky.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 7,
+"point": "Fifty quid is the price, and he defends his guy, saying he is not greedy.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 8,
+"point": "He has lost track of where he is, having gone to his guy's guy, a local, for more freebies.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+}
+],
+[
+{
+"n": 1,
+"point": "Mozzarella and capers come from the speaker's contact in Naples, a boast about sourcing.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 2,
+"point": "When he gets to Marrakesh, his contact there will sew on a label, which implies fake designer goods.",
+"worked_out": true,
+"how": "'Label' has no object and no stated purpose; the counterfeit-label sense is supplied from the context of contacts and goods.",
+"natural": true,
+"lands": true
+},
+{
+"n": 3,
+"point": "The barber gives a straight-razor shave free, with no catch and nothing hidden.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 4,
+"point": "The speaker now drives a tough bargain, meaning he is a hard negotiator.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 5,
+"point": "The speaker's man is so big-time he buys up mainland Spain, an exaggerated boast about wealth or scale.",
+"worked_out": true,
+"how": "'Buys Spain's mainland' is literal nonsense; the hyperbole and the intended sense of 'big-time buyer' have to be supplied.",
+"natural": false,
+"lands": false
+},
+{
+"n": 6,
+"point": "The man he uses is very cheeky, with 'dead' as an intensifier.",
+"worked_out": false,
+"how": "",
+"natural": true,
+"lands": true
+},
+{
+"n": 7,
+"point": "The price is fifty quid, and he pre-empts the complaint that the guy is greedy.",
+"worked_out": true,
+"how": "The item being priced is never named, so the referent of 'fifty quid' has to be supplied from context.",
+"natural": true,
+"lands": true
+},
+{
+"n": 8,
+"point": "The speaker has gone to a local contact of his guy's guy for more freebies, a joke about chasing free stuff down the chain.",
+"worked_out": true,
+"how": "'Where am I?' is a rhetorical, disoriented opener, and the link to the freebies theme of item 3 has to be supplied.",
+"natural": true,
+"lands": true
+}
+]
 ]
 }
