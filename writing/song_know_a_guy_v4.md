@@ -9,6 +9,11 @@
 # RUN-BREAK REFIT, same day (Joe: "Yes hard gate those too and refit"): a stop (? : , !) where the original's next syllable comes on the
 # very next 16th is now HARD (toolkit/flow_par.py run_breaks, the original's same bar as par). 25 bars changed: mostly stops removed or moved
 # to a real gap; bars 36, 47, 61 and 66 reworded; bars 21, 44 and 47 keep the internal rhymes the section needs. ww gate PASS (sense ON).
+# ONE SENTENCE OVER THE BAR LINE, same day (Joe: the original's bars 13-14 work "because it's a sentence over 2 lines"; ours were "two
+# sentences which messes up the flow"; "Same here" on bars 67-68): where the original's bar runs on into the next (6 bar lines: 13, 15, 25,
+# 26, 31, 67), ours must too (toolkit/flow_par.carry, HARD). Bars 25-26 already did; bars 14, 16, 32 and 68 now finish the bar before:
+# "For a servo pie", "'Cause by night I know a guy", "To be sprung by my main guy's guy who's discreet", "'Cause a call to my guy makes
+# it mine". ww gate PASS (sense ON).
 # V3 (16 Oct 2026, Joe: "Go for all 3, add the gates, verify them, then write the new draft to pass all gates and print it"): v2 rewritten to
 # the new rhyme-texture gate (toolkit/texture.py: internal rhyme amount + strength, frame / link sandwiches, multisyllabic runs across
 # words, each per section against the original's same section). v2 failed it in 8 of 10 sections; v3 passes all 10. ww gate PASS
@@ -58,9 +63,9 @@ My brief's a better call than Saul
 Four-wheeler's dead on arrival
 My doorman will put you through the floor
 Cash for Spain and it's cash for trains and cash for planes
-Prost, and I don't buy
+For a servo pie
 Hanoi bikes are getaway cars
-If you're stuck I know a guy
+'Cause by night I know a guy
 #cash 2 | better call Saul | Saul
 #cash 3 | dead on arrival | arrival
 #cash 7 | getaway car | cars
@@ -88,7 +93,7 @@ But the cops came round I walked out of it scot free
 Nowadays my face goes round with all the athletes
 Top floor's a mad scene I'm living the dream
 Police have got a list and they got me: top thief
-I'm out so ring my main guy's guy he's discreet
+To be sprung by my main guy's guy who's discreet
 #cash 4 | scot free | free
 #cash 6 | living the dream | dream
 
@@ -148,7 +153,7 @@ The reef? I dived, the sharks were in the crossfire
 You wouldn't believe big boats and jets at night
 You get it for free from my guy if pigs can fly
 I drive to his bay, dive, and I'm back by five
-Name your price and one call makes it mine
+'Cause a call to my guy makes it mine
 #cash 2 | do or die | die
 #cash 6 | pigs can fly | fly
 

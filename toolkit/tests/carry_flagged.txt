@@ -1,0 +1,5 @@
+# Joe's complaints about a sentence that should run over the bar line (16 Oct 2026). Added FIRST, before the bars were fixed (rule 10).
+# Format: bar N | our bar N | our bar N+1 | what he heard. calibrate.py (via flow_par selftest) asserts every pair below fails
+# flow_par.carry_hard where the original's own bars N and N+1 are one sentence, and that the original passes.
+13 | Cash for Spain and it's cash for trains and cash for planes | Prost, and I don't buy | 16 Oct: the original's bars 13-14 work "because it's a sentence over 2 lines"; "ours it's two sentences which messes up the flow"
+67 | I drive to his bay, dive, and I'm back by five | Name your price and one call makes it mine | 16 Oct: "Same here": the original's bar 67 runs into 68 through the middle of a word; ours ends a sentence at the bar line

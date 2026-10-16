@@ -553,6 +553,10 @@ def check(slot: str, bars: list[str], context: list[str] | None = None, tol: int
         extra["texture"] = _tx.profile(bars[:n])
         if tf:
             hard.append("rhyme texture below the original's section: " + _tx.describe(tf))
+    # ONE SENTENCE OVER THE BAR LINE, HARD (16 Oct 2026, Joe on bars 13-14: the original "works because it's a sentence over 2 lines";
+    # ours was "two sentences which messes up the flow"): toolkit/flow_par.carry_hard, where the original's bar runs on into the next
+    import flow_par as _fpc
+    hard += _fpc.carry_hard(start, bars[:n])
     fr = frames.scan({"s": bars})
     if fr["banned"] or fr["section"]:
         hard.append(f"filler frames {[p for v in fr['banned'].values() for p, _ in v]}")

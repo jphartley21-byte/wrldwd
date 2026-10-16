@@ -33325,5 +33325,405 @@
 "issue": "Escalates to being bad news in several places, but the named cities are unexplained and the link to jail is loose."
 }
 ]
+},
+"[haiku]\nG'day there's a torch on call\nMy brief's a better call than Saul\nFour-wheeler's dead on arrival\nMy doorman will put you through the floor\nCash for Spain and it's cash for trains and cash for planes\nFor a plate of Thai\nHanoi bikes are getaway cars\n'Cause out there I know a guy": [
+{
+"n": 1,
+"reading": "Hello, there is a torch on call.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Torch on call' is cryptic; the meaning is unclear without context."
+},
+{
+"n": 2,
+"reading": "My brief is a better call than Saul's.",
+"grammatical": true,
+"sense": 1,
+"issue": "Relies on knowing Saul Goodman's lawyer reference; the claim is strained."
+},
+{
+"n": 3,
+"reading": "The four-wheeler was dead on arrival.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "My doorman will put you through the floor.",
+"grammatical": true,
+"sense": 1,
+"issue": "Violent hyperbole; 'through the floor' is strained as a threat."
+},
+{
+"n": 5,
+"reading": "It's cash for Spain, cash for trains, and cash for planes.",
+"grammatical": false,
+"sense": 1,
+"issue": "'Cash for Spain' is a verbless fragment joined awkwardly to a clause."
+},
+{
+"n": 6,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 0,
+"issue": "Prepositional phrase with no clause; nothing is said or claimed."
+},
+{
+"n": 7,
+"reading": "Hanoi bikes are getaway cars.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "I know a guy out there.",
+"grammatical": false,
+"sense": 1,
+"issue": "Opens with 'Cause; reason clause has no main clause standing alone."
+}
+],
+"[haiku]\nBLOCK2\nG'day there's a torch on call\nMy brief's a better call than Saul\nFour-wheeler's dead on arrival\nMy doorman will put you through the floor\nCash for Spain and it's cash for trains and cash for planes\nFor a plate of Thai\nHanoi bikes are getaway cars\n'Cause out there I know a guy": {
+"thread": "The speaker is a well-connected fixer who claims he can buy his way out of trouble with a good lawyer, muscle, cash and a motorbike getaway through Hanoi.",
+"coherent": 1,
+"issue": "Bar 6, \"For a plate of Thai\", is unexplained and reads as a non sequitur in the escape plan.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Lawyer boast escalates the fixer claim from bar 1."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Dead car sets up the bike getaway contrast later."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Doorman threat adds muscle to the fixer image."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Cash for escape routes continues the fixing and escape theme."
+},
+{
+"n": 6,
+"follows": false,
+"issue": "Thai plate is unexplained: bribe or meal is unclear, so it breaks the line of thought."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Motorbike getaways deflate the dead four-wheeler from bar 3."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Knowing a guy pays off the connections claim throughout."
+}
+]
+},
+"[haiku]\nBack then my bird was poor, she\nBroke, kipped on the floor we\nSkip on to the end\nBut the cops came round I walked out of it scot free\nNowadays my face goes round with all the athletes\nTop floor's a mad scene I'm living the dream\nPolice have got a list and they got me: top thief\nTo be sprung by my main guy's guy who's discreet": [
+{
+"n": 1,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "Clause left open; 'she' has no predicate in the bar"
+},
+{
+"n": 2,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "'we' has no verb; the list of states is never completed"
+},
+{
+"n": 3,
+"reading": "Skip on to the end.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "But the cops came round, and I walked out of it scot free.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 5,
+"reading": "My face goes round with all the athletes.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Face goes round with athletes' is strained; meaning is unclear"
+},
+{
+"n": 6,
+"reading": "The top floor is a mad scene, and I'm living the dream.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "The police have got a list and they've got me: top thief.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "Fragment: infinitive 'to be sprung' has no main clause"
+}
+],
+"[haiku]\nBLOCK2\nBack then my bird was poor, she\nBroke, kipped on the floor we\nSkip on to the end\nBut the cops came round I walked out of it scot free\nNowadays my face goes round with all the athletes\nTop floor's a mad scene I'm living the dream\nPolice have got a list and they got me: top thief\nTo be sprung by my main guy's guy who's discreet": {
+"thread": "The speaker, once a broke thief kipping on the floor with his woman, is now a celebrated top criminal whom the police cannot hold and his crew springs free.",
+"coherent": 1,
+"issue": "\"Skip on to the end\" is a meta filler that breaks the story, and \"the athletes\" in bar 5 is never explained.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Continues the poverty picture from bar 1 and sets up the crime turn."
+},
+{
+"n": 3,
+"follows": false,
+"issue": "Meta stage direction that skips the story rather than supporting the claim."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Turns from poverty to the first brush with the law, escalating the thief claim."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Contrasts past poverty with present fame, though 'the athletes' is unclear."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "Escalates the celebrity claim with 'living the dream' on the top floor."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Police hunting him as top thief raises the stakes and sets up the rescue."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Answers the police threat with a discreet rescue, though the phrasing is clumsy."
+}
+]
+},
+"[haiku]\nOn Whitsundays a yacht? Yeah I've got a guy\nUp K'gari in the ute where you do or die\nMy guy's Bangkok van does the top fried rice\nThe reef? I dived, the sharks were in the crossfire\nYou wouldn't believe big boats and jets at night\nYou get it for free from my guy if pigs can fly\nI drive to his bay, dive, and I'm back by five\n'Cause a call to my guy makes it mine": [
+{
+"n": 1,
+"reading": "Do you want a yacht on the Whitsundays? Yeah, I've got a guy.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 2,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 1,
+"issue": "Prepositional fragment with no verb; relative clause hangs without a main clause."
+},
+{
+"n": 3,
+"reading": "My guy's Bangkok van makes the best fried rice.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "As for the reef, I dived, and the sharks were in the crossfire.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Crossfire' is a strained metaphor; the sharks' situation is unclear."
+},
+{
+"n": 5,
+"reading": "You would not believe the big boats and jets at night.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 6,
+"reading": "You get it free from my guy, but only if pigs can fly.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 7,
+"reading": "I drive to his bay, dive, and I'm back by five.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "A call to my guy makes it mine.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+}
+],
+"[haiku]\nBLOCK2\nOn Whitsundays a yacht? Yeah I've got a guy\nUp K'gari in the ute where you do or die\nMy guy's Bangkok van does the top fried rice\nThe reef? I dived, the sharks were in the crossfire\nYou wouldn't believe big boats and jets at night\nYou get it for free from my guy if pigs can fly\nI drive to his bay, dive, and I'm back by five\n'Cause a call to my guy makes it mine": {
+"thread": "The speaker claims that one connection, \"my guy\", gives him access to any luxury or adventure, from yachts and reef dives to a Bangkok food van, so a single call makes it all his.",
+"coherent": 1,
+"issue": "Bar 3 (Bangkok van) and bar 5 (jets at night) are vague jumps that don't clearly tie back to the guy's access.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Ute trip to K'gari extends the yacht claim into more of the guy's access."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Bangkok fried rice van widens the guy's reach, though the jump is abrupt."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Reef dive with sharks in the crossfire escalates the access claim with danger."
+},
+{
+"n": 5,
+"follows": false,
+"issue": "'Big boats and jets at night' is vague and does not clearly support the access claim."
+},
+{
+"n": 6,
+"follows": true,
+"issue": "'Free if pigs can fly' deflates the claim with a punchline about the guy's generosity."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Driving to his bay and back by five shows the effortless access the claim describes."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "Closing line restates the claim that a call to the guy makes it mine."
+}
+]
+},
+"[haiku]\nG'day there's a torch on call\nMy brief's a better call than Saul\nFour-wheeler's dead on arrival\nMy doorman will put you through the floor\nCash for Spain and it's cash for trains and cash for planes\nFor a servo pie\nHanoi bikes are getaway cars\n'Cause by night I know a guy": [
+{
+"n": 1,
+"reading": "Hello, there is a torch on call.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Torch' as slang for an arsonist or enforcer is unclear to a stranger."
+},
+{
+"n": 2,
+"reading": "My brief is a better call than Saul.",
+"grammatical": true,
+"sense": 1,
+"issue": "Better Call Saul pun needs show knowledge; 'brief' is ambiguous."
+},
+{
+"n": 3,
+"reading": "The four-wheeler is dead on arrival.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 4,
+"reading": "My doorman will put you through the floor.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Put through the floor' idiom is strained; violent or price-cutting sense unclear."
+},
+{
+"n": 5,
+"reading": "There is cash for Spain, and it is cash for trains and cash for planes.",
+"grammatical": true,
+"sense": 1,
+"issue": "'Cash for Spain' is unclear; the sense of paying for travel is guessable."
+},
+{
+"n": 6,
+"reading": "UNCLEAR",
+"grammatical": false,
+"sense": 0,
+"issue": "Prepositional phrase with no verb; does not complete bar 5 and makes no claim."
+},
+{
+"n": 7,
+"reading": "Hanoi bikes are getaway cars.",
+"grammatical": true,
+"sense": 2,
+"issue": ""
+},
+{
+"n": 8,
+"reading": "I know a guy by night.",
+"grammatical": true,
+"sense": 1,
+"issue": "Works only as an answer to an unstated why; no standalone main clause."
+}
+],
+"[haiku]\nBLOCK2\nG'day there's a torch on call\nMy brief's a better call than Saul\nFour-wheeler's dead on arrival\nMy doorman will put you through the floor\nCash for Spain and it's cash for trains and cash for planes\nFor a servo pie\nHanoi bikes are getaway cars\n'Cause by night I know a guy": {
+"thread": "The speaker is a criminal fixer with muscle, a lawyer and a getaway network who claims he can get you out of trouble and out of the country.",
+"coherent": 1,
+"issue": "Bar 6 \"For a servo pie\" has no clear referent and breaks the escape theme.",
+"links": [
+{
+"n": 2,
+"follows": true,
+"issue": "Lawyer boast escalates the fixer claim, though 'torch' and 'brief' slang may puzzle a stranger."
+},
+{
+"n": 3,
+"follows": true,
+"issue": "Dead car sets up the need for an alternative getaway, paid off by bar 7."
+},
+{
+"n": 4,
+"follows": true,
+"issue": "Doorman threat adds muscle to the fixer picture."
+},
+{
+"n": 5,
+"follows": true,
+"issue": "Cash for Spain, trains and planes shows the escape network in action."
+},
+{
+"n": 6,
+"follows": false,
+"issue": "Servo pie is unexplained; it reads as a non sequitur rather than a clear deflation."
+},
+{
+"n": 7,
+"follows": true,
+"issue": "Hanoi bikes as getaway cars answers the dead car in bar 3."
+},
+{
+"n": 8,
+"follows": true,
+"issue": "'I know a guy' supports the network claim and the nocturnal fixer image."
+}
+]
 }
 }

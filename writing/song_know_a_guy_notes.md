@@ -144,3 +144,7 @@ Rewrite: 13 Cash for Cairns and it's cash for Wales and cash for Spain (Wales / 
     comes on the same or next 16th (run_breaks; Joe: "Yes hard gate those too"). run_breaks failed 25 of v4's bars, mostly the
     "Question? Answer" bars; 25 bars changed. The cost: the Q&A punctuation was one of the draft's few character tics, and some bars
     now read as run-ons on the page ("Officer who? Me? Seedy?" kept its stops only where the audio leaves room).
+23. Joe (16 Oct) on bars 13-14: the original's pair works "because it's a sentence over 2 lines"; ours was "two sentences", and "Same
+    here" on bars 67-68 (the original runs through the middle of a word there). No gate looked across a bar line for syntax. Now HARD
+    (flow_par.carry): where the original's bar cannot end without the next (6 bar lines), ours must not end a sentence either. Four bars
+    changed (14, 16, 32, 68). The cost: the per-bar sense read cannot see enjambment and marks every run-on half as a fragment.

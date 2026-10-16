@@ -102,6 +102,14 @@ LEGACY = {
         "HARD in slotcheck via flow_par since 16 Oct 2026, TOL 0 against the original's same bar. The original passes by construction (it has "
         "run breaks in 6 bars, so those bars keep their allowance); flagged bar 46 fails both and all 15 flagged bars still fail. run_breaks failed "
         "25 of v4's bars, including Q&A bars Joe had not flagged; v4 was refit to it. One labelled complaint; no independent good set"),
+    # 16 Oct 2026, Joe on bars 13-14: the original "works because it's a sentence over 2 lines"; ours "it's two sentences which messes up the flow"
+    "toolkit/flow_par carry (one sentence over the bar line where the original runs one)": ("joe_rule",
+        "HARD in slotcheck since 16 Oct 2026. A strict text reading (spaCy): bar N ends on a split word, a hanging subject pronoun, a determiner, "
+        "a conjunction or 'to', or bar N+1 is only a dependent piece (a subordinate clause or to-clause with no main clause, a verbless "
+        "prepositional phrase); a stop, an interjection or a question ends the sentence; 'And / But / So' openers do not count. It marks exactly "
+        "the 6 bar lines judged by hand in the original (13, 15, 25, 26, 31, 67) and none of its other 69. Joe's two pairs fail it "
+        "(toolkit/tests/carry_flagged.txt); 10 text fixtures. The per-bar sense read still marks a run-on half as a fragment (it does the "
+        "same to the original's), which the per-slot par absorbs. Two labelled complaints; no independent good set"),
     # 15 Oct 2026, Joe: "Do we have any gates that check quality? ... Scoring on cleverness?" and "I should be able to use claude too".
     "ww/write/sensecheck.py on Claude (haiku via the claude CLI, no key)": ("joe_rule", "HARD per slot since 15 Oct 2026 (sense gate: Joe, 14 Oct). "
         "Calibration (2 reads per block, a bar fails only if both fail it, pronoun rule): good bars failed 1/7, bad passed 1/7 on 3 of 3 fresh runs. "

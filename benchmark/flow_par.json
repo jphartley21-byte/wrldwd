@@ -9,7 +9,8 @@
   "cell",
   "barline",
   "pause",
-  "same_step"
+  "same_step",
+  "run_breaks"
  ],
  "bars": [
   {
@@ -27,7 +28,8 @@
     1
    ],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 2,
@@ -42,7 +44,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 4,
@@ -57,7 +60,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 4,
@@ -72,7 +76,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 2,
@@ -87,7 +92,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 3,
@@ -102,7 +108,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 3,
@@ -117,7 +124,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 2,
@@ -132,7 +140,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 1,
@@ -147,7 +156,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 2,
@@ -162,7 +172,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 3,
@@ -177,7 +188,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 2,
@@ -192,7 +204,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 1,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 1,
@@ -207,7 +220,8 @@
    "barline_score": 1.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 1
   },
   {
    "stress_run": 1,
@@ -222,7 +236,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 2,
@@ -237,7 +252,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 1
   },
   {
    "stress_run": 1,
@@ -252,7 +268,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 3,
@@ -269,7 +286,8 @@
     7
    ],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 2,
@@ -287,7 +305,8 @@
     8
    ],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 2,
@@ -304,7 +323,8 @@
     4
    ],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 2,
@@ -321,7 +341,8 @@
     4
    ],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 2,
@@ -336,7 +357,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 2,
@@ -351,7 +373,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 2,
@@ -366,7 +389,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 2,
@@ -383,7 +407,8 @@
     7
    ],
    "same_step": 0,
-   "run_breaks": 1
+   "run_breaks": 1,
+   "carry": 0
   },
   {
    "stress_run": 2,
@@ -398,7 +423,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 1
   },
   {
    "stress_run": 2,
@@ -413,7 +439,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 1
   },
   {
    "stress_run": 2,
@@ -428,7 +455,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 3,
@@ -443,7 +471,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 3,
@@ -458,7 +487,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 2,
@@ -473,7 +503,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 2,
@@ -490,7 +521,8 @@
     6
    ],
    "same_step": 0,
-   "run_breaks": 1
+   "run_breaks": 1,
+   "carry": 1
   },
   {
    "stress_run": 3,
@@ -505,7 +537,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 1,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 2,
@@ -522,7 +555,8 @@
     3
    ],
    "same_step": 0,
-   "run_breaks": 1
+   "run_breaks": 1,
+   "carry": 0
   },
   {
    "stress_run": 3,
@@ -537,7 +571,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 1,
@@ -552,7 +587,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 1,
@@ -567,7 +603,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 1,
@@ -585,7 +622,8 @@
     6
    ],
    "same_step": 0,
-   "run_breaks": 1
+   "run_breaks": 1,
+   "carry": 0
   },
   {
    "stress_run": 2,
@@ -602,7 +640,8 @@
     7
    ],
    "same_step": 0,
-   "run_breaks": 1
+   "run_breaks": 1,
+   "carry": 0
   },
   {
    "stress_run": 1,
@@ -617,7 +656,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 4,
@@ -632,7 +672,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 1,
@@ -649,7 +690,8 @@
     7
    ],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 3,
@@ -666,7 +708,8 @@
     7
    ],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 3,
@@ -683,7 +726,8 @@
     6
    ],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 2,
@@ -698,7 +742,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 5,
@@ -713,7 +758,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 4,
@@ -728,7 +774,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 1,
@@ -743,7 +790,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 2,
@@ -760,7 +808,8 @@
     11
    ],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 1,
@@ -775,7 +824,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 3,
@@ -793,7 +843,8 @@
     7
    ],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 1,
@@ -808,7 +859,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 3,
@@ -823,7 +875,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 2,
@@ -838,7 +891,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 5,
@@ -855,7 +909,8 @@
     6
    ],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 3,
@@ -870,7 +925,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 2,
@@ -885,7 +941,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 3,
@@ -900,7 +957,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 2,
@@ -917,7 +975,8 @@
     6
    ],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 2,
@@ -934,7 +993,8 @@
     3
    ],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 5,
@@ -951,7 +1011,8 @@
     6
    ],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 2,
@@ -966,7 +1027,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 1,
@@ -981,7 +1043,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 3,
@@ -996,7 +1059,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 1,
@@ -1011,7 +1075,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 3,
@@ -1026,7 +1091,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 2,
@@ -1041,7 +1107,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 3,
@@ -1056,7 +1123,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 1
   },
   {
    "stress_run": 3,
@@ -1071,7 +1139,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 2,
@@ -1088,7 +1157,8 @@
     3
    ],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 1,
@@ -1103,7 +1173,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 2,
@@ -1121,7 +1192,8 @@
     3
    ],
    "same_step": 0,
-   "run_breaks": 2
+   "run_breaks": 2,
+   "carry": 0
   },
   {
    "stress_run": 3,
@@ -1136,7 +1208,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 4,
@@ -1151,7 +1224,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 3,
@@ -1166,7 +1240,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 2,
@@ -1181,7 +1256,8 @@
    "barline_score": 0.0,
    "pause": [],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   },
   {
    "stress_run": 3,
@@ -1198,7 +1274,8 @@
     3
    ],
    "same_step": 0,
-   "run_breaks": 0
+   "run_breaks": 0,
+   "carry": 0
   }
  ]
 }

@@ -133,6 +133,84 @@ def restart(line):
     return n
 
 
+# carry (16 Oct 2026, Joe on bars 13-14: the original's "works because it's a sentence over 2 lines ... ours it's two sentences which
+#        messes up the flow"; then "Same here" on bars 67-68, where the original runs through the middle of a word): where the original's
+#        bar N cannot end without bar N+1, ours must not end a sentence at that bar line either. A strict reading of the text: bar N ends on
+#        a word split over the line (a lone letter), a hanging subject pronoun, a determiner, a conjunction or "to"; or bar N has no verb and
+#        bar N+1 opens on its finite verb; or bar N+1 is only a dependent piece (a subordinate clause with no main clause of its own, a
+#        to-clause, a prepositional phrase with no verb). A stop (. ? ! : ;) closing bar N, an interjection opening bar N+1, or a question in
+#        bar N+1 ends the sentence. "And / But / So" openers join two complete clauses and do not count. The original carries at 6 bar
+#        lines (13, 15, 25, 26, 31, 67), all inside a section; benchmark/flow_par.json stores a 0/1 per bar (numbers only).
+CARRY = os.path.join(HERE, "tests", "carry_flagged.txt")
+SUBJ_PRON = {"i", "we", "he", "she", "they"}
+END_STOP = re.compile(r"[.?!:;]\s*$")
+SUBORD = {"like", "as", "cause", "'cause", "cos", "coz", "till", "until", "while", "whilst", "if", "when", "where", "who", "which", "that",
+          "whenever", "wherever", "because", "since", "unless", "once"}
+
+
+def carry(a, b):
+    """(True, why) when bar a's sentence runs on into bar b; (False, why) when it ends at the bar line."""
+    if END_STOP.search(a.strip()):
+        return False, "a stop closes the bar"
+    nlp = _nlp()
+    ta = [t for t in nlp(a) if not t.is_punct]
+    db = nlp(b)
+    tb = [t for t in db if not t.is_punct]
+    if not ta or not tb:
+        return False, "empty bar"
+    la, fb = ta[-1], tb[0]
+    if fb.pos_ == "INTJ":
+        return False, f"the next bar opens on an interjection ('{fb.text}')"
+    if len(la.text) == 1 and la.text.isalpha() and la.text not in ("a", "I"):
+        return True, "a word split over the bar line"
+    if la.text.lower() in SUBJ_PRON:
+        return True, f"a subject ('{la.text}') left for the next bar's verb"
+    if la.pos_ in ("DET", "CCONJ", "SCONJ") or la.text.lower() == "to":
+        return True, f"the bar ends on '{la.text}'"
+    if not any(t.pos_ in ("VERB", "AUX") for t in ta) and fb.tag_ in ("VBD", "VBZ", "VBP"):
+        return True, "a subject whose verb opens the next bar"
+    if "?" in b:
+        return False, "the next bar is a question"
+    root = next((t for t in db if t.dep_ == "ROOT"), None)
+    if fb.text.lower() == "to" and fb.pos_ == "PART":
+        # a to-clause only when it IS the bar ("To chat ..."), not a fronted purpose clause before a main clause ("To get out, ring ...")
+        if root is not None and fb.head == root:
+            return True, "the next bar is a to-clause"
+        return False, "the next bar's to-clause has a main clause of its own"
+    if fb.text.lower() in SUBORD or fb.pos_ == "SCONJ":
+        # dependent only when the subordinate clause IS the bar: the subordinator hangs off the bar's own root, not off a clause under it
+        if root is not None and fb.head == root:
+            return True, f"the next bar is only a '{fb.text}' clause"
+        return False, f"the next bar's '{fb.text}' clause has a main clause of its own"
+    if fb.pos_ == "ADP" and not any(t.pos_ in ("VERB", "AUX") for t in tb):
+        return True, "the next bar is a prepositional phrase with no verb"
+    return False, "two complete sentences"
+
+
+def carry_hard(start, bars):
+    """hard messages where the original's bar N runs on into N+1 and ours ends a sentence there (bars numbered start+1.. in the song)."""
+    tab = par_table() or []
+    out = []
+    for i in range(len(bars) - 1):
+        b = start + i + 1
+        if b - 1 < len(tab) and tab[b - 1].get("carry"):
+            ok, why = carry(bars[i], bars[i + 1])
+            if not ok:
+                out.append(f"bars {i + 1}-{i + 2}: the original runs one sentence over this bar line; ours ends it ({why}). Make bar {i + 2} "
+                           f"finish bar {i + 1}'s sentence (a 'when / like / if' clause, a to-clause, a prepositional phrase, a hanging subject)")
+    return out
+
+
+def carry_flagged(path=CARRY):
+    out = []
+    if os.path.exists(path):
+        for l in open(path, encoding="utf-8"):
+            if l.strip() and not l.startswith("#"):
+                b, x, y, why = [s.strip() for s in l.split("|", 3)]
+                out.append((int(b), x, y, why))
+    return out
+
+
 def fast_jam(bar_no, line):
     """stressed syllables on ADJACENT 16th steps of the original's audio template for this bar (None: no template or a different count)."""
     t = ff.T[bar_no - 1] if 1 <= bar_no <= len(ff.T) else {}
@@ -342,7 +420,8 @@ def build(orig_path):
     from ww import bridge
     bars = [dict(profile(l), syl=bridge.syllable_count(l), fast_jam=fast_jam(i + 1, l) or 0, cell=int(has_cell(l)), internal=internal(l),
                  barline=barline_par(i + 1, l)[0], barline_score=barline_par(i + 1, l)[1], pause=breaks(l),
-                 same_step=same_step(i + 1, l) or 0, run_breaks=run_breaks(i + 1, l) or 0) for i, l in enumerate(L)]
+                 same_step=same_step(i + 1, l) or 0, run_breaks=run_breaks(i + 1, l) or 0,
+                 carry=int(i + 1 < len(L) and carry(l, L[i + 1])[0])) for i, l in enumerate(L)]
     json.dump({"_note": "Per-bar flow profile of the ORIGINAL (numbers only, rule 4), built by toolkit/flow_par.py --build. "
                         "A draft bar may be no worse than the original's bar in the same position.", "measures": list(MEASURES) + list(BAR_MEASURES), "bars": bars},
               open(PAR, "w", encoding="utf-8"), indent=1)
@@ -368,6 +447,28 @@ def selftest(orig_path=None):
     print(("ok  " if good else "BAD ") + f"Joe's flagged bars are caught: {len(caught) - len(miss)} of {len(caught)}" + (f"; missed {miss}" if miss else ""))
     for b, line, f in caught:
         print(f"     bar {b}: {describe(f) if f else 'NOT CAUGHT'}")
+    # CARRY (16 Oct 2026): the original carries where its par says so; Joe's two-sentence pairs fail; text fixtures (no original text) fire
+    tab = par_table()
+    if orig_path:
+        miss = [i + 1 for i in range(len(L) - 1) if tab[i].get("carry") and not carry(L[i], L[i + 1])[0]]
+        n = sum(1 for x in tab if x.get("carry"))
+        good = not miss and n > 0
+        ok &= good
+        print(("ok  " if good else "BAD ") + f"the original runs a sentence over {n} bar lines and passes its own carry par{'' if good else ': ' + str(miss)}")
+    cf = [(b, x, y, carry_hard(b - 1, [x, y])) for b, x, y, _ in carry_flagged()]
+    miss = [b for b, x, y, h in cf if not h]
+    good = bool(cf) and not miss and all(tab[b - 1].get("carry") for b, *_ in cf)
+    ok &= good
+    print(("ok  " if good else "BAD ") + f"Joe's two-sentence bar lines fail the carry par: {len(cf) - len(miss)} of {len(cf)}" + (f"; missed {miss}" if miss else ""))
+    fx = [(("Back then I was skint and she", "Paid the rent in Leeds"), True), (("Three bags of cash and a passport", "When I land in Rome"), True),
+          (("Big boats out on the bay", "With the lads from Cork"), True), (("I came home on the night bus to", "Count the cash in Leeds"), True),
+          (("I pay the guards in Leeds", "When you owe me I know your name"), False), (("I pay the guards in Leeds.", "With the lads from Cork"), False),
+          (("Big boats out on the bay", "Cheers, I'm off to Cork"), False), (("I pay the guards in Leeds", "And the lads in Cork get paid"), False),
+          (("I've no time for the cops", "To get out of it ring my mate"), False), (("I've no time for the cops", "To chat with the lads in Cork"), True)]
+    bad = [p for p, want in fx if carry(*p)[0] != want]
+    good = not bad
+    ok &= good
+    print(("ok  " if good else "BAD ") + f"carry fixtures: {len(fx) - len(bad)} of {len(fx)}" + (f"; wrong {bad}" if bad else ""))
     oks = [(b, line, check(b, line)) for b, line, _ in flagged(OK)]
     wrong = [(b, line) for b, line, f in oks if f]
     good = not wrong
