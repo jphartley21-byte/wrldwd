@@ -1,0 +1,306 @@
+{
+ "what": "point read validation: the original's failing bar numbers (no text) and the bad bars caught",
+ "model": "haiku",
+ "reads": 2,
+ "prompt": 1,
+ "all": {
+  "fail_on": [
+   "point",
+   "hanging",
+   "contra",
+   "follows",
+   "lands",
+   "worked",
+   "natural"
+  ],
+  "orig_fail_bars": [
+   31,
+   32,
+   53
+  ],
+  "orig_pass_rate": 0.961,
+  "dev_caught": 1,
+  "dev_n": 7,
+  "dev_missed": [
+   "G'day there's a torch on call",
+   "For a servo pie",
+   "One black book and as for reach? It's larger",
+   "Cash? Yes! And the judge gets lager",
+   "No one sees my elephant",
+   "In the bar as a star I'm saving face"
+  ],
+  "held_caught": 2,
+  "held_n": 10,
+  "held_missed": [
+   "Two glasses, cold lager, back road corners",
+   "No names just numbers on folders",
+   "Found pink top hat, wear it like bread.",
+   "Tin of direct-to-rust, no recap, paint town red.",
+   "Queue round the block for the film I'm buying in",
+   "Got a pass and a rail the road going",
+   "Nine countries four walks cash going",
+   "A packed bag a long rail a whole month a road going"
+  ]
+ },
+ "per_criterion": {
+  "point": {
+   "fail_on": [
+    "point"
+   ],
+   "orig_fail_bars": [],
+   "orig_pass_rate": 1.0,
+   "dev_caught": 0,
+   "dev_n": 7,
+   "dev_missed": [
+    "Want one? Off my hands: a profit",
+    "G'day there's a torch on call",
+    "For a servo pie",
+    "One black book and as for reach? It's larger",
+    "Cash? Yes! And the judge gets lager",
+    "No one sees my elephant",
+    "In the bar as a star I'm saving face"
+   ],
+   "held_caught": 0,
+   "held_n": 10,
+   "held_missed": [
+    "Two glasses, cold lager, back road corners",
+    "No names just numbers on folders",
+    "Found pink top hat, wear it like bread.",
+    "Breakfast had me orange like little.",
+    "Tin of direct-to-rust, no recap, paint town red.",
+    "Queue round the block for the film I'm buying in",
+    "Took a month of the lads and bikes and bins and kit",
+    "Got a pass and a rail the road going",
+    "Nine countries four walks cash going",
+    "A packed bag a long rail a whole month a road going"
+   ]
+  },
+  "hanging": {
+   "fail_on": [
+    "hanging"
+   ],
+   "orig_fail_bars": [
+    31,
+    32
+   ],
+   "orig_pass_rate": 0.974,
+   "dev_caught": 1,
+   "dev_n": 7,
+   "dev_missed": [
+    "G'day there's a torch on call",
+    "For a servo pie",
+    "One black book and as for reach? It's larger",
+    "Cash? Yes! And the judge gets lager",
+    "No one sees my elephant",
+    "In the bar as a star I'm saving face"
+   ],
+   "held_caught": 1,
+   "held_n": 10,
+   "held_missed": [
+    "Two glasses, cold lager, back road corners",
+    "No names just numbers on folders",
+    "Found pink top hat, wear it like bread.",
+    "Tin of direct-to-rust, no recap, paint town red.",
+    "Queue round the block for the film I'm buying in",
+    "Took a month of the lads and bikes and bins and kit",
+    "Got a pass and a rail the road going",
+    "Nine countries four walks cash going",
+    "A packed bag a long rail a whole month a road going"
+   ]
+  },
+  "contra": {
+   "fail_on": [
+    "contra"
+   ],
+   "orig_fail_bars": [],
+   "orig_pass_rate": 1.0,
+   "dev_caught": 0,
+   "dev_n": 7,
+   "dev_missed": [
+    "Want one? Off my hands: a profit",
+    "G'day there's a torch on call",
+    "For a servo pie",
+    "One black book and as for reach? It's larger",
+    "Cash? Yes! And the judge gets lager",
+    "No one sees my elephant",
+    "In the bar as a star I'm saving face"
+   ],
+   "held_caught": 0,
+   "held_n": 10,
+   "held_missed": [
+    "Two glasses, cold lager, back road corners",
+    "No names just numbers on folders",
+    "Found pink top hat, wear it like bread.",
+    "Breakfast had me orange like little.",
+    "Tin of direct-to-rust, no recap, paint town red.",
+    "Queue round the block for the film I'm buying in",
+    "Took a month of the lads and bikes and bins and kit",
+    "Got a pass and a rail the road going",
+    "Nine countries four walks cash going",
+    "A packed bag a long rail a whole month a road going"
+   ]
+  },
+  "follows": {
+   "fail_on": [
+    "follows"
+   ],
+   "orig_fail_bars": [],
+   "orig_pass_rate": 1.0,
+   "dev_caught": 0,
+   "dev_n": 7,
+   "dev_missed": [
+    "Want one? Off my hands: a profit",
+    "G'day there's a torch on call",
+    "For a servo pie",
+    "One black book and as for reach? It's larger",
+    "Cash? Yes! And the judge gets lager",
+    "No one sees my elephant",
+    "In the bar as a star I'm saving face"
+   ],
+   "held_caught": 0,
+   "held_n": 10,
+   "held_missed": [
+    "Two glasses, cold lager, back road corners",
+    "No names just numbers on folders",
+    "Found pink top hat, wear it like bread.",
+    "Breakfast had me orange like little.",
+    "Tin of direct-to-rust, no recap, paint town red.",
+    "Queue round the block for the film I'm buying in",
+    "Took a month of the lads and bikes and bins and kit",
+    "Got a pass and a rail the road going",
+    "Nine countries four walks cash going",
+    "A packed bag a long rail a whole month a road going"
+   ]
+  },
+  "lands": {
+   "fail_on": [
+    "lands"
+   ],
+   "orig_fail_bars": [
+    53
+   ],
+   "orig_pass_rate": 0.987,
+   "dev_caught": 1,
+   "dev_n": 7,
+   "dev_missed": [
+    "G'day there's a torch on call",
+    "For a servo pie",
+    "One black book and as for reach? It's larger",
+    "Cash? Yes! And the judge gets lager",
+    "No one sees my elephant",
+    "In the bar as a star I'm saving face"
+   ],
+   "held_caught": 2,
+   "held_n": 10,
+   "held_missed": [
+    "Two glasses, cold lager, back road corners",
+    "No names just numbers on folders",
+    "Found pink top hat, wear it like bread.",
+    "Tin of direct-to-rust, no recap, paint town red.",
+    "Queue round the block for the film I'm buying in",
+    "Got a pass and a rail the road going",
+    "Nine countries four walks cash going",
+    "A packed bag a long rail a whole month a road going"
+   ]
+  },
+  "worked": {
+   "fail_on": [
+    "worked"
+   ],
+   "orig_fail_bars": [],
+   "orig_pass_rate": 1.0,
+   "dev_caught": 0,
+   "dev_n": 7,
+   "dev_missed": [
+    "Want one? Off my hands: a profit",
+    "G'day there's a torch on call",
+    "For a servo pie",
+    "One black book and as for reach? It's larger",
+    "Cash? Yes! And the judge gets lager",
+    "No one sees my elephant",
+    "In the bar as a star I'm saving face"
+   ],
+   "held_caught": 0,
+   "held_n": 10,
+   "held_missed": [
+    "Two glasses, cold lager, back road corners",
+    "No names just numbers on folders",
+    "Found pink top hat, wear it like bread.",
+    "Breakfast had me orange like little.",
+    "Tin of direct-to-rust, no recap, paint town red.",
+    "Queue round the block for the film I'm buying in",
+    "Took a month of the lads and bikes and bins and kit",
+    "Got a pass and a rail the road going",
+    "Nine countries four walks cash going",
+    "A packed bag a long rail a whole month a road going"
+   ]
+  },
+  "natural": {
+   "fail_on": [
+    "natural"
+   ],
+   "orig_fail_bars": [],
+   "orig_pass_rate": 1.0,
+   "dev_caught": 0,
+   "dev_n": 7,
+   "dev_missed": [
+    "Want one? Off my hands: a profit",
+    "G'day there's a torch on call",
+    "For a servo pie",
+    "One black book and as for reach? It's larger",
+    "Cash? Yes! And the judge gets lager",
+    "No one sees my elephant",
+    "In the bar as a star I'm saving face"
+   ],
+   "held_caught": 0,
+   "held_n": 10,
+   "held_missed": [
+    "Two glasses, cold lager, back road corners",
+    "No names just numbers on folders",
+    "Found pink top hat, wear it like bread.",
+    "Breakfast had me orange like little.",
+    "Tin of direct-to-rust, no recap, paint town red.",
+    "Queue round the block for the film I'm buying in",
+    "Took a month of the lads and bikes and bins and kit",
+    "Got a pass and a rail the road going",
+    "Nine countries four walks cash going",
+    "A packed bag a long rail a whole month a road going"
+   ]
+  }
+ },
+ "separation": {
+  "auc": 0.594,
+  "cuts": {
+   "1": {
+    "original_flagged": 4,
+    "bad_caught": 4,
+    "bad_n": 17
+   },
+   "2": {
+    "original_flagged": 1,
+    "bad_caught": 3,
+    "bad_n": 17
+   },
+   "3": {
+    "original_flagged": 0,
+    "bad_caught": 0,
+    "bad_n": 17
+   },
+   "4": {
+    "original_flagged": 0,
+    "bad_caught": 0,
+    "bad_n": 17
+   },
+   "5": {
+    "original_flagged": 0,
+    "bad_caught": 0,
+    "bad_n": 17
+   },
+   "6": {
+    "original_flagged": 0,
+    "bad_caught": 0,
+    "bad_n": 17
+   }
+  }
+ }
+}

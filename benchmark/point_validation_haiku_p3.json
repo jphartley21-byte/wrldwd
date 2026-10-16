@@ -1,0 +1,331 @@
+{
+ "what": "point read validation: the original's failing bar numbers (no text) and the bad bars caught",
+ "model": "haiku",
+ "reads": 2,
+ "prompt": 3,
+ "all": {
+  "fail_on": [
+   "point",
+   "hanging",
+   "contra",
+   "follows",
+   "lands",
+   "worked",
+   "natural"
+  ],
+  "orig_fail_bars": [
+   7,
+   12,
+   13,
+   14,
+   19,
+   20,
+   24,
+   31,
+   32,
+   35,
+   38,
+   39,
+   40,
+   41,
+   45,
+   46,
+   51,
+   54,
+   57,
+   60,
+   61,
+   62,
+   67,
+   68,
+   71,
+   72,
+   73
+  ],
+  "orig_pass_rate": 0.645,
+  "dev_caught": 6,
+  "dev_n": 7,
+  "dev_missed": [
+   "For a servo pie"
+  ],
+  "held_caught": 10,
+  "held_n": 10,
+  "held_missed": []
+ },
+ "per_criterion": {
+  "point": {
+   "fail_on": [
+    "point"
+   ],
+   "orig_fail_bars": [],
+   "orig_pass_rate": 1.0,
+   "dev_caught": 0,
+   "dev_n": 7,
+   "dev_missed": [
+    "Want one? Off my hands: a profit",
+    "G'day there's a torch on call",
+    "For a servo pie",
+    "One black book and as for reach? It's larger",
+    "Cash? Yes! And the judge gets lager",
+    "No one sees my elephant",
+    "In the bar as a star I'm saving face"
+   ],
+   "held_caught": 0,
+   "held_n": 10,
+   "held_missed": [
+    "Two glasses, cold lager, back road corners",
+    "No names just numbers on folders",
+    "Found pink top hat, wear it like bread.",
+    "Breakfast had me orange like little.",
+    "Tin of direct-to-rust, no recap, paint town red.",
+    "Queue round the block for the film I'm buying in",
+    "Took a month of the lads and bikes and bins and kit",
+    "Got a pass and a rail the road going",
+    "Nine countries four walks cash going",
+    "A packed bag a long rail a whole month a road going"
+   ]
+  },
+  "hanging": {
+   "fail_on": [
+    "hanging"
+   ],
+   "orig_fail_bars": [],
+   "orig_pass_rate": 1.0,
+   "dev_caught": 0,
+   "dev_n": 7,
+   "dev_missed": [
+    "Want one? Off my hands: a profit",
+    "G'day there's a torch on call",
+    "For a servo pie",
+    "One black book and as for reach? It's larger",
+    "Cash? Yes! And the judge gets lager",
+    "No one sees my elephant",
+    "In the bar as a star I'm saving face"
+   ],
+   "held_caught": 0,
+   "held_n": 10,
+   "held_missed": [
+    "Two glasses, cold lager, back road corners",
+    "No names just numbers on folders",
+    "Found pink top hat, wear it like bread.",
+    "Breakfast had me orange like little.",
+    "Tin of direct-to-rust, no recap, paint town red.",
+    "Queue round the block for the film I'm buying in",
+    "Took a month of the lads and bikes and bins and kit",
+    "Got a pass and a rail the road going",
+    "Nine countries four walks cash going",
+    "A packed bag a long rail a whole month a road going"
+   ]
+  },
+  "contra": {
+   "fail_on": [
+    "contra"
+   ],
+   "orig_fail_bars": [],
+   "orig_pass_rate": 1.0,
+   "dev_caught": 0,
+   "dev_n": 7,
+   "dev_missed": [
+    "Want one? Off my hands: a profit",
+    "G'day there's a torch on call",
+    "For a servo pie",
+    "One black book and as for reach? It's larger",
+    "Cash? Yes! And the judge gets lager",
+    "No one sees my elephant",
+    "In the bar as a star I'm saving face"
+   ],
+   "held_caught": 0,
+   "held_n": 10,
+   "held_missed": [
+    "Two glasses, cold lager, back road corners",
+    "No names just numbers on folders",
+    "Found pink top hat, wear it like bread.",
+    "Breakfast had me orange like little.",
+    "Tin of direct-to-rust, no recap, paint town red.",
+    "Queue round the block for the film I'm buying in",
+    "Took a month of the lads and bikes and bins and kit",
+    "Got a pass and a rail the road going",
+    "Nine countries four walks cash going",
+    "A packed bag a long rail a whole month a road going"
+   ]
+  },
+  "follows": {
+   "fail_on": [
+    "follows"
+   ],
+   "orig_fail_bars": [],
+   "orig_pass_rate": 1.0,
+   "dev_caught": 0,
+   "dev_n": 7,
+   "dev_missed": [
+    "Want one? Off my hands: a profit",
+    "G'day there's a torch on call",
+    "For a servo pie",
+    "One black book and as for reach? It's larger",
+    "Cash? Yes! And the judge gets lager",
+    "No one sees my elephant",
+    "In the bar as a star I'm saving face"
+   ],
+   "held_caught": 0,
+   "held_n": 10,
+   "held_missed": [
+    "Two glasses, cold lager, back road corners",
+    "No names just numbers on folders",
+    "Found pink top hat, wear it like bread.",
+    "Breakfast had me orange like little.",
+    "Tin of direct-to-rust, no recap, paint town red.",
+    "Queue round the block for the film I'm buying in",
+    "Took a month of the lads and bikes and bins and kit",
+    "Got a pass and a rail the road going",
+    "Nine countries four walks cash going",
+    "A packed bag a long rail a whole month a road going"
+   ]
+  },
+  "lands": {
+   "fail_on": [
+    "lands"
+   ],
+   "orig_fail_bars": [
+    7,
+    41,
+    57,
+    60,
+    61
+   ],
+   "orig_pass_rate": 0.934,
+   "dev_caught": 2,
+   "dev_n": 7,
+   "dev_missed": [
+    "Want one? Off my hands: a profit",
+    "For a servo pie",
+    "One black book and as for reach? It's larger",
+    "Cash? Yes! And the judge gets lager",
+    "In the bar as a star I'm saving face"
+   ],
+   "held_caught": 4,
+   "held_n": 10,
+   "held_missed": [
+    "No names just numbers on folders",
+    "Tin of direct-to-rust, no recap, paint town red.",
+    "Queue round the block for the film I'm buying in",
+    "Got a pass and a rail the road going",
+    "Nine countries four walks cash going",
+    "A packed bag a long rail a whole month a road going"
+   ]
+  },
+  "worked": {
+   "fail_on": [
+    "worked"
+   ],
+   "orig_fail_bars": [
+    7,
+    12,
+    19,
+    20,
+    24,
+    31,
+    32,
+    35,
+    38,
+    39,
+    40,
+    41,
+    45,
+    46,
+    51,
+    54,
+    57,
+    60,
+    61,
+    62,
+    67,
+    68,
+    71,
+    72,
+    73
+   ],
+   "orig_pass_rate": 0.671,
+   "dev_caught": 6,
+   "dev_n": 7,
+   "dev_missed": [
+    "For a servo pie"
+   ],
+   "held_caught": 9,
+   "held_n": 10,
+   "held_missed": [
+    "Got a pass and a rail the road going"
+   ]
+  },
+  "natural": {
+   "fail_on": [
+    "natural"
+   ],
+   "orig_fail_bars": [
+    7,
+    13,
+    14,
+    19,
+    20,
+    24,
+    31,
+    32,
+    38,
+    57,
+    61,
+    62,
+    67,
+    68
+   ],
+   "orig_pass_rate": 0.816,
+   "dev_caught": 3,
+   "dev_n": 7,
+   "dev_missed": [
+    "Want one? Off my hands: a profit",
+    "G'day there's a torch on call",
+    "For a servo pie",
+    "One black book and as for reach? It's larger"
+   ],
+   "held_caught": 8,
+   "held_n": 10,
+   "held_missed": [
+    "No names just numbers on folders",
+    "Tin of direct-to-rust, no recap, paint town red."
+   ]
+  }
+ },
+ "separation": {
+  "auc": 0.839,
+  "cuts": {
+   "1": {
+    "original_flagged": 35,
+    "bad_caught": 17,
+    "bad_n": 17
+   },
+   "2": {
+    "original_flagged": 28,
+    "bad_caught": 17,
+    "bad_n": 17
+   },
+   "3": {
+    "original_flagged": 23,
+    "bad_caught": 14,
+    "bad_n": 17
+   },
+   "4": {
+    "original_flagged": 16,
+    "bad_caught": 11,
+    "bad_n": 17
+   },
+   "5": {
+    "original_flagged": 10,
+    "bad_caught": 7,
+    "bad_n": 17
+   },
+   "6": {
+    "original_flagged": 3,
+    "bad_caught": 5,
+    "bad_n": 17
+   }
+  }
+ }
+}

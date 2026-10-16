@@ -102,9 +102,25 @@ def run(path: str) -> dict:
                     secs[s]["notes"] += lines
         except Exception as e:  # noqa: BLE001 - report-only: never fails the gate
             quality = {"_error": [str(e)[:80]]}
+    # POINT READ (16 Oct 2026, report-only): bars a listener has to work out (ww/write/pointcheck.py), from the cache;
+    # `python -m ww.write.pointcheck FILE` fills it. It missed the adoption bar (benchmark/point_validation_*.json: AUC 0.89, but no cut
+    # passes 90% of the original and catches 85% of the bad bars, and a flag flips between runs on half the borderline bars), so it never
+    # fails the gate: every flag is listed to Joe instead.
+    point_unread = []
+    if os.environ.get("WW_POINT", "1") != "0":
+        try:
+            from . import pointcheck
+            for s in secs:
+                fl = pointcheck.flags(D[s], cached_only=True)
+                if fl is None:
+                    point_unread.append(s)
+                    continue
+                secs[s]["notes"] += [f"POINT bar {n} [{sc_}/6]: {how[:140]}" for n, sc_, how in fl]
+        except Exception as e:  # noqa: BLE001 - report-only
+            point_unread = [f"error: {str(e)[:60]}"]
     n_hard = sum(len(v["hard"]) for v in secs.values()) + len(file_hard)
     return {"ok": n_hard == 0 and bool(secs), "off": gates_off(), "sections": secs, "file": file_hard, "hard": n_hard,
-            "notes": sum(len(v["notes"]) for v in secs.values()), "quality": quality}
+            "notes": sum(len(v["notes"]) for v in secs.values()), "quality": quality, "point_unread": point_unread}
 
 
 def report(r: dict, quiet: bool = False) -> str:
@@ -121,6 +137,8 @@ def report(r: dict, quiet: bool = False) -> str:
         L += [f"SONG ~ {x}" for x in q.get("_song", [])]
     if q.get("_unread"):
         L.append(f"QUALITY not read for {q['_unread']}: run python -m ww.write.qualityread {'FILE'} (report-only)")
+    if r.get("point_unread"):
+        L.append(f"POINT READ not run for {r['point_unread']}: run python -m ww.write.pointcheck FILE (report-only; flags go to Joe)")
     if not r["sections"]:
         L.append("no '== Slot' sections found: nothing was checked")
     L.append(f"GATE: {'PASS' if r['ok'] else 'FAIL'} ({r['hard']} hard issues, {r['notes']} notes to fix or list to Joe)"

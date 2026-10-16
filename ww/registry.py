@@ -110,6 +110,13 @@ LEGACY = {
         "the 6 bar lines judged by hand in the original (13, 15, 25, 26, 31, 67) and none of its other 69. Joe's two pairs fail it "
         "(toolkit/tests/carry_flagged.txt); 10 text fixtures. The sense read uses the same reading to judge a run-on sentence as one (16 Oct). "
         "Two labelled complaints; no independent good set"),
+    # 16 Oct 2026, Joe: "How did these pass the sense/quality gates?" (seven v4 bars), "So how can we fix this so it doesn't flag false positives
+    # in the original but catches true positives?", "Yes build and run", "Why not let it search the web to check slang and references"
+    "ww/write/pointcheck.py (does a listener have to WORK OUT the bar?)": ("unvalidated", "REPORT-ONLY: missed its adoption bar (original >= 90% "
+        "pass AND >= 85% of 17 bad bars caught: Joe's seven + ten held-out). AUC of the 0-6 fault score: prompt 1 0.59, prompt 2 Haiku x2 0.89 "
+        "(>= 4 flags 18/76 of the original, catches 15/17), Sonnet x1 0.86, prompt 2 + Wiktionary/Wikipedia glossary 0.84 (lookups rescued our bars "
+        "as often as the original's). Test-retest: 12 bars read twice moved 1.2 points on average; the flag flipped on 6. Listed to Joe in ww gate "
+        "notes from the cache; never fails the gate. benchmark/point_validation_<model>_p<prompt>.json"),
     # 15 Oct 2026, Joe: "Do we have any gates that check quality? ... Scoring on cleverness?" and "I should be able to use claude too".
     "ww/write/sensecheck.py on Claude (haiku via the claude CLI, no key)": ("joe_rule", "HARD per slot since 15 Oct 2026 (sense gate: Joe, 14 Oct). "
         "Calibration (2 reads per block, a bar fails only if both fail it, pronoun rule): good bars failed 1/7, bad passed 1/7 on 3 of 3 fresh runs. "

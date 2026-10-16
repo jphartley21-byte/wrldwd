@@ -151,3 +151,6 @@ Rewrite: 13 Cash for Cairns and it's cash for Wales and cash for Spain (Wales / 
 24. Joe (16 Oct): "The sense check should take into account when sentences cross over a line." It now reads a sentence over the bar line
     as one item and counts failing sentences, not bars. Read whole, three of v4's run-on sentences still fail on their own faults
     (bars 25-27, 31-32, 13-14); the Hanoi pair passes. All slots stay within the original's par.
+25. Joe (16 Oct) on seven v4 bars that "passed the sense/quality gates": five were flagged and absorbed by the per-slot allowance; two passed
+    because the read only asked whether a bar can be restated. A new read (pointcheck: "did you have to work it out?") ranks bad bars above
+    the original's (AUC 0.89) but cannot be cut into a gate, and web lookups of slang made it worse (0.84). It now lists 20 v4 bars to Joe.

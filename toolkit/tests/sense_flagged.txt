@@ -1,6 +1,7 @@
 # Joe's sense complaints (16 Oct 2026: "How did these pass the sense/quality gates?"), added FIRST (rule 10), before the gate is changed
-# or the bars refit. Format: song bar | line | note. The gate that replaces the per-section allowance must fail every line below in its
-# v4 section while the original keeps passing.
+# or the bars refit. Format: song bar | line | note. The aim was a read that fails every line below in its v4 section while the original
+# keeps passing. Built and measured 16 Oct 2026 (ww/write/pointcheck.py): it ranks these above the original's bars (AUC 0.89) but no cut
+# meets the bar and run-to-run noise flips half the borderline flags, so it is a report listed to Joe, not a gate (see the registry).
 8 | Want one? Off my hands: a profit | 16 Oct: flagged by the sense read (no verb), absorbed by Hook 5-8's allowance (3 of 4 may fail)
 9 | G'day there's a torch on call | 16 Oct: flagged ('torch' unclear), absorbed by Hook 9-16's allowance (5 of 6 sentences may fail)
 14 | For a servo pie | 16 Oct: flagged (no verb, link implied), absorbed by Hook 9-16's allowance
