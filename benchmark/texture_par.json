@@ -73,10 +73,10 @@
    "multi_cross": 0
   },
   "V1 33-44": {
-   "amount": 18,
-   "strength": 11.5,
+   "amount": 17,
+   "strength": 10.5,
    "within": 5,
-   "neighbour": 13,
+   "neighbour": 12,
    "frame": 0,
    "link": 0,
    "multi": 3,

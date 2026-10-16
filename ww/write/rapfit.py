@@ -50,6 +50,9 @@ STRONG = 0.80
 GRADER_FLOOR = 0.78
 FINAL_ANCHOR_DISCOUNT = 0.92
 CLITIC_PRON = {"it", "him", "her", "them", "em", "'em", "us", "me", "you"}
+WEAK_FORM = {"me": "i", "you": "ə", "her": "ə", "them": "ə", "em": "ə", "'em": "ə", "us": "ə", "him": "ɪ", "it": "ɪ"}
+# a function word that carries the line's last stress when a pronoun closes the line ("for me", "to you", "at him")
+STRONG_FORM = {"for": "ɔː", "to": "uː", "at": "æ", "from": "ɒ", "of": "ɒ", "on": "ɒ", "with": "ɪ", "and": "æ", "as": "æ", "than": "æ"}
 # BLOCK-LEVEL RHYME QUALITY (15 Oct 2026; Joe: "originals end rhymes are better rn", then the Lagos/favours/flavours/Vegas carpet).
 # The pair score says whether two endings rhyme; it scores an identical, common rime 1.0, so a block of me/we/free/tea/three/fee
 # outscored the original. These three are measured per slot against the original (benchmark/rhyme_quality_targets.json):
@@ -84,10 +87,22 @@ def _syl(text: str) -> tuple:
         # A clitic pronoun after another word is unstressed (15 Oct 2026): the dictionary stresses every monosyllable, so a tail such as
         # <stressed ae syllable> + "him" anchored on "him" and the original's own three-syllable V1 17-24 rhymes scored 0.06 a pair.
         # Destressed: by-ear AUC 0.932 -> 0.943, recall 90.5% -> 93.4%, non-rhymes accepted unchanged at 5.1%.
-        for wi, w in enumerate(re.findall(r"[A-Za-z'å]+", text.replace("å", "a").replace("-", " "))):
+        # 16 Oct 2026 (Joe, the original's bars 46-50 against ours): a destressed pronoun also takes its WEAK VOWEL ('me' = /i/, as in the
+        # last syllable of 'naughty'), and a small function word straight before one takes its STRONG form and the stress ('for me' = /fɔː mi/).
+        # Before this, 'caught me' kept the stressed /iː/ of 'me', so the tools heard it rhyme with 'Seedy' on the 'ee' alone and did not hear
+        # the original's word + 'me' endings rhyme with its own 'forty' / 'naughty' bars.
+        ws = re.findall(r"[A-Za-z'å]+", text.replace("å", "a").replace("-", " "))
+        for wi, w in enumerate(ws):
             sy = p.syllables(w)
-            weak = wi > 0 and w.lower() in CLITIC_PRON and len(sy) == 1
+            lw = w.lower()
+            weak = wi > 0 and lw in CLITIC_PRON and len(sy) == 1
+            strong = (lw in STRONG_FORM and len(sy) == 1 and wi + 1 < len(ws) and ws[wi + 1].lower() in CLITIC_PRON
+                      and wi + 1 == len(ws) - 1)
             for k, (v, st, c) in enumerate(sy):
+                if weak:
+                    v = WEAK_FORM.get(lw, v)
+                elif strong:
+                    v, st = STRONG_FORM[lw], True
                 out.append((v, bool(st) and not weak, tuple(c), k < len(sy) - 1))
         return tuple(out)
     except Exception:    # noqa: BLE001 - unpronounceable text has no syllables
@@ -517,6 +532,66 @@ def write_depth_targets() -> dict:
     return out
 
 
+BAR_TARGETS = "rhyme_bar_targets.json"
+
+
+def _tail_depth(a: str, b: str) -> int:
+    from . import rhymeview
+    return chain_best(_syl(rhymeview.tail_text(a.split())), _syl(rhymeview.tail_text(b.split())))["depth"]
+
+
+@lru_cache(maxsize=1)
+def _bar_targets() -> dict:
+    from .. import config
+    import json as _j
+    p = config.BENCHMARK / BAR_TARGETS
+    return _j.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
+
+
+def write_bar_targets() -> dict:
+    """numbers only (rule 4), 16 Oct 2026: for each slot of the ORIGINAL, every bar's rhyme depth with its by-ear group (check_block's own unit),
+    and the rhymes the original makes ACROSS a section break (the last two bars of a section against the first two of the next). Joe on the
+    original's bars 46-52: one two-syllable ending held for five bars, straight through the break between V1 25-32 and V1 33-44."""
+    import json as _j
+    from .. import config
+    from . import rhymeview, slotcheck
+    orig = rhymeview.load_original()
+    bars = {s: check_block(s, b)["depths"] for s, b in orig.items()}
+    order = [n for n, _, _ in slotcheck.SECS]
+    bnd = []
+    for k in range(len(order) - 1):
+        a, b = order[k], order[k + 1]
+        A, B = orig.get(a), orig.get(b)
+        if not A or not B:
+            continue
+        for i in (len(A) - 2, len(A) - 1):
+            for j in (0, 1):
+                d = _tail_depth(A[i], B[j])
+                if d:
+                    bnd.append({"a": a, "i": i, "b": b, "j": j, "depth": d})
+    out = {"_note": "the ORIGINAL's per-bar end-rhyme depth with its by-ear group, and its rhymes across section breaks (rapfit, numbers only)",
+           "bars": bars, "boundary": bnd}
+    (config.BENCHMARK / BAR_TARGETS).write_text(_j.dumps(out, indent=1), encoding="utf-8")
+    _bar_targets.cache_clear()
+    return out
+
+
+def boundary_hard(sections: dict) -> list[str]:
+    """HARD (16 Oct 2026): where the original rhymes across a section break, ours must rhyme the same two bars at least as deep."""
+    out = []
+    from . import rhymeview
+    for r in _bar_targets().get("boundary", []):
+        A, B = sections.get(r["a"]), sections.get(r["b"])
+        if not A or not B or len(A) <= r["i"] or len(B) <= r["j"]:
+            continue
+        d = _tail_depth(A[r["i"]], B[r["j"]])
+        if d < r["depth"]:
+            ea, eb = (rhymeview.tail_text(x.split()) or "?" for x in (A[r["i"]], B[r["j"]]))
+            out.append(f"boundary: {r['a']} bar {r['i'] + 1} ('{ea}') ~ {r['b']} bar {r['j'] + 1} ('{eb}'): rhyme depth {d}; the original rhymes "
+                       f"these two bars across the section break {r['depth']} syllable(s) deep (one ending carried over the break)")
+    return out
+
+
 QUALITY_PATH = "rhyme_quality_targets.json"
 
 
@@ -600,13 +675,27 @@ def complaints_selftest() -> list[str]:
         if not line.strip() or line.startswith("#"):
             continue
         slot, rules, text = line.split("\t")[:3]
-        hard = quality_hard(slot, [b.strip() for b in text.split(" / ")])
+        bars_ = [b.strip() for b in text.split(" / ")]
+        hard = quality_hard(slot, bars_)
+        # rules that live in check_block (16 Oct 2026): 'tail' = a bar rhymes with its group only on an unstressed tail; 'depth' = a bar
+        # rhymes less deep than the original's same bar
+        hard += check_block(slot, bars_)["hard"]
         for r in rules.split(","):
             if not any(h.startswith(r.strip() + ":") for h in hard):
                 problems.append(f"{slot}: Joe's complaint should fail the '{r.strip()}' rule and does not ({'; '.join(h[:40] for h in hard) or 'no rhyme issue'})")
-    for slot, bars in rhymeview.load_original().items():
+    orig = rhymeview.load_original()
+    for slot, bars in orig.items():
         if quality_hard(slot, bars):
             problems.append(f"the original fails its own {slot} rhyme-quality targets")
+        if check_block(slot, bars)["hard"]:
+            problems.append(f"the original fails its own {slot} rhyme block rules (tail / depth)")
+    if boundary_hard(orig):
+        problems.append("the original fails its own rhymes across section breaks")
+    # Joe (4), 16 Oct 2026: our V1 25-32 -> V1 33-44 blocks must also fail the rhyme across the section break
+    rows = {l.split("\t")[0]: [b.strip() for b in l.split("\t")[2].split(" / ")] for l in path.read_text(encoding="utf-8").splitlines()
+            if l.strip() and not l.startswith("#") and "\ttail\t" in l}
+    if {"V1 25-32", "V1 33-44"} <= set(rows) and not boundary_hard(rows):
+        problems.append("Joe's V1 25-32 -> V1 33-44 complaint should fail the rhyme across the section break")
     return problems
 
 
@@ -637,12 +726,18 @@ def check_block(slot: str, bars: list[str]) -> dict:
         end = tails[i].split()[-1] if tails[i] else "?"
         if d == 0:
             if e:
-                hard.append(f"bar {i + 1} ('{end}'): rhymes with its group only on an unstressed tail ({e} syllable), the stressed syllables do not rhyme; a rhyme must start on a stressed syllable")
+                hard.append(f"tail: bar {i + 1} ('{end}'): rhymes with its group only on an unstressed tail ({e} syllable), the stressed syllables do not rhyme; a rhyme must start on a stressed syllable")
             else:
                 # the tool hears NOTHING here. On the original that is mostly its own blind spots (loanwords, loose sections), so it is a check-by-ear note, not a veto.
                 soft.append(f"bar {i + 1} ('{end}'): the tool hears no syllable match with its rhyme group ({scheme[i]}); check it by ear")
         elif tg and d < tg:
             soft.append(f"bar {i + 1} ('{end}'): rhyme depth {d} syllable(s); the original's median for {slot} is {tg}")
+        # HARD (16 Oct 2026, Joe: "Can you see the difference in quality?"): no shallower than the ORIGINAL'S SAME BAR, measured the same way.
+        # A tail-only bar already failed above; a bar the tool hears nothing in fails here when the original's bar rhymes.
+        par_d = (_bar_targets().get("bars", {}).get(slot) or [])
+        if len(par_d) == len(scheme) and i < len(par_d) and par_d[i] and d < par_d[i] and not (d == 0 and e):
+            hard.append(f"depth: bar {i + 1} ('{end}'): rhyme depth {d} syllable(s) with its group; the original's bar here rhymes {par_d[i]} deep "
+                        "(share the stressed vowel and everything after it, as the original's bar does)")
     # TEMPLATE / BLOCK RULES (Joe, 13 Oct 2026; measured on the original's V1 17-24: the stressed rhyme syllable sits at the same distance from the end in 4 of 4 bars of BOTH blocks)
     if tg and tg >= 2:
         for k in range(0, n - 3, 4):

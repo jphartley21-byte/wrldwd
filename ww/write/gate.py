@@ -67,6 +67,11 @@ def run(path: str) -> dict:
                 [x for x in r["notes"] if not x.startswith(("recount codes", "cadence"))]
         secs[s] = {"hard": r["hard"], "notes": notes}
     file_hard = []
+    # END RHYMES ACROSS SECTION BREAKS (16 Oct 2026, Joe on the original's bars 46-52): where the original carries one ending over a section
+    # break, ours must too (rapfit.boundary_hard; numbers in benchmark/rhyme_bar_targets.json)
+    if os.environ.get("WW_RAPFIT_GATE", "1") != "0":
+        from . import rapfit
+        file_hard += rapfit.boundary_hard({s: D[s] for s in fitbar.SLOTS if D.get(s)})
     out = _tool("meaning_gate", path)
     if "MEANING GATE: PASS" not in out:
         file_hard.append("meaning gate: " + next((l.strip() for l in out.splitlines() if "MEANING GATE" in l), "no verdict"))

@@ -79,6 +79,12 @@ LEGACY = {
     "toolkit/flow_par fast_jam + cell + barline (16th-note stress jams; repeated cell + internal rhyme; end rhyme landed at the bar line)": ("joe_rule", "HARD in slotcheck via flow_par since 15 Oct 2026. barline: 35 of the original's 74 timed lines run past one musical bar; it lands a rhyme on its own end at the bar line in bars 13, 41, 42, 50, and ours must too. "
         "The original passes by construction. fast_jam (TOL 0) also catches 3 earlier flagged bars for the reason Joe gave for one of them ('stresses bunch "
         "up'); the cell rule applies only at the original's 5 repeated-cell bars (13, 24, 40, 48, 50). One labelled complaint; no independent good set"),
+    # 16 Oct 2026, Joe on the original's bars 46-52 vs ours: "Can you see the difference in quality? How did our version get past the gates?"
+    "rapfit end tails with a closing pronoun + per-bar depth par + rhymes across section breaks": ("joe_rule",
+        "HARD since 16 Oct 2026. A closing object pronoun joins the end tail in its weak form and a function word before it takes its strong form "
+        "('caught me' = stressed 'or' + weak 'ee'); by-ear AUC 0.956 -> 0.971. check_block: each bar no shallower than the original's same bar. "
+        "gate: where the original rhymes across a section break (3 places), ours must too at the same depth. The original passes all three by "
+        "construction; Joe's v3 V1 25-32 / V1 33-44 blocks fail them (toolkit/tests/rhyme_complaints.txt)"),
     # 16 Oct 2026, Joe: "Do we have gates for internal rhymes (amount and similarity between neighbours) and sandwich rhymes ... and can
     # multisyllabic rhymes be detected across words?" then "Go for all 3, add the gates, verify them"
     "toolkit/texture.py (internal rhyme amount + strength, frame / link sandwiches, multisyllabic runs across words; per section)": ("joe_rule",

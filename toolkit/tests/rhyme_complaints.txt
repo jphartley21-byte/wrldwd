@@ -11,7 +11,7 @@
 #   syllable by syllable from the end (rapfit.chain_best), as all six of the original's Hook 5-8 pairs do.
 #
 # V1 25-32 is NOT listed: its identical pairs (label/table, cheeky/sneaky) are 2 against the original's 1, inside the +1 slack.
-# Format: slot <TAB> rules that must fire (carpet / cheap / identical, comma-separated) <TAB> bars separated by " / "
+# Format: slot <TAB> rules that must fire (carpet / cheap / identical / tail / depth, comma-separated) <TAB> bars separated by " / "
 Hook 5-8	carpet	Hoi hoi to the Dutch my people / Their gnome's as tall as a house, rock solid / Cross my Noord man it's your wallet / Want one? We knock up a sequel
 Hook 9-16	identical	G'day there's a torch on call / My brief's a better call than Saul / Four-wheel drive dead on arrival / My doorman will put you through the wall / Amsterdam or Koh Tao or Spain or Cairns or Wales / Prost and then you buy / Hanoi bikes are getaway cars / If you're stuck I know a guy
 V1 1-8	identical	One phone two names and the rest is nada / Honesty box? I pay it good karma / In my suit head to toe Prada / My guy keeps a boat out in Palma / Stab vest Under Armour / Clean hands and the judge gets Parma / Try me and see what you get / And so grazie four weeks on one pass and no drama
@@ -20,3 +20,10 @@ V1 33-44	cheap,identical	Sure the Spanish caught me / Officer? Who me? Never see
 V2 1-8	cheap,identical	The Whitsundays a tinnie? I've got a guy / Up K'gari in the ute where you do or die / Bangkok, the roadside, and the top pad Thai / The reef? I dived it and the sharks were tiny / You wouldn't believe big boats and jets up high / You want it for free from my guy? So pigs can fly / I drive to the bay, dive in, I'm back by five / Anything, mate: one call, and I'll try
 V2 9-16	cheap,identical	'Cause I use a flip phone / Christchurch, Oslo, Scotland, Wales, and up to Snowdon / Solo now the face is just as well known / Lone wolf now and proud and it's all home-grown / Big man top dog in the nightlife / Don't need one, 'cause I'm big boss, the tough guy / Seconds out, no ref, you get no bell / Each time you're stuck, I'm the guy, and the main lifeline
 Hook 5-8	carpet	Hoi hoi to the Dutch my posse / Their gnome's as tall as a house, rock solid / Cross my Noord man it's your wallet / Want one? I'll flog you a copy
+# 16 Oct 2026, Joe (4), pasting the original's bars 46-52 against ours (v3 bars 45-52): "Look at the end rhymes in this section of the
+#   original ... Can you see the difference in quality? How did our version get past the gates?" The original holds one two-syllable
+#   ending (stressed vowel + a weak 'ee') for five bars across the section break, two of them a word + 'me'. Ours shares only the
+#   weak 'ee': 'sorting me' and 'caught me' were heard as rhyming on 'me' alone, so 'caught me ~ Seedy' counted as a rhyme.
+#   Rule 'tail': rapfit.check_block's unstressed-tail failure must fire. (Lines below are v3, assistant-authored.)
+V1 25-32	tail	Mozzarella and capers? It's my guy in Naples / Marrakesh when I'm able, my guy there, he sews a label / Barber's cut-throat shave? Free: on the house, cards on the table / Beer's dear in Bergen? Near fatal / And I own the whole fleet, Thai mainland / But the fags? Cheap packs: it's dead cheeky / Forty a day? My guy is sorting me / Where am I? Gone to my guy's guy, he's local, for more freebies
+V1 33-44	tail	Sure. In Spain they caught me / Officer? Who me? Seedy? Seedy? / Then my guy sent the money / Cash in envelopes keeps the cops chummy / My guy said you pay / Wanted posters? Ten grand! Full front page / I never once came to the Old Bailey / In the bar I'm a star: I'm saving face / Owe me? Then you've ten days' grace / When you owe me I know: your head is fair game / Top of town: I'm the boss of Bristol / Who do I know? A guy. So I won't name names

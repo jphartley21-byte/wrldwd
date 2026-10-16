@@ -290,11 +290,16 @@ def chain_null(streams: list[list[dict]], trials: int = 40, seed: int = 7) -> fl
     return tot / trials
 
 
+# 16 Oct 2026: an object pronoun closing the line is part of the end tail too ('caught me', 'for me'). Before, the tail was 'me' alone, so
+# 'caught me' was heard to rhyme with 'Seedy' on the 'ee' and the original's own word + 'me' endings were measured one syllable deep.
+TAIL_PRON = {"me", "you", "ya"}
+
+
 def tail_start(ws: list[str]) -> int:
-    """index of the first word of the end tail: back off over trailing clitics (it, him, in ...) to the last content word, at most 3 words."""
+    """index of the first word of the end tail: back off over trailing clitics (it, him, in, me ...) to the last content word, at most 3 words."""
     n = len(ws)
     i = n - 1
-    while i > 0 and core(ws[i]) in CLITIC and (n - i) < 3:
+    while i > 0 and (core(ws[i]) in CLITIC or core(ws[i]) in TAIL_PRON) and (n - i) < 3:
         i -= 1
     return i
 
@@ -795,8 +800,9 @@ def selftest() -> tuple[bool, str]:
     rows = a["slots"]["Hook 1-4"]["rows"]
     if not (rows[0]["g"] is not None and rows[0]["g"] == rows[1]["g"]):
         problems.append(f"fox/box and clock/dock should group: {[r['g'] for r in rows]}")
-    if tail_text("shovel it".split()) != "shovel it" or tail_text("He took it from me".split()) != "me":
-        problems.append("tail extraction: clitics should be absorbed, 'me' should stand alone")
+    # 16 Oct 2026: a closing object pronoun joins the tail with the word before it ('caught me' rhymes like 'naughty'; Joe on the original's 46-52)
+    if tail_text("shovel it".split()) != "shovel it" or tail_text("He took it from me".split()) != "from me" or tail_text("they caught me".split()) != "caught me":
+        problems.append("tail extraction: clitics and a closing object pronoun should be absorbed into the tail")
     with tempfile.TemporaryDirectory() as td:
         p = Path(td) / "x.html"
         try:

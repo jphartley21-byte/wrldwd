@@ -2,7 +2,7 @@
  "_note": "median rhyme depth in syllables of the original's end-rhyming bars per slot (rapfit.chain_best, Joe's by-ear groups); numbers only",
  "Hook 1-4": {
   "median_depth": 1,
-  "max_depth": 1,
+  "max_depth": 2,
   "bars": 4
  },
  "Hook 5-8": {
@@ -33,12 +33,12 @@
  "V1 25-32": {
   "median_depth": 2,
   "max_depth": 2,
-  "bars": 6
+  "bars": 7
  },
  "V1 33-44": {
   "median_depth": 1,
   "max_depth": 2,
-  "bars": 8
+  "bars": 10
  },
  "V2 1-8": {
   "median_depth": 1,
@@ -48,6 +48,6 @@
  "V2 9-16": {
   "median_depth": 1,
   "max_depth": 1,
-  "bars": 4
+  "bars": 5
  }
 }

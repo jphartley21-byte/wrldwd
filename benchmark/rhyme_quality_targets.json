@@ -45,16 +45,16 @@
  "V1 25-32": {
   "n": 8,
   "pairs": 28,
-  "carpet": 13,
-  "cheap": 1,
+  "carpet": 9,
+  "cheap": 0,
   "identical": 1
  },
  "V1 33-44": {
   "n": 12,
   "pairs": 66,
-  "carpet": 20,
-  "cheap": 1,
-  "identical": 1
+  "carpet": 17,
+  "cheap": 0,
+  "identical": 2
  },
  "V2 1-8": {
   "n": 8,
