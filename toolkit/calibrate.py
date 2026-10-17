@@ -74,6 +74,14 @@ import cohesion as _coh  # noqa: E402
 good = _coh.selftest(sys.argv[1])
 ok &= good
 print(("ok  " if good else "BAD ") + "cohesion: the original bridges its own section joins; the draft Joe called incohesive fails")
+# JOIN READ (17 Oct 2026, Joe: "is it just words or ideas"): the offline parts only (reply parser, cache key, flagged joins, distractor pool).
+# The model read is validated by `python -m ww.write.joinread --validate ORIG` and stays a report until a model passes it.
+if os.path.dirname(HERE) not in sys.path:
+    sys.path.insert(0, os.path.dirname(HERE))
+from ww.write import joinread as _jr  # noqa: E402
+good, _msg = _jr.selftest()
+ok &= good
+print(("ok  " if good else "BAD ") + _msg)
 # the meaning gate must catch known-bad stanzas and leave clean bars clean
 mg = run([os.path.join(HERE, "meaning_gate.py"), "--selftest"], "")
 good = "PASSED" in mg

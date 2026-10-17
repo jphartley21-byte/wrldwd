@@ -43,6 +43,8 @@ def gates_off() -> list[str]:
         off.append("recount (WW_RECOUNT=0)")
     if os.environ.get("WW_COHESION", "1") == "0":
         off.append("cohesion: section joins (WW_COHESION=0)")
+    if os.environ.get("WW_JOINREAD", "1") == "0":
+        off.append("join read: ideas across section joins (WW_JOINREAD=0)")
     if os.environ.get("WW_LEGACY_FLOW", "0") == "1":
         off.append("current flow rules replaced by the legacy ones (WW_LEGACY_FLOW=1)")
     return off
@@ -104,6 +106,17 @@ def run(path: str) -> dict:
     if os.environ.get("WW_COHESION", "1") != "0" and all(D.get(s) for s in fitbar.SLOTS):
         import cohesion
         file_hard += cohesion.hard({s: D[s] for s in fitbar.SLOTS})
+    # JOIN READ (17 Oct 2026, Joe: "By pick up, is it just words or ideas"): does each section's opening pick up the IDEA before it, by a
+    # forced-choice model read (ww/write/joinread.py). Not validated on ds-flash (it picks out only 2 of the original's 6 joins), so it is a
+    # report until a model passes `python -m ww.write.joinread --validate ORIG`; then it is HARD at the original's count.
+    join = {"hard": [], "notes": [], "off": None}
+    if os.environ.get("WW_JOINREAD", "1") != "0" and all(D.get(s) for s in fitbar.SLOTS):
+        try:
+            from . import joinread
+            join = joinread.song({s: D[s] for s in fitbar.SLOTS})
+            file_hard += join["hard"]
+        except Exception as e:  # noqa: BLE001 - a read that errors is reported, never a pass or a fail
+            join = {"hard": [], "notes": [f"join read error: {str(e)[:80]}"], "off": None}
     out = _tool("meaning_gate", path)
     if "MEANING GATE: PASS" not in out:
         file_hard.append("meaning gate: " + next((l.strip() for l in out.splitlines() if "MEANING GATE" in l), "no verdict"))
@@ -158,8 +171,19 @@ def run(path: str) -> dict:
         if miss and not any(x.startswith(label) for x in off):
             why = next(n for n in secs[miss[0]]["notes"] if n.startswith(kind)).split(":", 1)[-1].strip()
             off.append(f"{label} did not run in {len(miss)} section(s) ({why[:60]})")
+    if join.get("off"):
+        try:
+            from . import joinread
+            validated = bool((joinread.validation() or {}).get("passed"))
+        except Exception:  # noqa: BLE001
+            validated = False
+        if validated:
+            off.append(f"join read {join['off']}")
+        else:
+            join["notes"].append(f"join read did not run ({join['off']}); report only")
     return {"ok": n_hard == 0 and bool(secs), "off": off, "sections": secs, "file": file_hard, "hard": n_hard,
-            "notes": sum(len(v["notes"]) for v in secs.values()), "quality": quality, "point_unread": point_unread}
+            "notes": sum(len(v["notes"]) for v in secs.values()) + len(join["notes"]), "quality": quality, "point_unread": point_unread,
+            "join": join["notes"]}
 
 
 def report(r: dict, quiet: bool = False) -> str:
@@ -174,6 +198,7 @@ def report(r: dict, quiet: bool = False) -> str:
     q = r.get("quality", {})
     if not quiet:
         L += [f"SONG ~ {x}" for x in q.get("_song", [])]
+        L += [f"SONG ~ {x}" for x in r.get("join", [])]
     if q.get("_unread"):
         L.append(f"QUALITY not read for {q['_unread']}: run python -m ww.write.qualityread {'FILE'} (report-only)")
     if r.get("point_unread"):

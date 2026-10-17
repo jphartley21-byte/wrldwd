@@ -1,0 +1,24 @@
+{
+ "_note": "Join read validation, forced choice (counts only, rule 4): each join's real opening against other openings of the same song, asked in both orders; a join passes on 2 wins of 3. Built by python -m ww.write.joinread --validate.",
+ "model": "ds-flash",
+ "prompt": "JOINFC1",
+ "orig_joins": 6,
+ "orig_passed": 2,
+ "orig_verdicts": [
+  false,
+  false,
+  false,
+  true,
+  true,
+  false
+ ],
+ "flagged": 3,
+ "flagged_failed": 3,
+ "flagged_wins": [
+  1,
+  0,
+  0
+ ],
+ "unjudged": 0,
+ "passed": false
+}

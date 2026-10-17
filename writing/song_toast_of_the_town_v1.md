@@ -5,7 +5,7 @@
 # TITLE: Toast of the Town, said once, in V1 9-16 bar 4; bar 8 of that verse turns it round ("the bank ... says that I'm toast").
 # JOINS (17 Oct 2026, Joe: "the sections are written seperately the song still lacks cohesion"): every verse section now
 #   picks up the one before it: But (V1 9-16), So (V1 17-24), Caught (V1 25-32, after "Caught with my bum out"), flight
-#   (V1 33-44, after "that flight"), So (V2 1-8, across the chorus), Now (V2 9-16). toolkit/cohesion.py: 6 of 6, as the original.
+#   (V1 33-44, after "that flight"), So with no Chang (V2 1-8, across the chorus: the Chang hunt carries on), Now (V2 9-16). toolkit/cohesion.py: 6 of 6, as the original.
 # GATE (16 Oct 2026; re-run 17 Oct after the Chang swap, the new last line and the joins): every deterministic check passes (WW_SENSE_MODEL=haiku python -m ww.cli gate THIS FILE: 0 hard issues). The two model
 #   reads did NOT run: the only `claude` binary on this machine is the desktop app's, it is not on PATH and reports "Not logged in", so the
 #   sense read and the US-slang read are GATE OFF. Not done until they run (log the CLI in, then re-run the gate).
@@ -121,7 +121,7 @@ Chang? We never found it, what a night
 
 == V2 1-8
 # argument: I rode Vietnam end to end and walked away from the wreckage untouched. moves: brag, brag, brag, brag, brag, brag, brag, punchline
-So I ride a Honda from Hanoi, no brake
+So with no Chang I ride from Hanoi, no brake
 Through the biblical rain and I'm right as rain
 Lost my mate in Saigon then the blame game
 I ditched the bike for a bia, not shaken
