@@ -1,0 +1,32 @@
+# The draft Joe called incohesive (17 Oct 2026: "because the sections are written seperately the song still lacks cohesion"):
+# Toast of the Town v1 as committed in 429af67, the first two and last two bars of each verse section (our own lyrics; the
+# original's text is never stored here). toolkit/cohesion.py --selftest asserts these joins fail the gate.
+# Format: song | slot | bar (in order: the section's first two bars, then its last two).
+toast_v1 | V1 1-8 | My bike's loaded up for France, no hassle
+toast_v1 | V1 1-8 | Hostel to hostel, all my life, travel
+toast_v1 | V1 1-8 | Flight to the back of the globe
+toast_v1 | V1 1-8 | I land in Perth with the lads, I'm buying the barrel
+toast_v1 | V1 9-16 | Home in Reading the pubs don't
+toast_v1 | V1 9-16 | When the cash machine won't
+toast_v1 | V1 9-16 | I'd love to buy a slab but by now I'm stone broke
+toast_v1 | V1 9-16 | Till the bank phones home and it says that I'm toast
+toast_v1 | V1 17-24 | Camden Lock, the nail in the coffin
+toast_v1 | V1 17-24 | Tequila? Don't bottle it
+toast_v1 | V1 17-24 | The coppers clock ya then they're cuffing ya
+toast_v1 | V1 17-24 | Caught with my bum out at old Buckingham
+toast_v1 | V1 25-32 | At departures it's manic, captain says don't panic
+toast_v1 | V1 25-32 | The plane is the Titanic and the cabin crew are frantic
+toast_v1 | V1 25-32 | Ladies on Bondi want to French kiss me
+toast_v1 | V1 25-32 | Everyone on that flight wanted to fight me, I'm well tipsy
+toast_v1 | V1 33-44 | On the sand, that hit me
+toast_v1 | V1 33-44 | Mushroom shake for us, giddy, giddy
+toast_v1 | V1 33-44 | Closer up? It's Seven Elephant
+toast_v1 | V1 33-44 | Chang? We never found it, what a night
+toast_v1 | V2 1-8 | I ride a Honda Win from Hanoi, no brake
+toast_v1 | V2 1-8 | Through the biblical rain and I'm right as rain
+toast_v1 | V2 1-8 | At the rental the staff are pissed in a state
+toast_v1 | V2 1-8 | While we fly straight to Christchurch by plane
+toast_v1 | V2 9-16 | Now the boys, they hit town
+toast_v1 | V2 9-16 | Coke? It's a set-up and the cops count a thousand
+toast_v1 | V2 9-16 | Cheers to that boys, we don't feel no shame
+toast_v1 | V2 9-16 | Round's on me, beer for you beer for you lot, three cheers

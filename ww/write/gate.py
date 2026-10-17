@@ -41,6 +41,8 @@ def gates_off() -> list[str]:
         off.append("US-only slang read (WW_USSLANG=0)")
     if os.environ.get("WW_RECOUNT", "1") == "0":
         off.append("recount (WW_RECOUNT=0)")
+    if os.environ.get("WW_COHESION", "1") == "0":
+        off.append("cohesion: section joins (WW_COHESION=0)")
     if os.environ.get("WW_LEGACY_FLOW", "0") == "1":
         off.append("current flow rules replaced by the legacy ones (WW_LEGACY_FLOW=1)")
     return off
@@ -97,6 +99,11 @@ def run(path: str) -> dict:
             file_hard += rapfit.multiword_hard({s: D[s] for s in fitbar.SLOTS})
             import texture as _tx
             file_hard += _tx.unit_echo_hard({s: D.get(s) for s in fitbar.SLOTS})
+    # COHESION (17 Oct 2026, Joe: "because the sections are written seperately the song still lacks cohesion"): every join between two
+    # verse sections picks up from the bars before it, by a connective or a shared word, at the original's count (toolkit/cohesion.py)
+    if os.environ.get("WW_COHESION", "1") != "0" and all(D.get(s) for s in fitbar.SLOTS):
+        import cohesion
+        file_hard += cohesion.hard({s: D[s] for s in fitbar.SLOTS})
     out = _tool("meaning_gate", path)
     if "MEANING GATE: PASS" not in out:
         file_hard.append("meaning gate: " + next((l.strip() for l in out.splitlines() if "MEANING GATE" in l), "no verdict"))

@@ -270,7 +270,17 @@ def flow_targets(slot: str) -> list[dict]:
                     "max_stress_run": par.get("stress_run", 9) + fp.TOL["stress_run"] if par else None,
                     "max_hard_joins": par.get("hard_joins", 9) + fp.TOL["hard_joins"] if par else None,
                     "max_closed_run": par.get("closed_run", 9) + fp.TOL["closed_run"] if par else None,
-                    "max_restarts": par.get("restart", 9) + fp.TOL["restart"] if par else None})
+                    "max_restarts": par.get("restart", 9) + fp.TOL["restart"] if par else None,
+                    # 17 Oct 2026 (Joe: "fix the pipeline so future naive writers don't make the same mistakes"): every other HARD
+                    # per-bar rule of toolkit/flow_par, so the writer is told what the gate checks instead of meeting it as a rejection
+                    "pause_after": list(par.get("pause") or []) if par else [],
+                    "max_stops": len(par.get("pause") or []) + fp.STOPS_TOL if par and "pause" in par else None,
+                    "max_fast_jam": par.get("fast_jam") if par and timed else None,
+                    "max_run_breaks": par.get("run_breaks") if par and timed else None,
+                    "cell": ({"kind": par.get("cell_kind", "repeat"), "at": par.get("cell_at"), "len": par.get("cell_len")}
+                             if par and par.get("cell") else None),
+                    "barline": (par.get("barline") or None) if par else None,
+                    "carry": bool(par.get("carry")) if par else False})
     return out
 
 
@@ -284,8 +294,26 @@ def targets_text(slot: str) -> str:
                  + (f"; at most {t['max_stress_run']} stressed syllables in a row, {t['max_hard_joins']} hard word joins "
                     f"(3+ consonants across a gap, an h straight after a cluster, a hiss into a hiss), {t['max_closed_run']} short "
                     f"closed vowels (i as in 'him', u as in 'foot') in a row, {t['max_restarts']} sentence restarts mid-bar"
-                    if t["max_stress_run"] is not None else ""))
+                    if t["max_stress_run"] is not None else "")
+                 + (f"; break (a comma or a new clause) right after syllable {', '.join(map(str, t['pause_after']))}" if t.get("pause_after") else "")
+                 + (f"; at most {t['max_stops']} punctuation stop(s) inside the bar" if t.get("max_stops") is not None else "")
+                 + ("; NO stop where the next syllable comes straight after (inside a run of 16ths)" if t.get("max_run_breaks") == 0 else "")
+                 + (f"; at most {t['max_fast_jam']} pair(s) of stressed syllables back to back" if t.get("max_fast_jam") is not None else "")
+                 + (_cell_text(t["cell"]) if t.get("cell") else "")
+                 + (f"; a word starting at syllable {t['barline']} (+-1) must rhyme with the bar's end word (the line crosses the bar line there)"
+                    if t.get("barline") else "")
+                 + ("; this bar's sentence must RUN ON into the next bar (no full stop at the bar line)" if t.get("carry") else ""))
     return "\n".join(L)
+
+
+def _cell_text(c: dict) -> str:
+    """the original's repeated cell as a writing instruction (numbers only)."""
+    at = c.get("at") or []
+    where = f" starting at syllables {at[0]} and {at[1]}" if len(at) == 2 else ""
+    if c.get("kind") == "echo":
+        return f"; a sound-alike pair: two DIFFERENT words on one consonant frame and vowel{where} (a repeated word does not count)"
+    size = f" of {c['len']}+ syllables (the cell lives in the word itself, not in function words around a shorter word)" if c.get("len") else ""
+    return f"; a repeated cell: one content word{size} said twice{where}"
 
 
 def describe(slot: str) -> str:

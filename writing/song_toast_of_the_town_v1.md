@@ -3,7 +3,10 @@
 # PREMISE: wherever I land I'm the toast of the town. I buy the round, the bar raises a glass, the trip goes sideways and I'm still
 # the one they toast. A first-person boast told flat, built from Joe's real trips (material/); persona and invented bits flagged below.
 # TITLE: Toast of the Town, said once, in V1 9-16 bar 4; bar 8 of that verse turns it round ("the bank ... says that I'm toast").
-# GATE (16 Oct 2026; re-run 17 Oct after the Chang swap and the new last line): every deterministic check passes (WW_SENSE_MODEL=haiku python -m ww.cli gate THIS FILE: 0 hard issues). The two model
+# JOINS (17 Oct 2026, Joe: "the sections are written seperately the song still lacks cohesion"): every verse section now
+#   picks up the one before it: But (V1 9-16), So (V1 17-24), Caught (V1 25-32, after "Caught with my bum out"), flight
+#   (V1 33-44, after "that flight"), So (V2 1-8, across the chorus), Now (V2 9-16). toolkit/cohesion.py: 6 of 6, as the original.
+# GATE (16 Oct 2026; re-run 17 Oct after the Chang swap, the new last line and the joins): every deterministic check passes (WW_SENSE_MODEL=haiku python -m ww.cli gate THIS FILE: 0 hard issues). The two model
 #   reads did NOT run: the only `claude` binary on this machine is the desktop app's, it is not on PATH and reports "Not logged in", so the
 #   sense read and the US-slang read are GATE OFF. Not done until they run (log the CLI in, then re-run the gate).
 #
@@ -61,7 +64,7 @@ I land in Perth with the lads, I'm buying the barrel
 
 == V1 9-16
 # argument: Reading gave us nothing; now I'm the toast of the town, right up until the bank says I'm toast. moves: brag, brag, brag, brag, brag, brag, deflate, punchline
-Home in Reading the pubs don't
+But in Reading the pubs don't
 When the cash machine won't
 For a round of beers
 Now I'm toast of the town on the Aussie East Coast
@@ -74,20 +77,20 @@ Till the bank phones home and it says that I'm toast
 
 == V1 17-24
 # argument: one night out and I run the room: tequila, the scooter, the pool table, the punters, even the coppers. moves: brag, brag, brag, brag, threat, threat, brag, punchline
-Camden Lock, the nail in the coffin
+So Camden, the nail in the coffin
 Tequila? Don't bottle it
 Wobbling round on a scooter throttling
 Hobbling into the boozer toppling
 Hustle then? Rack 'em mate, now they're trusting us
 Clean them out, all the punters, mugging them
 The coppers clock ya then they're cuffing ya
-Caught with my bum out at old Buckingham
+Caught with my bum out at plush Buckingham
 #cash 1 | nail in the coffin | coffin
 #cash 2 | bottle it | it
 
 == V1 25-32
 # argument: even the flight is my party: the plane's a wreck, the crew hate us, I drink at both ends and I'm still standing. moves: brag, brag, brag, brag, brag, brag, brag, threat
-At departures it's manic, captain says don't panic
+Caught at departures manic, captain says don't panic
 The plane is the Titanic and the cabin crew are frantic
 A schooner on the plane and I'll never kick the habit
 Touchdown in Oz, the crew hate us
@@ -100,7 +103,7 @@ Everyone on that flight wanted to fight me, I'm well tipsy
 
 == V1 33-44
 # argument: at the Full Moon I'm king of the beach, even when the 7-Eleven turns out to be a stage called Seven Elephant. moves: brag, brag, brag, brag, brag, brag, brag, brag, brag, brag, punchline, brag
-On the sand, that hit me
+Off the flight, that hit me
 Mushroom shake for us, giddy, giddy
 Wasted we start a journey
 Searching for ages for Chang dead thirsty
@@ -118,7 +121,7 @@ Chang? We never found it, what a night
 
 == V2 1-8
 # argument: I rode Vietnam end to end and walked away from the wreckage untouched. moves: brag, brag, brag, brag, brag, brag, brag, punchline
-I ride a Honda Win from Hanoi, no brake
+So I ride a Honda from Hanoi, no brake
 Through the biblical rain and I'm right as rain
 Lost my mate in Saigon then the blame game
 I ditched the bike for a bia, not shaken
@@ -139,7 +142,7 @@ Bung the Thai cops some baht, that's the big shout
 Out the nick we're back on the piss
 I'll buy all the beers for a whole ten years
 Cheers to that boys, we don't feel no shame
-Round's on me, beer for you beer for you lot, three cheers
+Round's on me, bottomless bottomless beer, three cheers
 #cash 5 | on the piss | piss
 #cash 7 | no shame | shame
 #cash 8 | three cheers | cheers

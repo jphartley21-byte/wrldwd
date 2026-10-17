@@ -566,7 +566,8 @@ def guidance(slot: str, limit: int = 12) -> str:
 # ------------------------------------------------------------------ driver
 
 def run(llm, slot: str, seeds: int = 6, blocks_per_seed: int = 2, model: str = "ds-flash", rank: bool = True,
-        allow_other_payoff: bool = False, write_effort=None, examples=None, syllables=None, kit: bool = False) -> dict:
+        allow_other_payoff: bool = False, write_effort=None, examples=None, syllables=None, kit: bool = False,
+        prev_bars=None) -> dict:
     """argument -> seeds -> blocks -> plan gate + deterministic verifier -> (optional) comparative ranking. Rejections are logged.
 
     write_effort defaults to None (no thinking) for the block stage on purpose: the seed stage has already done the thinking, and
@@ -586,6 +587,15 @@ def run(llm, slot: str, seeds: int = 6, blocks_per_seed: int = 2, model: str = "
     sd = run_seeds(llm, slot, n=seeds, model=model, allow_other_payoff=allow_other_payoff, kit=kit_text)
     y["seeds"] = {"kept": len(sd["kept"]), "dropped": len(sd["dropped"]), "usd": sd["usd"]}
     fact = _plan_fact(slot)
+    # the writer is told every hard per-bar rule and, for a verse section after the first, the JOIN: its first bar picks up from the
+    # previous section's last bars (17 Oct 2026, Joe: "the sections are written seperately the song still lacks cohesion")
+    import sys as _sys
+    if str(config.ROOT / "toolkit") not in _sys.path:
+        _sys.path.insert(0, str(config.ROOT / "toolkit"))
+    import cohesion
+    rule = slotcheck.targets_text(slot)
+    join = cohesion.join_rule(slot, prev_bars)
+    rule = rule + ("\n\n" + join if join else "")
     cands = []
     for s in sd["kept"]:
         n = blocks_per_seed
@@ -593,7 +603,7 @@ def run(llm, slot: str, seeds: int = 6, blocks_per_seed: int = 2, model: str = "
             try:
                 cands += block_writer.run(llm, s, fact, n=n, model=model, effort=write_effort,
                                           sylls=syllables or plan_sylls(slot), jobs=plan_jobs(slot),
-                                          negatives=guidance(slot), examples=examples, flow_rule=slotcheck.targets_text(slot))
+                                          negatives=guidance(slot), examples=examples, flow_rule=rule)
                 break
             except Exception as e:  # noqa: BLE001 - one failed seed must not sink the run
                 # A long answer can overrun the token cap and come back empty in JSON mode ("finish_reason=length");

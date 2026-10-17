@@ -1,0 +1,6 @@
+{
+ "_note": "Section joins of the ORIGINAL (counts only, rule 4), built by toolkit/cohesion.py --build. A join is the last two bars of a verse section and the first two of the next; bridged = a connective opener or a shared word.",
+ "joins": 6,
+ "bridged": 6,
+ "word": 2
+}

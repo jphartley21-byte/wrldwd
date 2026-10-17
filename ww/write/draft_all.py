@@ -117,6 +117,20 @@ def merge_improve(slot: str, inc_bars: list, cand_bars: list, targets: list, sha
     return {"bars": out, "log": log, "swaps": swaps}
 
 
+def _prev_verse_bars(slot: str, built: dict, inc: dict) -> Optional[list]:
+    """the bars the previous verse section ends on, so the writer can make the JOIN (17 Oct 2026, Joe: "the sections are written
+    seperately the song still lacks cohesion"): this run's bars for that section if it was taken, else the incumbent's; None for
+    the hook and V1 1-8."""
+    import sys as _sys
+    if str(config.ROOT / "toolkit") not in _sys.path:
+        _sys.path.insert(0, str(config.ROOT / "toolkit"))
+    import cohesion
+    if slot not in cohesion.VERSE_ORDER or slot == cohesion.VERSE_ORDER[0]:
+        return None
+    prev = cohesion.VERSE_ORDER[cohesion.VERSE_ORDER.index(slot) - 1]
+    return (built.get(prev) or {}).get("candidate_bars") or (inc or {}).get(prev) or None
+
+
 def length_examples(targets: list, inc: dict, cap: int = 4) -> list:
     """(syllables, bar) pairs from the incumbent for the lengths this slot asks for, so the writer is shown a real bar of the
     target length instead of only a number. The incumbent's own short bars are the proof that a 5-7 syllable bar is writable."""
@@ -251,7 +265,8 @@ def run(llm, slots: Optional[list] = None, seeds: int = 4, blocks: int = 3, mode
     for slot in slots:
         tg = argue_stage.target_sylls(slot)
         r = argue_stage.run(llm, slot, seeds=seeds, blocks_per_seed=blocks, model=model, rank=rank,
-                            syllables=tg, examples=length_examples(tg, inc), kit=kit)
+                            syllables=tg, examples=length_examples(tg, inc), kit=kit,
+                            prev_bars=_prev_verse_bars(slot, out["slots"], inc))
         y = r["yield"]
         spec_slot = slotcheck.spec(slot)
         menu = end_menu(slot)

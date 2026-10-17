@@ -68,6 +68,12 @@ import texture as _tex  # noqa: E402
 good = _tex.selftest(sys.argv[1])
 ok &= good
 print(("ok  " if good else "BAD ") + "rhyme texture: the original passes its own section par; the fixtures fire")
+# COHESION (17 Oct 2026, Joe: "the sections are written seperately ... lacks cohesion"): every join between two verse sections picks
+# up from the bars before it; the original bridges all of its joins and the draft Joe flagged (toolkit/tests/cohesion_flagged.txt) fails.
+import cohesion as _coh  # noqa: E402
+good = _coh.selftest(sys.argv[1])
+ok &= good
+print(("ok  " if good else "BAD ") + "cohesion: the original bridges its own section joins; the draft Joe called incohesive fails")
 # the meaning gate must catch known-bad stanzas and leave clean bars clean
 mg = run([os.path.join(HERE, "meaning_gate.py"), "--selftest"], "")
 good = "PASSED" in mg
