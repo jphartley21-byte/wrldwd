@@ -4,7 +4,7 @@ Sources: Genius page (read via Joe's Chrome), reviews and features, WhoSampled, 
 
 ## Production and credits
 - Released 14 Jul 2022 (some sources say 15 Jul). Producers: Handsome Dexter (WhoSampled; Genius also lists "Double C"; AltPress names 91shots and Dexter). Label: Sindhuworld. Writer credit: "Pete & Bas" (authorship is contested in some articles; the duo say they write their own).
-- A replayed hook from a Willy William track runs from the very start (WhoSampled). Genius also mentions a second sample. The beat is built around one catchy, instantly recognisable hook riff.
+- A replayed hook from a Willy William track runs from the very start (WhoSampled). CONFIRMED 17 Oct 2026 (WhoSampled page read in the browser): producer Handsome Dexter; hook/riff sampled from Willy William's "Voodoo Song" (2017), the track "Mi Gente" (J Balvin & Willy William) reworks (Wikipedia: uptempo moombahton, 105 BPM, reggaeton/dancehall). So the beat is a bright Latin party riff retimed under UK drill drums, not a dark minor drill loop. Genius also mentions a second sample. The beat is built around one catchy, instantly recognisable hook riff.
 - Tempo: songbpm.com gives 140 BPM (half-time 70), D major, 4/4, 3:01. One source suggests the original sample sits around 105 BPM in B minor and was retimed (the agent's inference). Joe's tap was 142. Joe's pasted AI analysis said G minor with dorian colour, which does not match D major / B minor. Key is therefore unresolved; Suno barely follows keys, so it is a low-stakes disagreement.
 - About 96 lyric lines in 3:01 gives roughly one line per bar at 140 BPM (the agent's arithmetic). So lines really are bars, and 12-15 syllable lines are fast bursts.
 

@@ -18,6 +18,9 @@ Tags: [O] official Suno, [C] third-party (rule of thumb), [M] inference.
 Order: genre, vocal, delivery/accent, tempo, drums, bass, melody, mix. Max two genres; no contradictions (shouted vs laid-back vs monotone: use "barked, flat intonation").
 Style (180 chars): `UK drill, rapped male vocal, gruff barked flat deadpan delivery, south england accent, 140 BPM half-time, sliding 808s, triplet hi-hats, sparse minor-key piano, dry close-mic vocal`
 Exclude: `singing, melodic hook, autotune, choir, female vocals`
+LESS GENERIC, CLOSER TO THE ORIGINAL (17 Oct 2026, Joe: "make the song less generic drill"): the original's beat is a bright Latin party riff (WhoSampled: "Voodoo Song", the riff "Mi Gente" reworks) retimed under drill drums, in a major key (songbpm: D major), riff from the first bar. Describe that, never name it (no artist or song titles in Style):
+Style: `UK drill flipped with a Latin moombahton party riff, rapped male vocal, gruff raspy London voice, flat deadpan cocky delivery, 140 BPM half-time, bouncy syncopated drill drums, triplet hi-hat rolls, sliding 808 bass, bright catchy pitched vocal-chop lead riff looping from the first bar, nasal kazoo-like hook melody, sunny playful tropical feel, dry close-mic vocal, clear diction`
+Exclude: `singing, sung chorus, autotune, choir, female vocals, dark piano, eerie strings, horror bells` ("melodic hook" dropped: it fights the riff; "sung chorus" keeps the hook rapped)
 BPM is approximate; above 145 drifts to EDM; also test "70 BPM". "Anthemic/crowd/arena" summons choirs. [C]
 
 ## 3. Lyrics box
